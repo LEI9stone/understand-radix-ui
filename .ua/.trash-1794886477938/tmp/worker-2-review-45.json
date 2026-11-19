@@ -1,0 +1,122 @@
+{
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "results": [
+    {
+      "path": "packages/react/menu/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 99,
+      "nonEmptyLines": 57,
+      "sections": [
+        "@radix-ui/react-menu",
+        "2.2.1",
+        "2.2.0",
+        "2.1.25",
+        "2.1.24",
+        "2.1.23",
+        "2.1.22",
+        "2.1.21",
+        "2.1.20",
+        "2.1.19",
+        "Other updates",
+        "2.1.18",
+        "2.1.17",
+        "2.1.16",
+        "2.1.15",
+        "2.1.14",
+        "2.1.13",
+        "2.1.12",
+        "2.1.11",
+        "2.1.10",
+        "2.1.9",
+        "2.1.8"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 22
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/menu/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        "`react-menu`"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/menu/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 89,
+      "nonEmptyLines": 89,
+      "sections": [
+        "name",
+        "version",
+        "license",
+        "source",
+        "main",
+        "module",
+        "publishConfig",
+        "files",
+        "sideEffects",
+        "scripts",
+        "dependencies",
+        "devDependencies",
+        "peerDependencies",
+        "peerDependenciesMeta",
+        "homepage",
+        "repository",
+        "bugs"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/menu/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        "extends",
+        "compilerOptions",
+        "include",
+        "exclude"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      },
+      "calls": [],
+      "exports": []
+    }
+  ]
+}

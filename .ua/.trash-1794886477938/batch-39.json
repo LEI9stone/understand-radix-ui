@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/focus-guards/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/focus-guards/CHANGELOG.md",
+      "summary": "记录焦点守卫工具 1.2.0 及先前版本的发布更新，支持焦点边界能力的维护追踪。",
+      "tags": [
+        "版本记录",
+        "焦点管理",
+        "维护文档"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/focus-guards/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/focus-guards/README.md",
+      "summary": "提供 react-focus-guards 包的标识和文档入口。",
+      "tags": [
+        "包说明",
+        "焦点守卫",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/focus-guards/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/focus-guards/package.json",
+      "summary": "配置焦点守卫工具的源码和发布出口，仅声明 React peer 依赖，保持该基础交互包的轻量依赖边界。",
+      "tags": [
+        "包配置",
+        "焦点守卫",
+        "构建发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/focus-guards/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/focus-guards/tsconfig.json",
+      "summary": "为焦点守卫源码启用共享 React 库类型配置，并指定独立构建输出与排除目录。",
+      "tags": [
+        "编译配置",
+        "类型检查",
+        "焦点管理"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/react/focus-guards/package.json",
+      "target": "file:packages/react/focus-guards/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/focus-guards/README.md",
+      "target": "config:packages/react/focus-guards/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

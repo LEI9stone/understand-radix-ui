@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/collection/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/collection/CHANGELOG.md",
+      "summary": "记录 Collection 新增 useGetCollection、实验类型重命名、上下文显示名修正及不重新挂载的 DOM 重排顺序修复。",
+      "tags": [
+        "变更记录",
+        "集合顺序",
+        "实验接口"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/collection/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/collection/README.md",
+      "summary": "明确 Collection 是内部集合管理工具，不作为面向应用的公开组件。",
+      "tags": [
+        "包文档",
+        "集合管理",
+        "内部接口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/collection/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/collection/package.json",
+      "summary": "配置内部 Collection 包发布，声明 Context、Slot、Primitive、ComposeRefs 与布局效应依赖，以支撑条目注册和 DOM 顺序管理。",
+      "tags": [
+        "包清单",
+        "集合管理",
+        "依赖配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/collection/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/collection/tsconfig.json",
+      "summary": "将 Collection 源码纳入共享 React 库类型检查并排除 dist 与依赖目录。",
+      "tags": [
+        "类型配置",
+        "集合管理",
+        "构建配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/collection/README.md",
+      "target": "config:packages/react/collection/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/collection/CHANGELOG.md",
+      "target": "config:packages/react/collection/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/collection/tsconfig.json",
+      "target": "config:internal/typescript-config/react-library.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

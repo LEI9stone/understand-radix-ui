@@ -1,0 +1,622 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/storybook/.storybook/preview.ts",
+      "type": "file",
+      "name": "preview.ts",
+      "filePath": "apps/storybook/.storybook/preview.ts",
+      "summary": "配置 Storybook 全屏布局、组件与工具的故事排序和源码面板，默认关闭全局 Chromatic 截图。",
+      "tags": [
+        "展示配置",
+        "全局参数",
+        "组件演示"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/index.d.ts",
+      "type": "file",
+      "name": "index.d.ts",
+      "filePath": "apps/storybook/index.d.ts",
+      "summary": "声明 CSS Modules 的只读类名映射及普通 CSS 导入类型，让故事文件可以通过 TypeScript 类型检查。",
+      "tags": [
+        "类型声明",
+        "样式模块",
+        "静态检查"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通配模块声明为 CSS 文件导入补充类型，readonly 索引签名约束类名映射。"
+    },
+    {
+      "id": "config:apps/storybook/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/storybook/package.json",
+      "summary": "定义 Storybook 工作区的启动、构建、静态服务和类型检查命令，并声明 React、Radix 与文档插件依赖。",
+      "tags": [
+        "项目配置",
+        "工作区管理",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/accessible-icon.stories.tsx",
+      "type": "file",
+      "name": "accessible-icon.stories.tsx",
+      "filePath": "apps/storybook/stories/accessible-icon.stories.tsx",
+      "summary": "展示 AccessibleIcon 为 SVG 图标提供可访问名称的用法，并提供视觉回归场景。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/accessible-icon.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/accessible-icon.stories.tsx",
+      "lineRange": [
+        5,
+        11
+      ],
+      "summary": "组合 AccessibleIcon 无障碍图标 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/accessible-icon.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/accessible-icon.stories.tsx",
+      "lineRange": [
+        13,
+        20
+      ],
+      "summary": "集中排列 AccessibleIcon 无障碍图标 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/accordion.stories.tsx",
+      "type": "file",
+      "name": "accordion.stories.tsx",
+      "filePath": "apps/storybook/stories/accordion.stories.tsx",
+      "summary": "集中演示 Accordion 单项与多项展开、横向布局、动态内容动画和受控状态，为折叠面板提供交互及视觉回归覆盖。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/accordion.stories.tsx:Single",
+      "type": "function",
+      "name": "Single",
+      "filePath": "apps/storybook/stories/accordion.stories.tsx",
+      "lineRange": [
+        8,
+        145
+      ],
+      "summary": "演示一次展开一个条目的 Accordion，并以 React 状态展示受控单选展开行为。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/accordion.stories.tsx:Multiple",
+      "type": "function",
+      "name": "Multiple",
+      "filePath": "apps/storybook/stories/accordion.stories.tsx",
+      "lineRange": [
+        147,
+        242
+      ],
+      "summary": "演示多个 Accordion 条目同时展开，并使用数组状态维护受控展开值。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/accordion.stories.tsx:Animated",
+      "type": "function",
+      "name": "Animated",
+      "filePath": "apps/storybook/stories/accordion.stories.tsx",
+      "lineRange": [
+        244,
+        322
+      ],
+      "summary": "动态增加内容并延迟更新折叠区域，验证 Accordion 在内容高度变化时的展开与收起动画。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/accordion.stories.tsx:Animated2D",
+      "type": "function",
+      "name": "Animated2D",
+      "filePath": "apps/storybook/stories/accordion.stories.tsx",
+      "lineRange": [
+        324,
+        349
+      ],
+      "summary": "渲染二维尺寸变化的 Accordion 动画场景，观察内容展开时宽高过渡。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/accordion.stories.tsx:AnimatedControlled",
+      "type": "function",
+      "name": "AnimatedControlled",
+      "filePath": "apps/storybook/stories/accordion.stories.tsx",
+      "lineRange": [
+        351,
+        395
+      ],
+      "summary": "通过外部状态控制 Accordion 的展开值，演示受控内容与动画的配合。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/accordion.stories.tsx:OutsideViewport",
+      "type": "function",
+      "name": "OutsideViewport",
+      "filePath": "apps/storybook/stories/accordion.stories.tsx",
+      "lineRange": [
+        397,
+        447
+      ],
+      "summary": "将 Accordion 布置在视口之外的页面区域，检验滚动后展开内容的显示。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/accordion.stories.tsx:Horizontal",
+      "type": "function",
+      "name": "Horizontal",
+      "filePath": "apps/storybook/stories/accordion.stories.tsx",
+      "lineRange": [
+        449,
+        493
+      ],
+      "summary": "渲染水平方向的 Accordion，演示横向内容展开与条目排布。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/accordion.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/accordion.stories.tsx",
+      "lineRange": [
+        495,
+        722
+      ],
+      "summary": "集中排列 Accordion 折叠面板 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/storybook/stories/alert-dialog.stories.tsx",
+      "type": "file",
+      "name": "alert-dialog.stories.tsx",
+      "filePath": "apps/storybook/stories/alert-dialog.stories.tsx",
+      "summary": "展示 AlertDialog 的确认与取消交互、受控购买流程及视觉回归布局。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/alert-dialog.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/alert-dialog.stories.tsx",
+      "lineRange": [
+        7,
+        22
+      ],
+      "summary": "组合 AlertDialog 确认对话框 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/alert-dialog.stories.tsx:Controlled",
+      "type": "function",
+      "name": "Controlled",
+      "filePath": "apps/storybook/stories/alert-dialog.stories.tsx",
+      "lineRange": [
+        24,
+        63
+      ],
+      "summary": "维护对话框开关和房屋购买状态，在确认操作时阻止默认关闭并更新购买结果。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/alert-dialog.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/alert-dialog.stories.tsx",
+      "lineRange": [
+        65,
+        273
+      ],
+      "summary": "集中排列 AlertDialog 确认对话框 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/storybook/stories/arrow.stories.tsx",
+      "type": "file",
+      "name": "arrow.stories.tsx",
+      "filePath": "apps/storybook/stories/arrow.stories.tsx",
+      "summary": "展示浮层 Arrow 的基础样式、自定义尺寸及替代 SVG 形状。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/arrow.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/arrow.stories.tsx",
+      "lineRange": [
+        10,
+        12
+      ],
+      "summary": "组合 Arrow 箭头 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/arrow.stories.tsx:CustomSizes",
+      "type": "function",
+      "name": "CustomSizes",
+      "filePath": "apps/storybook/stories/arrow.stories.tsx",
+      "lineRange": [
+        14,
+        20
+      ],
+      "summary": "并列渲染不同宽高的 Arrow，演示箭头尺寸可由调用方配置。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/arrow.stories.tsx:CustomArrow",
+      "type": "function",
+      "name": "CustomArrow",
+      "filePath": "apps/storybook/stories/arrow.stories.tsx",
+      "lineRange": [
+        22,
+        34
+      ],
+      "summary": "以自定义 SVG 子元素渲染 Arrow，演示箭头形状替换。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/storybook/.storybook/preview.ts",
+      "target": "file:apps/storybook/.storybook/preview.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/accessible-icon.stories.tsx",
+      "target": "function:apps/storybook/stories/accessible-icon.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/accessible-icon.stories.tsx",
+      "target": "function:apps/storybook/stories/accessible-icon.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/accessible-icon.stories.tsx",
+      "target": "function:apps/storybook/stories/accessible-icon.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/accessible-icon.stories.tsx",
+      "target": "function:apps/storybook/stories/accessible-icon.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "file:apps/storybook/stories/accordion.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:Single",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:Single",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:Multiple",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:Multiple",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:Animated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:Animated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:Animated2D",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:Animated2D",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:AnimatedControlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:AnimatedControlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:OutsideViewport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:OutsideViewport",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:Horizontal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:Horizontal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.tsx",
+      "target": "function:apps/storybook/stories/accordion.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/alert-dialog.stories.tsx",
+      "target": "file:apps/storybook/stories/alert-dialog.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/alert-dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/alert-dialog.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/alert-dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/alert-dialog.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/alert-dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/alert-dialog.stories.tsx:Controlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/alert-dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/alert-dialog.stories.tsx:Controlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/alert-dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/alert-dialog.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/alert-dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/alert-dialog.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/arrow.stories.tsx",
+      "target": "function:apps/storybook/stories/arrow.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/arrow.stories.tsx",
+      "target": "function:apps/storybook/stories/arrow.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/arrow.stories.tsx",
+      "target": "function:apps/storybook/stories/arrow.stories.tsx:CustomSizes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/arrow.stories.tsx",
+      "target": "function:apps/storybook/stories/arrow.stories.tsx:CustomSizes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/arrow.stories.tsx",
+      "target": "function:apps/storybook/stories/arrow.stories.tsx:CustomArrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/arrow.stories.tsx",
+      "target": "function:apps/storybook/stories/arrow.stories.tsx:CustomArrow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "config:apps/storybook/package.json",
+      "target": "file:apps/storybook/.storybook/preview.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

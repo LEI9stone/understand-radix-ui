@@ -1,0 +1,1341 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 13,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 13,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 13,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "e2e/collection.spec.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 92,
+      "nonEmptyLines": 85,
+      "functions": [
+        {
+          "name": "recordViewTransitions",
+          "startLine": 12,
+          "endLine": 38,
+          "params": [
+            "page"
+          ]
+        },
+        {
+          "name": "getFirstAnimationFrame",
+          "startLine": 40,
+          "endLine": 46,
+          "params": [
+            "page"
+          ]
+        },
+        {
+          "name": "getViewTransitionRecords",
+          "startLine": 48,
+          "endLine": 54,
+          "params": [
+            "page"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "recordViewTransitions",
+          "callee": "page.addInitScript",
+          "lineNumber": 13
+        },
+        {
+          "caller": "recordViewTransitions",
+          "callee": "Object.assign",
+          "lineNumber": 15
+        },
+        {
+          "caller": "recordViewTransitions",
+          "callee": "document.startViewTransition?.bind",
+          "lineNumber": 16
+        },
+        {
+          "caller": "recordViewTransitions",
+          "callee": "records.push",
+          "lineNumber": 22
+        },
+        {
+          "caller": "recordViewTransitions",
+          "callee": "startViewTransition",
+          "lineNumber": 23
+        },
+        {
+          "caller": "recordViewTransitions",
+          "callee": "transition.ready.then",
+          "lineNumber": 24
+        },
+        {
+          "caller": "recordViewTransitions",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 26
+        },
+        {
+          "caller": "recordViewTransitions",
+          "callee": "Array.from",
+          "lineNumber": 27
+        },
+        {
+          "caller": "recordViewTransitions",
+          "callee": "document.querySelectorAll",
+          "lineNumber": 28
+        },
+        {
+          "caller": "getFirstAnimationFrame",
+          "callee": "expect\n    .poll(async () => (await getViewTransitionRecords(page))[0]?.firstAnimationFrame ?? null)\n    .not.toBeNull",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getFirstAnimationFrame",
+          "callee": "expect\n    .poll",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getFirstAnimationFrame",
+          "callee": "getViewTransitionRecords",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getFirstAnimationFrame",
+          "callee": "getViewTransitionRecords",
+          "lineNumber": 44
+        },
+        {
+          "caller": "getViewTransitionRecords",
+          "callee": "page.evaluate",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "e2e/context-menu.spec.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 336,
+      "nonEmptyLines": 287,
+      "callGraph": [
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "keydown",
+          "lineNumber": 171
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "page.getByText",
+          "lineNumber": 171
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "page.getByText",
+          "lineNumber": 172
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "expect(inbox).toBeFocused",
+          "lineNumber": 173
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "expect",
+          "lineNumber": 173
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "keydown",
+          "lineNumber": 174
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "e2e/dialog.spec.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 309,
+      "nonEmptyLines": 261,
+      "callGraph": [
+        {
+          "caller": "shouldBeOpen",
+          "callee": "expect(page.getByText('title', { exact: true })).toBeAttached",
+          "lineNumber": 10
+        },
+        {
+          "caller": "shouldBeOpen",
+          "callee": "expect",
+          "lineNumber": 10
+        },
+        {
+          "caller": "shouldBeOpen",
+          "callee": "page.getByText",
+          "lineNumber": 10
+        },
+        {
+          "caller": "shouldBeClosed",
+          "callee": "expect(page.getByText('title', { exact: true })).toHaveCount",
+          "lineNumber": 13
+        },
+        {
+          "caller": "shouldBeClosed",
+          "callee": "expect",
+          "lineNumber": 13
+        },
+        {
+          "caller": "shouldBeClosed",
+          "callee": "page.getByText",
+          "lineNumber": 13
+        },
+        {
+          "caller": "shouldNotAllowOutsideInteraction",
+          "callee": "page.getByLabel",
+          "lineNumber": 16
+        },
+        {
+          "caller": "shouldNotAllowOutsideInteraction",
+          "callee": "countUp.textContent",
+          "lineNumber": 17
+        },
+        {
+          "caller": "shouldNotAllowOutsideInteraction",
+          "callee": "page.waitForTimeout",
+          "lineNumber": 19
+        },
+        {
+          "caller": "shouldNotAllowOutsideInteraction",
+          "callee": "countUp.click",
+          "lineNumber": 21
+        },
+        {
+          "caller": "shouldNotAllowOutsideInteraction",
+          "callee": "countUp.tap",
+          "lineNumber": 23
+        },
+        {
+          "caller": "shouldNotAllowOutsideInteraction",
+          "callee": "expect(countUp).toHaveText",
+          "lineNumber": 25
+        },
+        {
+          "caller": "shouldNotAllowOutsideInteraction",
+          "callee": "expect",
+          "lineNumber": 25
+        },
+        {
+          "caller": "shouldAllowOutsideInteraction",
+          "callee": "page.getByLabel",
+          "lineNumber": 28
+        },
+        {
+          "caller": "shouldAllowOutsideInteraction",
+          "callee": "countUp.textContent",
+          "lineNumber": 29
+        },
+        {
+          "caller": "shouldAllowOutsideInteraction",
+          "callee": "page.waitForTimeout",
+          "lineNumber": 30
+        },
+        {
+          "caller": "shouldAllowOutsideInteraction",
+          "callee": "countUp.click",
+          "lineNumber": 32
+        },
+        {
+          "caller": "shouldAllowOutsideInteraction",
+          "callee": "countUp.tap",
+          "lineNumber": 34
+        },
+        {
+          "caller": "shouldAllowOutsideInteraction",
+          "callee": "expect(countUp).not.toHaveText",
+          "lineNumber": 36
+        },
+        {
+          "caller": "shouldAllowOutsideInteraction",
+          "callee": "expect",
+          "lineNumber": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "e2e/dropdown-menu.spec.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 327,
+      "nonEmptyLines": 277,
+      "callGraph": [
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "keydown",
+          "lineNumber": 165
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "page.getByText",
+          "lineNumber": 165
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "page.getByText",
+          "lineNumber": 166
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "expect(inbox).toBeFocused",
+          "lineNumber": 167
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "expect",
+          "lineNumber": 167
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "keydown",
+          "lineNumber": 168
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "e2e/form.spec.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 233,
+      "nonEmptyLines": 200,
+      "callGraph": [
+        {
+          "caller": "checkControlMessageAssociation",
+          "callee": "expect(control).toHaveAttribute",
+          "lineNumber": 11
+        },
+        {
+          "caller": "checkControlMessageAssociation",
+          "callee": "expect",
+          "lineNumber": 11
+        },
+        {
+          "caller": "checkControlMessageAssociation",
+          "callee": "control.getAttribute",
+          "lineNumber": 12
+        },
+        {
+          "caller": "checkControlMessageAssociation",
+          "callee": "expect(message).toHaveAttribute",
+          "lineNumber": 13
+        },
+        {
+          "caller": "checkControlMessageAssociation",
+          "callee": "expect",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "e2e/helpers.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 211,
+      "nonEmptyLines": 196,
+      "functions": [
+        {
+          "name": "visitStory",
+          "startLine": 9,
+          "endLine": 11,
+          "params": [
+            "page",
+            "storyName"
+          ]
+        },
+        {
+          "name": "visitStoryById",
+          "startLine": 17,
+          "endLine": 19,
+          "params": [
+            "page",
+            "storyId"
+          ]
+        },
+        {
+          "name": "offsetFor",
+          "startLine": 44,
+          "endLine": 71,
+          "params": [
+            "box",
+            "position"
+          ]
+        },
+        {
+          "name": "boundingBoxOf",
+          "startLine": 73,
+          "endLine": 79,
+          "params": [
+            "locator"
+          ]
+        },
+        {
+          "name": "hoverAt",
+          "startLine": 82,
+          "endLine": 85,
+          "params": [
+            "locator",
+            "position"
+          ]
+        },
+        {
+          "name": "pointerOutAt",
+          "startLine": 91,
+          "endLine": 101,
+          "params": [
+            "locator",
+            "position"
+          ]
+        },
+        {
+          "name": "keydown",
+          "startLine": 104,
+          "endLine": 106,
+          "params": [
+            "locator",
+            "key"
+          ]
+        },
+        {
+          "name": "pointerOver",
+          "startLine": 112,
+          "endLine": 117,
+          "params": [
+            "page",
+            "text"
+          ]
+        },
+        {
+          "name": "pointerExitRightToLeft",
+          "startLine": 120,
+          "endLine": 126,
+          "params": [
+            "page",
+            "text"
+          ]
+        },
+        {
+          "name": "pointerExitLeftToRight",
+          "startLine": 129,
+          "endLine": 135,
+          "params": [
+            "page",
+            "text"
+          ]
+        },
+        {
+          "name": "longTouch",
+          "startLine": 141,
+          "endLine": 156,
+          "params": [
+            "page",
+            "text"
+          ]
+        },
+        {
+          "name": "touchSwipe",
+          "startLine": 163,
+          "endLine": 211,
+          "params": [
+            "page",
+            "locator",
+            "direction",
+            "length"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "visitStory",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "visitStoryById",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "hoverAt",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "pointerOutAt",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "keydown",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "pointerOver",
+          "line": 112,
+          "isDefault": false
+        },
+        {
+          "name": "pointerExitRightToLeft",
+          "line": 120,
+          "isDefault": false
+        },
+        {
+          "name": "pointerExitLeftToRight",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "longTouch",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "touchSwipe",
+          "line": 163,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "visitStory",
+          "callee": "page.goto",
+          "lineNumber": 10
+        },
+        {
+          "caller": "visitStoryById",
+          "callee": "page.goto",
+          "lineNumber": 18
+        },
+        {
+          "caller": "offsetFor",
+          "callee": "Math.max",
+          "lineNumber": 45
+        },
+        {
+          "caller": "offsetFor",
+          "callee": "Math.max",
+          "lineNumber": 46
+        },
+        {
+          "caller": "boundingBoxOf",
+          "callee": "locator.boundingBox",
+          "lineNumber": 74
+        },
+        {
+          "caller": "hoverAt",
+          "callee": "boundingBoxOf",
+          "lineNumber": 83
+        },
+        {
+          "caller": "hoverAt",
+          "callee": "locator.hover",
+          "lineNumber": 84
+        },
+        {
+          "caller": "hoverAt",
+          "callee": "offsetFor",
+          "lineNumber": 84
+        },
+        {
+          "caller": "pointerOutAt",
+          "callee": "boundingBoxOf",
+          "lineNumber": 92
+        },
+        {
+          "caller": "pointerOutAt",
+          "callee": "offsetFor",
+          "lineNumber": 93
+        },
+        {
+          "caller": "pointerOutAt",
+          "callee": "locator.dispatchEvent",
+          "lineNumber": 94
+        },
+        {
+          "caller": "keydown",
+          "callee": "locator.dispatchEvent",
+          "lineNumber": 105
+        },
+        {
+          "caller": "pointerOver",
+          "callee": "page.getByText",
+          "lineNumber": 113
+        },
+        {
+          "caller": "pointerOver",
+          "callee": "expect(locator).toBeVisible",
+          "lineNumber": 114
+        },
+        {
+          "caller": "pointerOver",
+          "callee": "expect",
+          "lineNumber": 114
+        },
+        {
+          "caller": "pointerOver",
+          "callee": "locator.hover",
+          "lineNumber": 115
+        },
+        {
+          "caller": "pointerExitRightToLeft",
+          "callee": "page.getByText",
+          "lineNumber": 121
+        },
+        {
+          "caller": "pointerExitRightToLeft",
+          "callee": "expect(locator).toBeVisible",
+          "lineNumber": 122
+        },
+        {
+          "caller": "pointerExitRightToLeft",
+          "callee": "expect",
+          "lineNumber": 122
+        },
+        {
+          "caller": "pointerExitRightToLeft",
+          "callee": "hoverAt",
+          "lineNumber": 123
+        },
+        {
+          "caller": "pointerExitRightToLeft",
+          "callee": "hoverAt",
+          "lineNumber": 124
+        },
+        {
+          "caller": "pointerExitRightToLeft",
+          "callee": "pointerOutAt",
+          "lineNumber": 125
+        },
+        {
+          "caller": "pointerExitLeftToRight",
+          "callee": "page.getByText",
+          "lineNumber": 130
+        },
+        {
+          "caller": "pointerExitLeftToRight",
+          "callee": "expect(locator).toBeVisible",
+          "lineNumber": 131
+        },
+        {
+          "caller": "pointerExitLeftToRight",
+          "callee": "expect",
+          "lineNumber": 131
+        },
+        {
+          "caller": "pointerExitLeftToRight",
+          "callee": "hoverAt",
+          "lineNumber": 132
+        },
+        {
+          "caller": "pointerExitLeftToRight",
+          "callee": "hoverAt",
+          "lineNumber": 133
+        },
+        {
+          "caller": "pointerExitLeftToRight",
+          "callee": "pointerOutAt",
+          "lineNumber": 134
+        },
+        {
+          "caller": "longTouch",
+          "callee": "page.getByText",
+          "lineNumber": 142
+        },
+        {
+          "caller": "longTouch",
+          "callee": "expect(locator).toBeVisible",
+          "lineNumber": 143
+        },
+        {
+          "caller": "longTouch",
+          "callee": "expect",
+          "lineNumber": 143
+        },
+        {
+          "caller": "longTouch",
+          "callee": "locator.dispatchEvent",
+          "lineNumber": 144
+        },
+        {
+          "caller": "longTouch",
+          "callee": "page.waitForTimeout",
+          "lineNumber": 155
+        },
+        {
+          "caller": "touchSwipe",
+          "callee": "boundingBoxOf",
+          "lineNumber": 169
+        },
+        {
+          "caller": "touchSwipe",
+          "callee": "page.context().newCDPSession",
+          "lineNumber": 191
+        },
+        {
+          "caller": "touchSwipe",
+          "callee": "page.context",
+          "lineNumber": 191
+        },
+        {
+          "caller": "touchSwipe",
+          "callee": "client.send",
+          "lineNumber": 193
+        },
+        {
+          "caller": "touchSwipe",
+          "callee": "client.send",
+          "lineNumber": 200
+        },
+        {
+          "caller": "touchSwipe",
+          "callee": "client.send",
+          "lineNumber": 207
+        },
+        {
+          "caller": "touchSwipe",
+          "callee": "client.detach",
+          "lineNumber": 209
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 12,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "e2e/menubar.spec.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 321,
+      "nonEmptyLines": 267,
+      "callGraph": [
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 119
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 119
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect(page.getByText('Edit', { exact: true })).toBeFocused",
+          "lineNumber": 120
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect",
+          "lineNumber": 120
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 120
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 121
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 121
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect(page.getByText('History', { exact: true })).toBeFocused",
+          "lineNumber": 124
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect",
+          "lineNumber": 124
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 124
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 125
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 125
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect(page.getByText('Edit', { exact: true })).toBeFocused",
+          "lineNumber": 126
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect",
+          "lineNumber": 126
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 126
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 127
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 127
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect(page.getByText('File', { exact: true })).toBeFocused",
+          "lineNumber": 128
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect",
+          "lineNumber": 128
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 128
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 135
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 135
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect(page.getByText('File', { exact: true })).toBeFocused",
+          "lineNumber": 136
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect",
+          "lineNumber": 136
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 136
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText('File', { exact: true }).click",
+          "lineNumber": 139
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 139
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 142
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 142
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect(page.getByText('New Tab', { exact: true })).toHaveCount",
+          "lineNumber": 143
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect",
+          "lineNumber": 143
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 143
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 146
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 146
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect(page.getByText('Redo', { exact: true })).toHaveCount",
+          "lineNumber": 147
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect",
+          "lineNumber": 147
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 147
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 150
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 150
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect(page.getByText('New Tab', { exact: true })).toBeVisible",
+          "lineNumber": 151
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect",
+          "lineNumber": 151
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 151
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 154
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 154
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 155
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 155
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect(page.getByText('Redo', { exact: true })).toBeVisible",
+          "lineNumber": 156
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect",
+          "lineNumber": 156
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 156
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 159
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 159
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 160
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 160
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 161
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 161
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 162
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 162
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 163
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 163
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect(page.getByText('New Tab', { exact: true })).toBeVisible",
+          "lineNumber": 164
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect",
+          "lineNumber": 164
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 164
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText('Loop', { exact: true }).click",
+          "lineNumber": 167
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 167
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 168
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 168
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect(page.getByText('History', { exact: true })).toBeFocused",
+          "lineNumber": 169
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect",
+          "lineNumber": 169
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 169
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 170
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 170
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect(page.getByText('File', { exact: true })).toBeFocused",
+          "lineNumber": 171
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect",
+          "lineNumber": 171
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 171
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText('File', { exact: true }).click",
+          "lineNumber": 174
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 174
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 175
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 175
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "keydown",
+          "lineNumber": 176
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 176
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect(page.getByText('New Tab', { exact: true })).toBeVisible",
+          "lineNumber": 177
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "expect",
+          "lineNumber": 177
+        },
+        {
+          "caller": "shouldSupportArrowKeyNavigation",
+          "callee": "page.getByText",
+          "lineNumber": 177
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "keydown",
+          "lineNumber": 204
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "page.getByText",
+          "lineNumber": 204
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "page.getByText",
+          "lineNumber": 205
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "expect(searchTheWeb).toBeFocused",
+          "lineNumber": 206
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "expect",
+          "lineNumber": 206
+        },
+        {
+          "caller": "shouldOpenOnKeydown",
+          "callee": "keydown",
+          "lineNumber": 207
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "e2e/popover.spec.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 55,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "e2e/popper.spec.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "visitPopperStory",
+          "startLine": 6,
+          "endLine": 8,
+          "params": [
+            "page",
+            "storyName"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "visitPopperStory",
+          "callee": "visitStoryById",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "e2e/scroll-area.spec.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 46,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "e2e/select.spec.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 187,
+      "nonEmptyLines": 153,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "e2e/toast.spec.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 173,
+      "nonEmptyLines": 132,
+      "callGraph": [
+        {
+          "caller": "buttonIsFocused",
+          "callee": "expect(page.getByText(`Toast button ${identifier}`, { exact: true })).toBeFocused",
+          "lineNumber": 11
+        },
+        {
+          "caller": "buttonIsFocused",
+          "callee": "expect",
+          "lineNumber": 11
+        },
+        {
+          "caller": "buttonIsFocused",
+          "callee": "page.getByText",
+          "lineNumber": 11
+        },
+        {
+          "caller": "toastIsFocused",
+          "callee": "expect(page.getByTestId(`toast-${identifier}`)).toBeFocused",
+          "lineNumber": 15
+        },
+        {
+          "caller": "toastIsFocused",
+          "callee": "expect",
+          "lineNumber": 15
+        },
+        {
+          "caller": "toastIsFocused",
+          "callee": "page.getByTestId",
+          "lineNumber": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "e2e/toggle-group.spec.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

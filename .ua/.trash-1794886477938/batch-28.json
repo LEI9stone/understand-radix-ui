@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/avatar/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/avatar/CHANGELOG.md",
+      "summary": "记录头像组件 1.3.1 及此前版本的发布变化，支持图片展示行为和依赖升级的版本追溯。",
+      "tags": [
+        "版本记录",
+        "头像",
+        "维护文档"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/avatar/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/avatar/README.md",
+      "summary": "提供 react-avatar 包的名称与文档入口。",
+      "tags": [
+        "包说明",
+        "头像",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/avatar/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/avatar/package.json",
+      "summary": "配置 Avatar 的源码和双模块发布入口；声明 Context、Primitive、回调稳定化、水合状态与布局效应等内部依赖。",
+      "tags": [
+        "包配置",
+        "头像",
+        "水合兼容"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/avatar/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/avatar/tsconfig.json",
+      "summary": "限定头像组件源码的 TypeScript 编译范围，并通过共享配置统一 React 库类型检查。",
+      "tags": [
+        "编译配置",
+        "类型检查",
+        "头像"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/react/avatar/package.json",
+      "target": "file:packages/react/avatar/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/avatar/README.md",
+      "target": "config:packages/react/avatar/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

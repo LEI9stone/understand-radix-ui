@@ -1,0 +1,35 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "packages/react/hover-card/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/hover-card/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/hover-card/package.json",
+      "language": "json",
+      "sizeLines": 81,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/hover-card/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "packages/react/hover-card/CHANGELOG.md": [],
+    "packages/react/hover-card/README.md": [],
+    "packages/react/hover-card/package.json": [],
+    "packages/react/hover-card/tsconfig.json": []
+  }
+}

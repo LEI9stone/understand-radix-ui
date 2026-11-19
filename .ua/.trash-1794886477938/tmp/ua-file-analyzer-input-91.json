@@ -1,0 +1,194 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "packages/react/roving-focus/src/roving-focus-group.tsx",
+      "language": "typescript",
+      "sizeLines": 407,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/scroll-area/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/select/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/select/src/select.test.tsx",
+      "language": "typescript",
+      "sizeLines": 2046,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/select/src/select.tsx",
+      "language": "typescript",
+      "sizeLines": 2094,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/separator/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/separator/src/separator.test.tsx",
+      "language": "typescript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/separator/src/separator.tsx",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slider/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slider/src/slider.test.tsx",
+      "language": "typescript",
+      "sizeLines": 1242,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slider/src/slider.tsx",
+      "language": "typescript",
+      "sizeLines": 1099,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slot/src/__snapshots__/slot.test.tsx.snap",
+      "language": "snap",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slot/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slot/src/slot.test.tsx",
+      "language": "typescript",
+      "sizeLines": 782,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slot/src/slot.tsx",
+      "language": "typescript",
+      "sizeLines": 288,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/switch/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/switch/src/switch.test.tsx",
+      "language": "typescript",
+      "sizeLines": 581,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/switch/src/switch.tsx",
+      "language": "typescript",
+      "sizeLines": 445,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/tabs/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/tabs/src/tabs.test.tsx",
+      "language": "typescript",
+      "sizeLines": 403,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/tabs/src/tabs.tsx",
+      "language": "typescript",
+      "sizeLines": 312,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toast/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toast/src/toast.test.tsx",
+      "language": "typescript",
+      "sizeLines": 675,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toast/src/toast.tsx",
+      "language": "typescript",
+      "sizeLines": 1040,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toggle-group/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "packages/react/roving-focus/src/roving-focus-group.tsx": [],
+    "packages/react/scroll-area/src/index.ts": [],
+    "packages/react/select/src/index.ts": [],
+    "packages/react/select/src/select.test.tsx": [
+      "packages/react/select/src/select.tsx"
+    ],
+    "packages/react/select/src/select.tsx": [],
+    "packages/react/separator/src/index.ts": [],
+    "packages/react/separator/src/separator.test.tsx": [
+      "packages/react/separator/src/separator.tsx"
+    ],
+    "packages/react/separator/src/separator.tsx": [],
+    "packages/react/slider/src/index.ts": [],
+    "packages/react/slider/src/slider.test.tsx": [
+      "packages/react/slider/src/slider.tsx"
+    ],
+    "packages/react/slider/src/slider.tsx": [],
+    "packages/react/slot/src/__snapshots__/slot.test.tsx.snap": [],
+    "packages/react/slot/src/index.ts": [],
+    "packages/react/slot/src/slot.test.tsx": [
+      "packages/react/slot/src/slot.tsx"
+    ],
+    "packages/react/slot/src/slot.tsx": [],
+    "packages/react/switch/src/index.ts": [],
+    "packages/react/switch/src/switch.test.tsx": [],
+    "packages/react/switch/src/switch.tsx": [],
+    "packages/react/tabs/src/index.ts": [],
+    "packages/react/tabs/src/tabs.test.tsx": [
+      "packages/react/tabs/src/tabs.tsx"
+    ],
+    "packages/react/tabs/src/tabs.tsx": [],
+    "packages/react/toast/src/index.ts": [],
+    "packages/react/toast/src/toast.test.tsx": [
+      "packages/react/toast/src/toast.tsx"
+    ],
+    "packages/react/toast/src/toast.tsx": [],
+    "packages/react/toggle-group/src/index.ts": []
+  }
+}

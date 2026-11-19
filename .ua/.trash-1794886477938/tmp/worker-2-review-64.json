@@ -1,0 +1,119 @@
+{
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "results": [
+    {
+      "path": "packages/react/switch/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 85,
+      "nonEmptyLines": 49,
+      "sections": [
+        "@radix-ui/react-switch",
+        "1.4.1",
+        "1.4.0",
+        "1.3.8",
+        "1.3.7",
+        "1.3.6",
+        "1.3.5",
+        "1.3.4",
+        "1.3.3",
+        "1.3.2",
+        "1.3.1",
+        "1.3.0",
+        "1.2.6",
+        "1.2.5",
+        "1.2.4",
+        "1.2.3",
+        "1.2.2",
+        "1.2.1",
+        "1.2.0"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 19
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/switch/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        "`react-switch`"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/switch/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 77,
+      "nonEmptyLines": 77,
+      "sections": [
+        "name",
+        "version",
+        "license",
+        "source",
+        "main",
+        "module",
+        "publishConfig",
+        "files",
+        "sideEffects",
+        "scripts",
+        "dependencies",
+        "devDependencies",
+        "peerDependencies",
+        "peerDependenciesMeta",
+        "homepage",
+        "repository",
+        "bugs"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/switch/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        "extends",
+        "compilerOptions",
+        "include",
+        "exclude"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      },
+      "calls": [],
+      "exports": []
+    }
+  ]
+}

@@ -1,0 +1,1881 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "type": "file",
+      "name": "roving-focus-group.tsx",
+      "filePath": "packages/react/roving-focus/src/roving-focus-group.tsx",
+      "summary": "维护组内唯一 Tab 停靠点，按方向、循环、激活项与水合阶段注册可聚焦集合，提供方向键和出入组焦点行为。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "roving-focus"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/roving-focus/src/roving-focus-group.tsx:getFocusIntent",
+      "type": "function",
+      "name": "getFocusIntent",
+      "filePath": "packages/react/roving-focus/src/roving-focus-group.tsx",
+      "lineRange": [
+        369,
+        378
+      ],
+      "summary": "将方向感知的按键映射为首项、末项、前项或后项意图，并按导航轴过滤无效方向键。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "roving-focus"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/roving-focus/src/roving-focus-group.tsx:RovingFocusGroup",
+      "type": "function",
+      "name": "RovingFocusGroup",
+      "filePath": "packages/react/roving-focus/src/roving-focus-group.tsx",
+      "lineRange": [
+        86,
+        94
+      ],
+      "summary": "以集合 Provider 和 Slot 包裹内部根，使焦点项能够按 DOM 顺序注册。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "roving-focus"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/roving-focus/src/roving-focus-group.tsx:RovingFocusGroupImpl",
+      "type": "function",
+      "name": "RovingFocusGroupImpl",
+      "filePath": "packages/react/roving-focus/src/roving-focus-group.tsx",
+      "lineRange": [
+        115,
+        209
+      ],
+      "summary": "管理当前 Tab 停靠点和可聚焦项数量，进入组时优先聚焦 active 或上次项目，并处理 Shift+Tab 离组。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "roving-focus"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/roving-focus/src/roving-focus-group.tsx:RovingFocusGroupItem",
+      "type": "function",
+      "name": "RovingFocusGroupItem",
+      "filePath": "packages/react/roving-focus/src/roving-focus-group.tsx",
+      "lineRange": [
+        235,
+        346
+      ],
+      "summary": "注册可聚焦项，在水合前后采用不同 effect 时序，按导航意图移动焦点并暴露当前停靠状态。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "roving-focus"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/scroll-area/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/scroll-area/src/index.ts",
+      "summary": "重新导出 scroll-area 的公开组合部件、简短别名和属性类型，定义消费者的包级入口。",
+      "tags": [
+        "公共入口",
+        "模块边界",
+        "scroll-area"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/select/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/select/src/index.ts",
+      "summary": "重新导出 select 的公开组合部件、简短别名和属性类型，定义消费者的包级入口。",
+      "tags": [
+        "公共入口",
+        "模块边界",
+        "select"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/select/src/select.test.tsx",
+      "type": "file",
+      "name": "select.test.tsx",
+      "filePath": "packages/react/select/src/select.test.tsx",
+      "summary": "覆盖 Select 清空值、禁用项、键盘后代边界、表单重置、各部件属性转发、滚动按钮和原生 change 冒泡的回归测试。",
+      "tags": [
+        "单元测试",
+        "回归验证",
+        "select"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/select/src/select.test.tsx:SelectTest",
+      "type": "function",
+      "name": "SelectTest",
+      "filePath": "packages/react/select/src/select.test.tsx",
+      "lineRange": [
+        11,
+        29
+      ],
+      "summary": "构造带 apple 和 banana 的标准 Select，供 ARIA、表单和事件测试复用。",
+      "tags": [
+        "单元测试",
+        "回归验证",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.test.tsx:SelectClearableTest",
+      "type": "function",
+      "name": "SelectClearableTest",
+      "filePath": "packages/react/select/src/select.test.tsx",
+      "lineRange": [
+        31,
+        52
+      ],
+      "summary": "加入空值选项构造可清空 Select，验证取消选择和占位恢复。",
+      "tags": [
+        "单元测试",
+        "回归验证",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.test.tsx:fakeViewportScroll",
+      "type": "function",
+      "name": "fakeViewportScroll",
+      "filePath": "packages/react/select/src/select.test.tsx",
+      "lineRange": [
+        524,
+        541
+      ],
+      "summary": "在 jsdom 中覆写视口滚动尺寸并分发 scroll，使滚动按钮能够进入测试状态。",
+      "tags": [
+        "单元测试",
+        "回归验证",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/select/src/select.tsx",
+      "type": "file",
+      "name": "select.tsx",
+      "filePath": "packages/react/select/src/select.tsx",
+      "summary": "将可控值、选项集合、键盘搜索、模态焦点与定位组合成 Select，并以隐藏原生 select 同步表单和用户选择事件。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectProvider",
+      "type": "function",
+      "name": "SelectProvider",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        168,
+        301
+      ],
+      "summary": "维护打开状态、选中值、触发器和原生选项集合，记录用户选择并恢复表单初值。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:Select",
+      "type": "function",
+      "name": "Select",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        307,
+        327
+      ],
+      "summary": "组合 SelectProvider 与默认隐藏输入，在表单场景自动添加 BubbleInput。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectPortal",
+      "type": "function",
+      "name": "SelectPortal",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        528,
+        535
+      ],
+      "summary": "提供强制挂载上下文并将 Select 内容传送到消费者指定容器。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:useTypeaheadSearch",
+      "type": "function",
+      "name": "useTypeaheadSearch",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1959,
+        1990
+      ],
+      "summary": "累积一秒内输入字符，通过稳定回调发布搜索变化并提供显式重置与卸载清理。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:findNextItem",
+      "type": "function",
+      "name": "findNextItem",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        2009,
+        2024
+      ],
+      "summary": "规范化重复字符搜索，从当前项向后循环寻找文本前缀匹配的下一个选项。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectTrigger",
+      "type": "function",
+      "name": "SelectTrigger",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        340,
+        438
+      ],
+      "summary": "创建 combobox 按钮，处理鼠标、触摸和键盘打开，关闭时支持输入搜索选择并同步有效 ARIA 控件引用。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectValue",
+      "type": "function",
+      "name": "SelectValue",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        454,
+        482
+      ],
+      "summary": "记录值显示容器与自定义子内容，在空值时显示占位并阻止传送选中文本的事件回流。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectIcon",
+      "type": "function",
+      "name": "SelectIcon",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        493,
+        500
+      ],
+      "summary": "渲染对辅助技术隐藏的选择器图标，缺省为向下三角。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectContent",
+      "type": "function",
+      "name": "SelectContent",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        553,
+        580
+      ],
+      "summary": "用 Presence 保留退出动画；关闭后将选项挂载到分离片段，持续收集文本与原生 option 数据。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectContentFragment",
+      "type": "function",
+      "name": "SelectContentFragment",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        595,
+        606
+      ],
+      "summary": "把未显示选项传送到 DocumentFragment，使集合和原生选项仍更新而不显示列表。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectContentImpl",
+      "type": "function",
+      "name": "SelectContentImpl",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        679,
+        975
+      ],
+      "summary": "组合滚动锁、焦点域和可关闭层，隐藏外部内容、定位并聚焦选中项，处理按键导航和外部释放指针。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectItemAlignedPosition",
+      "type": "function",
+      "name": "SelectItemAlignedPosition",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        988,
+        1200
+      ],
+      "summary": "测量触发器、值文本和选中项，将浮层与文本对齐并按可用窗口高度、滚动按钮及方向约束尺寸。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectPopperPosition",
+      "type": "function",
+      "name": "SelectPopperPosition",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1214,
+        1244
+      ],
+      "summary": "将 Select 内容交给 Popper 定位和碰撞检测，并把定位 CSS 变量映射为 Select 命名空间。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectViewport",
+      "type": "function",
+      "name": "SelectViewport",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1271,
+        1337
+      ],
+      "summary": "建立可滚动选项容器，隐藏原生滚动条，并在 item-aligned 模式滚动时向可用窗口高度扩展内容。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectGroup",
+      "type": "function",
+      "name": "SelectGroup",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1355,
+        1363
+      ],
+      "summary": "创建带共享标签 id 的 option 分组，以 aria-labelledby 关联组标签。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectLabel",
+      "type": "function",
+      "name": "SelectLabel",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1376,
+        1380
+      ],
+      "summary": "读取组标签 id 并渲染分组的名称节点。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectItem",
+      "type": "function",
+      "name": "SelectItem",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1408,
+        1532
+      ],
+      "summary": "注册选项值、禁用和搜索文本，处理鼠标释放、触摸点击与键盘选择，并维护焦点和选中语义。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectItemText",
+      "type": "function",
+      "name": "SelectItemText",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1545,
+        1594
+      ],
+      "summary": "收集选项文本生成原生 option，将选中项内容传送到触发器值容器并维护选项注册。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectItemIndicator",
+      "type": "function",
+      "name": "SelectItemIndicator",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1611,
+        1617
+      ],
+      "summary": "仅为已选项渲染对辅助技术隐藏的视觉选中指示。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectScrollUpButton",
+      "type": "function",
+      "name": "SelectScrollUpButton",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1632,
+        1662
+      ],
+      "summary": "观察列表顶部滚动余量，按可滚动状态显示按钮并以选中项高度向上自动滚动。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectScrollDownButton",
+      "type": "function",
+      "name": "SelectScrollDownButton",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1677,
+        1710
+      ],
+      "summary": "观察列表底部滚动余量并兼容缩放小数偏移，按选中项高度向下自动滚动。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectScrollButtonImpl",
+      "type": "function",
+      "name": "SelectScrollButtonImpl",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1721,
+        1768
+      ],
+      "summary": "在指针按下或悬停时定时滚动，离开与卸载时清理计时器，并保持焦点项可见。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectSeparator",
+      "type": "function",
+      "name": "SelectSeparator",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1783,
+        1786
+      ],
+      "summary": "渲染对辅助技术隐藏的选项列表分隔元素。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectArrow",
+      "type": "function",
+      "name": "SelectArrow",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1800,
+        1807
+      ],
+      "summary": "仅在 Popper 定位模式渲染定位箭头，转发作用域与箭头属性。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/select/src/select.tsx:SelectBubbleInput",
+      "type": "function",
+      "name": "SelectBubbleInput",
+      "filePath": "packages/react/select/src/select.tsx",
+      "lineRange": [
+        1825,
+        1946
+      ],
+      "summary": "同步隐藏原生 select 的值与 options，支持表单自动填充，区分用户选择和程序更新的 change 冒泡。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "select"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/separator/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/separator/src/index.ts",
+      "summary": "重新导出 separator 的公开组合部件、简短别名和属性类型，定义消费者的包级入口。",
+      "tags": [
+        "公共入口",
+        "模块边界",
+        "separator"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/separator/src/separator.test.tsx",
+      "type": "file",
+      "name": "separator.test.tsx",
+      "filePath": "packages/react/separator/src/separator.test.tsx",
+      "summary": "验证 Separator 的属性、样式、事件和 ref 传递，以及 asChild 与纵向装饰模式的语义。",
+      "tags": [
+        "单元测试",
+        "回归验证",
+        "separator"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/separator/src/separator.tsx",
+      "type": "file",
+      "name": "separator.tsx",
+      "filePath": "packages/react/separator/src/separator.tsx",
+      "summary": "在 Primitive.div 上提供水平或垂直分隔线语义，可切换为装饰性元素并回退非法方向。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "separator"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/separator/src/separator.tsx:Separator",
+      "type": "function",
+      "name": "Separator",
+      "filePath": "packages/react/separator/src/separator.tsx",
+      "lineRange": [
+        32,
+        49
+      ],
+      "summary": "验证方向后创建分隔线，按 decorative 决定 separator 或 none 角色并转发宿主属性。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "separator"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/slider/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/slider/src/index.ts",
+      "summary": "重新导出 slider 的公开组合部件、简短别名和属性类型，定义消费者的包级入口。",
+      "tags": [
+        "公共入口",
+        "模块边界",
+        "slider"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/slider/src/slider.test.tsx",
+      "type": "file",
+      "name": "slider.test.tsx",
+      "filePath": "packages/react/slider/src/slider.test.tsx",
+      "summary": "验证偏离步进网格、滑块交叉和保序、表单重置、引用稳定性及部件属性传递和隐藏输入事件。",
+      "tags": [
+        "单元测试",
+        "回归验证",
+        "slider"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/slider/src/slider.test.tsx:shimBoundingClientRect",
+      "type": "function",
+      "name": "shimBoundingClientRect",
+      "filePath": "packages/react/slider/src/slider.test.tsx",
+      "lineRange": [
+        1229,
+        1242
+      ],
+      "summary": "覆写元素矩形测量结果，为滑块拖动测试提供确定的边界和尺寸。",
+      "tags": [
+        "单元测试",
+        "回归验证",
+        "slider"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/slider/src/slider.tsx",
+      "type": "file",
+      "name": "slider.tsx",
+      "filePath": "packages/react/slider/src/slider.tsx",
+      "summary": "实现单值或多值滑块，处理方向与指针坐标、步进精度、Thumb 排序或保序、最小间距、表单重置和冒泡输入。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slider"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/slider/src/slider.tsx:SliderThumbProvider",
+      "type": "function",
+      "name": "SliderThumbProvider",
+      "filePath": "packages/react/slider/src/slider.tsx",
+      "lineRange": [
+        661,
+        712
+      ],
+      "summary": "根据集合顺序识别 Thumb 索引，观察尺寸并共享数值、表单名称和百分比位置。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slider"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/slider/src/slider.tsx:getDecimalCount",
+      "type": "function",
+      "name": "getDecimalCount",
+      "filePath": "packages/react/slider/src/slider.tsx",
+      "lineRange": [
+        1011,
+        1029
+      ],
+      "summary": "识别普通或科学计数法数值的小数精度，避免极小步进在序列化后被误判。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slider"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/slider/src/slider.tsx:getNextStepValue",
+      "type": "function",
+      "name": "getNextStepValue",
+      "filePath": "packages/react/slider/src/slider.tsx",
+      "lineRange": [
+        1036,
+        1066
+      ],
+      "summary": "判断当前值是否对齐以 min 为基准的步进网格，按方向与倍率找到下一个合法步进值并舍入。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slider"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/slider/src/slider.tsx:Slider",
+      "type": "function",
+      "name": "Slider",
+      "filePath": "packages/react/slider/src/slider.tsx",
+      "lineRange": [
+        112,
+        302
+      ],
+      "summary": "维护数值数组和活动 Thumb，按步进、边界与最小间距更新值，支持保序、表单重置及键盘和拖动提交。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slider"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/slider/src/slider.tsx:SliderHorizontal",
+      "type": "function",
+      "name": "SliderHorizontal",
+      "filePath": "packages/react/slider/src/slider.tsx",
+      "lineRange": [
+        347,
+        413
+      ],
+      "summary": "根据 LTR/RTL 与 inverted 把横向指针坐标转换为数值，并提供起止边、尺寸和导航方向。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slider"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/slider/src/slider.tsx:SliderVertical",
+      "type": "function",
+      "name": "SliderVertical",
+      "filePath": "packages/react/slider/src/slider.tsx",
+      "lineRange": [
+        424,
+        486
+      ],
+      "summary": "将纵向坐标映射为数值，按 inverted 确定由底或顶增长并转换键盘步进方向。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slider"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/slider/src/slider.tsx:SliderImpl",
+      "type": "function",
+      "name": "SliderImpl",
+      "filePath": "packages/react/slider/src/slider.tsx",
+      "lineRange": [
+        506,
+        565
+      ],
+      "summary": "统一宿主的键盘与指针捕获，调用方向层的移动回调并控制 Thumb 的焦点可见性。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slider"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/slider/src/slider.tsx:SliderTrack",
+      "type": "function",
+      "name": "SliderTrack",
+      "filePath": "packages/react/slider/src/slider.tsx",
+      "lineRange": [
+        577,
+        588
+      ],
+      "summary": "渲染滑轨并从 Slider 上下文暴露方向与禁用数据属性。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slider"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/slider/src/slider.tsx:SliderRange",
+      "type": "function",
+      "name": "SliderRange",
+      "filePath": "packages/react/slider/src/slider.tsx",
+      "lineRange": [
+        600,
+        626
+      ],
+      "summary": "将滑块值换算为百分比，按方向起止边绘制已选区间。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slider"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/slider/src/slider.tsx:SliderThumbTrigger",
+      "type": "function",
+      "name": "SliderThumbTrigger",
+      "filePath": "packages/react/slider/src/slider.tsx",
+      "lineRange": [
+        727,
+        777
+      ],
+      "summary": "以滑块角色暴露最小最大和当前值，按尺寸补偿边缘位置并将焦点设置为活动 Thumb。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slider"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/slider/src/slider.tsx:SliderThumb",
+      "type": "function",
+      "name": "SliderThumb",
+      "filePath": "packages/react/slider/src/slider.tsx",
+      "lineRange": [
+        787,
+        813
+      ],
+      "summary": "组合 Thumb Provider、交互触发器及表单隐藏输入，保留消费者 ref 与自定义名字。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slider"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/slider/src/slider.tsx:SliderBubbleInput",
+      "type": "function",
+      "name": "SliderBubbleInput",
+      "filePath": "packages/react/slider/src/slider.tsx",
+      "lineRange": [
+        831,
+        913
+      ],
+      "summary": "以隐藏 input 同步每个 Thumb 值，识别用户请求并阻止程序更新的 input 事件传播到祖先。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slider"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/slot/src/__snapshots__/slot.test.tsx.snap",
+      "type": "file",
+      "name": "slot.test.tsx.snap",
+      "filePath": "packages/react/slot/src/__snapshots__/slot.test.tsx.snap",
+      "summary": "保存 Slot 将按钮组合为链接或普通按钮时的 DOM 快照，覆盖左右图标、嵌套 Slottable 和懒加载子元素。",
+      "tags": [
+        "单元测试",
+        "回归验证",
+        "slot"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/slot/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/slot/src/index.ts",
+      "summary": "重新导出 slot 的公开组合部件、简短别名和属性类型，定义消费者的包级入口。",
+      "tags": [
+        "公共入口",
+        "模块边界",
+        "slot"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "function:packages/react/roving-focus/src/roving-focus-group.tsx:getFocusIntent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "function:packages/react/roving-focus/src/roving-focus-group.tsx:RovingFocusGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "function:packages/react/roving-focus/src/roving-focus-group.tsx:RovingFocusGroup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "function:packages/react/roving-focus/src/roving-focus-group.tsx:RovingFocusGroupImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "function:packages/react/roving-focus/src/roving-focus-group.tsx:RovingFocusGroupItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "function:packages/react/roving-focus/src/roving-focus-group.tsx:RovingFocusGroupItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.test.tsx",
+      "target": "function:packages/react/select/src/select.test.tsx:SelectTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.test.tsx",
+      "target": "function:packages/react/select/src/select.test.tsx:SelectClearableTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.test.tsx",
+      "target": "function:packages/react/select/src/select.test.tsx:fakeViewportScroll",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.test.tsx",
+      "target": "file:packages/react/select/src/select.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:Select",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:Select",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectPortal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectPortal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:useTypeaheadSearch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:findNextItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectValue",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectIcon",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectContentFragment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectContentImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectItemAlignedPosition",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectPopperPosition",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectViewport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectViewport",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectGroup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectLabel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectItemText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectItemText",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectItemIndicator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectItemIndicator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectScrollUpButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectScrollUpButton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectScrollDownButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectScrollDownButton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectScrollButtonImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectSeparator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectSeparator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectArrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectArrow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectBubbleInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "function:packages/react/select/src/select.tsx:SelectBubbleInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/separator/src/separator.test.tsx",
+      "target": "file:packages/react/separator/src/separator.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/separator/src/separator.tsx",
+      "target": "function:packages/react/separator/src/separator.tsx:Separator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/separator/src/separator.tsx",
+      "target": "function:packages/react/separator/src/separator.tsx:Separator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.test.tsx",
+      "target": "function:packages/react/slider/src/slider.test.tsx:shimBoundingClientRect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.test.tsx",
+      "target": "file:packages/react/slider/src/slider.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderThumbProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderThumbProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:getDecimalCount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:getNextStepValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:Slider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:Slider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderHorizontal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderVertical",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderTrack",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderTrack",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderRange",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderRange",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderThumbTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderThumbTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderThumb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderThumb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderBubbleInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderBubbleInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "file:packages/react/collection/src/collection.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "file:packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "file:packages/react/direction/src/direction.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "file:packages/react/use-is-hydrated/src/use-is-hydrated.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/collection/src/collection.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/direction/src/direction.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/popper/src/popper.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/portal/src/portal.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/presence/src/presence.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/slot/src/slot.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/visually-hidden/src/visually-hidden.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "file:packages/react/direction/src/direction.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "file:packages/react/use-size/src/use-size.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "file:packages/react/collection/src/collection.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/separator/src/separator.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/react/select/src/select.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/separator/src/separator.tsx",
+      "target": "file:packages/react/separator/src/separator.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "file:packages/react/slider/src/slider.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "function:packages/react/select/src/select.tsx:Select",
+      "target": "function:packages/react/select/src/select.tsx:SelectProvider",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/select/src/select.tsx:Select",
+      "target": "function:packages/react/select/src/select.tsx:SelectBubbleInput",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/select/src/select.tsx:SelectContent",
+      "target": "function:packages/react/select/src/select.tsx:SelectContentImpl",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/select/src/select.tsx:SelectContentImpl",
+      "target": "function:packages/react/select/src/select.tsx:SelectItemAlignedPosition",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/select/src/select.tsx:SelectContentImpl",
+      "target": "function:packages/react/select/src/select.tsx:SelectPopperPosition",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/slider/src/slider.tsx:Slider",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderHorizontal",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/slider/src/slider.tsx:Slider",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderVertical",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/slider/src/slider.tsx:SliderThumb",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderThumbProvider",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/slider/src/slider.tsx:SliderThumb",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderThumbTrigger",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/slider/src/slider.tsx:SliderThumb",
+      "target": "function:packages/react/slider/src/slider.tsx:SliderBubbleInput",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/index.ts",
+      "target": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/select/src/index.ts",
+      "target": "file:packages/react/select/src/select.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/separator/src/index.ts",
+      "target": "file:packages/react/separator/src/separator.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/slider/src/index.ts",
+      "target": "file:packages/react/slider/src/slider.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/slot/src/index.ts",
+      "target": "file:packages/react/slot/src/slot.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "target": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/select/src/select.tsx",
+      "target": "file:packages/core/number/src/number.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/slider/src/slider.tsx",
+      "target": "file:packages/core/number/src/number.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

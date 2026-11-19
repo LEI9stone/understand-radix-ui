@@ -1,0 +1,283 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 4
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/form/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 74,
+      "nonEmptyLines": 41,
+      "sections": [
+        {
+          "heading": "@radix-ui/react-form",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "0.3.0",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "0.2.0",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "0.1.16",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "0.1.15",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "0.1.14",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "0.1.13",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "0.1.12",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "> IMPORTANT: `@radix-ui/react-context` is marked for a minor release since it introduces additive overloaded types and function arguments. At release time, changesets will determine that its dependents should also be marked for a minor release, but this is not the case since it the only change for those packages impacts internal usage. In `radix-ui` this export is exposed from the `internal` module, whose exports do not impact public API and therefore do not follow semver.",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Other updates",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "0.1.11",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "0.1.10",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "0.1.9",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "0.1.8",
+          "level": 2,
+          "line": 55
+        },
+        {
+          "heading": "0.1.7",
+          "level": 2,
+          "line": 59
+        },
+        {
+          "heading": "0.1.6",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "0.1.5",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "0.1.4",
+          "level": 2,
+          "line": 72
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "packages/react/form/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        {
+          "heading": "`react-form`",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "packages/react/form/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 77,
+      "nonEmptyLines": 77,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "license",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "source",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "main",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "module",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "publishConfig",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "files",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "sideEffects",
+          "level": 1,
+          "line": 29
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 30
+        },
+        {
+          "heading": "dependencies",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 45
+        },
+        {
+          "heading": "peerDependencies",
+          "level": 1,
+          "line": 54
+        },
+        {
+          "heading": "peerDependenciesMeta",
+          "level": 1,
+          "line": 60
+        },
+        {
+          "heading": "homepage",
+          "level": 1,
+          "line": 68
+        },
+        {
+          "heading": "repository",
+          "level": 1,
+          "line": 69
+        },
+        {
+          "heading": "bugs",
+          "level": 1,
+          "line": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": "packages/react/form/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "extends",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "exclude",
+          "level": 1,
+          "line": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

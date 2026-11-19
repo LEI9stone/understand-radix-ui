@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/collapsible/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/collapsible/CHANGELOG.md",
+      "summary": "记录 Collapsible 的回调参数类型回归修复、可选类型兼容、内容卸载后的 aria-controls 修复及 RSC/tree-shaking 调整。",
+      "tags": [
+        "变更记录",
+        "折叠内容",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/collapsible/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/collapsible/README.md",
+      "summary": "将 Collapsible 使用者引导至官方折叠容器组件文档。",
+      "tags": [
+        "组件文档",
+        "折叠内容",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/collapsible/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/collapsible/package.json",
+      "summary": "配置 Collapsible 的双模块发布，声明 Context、Presence、可控状态、ID 与布局效应依赖，支持状态与动画驱动的折叠内容。",
+      "tags": [
+        "包清单",
+        "折叠内容",
+        "依赖配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/collapsible/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/collapsible/tsconfig.json",
+      "summary": "为 Collapsible 的 src 启用共享 React 库编译配置，并将输出设为 dist。",
+      "tags": [
+        "类型配置",
+        "折叠内容",
+        "构建配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/collapsible/README.md",
+      "target": "config:packages/react/collapsible/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/collapsible/CHANGELOG.md",
+      "target": "config:packages/react/collapsible/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/collapsible/tsconfig.json",
+      "target": "config:internal/typescript-config/react-library.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

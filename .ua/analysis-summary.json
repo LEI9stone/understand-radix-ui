@@ -1,0 +1,291 @@
+{
+  "project": {
+    "name": "primitives",
+    "languages": [
+      "css",
+      "html",
+      "javascript",
+      "json",
+      "markdown",
+      "mts",
+      "patch",
+      "snap",
+      "typescript",
+      "unknown",
+      "yaml"
+    ],
+    "frameworks": [
+      "React",
+      "Vite",
+      "Vitest",
+      "GitHub Actions"
+    ],
+    "description": "Radix Primitives 是用于构建设计系统和 Web 应用的开源底层 UI 组件库，注重无障碍访问、可定制性和开发体验。注意：该项目包含超过 100 个源文件，后续可将分析范围限定到子目录以加快处理。",
+    "analyzedAt": "2026-11-17T03:33:09.996Z",
+    "gitCommitHash": "eb3a2b7091293e27df8f9ba906632d8daa3d81a3"
+  },
+  "fileCount": 694,
+  "filesByCategory": {
+    "docs": 155,
+    "code": 346,
+    "config": 154,
+    "infra": 4,
+    "markup": 35
+  },
+  "stats": {
+    "totalNodes": 1574,
+    "totalEdges": 2531,
+    "totalLayers": 10,
+    "tourSteps": 14,
+    "nodeTypes": {
+      "file": 381,
+      "function": 875,
+      "class": 5,
+      "pipeline": 4,
+      "document": 155,
+      "config": 154
+    },
+    "edgeTypes": {
+      "imports": 115,
+      "contains": 893,
+      "exports": 692,
+      "depends_on": 479,
+      "tested_by": 47,
+      "calls": 22,
+      "triggers": 2,
+      "deploys": 1,
+      "documents": 122,
+      "related": 54,
+      "configures": 104
+    }
+  },
+  "layers": [
+    {
+      "id": "layer:dom-foundation",
+      "name": "DOM 与组合基础",
+      "description": "提供核心 DOM/事件/几何工具、环境常量、Primitive、Slot、ref 合并及视觉隐藏语义，构成上层复合组件共享的最小组合基础。",
+      "files": 21
+    },
+    {
+      "id": "layer:shared-state-hooks",
+      "name": "共享状态与 Hook",
+      "description": "集中管理作用域 Context、DOM 顺序集合、阅读方向、稳定 ID、受控状态、回调和水合兼容及尺寸订阅，供各组件复用状态与生命周期逻辑。",
+      "files": 30
+    },
+    {
+      "id": "layer:overlay-focus",
+      "name": "浮层定位与焦点交互",
+      "description": "整合背景可访问性屏蔽、Popper 与箭头、Portal、Presence、焦点域和守卫、外部交互关闭与游走焦点，为模态和浮层组件提供交互机制。",
+      "files": 18
+    },
+    {
+      "id": "layer:accessible-components",
+      "name": "可访问复合组件",
+      "description": "组合基础原语实现对话框、菜单、选择器、表单、折叠内容、滑块、通知等面向使用者的无样式组件，并提供各独立包的部件与类型入口。",
+      "files": 66
+    },
+    {
+      "id": "layer:public-entrypoints",
+      "name": "统一导出与消费入口",
+      "description": "维护 radix-ui 聚合包的命名空间总入口、组件子路径、内部原语入口及实验性子路径，把独立组件包组织为统一消费界面。",
+      "files": 37
+    },
+    {
+      "id": "layer:test-verification",
+      "name": "测试与兼容性验证",
+      "description": "汇集组件单元测试、快照、Playwright 场景、性能基准、RSC 导入验证以及共享测试数据和模拟环境，验证可访问性、引用稳定性与浏览器交互契约。",
+      "files": 68
+    },
+    {
+      "id": "layer:examples-ssr",
+      "name": "组件示例与服务端演示",
+      "description": "通过 Storybook 故事及配套样式展示组件状态和组合方式，并用 Next.js 验证应用演示 SSR、水合、Portal 与 RSC 边界行为。",
+      "files": 125
+    },
+    {
+      "id": "layer:engineering-ci",
+      "name": "构建工具与持续交付",
+      "description": "实现内部包构建器、Changesets 日志扩展及补丁、引用稳定性静态检查、共享环境声明和 GitHub Actions，支撑构建、回归检查与包发布。",
+      "files": 14
+    },
+    {
+      "id": "layer:configuration",
+      "name": "工作区与编译配置",
+      "description": "集中定义各包和验证应用的发布清单、TypeScript 继承、pnpm 工作区、代码风格、测试运行器、Storybook 与 CI 复合动作等工程配置。",
+      "files": 160
+    },
+    {
+      "id": "layer:documentation",
+      "name": "设计原则与维护文档",
+      "description": "保存项目设计哲学、贡献与发布流程、组件使用文档入口、包版本历史、Changeset 说明和社区协作模板。",
+      "files": 155
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "项目定位与设计原则"
+    },
+    {
+      "order": 2,
+      "title": "DOM 与插槽组合"
+    },
+    {
+      "order": 3,
+      "title": "作用域与共享状态"
+    },
+    {
+      "order": 4,
+      "title": "集合与键盘焦点"
+    },
+    {
+      "order": 5,
+      "title": "挂载与动画生命周期"
+    },
+    {
+      "order": 6,
+      "title": "定位与模态交互"
+    },
+    {
+      "order": 7,
+      "title": "以对话框串起组合"
+    },
+    {
+      "order": 8,
+      "title": "菜单家族的复用边界"
+    },
+    {
+      "order": 9,
+      "title": "表单状态与原生契约"
+    },
+    {
+      "order": 10,
+      "title": "连续输入与通知反馈"
+    },
+    {
+      "order": 11,
+      "title": "公共入口与发布边界"
+    },
+    {
+      "order": 12,
+      "title": "行为测试与演示场景"
+    },
+    {
+      "order": 13,
+      "title": "服务端与水合兼容"
+    },
+    {
+      "order": 14,
+      "title": "构建与版本交付"
+    }
+  ],
+  "validation": {
+    "schemaValid": true,
+    "scannedFiles": 694,
+    "coveredFiles": 694,
+    "issues": []
+  },
+  "assemblyReview": {
+    "fixedSectionOk": true,
+    "nodesRecovered": 0,
+    "edgesRestored": 5,
+    "crossBatchEdgesAdded": 0,
+    "additionalEdgesAdded": 14,
+    "typesRemapped": 0,
+    "complexityRemapped": 0,
+    "notes": [
+      "完整读取129行合并报告：无大规模节点ID或复杂度修正，五项 could-not-fix 均为补充依赖边使用了不存在的实现文件名。",
+      "已以扫描清单、实际文件和入口导出确认 create-context.tsx 与 roving-focus-group.tsx，恢复五条 depends_on；未新增或伪造文件节点。",
+      "正式 importMap 共 115 条，全部已存在；未添加推测性 imports。",
+      "扫描清单 694 个文件全部有文件级节点；无图谱外文件路径、悬空边、非法节点类型或非法复杂度。",
+      "补充 14 条由已读 tsconfig include src 直接证明的 configures，连接孤立包配置与各自公开入口。",
+      "仍有 65 个孤立节点，多为独立变更说明、仓库模板、类型声明和构建辅助文件；孤立不表示文件遗漏，未为消除警告建立猜测关系。",
+      "主会话收到系统任务中断报告，但本地所有已执行工具均成功，系统未提供中断原因；已保留诊断并按一次恢复指令完成本阶段落盘。"
+    ],
+    "stats": {
+      "totalNodes": 1574,
+      "totalEdges": 2531,
+      "analyzedFiles": 694,
+      "coveredFiles": 694,
+      "imports": 115,
+      "orphanNodes": 65,
+      "missingFiles": 0,
+      "danglingEdges": 0
+    }
+  },
+  "warnings": [
+    "官方导入映射仅解析115条包内或应用内关系；workspaces别名相关依赖已依据源码以语义依赖补充，imports字段未被猜测扩充。",
+    "部分forwardRef、CSS、HTML、MTS、快照和patch未被结构提取器完整支持，已通过源码阅读补充节点与精确组件范围。",
+    "65个孤立节点多为独立文档、模板和声明文件，不表示文件缺失。",
+    "use-effect-event包README标题与包名不一致，未修改原始文档。",
+    "执行期间收到代理中断通知；已保留产物并完成续做，各代理报告本地提取与写入命令均成功。"
+  ],
+  "orphanWarnings": [
+    "Node 'document:.changeset/README.md' has no edges (orphan)",
+    "Node 'document:.changeset/calm-taps-close.md' has no edges (orphan)",
+    "Node 'document:.changeset/closing-menu-pointer-focus.md' has no edges (orphan)",
+    "Node 'document:.changeset/deep-breads-push.md' has no edges (orphan)",
+    "Node 'document:.changeset/five-zoos-smash.md' has no edges (orphan)",
+    "Node 'document:.changeset/fix-nested-context-menu-long-press.md' has no edges (orphan)",
+    "Node 'document:.changeset/hot-areas-teach.md' has no edges (orphan)",
+    "Node 'document:.changeset/lazy-scripts-skip.md' has no edges (orphan)",
+    "Node 'document:.changeset/lemon-experts-vanish.md' has no edges (orphan)",
+    "Node 'document:.changeset/ninety-roses-remain.md' has no edges (orphan)",
+    "Node 'document:.changeset/quiet-bats-defer.md' has no edges (orphan)",
+    "Node 'document:.changeset/quiet-kanji-wait.md' has no edges (orphan)",
+    "Node 'document:.changeset/slick-breads-tap.md' has no edges (orphan)",
+    "Node 'document:.changeset/smart-games-stick.md' has no edges (orphan)",
+    "Node 'document:.changeset/sweet-tigers-wink.md' has no edges (orphan)",
+    "Node 'document:.changeset/tame-bears-call.md' has no edges (orphan)",
+    "Node 'document:.changeset/warm-menus-stay.md' has no edges (orphan)",
+    "Node 'document:.github/ISSUE_TEMPLATE/Bug_report.md' has no edges (orphan)",
+    "Node 'document:.github/ISSUE_TEMPLATE/Documentation.md' has no edges (orphan)",
+    "Node 'document:.github/ISSUE_TEMPLATE/Feature_request.md' has no edges (orphan)",
+    "Node 'document:.github/ISSUE_TEMPLATE/Question.md' has no edges (orphan)",
+    "Node 'document:CODE_OF_CONDUCT.md' has no edges (orphan)",
+    "Node 'config:context7.json' has no edges (orphan)",
+    "Node 'config:internal/typescript-config/package.json' has no edges (orphan)",
+    "Node 'document:packages/core/env-check/CHANGELOG.md' has no edges (orphan)",
+    "Node 'document:packages/core/env-check/README.md' has no edges (orphan)",
+    "Node 'config:packages/core/env-check/package.json' has no edges (orphan)",
+    "Node 'document:packages/core/number/CHANGELOG.md' has no edges (orphan)",
+    "Node 'document:packages/core/number/README.md' has no edges (orphan)",
+    "Node 'config:packages/core/number/package.json' has no edges (orphan)",
+    "Node 'document:packages/react/accessible-icon/CHANGELOG.md' has no edges (orphan)",
+    "Node 'document:packages/react/accessible-icon/README.md' has no edges (orphan)",
+    "Node 'config:packages/react/accessible-icon/package.json' has no edges (orphan)",
+    "Node 'document:packages/react/avatar/CHANGELOG.md' has no edges (orphan)",
+    "Node 'document:packages/react/context/README.md' has no edges (orphan)",
+    "Node 'document:packages/react/dropdown-menu/CHANGELOG.md' has no edges (orphan)",
+    "Node 'document:packages/react/focus-guards/CHANGELOG.md' has no edges (orphan)",
+    "Node 'document:packages/react/form/README.md' has no edges (orphan)",
+    "Node 'document:packages/react/id/CHANGELOG.md' has no edges (orphan)",
+    "Node 'document:packages/react/portal/CHANGELOG.md' has no edges (orphan)",
+    "Node 'document:packages/react/slot/README.md' has no edges (orphan)",
+    "Node 'document:packages/react/tabs/CHANGELOG.md' has no edges (orphan)",
+    "Node 'document:packages/react/toast/README.md' has no edges (orphan)",
+    "Node 'document:packages/react/toolbar/CHANGELOG.md' has no edges (orphan)",
+    "Node 'document:packages/react/use-layout-effect/CHANGELOG.md' has no edges (orphan)",
+    "Node 'file:.github/CODEOWNERS' has no edges (orphan)",
+    "Node 'document:.github/CONTRIBUTING.md' has no edges (orphan)",
+    "Node 'document:.github/PULL_REQUEST_TEMPLATE.md' has no edges (orphan)",
+    "Node 'config:.github/actions/detect-snapshot-changes/action.yml' has no edges (orphan)",
+    "Node 'config:.ua/config.json' has no edges (orphan)",
+    "Node 'file:apps/ssr-testing/next.config.js' has no edges (orphan)",
+    "Node 'file:apps/storybook/.storybook/manager-head.html' has no edges (orphan)",
+    "Node 'file:apps/storybook/.storybook/manager.ts' has no edges (orphan)",
+    "Node 'file:apps/storybook/index.d.ts' has no edges (orphan)",
+    "Node 'config:e2e/tsconfig.json' has no edges (orphan)",
+    "Node 'config:internal/test-utils/tsconfig.json' has no edges (orphan)",
+    "Node 'file:internal/typescript-config/react-library/index.d.ts' has no edges (orphan)",
+    "Node 'file:packages/core/env-check/src/index.ts' has no edges (orphan)",
+    "Node 'file:packages/core/env-check/src/internal/is-development.false.ts' has no edges (orphan)",
+    "Node 'file:packages/core/primitive/src/types.ts' has no edges (orphan)",
+    "Node 'file:packages/react/slot/src/__snapshots__/slot.test.tsx.snap' has no edges (orphan)",
+    "Node 'file:playwright.config.ts' has no edges (orphan)",
+    "Node 'file:scripts/check-composed-refs.mjs' has no edges (orphan)",
+    "Node 'file:types/global.d.ts' has no edges (orphan)",
+    "Node 'file:types/index.d.ts' has no edges (orphan)"
+  ],
+  "sourceCodeChanged": false
+}

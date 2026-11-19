@@ -1,0 +1,178 @@
+{
+  "nodes": [
+    {
+      "id": "config:.oxfmtrc.json",
+      "type": "config",
+      "name": ".oxfmtrc.json",
+      "filePath": ".oxfmtrc.json",
+      "summary": "配置 oxfmt 的行宽、单引号、package.json 排序与忽略范围，统一仓库格式化结果。",
+      "tags": [
+        "格式化",
+        "工程配置",
+        "代码风格"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.oxlintrc.json",
+      "type": "config",
+      "name": ".oxlintrc.json",
+      "filePath": ".oxlintrc.json",
+      "summary": "配置 oxlint 的插件、运行环境、规则集和路径覆盖，集中管理 React 与 TypeScript 代码检查。",
+      "tags": [
+        "静态检查",
+        "工程配置",
+        "质量约束"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "AGENTS.md",
+      "summary": "说明 pnpm monorepo 架构、开发命令、新包结构、测试偏好和 PR 检查事项，为仓库协作提供约定。",
+      "tags": [
+        "协作规范",
+        "开发指南",
+        "质量检查"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:CODE_OF_CONDUCT.md",
+      "type": "document",
+      "name": "CODE_OF_CONDUCT.md",
+      "filePath": "CODE_OF_CONDUCT.md",
+      "summary": "定义社区贡献者的行为标准、维护者责任、适用范围和违规处理方式。",
+      "tags": [
+        "社区治理",
+        "行为准则",
+        "贡献规范"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "介绍 Radix Primitives 的低层可访问组件定位，以及安装、文档、发布、贡献和社区入口。",
+      "tags": [
+        "项目概览",
+        "入门指南",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:context7.json",
+      "type": "config",
+      "name": "context7.json",
+      "filePath": "context7.json",
+      "summary": "配置项目的 Context7 文档来源 URL 与公开标识，供外部文档索引关联本仓库。",
+      "tags": [
+        "文档索引",
+        "工程配置",
+        "外部集成"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "定义 primitives 私有工作区根包及构建、测试、Storybook、版本发布和格式化脚本，并统一开发依赖与 pnpm 版本。",
+      "tags": [
+        "工作区",
+        "构建系统",
+        "测试配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:philosophy.md",
+      "type": "document",
+      "name": "philosophy.md",
+      "filePath": "philosophy.md",
+      "summary": "阐述可访问、可组合、可定制的组件设计原则，以及 DOM 一对一映射、受控状态、国际化和 data-state 约定。",
+      "tags": [
+        "设计原则",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:pnpm-workspace.yaml",
+      "type": "config",
+      "name": "pnpm-workspace.yaml",
+      "filePath": "pnpm-workspace.yaml",
+      "summary": "登记 apps、internal 与组件包工作区，限制可执行构建依赖，统一 React 版本并应用 changesets 补丁。",
+      "tags": [
+        "工作区",
+        "依赖管理",
+        "发布补丁"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:release-process.md",
+      "type": "document",
+      "name": "release-process.md",
+      "filePath": "release-process.md",
+      "summary": "说明 changesets 驱动的版本追踪、稳定版和候选版发布，以及文档版本页维护流程。",
+      "tags": [
+        "发布流程",
+        "版本管理",
+        "文档维护"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:AGENTS.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:release-process.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "document:philosophy.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:pnpm-workspace.yaml",
+      "target": "config:package.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.oxfmtrc.json",
+      "target": "config:package.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.oxlintrc.json",
+      "target": "config:package.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

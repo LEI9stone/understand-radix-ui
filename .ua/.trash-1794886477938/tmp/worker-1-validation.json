@@ -1,0 +1,190 @@
+{
+  "batches": [
+    {
+      "batch": 5,
+      "parts": [
+        "batch-5.json"
+      ],
+      "files": 3,
+      "nodes": 6,
+      "edges": 11
+    },
+    {
+      "batch": 10,
+      "parts": [
+        "batch-10.json"
+      ],
+      "files": 4,
+      "nodes": 4,
+      "edges": 4
+    },
+    {
+      "batch": 11,
+      "parts": [
+        "batch-11.json"
+      ],
+      "files": 18,
+      "nodes": 18,
+      "edges": 0
+    },
+    {
+      "batch": 14,
+      "parts": [
+        "batch-14.json"
+      ],
+      "files": 3,
+      "nodes": 3,
+      "edges": 2
+    },
+    {
+      "batch": 29,
+      "parts": [
+        "batch-29.json"
+      ],
+      "files": 4,
+      "nodes": 4,
+      "edges": 3
+    },
+    {
+      "batch": 32,
+      "parts": [
+        "batch-32.json"
+      ],
+      "files": 4,
+      "nodes": 4,
+      "edges": 3
+    },
+    {
+      "batch": 36,
+      "parts": [
+        "batch-36.json"
+      ],
+      "files": 4,
+      "nodes": 4,
+      "edges": 3
+    },
+    {
+      "batch": 47,
+      "parts": [
+        "batch-47.json"
+      ],
+      "files": 4,
+      "nodes": 4,
+      "edges": 3
+    },
+    {
+      "batch": 50,
+      "parts": [
+        "batch-50.json"
+      ],
+      "files": 4,
+      "nodes": 4,
+      "edges": 3
+    },
+    {
+      "batch": 51,
+      "parts": [
+        "batch-51.json"
+      ],
+      "files": 4,
+      "nodes": 4,
+      "edges": 3
+    },
+    {
+      "batch": 56,
+      "parts": [
+        "batch-56.json"
+      ],
+      "files": 4,
+      "nodes": 4,
+      "edges": 3
+    },
+    {
+      "batch": 68,
+      "parts": [
+        "batch-68.json"
+      ],
+      "files": 4,
+      "nodes": 4,
+      "edges": 3
+    },
+    {
+      "batch": 71,
+      "parts": [
+        "batch-71.json"
+      ],
+      "files": 4,
+      "nodes": 4,
+      "edges": 3
+    },
+    {
+      "batch": 73,
+      "parts": [
+        "batch-73.json"
+      ],
+      "files": 4,
+      "nodes": 4,
+      "edges": 3
+    },
+    {
+      "batch": 82,
+      "parts": [
+        "batch-82.json"
+      ],
+      "files": 25,
+      "nodes": 51,
+      "edges": 62
+    },
+    {
+      "batch": 91,
+      "parts": [
+        "batch-91-part-1.json",
+        "batch-91-part-2.json"
+      ],
+      "files": 25,
+      "nodes": 106,
+      "edges": 230
+    },
+    {
+      "batch": 92,
+      "parts": [
+        "batch-92-part-1.json",
+        "batch-92-part-2.json"
+      ],
+      "files": 25,
+      "nodes": 64,
+      "edges": 102
+    }
+  ],
+  "totalFiles": 143,
+  "totalNodes": 292,
+  "totalEdges": 441,
+  "nodeTypes": {
+    "file": 78,
+    "function": 149,
+    "pipeline": 4,
+    "document": 38,
+    "config": 23
+  },
+  "edgeTypes": {
+    "contains": 149,
+    "exports": 104,
+    "imports": 15,
+    "depends_on": 126,
+    "triggers": 2,
+    "deploys": 1,
+    "documents": 21,
+    "configures": 1,
+    "related": 10,
+    "tested_by": 11,
+    "calls": 1
+  },
+  "warnings": [
+    "提取器不支持，已阅读补文件节点:apps/storybook/.storybook/manager-head.html",
+    "提取器不支持，已阅读补文件节点:apps/storybook/.storybook/preview.css",
+    "提取器不支持，已阅读补文件节点:packages/react/slot/src/__snapshots__/slot.test.tsx.snap",
+    "use-effect-event/README.md 标题仍为 react-use-is-hydrated，与包名不一致。",
+    "forwardRef 组件未被结构解析器完整识别；已按源码手工补重要组件与精确行号。"
+  ],
+  "issues": []
+}

@@ -1,0 +1,41 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "packages/react/collection/src/collection.test.tsx",
+      "language": "typescript",
+      "sizeLines": 1247,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/collection/src/collection.tsx",
+      "language": "typescript",
+      "sizeLines": 408,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/collection/src/ordered-dictionary.test.ts",
+      "language": "typescript",
+      "sizeLines": 1494,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/collection/src/ordered-dictionary.ts",
+      "language": "typescript",
+      "sizeLines": 478,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "packages/react/collection/src/collection.test.tsx": [
+      "packages/react/collection/src/collection.tsx"
+    ],
+    "packages/react/collection/src/collection.tsx": [
+      "packages/react/collection/src/ordered-dictionary.ts"
+    ],
+    "packages/react/collection/src/ordered-dictionary.test.ts": [
+      "packages/react/collection/src/ordered-dictionary.ts"
+    ],
+    "packages/react/collection/src/ordered-dictionary.ts": []
+  }
+}

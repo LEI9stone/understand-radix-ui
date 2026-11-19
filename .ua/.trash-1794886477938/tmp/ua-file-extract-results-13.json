@@ -1,0 +1,549 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 10,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 10,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 10
+    }
+  },
+  "results": [
+    {
+      "path": ".oxfmtrc.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 23,
+      "nonEmptyLines": 23,
+      "sections": [
+        {
+          "heading": "$schema",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "printWidth",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "singleQuote",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "sortPackageJson",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "ignorePatterns",
+          "level": 1,
+          "line": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".oxlintrc.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 240,
+      "nonEmptyLines": 237,
+      "sections": [
+        {
+          "heading": "$schema",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "plugins",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "categories",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "env",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "settings",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "ignorePatterns",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "rules",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "overrides",
+          "level": 1,
+          "line": 202
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 81,
+      "nonEmptyLines": 60,
+      "sections": [
+        {
+          "heading": "Radix Primitives",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Architecture",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Tech Constraints",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Commands",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Adding a new package",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Testing",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "Code conventions",
+          "level": 2,
+          "line": 55
+        },
+        {
+          "heading": "Pre-commit checklist",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "PR checklist",
+          "level": 2,
+          "line": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 76,
+      "nonEmptyLines": 57,
+      "sections": [
+        {
+          "heading": "Contributor Covenant Code of Conduct",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Our Pledge",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Our Standards",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Our Responsibilities",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Scope",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "Enforcement",
+          "level": 2,
+          "line": 55
+        },
+        {
+          "heading": "Attribution",
+          "level": 2,
+          "line": 68
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 54,
+      "nonEmptyLines": 30,
+      "sections": [
+        {
+          "heading": "Radix Primitives",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Installation",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Documentation",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Releases",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Contributing",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Community",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Thanks",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "License",
+          "level": 2,
+          "line": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "context7.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "sections": [
+        {
+          "heading": "url",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "public_key",
+          "level": 1,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 65,
+      "nonEmptyLines": 65,
+      "sections": [
+        {
+          "heading": "private",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "license",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 32
+        },
+        {
+          "heading": "packageManager",
+          "level": 1,
+          "line": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "philosophy.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 91,
+      "nonEmptyLines": 59,
+      "sections": [
+        {
+          "heading": "Primitives: Philosophy and Guiding Principles",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Vision",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Principles at a glance",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Principles",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Accessible",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Functional",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "Composable",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "Customizable",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "Other considerations",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "Internationalization",
+          "level": 3,
+          "line": 56
+        },
+        {
+          "heading": "Stateful components can be controlled or uncontrolled",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "Components exist in a finite number of predefined states",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "Developer experience",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "Balancing tradeoffs between design goals",
+          "level": 3,
+          "line": 77
+        },
+        {
+          "heading": "Documentation",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Misc",
+          "level": 3,
+          "line": 87
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 19,
+      "nonEmptyLines": 19,
+      "sections": [
+        {
+          "heading": "packages",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "allowBuilds",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "overrides",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "patchedDependencies",
+          "level": 1,
+          "line": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "release-process.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 47,
+      "nonEmptyLines": 28,
+      "sections": [
+        {
+          "heading": "Release process",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Release strategy",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Tracking version changes",
+          "level": 3,
+          "line": 13
+        },
+        {
+          "heading": "Publishing a stable release",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "Release candidates",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Updating documentation",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Creating new version pages",
+          "level": 3,
+          "line": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    }
+  ]
+}

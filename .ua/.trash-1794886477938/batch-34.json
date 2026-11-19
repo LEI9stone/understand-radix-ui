@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/context/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/context/CHANGELOG.md",
+      "summary": "记录 Context 包版本及重载类型、参数扩展带来的发布说明，并解释内部 API 对依赖包版本传播的影响。",
+      "tags": [
+        "版本记录",
+        "上下文",
+        "内部接口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/context/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/context/README.md",
+      "summary": "标识 react-context 内部工具包并给出文档入口。",
+      "tags": [
+        "包说明",
+        "上下文",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/context/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/context/package.json",
+      "summary": "定义作用域 Context 工具包的源码入口、ESM 与 CommonJS 类型出口以及 React peer 依赖，供复合组件共享上下文基础能力。",
+      "tags": [
+        "包配置",
+        "上下文",
+        "构建发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/context/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/context/tsconfig.json",
+      "summary": "为上下文工具的 src 目录应用共享 React 库编译设置和独立输出目录。",
+      "tags": [
+        "编译配置",
+        "类型检查",
+        "上下文"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/react/context/package.json",
+      "target": "file:packages/react/context/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/context/CHANGELOG.md",
+      "target": "config:packages/react/context/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

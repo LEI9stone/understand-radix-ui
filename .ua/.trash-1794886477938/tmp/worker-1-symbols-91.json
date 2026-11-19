@@ -1,0 +1,2441 @@
+{
+  "skipped": [
+    "packages/react/slot/src/__snapshots__/slot.test.tsx.snap"
+  ],
+  "unreadable": [],
+  "results": [
+    {
+      "path": "packages/react/roving-focus/src/roving-focus-group.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 407,
+      "nonEmptyLines": 361,
+      "functions": [
+        {
+          "name": "getDirectionAwareKey",
+          "startLine": 362,
+          "endLine": 365,
+          "params": [
+            "key",
+            "dir"
+          ]
+        },
+        {
+          "name": "getFocusIntent",
+          "startLine": 369,
+          "endLine": 378,
+          "params": [
+            "event",
+            "orientation",
+            "dir"
+          ]
+        },
+        {
+          "name": "focusFirst",
+          "startLine": 380,
+          "endLine": 388,
+          "params": [
+            "candidates",
+            "preventScroll"
+          ]
+        },
+        {
+          "name": "wrapArray",
+          "startLine": 394,
+          "endLine": 396,
+          "params": [
+            "array",
+            "startIndex"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createRovingFocusGroupScope",
+          "line": 398,
+          "isDefault": false
+        },
+        {
+          "name": "RovingFocusGroup",
+          "line": 398,
+          "isDefault": false
+        },
+        {
+          "name": "RovingFocusGroupItem",
+          "line": 398,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 398,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 398,
+          "isDefault": false
+        },
+        {
+          "name": "RovingFocusGroupProps",
+          "line": 407,
+          "isDefault": false
+        },
+        {
+          "name": "RovingFocusItemProps",
+          "line": 407,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/scroll-area/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 26,
+      "exports": [
+        {
+          "name": "createScrollAreaScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollArea",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaViewport",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaScrollbar",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaThumb",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaCorner",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Viewport",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Scrollbar",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Thumb",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Corner",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaViewportProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaContentProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaScrollbarProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaThumbProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaCornerProps",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/select/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 63,
+      "exports": [
+        {
+          "name": "createSelectScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Select",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SelectProvider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectValue",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectIcon",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectPortal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectViewport",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectLabel",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItemText",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItemIndicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectScrollUpButton",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectScrollDownButton",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectSeparator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectArrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SelectBubbleInput",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_Provider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Value",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Icon",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Viewport",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Group",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Label",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ItemText",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ItemIndicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollUpButton",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollDownButton",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Separator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_BubbleInput",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SelectProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SelectProviderProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectSharedProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectTriggerProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectValueProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectIconProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectPortalProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectContentProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectViewportProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectGroupProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectLabelProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItemProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItemTextProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItemIndicatorProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectScrollUpButtonProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectScrollDownButtonProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectSeparatorProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "SelectArrowProps",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SelectBubbleInputProps",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 56,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/select/src/select.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 2046,
+      "nonEmptyLines": 1788,
+      "functions": [
+        {
+          "name": "SelectTest",
+          "startLine": 11,
+          "endLine": 29,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "SelectClearableTest",
+          "startLine": 31,
+          "endLine": 52,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "fakeViewportScroll",
+          "startLine": 524,
+          "endLine": 541,
+          "params": [
+            "metrics"
+          ]
+        },
+        {
+          "name": "cleanupModal",
+          "startLine": 2041,
+          "endLine": 2046,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/select/src/select.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 2094,
+      "nonEmptyLines": 1873,
+      "functions": [
+        {
+          "name": "SelectProvider",
+          "startLine": 168,
+          "endLine": 301,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "Select",
+          "startLine": 307,
+          "endLine": 327,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "SelectPortal",
+          "startLine": 528,
+          "endLine": 535,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "isFunction",
+          "startLine": 1951,
+          "endLine": 1953,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "shouldShowPlaceholder",
+          "startLine": 1955,
+          "endLine": 1957,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "useTypeaheadSearch",
+          "startLine": 1959,
+          "endLine": 1990,
+          "params": [
+            "onSearchChange"
+          ]
+        },
+        {
+          "name": "findNextItem",
+          "startLine": 2009,
+          "endLine": 2024,
+          "params": [
+            "items",
+            "search",
+            "currentItem"
+          ]
+        },
+        {
+          "name": "wrapArray",
+          "startLine": 2030,
+          "endLine": 2032,
+          "params": [
+            "array",
+            "startIndex"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createSelectScope",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Select",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectProvider",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectTrigger",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectValue",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectIcon",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectPortal",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectContent",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectViewport",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectGroup",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectLabel",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItem",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItemText",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItemIndicator",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectScrollUpButton",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectScrollDownButton",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectSeparator",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectArrow",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectBubbleInput",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Provider",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Value",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Icon",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Viewport",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Group",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Label",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "ItemText",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "ItemIndicator",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollUpButton",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollDownButton",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Separator",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "BubbleInput",
+          "line": 2034,
+          "isDefault": false
+        },
+        {
+          "name": "SelectProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectProviderProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectTriggerProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectValueProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectIconProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectPortalProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectContentProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectViewportProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectGroupProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectLabelProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItemProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItemTextProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItemIndicatorProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectScrollUpButtonProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectScrollDownButtonProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectSeparatorProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectArrowProps",
+          "line": 2075,
+          "isDefault": false
+        },
+        {
+          "name": "SelectBubbleInputProps",
+          "line": 2075,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 55,
+        "functionCount": 8,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/separator/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "exports": [
+        {
+          "name": "Separator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SeparatorProps",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/separator/src/separator.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 80,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/separator/src/separator.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 54,
+      "functions": [
+        {
+          "name": "isValidOrientation",
+          "startLine": 54,
+          "endLine": 56,
+          "params": [
+            "orientation"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Separator",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "SeparatorProps",
+          "line": 63,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/slider/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 29,
+      "exports": [
+        {
+          "name": "createSliderScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Slider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SliderTrack",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SliderRange",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SliderThumb",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SliderThumbProvider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SliderThumbTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SliderBubbleInput",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Track",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Range",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Thumb",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_ThumbProvider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_ThumbTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_BubbleInput",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SliderProps",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "SliderTrackProps",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "SliderRangeProps",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "SliderThumbProps",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SliderThumbProviderProps",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SliderThumbTriggerProps",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SliderBubbleInputProps",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 22,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/slider/src/slider.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1242,
+      "nonEmptyLines": 1074,
+      "functions": [
+        {
+          "name": "getThumbValue",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "getThumbValues",
+          "startLine": 12,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "shimPointerCapture",
+          "startLine": 1223,
+          "endLine": 1227,
+          "params": [
+            "element"
+          ]
+        },
+        {
+          "name": "shimBoundingClientRect",
+          "startLine": 1229,
+          "endLine": 1242,
+          "params": [
+            "element",
+            "rect"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/slider/src/slider.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1099,
+      "nonEmptyLines": 994,
+      "functions": [
+        {
+          "name": "SliderThumbProvider",
+          "startLine": 661,
+          "endLine": 712,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "getNextSortedValues",
+          "startLine": 918,
+          "endLine": 922,
+          "params": [
+            "prevValues",
+            "nextValue",
+            "atIndex"
+          ]
+        },
+        {
+          "name": "convertValueToPercentage",
+          "startLine": 924,
+          "endLine": 929,
+          "params": [
+            "value",
+            "min",
+            "max"
+          ]
+        },
+        {
+          "name": "getLabel",
+          "startLine": 934,
+          "endLine": 942,
+          "params": [
+            "index",
+            "totalValues"
+          ]
+        },
+        {
+          "name": "getClosestValueIndex",
+          "startLine": 952,
+          "endLine": 957,
+          "params": [
+            "values",
+            "nextValue"
+          ]
+        },
+        {
+          "name": "getThumbInBoundsOffset",
+          "startLine": 963,
+          "endLine": 968,
+          "params": [
+            "width",
+            "left",
+            "direction"
+          ]
+        },
+        {
+          "name": "getStepsBetweenValues",
+          "startLine": 977,
+          "endLine": 979,
+          "params": [
+            "values"
+          ]
+        },
+        {
+          "name": "hasMinStepsBetweenValues",
+          "startLine": 993,
+          "endLine": 1000,
+          "params": [
+            "values",
+            "minStepsBetweenValues"
+          ]
+        },
+        {
+          "name": "linearScale",
+          "startLine": 1003,
+          "endLine": 1009,
+          "params": [
+            "input",
+            "output"
+          ]
+        },
+        {
+          "name": "getDecimalCount",
+          "startLine": 1011,
+          "endLine": 1029,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "roundValue",
+          "startLine": 1031,
+          "endLine": 1034,
+          "params": [
+            "value",
+            "decimalCount"
+          ]
+        },
+        {
+          "name": "getNextStepValue",
+          "startLine": 1036,
+          "endLine": 1066,
+          "params": [
+            "value",
+            "{\n    min,\n    step,\n    direction,\n    multiplier,\n  }"
+          ]
+        },
+        {
+          "name": "isFunction",
+          "startLine": 1068,
+          "endLine": 1070,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createSliderScope",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "Slider",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "SliderTrack",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "SliderRange",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "SliderThumb",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "SliderThumbProvider",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "SliderThumbTrigger",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "SliderBubbleInput",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "Track",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "Range",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "Thumb",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "ThumbProvider",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "ThumbTrigger",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "BubbleInput",
+          "line": 1072,
+          "isDefault": false
+        },
+        {
+          "name": "SliderProps",
+          "line": 1091,
+          "isDefault": false
+        },
+        {
+          "name": "SliderTrackProps",
+          "line": 1091,
+          "isDefault": false
+        },
+        {
+          "name": "SliderRangeProps",
+          "line": 1091,
+          "isDefault": false
+        },
+        {
+          "name": "SliderThumbProps",
+          "line": 1091,
+          "isDefault": false
+        },
+        {
+          "name": "SliderThumbProviderProps",
+          "line": 1091,
+          "isDefault": false
+        },
+        {
+          "name": "SliderThumbTriggerProps",
+          "line": 1091,
+          "isDefault": false
+        },
+        {
+          "name": "SliderBubbleInputProps",
+          "line": 1091,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 22,
+        "functionCount": 13,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/slot/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "exports": [
+        {
+          "name": "Slot",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "Slottable",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "createSlot",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "createSlottable",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "SlotProps",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/slot/src/slot.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 782,
+      "nonEmptyLines": 683,
+      "functions": [
+        {
+          "name": "Trigger",
+          "startLine": 670,
+          "endLine": 670,
+          "params": [
+            "{ as: Comp = 'button', ...props }"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/slot/src/slot.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 288,
+      "nonEmptyLines": 237,
+      "functions": [
+        {
+          "name": "createSlot",
+          "startLine": 20,
+          "endLine": 93,
+          "params": [
+            "ownerName"
+          ]
+        },
+        {
+          "name": "createSlottable",
+          "startLine": 114,
+          "endLine": 121,
+          "params": [
+            "ownerName"
+          ]
+        },
+        {
+          "name": "getSlottableElementFromSlottable",
+          "startLine": 129,
+          "endLine": 136,
+          "params": [
+            "slottable",
+            "child"
+          ]
+        },
+        {
+          "name": "mergeProps",
+          "startLine": 144,
+          "endLine": 178,
+          "params": [
+            "slotProps",
+            "childProps"
+          ]
+        },
+        {
+          "name": "getElementRef",
+          "startLine": 189,
+          "endLine": 206,
+          "params": [
+            "element"
+          ]
+        },
+        {
+          "name": "isSlottable",
+          "startLine": 212,
+          "endLine": 221,
+          "params": [
+            "child"
+          ]
+        },
+        {
+          "name": "isLazyComponent",
+          "startLine": 230,
+          "endLine": 239,
+          "params": [
+            "element"
+          ]
+        },
+        {
+          "name": "isPromiseLike",
+          "startLine": 241,
+          "endLine": 243,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "useUnwrappedLazy",
+          "startLine": 251,
+          "endLine": 257,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "concatAriaDescribedby",
+          "startLine": 260,
+          "endLine": 270,
+          "params": [
+            "...values"
+          ]
+        },
+        {
+          "name": "createSlotError",
+          "startLine": 272,
+          "endLine": 274,
+          "params": [
+            "ownerName"
+          ]
+        },
+        {
+          "name": "createSlottableError",
+          "startLine": 276,
+          "endLine": 278,
+          "params": [
+            "ownerName"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createSlot",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "createSlottable",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "Slot",
+          "line": 282,
+          "isDefault": false
+        },
+        {
+          "name": "Slottable",
+          "line": 282,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 282,
+          "isDefault": false
+        },
+        {
+          "name": "SlotProps",
+          "line": 288,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 12,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/switch/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 23,
+      "exports": [
+        {
+          "name": "createSwitchScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Switch",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SwitchProvider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SwitchTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SwitchThumb",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SwitchBubbleInput",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_Provider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_Trigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Thumb",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_BubbleInput",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SwitchProps",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SwitchProviderProps",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SwitchTriggerProps",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "SwitchThumbProps",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_SwitchBubbleInputProps",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 16,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/switch/src/switch.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 581,
+      "nonEmptyLines": 498,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/switch/src/switch.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 445,
+      "nonEmptyLines": 403,
+      "functions": [
+        {
+          "name": "SwitchProvider",
+          "startLine": 57,
+          "endLine": 114,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "isFunction",
+          "startLine": 416,
+          "endLine": 418,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "getState",
+          "startLine": 420,
+          "endLine": 422,
+          "params": [
+            "checked"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createSwitchScope",
+          "line": 424,
+          "isDefault": false
+        },
+        {
+          "name": "Switch",
+          "line": 424,
+          "isDefault": false
+        },
+        {
+          "name": "SwitchProvider",
+          "line": 424,
+          "isDefault": false
+        },
+        {
+          "name": "SwitchTrigger",
+          "line": 424,
+          "isDefault": false
+        },
+        {
+          "name": "SwitchThumb",
+          "line": 424,
+          "isDefault": false
+        },
+        {
+          "name": "SwitchBubbleInput",
+          "line": 424,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 424,
+          "isDefault": false
+        },
+        {
+          "name": "Provider",
+          "line": 424,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 424,
+          "isDefault": false
+        },
+        {
+          "name": "Thumb",
+          "line": 424,
+          "isDefault": false
+        },
+        {
+          "name": "BubbleInput",
+          "line": 424,
+          "isDefault": false
+        },
+        {
+          "name": "SwitchProps",
+          "line": 439,
+          "isDefault": false
+        },
+        {
+          "name": "SwitchProviderProps",
+          "line": 439,
+          "isDefault": false
+        },
+        {
+          "name": "SwitchTriggerProps",
+          "line": 439,
+          "isDefault": false
+        },
+        {
+          "name": "SwitchThumbProps",
+          "line": 439,
+          "isDefault": false
+        },
+        {
+          "name": "SwitchBubbleInputProps",
+          "line": 439,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 16,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/tabs/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "exports": [
+        {
+          "name": "createTabsScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Tabs",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "TabsList",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "TabsTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "TabsContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "List",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "TabsProps",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "TabsListProps",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "TabsTriggerProps",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "TabsContentProps",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 13,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/tabs/src/tabs.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 403,
+      "nonEmptyLines": 347,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/tabs/src/tabs.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 312,
+      "nonEmptyLines": 281,
+      "functions": [
+        {
+          "name": "makeTriggerId",
+          "startLine": 291,
+          "endLine": 293,
+          "params": [
+            "baseId",
+            "value"
+          ]
+        },
+        {
+          "name": "makeContentId",
+          "startLine": 295,
+          "endLine": 297,
+          "params": [
+            "baseId",
+            "value"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createTabsScope",
+          "line": 299,
+          "isDefault": false
+        },
+        {
+          "name": "Tabs",
+          "line": 299,
+          "isDefault": false
+        },
+        {
+          "name": "TabsList",
+          "line": 299,
+          "isDefault": false
+        },
+        {
+          "name": "TabsTrigger",
+          "line": 299,
+          "isDefault": false
+        },
+        {
+          "name": "TabsContent",
+          "line": 299,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 299,
+          "isDefault": false
+        },
+        {
+          "name": "List",
+          "line": 299,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 299,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 299,
+          "isDefault": false
+        },
+        {
+          "name": "TabsProps",
+          "line": 312,
+          "isDefault": false
+        },
+        {
+          "name": "TabsListProps",
+          "line": 312,
+          "isDefault": false
+        },
+        {
+          "name": "TabsTriggerProps",
+          "line": 312,
+          "isDefault": false
+        },
+        {
+          "name": "TabsContentProps",
+          "line": 312,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 13,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/toast/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 29,
+      "exports": [
+        {
+          "name": "createToastScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToastProvider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToastViewport",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Toast",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToastTitle",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToastDescription",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToastAction",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToastClose",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Provider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Viewport",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Title",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Description",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Action",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Close",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToastProviderProps",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "ToastViewportProps",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "ToastProps",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "ToastTitleProps",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "ToastDescriptionProps",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "ToastActionProps",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "ToastCloseProps",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 22,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/toast/src/toast.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 675,
+      "nonEmptyLines": 585,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/toast/src/toast.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1040,
+      "nonEmptyLines": 945,
+      "functions": [
+        {
+          "name": "scheduleUpdate",
+          "startLine": 104,
+          "endLine": 110,
+          "params": [
+            "update"
+          ]
+        },
+        {
+          "name": "ToastProvider",
+          "startLine": 112,
+          "endLine": 161,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "ToastAnnounce",
+          "startLine": 747,
+          "endLine": 773,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "getAnnounceTextContent",
+          "startLine": 895,
+          "endLine": 919,
+          "params": [
+            "container"
+          ]
+        },
+        {
+          "name": "handleAndDispatchCustomEvent",
+          "startLine": 923,
+          "endLine": 941,
+          "params": [
+            "name",
+            "handler",
+            "detail",
+            "{ discrete }"
+          ]
+        },
+        {
+          "name": "isDeltaInDirection",
+          "startLine": 943,
+          "endLine": 956,
+          "params": [
+            "delta",
+            "direction",
+            "threshold"
+          ]
+        },
+        {
+          "name": "useNextFrame",
+          "startLine": 958,
+          "endLine": 969,
+          "params": [
+            "callback"
+          ]
+        },
+        {
+          "name": "isHTMLElement",
+          "startLine": 971,
+          "endLine": 973,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "getTabbableCandidates",
+          "startLine": 985,
+          "endLine": 1001,
+          "params": [
+            "container"
+          ]
+        },
+        {
+          "name": "focusFirst",
+          "startLine": 1003,
+          "endLine": 1011,
+          "params": [
+            "candidates"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createToastScope",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "ToastProvider",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "ToastViewport",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "Toast",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "ToastTitle",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "ToastDescription",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "ToastAction",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "ToastClose",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "Provider",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "Viewport",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "Title",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "Description",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "Action",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "Close",
+          "line": 1013,
+          "isDefault": false
+        },
+        {
+          "name": "ToastProviderProps",
+          "line": 1032,
+          "isDefault": false
+        },
+        {
+          "name": "ToastViewportProps",
+          "line": 1032,
+          "isDefault": false
+        },
+        {
+          "name": "ToastProps",
+          "line": 1032,
+          "isDefault": false
+        },
+        {
+          "name": "ToastTitleProps",
+          "line": 1032,
+          "isDefault": false
+        },
+        {
+          "name": "ToastDescriptionProps",
+          "line": 1032,
+          "isDefault": false
+        },
+        {
+          "name": "ToastActionProps",
+          "line": 1032,
+          "isDefault": false
+        },
+        {
+          "name": "ToastCloseProps",
+          "line": 1032,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 22,
+        "functionCount": 10,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/toggle-group/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "exports": [
+        {
+          "name": "createToggleGroupScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleGroupItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleGroupSingleProps",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleGroupMultipleProps",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleGroupItemProps",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

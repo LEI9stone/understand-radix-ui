@@ -1,0 +1,173 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/ssr-testing/app/portal/conditional-portal.tsx",
+      "type": "file",
+      "name": "conditional-portal.tsx",
+      "filePath": "apps/ssr-testing/app/portal/conditional-portal.tsx",
+      "summary": "以按钮控制自定义容器中的 Portal 挂载，验证客户端状态更新后条件传送内容的行为。",
+      "tags": [
+        "服务端验证",
+        "条件渲染",
+        "Portal"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/portal/conditional-portal.tsx:ConditionalPortal",
+      "type": "function",
+      "name": "ConditionalPortal",
+      "filePath": "apps/ssr-testing/app/portal/conditional-portal.tsx",
+      "lineRange": [
+        6,
+        20
+      ],
+      "summary": "保存容器引用和展开状态，通过按钮条件挂载 Portal 内容。",
+      "tags": [
+        "服务端验证",
+        "条件渲染",
+        "Portal"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/portal/custom-portal-container.tsx",
+      "type": "file",
+      "name": "custom-portal-container.tsx",
+      "filePath": "apps/ssr-testing/app/portal/custom-portal-container.tsx",
+      "summary": "通过 ref 将 Portal 内容传送到自定义 em 容器，覆盖水合后容器就绪的情形。",
+      "tags": [
+        "服务端验证",
+        "容器引用",
+        "Portal"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/portal/custom-portal-container.tsx:CustomPortalContainer",
+      "type": "function",
+      "name": "CustomPortalContainer",
+      "filePath": "apps/ssr-testing/app/portal/custom-portal-container.tsx",
+      "lineRange": [
+        6,
+        16
+      ],
+      "summary": "捕获目标 DOM 容器并将 Portal 内容渲染到该容器内。",
+      "tags": [
+        "服务端验证",
+        "容器引用",
+        "Portal"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/portal/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/portal/page.tsx",
+      "summary": "汇集默认 body Portal、自定义容器和条件 Portal，用于比较 React 树与 DOM 树在服务端页面中的分离。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "Portal"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/portal/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/portal/page.tsx",
+      "lineRange": [
+        6,
+        40
+      ],
+      "summary": "展示滚动区域外的默认 Portal，并组合两种客户端自定义容器示例。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "Portal"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/ssr-testing/app/portal/conditional-portal.tsx",
+      "target": "function:apps/ssr-testing/app/portal/conditional-portal.tsx:ConditionalPortal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/portal/conditional-portal.tsx",
+      "target": "function:apps/ssr-testing/app/portal/conditional-portal.tsx:ConditionalPortal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/portal/custom-portal-container.tsx",
+      "target": "function:apps/ssr-testing/app/portal/custom-portal-container.tsx:CustomPortalContainer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/portal/custom-portal-container.tsx",
+      "target": "function:apps/ssr-testing/app/portal/custom-portal-container.tsx:CustomPortalContainer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/portal/page.tsx",
+      "target": "function:apps/ssr-testing/app/portal/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/portal/page.tsx",
+      "target": "function:apps/ssr-testing/app/portal/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/portal/page.tsx",
+      "target": "file:apps/ssr-testing/app/portal/conditional-portal.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ssr-testing/app/portal/page.tsx",
+      "target": "file:apps/ssr-testing/app/portal/custom-portal-container.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ssr-testing/app/portal/conditional-portal.tsx",
+      "target": "file:packages/react/portal/src/portal.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/portal/custom-portal-container.tsx",
+      "target": "file:packages/react/portal/src/portal.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/portal/page.tsx",
+      "target": "file:packages/react/portal/src/portal.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

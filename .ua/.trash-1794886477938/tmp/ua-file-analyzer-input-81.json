@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": ".changeset/changelog.cjs",
+      "language": "javascript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "language": "unknown",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".github/CONTRIBUTING.md",
+      "language": "markdown",
+      "sizeLines": 111,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/actions/ci-setup/action.yml",
+      "language": "yaml",
+      "sizeLines": 52,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/actions/detect-snapshot-changes/action.yml",
+      "language": "yaml",
+      "sizeLines": 108,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/actions/publish-snapshot/action.yml",
+      "language": "yaml",
+      "sizeLines": 22,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/actions/publish-stable/action.yml",
+      "language": "yaml",
+      "sizeLines": 35,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".nvmrc",
+      "language": "unknown",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".ua/config.json",
+      "language": "json",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/ssr-testing/app/accessible-icon/page.tsx",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/accordion/page.tsx",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/alert-dialog/page.tsx",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/avatar/page.tsx",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/checkbox/page.tsx",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/collapsible/page.tsx",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/context-menu/page.tsx",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/dialog/page.tsx",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/dropdown-menu/page.tsx",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/form/page.tsx",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/hover-card/page.tsx",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/label/page.tsx",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/layout.tsx",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/menubar/page.tsx",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/navigation-menu/page.tsx",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".changeset/changelog.cjs": [],
+    ".github/CODEOWNERS": [],
+    ".github/CONTRIBUTING.md": [],
+    ".github/PULL_REQUEST_TEMPLATE.md": [],
+    ".github/actions/ci-setup/action.yml": [],
+    ".github/actions/detect-snapshot-changes/action.yml": [],
+    ".github/actions/publish-snapshot/action.yml": [],
+    ".github/actions/publish-stable/action.yml": [],
+    ".nvmrc": [],
+    ".ua/config.json": [],
+    "apps/ssr-testing/app/accessible-icon/page.tsx": [],
+    "apps/ssr-testing/app/accordion/page.tsx": [],
+    "apps/ssr-testing/app/alert-dialog/page.tsx": [],
+    "apps/ssr-testing/app/avatar/page.tsx": [],
+    "apps/ssr-testing/app/checkbox/page.tsx": [],
+    "apps/ssr-testing/app/collapsible/page.tsx": [],
+    "apps/ssr-testing/app/context-menu/page.tsx": [],
+    "apps/ssr-testing/app/dialog/page.tsx": [],
+    "apps/ssr-testing/app/dropdown-menu/page.tsx": [],
+    "apps/ssr-testing/app/form/page.tsx": [],
+    "apps/ssr-testing/app/hover-card/page.tsx": [],
+    "apps/ssr-testing/app/label/page.tsx": [],
+    "apps/ssr-testing/app/layout.tsx": [],
+    "apps/ssr-testing/app/menubar/page.tsx": [],
+    "apps/ssr-testing/app/navigation-menu/page.tsx": []
+  }
+}

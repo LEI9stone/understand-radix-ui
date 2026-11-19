@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/popper/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/popper/CHANGELOG.md",
+      "summary": "记录浮层锚点回调引用、虚拟锚点、子菜单定位、遮挡隐藏和动画样式兼容等修复。",
+      "tags": [
+        "变更记录",
+        "浮层定位",
+        "版本发布"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/popper/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/popper/README.md",
+      "summary": "提供浮层定位包名称与官方网站组件使用文档入口。",
+      "tags": [
+        "包文档",
+        "浮层定位",
+        "使用范围"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/popper/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/popper/package.json",
+      "summary": "声明基于 Floating UI 的定位包，依赖 Arrow、矩形与尺寸观察、Primitive、上下文和引用组合工具。",
+      "tags": [
+        "包配置",
+        "浮层定位",
+        "模块发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/popper/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/popper/tsconfig.json",
+      "summary": "为浮层定位包继承内部 React 库 TypeScript 编译规则，将 src 纳入编译并将产物定位到 dist。",
+      "tags": [
+        "编译配置",
+        "React库",
+        "TypeScript"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/popper/README.md",
+      "target": "config:packages/react/popper/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/popper/CHANGELOG.md",
+      "target": "config:packages/react/popper/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/popper/tsconfig.json",
+      "target": "config:packages/react/popper/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

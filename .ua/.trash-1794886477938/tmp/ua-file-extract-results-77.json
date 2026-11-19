@@ -1,0 +1,208 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 4
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/use-previous/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 13,
+      "nonEmptyLines": 7,
+      "sections": [
+        {
+          "heading": "@radix-ui/react-use-previous",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1.1.4",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "1.1.3",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "1.1.2",
+          "level": 2,
+          "line": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "packages/react/use-previous/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        {
+          "heading": "`react-use-previous`",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "packages/react/use-previous/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 64,
+      "nonEmptyLines": 64,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "license",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "source",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "main",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "module",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "publishConfig",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "files",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "sideEffects",
+          "level": 1,
+          "line": 29
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 30
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "peerDependencies",
+          "level": 1,
+          "line": 46
+        },
+        {
+          "heading": "peerDependenciesMeta",
+          "level": 1,
+          "line": 50
+        },
+        {
+          "heading": "homepage",
+          "level": 1,
+          "line": 55
+        },
+        {
+          "heading": "repository",
+          "level": 1,
+          "line": 56
+        },
+        {
+          "heading": "bugs",
+          "level": 1,
+          "line": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": "packages/react/use-previous/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "extends",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "exclude",
+          "level": 1,
+          "line": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

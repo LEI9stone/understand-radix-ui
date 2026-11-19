@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/use-size/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/use-size/CHANGELOG.md",
+      "summary": "记录 use-size 将 ResizeObserver 回调放入 requestAnimationFrame 以避免重负载下的观察循环告警，以及 RSC 兼容回退。",
+      "tags": [
+        "变更记录",
+        "尺寸观察",
+        "性能修复"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/use-size/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/use-size/README.md",
+      "summary": "声明 use-size 为内部尺寸观察 Hook，不面向公开使用。",
+      "tags": [
+        "包文档",
+        "尺寸观察",
+        "内部接口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/use-size/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/use-size/package.json",
+      "summary": "声明 use-size 仅依赖共享 use-layout-effect，配置 React peer 兼容范围与 ESM/CJS 类型发布入口。",
+      "tags": [
+        "包清单",
+        "尺寸观察",
+        "共享Hook"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/use-size/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/use-size/tsconfig.json",
+      "summary": "将 use-size 的 src 纳入共享 React 库类型检查，并将 dist 与依赖目录排除。",
+      "tags": [
+        "类型配置",
+        "尺寸观察",
+        "构建配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/use-size/README.md",
+      "target": "config:packages/react/use-size/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/use-size/CHANGELOG.md",
+      "target": "config:packages/react/use-size/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/use-size/tsconfig.json",
+      "target": "config:internal/typescript-config/react-library.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

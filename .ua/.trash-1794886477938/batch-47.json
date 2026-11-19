@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/navigation-menu/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/navigation-menu/CHANGELOG.md",
+      "summary": "记录导航菜单激活模式、子菜单切换控制、Viewport 子元素保留以及焦点、ARIA 和引用稳定性修复。",
+      "tags": [
+        "变更记录",
+        "导航菜单",
+        "版本发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/navigation-menu/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/navigation-menu/README.md",
+      "summary": "提供导航菜单包名称与官方网站组件使用文档入口。",
+      "tags": [
+        "包文档",
+        "导航菜单",
+        "使用范围"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/navigation-menu/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/navigation-menu/package.json",
+      "summary": "配置导航菜单的发布入口与构建流程，并声明集合、方向、可关闭层、Slot、Presence 和状态 Hook 等内部依赖。",
+      "tags": [
+        "包配置",
+        "导航菜单",
+        "模块发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/navigation-menu/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/navigation-menu/tsconfig.json",
+      "summary": "为导航菜单包继承内部 React 库 TypeScript 编译规则，将 src 纳入编译并将产物定位到 dist。",
+      "tags": [
+        "编译配置",
+        "React库",
+        "TypeScript"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/navigation-menu/README.md",
+      "target": "config:packages/react/navigation-menu/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/navigation-menu/CHANGELOG.md",
+      "target": "config:packages/react/navigation-menu/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/navigation-menu/tsconfig.json",
+      "target": "config:packages/react/navigation-menu/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

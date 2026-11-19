@@ -1,0 +1,690 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/collection/src/collection.test.tsx",
+      "type": "file",
+      "name": "collection.test.tsx",
+      "filePath": "packages/react/collection/src/collection.test.tsx",
+      "summary": "验证集合初始化、作用域隔离、稳定读取器、DOM 重排、并发渲染及卸载后的注册表一致性。",
+      "tags": [
+        "测试",
+        "集合",
+        "并发渲染"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/collection/src/collection.tsx",
+      "type": "file",
+      "name": "collection.tsx",
+      "filePath": "packages/react/collection/src/collection.tsx",
+      "summary": "创建按 DOM 文档顺序登记的复合组件集合，区分提交期可同步读取的注册表与驱动渲染的状态快照。通过浅比较、元素引用回调和子节点观察器协调数据更新与排序。",
+      "tags": [
+        "集合",
+        "上下文",
+        "文档顺序"
+      ],
+      "complexity": "complex",
+      "languageNotes": "工厂函数以泛型保留集合元素和附加数据类型，并返回组件插槽与专用 Hook。"
+    },
+    {
+      "id": "function:packages/react/collection/src/collection.tsx:createCollection",
+      "type": "function",
+      "name": "createCollection",
+      "filePath": "packages/react/collection/src/collection.tsx",
+      "summary": "创建具有独立上下文作用域的集合组件和 Hook，利用提交阶段注册、状态快照及 DOM 变化观察维持有序项目数据。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        46,
+        344
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/collection.tsx:shallowEqual",
+      "type": "function",
+      "name": "shallowEqual",
+      "filePath": "packages/react/collection/src/collection.tsx",
+      "summary": "逐键比较项目数据对象，避免引用等价的数据在每次渲染中触发重新登记。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        349,
+        361
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/collection.tsx:isInDocumentOrder",
+      "type": "function",
+      "name": "isInDocumentOrder",
+      "filePath": "packages/react/collection/src/collection.tsx",
+      "summary": "比较相邻已登记元素的 DOM 位置，在元素连通时检测集合是否偏离文档顺序。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        367,
+        384
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/collection.tsx:sortByDocumentPosition",
+      "type": "function",
+      "name": "sortByDocumentPosition",
+      "filePath": "packages/react/collection/src/collection.tsx",
+      "summary": "按条目中真实元素的文档先后关系生成排序比较值。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        386,
+        395
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/collection.tsx:getChildListObserver",
+      "type": "function",
+      "name": "getChildListObserver",
+      "filePath": "packages/react/collection/src/collection.tsx",
+      "summary": "创建仅对子节点增删记录触发回调的 MutationObserver，以刷新集合顺序。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        397,
+        408
+      ]
+    },
+    {
+      "id": "file:packages/react/collection/src/ordered-dictionary.test.ts",
+      "type": "file",
+      "name": "ordered-dictionary.test.ts",
+      "filePath": "packages/react/collection/src/ordered-dictionary.test.ts",
+      "summary": "验证 OrderedDict 的索引插入、相邻访问、负索引、映射过滤、归约和保持顺序的可变及不可变操作。",
+      "tags": [
+        "测试",
+        "有序字典",
+        "边界条件"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "type": "file",
+      "name": "ordered-dictionary.ts",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "在 Map 之上维护独立键序列，提供按索引和相邻位置访问、重排、排序及数组式不可变转换，供组件集合保持稳定顺序。",
+      "tags": [
+        "有序字典",
+        "数据结构",
+        "泛型"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "type": "class",
+      "name": "OrderedDict",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "扩展 Map 并同步维护私有键序列，提供索引与相邻访问、位置插入和保留键顺序的数组式操作。",
+      "tags": [
+        "数据结构",
+        "有序集合",
+        "泛型"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        5,
+        445
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.insert",
+      "type": "function",
+      "name": "OrderedDict.insert",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "插入或移动键值到指定位置，支持负索引和越界夹取，重建 Map 迭代顺序。",
+      "tags": [
+        "类方法",
+        "有序字典",
+        "集合操作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        30,
+        55
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.setAfter",
+      "type": "function",
+      "name": "OrderedDict.setAfter",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "计算目标键之后的位置并调整已有键移动造成的索引偏移。",
+      "tags": [
+        "类方法",
+        "有序字典",
+        "集合操作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        96,
+        104
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.from",
+      "type": "function",
+      "name": "OrderedDict.from",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "按已有键及偏移量获取值，并将越界目标限制到字典边缘。",
+      "tags": [
+        "类方法",
+        "有序字典",
+        "集合操作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        157,
+        166
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.keyFrom",
+      "type": "function",
+      "name": "OrderedDict.keyFrom",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "按起始键和相对偏移返回目标键，保持边界访问稳定。",
+      "tags": [
+        "类方法",
+        "有序字典",
+        "集合操作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        168,
+        177
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.find",
+      "type": "function",
+      "name": "OrderedDict.find",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "按有序条目依次执行谓词并返回首个匹配项。",
+      "tags": [
+        "类方法",
+        "有序字典",
+        "集合操作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        179,
+        191
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.findIndex",
+      "type": "function",
+      "name": "OrderedDict.findIndex",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "按有序条目执行谓词并返回首个匹配条目的索引。",
+      "tags": [
+        "类方法",
+        "有序字典",
+        "集合操作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        193,
+        205
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.filter",
+      "type": "function",
+      "name": "OrderedDict.filter",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "筛选符合谓词的条目并返回保持原始顺序的新 OrderedDict。",
+      "tags": [
+        "类方法",
+        "有序字典",
+        "集合操作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        217,
+        230
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.map",
+      "type": "function",
+      "name": "OrderedDict.map",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "保持键和顺序不变，对每个值应用转换并创建新的泛型字典。",
+      "tags": [
+        "类方法",
+        "有序字典",
+        "集合操作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        232,
+        243
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.reduce",
+      "type": "function",
+      "name": "OrderedDict.reduce",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "按字典正向顺序归约条目，处理无初值和空字典错误。",
+      "tags": [
+        "类方法",
+        "有序字典",
+        "集合操作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        272,
+        299
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.reduceRight",
+      "type": "function",
+      "name": "OrderedDict.reduceRight",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "从末端按索引逆向归约条目，并检测无初值空集合。",
+      "tags": [
+        "类方法",
+        "有序字典",
+        "集合操作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        328,
+        354
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.sort",
+      "type": "function",
+      "name": "OrderedDict.sort",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "校验比较函数后就地排序条目，并同步 Map 和键序列。",
+      "tags": [
+        "类方法",
+        "有序字典",
+        "集合操作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        364,
+        374
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.every",
+      "type": "function",
+      "name": "OrderedDict.every",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "顺序测试所有条目，在首个不匹配结果处终止遍历。",
+      "tags": [
+        "类方法",
+        "有序字典",
+        "集合操作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        418,
+        430
+      ]
+    },
+    {
+      "id": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.some",
+      "type": "function",
+      "name": "OrderedDict.some",
+      "filePath": "packages/react/collection/src/ordered-dictionary.ts",
+      "summary": "顺序测试条目，在首个匹配结果处提前返回。",
+      "tags": [
+        "类方法",
+        "有序字典",
+        "集合操作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        432,
+        444
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/collection/src/collection.test.tsx",
+      "target": "file:packages/react/collection/src/collection.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/collection/src/collection.tsx",
+      "target": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/collection/src/collection.tsx",
+      "target": "function:packages/react/collection/src/collection.tsx:createCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/collection.tsx",
+      "target": "function:packages/react/collection/src/collection.tsx:createCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/collection/src/collection.tsx",
+      "target": "function:packages/react/collection/src/collection.tsx:shallowEqual",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/collection.tsx",
+      "target": "function:packages/react/collection/src/collection.tsx:isInDocumentOrder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/collection.tsx",
+      "target": "function:packages/react/collection/src/collection.tsx:sortByDocumentPosition",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/collection.tsx",
+      "target": "function:packages/react/collection/src/collection.tsx:getChildListObserver",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/collection.tsx",
+      "target": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/collection/src/collection.tsx",
+      "target": "file:packages/react/collection/src/collection.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.test.ts",
+      "target": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.insert",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.setAfter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.from",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.keyFrom",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.find",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.findIndex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.filter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.map",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.reduce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.reduceRight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.sort",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.every",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.some",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/collection/src/ordered-dictionary.ts",
+      "target": "file:packages/react/collection/src/ordered-dictionary.test.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/collection/src/collection.tsx",
+      "target": "file:packages/react/context/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/collection/src/collection.tsx",
+      "target": "file:packages/react/compose-refs/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/collection/src/collection.tsx",
+      "target": "file:packages/react/slot/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/collection/src/collection.tsx",
+      "target": "file:packages/react/use-layout-effect/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.insert",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.setAfter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.from",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.keyFrom",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.find",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.findIndex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.filter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.map",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.reduce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.reduceRight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.sort",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.every",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+      "target": "function:packages/react/collection/src/ordered-dictionary.ts:OrderedDict.some",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

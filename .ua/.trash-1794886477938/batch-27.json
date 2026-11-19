@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/aspect-ratio/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/aspect-ratio/CHANGELOG.md",
+      "summary": "记录 AspectRatio 的可选类型兼容改动、React Primitive 升级、RSC 回退和 tree-shaking 改善。",
+      "tags": [
+        "变更记录",
+        "宽高比",
+        "兼容性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/aspect-ratio/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/aspect-ratio/README.md",
+      "summary": "链接 AspectRatio 官方文档，提供固定宽高比容器组件的使用入口。",
+      "tags": [
+        "组件文档",
+        "宽高比",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/aspect-ratio/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/aspect-ratio/package.json",
+      "summary": "声明 AspectRatio 对 React Primitive 的依赖、React peer 兼容范围及 ESM/CJS 类型发布入口，使用统一 radix-build。",
+      "tags": [
+        "包清单",
+        "宽高比",
+        "发布配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/aspect-ratio/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/aspect-ratio/tsconfig.json",
+      "summary": "将 AspectRatio 的源码纳入共享 React 库类型检查，并配置 dist 输出与排除目录。",
+      "tags": [
+        "类型配置",
+        "宽高比",
+        "构建配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/aspect-ratio/README.md",
+      "target": "config:packages/react/aspect-ratio/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/aspect-ratio/CHANGELOG.md",
+      "target": "config:packages/react/aspect-ratio/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/aspect-ratio/tsconfig.json",
+      "target": "config:internal/typescript-config/react-library.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

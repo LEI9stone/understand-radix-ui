@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/tabs/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/tabs/CHANGELOG.md",
+      "summary": "记录 Tabs 1.2.1 及此前版本的发布条目，供标签页组件升级时追溯兼容变化。",
+      "tags": [
+        "版本记录",
+        "标签页",
+        "维护文档"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/tabs/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/tabs/README.md",
+      "summary": "提供 react-tabs 包标识及官方标签页文档入口。",
+      "tags": [
+        "包说明",
+        "标签页",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/tabs/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/tabs/package.json",
+      "summary": "配置标签页组件的源码与发布入口，组合 roving-focus、Direction、Presence、稳定 ID 和受控状态等基础能力。",
+      "tags": [
+        "包配置",
+        "标签页",
+        "键盘导航"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/tabs/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/tabs/tsconfig.json",
+      "summary": "为标签页源码设置共享 React 编译规范、类型输入与独立 dist 输出。",
+      "tags": [
+        "编译配置",
+        "标签页",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/react/tabs/package.json",
+      "target": "file:packages/react/tabs/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/tabs/README.md",
+      "target": "config:packages/react/tabs/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

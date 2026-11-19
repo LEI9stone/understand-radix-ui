@@ -1,0 +1,216 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/ssr-testing/app/primitive-merge/nodes.mjs",
+      "type": "file",
+      "name": "nodes.mjs",
+      "filePath": "apps/ssr-testing/app/primitive-merge/nodes.mjs",
+      "summary": "导出待验证的 Primitive HTML 标签清单，供 SSR 页面与构建产物断言共享同一组节点。",
+      "tags": [
+        "服务端渲染",
+        "标签清单",
+        "测试数据"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/primitive-merge/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/primitive-merge/page.tsx",
+      "summary": "以服务端组件创建每一种 HTML 子节点，并穿过客户端 Providers 与 PrimitiveNode，回归 asChild 在 RSC 边界上的属性合并。",
+      "tags": [
+        "服务端渲染",
+        "组件组合",
+        "回归测试"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/primitive-merge/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/primitive-merge/page.tsx",
+      "lineRange": [
+        10,
+        25
+      ],
+      "summary": "遍历 Primitive 节点清单，在服务端构造带测试标记的真实 HTML 子节点，再交给客户端 asChild 包装器渲染。",
+      "tags": [
+        "服务端渲染",
+        "组件组合",
+        "回归测试"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/primitive-merge/primitive-node.tsx",
+      "type": "file",
+      "name": "primitive-node.tsx",
+      "filePath": "apps/ssr-testing/app/primitive-merge/primitive-node.tsx",
+      "summary": "按标签名选取 radix-ui/internal 的 Primitive 组件，以 asChild 包裹服务端传来的子节点，并拒绝未知标签。",
+      "tags": [
+        "客户端边界",
+        "组件组合",
+        "回归测试"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/primitive-merge/primitive-node.tsx:PrimitiveNode",
+      "type": "function",
+      "name": "PrimitiveNode",
+      "filePath": "apps/ssr-testing/app/primitive-merge/primitive-node.tsx",
+      "lineRange": [
+        8,
+        14
+      ],
+      "summary": "查找指定标签对应的 Primitive；未知标签抛错，否则用 asChild 接收子元素。",
+      "tags": [
+        "客户端边界",
+        "组件组合",
+        "回归测试"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/primitive-merge/providers.tsx",
+      "type": "file",
+      "name": "providers.tsx",
+      "filePath": "apps/ssr-testing/app/primitive-merge/providers.tsx",
+      "summary": "提供仅透传 children 的客户端组件边界，使服务端创建的节点经过客户端包装后仍可进行 SSR。",
+      "tags": [
+        "客户端边界",
+        "服务端渲染",
+        "测试夹具"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/primitive-merge/providers.tsx:Providers",
+      "type": "function",
+      "name": "Providers",
+      "filePath": "apps/ssr-testing/app/primitive-merge/providers.tsx",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "在客户端边界中原样返回 children，用于隔离 RSC 跨界组合问题。",
+      "tags": [
+        "客户端边界",
+        "服务端渲染",
+        "测试夹具"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/scripts/assert-primitive-merge.mjs",
+      "type": "file",
+      "name": "assert-primitive-merge.mjs",
+      "filePath": "apps/ssr-testing/scripts/assert-primitive-merge.mjs",
+      "summary": "读取 Next.js 预渲染输出，按共享标签清单定位节点并检查合并结果，提前发现生产构建中的 Primitive asChild 回归。",
+      "tags": [
+        "构建断言",
+        "服务端渲染",
+        "回归测试"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ssr-testing/scripts/assert-primitive-merge.mjs:readPrerenderedHtml",
+      "type": "function",
+      "name": "readPrerenderedHtml",
+      "filePath": "apps/ssr-testing/scripts/assert-primitive-merge.mjs",
+      "lineRange": [
+        14,
+        34
+      ],
+      "summary": "优先读取标准路由 HTML，否则扫描可用预渲染路径并读取匹配文件，缺失时给出明确失败。",
+      "tags": [
+        "构建断言",
+        "服务端渲染",
+        "回归测试"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/ssr-testing/app/primitive-merge/page.tsx",
+      "target": "file:apps/ssr-testing/app/primitive-merge/nodes.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ssr-testing/app/primitive-merge/page.tsx",
+      "target": "file:apps/ssr-testing/app/primitive-merge/primitive-node.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ssr-testing/app/primitive-merge/page.tsx",
+      "target": "file:apps/ssr-testing/app/primitive-merge/providers.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ssr-testing/app/primitive-merge/page.tsx",
+      "target": "function:apps/ssr-testing/app/primitive-merge/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/primitive-merge/page.tsx",
+      "target": "function:apps/ssr-testing/app/primitive-merge/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/primitive-merge/primitive-node.tsx",
+      "target": "function:apps/ssr-testing/app/primitive-merge/primitive-node.tsx:PrimitiveNode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/primitive-merge/primitive-node.tsx",
+      "target": "function:apps/ssr-testing/app/primitive-merge/primitive-node.tsx:PrimitiveNode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/primitive-merge/providers.tsx",
+      "target": "function:apps/ssr-testing/app/primitive-merge/providers.tsx:Providers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/primitive-merge/providers.tsx",
+      "target": "function:apps/ssr-testing/app/primitive-merge/providers.tsx:Providers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/scripts/assert-primitive-merge.mjs",
+      "target": "file:apps/ssr-testing/app/primitive-merge/nodes.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ssr-testing/scripts/assert-primitive-merge.mjs",
+      "target": "function:apps/ssr-testing/scripts/assert-primitive-merge.mjs:readPrerenderedHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

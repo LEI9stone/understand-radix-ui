@@ -1,0 +1,125 @@
+{
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "results": [
+    {
+      "path": "packages/react/one-time-password-field/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 108,
+      "nonEmptyLines": 64,
+      "sections": [
+        "@radix-ui/react-one-time-password-field",
+        "0.2.1",
+        "0.2.0",
+        "0.1.17",
+        "0.1.16",
+        "0.1.15",
+        "0.1.14",
+        "0.1.13",
+        "0.1.12",
+        "0.1.11",
+        "0.1.10",
+        "0.1.9",
+        "0.1.8",
+        "0.1.7",
+        "0.1.6",
+        "0.1.5",
+        "0.1.4",
+        "0.1.3",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0",
+        "Introduce new One Time Password Field primitive",
+        "Other updates"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 23
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/one-time-password-field/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 13,
+      "nonEmptyLines": 9,
+      "sections": [
+        "`react-one-time-password-field`",
+        "Installation",
+        "Usage"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/one-time-password-field/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 84,
+      "nonEmptyLines": 84,
+      "sections": [
+        "name",
+        "version",
+        "license",
+        "source",
+        "main",
+        "module",
+        "publishConfig",
+        "files",
+        "sideEffects",
+        "scripts",
+        "dependencies",
+        "devDependencies",
+        "peerDependencies",
+        "peerDependenciesMeta",
+        "homepage",
+        "repository",
+        "bugs"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/one-time-password-field/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        "extends",
+        "compilerOptions",
+        "include",
+        "exclude"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      },
+      "calls": [],
+      "exports": []
+    }
+  ]
+}

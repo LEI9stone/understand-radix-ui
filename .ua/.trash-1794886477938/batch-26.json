@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/arrow/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/arrow/CHANGELOG.md",
+      "summary": "记录 Arrow 对 React Primitive 的依赖更新、RSC 回退、tree-shaking 与 ComponentRef 类型迁移。",
+      "tags": [
+        "变更记录",
+        "浮层箭头",
+        "兼容性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/arrow/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/arrow/README.md",
+      "summary": "标明 React Arrow 为内部工具而非公开使用组件。",
+      "tags": [
+        "包文档",
+        "浮层箭头",
+        "内部接口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/arrow/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/arrow/package.json",
+      "summary": "配置仅依赖 React Primitive 的内部 Arrow 包，提供 ESM/CJS 与声明发布入口、无副作用标记及统一构建命令。",
+      "tags": [
+        "包清单",
+        "浮层箭头",
+        "发布配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/arrow/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/arrow/tsconfig.json",
+      "summary": "为 Arrow SVG 组件启用共享 React 库编译约定，并将源码检查与 dist 产物隔离。",
+      "tags": [
+        "类型配置",
+        "浮层箭头",
+        "构建配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/arrow/README.md",
+      "target": "config:packages/react/arrow/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/arrow/CHANGELOG.md",
+      "target": "config:packages/react/arrow/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/arrow/tsconfig.json",
+      "target": "config:internal/typescript-config/react-library.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

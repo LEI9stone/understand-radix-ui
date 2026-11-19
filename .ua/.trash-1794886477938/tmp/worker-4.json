@@ -1,0 +1,1400 @@
+{
+  "worker": 4,
+  "load": 32784,
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "e2e/collection.spec.ts",
+          "language": "typescript",
+          "sizeLines": 92,
+          "fileCategory": "code"
+        },
+        {
+          "path": "e2e/context-menu.spec.ts",
+          "language": "typescript",
+          "sizeLines": 336,
+          "fileCategory": "code"
+        },
+        {
+          "path": "e2e/dialog.spec.ts",
+          "language": "typescript",
+          "sizeLines": 309,
+          "fileCategory": "code"
+        },
+        {
+          "path": "e2e/dropdown-menu.spec.ts",
+          "language": "typescript",
+          "sizeLines": 327,
+          "fileCategory": "code"
+        },
+        {
+          "path": "e2e/form.spec.ts",
+          "language": "typescript",
+          "sizeLines": 233,
+          "fileCategory": "code"
+        },
+        {
+          "path": "e2e/helpers.ts",
+          "language": "typescript",
+          "sizeLines": 211,
+          "fileCategory": "code"
+        },
+        {
+          "path": "e2e/menubar.spec.ts",
+          "language": "typescript",
+          "sizeLines": 321,
+          "fileCategory": "code"
+        },
+        {
+          "path": "e2e/popover.spec.ts",
+          "language": "typescript",
+          "sizeLines": 70,
+          "fileCategory": "code"
+        },
+        {
+          "path": "e2e/popper.spec.ts",
+          "language": "typescript",
+          "sizeLines": 50,
+          "fileCategory": "code"
+        },
+        {
+          "path": "e2e/scroll-area.spec.ts",
+          "language": "typescript",
+          "sizeLines": 51,
+          "fileCategory": "code"
+        },
+        {
+          "path": "e2e/select.spec.ts",
+          "language": "typescript",
+          "sizeLines": 187,
+          "fileCategory": "code"
+        },
+        {
+          "path": "e2e/toast.spec.ts",
+          "language": "typescript",
+          "sizeLines": 173,
+          "fileCategory": "code"
+        },
+        {
+          "path": "e2e/toggle-group.spec.ts",
+          "language": "typescript",
+          "sizeLines": 24,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "e2e/collection.spec.ts": [
+          "e2e/helpers.ts"
+        ],
+        "e2e/context-menu.spec.ts": [
+          "e2e/helpers.ts"
+        ],
+        "e2e/dialog.spec.ts": [
+          "e2e/helpers.ts"
+        ],
+        "e2e/dropdown-menu.spec.ts": [
+          "e2e/helpers.ts"
+        ],
+        "e2e/form.spec.ts": [
+          "e2e/helpers.ts"
+        ],
+        "e2e/helpers.ts": [],
+        "e2e/menubar.spec.ts": [
+          "e2e/helpers.ts"
+        ],
+        "e2e/popover.spec.ts": [
+          "e2e/helpers.ts"
+        ],
+        "e2e/popper.spec.ts": [
+          "e2e/helpers.ts"
+        ],
+        "e2e/scroll-area.spec.ts": [
+          "e2e/helpers.ts"
+        ],
+        "e2e/select.spec.ts": [
+          "e2e/helpers.ts"
+        ],
+        "e2e/toast.spec.ts": [
+          "e2e/helpers.ts"
+        ],
+        "e2e/toggle-group.spec.ts": [
+          "e2e/helpers.ts"
+        ]
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "apps/storybook/stories/context-menu.stories.tsx",
+          "language": "typescript",
+          "sizeLines": 896,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/storybook/stories/dialog.stories.tsx",
+          "language": "typescript",
+          "sizeLines": 818,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/storybook/stories/dropdown-menu.stories.tsx",
+          "language": "typescript",
+          "sizeLines": 1797,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/storybook/stories/external-overlay.tsx",
+          "language": "typescript",
+          "sizeLines": 77,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/storybook/stories/menubar.stories.tsx",
+          "language": "typescript",
+          "sizeLines": 861,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/storybook/stories/popover.stories.tsx",
+          "language": "typescript",
+          "sizeLines": 752,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/storybook/stories/select.stories.tsx",
+          "language": "typescript",
+          "sizeLines": 1877,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "apps/storybook/stories/context-menu.stories.tsx": [
+          "apps/storybook/stories/context-menu.stories.module.css",
+          "apps/storybook/stories/external-overlay.tsx"
+        ],
+        "apps/storybook/stories/dialog.stories.tsx": [
+          "apps/storybook/stories/dialog.stories.module.css",
+          "apps/storybook/stories/external-overlay.tsx"
+        ],
+        "apps/storybook/stories/dropdown-menu.stories.tsx": [
+          "apps/storybook/stories/dropdown-menu.stories.module.css",
+          "apps/storybook/stories/external-overlay.tsx"
+        ],
+        "apps/storybook/stories/external-overlay.tsx": [],
+        "apps/storybook/stories/menubar.stories.tsx": [
+          "apps/storybook/stories/external-overlay.tsx",
+          "apps/storybook/stories/menubar.stories.module.css"
+        ],
+        "apps/storybook/stories/popover.stories.tsx": [
+          "apps/storybook/stories/external-overlay.tsx",
+          "apps/storybook/stories/popover.stories.module.css"
+        ],
+        "apps/storybook/stories/select.stories.tsx": [
+          "apps/storybook/stories/external-overlay.tsx",
+          "apps/storybook/stories/select.stories.module.css"
+        ]
+      },
+      "neighborMap": {
+        "apps/storybook/stories/context-menu.stories.tsx": [
+          {
+            "path": "apps/storybook/stories/context-menu.stories.module.css",
+            "batchIndex": 15,
+            "symbols": []
+          }
+        ],
+        "apps/storybook/stories/dialog.stories.tsx": [
+          {
+            "path": "apps/storybook/stories/dialog.stories.module.css",
+            "batchIndex": 15,
+            "symbols": []
+          }
+        ],
+        "apps/storybook/stories/dropdown-menu.stories.tsx": [
+          {
+            "path": "apps/storybook/stories/dropdown-menu.stories.module.css",
+            "batchIndex": 15,
+            "symbols": []
+          }
+        ],
+        "apps/storybook/stories/menubar.stories.tsx": [
+          {
+            "path": "apps/storybook/stories/menubar.stories.module.css",
+            "batchIndex": 15,
+            "symbols": []
+          }
+        ],
+        "apps/storybook/stories/popover.stories.tsx": [
+          {
+            "path": "apps/storybook/stories/popover.stories.module.css",
+            "batchIndex": 15,
+            "symbols": []
+          }
+        ],
+        "apps/storybook/stories/select.stories.tsx": [
+          {
+            "path": "apps/storybook/stories/select.stories.module.css",
+            "batchIndex": 16,
+            "symbols": []
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": "apps/ssr-testing/app/primitive-merge/nodes.mjs",
+          "language": "javascript",
+          "sizeLines": 24,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/ssr-testing/app/primitive-merge/page.tsx",
+          "language": "typescript",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/ssr-testing/app/primitive-merge/primitive-node.tsx",
+          "language": "typescript",
+          "sizeLines": 14,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/ssr-testing/app/primitive-merge/providers.tsx",
+          "language": "typescript",
+          "sizeLines": 7,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/ssr-testing/scripts/assert-primitive-merge.mjs",
+          "language": "javascript",
+          "sizeLines": 62,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "apps/ssr-testing/app/primitive-merge/nodes.mjs": [],
+        "apps/ssr-testing/app/primitive-merge/page.tsx": [
+          "apps/ssr-testing/app/primitive-merge/nodes.mjs",
+          "apps/ssr-testing/app/primitive-merge/primitive-node.tsx",
+          "apps/ssr-testing/app/primitive-merge/providers.tsx"
+        ],
+        "apps/ssr-testing/app/primitive-merge/primitive-node.tsx": [],
+        "apps/ssr-testing/app/primitive-merge/providers.tsx": [],
+        "apps/ssr-testing/scripts/assert-primitive-merge.mjs": [
+          "apps/ssr-testing/app/primitive-merge/nodes.mjs"
+        ]
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 6,
+      "files": [
+        {
+          "path": "apps/ssr-testing/app/slot/client.tsx",
+          "language": "typescript",
+          "sizeLines": 99,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/ssr-testing/app/slot/page.tsx",
+          "language": "typescript",
+          "sizeLines": 141,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/ssr-testing/app/slot/server.tsx",
+          "language": "typescript",
+          "sizeLines": 98,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "apps/ssr-testing/app/slot/client.tsx": [],
+        "apps/ssr-testing/app/slot/page.tsx": [
+          "apps/ssr-testing/app/slot/client.tsx",
+          "apps/ssr-testing/app/slot/server.tsx"
+        ],
+        "apps/ssr-testing/app/slot/server.tsx": [
+          "apps/ssr-testing/app/slot/client.tsx"
+        ]
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 12,
+      "files": [
+        {
+          "path": ".github/ISSUE_TEMPLATE/Bug_report.md",
+          "language": "markdown",
+          "sizeLines": 40,
+          "fileCategory": "docs"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/Documentation.md",
+          "language": "markdown",
+          "sizeLines": 14,
+          "fileCategory": "docs"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/Feature_request.md",
+          "language": "markdown",
+          "sizeLines": 22,
+          "fileCategory": "docs"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/Question.md",
+          "language": "markdown",
+          "sizeLines": 8,
+          "fileCategory": "docs"
+        }
+      ],
+      "batchImportData": {
+        ".github/ISSUE_TEMPLATE/Bug_report.md": [],
+        ".github/ISSUE_TEMPLATE/Documentation.md": [],
+        ".github/ISSUE_TEMPLATE/Feature_request.md": [],
+        ".github/ISSUE_TEMPLATE/Question.md": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 16,
+      "files": [
+        {
+          "path": "apps/storybook/stories/progress.stories.module.css",
+          "language": "css",
+          "sizeLines": 53,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "apps/storybook/stories/radio-group.stories.module.css",
+          "language": "css",
+          "sizeLines": 95,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "apps/storybook/stories/scroll-area.stories.module.css",
+          "language": "css",
+          "sizeLines": 102,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "apps/storybook/stories/select.stories.module.css",
+          "language": "css",
+          "sizeLines": 163,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "apps/storybook/stories/separator.stories.module.css",
+          "language": "css",
+          "sizeLines": 16,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "apps/storybook/stories/slider.stories.module.css",
+          "language": "css",
+          "sizeLines": 111,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "apps/storybook/stories/switch.stories.module.css",
+          "language": "css",
+          "sizeLines": 85,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "apps/storybook/stories/tabs.stories.module.css",
+          "language": "css",
+          "sizeLines": 119,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "apps/storybook/stories/toast.stories.module.css",
+          "language": "css",
+          "sizeLines": 205,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "apps/storybook/stories/toggle-group.stories.module.css",
+          "language": "css",
+          "sizeLines": 50,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "apps/storybook/stories/toggle.stories.module.css",
+          "language": "css",
+          "sizeLines": 39,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "apps/storybook/stories/toolbar.stories.module.css",
+          "language": "css",
+          "sizeLines": 175,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "apps/storybook/stories/tooltip.stories.module.css",
+          "language": "css",
+          "sizeLines": 98,
+          "fileCategory": "markup"
+        }
+      ],
+      "batchImportData": {
+        "apps/storybook/stories/progress.stories.module.css": [],
+        "apps/storybook/stories/radio-group.stories.module.css": [],
+        "apps/storybook/stories/scroll-area.stories.module.css": [],
+        "apps/storybook/stories/select.stories.module.css": [],
+        "apps/storybook/stories/separator.stories.module.css": [],
+        "apps/storybook/stories/slider.stories.module.css": [],
+        "apps/storybook/stories/switch.stories.module.css": [],
+        "apps/storybook/stories/tabs.stories.module.css": [],
+        "apps/storybook/stories/toast.stories.module.css": [],
+        "apps/storybook/stories/toggle-group.stories.module.css": [],
+        "apps/storybook/stories/toggle.stories.module.css": [],
+        "apps/storybook/stories/toolbar.stories.module.css": [],
+        "apps/storybook/stories/tooltip.stories.module.css": []
+      },
+      "neighborMap": {
+        "apps/storybook/stories/progress.stories.module.css": [
+          {
+            "path": "apps/storybook/stories/progress.stories.tsx",
+            "batchIndex": 83,
+            "symbols": [
+              "Styled",
+              "Chromatic"
+            ]
+          }
+        ],
+        "apps/storybook/stories/radio-group.stories.module.css": [
+          {
+            "path": "apps/storybook/stories/radio-group.stories.tsx",
+            "batchIndex": 84,
+            "symbols": [
+              "Parts",
+              "PartsWithinForm",
+              "WithinFormReset",
+              "LegacyStyled",
+              "LegacyControlled",
+              "LegacyUnset",
+              "LegacyWithinForm",
+              "LegacyAnimated",
+              "LegacyChromatic"
+            ]
+          }
+        ],
+        "apps/storybook/stories/scroll-area.stories.module.css": [
+          {
+            "path": "apps/storybook/stories/scroll-area.stories.tsx",
+            "batchIndex": 84,
+            "symbols": [
+              "Basic",
+              "Resizable",
+              "ContentChange",
+              "Animated",
+              "Chromatic",
+              "ChromaticDynamicContentBeforeLoaded",
+              "ChromaticDynamicContentAfterLoaded",
+              "Cypress"
+            ]
+          }
+        ],
+        "apps/storybook/stories/select.stories.module.css": [
+          {
+            "path": "apps/storybook/stories/select.stories.tsx",
+            "batchIndex": 2,
+            "symbols": [
+              "Styled",
+              "Animated",
+              "ForcedMount",
+              "Controlled",
+              "WithExtensionOverlay",
+              "DismissesOnlySelectInsideDialog",
+              "DismissesOnlySelectInPopover",
+              "Position",
+              "NoDefaultValue",
+              "Clearable",
+              "Typeahead",
+              "WithGroups",
+              "Labelling",
+              "RightToLeft",
+              "WithinForm",
+              "WithinFormReset",
+              "DisabledWithinForm",
+              "RequiredWithinForm",
+              "Parts",
+              "AllItemsDisabled",
+              "WithinDialog",
+              "WithVeryLongSelectItems",
+              "WithScrollArea",
+              "ChromaticShortOptionsPaddedContent",
+              "ChromaticShortOptionsPaddedViewport",
+              "ChromaticLongOptionsPaddedContent",
+              "ChromaticLongOptionsPaddedViewport",
+              "ChromaticTopFirstPaddedContent",
+              "ChromaticTopFirstPaddedViewport",
+              "ChromaticBottomLastPaddedContent",
+              "ChromaticBottomLastPaddedViewport",
+              "ChromaticNoDefaultValue",
+              "Cypress",
+              "CypressShadowDom"
+            ]
+          }
+        ],
+        "apps/storybook/stories/separator.stories.module.css": [
+          {
+            "path": "apps/storybook/stories/separator.stories.tsx",
+            "batchIndex": 84,
+            "symbols": [
+              "Styled"
+            ]
+          }
+        ],
+        "apps/storybook/stories/slider.stories.module.css": [
+          {
+            "path": "apps/storybook/stories/slider.stories.tsx",
+            "batchIndex": 84,
+            "symbols": [
+              "Styled",
+              "WithOnValueCommit",
+              "RightToLeft",
+              "Horizontal",
+              "Vertical",
+              "Inversions",
+              "WithMinimumStepsBetweenThumbs",
+              "WithPreserveThumbOrder",
+              "WithMultipleRanges",
+              "SmallSteps",
+              "WithinForm",
+              "WithinFormReset",
+              "BubbleInputWithinForm",
+              "Parts",
+              "Strict",
+              "InScrollableContext",
+              "Chromatic"
+            ]
+          }
+        ],
+        "apps/storybook/stories/switch.stories.module.css": [
+          {
+            "path": "apps/storybook/stories/switch.stories.tsx",
+            "batchIndex": 84,
+            "symbols": [
+              "Styled",
+              "Controlled",
+              "WithinForm",
+              "WithinFormReset",
+              "Parts",
+              "PartsWithinForm",
+              "Chromatic"
+            ]
+          }
+        ],
+        "apps/storybook/stories/tabs.stories.module.css": [
+          {
+            "path": "apps/storybook/stories/tabs.stories.tsx",
+            "batchIndex": 84,
+            "symbols": [
+              "Styled",
+              "Animated",
+              "Chromatic"
+            ]
+          }
+        ],
+        "apps/storybook/stories/toast.stories.module.css": [
+          {
+            "path": "apps/storybook/stories/toast.stories.tsx",
+            "batchIndex": 84,
+            "symbols": [
+              "Styled",
+              "Controlled",
+              "FromDialog",
+              "Promise",
+              "KeyChange",
+              "PauseResumeProps",
+              "Animated",
+              "Cypress",
+              "CustomAnnouncerContainer",
+              "Chromatic"
+            ]
+          }
+        ],
+        "apps/storybook/stories/toggle-group.stories.module.css": [
+          {
+            "path": "apps/storybook/stories/toggle-group.stories.tsx",
+            "batchIndex": 84,
+            "symbols": [
+              "Single",
+              "Vertical",
+              "Multiple",
+              "Chromatic",
+              "Cypress"
+            ]
+          }
+        ],
+        "apps/storybook/stories/toggle.stories.module.css": [
+          {
+            "path": "apps/storybook/stories/toggle.stories.tsx",
+            "batchIndex": 84,
+            "symbols": [
+              "Styled",
+              "Controlled",
+              "Chromatic"
+            ]
+          }
+        ],
+        "apps/storybook/stories/toolbar.stories.module.css": [
+          {
+            "path": "apps/storybook/stories/toolbar.stories.tsx",
+            "batchIndex": 84,
+            "symbols": [
+              "Styled",
+              "Chromatic"
+            ]
+          }
+        ],
+        "apps/storybook/stories/tooltip.stories.module.css": [
+          {
+            "path": "apps/storybook/stories/tooltip.stories.tsx",
+            "batchIndex": 84,
+            "symbols": [
+              "Styled",
+              "Controlled",
+              "CustomDurations",
+              "CustomContent",
+              "Positions",
+              "AriaLabel",
+              "WithText",
+              "WithExternalRef",
+              "Unmount",
+              "Animated",
+              "SlottableContent",
+              "WithinDialog",
+              "KeepOpenOnActivation",
+              "WithinScrollable",
+              "DisableHoverableContent",
+              "Chromatic"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 17,
+      "files": [
+        {
+          "path": "internal/typescript-config/base.json",
+          "language": "json",
+          "sizeLines": 19,
+          "fileCategory": "config"
+        },
+        {
+          "path": "internal/typescript-config/nextjs.json",
+          "language": "json",
+          "sizeLines": 12,
+          "fileCategory": "config"
+        },
+        {
+          "path": "internal/typescript-config/package.json",
+          "language": "json",
+          "sizeLines": 6,
+          "fileCategory": "config"
+        },
+        {
+          "path": "internal/typescript-config/react-library.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        },
+        {
+          "path": "internal/typescript-config/vite-app.json",
+          "language": "json",
+          "sizeLines": 12,
+          "fileCategory": "config"
+        },
+        {
+          "path": "internal/typescript-config/vite-node.json",
+          "language": "json",
+          "sizeLines": 11,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "internal/typescript-config/base.json": [],
+        "internal/typescript-config/nextjs.json": [],
+        "internal/typescript-config/package.json": [],
+        "internal/typescript-config/react-library.json": [],
+        "internal/typescript-config/vite-app.json": [],
+        "internal/typescript-config/vite-node.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 18,
+      "files": [
+        {
+          "path": "packages/core/env-check/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 5,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/core/env-check/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/core/env-check/package.json",
+          "language": "json",
+          "sizeLines": 71,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/core/env-check/tsconfig.json",
+          "language": "json",
+          "sizeLines": 10,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/core/env-check/CHANGELOG.md": [],
+        "packages/core/env-check/README.md": [],
+        "packages/core/env-check/package.json": [],
+        "packages/core/env-check/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 20,
+      "files": [
+        {
+          "path": "packages/core/primitive/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 25,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/core/primitive/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/core/primitive/package.json",
+          "language": "json",
+          "sizeLines": 59,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/core/primitive/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/core/primitive/CHANGELOG.md": [],
+        "packages/core/primitive/README.md": [],
+        "packages/core/primitive/package.json": [],
+        "packages/core/primitive/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 24,
+      "files": [
+        {
+          "path": "packages/react/alert-dialog/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 84,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/alert-dialog/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/alert-dialog/package.json",
+          "language": "json",
+          "sizeLines": 76,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/alert-dialog/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/alert-dialog/CHANGELOG.md": [],
+        "packages/react/alert-dialog/README.md": [],
+        "packages/react/alert-dialog/package.json": [],
+        "packages/react/alert-dialog/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 26,
+      "files": [
+        {
+          "path": "packages/react/arrow/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 62,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/arrow/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/arrow/package.json",
+          "language": "json",
+          "sizeLines": 72,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/arrow/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/arrow/CHANGELOG.md": [],
+        "packages/react/arrow/README.md": [],
+        "packages/react/arrow/package.json": [],
+        "packages/react/arrow/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 27,
+      "files": [
+        {
+          "path": "packages/react/aspect-ratio/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 63,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/aspect-ratio/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/aspect-ratio/package.json",
+          "language": "json",
+          "sizeLines": 72,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/aspect-ratio/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/aspect-ratio/CHANGELOG.md": [],
+        "packages/react/aspect-ratio/README.md": [],
+        "packages/react/aspect-ratio/package.json": [],
+        "packages/react/aspect-ratio/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 30,
+      "files": [
+        {
+          "path": "packages/react/collapsible/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 85,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/collapsible/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/collapsible/package.json",
+          "language": "json",
+          "sizeLines": 79,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/collapsible/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/collapsible/CHANGELOG.md": [],
+        "packages/react/collapsible/README.md": [],
+        "packages/react/collapsible/package.json": [],
+        "packages/react/collapsible/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 31,
+      "files": [
+        {
+          "path": "packages/react/collection/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 68,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/collection/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/collection/package.json",
+          "language": "json",
+          "sizeLines": 76,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/collection/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/collection/CHANGELOG.md": [],
+        "packages/react/collection/README.md": [],
+        "packages/react/collection/package.json": [],
+        "packages/react/collection/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 35,
+      "files": [
+        {
+          "path": "packages/react/dialog/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 93,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/dialog/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/dialog/package.json",
+          "language": "json",
+          "sizeLines": 86,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/dialog/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/dialog/CHANGELOG.md": [],
+        "packages/react/dialog/README.md": [],
+        "packages/react/dialog/package.json": [],
+        "packages/react/dialog/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 49,
+      "files": [
+        {
+          "path": "packages/react/password-toggle-field/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 108,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/password-toggle-field/README.md",
+          "language": "markdown",
+          "sizeLines": 13,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/password-toggle-field/package.json",
+          "language": "json",
+          "sizeLines": 81,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/password-toggle-field/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/password-toggle-field/CHANGELOG.md": [],
+        "packages/react/password-toggle-field/README.md": [],
+        "packages/react/password-toggle-field/package.json": [],
+        "packages/react/password-toggle-field/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 57,
+      "files": [
+        {
+          "path": "packages/react/radix-ui/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 516,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/radix-ui/README.md",
+          "language": "markdown",
+          "sizeLines": 36,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/radix-ui/package.json",
+          "language": "json",
+          "sizeLines": 145,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/radix-ui/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/radix-ui/CHANGELOG.md": [],
+        "packages/react/radix-ui/README.md": [],
+        "packages/react/radix-ui/package.json": [],
+        "packages/react/radix-ui/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 58,
+      "files": [
+        {
+          "path": "packages/react/roving-focus/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 86,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/roving-focus/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/roving-focus/package.json",
+          "language": "json",
+          "sizeLines": 82,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/roving-focus/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/roving-focus/CHANGELOG.md": [],
+        "packages/react/roving-focus/README.md": [],
+        "packages/react/roving-focus/package.json": [],
+        "packages/react/roving-focus/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 70,
+      "files": [
+        {
+          "path": "packages/react/tooltip/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 90,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/tooltip/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/tooltip/package.json",
+          "language": "json",
+          "sizeLines": 85,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/tooltip/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/tooltip/CHANGELOG.md": [],
+        "packages/react/tooltip/README.md": [],
+        "packages/react/tooltip/package.json": [],
+        "packages/react/tooltip/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 79,
+      "files": [
+        {
+          "path": "packages/react/use-size/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 20,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/use-size/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/use-size/package.json",
+          "language": "json",
+          "sizeLines": 67,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/use-size/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/use-size/CHANGELOG.md": [],
+        "packages/react/use-size/README.md": [],
+        "packages/react/use-size/package.json": [],
+        "packages/react/use-size/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 86,
+      "files": [
+        {
+          "path": "packages/react/alert-dialog/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 35,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/announce/src/announce.test.tsx",
+          "language": "typescript",
+          "sizeLines": 60,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/announce/src/announce.tsx",
+          "language": "typescript",
+          "sizeLines": 245,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/announce/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 7,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/arrow/src/arrow.test.tsx",
+          "language": "typescript",
+          "sizeLines": 89,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/arrow/src/arrow.tsx",
+          "language": "typescript",
+          "sizeLines": 38,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/arrow/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 7,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/aspect-ratio/src/aspect-ratio.test.tsx",
+          "language": "typescript",
+          "sizeLines": 87,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/aspect-ratio/src/aspect-ratio.tsx",
+          "language": "typescript",
+          "sizeLines": 53,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/aspect-ratio/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 7,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/avatar/src/avatar.test.tsx",
+          "language": "typescript",
+          "sizeLines": 639,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/avatar/src/avatar.tsx",
+          "language": "typescript",
+          "sizeLines": 248,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/avatar/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 13,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/checkbox/src/checkbox.test.tsx",
+          "language": "typescript",
+          "sizeLines": 999,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/checkbox/src/checkbox.tsx",
+          "language": "typescript",
+          "sizeLines": 479,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/checkbox/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 24,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/collapsible/src/collapsible.test.tsx",
+          "language": "typescript",
+          "sizeLines": 335,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/collapsible/src/collapsible.tsx",
+          "language": "typescript",
+          "sizeLines": 244,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/collapsible/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 17,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/collection/src/collection-legacy.tsx",
+          "language": "typescript",
+          "sizeLines": 138,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/collection/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/compose-refs/src/compose-refs.tsx",
+          "language": "typescript",
+          "sizeLines": 60,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/compose-refs/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 1,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/context-menu/src/context-menu.test.tsx",
+          "language": "typescript",
+          "sizeLines": 1599,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "language": "typescript",
+          "sizeLines": 599,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/alert-dialog/src/index.ts": [],
+        "packages/react/announce/src/announce.test.tsx": [
+          "packages/react/announce/src/announce.tsx"
+        ],
+        "packages/react/announce/src/announce.tsx": [],
+        "packages/react/announce/src/index.ts": [],
+        "packages/react/arrow/src/arrow.test.tsx": [
+          "packages/react/arrow/src/arrow.tsx"
+        ],
+        "packages/react/arrow/src/arrow.tsx": [],
+        "packages/react/arrow/src/index.ts": [],
+        "packages/react/aspect-ratio/src/aspect-ratio.test.tsx": [
+          "packages/react/aspect-ratio/src/aspect-ratio.tsx"
+        ],
+        "packages/react/aspect-ratio/src/aspect-ratio.tsx": [],
+        "packages/react/aspect-ratio/src/index.ts": [],
+        "packages/react/avatar/src/avatar.test.tsx": [
+          "packages/react/avatar/src/avatar.tsx"
+        ],
+        "packages/react/avatar/src/avatar.tsx": [],
+        "packages/react/avatar/src/index.ts": [],
+        "packages/react/checkbox/src/checkbox.test.tsx": [],
+        "packages/react/checkbox/src/checkbox.tsx": [],
+        "packages/react/checkbox/src/index.ts": [],
+        "packages/react/collapsible/src/collapsible.test.tsx": [
+          "packages/react/collapsible/src/collapsible.tsx"
+        ],
+        "packages/react/collapsible/src/collapsible.tsx": [],
+        "packages/react/collapsible/src/index.ts": [],
+        "packages/react/collection/src/collection-legacy.tsx": [],
+        "packages/react/collection/src/index.ts": [],
+        "packages/react/compose-refs/src/compose-refs.tsx": [],
+        "packages/react/compose-refs/src/index.ts": [],
+        "packages/react/context-menu/src/context-menu.test.tsx": [
+          "packages/react/context-menu/src/context-menu.tsx"
+        ],
+        "packages/react/context-menu/src/context-menu.tsx": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

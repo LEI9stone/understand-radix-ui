@@ -1,0 +1,86 @@
+{
+  "totalInputNodes": 694,
+  "totalAssigned": 694,
+  "uniqueAssigned": 694,
+  "layers": [
+    {
+      "id": "layer:dom-foundation",
+      "name": "DOM 与组合基础",
+      "count": 21
+    },
+    {
+      "id": "layer:shared-state-hooks",
+      "name": "共享状态与 Hook",
+      "count": 30
+    },
+    {
+      "id": "layer:overlay-focus",
+      "name": "浮层定位与焦点交互",
+      "count": 18
+    },
+    {
+      "id": "layer:accessible-components",
+      "name": "可访问复合组件",
+      "count": 66
+    },
+    {
+      "id": "layer:public-entrypoints",
+      "name": "统一导出与消费入口",
+      "count": 37
+    },
+    {
+      "id": "layer:test-verification",
+      "name": "测试与兼容性验证",
+      "count": 68
+    },
+    {
+      "id": "layer:examples-ssr",
+      "name": "组件示例与服务端演示",
+      "count": 125
+    },
+    {
+      "id": "layer:engineering-ci",
+      "name": "构建工具与持续交付",
+      "count": 14
+    },
+    {
+      "id": "layer:configuration",
+      "name": "工作区与编译配置",
+      "count": 160
+    },
+    {
+      "id": "layer:documentation",
+      "name": "设计原则与维护文档",
+      "count": 155
+    }
+  ],
+  "crossLayerDependencies": {
+    "layer:examples-ssr -> layer:accessible-components": 28,
+    "layer:examples-ssr -> layer:overlay-focus": 6,
+    "layer:test-verification -> layer:shared-state-hooks": 4,
+    "layer:shared-state-hooks -> layer:dom-foundation": 5,
+    "layer:test-verification -> layer:overlay-focus": 8,
+    "layer:test-verification -> layer:accessible-components": 28,
+    "layer:accessible-components -> layer:dom-foundation": 84,
+    "layer:accessible-components -> layer:shared-state-hooks": 102,
+    "layer:accessible-components -> layer:overlay-focus": 50,
+    "layer:engineering-ci -> layer:configuration": 1,
+    "layer:configuration -> layer:engineering-ci": 1,
+    "layer:examples-ssr -> layer:public-entrypoints": 14,
+    "layer:examples-ssr -> layer:dom-foundation": 1,
+    "layer:configuration -> layer:examples-ssr": 1,
+    "layer:test-verification -> layer:dom-foundation": 4,
+    "layer:overlay-focus -> layer:dom-foundation": 12,
+    "layer:overlay-focus -> layer:shared-state-hooks": 14,
+    "layer:public-entrypoints -> layer:dom-foundation": 7,
+    "layer:public-entrypoints -> layer:accessible-components": 50,
+    "layer:public-entrypoints -> layer:shared-state-hooks": 10,
+    "layer:public-entrypoints -> layer:overlay-focus": 9,
+    "layer:configuration -> layer:test-verification": 1
+  },
+  "errors": [],
+  "warnings": [
+    "确定性 imports 主要覆盖包内相对导入；分层同时参考441条 depends_on 与文件摘要，以保留 workspace 别名依赖结构。",
+    "分层展示职责关系，不代表严格无环约束；组件允许基于其他公开组件组合。"
+  ]
+}

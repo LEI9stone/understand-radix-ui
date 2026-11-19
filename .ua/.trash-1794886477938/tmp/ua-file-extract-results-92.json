@@ -1,0 +1,1868 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 25,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/toggle-group/src/toggle-group.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 273,
+      "nonEmptyLines": 230,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/toggle-group/src/toggle-group.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 328,
+      "nonEmptyLines": 290,
+      "exports": [
+        {
+          "name": "createToggleGroupScope",
+          "line": 319,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleGroup",
+          "line": 319,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleGroupItem",
+          "line": 319,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 319,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 319,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleGroupSingleProps",
+          "line": 328,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleGroupMultipleProps",
+          "line": 328,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleGroupItemProps",
+          "line": 328,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/toggle/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "exports": [
+        {
+          "name": "Toggle",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleProps",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/toggle/src/toggle.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 203,
+      "nonEmptyLines": 162,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/toggle/src/toggle.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 67,
+      "nonEmptyLines": 59,
+      "exports": [
+        {
+          "name": "Toggle",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleProps",
+          "line": 67,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/toolbar/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 27,
+      "exports": [
+        {
+          "name": "createToolbarScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Toolbar",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarSeparator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarButton",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarLink",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarToggleGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarToggleItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Separator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Button",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Link",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarSeparatorProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarButtonProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarLinkProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarToggleGroupSingleProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarToggleGroupMultipleProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarToggleItemProps",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 20,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/toolbar/src/toolbar.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 449,
+      "nonEmptyLines": 393,
+      "functions": [
+        {
+          "name": "component",
+          "startLine": 7,
+          "endLine": 17,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "component",
+          "callee": "render",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/toolbar/src/toolbar.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 245,
+      "nonEmptyLines": 217,
+      "exports": [
+        {
+          "name": "createToolbarScope",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "Toolbar",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarSeparator",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarButton",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarLink",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarToggleGroup",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarToggleItem",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "Separator",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "Button",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "Link",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleGroup",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleItem",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarProps",
+          "line": 237,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarSeparatorProps",
+          "line": 237,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarButtonProps",
+          "line": 237,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarLinkProps",
+          "line": 237,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarToggleGroupSingleProps",
+          "line": 237,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarToggleGroupMultipleProps",
+          "line": 237,
+          "isDefault": false
+        },
+        {
+          "name": "ToolbarToggleItemProps",
+          "line": 237,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 20,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/tooltip/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 26,
+      "exports": [
+        {
+          "name": "createTooltipScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipProvider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Tooltip",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipPortal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipArrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Provider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipProviderProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipTriggerProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipPortalProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipContentProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipArrowProps",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/tooltip/src/tooltip.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 633,
+      "nonEmptyLines": 554,
+      "callGraph": [
+        {
+          "caller": "Child",
+          "callee": "React.useEffect",
+          "lineNumber": 148
+        },
+        {
+          "caller": "Child",
+          "callee": "onMount",
+          "lineNumber": 149
+        },
+        {
+          "caller": "Child",
+          "callee": "React.useEffect",
+          "lineNumber": 181
+        },
+        {
+          "caller": "Child",
+          "callee": "onMount",
+          "lineNumber": 182
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/tooltip/src/tooltip.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 804,
+      "nonEmptyLines": 723,
+      "functions": [
+        {
+          "name": "TooltipProvider",
+          "startLine": 66,
+          "endLine": 112,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "Tooltip",
+          "startLine": 155,
+          "endLine": 260,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "TooltipPortal",
+          "startLine": 358,
+          "endLine": 370,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "getExitSideFromRect",
+          "startLine": 629,
+          "endLine": 647,
+          "params": [
+            "point",
+            "rect"
+          ]
+        },
+        {
+          "name": "getPaddedExitPoints",
+          "startLine": 649,
+          "endLine": 678,
+          "params": [
+            "exitPoint",
+            "exitSide",
+            "padding"
+          ]
+        },
+        {
+          "name": "getPointsFromRect",
+          "startLine": 680,
+          "endLine": 688,
+          "params": [
+            "rect"
+          ]
+        },
+        {
+          "name": "isPointInPolygon",
+          "startLine": 692,
+          "endLine": 709,
+          "params": [
+            "point",
+            "polygon"
+          ]
+        },
+        {
+          "name": "getHull",
+          "startLine": 713,
+          "endLine": 723,
+          "params": [
+            "points"
+          ]
+        },
+        {
+          "name": "getHullPresorted",
+          "startLine": 726,
+          "endLine": 765,
+          "params": [
+            "points"
+          ]
+        },
+        {
+          "name": "concatAriaDescribedby",
+          "startLine": 768,
+          "endLine": 778,
+          "params": [
+            "...values"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createTooltipScope",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipProvider",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "Tooltip",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipTrigger",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipPortal",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipContent",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipArrow",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "Provider",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 780,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipProviderProps",
+          "line": 797,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipProps",
+          "line": 797,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipTriggerProps",
+          "line": 797,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipPortalProps",
+          "line": 797,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipContentProps",
+          "line": 797,
+          "isDefault": false
+        },
+        {
+          "name": "TooltipArrowProps",
+          "line": 797,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "TooltipProvider",
+          "callee": "React.useRef",
+          "lineNumber": 76
+        },
+        {
+          "caller": "TooltipProvider",
+          "callee": "React.useRef",
+          "lineNumber": 77
+        },
+        {
+          "caller": "TooltipProvider",
+          "callee": "React.useRef",
+          "lineNumber": 78
+        },
+        {
+          "caller": "TooltipProvider",
+          "callee": "React.useEffect",
+          "lineNumber": 80
+        },
+        {
+          "caller": "TooltipProvider",
+          "callee": "window.clearTimeout",
+          "lineNumber": 82
+        },
+        {
+          "caller": "TooltipProvider",
+          "callee": "React.useCallback",
+          "lineNumber": 90
+        },
+        {
+          "caller": "TooltipProvider",
+          "callee": "window.clearTimeout",
+          "lineNumber": 92
+        },
+        {
+          "caller": "TooltipProvider",
+          "callee": "React.useCallback",
+          "lineNumber": 95
+        },
+        {
+          "caller": "TooltipProvider",
+          "callee": "window.clearTimeout",
+          "lineNumber": 97
+        },
+        {
+          "caller": "TooltipProvider",
+          "callee": "window.setTimeout",
+          "lineNumber": 98
+        },
+        {
+          "caller": "TooltipProvider",
+          "callee": "React.useCallback",
+          "lineNumber": 104
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "useTooltipProviderContext",
+          "lineNumber": 165
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "usePopperScope",
+          "lineNumber": 166
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "React.useState",
+          "lineNumber": 167
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "React.useState",
+          "lineNumber": 168
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "useId",
+          "lineNumber": 169
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "React.useRef",
+          "lineNumber": 170
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "React.useRef",
+          "lineNumber": 174
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "useControllableState",
+          "lineNumber": 175
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "providerContext.onOpen",
+          "lineNumber": 180
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "document.dispatchEvent",
+          "lineNumber": 184
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "providerContext.onClose",
+          "lineNumber": 186
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "onOpenChange",
+          "lineNumber": 188
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "React.useMemo",
+          "lineNumber": 192
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "React.useCallback",
+          "lineNumber": 196
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "window.clearTimeout",
+          "lineNumber": 197
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "setOpen",
+          "lineNumber": 200
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "React.useCallback",
+          "lineNumber": 203
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "window.clearTimeout",
+          "lineNumber": 204
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "setOpen",
+          "lineNumber": 206
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "React.useCallback",
+          "lineNumber": 209
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "window.clearTimeout",
+          "lineNumber": 210
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "window.setTimeout",
+          "lineNumber": 211
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "setOpen",
+          "lineNumber": 213
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "React.useEffect",
+          "lineNumber": 218
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "window.clearTimeout",
+          "lineNumber": 221
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "React.useCallback",
+          "lineNumber": 239
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "handleDelayedOpen",
+          "lineNumber": 240
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "handleOpen",
+          "lineNumber": 241
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "React.useCallback",
+          "lineNumber": 243
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "handleClose",
+          "lineNumber": 245
+        },
+        {
+          "caller": "Tooltip",
+          "callee": "window.clearTimeout",
+          "lineNumber": 248
+        },
+        {
+          "caller": "TooltipPortal",
+          "callee": "useTooltipContext",
+          "lineNumber": 360
+        },
+        {
+          "caller": "handleTriggerLeave",
+          "callee": "handleCreateGraceArea",
+          "lineNumber": 451
+        },
+        {
+          "caller": "handleContentLeave",
+          "callee": "handleCreateGraceArea",
+          "lineNumber": 452
+        },
+        {
+          "caller": "handleTrackPointerGrace",
+          "callee": "trigger?.contains",
+          "lineNumber": 468
+        },
+        {
+          "caller": "handleTrackPointerGrace",
+          "callee": "content?.contains",
+          "lineNumber": 468
+        },
+        {
+          "caller": "handleTrackPointerGrace",
+          "callee": "isPointInPolygon",
+          "lineNumber": 469
+        },
+        {
+          "caller": "handleTrackPointerGrace",
+          "callee": "handleRemoveGraceArea",
+          "lineNumber": 472
+        },
+        {
+          "caller": "handleTrackPointerGrace",
+          "callee": "handleRemoveGraceArea",
+          "lineNumber": 474
+        },
+        {
+          "caller": "handleTrackPointerGrace",
+          "callee": "onClose",
+          "lineNumber": 475
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "event.target.contains",
+          "lineNumber": 547
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "onClose",
+          "lineNumber": 548
+        },
+        {
+          "caller": "getExitSideFromRect",
+          "callee": "Math.abs",
+          "lineNumber": 630
+        },
+        {
+          "caller": "getExitSideFromRect",
+          "callee": "Math.abs",
+          "lineNumber": 631
+        },
+        {
+          "caller": "getExitSideFromRect",
+          "callee": "Math.abs",
+          "lineNumber": 632
+        },
+        {
+          "caller": "getExitSideFromRect",
+          "callee": "Math.abs",
+          "lineNumber": 633
+        },
+        {
+          "caller": "getExitSideFromRect",
+          "callee": "Math.min",
+          "lineNumber": 635
+        },
+        {
+          "caller": "getPaddedExitPoints",
+          "callee": "paddedExitPoints.push",
+          "lineNumber": 653
+        },
+        {
+          "caller": "getPaddedExitPoints",
+          "callee": "paddedExitPoints.push",
+          "lineNumber": 659
+        },
+        {
+          "caller": "getPaddedExitPoints",
+          "callee": "paddedExitPoints.push",
+          "lineNumber": 665
+        },
+        {
+          "caller": "getPaddedExitPoints",
+          "callee": "paddedExitPoints.push",
+          "lineNumber": 671
+        },
+        {
+          "caller": "getHull",
+          "callee": "points.slice",
+          "lineNumber": 714
+        },
+        {
+          "caller": "getHull",
+          "callee": "newPoints.sort",
+          "lineNumber": 715
+        },
+        {
+          "caller": "getHull",
+          "callee": "getHullPresorted",
+          "lineNumber": 722
+        },
+        {
+          "caller": "getHullPresorted",
+          "callee": "points.slice",
+          "lineNumber": 727
+        },
+        {
+          "caller": "getHullPresorted",
+          "callee": "upperHull.pop",
+          "lineNumber": 735
+        },
+        {
+          "caller": "getHullPresorted",
+          "callee": "upperHull.push",
+          "lineNumber": 738
+        },
+        {
+          "caller": "getHullPresorted",
+          "callee": "upperHull.pop",
+          "lineNumber": 740
+        },
+        {
+          "caller": "getHullPresorted",
+          "callee": "lowerHull.pop",
+          "lineNumber": 748
+        },
+        {
+          "caller": "getHullPresorted",
+          "callee": "lowerHull.push",
+          "lineNumber": 751
+        },
+        {
+          "caller": "getHullPresorted",
+          "callee": "lowerHull.pop",
+          "lineNumber": 753
+        },
+        {
+          "caller": "getHullPresorted",
+          "callee": "upperHull.concat",
+          "lineNumber": 763
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "String(value).trim().split",
+          "lineNumber": 772
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "String(value).trim",
+          "lineNumber": 772
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "String",
+          "lineNumber": 772
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "ids.add",
+          "lineNumber": 773
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "Array.from(ids).join",
+          "lineNumber": 777
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "Array.from",
+          "lineNumber": 777
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 10,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-callback-ref/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "exports": [
+        {
+          "name": "useCallbackRef",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "useCallbackRef",
+          "startLine": 15,
+          "endLine": 31,
+          "params": [
+            "callback"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useCallbackRef",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useCallbackRef",
+          "callee": "React.useRef",
+          "lineNumber": 16
+        },
+        {
+          "caller": "useCallbackRef",
+          "callee": "useReactInsertionEffect",
+          "lineNumber": 20
+        },
+        {
+          "caller": "useCallbackRef",
+          "callee": "useLayoutEffect",
+          "lineNumber": 24
+        },
+        {
+          "caller": "useCallbackRef",
+          "callee": "React.useMemo",
+          "lineNumber": 30
+        },
+        {
+          "caller": "useCallbackRef",
+          "callee": "callbackRef.current",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-controllable-state/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "exports": [
+        {
+          "name": "useControllableState",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "useControllableStateReducer",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 120,
+      "nonEmptyLines": 102,
+      "functions": [
+        {
+          "name": "useControllableStateReducer",
+          "startLine": 38,
+          "endLine": 120,
+          "params": [
+            "reducer",
+            "userArgs",
+            "initialArg",
+            "init"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useControllableStateReducer",
+          "line": 38,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "useEffectEvent",
+          "lineNumber": 47
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "React.useRef",
+          "lineNumber": 54
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "React.useEffect",
+          "lineNumber": 55
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "console.warn",
+          "lineNumber": 60
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "args.push",
+          "lineNumber": 73
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "React.useReducer",
+          "lineNumber": 76
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "reducer",
+          "lineNumber": 82
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "Object.is",
+          "lineNumber": 83
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "onChange",
+          "lineNumber": 84
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "React.useRef",
+          "lineNumber": 92
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "React.useEffect",
+          "lineNumber": 93
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "onChange",
+          "lineNumber": 97
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "React.useMemo",
+          "lineNumber": 102
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "React.useEffect",
+          "lineNumber": 111
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "Object.is",
+          "lineNumber": 114
+        },
+        {
+          "caller": "useControllableStateReducer",
+          "callee": "dispatch",
+          "lineNumber": 115
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-controllable-state/src/use-controllable-state.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 137,
+      "nonEmptyLines": 123,
+      "functions": [
+        {
+          "name": "ControlledComponent",
+          "startLine": 88,
+          "endLine": 98,
+          "params": [
+            "{ defaultChecked }"
+          ]
+        },
+        {
+          "name": "UncontrolledComponent",
+          "startLine": 100,
+          "endLine": 102,
+          "params": [
+            "{ defaultChecked }"
+          ]
+        },
+        {
+          "name": "UnstableComponent",
+          "startLine": 104,
+          "endLine": 114,
+          "params": [
+            "{ defaultChecked }"
+          ]
+        },
+        {
+          "name": "Checkbox",
+          "startLine": 116,
+          "endLine": 137,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ControlledComponent",
+          "callee": "React.useState",
+          "lineNumber": 89
+        },
+        {
+          "caller": "ControlledComponent",
+          "callee": "setChecked",
+          "lineNumber": 93
+        },
+        {
+          "caller": "UnstableComponent",
+          "callee": "React.useState",
+          "lineNumber": 105
+        },
+        {
+          "caller": "UnstableComponent",
+          "callee": "setChecked",
+          "lineNumber": 109
+        },
+        {
+          "caller": "Checkbox",
+          "callee": "useControllableState",
+          "lineNumber": 121
+        },
+        {
+          "caller": "Checkbox",
+          "callee": "e.preventDefault",
+          "lineNumber": 133
+        },
+        {
+          "caller": "Checkbox",
+          "callee": "setChecked",
+          "lineNumber": 134
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 85,
+      "functions": [
+        {
+          "name": "useControllableState",
+          "startLine": 19,
+          "endLine": 67,
+          "params": [
+            "{\n  prop,\n  defaultProp,\n  onChange = () => {},\n  caller,\n}"
+          ]
+        },
+        {
+          "name": "useUncontrolledState",
+          "startLine": 69,
+          "endLine": 93,
+          "params": [
+            "{\n  defaultProp,\n  onChange,\n}"
+          ]
+        },
+        {
+          "name": "isFunction",
+          "startLine": 95,
+          "endLine": 97,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useControllableState",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useControllableState",
+          "callee": "useUncontrolledState",
+          "lineNumber": 25
+        },
+        {
+          "caller": "useControllableState",
+          "callee": "React.useRef",
+          "lineNumber": 37
+        },
+        {
+          "caller": "useControllableState",
+          "callee": "React.useEffect",
+          "lineNumber": 38
+        },
+        {
+          "caller": "useControllableState",
+          "callee": "console.warn",
+          "lineNumber": 43
+        },
+        {
+          "caller": "useControllableState",
+          "callee": "React.useCallback",
+          "lineNumber": 52
+        },
+        {
+          "caller": "useControllableState",
+          "callee": "isFunction",
+          "lineNumber": 55
+        },
+        {
+          "caller": "useControllableState",
+          "callee": "nextValue",
+          "lineNumber": 55
+        },
+        {
+          "caller": "useControllableState",
+          "callee": "onChangeRef.current",
+          "lineNumber": 57
+        },
+        {
+          "caller": "useControllableState",
+          "callee": "setUncontrolledProp",
+          "lineNumber": 60
+        },
+        {
+          "caller": "useUncontrolledState",
+          "callee": "React.useState",
+          "lineNumber": 77
+        },
+        {
+          "caller": "useUncontrolledState",
+          "callee": "React.useRef",
+          "lineNumber": 78
+        },
+        {
+          "caller": "useUncontrolledState",
+          "callee": "React.useRef",
+          "lineNumber": 80
+        },
+        {
+          "caller": "useUncontrolledState",
+          "callee": "useInsertionEffect",
+          "lineNumber": 81
+        },
+        {
+          "caller": "useUncontrolledState",
+          "callee": "React.useEffect",
+          "lineNumber": 85
+        },
+        {
+          "caller": "useUncontrolledState",
+          "callee": "onChangeRef.current",
+          "lineNumber": 87
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-effect-event/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "exports": [
+        {
+          "name": "useEffectEvent",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-effect-event/src/use-effect-event.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "useEffectEvent",
+          "startLine": 15,
+          "endLine": 36,
+          "params": [
+            "callback"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useEffectEvent",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useEffectEvent",
+          "callee": "useReactEffectEvent",
+          "lineNumber": 17
+        },
+        {
+          "caller": "useEffectEvent",
+          "callee": "React.useRef",
+          "lineNumber": 20
+        },
+        {
+          "caller": "useEffectEvent",
+          "callee": "useReactInsertionEffect",
+          "lineNumber": 25
+        },
+        {
+          "caller": "useEffectEvent",
+          "callee": "useLayoutEffect",
+          "lineNumber": 29
+        },
+        {
+          "caller": "useEffectEvent",
+          "callee": "React.useMemo",
+          "lineNumber": 35
+        },
+        {
+          "caller": "useEffectEvent",
+          "callee": "ref.current",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-escape-keydown/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "exports": [
+        {
+          "name": "useEscapeKeydown",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-escape-keydown/src/use-escape-keydown.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "useEscapeKeydown",
+          "startLine": 10,
+          "endLine": 26,
+          "params": [
+            "onEscapeKeyDownProp",
+            "ownerDocument"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useEscapeKeydown",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useEscapeKeydown",
+          "callee": "useCallbackRef",
+          "lineNumber": 14
+        },
+        {
+          "caller": "useEscapeKeydown",
+          "callee": "React.useEffect",
+          "lineNumber": 16
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "onEscapeKeyDown",
+          "lineNumber": 20
+        },
+        {
+          "caller": "useEscapeKeydown",
+          "callee": "ownerDocument.addEventListener",
+          "lineNumber": 23
+        },
+        {
+          "caller": "useEscapeKeydown",
+          "callee": "ownerDocument.removeEventListener",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-is-hydrated/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "exports": [
+        {
+          "name": "useIsHydrated",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "useIsHydrated",
+          "startLine": 5,
+          "endLine": 14,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useIsHydrated",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useIsHydrated",
+          "callee": "React.useState",
+          "lineNumber": 6
+        },
+        {
+          "caller": "useIsHydrated",
+          "callee": "React.useEffect",
+          "lineNumber": 7
+        },
+        {
+          "caller": "useIsHydrated",
+          "callee": "setIsHydrated",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-is-hydrated/src/use-is-hydrated.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "subscribe",
+          "startLine": 8,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "useIsHydratedModern",
+          "startLine": 15,
+          "endLine": 21,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useIsHydrated",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useIsHydratedModern",
+          "callee": "useReactSyncExternalStore!",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-layout-effect/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "exports": [
+        {
+          "name": "useLayoutEffect",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

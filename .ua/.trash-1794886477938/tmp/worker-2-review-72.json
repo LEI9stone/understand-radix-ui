@@ -1,0 +1,109 @@
+{
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "results": [
+    {
+      "path": "packages/react/use-controllable-state/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 38,
+      "nonEmptyLines": 22,
+      "sections": [
+        "@radix-ui/react-use-controllable-state",
+        "1.3.0",
+        "1.2.6",
+        "1.2.5",
+        "1.2.4",
+        "1.2.3",
+        "1.2.2",
+        "1.2.1",
+        "1.2.0"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/use-controllable-state/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        "`react-use-controllable-state`"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/use-controllable-state/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 70,
+      "nonEmptyLines": 70,
+      "sections": [
+        "name",
+        "version",
+        "license",
+        "source",
+        "main",
+        "module",
+        "publishConfig",
+        "files",
+        "sideEffects",
+        "scripts",
+        "dependencies",
+        "devDependencies",
+        "peerDependencies",
+        "peerDependenciesMeta",
+        "homepage",
+        "repository",
+        "bugs"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/use-controllable-state/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        "extends",
+        "compilerOptions",
+        "include",
+        "exclude"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      },
+      "calls": [],
+      "exports": []
+    }
+  ]
+}

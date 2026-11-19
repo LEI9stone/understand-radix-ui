@@ -1,0 +1,1154 @@
+{
+  "totalFiles": 694,
+  "totalBatches": 93,
+  "groups": [
+    {
+      "worker": 1,
+      "load": 32570,
+      "batchIndices": [
+        5,
+        10,
+        11,
+        14,
+        29,
+        32,
+        36,
+        47,
+        50,
+        51,
+        56,
+        68,
+        71,
+        73,
+        82,
+        91,
+        92
+      ]
+    },
+    {
+      "worker": 2,
+      "load": 32691,
+      "batchIndices": [
+        4,
+        15,
+        25,
+        40,
+        42,
+        45,
+        46,
+        48,
+        54,
+        62,
+        64,
+        72,
+        80,
+        81,
+        88,
+        90
+      ]
+    },
+    {
+      "worker": 3,
+      "load": 32497,
+      "batchIndices": [
+        9,
+        13,
+        19,
+        22,
+        28,
+        34,
+        38,
+        39,
+        41,
+        43,
+        52,
+        63,
+        65,
+        66,
+        69,
+        76,
+        85,
+        87,
+        93
+      ]
+    },
+    {
+      "worker": 4,
+      "load": 32784,
+      "batchIndices": [
+        1,
+        2,
+        3,
+        6,
+        12,
+        16,
+        17,
+        18,
+        20,
+        24,
+        26,
+        27,
+        30,
+        31,
+        35,
+        49,
+        57,
+        58,
+        70,
+        79,
+        86
+      ]
+    },
+    {
+      "worker": 5,
+      "load": 32505,
+      "batchIndices": [
+        7,
+        8,
+        21,
+        23,
+        33,
+        37,
+        44,
+        53,
+        55,
+        59,
+        60,
+        61,
+        67,
+        74,
+        75,
+        77,
+        78,
+        83,
+        84,
+        89
+      ]
+    }
+  ],
+  "overview": [
+    {
+      "batchIndex": 1,
+      "files": 13,
+      "lines": 2384,
+      "preview": [
+        "e2e/collection.spec.ts",
+        "e2e/context-menu.spec.ts",
+        "e2e/dialog.spec.ts"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 2,
+      "files": 7,
+      "lines": 7078,
+      "preview": [
+        "apps/storybook/stories/context-menu.stories.tsx",
+        "apps/storybook/stories/dialog.stories.tsx",
+        "apps/storybook/stories/dropdown-menu.stories.tsx"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 3,
+      "files": 5,
+      "lines": 132,
+      "preview": [
+        "apps/ssr-testing/app/primitive-merge/nodes.mjs",
+        "apps/ssr-testing/app/primitive-merge/page.tsx",
+        "apps/ssr-testing/app/primitive-merge/primitive-node.tsx"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 4,
+      "files": 4,
+      "lines": 3627,
+      "preview": [
+        "packages/react/collection/src/collection.test.tsx",
+        "packages/react/collection/src/collection.tsx",
+        "packages/react/collection/src/ordered-dictionary.test.ts"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 5,
+      "files": 3,
+      "lines": 76,
+      "preview": [
+        "apps/ssr-testing/app/portal/conditional-portal.tsx",
+        "apps/ssr-testing/app/portal/custom-portal-container.tsx",
+        "apps/ssr-testing/app/portal/page.tsx"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 6,
+      "files": 3,
+      "lines": 338,
+      "preview": [
+        "apps/ssr-testing/app/slot/client.tsx",
+        "apps/ssr-testing/app/slot/page.tsx",
+        "apps/ssr-testing/app/slot/server.tsx"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 7,
+      "files": 3,
+      "lines": 445,
+      "preview": [
+        "packages/react/presence/src/presence.test.tsx",
+        "packages/react/presence/src/presence.tsx",
+        "packages/react/presence/src/use-state-machine.tsx"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 8,
+      "files": 3,
+      "lines": 1893,
+      "preview": [
+        "packages/react/radio-group/src/radio-group.test.tsx",
+        "packages/react/radio-group/src/radio-group.tsx",
+        "packages/react/radio-group/src/radio.tsx"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 9,
+      "files": 3,
+      "lines": 1762,
+      "preview": [
+        "packages/react/scroll-area/src/scroll-area.test.tsx",
+        "packages/react/scroll-area/src/scroll-area.tsx",
+        "packages/react/scroll-area/src/use-state-machine.ts"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 10,
+      "files": 4,
+      "lines": 269,
+      "preview": [
+        ".github/workflows/build.yml",
+        ".github/workflows/chromatic.yml",
+        ".github/workflows/publish.yml"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 11,
+      "files": 18,
+      "lines": 150,
+      "preview": [
+        ".changeset/README.md",
+        ".changeset/calm-taps-close.md",
+        ".changeset/closing-menu-pointer-focus.md"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 12,
+      "files": 4,
+      "lines": 84,
+      "preview": [
+        ".github/ISSUE_TEMPLATE/Bug_report.md",
+        ".github/ISSUE_TEMPLATE/Documentation.md",
+        ".github/ISSUE_TEMPLATE/Feature_request.md"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 13,
+      "files": 10,
+      "lines": 700,
+      "preview": [
+        ".oxfmtrc.json",
+        ".oxlintrc.json",
+        "AGENTS.md"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 14,
+      "files": 3,
+      "lines": 43,
+      "preview": [
+        "apps/ssr-testing/README.md",
+        "apps/ssr-testing/package.json",
+        "apps/ssr-testing/tsconfig.json"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 15,
+      "files": 20,
+      "lines": 2065,
+      "preview": [
+        "apps/storybook/stories/accordion.stories.module.css",
+        "apps/storybook/stories/alert-dialog.stories.module.css",
+        "apps/storybook/stories/aspect-ratio.stories.module.css"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 16,
+      "files": 13,
+      "lines": 1311,
+      "preview": [
+        "apps/storybook/stories/progress.stories.module.css",
+        "apps/storybook/stories/radio-group.stories.module.css",
+        "apps/storybook/stories/scroll-area.stories.module.css"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 17,
+      "files": 6,
+      "lines": 69,
+      "preview": [
+        "internal/typescript-config/base.json",
+        "internal/typescript-config/nextjs.json",
+        "internal/typescript-config/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 18,
+      "files": 4,
+      "lines": 89,
+      "preview": [
+        "packages/core/env-check/CHANGELOG.md",
+        "packages/core/env-check/README.md",
+        "packages/core/env-check/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 19,
+      "files": 4,
+      "lines": 72,
+      "preview": [
+        "packages/core/number/CHANGELOG.md",
+        "packages/core/number/README.md",
+        "packages/core/number/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 20,
+      "files": 4,
+      "lines": 96,
+      "preview": [
+        "packages/core/primitive/CHANGELOG.md",
+        "packages/core/primitive/README.md",
+        "packages/core/primitive/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 21,
+      "files": 4,
+      "lines": 72,
+      "preview": [
+        "packages/core/rect/CHANGELOG.md",
+        "packages/core/rect/README.md",
+        "packages/core/rect/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 22,
+      "files": 4,
+      "lines": 146,
+      "preview": [
+        "packages/react/accessible-icon/CHANGELOG.md",
+        "packages/react/accessible-icon/README.md",
+        "packages/react/accessible-icon/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 23,
+      "files": 4,
+      "lines": 179,
+      "preview": [
+        "packages/react/accordion/CHANGELOG.md",
+        "packages/react/accordion/README.md",
+        "packages/react/accordion/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 24,
+      "files": 4,
+      "lines": 172,
+      "preview": [
+        "packages/react/alert-dialog/CHANGELOG.md",
+        "packages/react/alert-dialog/README.md",
+        "packages/react/alert-dialog/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 25,
+      "files": 4,
+      "lines": 149,
+      "preview": [
+        "packages/react/announce/CHANGELOG.md",
+        "packages/react/announce/README.md",
+        "packages/react/announce/package.json"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 26,
+      "files": 4,
+      "lines": 146,
+      "preview": [
+        "packages/react/arrow/CHANGELOG.md",
+        "packages/react/arrow/README.md",
+        "packages/react/arrow/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 27,
+      "files": 4,
+      "lines": 147,
+      "preview": [
+        "packages/react/aspect-ratio/CHANGELOG.md",
+        "packages/react/aspect-ratio/README.md",
+        "packages/react/aspect-ratio/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 28,
+      "files": 4,
+      "lines": 178,
+      "preview": [
+        "packages/react/avatar/CHANGELOG.md",
+        "packages/react/avatar/README.md",
+        "packages/react/avatar/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 29,
+      "files": 4,
+      "lines": 179,
+      "preview": [
+        "packages/react/checkbox/CHANGELOG.md",
+        "packages/react/checkbox/README.md",
+        "packages/react/checkbox/package.json"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 30,
+      "files": 4,
+      "lines": 176,
+      "preview": [
+        "packages/react/collapsible/CHANGELOG.md",
+        "packages/react/collapsible/README.md",
+        "packages/react/collapsible/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 31,
+      "files": 4,
+      "lines": 156,
+      "preview": [
+        "packages/react/collection/CHANGELOG.md",
+        "packages/react/collection/README.md",
+        "packages/react/collection/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 32,
+      "files": 4,
+      "lines": 89,
+      "preview": [
+        "packages/react/compose-refs/CHANGELOG.md",
+        "packages/react/compose-refs/README.md",
+        "packages/react/compose-refs/package.json"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 33,
+      "files": 4,
+      "lines": 186,
+      "preview": [
+        "packages/react/context-menu/CHANGELOG.md",
+        "packages/react/context-menu/README.md",
+        "packages/react/context-menu/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 34,
+      "files": 4,
+      "lines": 105,
+      "preview": [
+        "packages/react/context/CHANGELOG.md",
+        "packages/react/context/README.md",
+        "packages/react/context/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 35,
+      "files": 4,
+      "lines": 191,
+      "preview": [
+        "packages/react/dialog/CHANGELOG.md",
+        "packages/react/dialog/README.md",
+        "packages/react/dialog/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 36,
+      "files": 4,
+      "lines": 98,
+      "preview": [
+        "packages/react/direction/CHANGELOG.md",
+        "packages/react/direction/README.md",
+        "packages/react/direction/package.json"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 37,
+      "files": 4,
+      "lines": 171,
+      "preview": [
+        "packages/react/dismissable-layer/CHANGELOG.md",
+        "packages/react/dismissable-layer/README.md",
+        "packages/react/dismissable-layer/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 38,
+      "files": 4,
+      "lines": 187,
+      "preview": [
+        "packages/react/dropdown-menu/CHANGELOG.md",
+        "packages/react/dropdown-menu/README.md",
+        "packages/react/dropdown-menu/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 39,
+      "files": 4,
+      "lines": 98,
+      "preview": [
+        "packages/react/focus-guards/CHANGELOG.md",
+        "packages/react/focus-guards/README.md",
+        "packages/react/focus-guards/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 40,
+      "files": 4,
+      "lines": 165,
+      "preview": [
+        "packages/react/focus-scope/CHANGELOG.md",
+        "packages/react/focus-scope/README.md",
+        "packages/react/focus-scope/package.json"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 41,
+      "files": 4,
+      "lines": 163,
+      "preview": [
+        "packages/react/form/CHANGELOG.md",
+        "packages/react/form/README.md",
+        "packages/react/form/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 42,
+      "files": 4,
+      "lines": 179,
+      "preview": [
+        "packages/react/hover-card/CHANGELOG.md",
+        "packages/react/hover-card/README.md",
+        "packages/react/hover-card/package.json"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 43,
+      "files": 4,
+      "lines": 95,
+      "preview": [
+        "packages/react/id/CHANGELOG.md",
+        "packages/react/id/README.md",
+        "packages/react/id/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 44,
+      "files": 4,
+      "lines": 146,
+      "preview": [
+        "packages/react/label/CHANGELOG.md",
+        "packages/react/label/README.md",
+        "packages/react/label/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 45,
+      "files": 4,
+      "lines": 200,
+      "preview": [
+        "packages/react/menu/CHANGELOG.md",
+        "packages/react/menu/README.md",
+        "packages/react/menu/package.json"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 46,
+      "files": 4,
+      "lines": 185,
+      "preview": [
+        "packages/react/menubar/CHANGELOG.md",
+        "packages/react/menubar/README.md",
+        "packages/react/menubar/package.json"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 47,
+      "files": 4,
+      "lines": 201,
+      "preview": [
+        "packages/react/navigation-menu/CHANGELOG.md",
+        "packages/react/navigation-menu/README.md",
+        "packages/react/navigation-menu/package.json"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 48,
+      "files": 4,
+      "lines": 214,
+      "preview": [
+        "packages/react/one-time-password-field/CHANGELOG.md",
+        "packages/react/one-time-password-field/README.md",
+        "packages/react/one-time-password-field/package.json"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 49,
+      "files": 4,
+      "lines": 211,
+      "preview": [
+        "packages/react/password-toggle-field/CHANGELOG.md",
+        "packages/react/password-toggle-field/README.md",
+        "packages/react/password-toggle-field/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 50,
+      "files": 4,
+      "lines": 189,
+      "preview": [
+        "packages/react/popover/CHANGELOG.md",
+        "packages/react/popover/README.md",
+        "packages/react/popover/package.json"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 51,
+      "files": 4,
+      "lines": 174,
+      "preview": [
+        "packages/react/popper/CHANGELOG.md",
+        "packages/react/popper/README.md",
+        "packages/react/popper/package.json"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 52,
+      "files": 4,
+      "lines": 148,
+      "preview": [
+        "packages/react/portal/CHANGELOG.md",
+        "packages/react/portal/README.md",
+        "packages/react/portal/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 53,
+      "files": 4,
+      "lines": 122,
+      "preview": [
+        "packages/react/presence/CHANGELOG.md",
+        "packages/react/presence/README.md",
+        "packages/react/presence/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 54,
+      "files": 4,
+      "lines": 142,
+      "preview": [
+        "packages/react/primitive/CHANGELOG.md",
+        "packages/react/primitive/README.md",
+        "packages/react/primitive/package.json"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 55,
+      "files": 4,
+      "lines": 156,
+      "preview": [
+        "packages/react/progress/CHANGELOG.md",
+        "packages/react/progress/README.md",
+        "packages/react/progress/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 56,
+      "files": 4,
+      "lines": 186,
+      "preview": [
+        "packages/react/radio-group/CHANGELOG.md",
+        "packages/react/radio-group/README.md",
+        "packages/react/radio-group/package.json"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 57,
+      "files": 4,
+      "lines": 706,
+      "preview": [
+        "packages/react/radix-ui/CHANGELOG.md",
+        "packages/react/radix-ui/README.md",
+        "packages/react/radix-ui/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 58,
+      "files": 4,
+      "lines": 180,
+      "preview": [
+        "packages/react/roving-focus/CHANGELOG.md",
+        "packages/react/roving-focus/README.md",
+        "packages/react/roving-focus/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 59,
+      "files": 4,
+      "lines": 191,
+      "preview": [
+        "packages/react/scroll-area/CHANGELOG.md",
+        "packages/react/scroll-area/README.md",
+        "packages/react/scroll-area/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 60,
+      "files": 4,
+      "lines": 209,
+      "preview": [
+        "packages/react/select/CHANGELOG.md",
+        "packages/react/select/README.md",
+        "packages/react/select/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 61,
+      "files": 4,
+      "lines": 147,
+      "preview": [
+        "packages/react/separator/CHANGELOG.md",
+        "packages/react/separator/README.md",
+        "packages/react/separator/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 62,
+      "files": 4,
+      "lines": 189,
+      "preview": [
+        "packages/react/slider/CHANGELOG.md",
+        "packages/react/slider/README.md",
+        "packages/react/slider/package.json"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 63,
+      "files": 4,
+      "lines": 134,
+      "preview": [
+        "packages/react/slot/CHANGELOG.md",
+        "packages/react/slot/README.md",
+        "packages/react/slot/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 64,
+      "files": 4,
+      "lines": 174,
+      "preview": [
+        "packages/react/switch/CHANGELOG.md",
+        "packages/react/switch/README.md",
+        "packages/react/switch/package.json"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 65,
+      "files": 4,
+      "lines": 183,
+      "preview": [
+        "packages/react/tabs/CHANGELOG.md",
+        "packages/react/tabs/README.md",
+        "packages/react/tabs/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 66,
+      "files": 4,
+      "lines": 195,
+      "preview": [
+        "packages/react/toast/CHANGELOG.md",
+        "packages/react/toast/README.md",
+        "packages/react/toast/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 67,
+      "files": 4,
+      "lines": 176,
+      "preview": [
+        "packages/react/toggle-group/CHANGELOG.md",
+        "packages/react/toggle-group/README.md",
+        "packages/react/toggle-group/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 68,
+      "files": 4,
+      "lines": 166,
+      "preview": [
+        "packages/react/toggle/CHANGELOG.md",
+        "packages/react/toggle/README.md",
+        "packages/react/toggle/package.json"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 69,
+      "files": 4,
+      "lines": 174,
+      "preview": [
+        "packages/react/toolbar/CHANGELOG.md",
+        "packages/react/toolbar/README.md",
+        "packages/react/toolbar/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 70,
+      "files": 4,
+      "lines": 187,
+      "preview": [
+        "packages/react/tooltip/CHANGELOG.md",
+        "packages/react/tooltip/README.md",
+        "packages/react/tooltip/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 71,
+      "files": 4,
+      "lines": 96,
+      "preview": [
+        "packages/react/use-callback-ref/CHANGELOG.md",
+        "packages/react/use-callback-ref/README.md",
+        "packages/react/use-callback-ref/package.json"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 72,
+      "files": 4,
+      "lines": 120,
+      "preview": [
+        "packages/react/use-controllable-state/CHANGELOG.md",
+        "packages/react/use-controllable-state/README.md",
+        "packages/react/use-controllable-state/package.json"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 73,
+      "files": 4,
+      "lines": 107,
+      "preview": [
+        "packages/react/use-effect-event/CHANGELOG.md",
+        "packages/react/use-effect-event/README.md",
+        "packages/react/use-effect-event/package.json"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 74,
+      "files": 4,
+      "lines": 105,
+      "preview": [
+        "packages/react/use-escape-keydown/CHANGELOG.md",
+        "packages/react/use-escape-keydown/README.md",
+        "packages/react/use-escape-keydown/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 75,
+      "files": 4,
+      "lines": 97,
+      "preview": [
+        "packages/react/use-is-hydrated/CHANGELOG.md",
+        "packages/react/use-is-hydrated/README.md",
+        "packages/react/use-is-hydrated/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 76,
+      "files": 4,
+      "lines": 89,
+      "preview": [
+        "packages/react/use-layout-effect/CHANGELOG.md",
+        "packages/react/use-layout-effect/README.md",
+        "packages/react/use-layout-effect/package.json"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 77,
+      "files": 4,
+      "lines": 89,
+      "preview": [
+        "packages/react/use-previous/CHANGELOG.md",
+        "packages/react/use-previous/README.md",
+        "packages/react/use-previous/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 78,
+      "files": 4,
+      "lines": 94,
+      "preview": [
+        "packages/react/use-rect/CHANGELOG.md",
+        "packages/react/use-rect/README.md",
+        "packages/react/use-rect/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 79,
+      "files": 4,
+      "lines": 99,
+      "preview": [
+        "packages/react/use-size/CHANGELOG.md",
+        "packages/react/use-size/README.md",
+        "packages/react/use-size/package.json"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 80,
+      "files": 4,
+      "lines": 147,
+      "preview": [
+        "packages/react/visually-hidden/CHANGELOG.md",
+        "packages/react/visually-hidden/README.md",
+        "packages/react/visually-hidden/package.json"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 81,
+      "files": 25,
+      "lines": 731,
+      "preview": [
+        ".changeset/changelog.cjs",
+        ".github/CODEOWNERS",
+        ".github/CONTRIBUTING.md"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 82,
+      "files": 25,
+      "lines": 781,
+      "preview": [
+        "apps/ssr-testing/app/one-time-password-field/page.tsx",
+        "apps/ssr-testing/app/page.tsx",
+        "apps/ssr-testing/app/password-toggle-field/page.tsx"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 83,
+      "files": 25,
+      "lines": 6625,
+      "preview": [
+        "apps/storybook/.storybook/preview.ts",
+        "apps/storybook/index.d.ts",
+        "apps/storybook/package.json"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 84,
+      "files": 25,
+      "lines": 5858,
+      "preview": [
+        "apps/storybook/stories/radio-group.stories.tsx",
+        "apps/storybook/stories/roving-focus-group.stories.tsx",
+        "apps/storybook/stories/scroll-area.stories.tsx"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 85,
+      "files": 25,
+      "lines": 4146,
+      "preview": [
+        "internal/test-utils/tsconfig.json",
+        "internal/typescript-config/react-library/index.d.ts",
+        "packages/core/env-check/src/index.ts"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 86,
+      "files": 25,
+      "lines": 6032,
+      "preview": [
+        "packages/react/alert-dialog/src/index.ts",
+        "packages/react/announce/src/announce.test.tsx",
+        "packages/react/announce/src/announce.tsx"
+      ],
+      "worker": 4
+    },
+    {
+      "batchIndex": 87,
+      "files": 25,
+      "lines": 9023,
+      "preview": [
+        "packages/react/context-menu/src/index.ts",
+        "packages/react/context/src/create-context.tsx",
+        "packages/react/context/src/index.ts"
+      ],
+      "worker": 3
+    },
+    {
+      "batchIndex": 88,
+      "files": 25,
+      "lines": 10004,
+      "preview": [
+        "packages/react/hover-card/src/index.ts",
+        "packages/react/id/src/id.tsx",
+        "packages/react/id/src/index.ts"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 89,
+      "files": 25,
+      "lines": 1444,
+      "preview": [
+        "packages/react/popper/src/popper.tsx",
+        "packages/react/portal/src/index.ts",
+        "packages/react/portal/src/portal.test.tsx"
+      ],
+      "worker": 5
+    },
+    {
+      "batchIndex": 90,
+      "files": 25,
+      "lines": 100,
+      "preview": [
+        "packages/react/radix-ui/src/index.ts",
+        "packages/react/radix-ui/src/internal.ts",
+        "packages/react/radix-ui/src/label.ts"
+      ],
+      "worker": 2
+    },
+    {
+      "batchIndex": 91,
+      "files": 25,
+      "lines": 11910,
+      "preview": [
+        "packages/react/roving-focus/src/roving-focus-group.tsx",
+        "packages/react/scroll-area/src/index.ts",
+        "packages/react/select/src/index.ts"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 92,
+      "files": 25,
+      "lines": 3556,
+      "preview": [
+        "packages/react/toggle-group/src/toggle-group.test.tsx",
+        "packages/react/toggle-group/src/toggle-group.tsx",
+        "packages/react/toggle/src/index.ts"
+      ],
+      "worker": 1
+    },
+    {
+      "batchIndex": 93,
+      "files": 20,
+      "lines": 999,
+      "preview": [
+        "packages/react/use-layout-effect/src/use-layout-effect.tsx",
+        "packages/react/use-previous/src/index.ts",
+        "packages/react/use-previous/src/use-previous.tsx"
+      ],
+      "worker": 3
+    }
+  ]
+}

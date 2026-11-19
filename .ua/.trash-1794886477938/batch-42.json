@@ -1,0 +1,107 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/hover-card/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/hover-card/CHANGELOG.md",
+      "summary": "按版本记录悬停卡片包的发布变更与依赖更新，最新章节为 1.2.1。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "悬停卡片"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/hover-card/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/hover-card/README.md",
+      "summary": "标识 hover-card 包并提供进一步文档入口，作为悬停卡片模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "悬停卡片"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/hover-card/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/hover-card/package.json",
+      "summary": "定义 @radix-ui/react-hover-card 的源入口、发布导出、构建脚本和 React 对等依赖，配置悬停卡片包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "悬停卡片"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/hover-card/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/hover-card/tsconfig.json",
+      "summary": "配置悬停卡片包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "悬停卡片"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/hover-card/CHANGELOG.md",
+      "target": "config:packages/react/hover-card/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/hover-card/README.md",
+      "target": "config:packages/react/hover-card/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/hover-card/package.json",
+      "target": "document:packages/react/hover-card/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/hover-card/tsconfig.json",
+      "target": "config:packages/react/hover-card/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/hover-card/package.json",
+      "target": "file:packages/react/hover-card/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/react/hover-card/tsconfig.json",
+      "target": "file:packages/react/hover-card/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/hover-card/README.md",
+      "target": "file:packages/react/hover-card/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

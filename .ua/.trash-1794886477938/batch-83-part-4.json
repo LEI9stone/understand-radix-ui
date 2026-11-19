@@ -1,0 +1,857 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/storybook/stories/popper.stories.tsx",
+      "type": "file",
+      "name": "popper.stories.tsx",
+      "filePath": "apps/storybook/stories/popper.stories.tsx",
+      "summary": "演示 Popper 锚点定位、自定义箭头、Portal、持续位置更新、脱离隐藏及可用尺寸，并提供定位视觉回归矩阵。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/popper.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/popper.stories.tsx",
+      "lineRange": [
+        10,
+        28
+      ],
+      "summary": "组合 Popper 定位浮层 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popper.stories.tsx:WithCustomArrow",
+      "type": "function",
+      "name": "WithCustomArrow",
+      "filePath": "apps/storybook/stories/popper.stories.tsx",
+      "lineRange": [
+        30,
+        50
+      ],
+      "summary": "维护浮层开关并以自定义箭头形状展示 Popper 内容定位。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popper.stories.tsx:Animated",
+      "type": "function",
+      "name": "Animated",
+      "filePath": "apps/storybook/stories/popper.stories.tsx",
+      "lineRange": [
+        52,
+        76
+      ],
+      "summary": "为 Popper 定位浮层 应用状态相关动画样式，演示交互过程中的视觉过渡。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popper.stories.tsx:WithPortal",
+      "type": "function",
+      "name": "WithPortal",
+      "filePath": "apps/storybook/stories/popper.stories.tsx",
+      "lineRange": [
+        78,
+        98
+      ],
+      "summary": "将浮层内容通过 Portal 渲染到其他 DOM 容器，保留相对于锚点的定位。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popper.stories.tsx:WithSideBasedAnchorStyling",
+      "type": "function",
+      "name": "WithSideBasedAnchorStyling",
+      "filePath": "apps/storybook/stories/popper.stories.tsx",
+      "lineRange": [
+        100,
+        160
+      ],
+      "summary": "切换期望方位和对齐方式，并根据实际定位方位改变锚点样式。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/popper.stories.tsx:WithUpdatePositionStrategyAlways",
+      "type": "function",
+      "name": "WithUpdatePositionStrategyAlways",
+      "filePath": "apps/storybook/stories/popper.stories.tsx",
+      "lineRange": [
+        162,
+        197
+      ],
+      "summary": "定时改变锚点位置，以持续更新策略检验浮层跟随运动锚点的效果。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popper.stories.tsx:HideWhenDetachedInScrollContainer",
+      "type": "function",
+      "name": "HideWhenDetachedInScrollContainer",
+      "filePath": "apps/storybook/stories/popper.stories.tsx",
+      "lineRange": [
+        205,
+        241
+      ],
+      "summary": "在可滚动容器中移动锚点，演示锚点脱离可见区域时隐藏浮层。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popper.stories.tsx:AvailableSizeWithCustomPortal",
+      "type": "function",
+      "name": "AvailableSizeWithCustomPortal",
+      "filePath": "apps/storybook/stories/popper.stories.tsx",
+      "lineRange": [
+        249,
+        288
+      ],
+      "summary": "把内容渲染到自定义 Portal 容器，演示定位边界下可用宽高的使用。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popper.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/popper.stories.tsx",
+      "lineRange": [
+        290,
+        603
+      ],
+      "summary": "集中排列 Popper 定位浮层 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/popper.stories.tsx:CustomArrow",
+      "type": "function",
+      "name": "CustomArrow",
+      "filePath": "apps/storybook/stories/popper.stories.tsx",
+      "lineRange": [
+        613,
+        625
+      ],
+      "summary": "以自定义组件提供 Popper 箭头外观，并转发传入属性。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/portal.stories.tsx",
+      "type": "file",
+      "name": "portal.stories.tsx",
+      "filePath": "apps/storybook/stories/portal.stories.tsx",
+      "summary": "展示 Portal 的默认挂载、自定义容器及多种布局组合，验证内容在目标 DOM 容器中的呈现。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/portal.stories.tsx:Base",
+      "type": "function",
+      "name": "Base",
+      "filePath": "apps/storybook/stories/portal.stories.tsx",
+      "lineRange": [
+        6,
+        30
+      ],
+      "summary": "使用默认挂载方式将内容移到 Portal 目标位置，展示与原始布局层级的差异。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/portal.stories.tsx:CustomContainer",
+      "type": "function",
+      "name": "CustomContainer",
+      "filePath": "apps/storybook/stories/portal.stories.tsx",
+      "lineRange": [
+        32,
+        55
+      ],
+      "summary": "使用状态保存目标 DOM 容器，让 Portal 内容挂载到指定节点。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/portal.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/portal.stories.tsx",
+      "lineRange": [
+        57,
+        151
+      ],
+      "summary": "集中排列 Portal 容器挂载 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/presence.stories.tsx",
+      "type": "file",
+      "name": "presence.stories.tsx",
+      "filePath": "apps/storybook/stories/presence.stories.tsx",
+      "summary": "展示 Presence 对即时挂载、入场与离场动画、多动画及延迟动画的生命周期管理。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/presence.stories.tsx:Basic",
+      "type": "function",
+      "name": "Basic",
+      "filePath": "apps/storybook/stories/presence.stories.tsx",
+      "lineRange": [
+        7,
+        19
+      ],
+      "summary": "用开关控制 Presence 中子元素的挂载与移除，提供基本生命周期场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/presence.stories.tsx:WithMountAnimation",
+      "type": "function",
+      "name": "WithMountAnimation",
+      "filePath": "apps/storybook/stories/presence.stories.tsx",
+      "lineRange": [
+        21,
+        21
+      ],
+      "summary": "通过通用动画演示器设置入场动画样式，验证挂载时的动画执行。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/presence.stories.tsx:WithUnmountAnimation",
+      "type": "function",
+      "name": "WithUnmountAnimation",
+      "filePath": "apps/storybook/stories/presence.stories.tsx",
+      "lineRange": [
+        22,
+        22
+      ],
+      "summary": "通过通用动画演示器设置离场动画样式，验证退出完成后的卸载。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/presence.stories.tsx:WithMultipleMountAnimations",
+      "type": "function",
+      "name": "WithMultipleMountAnimations",
+      "filePath": "apps/storybook/stories/presence.stories.tsx",
+      "lineRange": [
+        23,
+        25
+      ],
+      "summary": "在同一元素上配置多个入场动画，验证 Presence 对多动画的处理。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/presence.stories.tsx:WithOpenAndCloseAnimation",
+      "type": "function",
+      "name": "WithOpenAndCloseAnimation",
+      "filePath": "apps/storybook/stories/presence.stories.tsx",
+      "lineRange": [
+        26,
+        28
+      ],
+      "summary": "分别配置打开和关闭动画，检验 Presence 在两种状态间切换的卸载时机。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/presence.stories.tsx:WithMultipleOpenAndCloseAnimations",
+      "type": "function",
+      "name": "WithMultipleOpenAndCloseAnimations",
+      "filePath": "apps/storybook/stories/presence.stories.tsx",
+      "lineRange": [
+        29,
+        31
+      ],
+      "summary": "组合多个打开及关闭动画，检验多动画结束后的生命周期管理。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/presence.stories.tsx:WithDeferredMountAnimation",
+      "type": "function",
+      "name": "WithDeferredMountAnimation",
+      "filePath": "apps/storybook/stories/presence.stories.tsx",
+      "lineRange": [
+        33,
+        62
+      ],
+      "summary": "在挂载后延迟添加动画状态，检验 Presence 对延迟入场动画的处理。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/presence.stories.tsx:Animation",
+      "type": "function",
+      "name": "Animation",
+      "filePath": "apps/storybook/stories/presence.stories.tsx",
+      "lineRange": [
+        64,
+        78
+      ],
+      "summary": "维护节点引用与打开状态，将传入动画样式应用于 Presence 管理的元素。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/presence.stories.tsx:Toggles",
+      "type": "function",
+      "name": "Toggles",
+      "filePath": "apps/storybook/stories/presence.stories.tsx",
+      "lineRange": [
+        80,
+        108
+      ],
+      "summary": "提供显示、隐藏及节点操作按钮，驱动 Presence 生命周期演示。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/progress.stories.tsx",
+      "type": "file",
+      "name": "progress.stories.tsx",
+      "filePath": "apps/storybook/stories/progress.stories.tsx",
+      "summary": "展示 Progress 的确定与不确定进度、最大值和输入联动，并提供状态视觉回归。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/progress.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/progress.stories.tsx",
+      "lineRange": [
+        9,
+        26
+      ],
+      "summary": "组合 Progress 进度条 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/progress.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/progress.stories.tsx",
+      "lineRange": [
+        28,
+        66
+      ],
+      "summary": "集中排列 Progress 进度条 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/progress.stories.tsx:ProgressRange",
+      "type": "function",
+      "name": "ProgressRange",
+      "filePath": "apps/storybook/stories/progress.stories.tsx",
+      "lineRange": [
+        69,
+        86
+      ],
+      "summary": "提供数值输入并校验转换结果，更新进度值，同时保留此前有效数值。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/progress.stories.tsx:useIndeterminateToggle",
+      "type": "function",
+      "name": "useIndeterminateToggle",
+      "filePath": "apps/storybook/stories/progress.stories.tsx",
+      "lineRange": [
+        95,
+        112
+      ],
+      "summary": "保存此前确定进度，并生成在不确定状态与确定值之间切换的稳定回调。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "file:apps/storybook/stories/popper.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:WithCustomArrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:WithCustomArrow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:Animated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:Animated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:WithPortal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:WithPortal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:WithSideBasedAnchorStyling",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:WithSideBasedAnchorStyling",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:WithUpdatePositionStrategyAlways",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:WithUpdatePositionStrategyAlways",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:HideWhenDetachedInScrollContainer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:HideWhenDetachedInScrollContainer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:AvailableSizeWithCustomPortal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:AvailableSizeWithCustomPortal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.tsx",
+      "target": "function:apps/storybook/stories/popper.stories.tsx:CustomArrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/portal.stories.tsx",
+      "target": "function:apps/storybook/stories/portal.stories.tsx:Base",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/portal.stories.tsx",
+      "target": "function:apps/storybook/stories/portal.stories.tsx:Base",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/portal.stories.tsx",
+      "target": "function:apps/storybook/stories/portal.stories.tsx:CustomContainer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/portal.stories.tsx",
+      "target": "function:apps/storybook/stories/portal.stories.tsx:CustomContainer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/portal.stories.tsx",
+      "target": "function:apps/storybook/stories/portal.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/portal.stories.tsx",
+      "target": "function:apps/storybook/stories/portal.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "file:apps/storybook/stories/presence.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:Basic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:Basic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:WithMountAnimation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:WithMountAnimation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:WithUnmountAnimation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:WithUnmountAnimation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:WithMultipleMountAnimations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:WithMultipleMountAnimations",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:WithOpenAndCloseAnimation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:WithOpenAndCloseAnimation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:WithMultipleOpenAndCloseAnimations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:WithMultipleOpenAndCloseAnimations",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:WithDeferredMountAnimation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:WithDeferredMountAnimation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:Animation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.tsx",
+      "target": "function:apps/storybook/stories/presence.stories.tsx:Toggles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/progress.stories.tsx",
+      "target": "file:apps/storybook/stories/progress.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/progress.stories.tsx",
+      "target": "function:apps/storybook/stories/progress.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/progress.stories.tsx",
+      "target": "function:apps/storybook/stories/progress.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/progress.stories.tsx",
+      "target": "function:apps/storybook/stories/progress.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/progress.stories.tsx",
+      "target": "function:apps/storybook/stories/progress.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/progress.stories.tsx",
+      "target": "function:apps/storybook/stories/progress.stories.tsx:ProgressRange",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/progress.stories.tsx",
+      "target": "function:apps/storybook/stories/progress.stories.tsx:useIndeterminateToggle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "function:apps/storybook/stories/progress.stories.tsx:Styled",
+      "target": "function:apps/storybook/stories/progress.stories.tsx:useIndeterminateToggle",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

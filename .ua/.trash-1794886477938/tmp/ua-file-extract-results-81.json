@@ -1,0 +1,847 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 23,
+  "filesSkipped": [
+    ".github/CODEOWNERS",
+    ".nvmrc"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 23,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 16,
+      "failed": 0,
+      "skipped": 7
+    }
+  },
+  "results": [
+    {
+      "path": ".changeset/changelog.cjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 72,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "getDependencyReleaseLine",
+          "startLine": 5,
+          "endLine": 11,
+          "params": [
+            "_",
+            "dependenciesUpdated"
+          ]
+        },
+        {
+          "name": "getReleaseLine",
+          "startLine": 14,
+          "endLine": 20,
+          "params": [
+            "changeset"
+          ]
+        },
+        {
+          "name": "getChangelogText",
+          "startLine": 25,
+          "endLine": 52,
+          "params": [
+            "changelogLines"
+          ]
+        },
+        {
+          "name": "getChangelogEntry",
+          "startLine": 58,
+          "endLine": 66,
+          "params": [
+            "release",
+            "changelogLines"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getDependencyReleaseLine",
+          "callee": "dependenciesUpdated.map",
+          "lineNumber": 7
+        },
+        {
+          "caller": "getDependencyReleaseLine",
+          "callee": "updatedDepenenciesList.join",
+          "lineNumber": 10
+        },
+        {
+          "caller": "getReleaseLine",
+          "callee": "changeset.summary.split('\\n').map",
+          "lineNumber": 15
+        },
+        {
+          "caller": "getReleaseLine",
+          "callee": "changeset.summary.split",
+          "lineNumber": 15
+        },
+        {
+          "caller": "getReleaseLine",
+          "callee": "l.trimEnd",
+          "lineNumber": 15
+        },
+        {
+          "caller": "getReleaseLine",
+          "callee": "nextLines.join",
+          "lineNumber": 19
+        },
+        {
+          "caller": "getChangelogText",
+          "callee": "Promise.all",
+          "lineNumber": 26
+        },
+        {
+          "caller": "isOverviewLine",
+          "callee": "l.startsWith",
+          "lineNumber": 29
+        },
+        {
+          "caller": "isHeadingLine",
+          "callee": "l.startsWith",
+          "lineNumber": 30
+        },
+        {
+          "caller": "isOtherLine",
+          "callee": "l.startsWith",
+          "lineNumber": 31
+        },
+        {
+          "caller": "getChangelogText",
+          "callee": "lines\n    .filter(isHeadingLine)\n    .sort((a, b) => {\n      if (isOverviewLine(a)) return -1;\n      if (isOverviewLine(b)) return 1;\n      return 0;\n    })\n    .map",
+          "lineNumber": 33
+        },
+        {
+          "caller": "getChangelogText",
+          "callee": "lines\n    .filter(isHeadingLine)\n    .sort",
+          "lineNumber": 33
+        },
+        {
+          "caller": "getChangelogText",
+          "callee": "lines\n    .filter",
+          "lineNumber": 33
+        },
+        {
+          "caller": "getChangelogText",
+          "callee": "isOverviewLine",
+          "lineNumber": 36
+        },
+        {
+          "caller": "getChangelogText",
+          "callee": "isOverviewLine",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getChangelogText",
+          "callee": "l.replace",
+          "lineNumber": 40
+        },
+        {
+          "caller": "getChangelogText",
+          "callee": "lines.filter",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getChangelogText",
+          "callee": "otherLines.join",
+          "lineNumber": 45
+        },
+        {
+          "caller": "getChangelogText",
+          "callee": "headingLines.join",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getChangelogEntry",
+          "callee": "getChangelogText",
+          "lineNumber": 64
+        },
+        {
+          "caller": "getChangelogEntry",
+          "callee": "Object.values(changelogLines).flat",
+          "lineNumber": 64
+        },
+        {
+          "caller": "getChangelogEntry",
+          "callee": "Object.values",
+          "lineNumber": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".github/CONTRIBUTING.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 111,
+      "nonEmptyLines": 70,
+      "sections": [
+        {
+          "heading": "Contributing to Radix Primitives",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Code of Conduct",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Heuristics",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Questions",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "How to contribute",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Working on your first Pull Request?",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Preparing a Pull Request",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "Working locally",
+          "level": 2,
+          "line": 93
+        },
+        {
+          "heading": "Development",
+          "level": 3,
+          "line": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 14,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "Description",
+          "level": 3,
+          "line": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".github/actions/ci-setup/action.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 52,
+      "nonEmptyLines": 46,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "inputs",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "runs",
+          "level": 1,
+          "line": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".github/actions/detect-snapshot-changes/action.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 108,
+      "nonEmptyLines": 98,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "description",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "outputs",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "runs",
+          "level": 1,
+          "line": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".github/actions/publish-snapshot/action.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 22,
+      "nonEmptyLines": 18,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "description",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "runs",
+          "level": 1,
+          "line": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".github/actions/publish-stable/action.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 35,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "description",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "outputs",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "runs",
+          "level": 1,
+          "line": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".ua/config.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "outputLanguage",
+          "level": 1,
+          "line": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/accessible-icon/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 11,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 12,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/accordion/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 47,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 47,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/alert-dialog/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 21,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/avatar/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 11,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/checkbox/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 10,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/collapsible/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 11,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/context-menu/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 20,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/dialog/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 18,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/dropdown-menu/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 21,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/form/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 15,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/hover-card/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 16,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/label/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/layout.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 57,
+      "functions": [
+        {
+          "name": "Layout",
+          "startLine": 5,
+          "endLine": 56,
+          "params": [
+            "{ children }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Layout",
+          "line": 5,
+          "isDefault": true
+        },
+        {
+          "name": "metadata",
+          "line": 58,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/menubar/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 21,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/navigation-menu/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 4,
+          "endLine": 21,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

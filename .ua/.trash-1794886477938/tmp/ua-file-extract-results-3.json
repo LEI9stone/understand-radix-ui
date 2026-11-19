@@ -1,0 +1,215 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 5,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 5,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "apps/ssr-testing/app/primitive-merge/nodes.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 23,
+      "exports": [
+        {
+          "name": "PRIMITIVE_NODES",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/primitive-merge/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 10,
+          "endLine": 25,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 10,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Page",
+          "callee": "PRIMITIVE_NODES.map",
+          "lineNumber": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/primitive-merge/primitive-node.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 11,
+      "functions": [
+        {
+          "name": "PrimitiveNode",
+          "startLine": 8,
+          "endLine": 14,
+          "params": [
+            "{ node, children }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PrimitiveNode",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/primitive-merge/providers.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "Providers",
+          "startLine": 5,
+          "endLine": 7,
+          "params": [
+            "{ children }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Providers",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/scripts/assert-primitive-merge.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "readPrerenderedHtml",
+          "startLine": 14,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "findElementTag",
+          "startLine": 45,
+          "endLine": 51,
+          "params": [
+            "node"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readPrerenderedHtml",
+          "callee": "path.join",
+          "lineNumber": 15
+        },
+        {
+          "caller": "readPrerenderedHtml",
+          "callee": "fs.existsSync",
+          "lineNumber": 16
+        },
+        {
+          "caller": "readPrerenderedHtml",
+          "callee": "fs.readFileSync",
+          "lineNumber": 17
+        },
+        {
+          "caller": "readPrerenderedHtml",
+          "callee": "fs.existsSync",
+          "lineNumber": 21
+        },
+        {
+          "caller": "readPrerenderedHtml",
+          "callee": "fs\n      .readdirSync(prerenderDir)\n      .find",
+          "lineNumber": 22
+        },
+        {
+          "caller": "readPrerenderedHtml",
+          "callee": "fs\n      .readdirSync",
+          "lineNumber": 22
+        },
+        {
+          "caller": "readPrerenderedHtml",
+          "callee": "/^primitive-merge.*\\.html$/.test",
+          "lineNumber": 24
+        },
+        {
+          "caller": "readPrerenderedHtml",
+          "callee": "fs.readFileSync",
+          "lineNumber": 26
+        },
+        {
+          "caller": "readPrerenderedHtml",
+          "callee": "path.join",
+          "lineNumber": 26
+        },
+        {
+          "caller": "findElementTag",
+          "callee": "html.match",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    }
+  ]
+}

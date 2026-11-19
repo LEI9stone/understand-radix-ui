@@ -1,0 +1,389 @@
+{
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "results": [
+    {
+      "path": "packages/react/collection/src/collection.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1247,
+      "nonEmptyLines": 1177,
+      "functions": [
+        {
+          "name": "CollectionSpy",
+          "startLine": 16,
+          "endLine": 19,
+          "params": [
+            "{ onRender }"
+          ]
+        },
+        {
+          "name": "labelsOf",
+          "startLine": 21,
+          "endLine": 23,
+          "params": [
+            "map"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      },
+      "calls": [
+        "CollectionSpy -> onRender",
+        "CollectionSpy -> useCollection",
+        "labelsOf -> [...map.values()].map",
+        "labelsOf -> map.values",
+        "Owner -> useInitCollection",
+        "OtherSpy -> useOtherCollection",
+        "GetterSpy -> useGetCollection",
+        "LabelsButton -> useGetCollection",
+        "LabelsButton -> labelsOf",
+        "LabelsButton -> getCollection",
+        "List -> items.map",
+        "GetterSpy -> getters.push",
+        "LayoutEffectReader -> useGetCollection",
+        "LayoutEffectReader -> React.useLayoutEffect",
+        "LayoutEffectReader -> labelsOf",
+        "LayoutEffectReader -> getCollection",
+        "Deferred -> React.use",
+        "List -> maps.push",
+        "MemoizedSpy -> maps.push",
+        "MemoizedSpy -> useMemoizedCollection",
+        "List -> React.useCallback",
+        "List -> React.useMemo",
+        "List -> React.useState"
+      ]
+    },
+    {
+      "path": "packages/react/collection/src/collection.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 408,
+      "nonEmptyLines": 355,
+      "functions": [
+        {
+          "name": "createCollection",
+          "startLine": 46,
+          "endLine": 344,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "shallowEqual",
+          "startLine": 349,
+          "endLine": 361,
+          "params": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "isElementPreceding",
+          "startLine": 363,
+          "endLine": 365,
+          "params": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "isInDocumentOrder",
+          "startLine": 367,
+          "endLine": 384,
+          "params": [
+            "dict"
+          ]
+        },
+        {
+          "name": "sortByDocumentPosition",
+          "startLine": 386,
+          "endLine": 395,
+          "params": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "getChildListObserver",
+          "startLine": 397,
+          "endLine": 408,
+          "params": [
+            "callback"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createCollection",
+          "line": 346,
+          "isDefault": false
+        },
+        {
+          "name": "CollectionSlotProps",
+          "line": 347,
+          "isDefault": false
+        },
+        {
+          "name": "CollectionDict",
+          "line": 347,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 6,
+        "classCount": 0
+      },
+      "calls": [
+        "createCollection -> createContextScope",
+        "createCollection -> createCollectionContext",
+        "CollectionInit -> useInitCollection",
+        "CollectionProviderImpl -> React.useRef",
+        "CollectionProviderImpl -> React.useState",
+        "CollectionProviderImpl -> useComposedRefs",
+        "CollectionProviderImpl -> React.useCallback",
+        "CollectionProviderImpl -> isInDocumentOrder",
+        "CollectionProviderImpl -> registry.sort",
+        "CollectionProviderImpl -> React.useEffect",
+        "CollectionProviderImpl -> getChildListObserver",
+        "CollectionProviderImpl -> setCollection",
+        "CollectionProviderImpl -> map.toSorted",
+        "CollectionProviderImpl -> sorted.some",
+        "CollectionProviderImpl -> map.keyAt",
+        "CollectionProviderImpl -> observer.observe",
+        "CollectionProviderImpl -> observer.disconnect",
+        "createCollection -> createSlot",
+        "createCollection -> React.forwardRef",
+        "createCollection -> useStableCollectionContext",
+        "createCollection -> useComposedRefs",
+        "createCollection -> React.useRef",
+        "createCollection -> shallowEqual",
+        "createCollection -> React.useCallback",
+        "createCollection -> registry.set",
+        "createCollection -> registry.delete",
+        "createCollection -> useLayoutEffect",
+        "createCollection -> registry.has",
+        "createCollection -> React.useEffect",
+        "createCollection -> setCollection",
+        "createCollection -> next.delete",
+        "createCollection -> next.set",
+        "createCollection -> next.sort",
+        "createCollection -> map.has",
+        "useInitCollection -> React.useState",
+        "useCollection -> useStatefulCollectionContext",
+        "useGetCollection -> useStableCollectionContext",
+        "shallowEqual -> Object.keys",
+        "shallowEqual -> Object.prototype.hasOwnProperty.call",
+        "isElementPreceding -> b.compareDocumentPosition",
+        "isInDocumentOrder -> dict.keys",
+        "isInDocumentOrder -> previous.compareDocumentPosition",
+        "sortByDocumentPosition -> isElementPreceding",
+        "getChildListObserver -> callback"
+      ]
+    },
+    {
+      "path": "packages/react/collection/src/ordered-dictionary.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1494,
+      "nonEmptyLines": 1379,
+      "functions": [
+        {
+          "name": "expectEntries",
+          "startLine": 4,
+          "endLine": 9,
+          "params": [
+            "dict",
+            "expected"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      },
+      "calls": [
+        "expectEntries -> expect([...dict.entries()]).toEqual",
+        "expectEntries -> expect",
+        "expectEntries -> dict.entries",
+        "expectEntries -> expect(Array.from({ length: dict.size }, (_, index) => dict.entryAt(index))).toEqual",
+        "expectEntries -> Array.from",
+        "expectEntries -> dict.entryAt"
+      ]
+    },
+    {
+      "path": "packages/react/collection/src/ordered-dictionary.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 478,
+      "nonEmptyLines": 434,
+      "functions": [
+        {
+          "name": "at",
+          "startLine": 455,
+          "endLine": 461,
+          "params": [
+            "array",
+            "index"
+          ]
+        },
+        {
+          "name": "toSafeIndex",
+          "startLine": 463,
+          "endLine": 468,
+          "params": [
+            "array",
+            "index"
+          ]
+        },
+        {
+          "name": "toSafeInteger",
+          "startLine": 470,
+          "endLine": 473,
+          "params": [
+            "number"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "OrderedDict",
+          "startLine": 5,
+          "endLine": 445,
+          "methods": [
+            "constructor",
+            "set",
+            "insert",
+            "with",
+            "before",
+            "setBefore",
+            "after",
+            "setAfter",
+            "first",
+            "last",
+            "clear",
+            "delete",
+            "deleteAt",
+            "at",
+            "entryAt",
+            "indexOf",
+            "keyAt",
+            "from",
+            "keyFrom",
+            "find",
+            "findIndex",
+            "filter",
+            "map",
+            "reduce",
+            "reduceRight",
+            "sort",
+            "toSorted",
+            "toReversed",
+            "toSpliced",
+            "slice",
+            "every",
+            "some"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "OrderedDict",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      },
+      "calls": [
+        "constructor -> super",
+        "constructor -> super.keys",
+        "constructor -> __instanciated.set",
+        "set -> __instanciated.get",
+        "set -> this.has",
+        "set -> this.#keys.push",
+        "set -> super.set",
+        "insert -> this.has",
+        "insert -> toSafeInteger",
+        "insert -> Math.min",
+        "insert -> Math.max",
+        "insert -> this.#keys.indexOf",
+        "insert -> this.set",
+        "insert -> this.#keys.filter",
+        "insert -> keys.splice",
+        "insert -> keys.map",
+        "insert -> this.get",
+        "insert -> this.clear",
+        "with -> copy.insert",
+        "before -> this.#keys.indexOf",
+        "before -> this.entryAt",
+        "setBefore -> this.#keys.indexOf",
+        "setBefore -> this.insert",
+        "after -> this.#keys.indexOf",
+        "after -> this.entryAt",
+        "setAfter -> this.#keys.indexOf",
+        "setAfter -> this.insert",
+        "first -> this.entryAt",
+        "last -> this.entryAt",
+        "clear -> super.clear",
+        "delete -> super.delete",
+        "delete -> this.#keys.splice",
+        "delete -> this.#keys.indexOf",
+        "deleteAt -> this.keyAt",
+        "deleteAt -> this.delete",
+        "at -> at",
+        "at -> this.get",
+        "entryAt -> at",
+        "entryAt -> this.get",
+        "indexOf -> this.#keys.indexOf",
+        "keyAt -> at",
+        "from -> this.indexOf",
+        "from -> this.at",
+        "keyFrom -> this.indexOf",
+        "keyFrom -> this.keyAt",
+        "find -> Reflect.apply",
+        "findIndex -> Reflect.apply",
+        "filter -> Reflect.apply",
+        "filter -> entries.push",
+        "map -> entries.push",
+        "map -> Reflect.apply",
+        "reduce -> Reflect.apply",
+        "reduceRight -> this.entryAt",
+        "reduceRight -> Reflect.apply",
+        "sort -> [...this.entries()].sort",
+        "sort -> this.entries",
+        "sort -> this.clear",
+        "sort -> this.set",
+        "toSorted -> [...this.entries()].sort",
+        "toSorted -> this.entries",
+        "toReversed -> this.keyAt",
+        "toReversed -> this.get",
+        "toReversed -> reversed.set",
+        "toSpliced -> this.entries",
+        "toSpliced -> entries.splice",
+        "slice -> this.#keys.slice",
+        "slice -> result.set",
+        "slice -> this.get",
+        "every -> Reflect.apply",
+        "some -> Reflect.apply",
+        "at -> Array.prototype.at.call",
+        "at -> toSafeIndex",
+        "toSafeIndex -> toSafeInteger",
+        "toSafeInteger -> Math.trunc"
+      ]
+    }
+  ]
+}

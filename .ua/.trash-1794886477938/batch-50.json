@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/popover/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/popover/CHANGELOG.md",
+      "summary": "记录 Popover 标题与描述部件、新增可访问性关联、嵌套模态层兼容以及关闭时 aria-controls 修复。",
+      "tags": [
+        "变更记录",
+        "弹出层",
+        "版本发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/popover/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/popover/README.md",
+      "summary": "提供弹出层包名称与官方网站组件使用文档入口。",
+      "tags": [
+        "包文档",
+        "弹出层",
+        "使用范围"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/popover/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/popover/package.json",
+      "summary": "声明弹出层包的模块与类型入口，组合 Popper、Portal、焦点域、可关闭层与滚动锁实现弹层行为。",
+      "tags": [
+        "包配置",
+        "弹出层",
+        "模块发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/popover/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/popover/tsconfig.json",
+      "summary": "为弹出层包继承内部 React 库 TypeScript 编译规则，将 src 纳入编译并将产物定位到 dist。",
+      "tags": [
+        "编译配置",
+        "React库",
+        "TypeScript"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/popover/README.md",
+      "target": "config:packages/react/popover/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/popover/CHANGELOG.md",
+      "target": "config:packages/react/popover/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/popover/tsconfig.json",
+      "target": "config:packages/react/popover/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

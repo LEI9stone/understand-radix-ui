@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/use-callback-ref/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/use-callback-ref/CHANGELOG.md",
+      "summary": "记录 useCallbackRef 的回调更新时序修复、RSC 兼容回滚与 CI 来源证明发布。",
+      "tags": [
+        "变更记录",
+        "回调引用",
+        "版本发布"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/use-callback-ref/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/use-callback-ref/README.md",
+      "summary": "声明回调引用是内部工具，不面向公共使用。",
+      "tags": [
+        "包文档",
+        "回调引用",
+        "使用范围"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/use-callback-ref/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/use-callback-ref/package.json",
+      "summary": "声明稳定回调引用 Hook 的独立发布配置，运行时依赖服务端安全的 use-layout-effect。",
+      "tags": [
+        "包配置",
+        "回调引用",
+        "模块发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/use-callback-ref/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/use-callback-ref/tsconfig.json",
+      "summary": "为回调引用包继承内部 React 库 TypeScript 编译规则，将 src 纳入编译并将产物定位到 dist。",
+      "tags": [
+        "编译配置",
+        "React库",
+        "TypeScript"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/use-callback-ref/README.md",
+      "target": "config:packages/react/use-callback-ref/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/use-callback-ref/CHANGELOG.md",
+      "target": "config:packages/react/use-callback-ref/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/use-callback-ref/tsconfig.json",
+      "target": "config:packages/react/use-callback-ref/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

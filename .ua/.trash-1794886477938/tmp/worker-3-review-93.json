@@ -1,0 +1,382 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 17,
+  "filesSkipped": [
+    "patches/@changesets__apply-release-plan.patch",
+    "scripts/rsc-client-boundary-stub.mts",
+    "vitest.config.mts"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 17,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 17,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "useLayoutEffect"
+      ]
+    },
+    {
+      "path": "packages/react/use-previous/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "usePrevious"
+      ]
+    },
+    {
+      "path": "packages/react/use-previous/src/use-previous.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "usePrevious",
+          "startLine": 3,
+          "endLine": 16,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      },
+      "exports": [
+        "usePrevious"
+      ]
+    },
+    {
+      "path": "packages/react/use-rect/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "useRect"
+      ]
+    },
+    {
+      "path": "packages/react/use-rect/src/use-rect.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 22,
+      "functions": [
+        {
+          "name": "useRect",
+          "startLine": 10,
+          "endLine": 23,
+          "params": [
+            "measurable"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      },
+      "exports": [
+        "useRect"
+      ]
+    },
+    {
+      "path": "packages/react/use-size/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "useSize"
+      ]
+    },
+    {
+      "path": "packages/react/use-size/src/use-size.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 265,
+      "nonEmptyLines": 225,
+      "functions": [
+        {
+          "name": "SizeProbe",
+          "startLine": 79,
+          "endLine": 82,
+          "params": [
+            "{ element }"
+          ]
+        },
+        {
+          "name": "Harness",
+          "startLine": 88,
+          "endLine": 96,
+          "params": [
+            "{ disabled = false }"
+          ]
+        },
+        {
+          "name": "getOutput",
+          "startLine": 98,
+          "endLine": 100,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "MockResizeObserver",
+          "startLine": 9,
+          "endLine": 44,
+          "methods": [
+            "constructor",
+            "observe",
+            "unobserve",
+            "disconnect",
+            "emit",
+            "latest",
+            "reset"
+          ],
+          "properties": [
+            "instances",
+            "callback",
+            "observed"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "packages/react/use-size/src/use-size.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 64,
+      "functions": [
+        {
+          "name": "useSize",
+          "startLine": 4,
+          "endLine": 75,
+          "params": [
+            "element"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      },
+      "exports": [
+        "useSize"
+      ]
+    },
+    {
+      "path": "packages/react/visually-hidden/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "VisuallyHidden",
+        "Root",
+        "VISUALLY_HIDDEN_STYLES",
+        "VisuallyHiddenProps"
+      ]
+    },
+    {
+      "path": "packages/react/visually-hidden/src/visually-hidden.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 55,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/visually-hidden/src/visually-hidden.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 47,
+      "nonEmptyLines": 41,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "VisuallyHidden",
+        "Root",
+        "VISUALLY_HIDDEN_STYLES",
+        "VisuallyHiddenProps"
+      ]
+    },
+    {
+      "path": "playwright.config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 39,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/check-composed-refs.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 123,
+      "nonEmptyLines": 108,
+      "functions": [
+        {
+          "name": "report",
+          "startLine": 42,
+          "endLine": 45,
+          "params": [
+            "sourceFile",
+            "file",
+            "node",
+            "message"
+          ]
+        },
+        {
+          "name": "isCallTo",
+          "startLine": 59,
+          "endLine": 63,
+          "params": [
+            "node",
+            "name"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/rsc-compatibility.rsc.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 87,
+      "nonEmptyLines": 79,
+      "functions": [
+        {
+          "name": "collectPackages",
+          "startLine": 33,
+          "endLine": 60,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/setup-tests.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 20,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "types/global.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "types/index.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

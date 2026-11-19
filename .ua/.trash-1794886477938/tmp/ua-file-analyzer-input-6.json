@@ -1,0 +1,33 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "apps/ssr-testing/app/slot/client.tsx",
+      "language": "typescript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/slot/page.tsx",
+      "language": "typescript",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/slot/server.tsx",
+      "language": "typescript",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "apps/ssr-testing/app/slot/client.tsx": [],
+    "apps/ssr-testing/app/slot/page.tsx": [
+      "apps/ssr-testing/app/slot/client.tsx",
+      "apps/ssr-testing/app/slot/server.tsx"
+    ],
+    "apps/ssr-testing/app/slot/server.tsx": [
+      "apps/ssr-testing/app/slot/client.tsx"
+    ]
+  }
+}

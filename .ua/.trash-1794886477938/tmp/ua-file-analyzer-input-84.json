@@ -1,0 +1,206 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "apps/storybook/stories/radio-group.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 609,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/roving-focus-group.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 210,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/scroll-area.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 462,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/separator.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/slider.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 789,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/slot.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 398,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/switch.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 338,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/tabs.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 364,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/toast.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 538,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/toggle-group.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 334,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/toggle.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/toolbar.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/tooltip.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 1107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/visually-hidden.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/tsconfig.json",
+      "language": "json",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": "e2e/tsconfig.json",
+      "language": "json",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/builder/builder.js",
+      "language": "javascript",
+      "sizeLines": 311,
+      "fileCategory": "code"
+    },
+    {
+      "path": "internal/builder/package.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/builder/radix-build.js",
+      "language": "javascript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "internal/builder/tsconfig.json",
+      "language": "json",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/test-data/foods.ts",
+      "language": "typescript",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "internal/test-data/package.json",
+      "language": "json",
+      "sizeLines": 18,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/test-data/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/test-utils/package.json",
+      "language": "json",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/test-utils/ref-stability.tsx",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "apps/storybook/stories/radio-group.stories.tsx": [
+      "apps/storybook/stories/radio-group.stories.module.css"
+    ],
+    "apps/storybook/stories/roving-focus-group.stories.tsx": [],
+    "apps/storybook/stories/scroll-area.stories.tsx": [
+      "apps/storybook/stories/scroll-area.stories.module.css"
+    ],
+    "apps/storybook/stories/separator.stories.tsx": [
+      "apps/storybook/stories/separator.stories.module.css"
+    ],
+    "apps/storybook/stories/slider.stories.tsx": [
+      "apps/storybook/stories/slider.stories.module.css"
+    ],
+    "apps/storybook/stories/slot.stories.tsx": [],
+    "apps/storybook/stories/switch.stories.tsx": [
+      "apps/storybook/stories/switch.stories.module.css"
+    ],
+    "apps/storybook/stories/tabs.stories.tsx": [
+      "apps/storybook/stories/tabs.stories.module.css"
+    ],
+    "apps/storybook/stories/toast.stories.tsx": [
+      "apps/storybook/stories/toast.stories.module.css"
+    ],
+    "apps/storybook/stories/toggle-group.stories.tsx": [
+      "apps/storybook/stories/toggle-group.stories.module.css"
+    ],
+    "apps/storybook/stories/toggle.stories.tsx": [
+      "apps/storybook/stories/toggle.stories.module.css"
+    ],
+    "apps/storybook/stories/toolbar.stories.tsx": [
+      "apps/storybook/stories/toolbar.stories.module.css"
+    ],
+    "apps/storybook/stories/tooltip.stories.tsx": [
+      "apps/storybook/stories/tooltip.stories.module.css"
+    ],
+    "apps/storybook/stories/visually-hidden.stories.tsx": [],
+    "apps/storybook/tsconfig.json": [],
+    "e2e/tsconfig.json": [],
+    "internal/builder/builder.js": [],
+    "internal/builder/package.json": [],
+    "internal/builder/radix-build.js": [
+      "internal/builder/builder.js"
+    ],
+    "internal/builder/tsconfig.json": [],
+    "internal/test-data/foods.ts": [],
+    "internal/test-data/package.json": [],
+    "internal/test-data/tsconfig.json": [],
+    "internal/test-utils/package.json": [],
+    "internal/test-utils/ref-stability.tsx": []
+  }
+}

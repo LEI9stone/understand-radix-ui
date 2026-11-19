@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "id": "config:internal/typescript-config/base.json",
+      "type": "config",
+      "name": "base.json",
+      "filePath": "internal/typescript-config/base.json",
+      "summary": "提供共享严格 TypeScript 基线，启用声明与声明映射、索引访问检查、DOM/ES2023 库，默认使用 NodeNext 与 ES2022 输出目标。",
+      "tags": [
+        "类型配置",
+        "严格检查",
+        "工作区共享"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:internal/typescript-config/nextjs.json",
+      "type": "config",
+      "name": "nextjs.json",
+      "filePath": "internal/typescript-config/nextjs.json",
+      "summary": "继承共享基线，启用 Next.js 类型插件、JS 输入和 JSX 保留，以 Bundler 解析且禁止输出，用于 SSR 测试应用。",
+      "tags": [
+        "类型配置",
+        "Next.js",
+        "服务端渲染"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:internal/typescript-config/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "internal/typescript-config/package.json",
+      "summary": "声明私有 @repo/typescript-config 工作区包，让各库与应用通过共享包路径继承统一编译配置。",
+      "tags": [
+        "工作区清单",
+        "类型配置",
+        "内部包"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:internal/typescript-config/react-library.json",
+      "type": "config",
+      "name": "react-library.json",
+      "filePath": "internal/typescript-config/react-library.json",
+      "summary": "继承共享基线并切换至 react-jsx、ESNext 与 Bundler 解析，为 React 库源码提供统一编译语义。",
+      "tags": [
+        "类型配置",
+        "React库",
+        "模块解析"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:internal/typescript-config/vite-app.json",
+      "type": "config",
+      "name": "vite-app.json",
+      "filePath": "internal/typescript-config/vite-app.json",
+      "summary": "为 Vite 浏览器应用设置 Bundler 解析、react-jsx 与 TS 扩展导入，关闭输出并使用标准类字段语义。",
+      "tags": [
+        "类型配置",
+        "Vite应用",
+        "模块解析"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:internal/typescript-config/vite-node.json",
+      "type": "config",
+      "name": "vite-node.json",
+      "filePath": "internal/typescript-config/vite-node.json",
+      "summary": "为 Vite 的 Node 配置文件设置 ES2023 库、ESNext/Bundler 解析和 TS 扩展导入，不生成编译产物。",
+      "tags": [
+        "类型配置",
+        "Node环境",
+        "Vite配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:internal/typescript-config/react-library.json",
+      "target": "config:internal/typescript-config/base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:internal/typescript-config/nextjs.json",
+      "target": "config:internal/typescript-config/base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:internal/typescript-config/vite-app.json",
+      "target": "config:internal/typescript-config/base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:internal/typescript-config/vite-node.json",
+      "target": "config:internal/typescript-config/base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

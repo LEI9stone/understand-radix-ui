@@ -1,0 +1,1742 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/context-menu/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/context-menu/src/index.ts",
+      "summary": "聚合 ContextMenu 的根、触发器、菜单项、选择项与子菜单 API 及属性类型，并声明客户端入口。",
+      "tags": [
+        "入口点",
+        "上下文菜单",
+        "导出聚合"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/context/src/create-context.tsx",
+      "type": "file",
+      "name": "create-context.tsx",
+      "filePath": "packages/react/context/src/create-context.tsx",
+      "summary": "构建带缺失 Provider 诊断的 Context 工厂与可组合的独立作用域，避免同类复合组件嵌套时意外共享状态。",
+      "tags": [
+        "上下文",
+        "作用域隔离",
+        "泛型"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/context/src/create-context.tsx:createContext",
+      "type": "function",
+      "name": "createContext",
+      "filePath": "packages/react/context/src/create-context.tsx",
+      "lineRange": [
+        26,
+        63
+      ],
+      "summary": "创建带 memo 化 Provider 和严格消费 Hook 的 Context，支持默认值或可选消费，并在缺少必需 Provider 时抛出明确错误。",
+      "tags": [
+        "上下文",
+        "泛型",
+        "错误诊断"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/context/src/create-context.tsx:createContextScope",
+      "type": "function",
+      "name": "createContextScope",
+      "filePath": "packages/react/context/src/create-context.tsx",
+      "lineRange": [
+        106,
+        183
+      ],
+      "summary": "按作用域名称维护 Context 插槽与默认值，为实例生成隔离 Context 集合并组合依赖包作用域。",
+      "tags": [
+        "作用域隔离",
+        "上下文",
+        "组合工厂"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/context/src/create-context.tsx:composeContextScopes",
+      "type": "function",
+      "name": "composeContextScopes",
+      "filePath": "packages/react/context/src/create-context.tsx",
+      "lineRange": [
+        189,
+        215
+      ],
+      "summary": "把多个作用域工厂合成为一个 Hook，合并各自的 Context 映射并以主作用域属性向下传递。",
+      "tags": [
+        "作用域隔离",
+        "组合模式",
+        "工厂"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/context/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/context/src/index.ts",
+      "summary": "导出普通与作用域 Context 工厂及对应消费 Hook 类型，作为复合组件的上下文基础入口。",
+      "tags": [
+        "入口点",
+        "上下文",
+        "导出聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/dialog/src/dialog.test.tsx",
+      "type": "file",
+      "name": "dialog.test.tsx",
+      "filePath": "packages/react/dialog/src/dialog.test.tsx",
+      "summary": "验证对话框开启关闭、模态与非模态焦点恢复、Portal 嵌套分支、ARIA 标识与描述关联以及属性透传。",
+      "tags": [
+        "测试",
+        "对话框",
+        "焦点管理"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.test.tsx:DialogTest",
+      "type": "function",
+      "name": "DialogTest",
+      "filePath": "packages/react/dialog/src/dialog.test.tsx",
+      "lineRange": [
+        16,
+        25
+      ],
+      "summary": "构造触发器、遮罩、带标题内容和关闭按钮的最小 Dialog 组合，复用根属性进行行为验证。",
+      "tags": [
+        "测试辅助",
+        "对话框",
+        "组件组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/dialog/src/dialog.tsx",
+      "type": "file",
+      "name": "dialog.tsx",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "summary": "实现模态和非模态对话框，组合焦点陷阱、可关闭层、Portal、滚动锁与背景读屏隔离，并动态维护标题、内容和多描述 ID。",
+      "tags": [
+        "组件",
+        "对话框",
+        "焦点管理",
+        "模态交互"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:Dialog",
+      "type": "function",
+      "name": "Dialog",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        68,
+        130
+      ],
+      "summary": "管理展开状态、触发器和内容引用、标题描述注册及分支节点，向所有对话框部件提供统一上下文。",
+      "tags": [
+        "组件",
+        "受控状态",
+        "上下文"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:DialogPortal",
+      "type": "function",
+      "name": "DialogPortal",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        187,
+        201
+      ],
+      "summary": "结合 Presence 和 Portal 按展开或 forceMount 状态挂载内容，并共享强制挂载配置。",
+      "tags": [
+        "组件",
+        "传送节点",
+        "挂载控制"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:WarningProvider",
+      "type": "function",
+      "name": "WarningProvider",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        610,
+        619
+      ],
+      "summary": "保留已废弃的兼容包装，仅透传 children 以避免旧 API 使用者发生破坏性变化。",
+      "tags": [
+        "兼容接口",
+        "组件",
+        "废弃接口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:concatAriaDescribedby",
+      "type": "function",
+      "name": "concatAriaDescribedby",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        624,
+        638
+      ],
+      "summary": "把多个描述 ID 字符串按空白拆分、去重并合并，无有效 ID 时返回 undefined。",
+      "tags": [
+        "ARIA",
+        "标识合并",
+        "去重"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/dialog/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/dialog/src/index.ts",
+      "summary": "导出 Dialog 复合部件、作用域工厂、兼容 WarningProvider 和属性类型。",
+      "tags": [
+        "入口点",
+        "对话框",
+        "客户端边界"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/direction/src/direction.tsx",
+      "type": "file",
+      "name": "direction.tsx",
+      "filePath": "packages/react/direction/src/direction.tsx",
+      "summary": "以 Context 提供 LTR/RTL 阅读方向，消费方可用本地属性覆盖全局方向并默认采用 LTR。",
+      "tags": [
+        "方向支持",
+        "上下文",
+        "国际化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/direction/src/direction.tsx:DirectionProvider",
+      "type": "function",
+      "name": "DirectionProvider",
+      "filePath": "packages/react/direction/src/direction.tsx",
+      "lineRange": [
+        20,
+        23
+      ],
+      "summary": "将显式阅读方向放入 Context，向所有后代组件提供共享 LTR 或 RTL 配置。",
+      "tags": [
+        "组件",
+        "方向支持",
+        "上下文"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/direction/src/direction.tsx:useDirection",
+      "type": "function",
+      "name": "useDirection",
+      "filePath": "packages/react/direction/src/direction.tsx",
+      "lineRange": [
+        27,
+        30
+      ],
+      "summary": "依次选取本地方向、Context 方向或 LTR 默认值，让组件支持局部覆盖国际化配置。",
+      "tags": [
+        "自定义钩子",
+        "方向支持",
+        "配置继承"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/direction/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/direction/src/index.ts",
+      "summary": "公开方向 Provider 与 useDirection，让组件共享国际化布局方向。",
+      "tags": [
+        "入口点",
+        "方向支持",
+        "导出聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/dismissable-layer/src/dismissable-layer.test.tsx",
+      "type": "file",
+      "name": "dismissable-layer.test.tsx",
+      "filePath": "packages/react/dismissable-layer/src/dismissable-layer.test.tsx",
+      "summary": "验证层外指针与焦点交互、Escape、嵌套层和分支、事件阻断与延迟关闭，并覆盖 Shadow DOM 和稳定 ref 回归。",
+      "tags": [
+        "测试",
+        "弹层关闭",
+        "事件传播"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/dismissable-layer/src/dismissable-layer.test.tsx:renderDismissableLayer",
+      "type": "function",
+      "name": "renderDismissableLayer",
+      "filePath": "packages/react/dismissable-layer/src/dismissable-layer.test.tsx",
+      "lineRange": [
+        13,
+        26
+      ],
+      "summary": "渲染包含内部按钮、可选额外内容和外部按钮的层测试场景，方便检查内外事件边界。",
+      "tags": [
+        "测试辅助",
+        "弹层",
+        "组件组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dismissable-layer/src/dismissable-layer.test.tsx:ShadowButton",
+      "type": "function",
+      "name": "ShadowButton",
+      "filePath": "packages/react/dismissable-layer/src/dismissable-layer.test.tsx",
+      "lineRange": [
+        46,
+        63
+      ],
+      "summary": "创建开放 ShadowRoot 及内部按钮，为跨 Shadow DOM 指针事件判断提供测试目标。",
+      "tags": [
+        "测试辅助",
+        "Shadow-DOM",
+        "DOM构造"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "type": "file",
+      "name": "dismissable-layer.tsx",
+      "filePath": "packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "summary": "为弹层管理外部指针、焦点和 Escape 关闭事件，协调层级顺序与背景 pointer-events；支持分支、关闭表面和等待 click 的可取消外部交互。",
+      "tags": [
+        "交互基础",
+        "弹层关闭",
+        "事件传播"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:useDismissableLayerSurface",
+      "type": "function",
+      "name": "useDismissableLayerSurface",
+      "filePath": "packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "lineRange": [
+        301,
+        318
+      ],
+      "summary": "通过 ref 回调登记遮罩等关闭表面，即使其阻止事件冒泡也仍能按关闭入口处理，并清理 iOS 点击兼容监听。",
+      "tags": [
+        "自定义钩子",
+        "关闭表面",
+        "事件兼容"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:usePointerDownOutside",
+      "type": "function",
+      "name": "usePointerDownOutside",
+      "filePath": "packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "lineRange": [
+        330,
+        542
+      ],
+      "summary": "结合 React 捕获标记与 document 监听识别树外指针，必要时等待 click 并检查后续事件是否被拦截，以安全取消或派发外部交互。",
+      "tags": [
+        "自定义钩子",
+        "事件传播",
+        "指针交互"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:useFocusOutside",
+      "type": "function",
+      "name": "useFocusOutside",
+      "filePath": "packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "lineRange": [
+        548,
+        572
+      ],
+      "summary": "以 React 焦点捕获和 document focusin 区分树内外焦点，向外部移动派发可取消自定义事件。",
+      "tags": [
+        "自定义钩子",
+        "焦点管理",
+        "事件传播"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:handleAndDispatchCustomEvent",
+      "type": "function",
+      "name": "handleAndDispatchCustomEvent",
+      "filePath": "packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "lineRange": [
+        579,
+        594
+      ],
+      "summary": "以原生事件目标为载体派发带原始事件详情的可取消事件，按离散交互标志选择同步派发方式。",
+      "tags": [
+        "自定义事件",
+        "离散事件",
+        "事件传播"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/dismissable-layer/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/dismissable-layer/src/index.ts",
+      "summary": "导出 DismissableLayer、Branch、关闭表面注册 Hook 和属性类型，供对话框及浮层复用。",
+      "tags": [
+        "入口点",
+        "弹层关闭",
+        "导出聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/dropdown-menu/src/dropdown-menu.test.tsx",
+      "type": "file",
+      "name": "dropdown-menu.test.tsx",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.test.tsx",
+      "summary": "验证下拉菜单及子菜单的展开关闭、ARIA 关联、焦点返回、外部交互和引用稳定性，兼顾模态与非模态模式。",
+      "tags": [
+        "测试",
+        "下拉菜单",
+        "交互回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.test.tsx:DropdownMenuTest",
+      "type": "function",
+      "name": "DropdownMenuTest",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.test.tsx",
+      "lineRange": [
+        13,
+        22
+      ],
+      "summary": "构建基础下拉菜单、触发器与传送菜单项，供根状态和 ARIA 关系测试使用。",
+      "tags": [
+        "测试辅助",
+        "下拉菜单",
+        "组件组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.test.tsx:DropdownMenuWithSubTest",
+      "type": "function",
+      "name": "DropdownMenuWithSubTest",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.test.tsx",
+      "lineRange": [
+        24,
+        41
+      ],
+      "summary": "构建带传送子菜单的下拉菜单场景，验证嵌套触发器、内容和根状态的交互。",
+      "tags": [
+        "测试辅助",
+        "子菜单",
+        "组件组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "type": "file",
+      "name": "dropdown-menu.tsx",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "summary": "在 Menu 基础上构建按钮触发下拉菜单，协调受控展开状态、键盘打开、触发器 ARIA 关联、关闭焦点与子菜单。",
+      "tags": [
+        "组件",
+        "下拉菜单",
+        "菜单组合"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenu",
+      "type": "function",
+      "name": "DropdownMenu",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        55,
+        90
+      ],
+      "summary": "管理可控展开状态、触发器 ref 与内容 ID，并将模态、方向和状态桥接给 Menu.Root。",
+      "tags": [
+        "组件",
+        "受控状态",
+        "菜单组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuPortal",
+      "type": "function",
+      "name": "DropdownMenuPortal",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        156,
+        162
+      ],
+      "summary": "桥接下拉菜单作用域并复用 Menu.Portal 的传送挂载行为。",
+      "tags": [
+        "组件",
+        "传送节点",
+        "作用域"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuSub",
+      "type": "function",
+      "name": "DropdownMenuSub",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        404,
+        421
+      ],
+      "summary": "为子菜单维护独立受控或非受控展开状态，并桥接到同一 Menu 作用域中的 Sub。",
+      "tags": [
+        "组件",
+        "子菜单",
+        "受控状态"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:DialogTrigger",
+      "type": "function",
+      "name": "DialogTrigger",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        142,
+        160
+      ],
+      "summary": "渲染按钮并关联内容 ID、展开状态与触发器 ref，组合点击事件切换开关。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:DialogOverlay",
+      "type": "function",
+      "name": "DialogOverlay",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        218,
+        229
+      ],
+      "summary": "仅在模态模式下按 Presence 和 forceMount 状态挂载遮罩。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:DialogOverlayImpl",
+      "type": "function",
+      "name": "DialogOverlayImpl",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        237,
+        275
+      ],
+      "summary": "把遮罩注册为关闭表面，并通过 RemoveScroll 允许对话框内容与已登记分支滚动。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:DialogContent",
+      "type": "function",
+      "name": "DialogContent",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        292,
+        307
+      ],
+      "summary": "依据模态配置选择内容行为，并统一处理退出动画期间的挂载状态。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:DialogContentModal",
+      "type": "function",
+      "name": "DialogContentModal",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        317,
+        365
+      ],
+      "summary": "隐藏背景读屏内容、展开时捕获焦点并禁用外部指针；关闭后恢复触发器焦点，忽略右键和外部焦点关闭。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:DialogContentNonModal",
+      "type": "function",
+      "name": "DialogContentNonModal",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        369,
+        425
+      ],
+      "summary": "允许外部焦点与指针，记录外部交互决定是否恢复触发器焦点，并抑制触发器导致的关闭后重开。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:DialogContentImpl",
+      "type": "function",
+      "name": "DialogContentImpl",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        453,
+        512
+      ],
+      "summary": "组合 FocusScope 与 DismissableLayer，注册 Portal 分支并生成 dialog 的标题描述关联和关闭行为。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:DialogTitle",
+      "type": "function",
+      "name": "DialogTitle",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        522,
+        537
+      ],
+      "summary": "注册标题数量和可覆盖 ID，渲染 h2 供内容引用为可访问名称。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:DialogDescription",
+      "type": "function",
+      "name": "DialogDescription",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        547,
+        583
+      ],
+      "summary": "为描述分配 ID 并注册到描述集合，卸载时移除，让内容自动关联多个描述。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dialog/src/dialog.tsx:DialogClose",
+      "type": "function",
+      "name": "DialogClose",
+      "filePath": "packages/react/dialog/src/dialog.tsx",
+      "lineRange": [
+        594,
+        607
+      ],
+      "summary": "渲染关闭按钮并组合使用者点击处理器，将根展开状态设为 false。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:DismissableLayer",
+      "type": "function",
+      "name": "DismissableLayer",
+      "filePath": "packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "lineRange": [
+        75,
+        264
+      ],
+      "summary": "维护弹层堆栈和背景指针隔离，协调外部指针、外部焦点及顶层 Escape 的可取消关闭行为。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:DismissableLayerBranch",
+      "type": "function",
+      "name": "DismissableLayerBranch",
+      "filePath": "packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "lineRange": [
+        273,
+        292
+      ],
+      "summary": "把节点登记为层内交互分支，让分离 DOM 中的内容不会被判为外部交互。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuTrigger",
+      "type": "function",
+      "name": "DropdownMenuTrigger",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        102,
+        147
+      ],
+      "summary": "以 Menu.Anchor 包装按钮，通过左键、Enter、空格或向下键开关菜单，并维护 ARIA 与焦点竞争。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuContent",
+      "type": "function",
+      "name": "DropdownMenuContent",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        174,
+        220
+      ],
+      "summary": "为菜单内容连接触发器名称与内容 ID，按外部交互记录决定关闭时焦点恢复，并映射定位 CSS 变量。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuGroup",
+      "type": "function",
+      "name": "DropdownMenuGroup",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        230,
+        240
+      ],
+      "summary": "桥接作用域并透传 Menu.Group，实现菜单项的语义分组。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuLabel",
+      "type": "function",
+      "name": "DropdownMenuLabel",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        250,
+        260
+      ],
+      "summary": "桥接作用域并透传 Menu.Label，提供菜单组标签。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuItem",
+      "type": "function",
+      "name": "DropdownMenuItem",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        270,
+        280
+      ],
+      "summary": "桥接作用域和引用到 Menu.Item，复用菜单项键盘与选择行为。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuCheckboxItem",
+      "type": "function",
+      "name": "DropdownMenuCheckboxItem",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        290,
+        300
+      ],
+      "summary": "透传复选菜单项状态与属性到 Menu.CheckboxItem。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuRadioGroup",
+      "type": "function",
+      "name": "DropdownMenuRadioGroup",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        310,
+        317
+      ],
+      "summary": "桥接单选菜单组作用域并传递选中值与回调。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuRadioItem",
+      "type": "function",
+      "name": "DropdownMenuRadioItem",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        327,
+        334
+      ],
+      "summary": "桥接单选菜单项作用域、属性和 DOM 引用。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuItemIndicator",
+      "type": "function",
+      "name": "DropdownMenuItemIndicator",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        344,
+        354
+      ],
+      "summary": "复用 Menu.ItemIndicator 显示选中状态指示。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuSeparator",
+      "type": "function",
+      "name": "DropdownMenuSeparator",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        364,
+        371
+      ],
+      "summary": "桥接 Menu.Separator 的语义分隔行为。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuArrow",
+      "type": "function",
+      "name": "DropdownMenuArrow",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        381,
+        391
+      ],
+      "summary": "复用 Menu.Arrow 为定位菜单渲染箭头并透传引用。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuSubTrigger",
+      "type": "function",
+      "name": "DropdownMenuSubTrigger",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        431,
+        438
+      ],
+      "summary": "桥接子菜单触发器到 Menu.SubTrigger，复用嵌套菜单交互。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuSubContent",
+      "type": "function",
+      "name": "DropdownMenuSubContent",
+      "filePath": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "lineRange": [
+        448,
+        473
+      ],
+      "summary": "桥接子菜单内容并将 Popper 定位变量重命名为下拉菜单公开变量。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/context/src/create-context.tsx",
+      "target": "function:packages/react/context/src/create-context.tsx:createContext",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/context/src/create-context.tsx",
+      "target": "function:packages/react/context/src/create-context.tsx:createContext",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/context/src/create-context.tsx",
+      "target": "function:packages/react/context/src/create-context.tsx:createContextScope",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/context/src/create-context.tsx",
+      "target": "function:packages/react/context/src/create-context.tsx:createContextScope",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/context/src/create-context.tsx",
+      "target": "function:packages/react/context/src/create-context.tsx:composeContextScopes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.test.tsx",
+      "target": "function:packages/react/dialog/src/dialog.test.tsx:DialogTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.test.tsx",
+      "target": "file:packages/react/dialog/src/dialog.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:Dialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:Dialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogPortal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogPortal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:WarningProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:WarningProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:concatAriaDescribedby",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/direction/src/direction.tsx",
+      "target": "function:packages/react/direction/src/direction.tsx:DirectionProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/direction/src/direction.tsx",
+      "target": "function:packages/react/direction/src/direction.tsx:DirectionProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/direction/src/direction.tsx",
+      "target": "function:packages/react/direction/src/direction.tsx:useDirection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/direction/src/direction.tsx",
+      "target": "function:packages/react/direction/src/direction.tsx:useDirection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.test.tsx",
+      "target": "function:packages/react/dismissable-layer/src/dismissable-layer.test.tsx:renderDismissableLayer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.test.tsx",
+      "target": "function:packages/react/dismissable-layer/src/dismissable-layer.test.tsx:ShadowButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.test.tsx",
+      "target": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:useDismissableLayerSurface",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:useDismissableLayerSurface",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:usePointerDownOutside",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:useFocusOutside",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:handleAndDispatchCustomEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.test.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.test.tsx:DropdownMenuTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.test.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.test.tsx:DropdownMenuWithSubTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.test.tsx",
+      "target": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenu",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuPortal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuPortal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuSub",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuSub",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogOverlay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogOverlay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogOverlayImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogContentModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogContentNonModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogContentImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogTitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogTitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogDescription",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogDescription",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogClose",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "function:packages/react/dialog/src/dialog.tsx:DialogClose",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:DismissableLayer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:DismissableLayer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:DismissableLayerBranch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "function:packages/react/dismissable-layer/src/dismissable-layer.tsx:DismissableLayerBranch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuGroup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuLabel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuCheckboxItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuCheckboxItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuRadioGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuRadioGroup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuRadioItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuRadioItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuItemIndicator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuItemIndicator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuSeparator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuSeparator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuArrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuArrow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuSubTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuSubTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuSubContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "function:packages/react/dropdown-menu/src/dropdown-menu.tsx:DropdownMenuSubContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/react/id/src/id.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/react/portal/src/portal.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/react/presence/src/presence.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/react/focus-guards/src/focus-guards.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/react/slot/src/slot.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/core/primitive/src/aria-hidden.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "file:packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "file:packages/react/id/src/id.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "file:packages/react/menu/src/menu.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/dialog/src/dialog.tsx",
+      "target": "file:packages/react/dialog/src/dialog.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "target": "file:packages/react/dismissable-layer/src/dismissable-layer.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "target": "file:packages/react/dropdown-menu/src/dropdown-menu.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/context/src/index.ts",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dialog/src/index.ts",
+      "target": "file:packages/react/dialog/src/dialog.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/direction/src/index.ts",
+      "target": "file:packages/react/direction/src/direction.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/dismissable-layer/src/index.ts",
+      "target": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

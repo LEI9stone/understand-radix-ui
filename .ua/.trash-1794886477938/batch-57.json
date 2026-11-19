@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/radix-ui/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/radix-ui/CHANGELOG.md",
+      "summary": "汇总 radix-ui 组件集合的版本演进，按组件记录浮层嵌套、Slot、表单冒泡、集合顺序、水合和可访问性等修复及新增 API。",
+      "tags": [
+        "发布记录",
+        "组件聚合",
+        "兼容性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:packages/react/radix-ui/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/radix-ui/README.md",
+      "summary": "介绍 Radix Primitives 可访问、可定制的底层组件定位，列出文档、发布、社区和许可证入口。",
+      "tags": [
+        "项目介绍",
+        "组件聚合",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/radix-ui/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/radix-ui/package.json",
+      "summary": "定义 radix-ui 聚合包与子路径导出，汇集公共组件、内部交互工具和共享 Hook 的 workspace 依赖，并配置 ESM/CJS 类型发布。",
+      "tags": [
+        "包清单",
+        "统一入口",
+        "工作区聚合"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/radix-ui/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/radix-ui/tsconfig.json",
+      "summary": "为 radix-ui 的聚合导出源码启用共享 React 库类型配置，输出至 dist。",
+      "tags": [
+        "类型配置",
+        "统一入口",
+        "构建配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/radix-ui/README.md",
+      "target": "config:packages/react/radix-ui/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/radix-ui/CHANGELOG.md",
+      "target": "config:packages/react/radix-ui/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/radix-ui/tsconfig.json",
+      "target": "config:internal/typescript-config/react-library.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

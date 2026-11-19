@@ -1,0 +1,107 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/one-time-password-field/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/one-time-password-field/CHANGELOG.md",
+      "summary": "按版本记录分段验证码输入包的发布变更与依赖更新，最新章节为 0.2.1。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "分段验证码输入"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/one-time-password-field/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/one-time-password-field/README.md",
+      "summary": "介绍分段验证码输入包，包含安装与使用章节。",
+      "tags": [
+        "文档",
+        "包入口",
+        "分段验证码输入"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/one-time-password-field/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/one-time-password-field/package.json",
+      "summary": "定义 @radix-ui/react-one-time-password-field 的源入口、发布导出、构建脚本和 React 对等依赖，配置分段验证码输入包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "分段验证码输入"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/one-time-password-field/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/one-time-password-field/tsconfig.json",
+      "summary": "配置分段验证码输入包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "分段验证码输入"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/one-time-password-field/CHANGELOG.md",
+      "target": "config:packages/react/one-time-password-field/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/one-time-password-field/README.md",
+      "target": "config:packages/react/one-time-password-field/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/one-time-password-field/package.json",
+      "target": "document:packages/react/one-time-password-field/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/one-time-password-field/tsconfig.json",
+      "target": "config:packages/react/one-time-password-field/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/one-time-password-field/package.json",
+      "target": "file:packages/react/one-time-password-field/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/react/one-time-password-field/tsconfig.json",
+      "target": "file:packages/react/one-time-password-field/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/one-time-password-field/README.md",
+      "target": "file:packages/react/one-time-password-field/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

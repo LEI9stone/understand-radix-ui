@@ -1,0 +1,107 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/use-controllable-state/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/use-controllable-state/CHANGELOG.md",
+      "summary": "按版本记录受控与非受控状态 Hook包的发布变更与依赖更新，最新章节为 1.3.0。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "受控与非受控状态 Hook"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/use-controllable-state/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/use-controllable-state/README.md",
+      "summary": "标识 use-controllable-state 包并提供进一步文档入口，作为受控与非受控状态 Hook模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "受控与非受控状态 Hook"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/use-controllable-state/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/use-controllable-state/package.json",
+      "summary": "定义 @radix-ui/react-use-controllable-state 的源入口、发布导出、构建脚本和 React 对等依赖，配置受控与非受控状态 Hook包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "受控与非受控状态 Hook"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/use-controllable-state/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/use-controllable-state/tsconfig.json",
+      "summary": "配置受控与非受控状态 Hook包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "受控与非受控状态 Hook"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/use-controllable-state/CHANGELOG.md",
+      "target": "config:packages/react/use-controllable-state/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/use-controllable-state/README.md",
+      "target": "config:packages/react/use-controllable-state/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/use-controllable-state/package.json",
+      "target": "document:packages/react/use-controllable-state/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/use-controllable-state/tsconfig.json",
+      "target": "config:packages/react/use-controllable-state/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/use-controllable-state/package.json",
+      "target": "file:packages/react/use-controllable-state/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/react/use-controllable-state/tsconfig.json",
+      "target": "file:packages/react/use-controllable-state/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/use-controllable-state/README.md",
+      "target": "file:packages/react/use-controllable-state/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/presence/src/presence.test.tsx",
+      "type": "file",
+      "name": "presence.test.tsx",
+      "filePath": "packages/react/presence/src/presence.test.tsx",
+      "summary": "验证 Presence 在子节点重渲染和引用变化时保持挂载及引用行为稳定，覆盖会引发循环更新的回归场景。",
+      "tags": [
+        "测试",
+        "挂载管理",
+        "引用稳定性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/presence/src/presence.tsx",
+      "type": "file",
+      "name": "presence.tsx",
+      "filePath": "packages/react/presence/src/presence.tsx",
+      "summary": "通过挂载状态机与 CSS 动画事件延迟卸载子节点，并稳定合并引用，兼容 React 18/19 的引用读取和清理方式。",
+      "tags": [
+        "挂载管理",
+        "退出动画",
+        "引用合并"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/presence/src/presence.tsx:Presence",
+      "type": "function",
+      "name": "Presence",
+      "filePath": "packages/react/presence/src/presence.tsx",
+      "lineRange": [
+        10,
+        23
+      ],
+      "summary": "根据 present 与退出动画状态克隆或卸载唯一子节点，支持渲染函数强制保留节点。",
+      "tags": [
+        "挂载管理",
+        "退出动画",
+        "引用合并"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/presence/src/presence.tsx:usePresence",
+      "type": "function",
+      "name": "usePresence",
+      "filePath": "packages/react/presence/src/presence.tsx",
+      "lineRange": [
+        29,
+        187
+      ],
+      "summary": "比较动画名称并监听动画开始、结束和取消事件，在退出动画结束前暂停卸载，同时缓存样式读取以避免重复重排。",
+      "tags": [
+        "挂载管理",
+        "退出动画",
+        "引用合并"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/presence/src/presence.tsx:useStableComposedRefs",
+      "type": "function",
+      "name": "useStableComposedRefs",
+      "filePath": "packages/react/presence/src/presence.tsx",
+      "lineRange": [
+        215,
+        245
+      ],
+      "summary": "用固定身份的回调分发最新引用并执行引用清理，避免 React 19 反复分离引用导致循环更新。",
+      "tags": [
+        "挂载管理",
+        "退出动画",
+        "引用合并"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/presence/src/presence.tsx:getElementRef",
+      "type": "function",
+      "name": "getElementRef",
+      "filePath": "packages/react/presence/src/presence.tsx",
+      "lineRange": [
+        256,
+        273
+      ],
+      "summary": "检查 React 开发模式的警告 getter，在 props.ref 和 element.ref 之间选择兼容的读取方式。",
+      "tags": [
+        "挂载管理",
+        "退出动画",
+        "引用合并"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/presence/src/use-state-machine.tsx",
+      "type": "file",
+      "name": "use-state-machine.tsx",
+      "filePath": "packages/react/presence/src/use-state-machine.tsx",
+      "summary": "用泛型状态图和 React reducer 实现 Presence 所需的事件驱动有限状态机。",
+      "tags": [
+        "状态机",
+        "泛型",
+        "状态管理"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/presence/src/use-state-machine.tsx:useStateMachine",
+      "type": "function",
+      "name": "useStateMachine",
+      "filePath": "packages/react/presence/src/use-state-machine.tsx",
+      "lineRange": [
+        12,
+        20
+      ],
+      "summary": "依据当前状态和事件查询下一状态，返回状态值与 reducer 派发函数，并保持非法转换时的现状。",
+      "tags": [
+        "状态机",
+        "泛型",
+        "状态管理"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/presence/src/presence.test.tsx",
+      "target": "file:packages/react/presence/src/presence.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/presence/src/presence.tsx",
+      "target": "function:packages/react/presence/src/presence.tsx:Presence",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/presence/src/presence.tsx",
+      "target": "function:packages/react/presence/src/presence.tsx:Presence",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/presence/src/presence.tsx",
+      "target": "function:packages/react/presence/src/presence.tsx:usePresence",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/presence/src/presence.tsx",
+      "target": "function:packages/react/presence/src/presence.tsx:useStableComposedRefs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/presence/src/presence.tsx",
+      "target": "function:packages/react/presence/src/presence.tsx:getElementRef",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/presence/src/presence.tsx",
+      "target": "file:packages/react/presence/src/use-state-machine.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:packages/react/presence/src/presence.tsx:Presence",
+      "target": "function:packages/react/presence/src/presence.tsx:usePresence",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/react/presence/src/presence.tsx:Presence",
+      "target": "function:packages/react/presence/src/presence.tsx:useStableComposedRefs",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/react/presence/src/presence.tsx:Presence",
+      "target": "function:packages/react/presence/src/presence.tsx:getElementRef",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/presence/src/use-state-machine.tsx",
+      "target": "function:packages/react/presence/src/use-state-machine.tsx:useStateMachine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/presence/src/use-state-machine.tsx",
+      "target": "function:packages/react/presence/src/use-state-machine.tsx:useStateMachine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/react/presence/src/presence.tsx:usePresence",
+      "target": "function:packages/react/presence/src/use-state-machine.tsx:useStateMachine",
+      "type": "calls",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/presence/src/presence.tsx",
+      "target": "file:packages/react/presence/src/presence.test.tsx",
+      "type": "tested_by",
+      "weight": 0.5,
+      "direction": "forward"
+    }
+  ]
+}

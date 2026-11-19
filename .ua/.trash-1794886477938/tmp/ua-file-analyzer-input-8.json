@@ -1,0 +1,32 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "packages/react/radio-group/src/radio-group.test.tsx",
+      "language": "typescript",
+      "sizeLines": 1137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radio-group/src/radio-group.tsx",
+      "language": "typescript",
+      "sizeLines": 354,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radio-group/src/radio.tsx",
+      "language": "typescript",
+      "sizeLines": 402,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "packages/react/radio-group/src/radio-group.test.tsx": [
+      "packages/react/radio-group/src/radio-group.tsx"
+    ],
+    "packages/react/radio-group/src/radio-group.tsx": [
+      "packages/react/radio-group/src/radio.tsx"
+    ],
+    "packages/react/radio-group/src/radio.tsx": []
+  }
+}

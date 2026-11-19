@@ -1,0 +1,120 @@
+{
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "results": [
+    {
+      "path": "packages/react/slider/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 95,
+      "nonEmptyLines": 57,
+      "sections": [
+        "@radix-ui/react-slider",
+        "1.6.1",
+        "1.6.0",
+        "1.5.0",
+        "1.4.7",
+        "1.4.6",
+        "1.4.5",
+        "1.4.4",
+        "1.4.3",
+        "1.4.2",
+        "Other updates",
+        "1.4.1",
+        "1.4.0",
+        "1.3.6",
+        "1.3.5",
+        "1.3.4",
+        "1.3.3",
+        "1.3.2",
+        "1.3.1",
+        "1.3.0"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 20
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/slider/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        "`react-slider`"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/slider/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 82,
+      "nonEmptyLines": 82,
+      "sections": [
+        "name",
+        "version",
+        "license",
+        "source",
+        "main",
+        "module",
+        "publishConfig",
+        "files",
+        "sideEffects",
+        "scripts",
+        "dependencies",
+        "devDependencies",
+        "peerDependencies",
+        "peerDependenciesMeta",
+        "homepage",
+        "repository",
+        "bugs"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      },
+      "calls": [],
+      "exports": []
+    },
+    {
+      "path": "packages/react/slider/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        "extends",
+        "compilerOptions",
+        "include",
+        "exclude"
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      },
+      "calls": [],
+      "exports": []
+    }
+  ]
+}

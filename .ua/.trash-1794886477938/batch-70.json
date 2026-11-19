@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/tooltip/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/tooltip/CHANGELOG.md",
+      "summary": "记录 Tooltip 的模态 Popover 内 Tab 焦点修复、多 aria-describedby 支持、重复挂载修复及跳过延迟时长与事件目标兼容调整。",
+      "tags": [
+        "变更记录",
+        "工具提示",
+        "焦点管理"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/tooltip/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/tooltip/README.md",
+      "summary": "链接 Tooltip 官方组件文档，提供工具提示的使用说明入口。",
+      "tags": [
+        "组件文档",
+        "工具提示",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/tooltip/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/tooltip/package.json",
+      "summary": "配置 Tooltip 的发布入口，并声明 Popper、Portal、DismissableLayer、FocusScope、Presence、VisuallyHidden 与可控状态等交互依赖。",
+      "tags": [
+        "包清单",
+        "工具提示",
+        "浮层依赖"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/tooltip/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/tooltip/tsconfig.json",
+      "summary": "为 Tooltip 组件指定共享 React 库编译配置，包含 src 并排除构建产物。",
+      "tags": [
+        "类型配置",
+        "工具提示",
+        "构建配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/tooltip/README.md",
+      "target": "config:packages/react/tooltip/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/tooltip/CHANGELOG.md",
+      "target": "config:packages/react/tooltip/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/tooltip/tsconfig.json",
+      "target": "config:internal/typescript-config/react-library.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

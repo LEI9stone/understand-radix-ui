@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/core/env-check/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/core/env-check/CHANGELOG.md",
+      "summary": "记录 env-check 0.0.1 的首次发布。",
+      "tags": [
+        "变更记录",
+        "环境检查",
+        "内部工具"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/core/env-check/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/core/env-check/README.md",
+      "summary": "标明 env-check 仅供 Radix 内部使用，不作为公开使用接口。",
+      "tags": [
+        "文档",
+        "环境检查",
+        "内部工具"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/core/env-check/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/core/env-check/package.json",
+      "summary": "将 is-development 子路径按 development/production 条件分别导出 true/false 实现，同时配置 ESM/CJS 类型入口、无副作用发布与 radix-build。",
+      "tags": [
+        "包清单",
+        "条件导出",
+        "构建配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/core/env-check/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/core/env-check/tsconfig.json",
+      "summary": "继承共享 React 库配置，将 env-check 的 src 设为根目录、dist 设为输出目录，并排除依赖和构建产物。",
+      "tags": [
+        "类型配置",
+        "环境检查",
+        "构建配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/core/env-check/tsconfig.json",
+      "target": "config:internal/typescript-config/react-library.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

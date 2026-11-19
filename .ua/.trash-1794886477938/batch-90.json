@@ -1,0 +1,871 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/radix-ui/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/radix-ui/src/index.ts",
+      "summary": "将独立 React 组件包集中为命名空间导出，提供 radix-ui 总入口，并用 unstable 前缀暴露验证码和密码切换实验组件。",
+      "tags": [
+        "总入口",
+        "命名空间导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/internal.ts",
+      "type": "file",
+      "name": "internal.ts",
+      "filePath": "packages/react/radix-ui/src/internal.ts",
+      "summary": "聚合内部交互原语和共享 Hook，并在 BasePrimitive 上附加 Root 与离散自定义事件派发方法，供组合实现使用。",
+      "tags": [
+        "内部入口",
+        "共享原语",
+        "重新导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/label.ts",
+      "type": "file",
+      "name": "label.ts",
+      "filePath": "packages/react/radix-ui/src/label.ts",
+      "summary": "为 radix-ui/label 子路径转发 @radix-ui/react-label 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/menubar.ts",
+      "type": "file",
+      "name": "menubar.ts",
+      "filePath": "packages/react/radix-ui/src/menubar.ts",
+      "summary": "为 radix-ui/menubar 子路径转发 @radix-ui/react-menubar 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/navigation-menu.ts",
+      "type": "file",
+      "name": "navigation-menu.ts",
+      "filePath": "packages/react/radix-ui/src/navigation-menu.ts",
+      "summary": "为 radix-ui/navigation-menu 子路径转发 @radix-ui/react-navigation-menu 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/popover.ts",
+      "type": "file",
+      "name": "popover.ts",
+      "filePath": "packages/react/radix-ui/src/popover.ts",
+      "summary": "为 radix-ui/popover 子路径转发 @radix-ui/react-popover 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/portal.ts",
+      "type": "file",
+      "name": "portal.ts",
+      "filePath": "packages/react/radix-ui/src/portal.ts",
+      "summary": "为 radix-ui/portal 子路径转发 @radix-ui/react-portal 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/progress.ts",
+      "type": "file",
+      "name": "progress.ts",
+      "filePath": "packages/react/radix-ui/src/progress.ts",
+      "summary": "为 radix-ui/progress 子路径转发 @radix-ui/react-progress 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/radio-group.ts",
+      "type": "file",
+      "name": "radio-group.ts",
+      "filePath": "packages/react/radix-ui/src/radio-group.ts",
+      "summary": "为 radix-ui/radio-group 子路径转发 @radix-ui/react-radio-group 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/scroll-area.ts",
+      "type": "file",
+      "name": "scroll-area.ts",
+      "filePath": "packages/react/radix-ui/src/scroll-area.ts",
+      "summary": "为 radix-ui/scroll-area 子路径转发 @radix-ui/react-scroll-area 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/select.ts",
+      "type": "file",
+      "name": "select.ts",
+      "filePath": "packages/react/radix-ui/src/select.ts",
+      "summary": "为 radix-ui/select 子路径转发 @radix-ui/react-select 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/separator.ts",
+      "type": "file",
+      "name": "separator.ts",
+      "filePath": "packages/react/radix-ui/src/separator.ts",
+      "summary": "为 radix-ui/separator 子路径转发 @radix-ui/react-separator 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/slider.ts",
+      "type": "file",
+      "name": "slider.ts",
+      "filePath": "packages/react/radix-ui/src/slider.ts",
+      "summary": "为 radix-ui/slider 子路径转发 @radix-ui/react-slider 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/slot.ts",
+      "type": "file",
+      "name": "slot.ts",
+      "filePath": "packages/react/radix-ui/src/slot.ts",
+      "summary": "为 radix-ui/slot 子路径转发 @radix-ui/react-slot 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/switch.ts",
+      "type": "file",
+      "name": "switch.ts",
+      "filePath": "packages/react/radix-ui/src/switch.ts",
+      "summary": "为 radix-ui/switch 子路径转发 @radix-ui/react-switch 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/tabs.ts",
+      "type": "file",
+      "name": "tabs.ts",
+      "filePath": "packages/react/radix-ui/src/tabs.ts",
+      "summary": "为 radix-ui/tabs 子路径转发 @radix-ui/react-tabs 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/toast.ts",
+      "type": "file",
+      "name": "toast.ts",
+      "filePath": "packages/react/radix-ui/src/toast.ts",
+      "summary": "为 radix-ui/toast 子路径转发 @radix-ui/react-toast 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/toggle-group.ts",
+      "type": "file",
+      "name": "toggle-group.ts",
+      "filePath": "packages/react/radix-ui/src/toggle-group.ts",
+      "summary": "为 radix-ui/toggle-group 子路径转发 @radix-ui/react-toggle-group 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/toggle.ts",
+      "type": "file",
+      "name": "toggle.ts",
+      "filePath": "packages/react/radix-ui/src/toggle.ts",
+      "summary": "为 radix-ui/toggle 子路径转发 @radix-ui/react-toggle 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/toolbar.ts",
+      "type": "file",
+      "name": "toolbar.ts",
+      "filePath": "packages/react/radix-ui/src/toolbar.ts",
+      "summary": "为 radix-ui/toolbar 子路径转发 @radix-ui/react-toolbar 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/tooltip.ts",
+      "type": "file",
+      "name": "tooltip.ts",
+      "filePath": "packages/react/radix-ui/src/tooltip.ts",
+      "summary": "为 radix-ui/tooltip 子路径转发 @radix-ui/react-tooltip 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/unstable/one-time-password-field.ts",
+      "type": "file",
+      "name": "one-time-password-field.ts",
+      "filePath": "packages/react/radix-ui/src/unstable/one-time-password-field.ts",
+      "summary": "为 radix-ui/unstable/one-time-password-field 转发实验性 one-time-password-field 包的公开组件和类型。",
+      "tags": [
+        "实验接口",
+        "子路径入口",
+        "重新导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/unstable/password-toggle-field.ts",
+      "type": "file",
+      "name": "password-toggle-field.ts",
+      "filePath": "packages/react/radix-ui/src/unstable/password-toggle-field.ts",
+      "summary": "为 radix-ui/unstable/password-toggle-field 转发实验性 password-toggle-field 包的公开组件和类型。",
+      "tags": [
+        "实验接口",
+        "子路径入口",
+        "重新导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/visually-hidden.ts",
+      "type": "file",
+      "name": "visually-hidden.ts",
+      "filePath": "packages/react/radix-ui/src/visually-hidden.ts",
+      "summary": "为 radix-ui/visually-hidden 子路径转发 @radix-ui/react-visually-hidden 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/roving-focus/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/roving-focus/src/index.ts",
+      "summary": "集中导出漫游焦点模块的 Root、Item、作用域工厂及属性类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "漫游焦点"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/accessible-icon/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/accordion/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/alert-dialog/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/aspect-ratio/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/avatar/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/checkbox/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/collapsible/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/context-menu/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/dialog/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/direction/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/dropdown-menu/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/form/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/hover-card/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/label/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/menubar/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/navigation-menu/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/one-time-password-field/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/password-toggle-field/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/popover/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/portal/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/progress/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/radio-group/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/scroll-area/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/select/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/separator/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/slider/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/slot/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/switch/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/tabs/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/toast/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/toggle/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/toggle-group/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/toolbar/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/tooltip/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/index.ts",
+      "target": "file:packages/react/visually-hidden/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/primitive/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/arrow/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/collection/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/compose-refs/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/context/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/dismissable-layer/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/focus-guards/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/focus-scope/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/menu/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/popper/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/presence/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/roving-focus/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/use-callback-ref/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/use-controllable-state/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/use-effect-event/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/use-escape-keydown/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/use-is-hydrated/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/use-layout-effect/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/internal.ts",
+      "target": "file:packages/react/use-size/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/label.ts",
+      "target": "file:packages/react/label/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/menubar.ts",
+      "target": "file:packages/react/menubar/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/navigation-menu.ts",
+      "target": "file:packages/react/navigation-menu/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/popover.ts",
+      "target": "file:packages/react/popover/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/portal.ts",
+      "target": "file:packages/react/portal/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/progress.ts",
+      "target": "file:packages/react/progress/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/radio-group.ts",
+      "target": "file:packages/react/radio-group/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/scroll-area.ts",
+      "target": "file:packages/react/scroll-area/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/select.ts",
+      "target": "file:packages/react/select/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/separator.ts",
+      "target": "file:packages/react/separator/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/slider.ts",
+      "target": "file:packages/react/slider/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/slot.ts",
+      "target": "file:packages/react/slot/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/switch.ts",
+      "target": "file:packages/react/switch/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/tabs.ts",
+      "target": "file:packages/react/tabs/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/toast.ts",
+      "target": "file:packages/react/toast/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/toggle-group.ts",
+      "target": "file:packages/react/toggle-group/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/toggle.ts",
+      "target": "file:packages/react/toggle/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/toolbar.ts",
+      "target": "file:packages/react/toolbar/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/tooltip.ts",
+      "target": "file:packages/react/tooltip/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/unstable/one-time-password-field.ts",
+      "target": "file:packages/react/one-time-password-field/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/unstable/password-toggle-field.ts",
+      "target": "file:packages/react/password-toggle-field/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/visually-hidden.ts",
+      "target": "file:packages/react/visually-hidden/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/roving-focus/src/index.ts",
+      "target": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

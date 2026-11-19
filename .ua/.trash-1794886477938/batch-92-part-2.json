@@ -1,0 +1,486 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/use-controllable-state/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/use-controllable-state/src/index.ts",
+      "summary": "导出可控状态 Hook 与 reducer 版本，为交互组件提供统一状态入口。",
+      "tags": [
+        "公共入口",
+        "共享Hook",
+        "重新导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx",
+      "type": "file",
+      "name": "use-controllable-state-reducer.tsx",
+      "filePath": "packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx",
+      "summary": "将受控状态与任意 reducer 附加状态组合，稳定变化通知并用内部同步 action 对齐外部 prop。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx:useControllableStateReducer",
+      "type": "function",
+      "name": "useControllableStateReducer",
+      "filePath": "packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx",
+      "lineRange": [
+        38,
+        120
+      ],
+      "summary": "包装用户 reducer，在受控模式同步外部值并通知状态变更，在非受控模式于 effect 中通知。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/use-controllable-state/src/use-controllable-state.test.tsx",
+      "type": "file",
+      "name": "use-controllable-state.test.tsx",
+      "filePath": "packages/react/use-controllable-state/src/use-controllable-state.test.tsx",
+      "summary": "验证受控初值、内外部更新、非受控默认值及控制模式切换警告，用简化 Checkbox 构建回归场景。",
+      "tags": [
+        "单元测试",
+        "可控状态",
+        "警告"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/use-controllable-state/src/use-controllable-state.test.tsx:ControlledComponent",
+      "type": "function",
+      "name": "ControlledComponent",
+      "filePath": "packages/react/use-controllable-state/src/use-controllable-state.test.tsx",
+      "lineRange": [
+        88,
+        98
+      ],
+      "summary": "在父级持有 checked 并提供清空按钮，验证受控值响应内外更新。",
+      "tags": [
+        "单元测试",
+        "可控状态",
+        "警告"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/use-controllable-state/src/use-controllable-state.test.tsx:UnstableComponent",
+      "type": "function",
+      "name": "UnstableComponent",
+      "filePath": "packages/react/use-controllable-state/src/use-controllable-state.test.tsx",
+      "lineRange": [
+        104,
+        114
+      ],
+      "summary": "允许 checked 在布尔值和 undefined 间切换，验证受控模式变化警告。",
+      "tags": [
+        "单元测试",
+        "可控状态",
+        "警告"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/use-controllable-state/src/use-controllable-state.test.tsx:Checkbox",
+      "type": "function",
+      "name": "Checkbox",
+      "filePath": "packages/react/use-controllable-state/src/use-controllable-state.test.tsx",
+      "lineRange": [
+        116,
+        137
+      ],
+      "summary": "将可控状态 Hook 接到带 checkbox 角色的按钮，为测试提供最小交互模型。",
+      "tags": [
+        "单元测试",
+        "可控状态",
+        "警告"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "file",
+      "name": "use-controllable-state.tsx",
+      "filePath": "packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "summary": "统一受控与非受控值更新、函数式 setter 和变化通知，在开发环境检测控制模式切换。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/use-controllable-state/src/use-controllable-state.tsx:useControllableState",
+      "type": "function",
+      "name": "useControllableState",
+      "filePath": "packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "lineRange": [
+        19,
+        67
+      ],
+      "summary": "根据 prop 是否为 undefined 选择受控值或内部状态，向适当的 setter 或回调分发更新。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/use-controllable-state/src/use-controllable-state.tsx:useUncontrolledState",
+      "type": "function",
+      "name": "useUncontrolledState",
+      "filePath": "packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "lineRange": [
+        69,
+        93
+      ],
+      "summary": "保存默认初值并用 effect 比较前后值，更新最新通知引用后只在真实变化时触发 onChange。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/use-effect-event/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/use-effect-event/src/index.ts",
+      "summary": "导出效果事件兼容 Hook。",
+      "tags": [
+        "公共入口",
+        "共享Hook",
+        "重新导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/use-effect-event/src/use-effect-event.tsx",
+      "type": "file",
+      "name": "use-effect-event.tsx",
+      "filePath": "packages/react/use-effect-event/src/use-effect-event.tsx",
+      "summary": "优先使用 React 原生 useEffectEvent，否则以提交阶段更新的 ref 和稳定函数实现兼容，阻止渲染期间调用。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/use-effect-event/src/use-effect-event.tsx:useEffectEvent",
+      "type": "function",
+      "name": "useEffectEvent",
+      "filePath": "packages/react/use-effect-event/src/use-effect-event.tsx",
+      "lineRange": [
+        15,
+        36
+      ],
+      "summary": "返回稳定的效果事件回调，使用原生 API 或插入／布局 effect 兼容实现读取最新闭包。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/use-escape-keydown/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/use-escape-keydown/src/index.ts",
+      "summary": "导出 Escape 捕获监听 Hook。",
+      "tags": [
+        "公共入口",
+        "共享Hook",
+        "重新导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/use-escape-keydown/src/use-escape-keydown.tsx",
+      "type": "file",
+      "name": "use-escape-keydown.tsx",
+      "filePath": "packages/react/use-escape-keydown/src/use-escape-keydown.tsx",
+      "summary": "在目标文档捕获 Escape 键并忽略输入法组合事件，回调由稳定引用 Hook 保持最新；该 Hook 已标注弃用。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/use-escape-keydown/src/use-escape-keydown.tsx:useEscapeKeydown",
+      "type": "function",
+      "name": "useEscapeKeydown",
+      "filePath": "packages/react/use-escape-keydown/src/use-escape-keydown.tsx",
+      "lineRange": [
+        10,
+        26
+      ],
+      "summary": "注册并清理文档捕获键盘监听，在非 IME 组合期间将 Escape 传给稳定回调。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/use-is-hydrated/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/use-is-hydrated/src/index.ts",
+      "summary": "导出运行时选择的水合检测 Hook。",
+      "tags": [
+        "公共入口",
+        "共享Hook",
+        "重新导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts",
+      "type": "file",
+      "name": "use-is-hydrated-legacy.ts",
+      "filePath": "packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts",
+      "summary": "用 effect 和模块共享标记检测旧 React 环境的客户端水合完成状态。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts:useIsHydrated",
+      "type": "function",
+      "name": "useIsHydrated",
+      "filePath": "packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts",
+      "lineRange": [
+        5,
+        14
+      ],
+      "summary": "从共享水合标记初始化状态，首次客户端 effect 将标记和组件状态置为已水合。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/use-is-hydrated/src/use-is-hydrated.tsx",
+      "type": "file",
+      "name": "use-is-hydrated.tsx",
+      "filePath": "packages/react/use-is-hydrated/src/use-is-hydrated.tsx",
+      "summary": "按 React 是否提供 useSyncExternalStore 选择现代水合检测或旧版 effect 实现，服务端快照为 false、客户端为 true。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/use-is-hydrated/src/use-is-hydrated.tsx:useIsHydratedModern",
+      "type": "function",
+      "name": "useIsHydratedModern",
+      "filePath": "packages/react/use-is-hydrated/src/use-is-hydrated.tsx",
+      "lineRange": [
+        15,
+        21
+      ],
+      "summary": "借助服务端与客户端外部存储快照差异报告组件树水合状态。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/use-layout-effect/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/use-layout-effect/src/index.ts",
+      "summary": "导出服务端安全的布局 effect 入口。",
+      "tags": [
+        "公共入口",
+        "共享Hook",
+        "重新导出"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx",
+      "target": "function:packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx:useControllableStateReducer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx",
+      "target": "function:packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx:useControllableStateReducer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/use-controllable-state/src/use-controllable-state.test.tsx",
+      "target": "function:packages/react/use-controllable-state/src/use-controllable-state.test.tsx:ControlledComponent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/use-controllable-state/src/use-controllable-state.test.tsx",
+      "target": "function:packages/react/use-controllable-state/src/use-controllable-state.test.tsx:UnstableComponent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/use-controllable-state/src/use-controllable-state.test.tsx",
+      "target": "function:packages/react/use-controllable-state/src/use-controllable-state.test.tsx:Checkbox",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/use-controllable-state/src/use-controllable-state.test.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "target": "function:packages/react/use-controllable-state/src/use-controllable-state.tsx:useControllableState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "target": "function:packages/react/use-controllable-state/src/use-controllable-state.tsx:useControllableState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "target": "function:packages/react/use-controllable-state/src/use-controllable-state.tsx:useUncontrolledState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/use-effect-event/src/use-effect-event.tsx",
+      "target": "function:packages/react/use-effect-event/src/use-effect-event.tsx:useEffectEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/use-effect-event/src/use-effect-event.tsx",
+      "target": "function:packages/react/use-effect-event/src/use-effect-event.tsx:useEffectEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/use-escape-keydown/src/use-escape-keydown.tsx",
+      "target": "function:packages/react/use-escape-keydown/src/use-escape-keydown.tsx:useEscapeKeydown",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/use-escape-keydown/src/use-escape-keydown.tsx",
+      "target": "function:packages/react/use-escape-keydown/src/use-escape-keydown.tsx:useEscapeKeydown",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts",
+      "target": "function:packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts:useIsHydrated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts",
+      "target": "function:packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts:useIsHydrated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/use-is-hydrated/src/use-is-hydrated.tsx",
+      "target": "function:packages/react/use-is-hydrated/src/use-is-hydrated.tsx:useIsHydratedModern",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/use-is-hydrated/src/use-is-hydrated.tsx",
+      "target": "file:packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/use-effect-event/src/use-effect-event.tsx",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/use-escape-keydown/src/use-escape-keydown.tsx",
+      "target": "file:packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx",
+      "target": "file:packages/react/use-effect-event/src/use-effect-event.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx:useControllableStateReducer",
+      "target": "function:packages/react/use-effect-event/src/use-effect-event.tsx:useEffectEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "packages/react/popper/src/popper.tsx",
+      "language": "typescript",
+      "sizeLines": 496,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/portal/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/portal/src/portal.test.tsx",
+      "language": "typescript",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/portal/src/portal.tsx",
+      "language": "typescript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/presence/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/primitive/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/primitive/src/primitive.test.tsx",
+      "language": "typescript",
+      "sizeLines": 344,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/primitive/src/primitive.tsx",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/progress/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/progress/src/progress.test.tsx",
+      "language": "typescript",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/progress/src/progress.tsx",
+      "language": "typescript",
+      "sizeLines": 160,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radio-group/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/accessible-icon.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/accordion.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/alert-dialog.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/aspect-ratio.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/avatar.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/checkbox.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/collapsible.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/context-menu.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/dialog.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/direction.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/dropdown-menu.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/form.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/hover-card.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "packages/react/popper/src/popper.tsx": [],
+    "packages/react/portal/src/index.ts": [],
+    "packages/react/portal/src/portal.test.tsx": [
+      "packages/react/portal/src/portal.tsx"
+    ],
+    "packages/react/portal/src/portal.tsx": [],
+    "packages/react/presence/src/index.ts": [],
+    "packages/react/primitive/src/index.ts": [],
+    "packages/react/primitive/src/primitive.test.tsx": [
+      "packages/react/primitive/src/primitive.tsx"
+    ],
+    "packages/react/primitive/src/primitive.tsx": [],
+    "packages/react/progress/src/index.ts": [],
+    "packages/react/progress/src/progress.test.tsx": [
+      "packages/react/progress/src/progress.tsx"
+    ],
+    "packages/react/progress/src/progress.tsx": [],
+    "packages/react/radio-group/src/index.ts": [],
+    "packages/react/radix-ui/src/accessible-icon.ts": [],
+    "packages/react/radix-ui/src/accordion.ts": [],
+    "packages/react/radix-ui/src/alert-dialog.ts": [],
+    "packages/react/radix-ui/src/aspect-ratio.ts": [],
+    "packages/react/radix-ui/src/avatar.ts": [],
+    "packages/react/radix-ui/src/checkbox.ts": [],
+    "packages/react/radix-ui/src/collapsible.ts": [],
+    "packages/react/radix-ui/src/context-menu.ts": [],
+    "packages/react/radix-ui/src/dialog.ts": [],
+    "packages/react/radix-ui/src/direction.ts": [],
+    "packages/react/radix-ui/src/dropdown-menu.ts": [],
+    "packages/react/radix-ui/src/form.ts": [],
+    "packages/react/radix-ui/src/hover-card.ts": []
+  }
+}

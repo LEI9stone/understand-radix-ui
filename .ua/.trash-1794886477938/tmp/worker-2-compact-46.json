@@ -1,0 +1,289 @@
+{
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "results": [
+    {
+      "path": "packages/react/menubar/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 91,
+      "nonEmptyLines": 51,
+      "sections": [
+        {
+          "heading": "@radix-ui/react-menubar",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1.2.1",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "1.2.0",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "1.1.25",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "1.1.24",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "1.1.23",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "1.1.22",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "1.1.21",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "1.1.20",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "1.1.19",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "1.1.18",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "1.1.17",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "1.1.16",
+          "level": 2,
+          "line": 55
+        },
+        {
+          "heading": "1.1.15",
+          "level": 2,
+          "line": 59
+        },
+        {
+          "heading": "1.1.14",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "1.1.13",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "1.1.12",
+          "level": 2,
+          "line": 72
+        },
+        {
+          "heading": "1.1.11",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "1.1.10",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "1.1.9",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "1.1.8",
+          "level": 2,
+          "line": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 21
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/menubar/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        {
+          "heading": "`react-menubar`",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/menubar/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 82,
+      "nonEmptyLines": 82,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "license",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "source",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "main",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "module",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "publishConfig",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "files",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "sideEffects",
+          "level": 1,
+          "line": 29
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 30
+        },
+        {
+          "heading": "dependencies",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 49
+        },
+        {
+          "heading": "peerDependencies",
+          "level": 1,
+          "line": 59
+        },
+        {
+          "heading": "peerDependenciesMeta",
+          "level": 1,
+          "line": 65
+        },
+        {
+          "heading": "homepage",
+          "level": 1,
+          "line": 73
+        },
+        {
+          "heading": "repository",
+          "level": 1,
+          "line": 74
+        },
+        {
+          "heading": "bugs",
+          "level": 1,
+          "line": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/menubar/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "extends",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "exclude",
+          "level": 1,
+          "line": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      },
+      "calls": []
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "packages/react/toggle-group/src/toggle-group.test.tsx",
+      "language": "typescript",
+      "sizeLines": 273,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toggle-group/src/toggle-group.tsx",
+      "language": "typescript",
+      "sizeLines": 328,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toggle/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toggle/src/toggle.test.tsx",
+      "language": "typescript",
+      "sizeLines": 203,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toggle/src/toggle.tsx",
+      "language": "typescript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toolbar/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toolbar/src/toolbar.test.tsx",
+      "language": "typescript",
+      "sizeLines": 449,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toolbar/src/toolbar.tsx",
+      "language": "typescript",
+      "sizeLines": 245,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/tooltip/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/tooltip/src/tooltip.test.tsx",
+      "language": "typescript",
+      "sizeLines": 633,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/tooltip/src/tooltip.tsx",
+      "language": "typescript",
+      "sizeLines": 804,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-callback-ref/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-controllable-state/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx",
+      "language": "typescript",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-controllable-state/src/use-controllable-state.test.tsx",
+      "language": "typescript",
+      "sizeLines": 137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "language": "typescript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-effect-event/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-effect-event/src/use-effect-event.tsx",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-escape-keydown/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-escape-keydown/src/use-escape-keydown.tsx",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-is-hydrated/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-is-hydrated/src/use-is-hydrated.tsx",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-layout-effect/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "packages/react/toggle-group/src/toggle-group.test.tsx": [
+      "packages/react/toggle-group/src/toggle-group.tsx"
+    ],
+    "packages/react/toggle-group/src/toggle-group.tsx": [],
+    "packages/react/toggle/src/index.ts": [],
+    "packages/react/toggle/src/toggle.test.tsx": [
+      "packages/react/toggle/src/toggle.tsx"
+    ],
+    "packages/react/toggle/src/toggle.tsx": [],
+    "packages/react/toolbar/src/index.ts": [],
+    "packages/react/toolbar/src/toolbar.test.tsx": [
+      "packages/react/toolbar/src/toolbar.tsx"
+    ],
+    "packages/react/toolbar/src/toolbar.tsx": [],
+    "packages/react/tooltip/src/index.ts": [],
+    "packages/react/tooltip/src/tooltip.test.tsx": [
+      "packages/react/tooltip/src/tooltip.tsx"
+    ],
+    "packages/react/tooltip/src/tooltip.tsx": [],
+    "packages/react/use-callback-ref/src/index.ts": [],
+    "packages/react/use-callback-ref/src/use-callback-ref.tsx": [],
+    "packages/react/use-controllable-state/src/index.ts": [],
+    "packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx": [],
+    "packages/react/use-controllable-state/src/use-controllable-state.test.tsx": [
+      "packages/react/use-controllable-state/src/use-controllable-state.tsx"
+    ],
+    "packages/react/use-controllable-state/src/use-controllable-state.tsx": [],
+    "packages/react/use-effect-event/src/index.ts": [],
+    "packages/react/use-effect-event/src/use-effect-event.tsx": [],
+    "packages/react/use-escape-keydown/src/index.ts": [],
+    "packages/react/use-escape-keydown/src/use-escape-keydown.tsx": [],
+    "packages/react/use-is-hydrated/src/index.ts": [],
+    "packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts": [],
+    "packages/react/use-is-hydrated/src/use-is-hydrated.tsx": [
+      "packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts"
+    ],
+    "packages/react/use-layout-effect/src/index.ts": []
+  }
+}

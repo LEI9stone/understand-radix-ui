@@ -1,0 +1,1388 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/storybook/stories/form.stories.tsx",
+      "type": "file",
+      "name": "form.stories.tsx",
+      "filePath": "apps/storybook/stories/form.stories.tsx",
+      "summary": "展示 Form 客户端校验、异步服务端错误、字段外控件和自动化测试所需的提交场景。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/form.stories.tsx:Basic",
+      "type": "function",
+      "name": "Basic",
+      "filePath": "apps/storybook/stories/form.stories.tsx",
+      "lineRange": [
+        7,
+        75
+      ],
+      "summary": "收集邮件与密码数据，模拟异步校验并按字段显示服务端错误，同时管理提交中的加载状态。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/form.stories.tsx:Cypress",
+      "type": "function",
+      "name": "Cypress",
+      "filePath": "apps/storybook/stories/form.stories.tsx",
+      "lineRange": [
+        77,
+        182
+      ],
+      "summary": "提供可切换服务端错误、异步校验及提交结果的表单页面，供端到端自动化验证。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/form.stories.tsx:OutsideField",
+      "type": "function",
+      "name": "OutsideField",
+      "filePath": "apps/storybook/stories/form.stories.tsx",
+      "lineRange": [
+        184,
+        223
+      ],
+      "summary": "把控件放在 Field 包装层之外并关联到表单，演示字段归属与原生提交数据。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "type": "file",
+      "name": "hover-card.stories.tsx",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "summary": "覆盖 HoverCard 文本选择、异步内容、开关延迟、嵌套、Portal 和插槽等行为，以及不同定位组合的视觉回归。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:Basic",
+      "type": "function",
+      "name": "Basic",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        18,
+        34
+      ],
+      "summary": "组合触发链接与浮层内容，演示 HoverCard 的基本悬停展示。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:ContainTextSelection",
+      "type": "function",
+      "name": "ContainTextSelection",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        36,
+        154
+      ],
+      "summary": "在悬停卡片中安排可选文本，检验拖选文本与浮层保持打开的交互。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:AsyncUpdate",
+      "type": "function",
+      "name": "AsyncUpdate",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        156,
+        196
+      ],
+      "summary": "在打开卡片后延迟加载内容，管理并清理定时器，验证异步内容更新与开关状态。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:CustomDurations",
+      "type": "function",
+      "name": "CustomDurations",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        198,
+        239
+      ],
+      "summary": "设置不同的开启与关闭延迟，对比 HoverCard 的悬停响应时序。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:Controlled",
+      "type": "function",
+      "name": "Controlled",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        241,
+        259
+      ],
+      "summary": "用 React 状态控制 HoverCard 悬停卡片，将状态更新回调与界面显示保持同步。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:Layerable",
+      "type": "function",
+      "name": "Layerable",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        261,
+        294
+      ],
+      "summary": "组合可叠放的悬停卡片场景，检验不同层级内容的展示。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:Animated",
+      "type": "function",
+      "name": "Animated",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        296,
+        312
+      ],
+      "summary": "为 HoverCard 悬停卡片 应用状态相关动画样式，演示交互过程中的视觉过渡。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:ForcedMount",
+      "type": "function",
+      "name": "ForcedMount",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        314,
+        330
+      ],
+      "summary": "通过强制挂载保留 HoverCard 内容，演示挂载策略与展示状态的关系。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:Nested",
+      "type": "function",
+      "name": "Nested",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        332,
+        402
+      ],
+      "summary": "在卡片内容中嵌套其他 HoverCard，展示多层悬停区域之间的切换。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:NonPortal",
+      "type": "function",
+      "name": "NonPortal",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        404,
+        421
+      ],
+      "summary": "将卡片内容保留在当前 DOM 层级，演示不使用 Portal 的布局。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:WithSlottedTrigger",
+      "type": "function",
+      "name": "WithSlottedTrigger",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        423,
+        439
+      ],
+      "summary": "把自定义触发元素作为子节点交给 HoverCard，验证插槽事件和属性合并。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:WithSlottedContent",
+      "type": "function",
+      "name": "WithSlottedContent",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        441,
+        455
+      ],
+      "summary": "使用自定义子元素承载 HoverCard 内容，展示内容插槽组合。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        460,
+        769
+      ],
+      "summary": "集中排列 HoverCard 悬停卡片 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/hover-card.stories.tsx:CardContentPlaceholder",
+      "type": "function",
+      "name": "CardContentPlaceholder",
+      "filePath": "apps/storybook/stories/hover-card.stories.tsx",
+      "lineRange": [
+        772,
+        790
+      ],
+      "summary": "提供带头像及文本布局的卡片占位内容，供多个 HoverCard 场景复用。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/label.stories.tsx",
+      "type": "file",
+      "name": "label.stories.tsx",
+      "filePath": "apps/storybook/stories/label.stories.tsx",
+      "summary": "展示 Label 与自定义控件及数值输入的关联，观察点击标签时的原生激活行为。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/label.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/label.stories.tsx",
+      "lineRange": [
+        8,
+        8
+      ],
+      "summary": "组合 Label 标签 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/label.stories.tsx:WithControl",
+      "type": "function",
+      "name": "WithControl",
+      "filePath": "apps/storybook/stories/label.stories.tsx",
+      "lineRange": [
+        10,
+        23
+      ],
+      "summary": "将标签与自定义交互控件关联，演示点击标签激活控件的效果。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/label.stories.tsx:WithInputNumber",
+      "type": "function",
+      "name": "WithInputNumber",
+      "filePath": "apps/storybook/stories/label.stories.tsx",
+      "lineRange": [
+        25,
+        32
+      ],
+      "summary": "关联 Label 与数值输入框，观察标签点击与原生输入操作。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/menu.stories.tsx",
+      "type": "file",
+      "name": "menu.stories.tsx",
+      "filePath": "apps/storybook/stories/menu.stories.tsx",
+      "summary": "展示 Menu 多级菜单、分组标签、键入搜索、复选与单选项目以及动态动画，并使用食品数据生成菜单项。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/menu.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/menu.stories.tsx",
+      "lineRange": [
+        12,
+        31
+      ],
+      "summary": "组合 Menu 菜单 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/menu.stories.tsx:Submenus",
+      "type": "function",
+      "name": "Submenus",
+      "filePath": "apps/storybook/stories/menu.stories.tsx",
+      "lineRange": [
+        33,
+        158
+      ],
+      "summary": "切换方向、动画和滚动配置，展示多级子菜单的打开与菜单项选择。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/menu.stories.tsx:WithLabels",
+      "type": "function",
+      "name": "WithLabels",
+      "filePath": "apps/storybook/stories/menu.stories.tsx",
+      "lineRange": [
+        160,
+        183
+      ],
+      "summary": "按食品分组生成带组标签的菜单，并对选择项目执行提示。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/menu.stories.tsx:Typeahead",
+      "type": "function",
+      "name": "Typeahead",
+      "filePath": "apps/storybook/stories/menu.stories.tsx",
+      "lineRange": [
+        192,
+        251
+      ],
+      "summary": "以食品和花色等文本菜单项演示键入字符时的项目匹配。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/menu.stories.tsx:CheckboxItems",
+      "type": "function",
+      "name": "CheckboxItems",
+      "filePath": "apps/storybook/stories/menu.stories.tsx",
+      "lineRange": [
+        253,
+        298
+      ],
+      "summary": "维护菜单项多选集合和全选状态，在项目变化时更新选中数组。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/menu.stories.tsx:RadioItems",
+      "type": "function",
+      "name": "RadioItems",
+      "filePath": "apps/storybook/stories/menu.stories.tsx",
+      "lineRange": [
+        300,
+        328
+      ],
+      "summary": "用受控值维护菜单中的单选项目，并展示其他命令项的选择行为。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/menu.stories.tsx:Animated",
+      "type": "function",
+      "name": "Animated",
+      "filePath": "apps/storybook/stories/menu.stories.tsx",
+      "lineRange": [
+        330,
+        377
+      ],
+      "summary": "为 Menu 菜单 应用状态相关动画样式，演示交互过程中的视觉过渡。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/menu.stories.tsx:MenuWithAnchor",
+      "type": "function",
+      "name": "MenuWithAnchor",
+      "filePath": "apps/storybook/stories/menu.stories.tsx",
+      "lineRange": [
+        384,
+        402
+      ],
+      "summary": "把菜单锚点、内容和交互处理组合为故事复用的菜单容器。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/menu.stories.tsx:Submenu",
+      "type": "function",
+      "name": "Submenu",
+      "filePath": "apps/storybook/stories/menu.stories.tsx",
+      "lineRange": [
+        404,
+        437
+      ],
+      "summary": "组合子菜单触发器与内容，按动画标志选择内容样式。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/menu.stories.tsx:TickIcon",
+      "type": "function",
+      "name": "TickIcon",
+      "filePath": "apps/storybook/stories/menu.stories.tsx",
+      "lineRange": [
+        439,
+        453
+      ],
+      "summary": "渲染菜单选中状态使用的勾选 SVG 图标。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "type": "file",
+      "name": "navigation-menu.stories.tsx",
+      "filePath": "apps/storybook/stories/navigation-menu.stories.tsx",
+      "summary": "展示 NavigationMenu 的基本链接导航、自定义延迟、共享视口及子菜单，并提供方向切换的统一演示框架。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/navigation-menu.stories.tsx:Basic",
+      "type": "function",
+      "name": "Basic",
+      "filePath": "apps/storybook/stories/navigation-menu.stories.tsx",
+      "lineRange": [
+        10,
+        58
+      ],
+      "summary": "组织导航触发器和链接内容，演示基础 NavigationMenu 的展开布局。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/navigation-menu.stories.tsx:CustomDurations",
+      "type": "function",
+      "name": "CustomDurations",
+      "filePath": "apps/storybook/stories/navigation-menu.stories.tsx",
+      "lineRange": [
+        60,
+        93
+      ],
+      "summary": "通过不同延迟配置比较导航内容的开启响应。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/navigation-menu.stories.tsx:Viewport",
+      "type": "function",
+      "name": "Viewport",
+      "filePath": "apps/storybook/stories/navigation-menu.stories.tsx",
+      "lineRange": [
+        95,
+        186
+      ],
+      "summary": "将不同导航项目的内容呈现在共享 Viewport 中，展示视口布局与内容切换。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/navigation-menu.stories.tsx:StoryFrame",
+      "type": "function",
+      "name": "StoryFrame",
+      "filePath": "apps/storybook/stories/navigation-menu.stories.tsx",
+      "lineRange": [
+        400,
+        462
+      ],
+      "summary": "为导航故事提供布局包装和从左到右或从右到左方向切换。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/navigation-menu.stories.tsx:DurationNavigation",
+      "type": "function",
+      "name": "DurationNavigation",
+      "filePath": "apps/storybook/stories/navigation-menu.stories.tsx",
+      "lineRange": [
+        464,
+        513
+      ],
+      "summary": "组合一组可传入延迟属性的导航项，供时序对比场景复用。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/navigation-menu.stories.tsx:TriggerWithIndicator",
+      "type": "function",
+      "name": "TriggerWithIndicator",
+      "filePath": "apps/storybook/stories/navigation-menu.stories.tsx",
+      "lineRange": [
+        515,
+        525
+      ],
+      "summary": "在导航触发按钮中组合文字和下箭头，并传递禁用状态。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/navigation-menu.stories.tsx:CaretDownIcon",
+      "type": "function",
+      "name": "CaretDownIcon",
+      "filePath": "apps/storybook/stories/navigation-menu.stories.tsx",
+      "lineRange": [
+        527,
+        536
+      ],
+      "summary": "渲染导航触发器使用的向下箭头 SVG。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/navigation-menu.stories.tsx:LinkGroup",
+      "type": "function",
+      "name": "LinkGroup",
+      "filePath": "apps/storybook/stories/navigation-menu.stories.tsx",
+      "lineRange": [
+        538,
+        560
+      ],
+      "summary": "根据 items 生成导航链接列表，并按 bordered 配置组合边框样式。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/one-time-password-field.stories.tsx",
+      "type": "file",
+      "name": "one-time-password-field.stories.tsx",
+      "filePath": "apps/storybook/stories/one-time-password-field.stories.tsx",
+      "summary": "展示一次性密码输入的受控与非受控表单、粘贴删除交互以及成功或失败后的对话框反馈。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/one-time-password-field.stories.tsx:UncontrolledImpl",
+      "type": "function",
+      "name": "UncontrolledImpl",
+      "filePath": "apps/storybook/stories/one-time-password-field.stories.tsx",
+      "lineRange": [
+        42,
+        107
+      ],
+      "summary": "通过原生表单读取非受控验证码，模拟提交校验并在成功后展示消息对话框。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/one-time-password-field.stories.tsx:ControlledImpl",
+      "type": "function",
+      "name": "ControlledImpl",
+      "filePath": "apps/storybook/stories/one-time-password-field.stories.tsx",
+      "lineRange": [
+        114,
+        193
+      ],
+      "summary": "用 React 状态维护验证码及错误信息，处理提交校验、重新输入和成功反馈。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/one-time-password-field.stories.tsx:Dialog",
+      "type": "function",
+      "name": "Dialog",
+      "filePath": "apps/storybook/stories/one-time-password-field.stories.tsx",
+      "lineRange": [
+        244,
+        274
+      ],
+      "summary": "组合消息对话框及触发元素，使用引用与布局副作用协调打开后的界面行为。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/password-toggle-field.stories.tsx",
+      "type": "file",
+      "name": "password-toggle-field.stories.tsx",
+      "filePath": "apps/storybook/stories/password-toggle-field.stories.tsx",
+      "summary": "展示密码可见性切换控件的受控、非受控及表单内使用，并提供睁眼和闭眼图标。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/password-toggle-field.stories.tsx:EyeClosedIcon",
+      "type": "function",
+      "name": "EyeClosedIcon",
+      "filePath": "apps/storybook/stories/password-toggle-field.stories.tsx",
+      "lineRange": [
+        120,
+        134
+      ],
+      "summary": "渲染密码隐藏状态使用的闭眼 SVG 图标。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/password-toggle-field.stories.tsx:EyeOpenIcon",
+      "type": "function",
+      "name": "EyeOpenIcon",
+      "filePath": "apps/storybook/stories/password-toggle-field.stories.tsx",
+      "lineRange": [
+        136,
+        150
+      ],
+      "summary": "渲染密码显示状态使用的睁眼 SVG 图标。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/storybook/stories/form.stories.tsx",
+      "target": "file:apps/storybook/stories/form.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/form.stories.tsx",
+      "target": "function:apps/storybook/stories/form.stories.tsx:Basic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/form.stories.tsx",
+      "target": "function:apps/storybook/stories/form.stories.tsx:Basic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/form.stories.tsx",
+      "target": "function:apps/storybook/stories/form.stories.tsx:Cypress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/form.stories.tsx",
+      "target": "function:apps/storybook/stories/form.stories.tsx:Cypress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/form.stories.tsx",
+      "target": "function:apps/storybook/stories/form.stories.tsx:OutsideField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/form.stories.tsx",
+      "target": "function:apps/storybook/stories/form.stories.tsx:OutsideField",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "file:apps/storybook/stories/hover-card.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:Basic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:Basic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:ContainTextSelection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:ContainTextSelection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:AsyncUpdate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:AsyncUpdate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:CustomDurations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:CustomDurations",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:Controlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:Controlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:Layerable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:Layerable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:Animated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:Animated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:ForcedMount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:ForcedMount",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:Nested",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:Nested",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:NonPortal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:NonPortal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:WithSlottedTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:WithSlottedTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:WithSlottedContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:WithSlottedContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "target": "function:apps/storybook/stories/hover-card.stories.tsx:CardContentPlaceholder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/label.stories.tsx",
+      "target": "file:apps/storybook/stories/label.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/label.stories.tsx",
+      "target": "function:apps/storybook/stories/label.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/label.stories.tsx",
+      "target": "function:apps/storybook/stories/label.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/label.stories.tsx",
+      "target": "function:apps/storybook/stories/label.stories.tsx:WithControl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/label.stories.tsx",
+      "target": "function:apps/storybook/stories/label.stories.tsx:WithControl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/label.stories.tsx",
+      "target": "function:apps/storybook/stories/label.stories.tsx:WithInputNumber",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/label.stories.tsx",
+      "target": "function:apps/storybook/stories/label.stories.tsx:WithInputNumber",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "file:apps/storybook/stories/menu.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:Submenus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:Submenus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:WithLabels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:WithLabels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:Typeahead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:Typeahead",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:CheckboxItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:CheckboxItems",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:RadioItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:RadioItems",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:Animated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:Animated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:MenuWithAnchor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:Submenu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.tsx",
+      "target": "function:apps/storybook/stories/menu.stories.tsx:TickIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "target": "file:apps/storybook/stories/navigation-menu.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/navigation-menu.stories.tsx:Basic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/navigation-menu.stories.tsx:Basic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/navigation-menu.stories.tsx:CustomDurations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/navigation-menu.stories.tsx:CustomDurations",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/navigation-menu.stories.tsx:Viewport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/navigation-menu.stories.tsx:Viewport",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/navigation-menu.stories.tsx:StoryFrame",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/navigation-menu.stories.tsx:DurationNavigation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/navigation-menu.stories.tsx:TriggerWithIndicator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/navigation-menu.stories.tsx:CaretDownIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/navigation-menu.stories.tsx:LinkGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/one-time-password-field.stories.tsx",
+      "target": "file:apps/storybook/stories/dialog.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/one-time-password-field.stories.tsx",
+      "target": "file:apps/storybook/stories/one-time-password-field.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/one-time-password-field.stories.tsx",
+      "target": "function:apps/storybook/stories/one-time-password-field.stories.tsx:UncontrolledImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/one-time-password-field.stories.tsx",
+      "target": "function:apps/storybook/stories/one-time-password-field.stories.tsx:ControlledImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/one-time-password-field.stories.tsx",
+      "target": "function:apps/storybook/stories/one-time-password-field.stories.tsx:Dialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/password-toggle-field.stories.tsx",
+      "target": "file:apps/storybook/stories/password-toggle-field.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/password-toggle-field.stories.tsx",
+      "target": "function:apps/storybook/stories/password-toggle-field.stories.tsx:EyeClosedIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/password-toggle-field.stories.tsx",
+      "target": "function:apps/storybook/stories/password-toggle-field.stories.tsx:EyeOpenIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

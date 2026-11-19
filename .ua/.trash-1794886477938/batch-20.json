@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/core/primitive/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/core/primitive/CHANGELOG.md",
+      "summary": "记录核心 primitive 的 DOM 工具补充、事件参数兼容、开发警告条件导出及 exactOptionalPropertyTypes 类型适配。",
+      "tags": [
+        "变更记录",
+        "事件组合",
+        "核心工具"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/core/primitive/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/core/primitive/README.md",
+      "summary": "声明 primitive 是内部工具包，不面向公开使用。",
+      "tags": [
+        "包文档",
+        "核心工具",
+        "内部接口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/core/primitive/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/core/primitive/package.json",
+      "summary": "配置 @radix-ui/primitive 的源码入口和 ESM/CJS 发布入口、radix-build 与 aria-hidden 基准测试，声明 env-check 工作区依赖。",
+      "tags": [
+        "包清单",
+        "核心工具",
+        "发布配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/core/primitive/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/core/primitive/tsconfig.json",
+      "summary": "将核心 DOM/事件工具纳入共享 React 库类型配置，输出至 dist 并排除构建产物与依赖目录。",
+      "tags": [
+        "类型配置",
+        "核心工具",
+        "构建配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/core/primitive/README.md",
+      "target": "config:packages/core/primitive/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/core/primitive/CHANGELOG.md",
+      "target": "config:packages/core/primitive/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/core/primitive/tsconfig.json",
+      "target": "config:internal/typescript-config/react-library.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

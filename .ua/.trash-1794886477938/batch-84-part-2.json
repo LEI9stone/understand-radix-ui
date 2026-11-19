@@ -1,0 +1,1221 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/storybook/stories/slot.stories.tsx",
+      "type": "file",
+      "name": "slot.stories.tsx",
+      "filePath": "apps/storybook/stories/slot.stories.tsx",
+      "summary": "演示 Slot 与 Slottable 的属性、事件和子元素合并，覆盖链接按钮、懒加载、非法子节点及错误边界。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/slot.stories.tsx:WithSlottable",
+      "type": "function",
+      "name": "WithSlottable",
+      "filePath": "apps/storybook/stories/slot.stories.tsx",
+      "lineRange": [
+        17,
+        21
+      ],
+      "summary": "使用 Slottable 标记可被替换的子内容，展示额外兄弟节点的保留。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/slot.stories.tsx:WithComposedEvents",
+      "type": "function",
+      "name": "WithComposedEvents",
+      "filePath": "apps/storybook/stories/slot.stories.tsx",
+      "lineRange": [
+        23,
+        59
+      ],
+      "summary": "排列父子点击处理和 preventDefault 场景，验证插槽合并后的事件顺序。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/slot.stories.tsx:ButtonAsLink",
+      "type": "function",
+      "name": "ButtonAsLink",
+      "filePath": "apps/storybook/stories/slot.stories.tsx",
+      "lineRange": [
+        61,
+        84
+      ],
+      "summary": "将按钮外观通过 Slot 应用到链接，并组合左右图标。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/slot.stories.tsx:WithLazyComponent",
+      "type": "function",
+      "name": "WithLazyComponent",
+      "filePath": "apps/storybook/stories/slot.stories.tsx",
+      "lineRange": [
+        95,
+        103
+      ],
+      "summary": "在插槽中渲染懒加载组件，演示异步子元素与事件处理的组合。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/slot.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/slot.stories.tsx",
+      "lineRange": [
+        105,
+        270
+      ],
+      "summary": "集中排列 Slot 插槽 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/slot.stories.tsx:SlotWithPreventableEvent",
+      "type": "function",
+      "name": "SlotWithPreventableEvent",
+      "filePath": "apps/storybook/stories/slot.stories.tsx",
+      "lineRange": [
+        313,
+        323
+      ],
+      "summary": "先调用传入点击处理器，仅在事件未被取消时继续内部逻辑。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/slot.stories.tsx:Button",
+      "type": "function",
+      "name": "Button",
+      "filePath": "apps/storybook/stories/slot.stories.tsx",
+      "lineRange": [
+        335,
+        368
+      ],
+      "summary": "根据 asChild 选择原生按钮或 Slot，并使用 Slottable 将文本插入左右图标之间。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/slot.stories.tsx:MockIcon",
+      "type": "function",
+      "name": "MockIcon",
+      "filePath": "apps/storybook/stories/slot.stories.tsx",
+      "lineRange": [
+        370,
+        381
+      ],
+      "summary": "渲染可设颜色的方形图标占位元素，用于验证图标与插槽子内容的排列。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/slot.stories.tsx:MockTag",
+      "type": "function",
+      "name": "MockTag",
+      "filePath": "apps/storybook/stories/slot.stories.tsx",
+      "lineRange": [
+        383,
+        394
+      ],
+      "summary": "渲染标签内容及可选删除按钮，作为含独立交互子节点的插槽组合示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/storybook/stories/slot.stories.tsx:ErrorBoundary",
+      "type": "class",
+      "name": "ErrorBoundary",
+      "filePath": "apps/storybook/stories/slot.stories.tsx",
+      "lineRange": [
+        275,
+        291
+      ],
+      "summary": "捕获 Slot 无效子元素等渲染错误，在异常时显示红底错误提示并在正常时返回子内容。",
+      "tags": [
+        "错误边界",
+        "异常恢复",
+        "组件演示"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/switch.stories.tsx",
+      "type": "file",
+      "name": "switch.stories.tsx",
+      "filePath": "apps/storybook/stories/switch.stories.tsx",
+      "summary": "覆盖 Switch 根节点及分部件接口的受控、表单提交和重置，以及选中事件传播和视觉状态。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/switch.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/switch.stories.tsx",
+      "lineRange": [
+        8,
+        18
+      ],
+      "summary": "组合 Switch 开关 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/switch.stories.tsx:Controlled",
+      "type": "function",
+      "name": "Controlled",
+      "filePath": "apps/storybook/stories/switch.stories.tsx",
+      "lineRange": [
+        20,
+        37
+      ],
+      "summary": "用 React 状态控制 Switch 开关，将状态更新回调与界面显示保持同步。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/switch.stories.tsx:WithinForm",
+      "type": "function",
+      "name": "WithinForm",
+      "filePath": "apps/storybook/stories/switch.stories.tsx",
+      "lineRange": [
+        39,
+        156
+      ],
+      "summary": "收集多个 Switch 字段的选中变化及提交数据，展示表单级与字段级事件。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/switch.stories.tsx:WithinFormReset",
+      "type": "function",
+      "name": "WithinFormReset",
+      "filePath": "apps/storybook/stories/switch.stories.tsx",
+      "lineRange": [
+        158,
+        201
+      ],
+      "summary": "将受控和非受控 Switch 放入表单，展示重置后选中状态的差异。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/switch.stories.tsx:Parts",
+      "type": "function",
+      "name": "Parts",
+      "filePath": "apps/storybook/stories/switch.stories.tsx",
+      "lineRange": [
+        203,
+        217
+      ],
+      "summary": "使用提供器与触发器等分部件组装受控开关。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/switch.stories.tsx:PartsWithinForm",
+      "type": "function",
+      "name": "PartsWithinForm",
+      "filePath": "apps/storybook/stories/switch.stories.tsx",
+      "lineRange": [
+        219,
+        288
+      ],
+      "summary": "以分部件接口构造开关表单，展示提交数据与变化事件的传播。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/switch.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/switch.stories.tsx",
+      "lineRange": [
+        290,
+        335
+      ],
+      "summary": "集中排列 Switch 开关 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/tabs.stories.tsx",
+      "type": "file",
+      "name": "tabs.stories.tsx",
+      "filePath": "apps/storybook/stories/tabs.stories.tsx",
+      "summary": "展示 Tabs 标签与面板切换、状态动画及多布局视觉回归场景。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/tabs.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/tabs.stories.tsx",
+      "lineRange": [
+        8,
+        69
+      ],
+      "summary": "组合 Tabs 标签页 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/tabs.stories.tsx:Animated",
+      "type": "function",
+      "name": "Animated",
+      "filePath": "apps/storybook/stories/tabs.stories.tsx",
+      "lineRange": [
+        71,
+        133
+      ],
+      "summary": "为 Tabs 标签页 应用状态相关动画样式，演示交互过程中的视觉过渡。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/tabs.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/tabs.stories.tsx",
+      "lineRange": [
+        135,
+        363
+      ],
+      "summary": "集中排列 Tabs 标签页 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/storybook/stories/toast.stories.tsx",
+      "type": "file",
+      "name": "toast.stories.tsx",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "summary": "演示 Toast 多消息队列、异步保存、对话框联动、滑动动画及自定义播报容器，并覆盖计时暂停恢复。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/toast.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "lineRange": [
+        7,
+        12
+      ],
+      "summary": "组合 Toast 通知 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toast.stories.tsx:Controlled",
+      "type": "function",
+      "name": "Controlled",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "lineRange": [
+        14,
+        57
+      ],
+      "summary": "分别维护升级、订阅、错误和保存消息状态，通过按钮及定时器生成受控通知。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toast.stories.tsx:FromDialog",
+      "type": "function",
+      "name": "FromDialog",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "lineRange": [
+        59,
+        92
+      ],
+      "summary": "从对话框操作中触发 Toast，展示模态交互与通知内容的协作。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toast.stories.tsx:Promise",
+      "type": "function",
+      "name": "Promise",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "lineRange": [
+        94,
+        132
+      ],
+      "summary": "模拟异步保存任务，在等待期间控制通知状态并在任务完成后更新内容。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toast.stories.tsx:KeyChange",
+      "type": "function",
+      "name": "KeyChange",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "lineRange": [
+        134,
+        158
+      ],
+      "summary": "更新通知的 React key，检验重建消息时的展示和计时行为。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toast.stories.tsx:PauseResumeProps",
+      "type": "function",
+      "name": "PauseResumeProps",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "lineRange": [
+        160,
+        174
+      ],
+      "summary": "动态增加通知数量，展示暂停及恢复回调属性的使用。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toast.stories.tsx:Animated",
+      "type": "function",
+      "name": "Animated",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "lineRange": [
+        178,
+        218
+      ],
+      "summary": "切换滑动方向并使用定时器重开通知，展示 Toast 入场、离场与滑动动画。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toast.stories.tsx:Cypress",
+      "type": "function",
+      "name": "Cypress",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "lineRange": [
+        220,
+        264
+      ],
+      "summary": "提供可累积通知的测试页面，为消息关闭及队列行为的端到端验证服务。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toast.stories.tsx:CustomAnnouncerContainer",
+      "type": "function",
+      "name": "CustomAnnouncerContainer",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "lineRange": [
+        266,
+        307
+      ],
+      "summary": "通过引用指定无障碍播报容器，并以受控开关演示通知在自定义容器中的播报。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toast.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "lineRange": [
+        311,
+        474
+      ],
+      "summary": "集中排列 Toast 通知 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/toast.stories.tsx:ToastUpgradeAvailable",
+      "type": "function",
+      "name": "ToastUpgradeAvailable",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "lineRange": [
+        479,
+        498
+      ],
+      "summary": "渲染升级可用通知及相关操作，供受控通知故事复用。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toast.stories.tsx:ToastSubscribeSuccess",
+      "type": "function",
+      "name": "ToastSubscribeSuccess",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "lineRange": [
+        500,
+        512
+      ],
+      "summary": "渲染订阅成功通知，并应用成功标题样式。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toast.stories.tsx:ToastWithProgress",
+      "type": "function",
+      "name": "ToastWithProgress",
+      "filePath": "apps/storybook/stories/toast.stories.tsx",
+      "lineRange": [
+        514,
+        538
+      ],
+      "summary": "在 Toast 中显示进度，在暂停及恢复事件中同步动画暂停状态。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "type": "file",
+      "name": "toggle-group.stories.tsx",
+      "filePath": "apps/storybook/stories/toggle-group.stories.tsx",
+      "summary": "演示 ToggleGroup 单选、多选、垂直排列和受控状态，并提供视觉与端到端回归场景。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/toggle-group.stories.tsx:Single",
+      "type": "function",
+      "name": "Single",
+      "filePath": "apps/storybook/stories/toggle-group.stories.tsx",
+      "lineRange": [
+        9,
+        46
+      ],
+      "summary": "维护受控单选值并展示单选切换按钮组的使用。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toggle-group.stories.tsx:Vertical",
+      "type": "function",
+      "name": "Vertical",
+      "filePath": "apps/storybook/stories/toggle-group.stories.tsx",
+      "lineRange": [
+        48,
+        68
+      ],
+      "summary": "设置垂直方向排列切换按钮组，演示纵向导航布局。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toggle-group.stories.tsx:Multiple",
+      "type": "function",
+      "name": "Multiple",
+      "filePath": "apps/storybook/stories/toggle-group.stories.tsx",
+      "lineRange": [
+        70,
+        112
+      ],
+      "summary": "使用数组状态维护多个激活项目，演示受控多选切换组。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toggle-group.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/toggle-group.stories.tsx",
+      "lineRange": [
+        114,
+        297
+      ],
+      "summary": "集中排列 ToggleGroup 切换组 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/toggle-group.stories.tsx:Cypress",
+      "type": "function",
+      "name": "Cypress",
+      "filePath": "apps/storybook/stories/toggle-group.stories.tsx",
+      "lineRange": [
+        301,
+        333
+      ],
+      "summary": "提供切换按钮组交互页面，供端到端测试验证项目选择。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:WithSlottable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:WithSlottable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:WithComposedEvents",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:WithComposedEvents",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:ButtonAsLink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:ButtonAsLink",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:WithLazyComponent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:WithLazyComponent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:SlotWithPreventableEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:Button",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:MockIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "function:apps/storybook/stories/slot.stories.tsx:MockTag",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/slot.stories.tsx",
+      "target": "class:apps/storybook/stories/slot.stories.tsx:ErrorBoundary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "file:apps/storybook/stories/switch.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:Controlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:Controlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:WithinForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:WithinForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:WithinFormReset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:WithinFormReset",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:Parts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:Parts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:PartsWithinForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:PartsWithinForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.tsx",
+      "target": "function:apps/storybook/stories/switch.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tabs.stories.tsx",
+      "target": "file:apps/storybook/stories/tabs.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/tabs.stories.tsx",
+      "target": "function:apps/storybook/stories/tabs.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tabs.stories.tsx",
+      "target": "function:apps/storybook/stories/tabs.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tabs.stories.tsx",
+      "target": "function:apps/storybook/stories/tabs.stories.tsx:Animated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tabs.stories.tsx",
+      "target": "function:apps/storybook/stories/tabs.stories.tsx:Animated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tabs.stories.tsx",
+      "target": "function:apps/storybook/stories/tabs.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tabs.stories.tsx",
+      "target": "function:apps/storybook/stories/tabs.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "file:apps/storybook/stories/toast.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:Controlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:Controlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:FromDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:FromDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:Promise",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:Promise",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:KeyChange",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:KeyChange",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:PauseResumeProps",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:PauseResumeProps",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:Animated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:Animated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:Cypress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:Cypress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:CustomAnnouncerContainer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:CustomAnnouncerContainer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:ToastUpgradeAvailable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:ToastSubscribeSuccess",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.tsx",
+      "target": "function:apps/storybook/stories/toast.stories.tsx:ToastWithProgress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "target": "file:apps/storybook/stories/toggle-group.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle-group.stories.tsx:Single",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle-group.stories.tsx:Single",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle-group.stories.tsx:Vertical",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle-group.stories.tsx:Vertical",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle-group.stories.tsx:Multiple",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle-group.stories.tsx:Multiple",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle-group.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle-group.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle-group.stories.tsx:Cypress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle-group.stories.tsx:Cypress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

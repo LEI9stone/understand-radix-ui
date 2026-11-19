@@ -1,0 +1,1228 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/toggle-group/src/toggle-group.test.tsx",
+      "type": "file",
+      "name": "toggle-group.test.tsx",
+      "filePath": "packages/react/toggle-group/src/toggle-group.test.tsx",
+      "summary": "验证单选与多选切换组的值变化、取消选择、ARIA 角色、无障碍扫描和 asChild 属性传递。",
+      "tags": [
+        "单元测试",
+        "切换组",
+        "属性传递"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "type": "file",
+      "name": "toggle-group.tsx",
+      "filePath": "packages/react/toggle-group/src/toggle-group.tsx",
+      "summary": "组合单选或多选 Toggle 状态与可选焦点漫游，单选使用 radiogroup/radio 语义，多选使用 toolbar 按压语义。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toggle-group"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroup",
+      "type": "function",
+      "name": "ToggleGroup",
+      "filePath": "packages/react/toggle-group/src/toggle-group.tsx",
+      "lineRange": [
+        42,
+        55
+      ],
+      "summary": "按 type 区分单选和多选实现，赋予 radiogroup 或 toolbar 角色并拒绝缺失类型。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toggle-group"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroupImplSingle",
+      "type": "function",
+      "name": "ToggleGroupImplSingle",
+      "filePath": "packages/react/toggle-group/src/toggle-group.tsx",
+      "lineRange": [
+        90,
+        115
+      ],
+      "summary": "用可控状态保存单个选中值，将其转换成共享数组接口，并在取消时清空。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toggle-group"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroupImplMultiple",
+      "type": "function",
+      "name": "ToggleGroupImplMultiple",
+      "filePath": "packages/react/toggle-group/src/toggle-group.tsx",
+      "lineRange": [
+        138,
+        174
+      ],
+      "summary": "用可控数组状态实现多项激活和移除，向各项目提供统一状态操作。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toggle-group"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroupImpl",
+      "type": "function",
+      "name": "ToggleGroupImpl",
+      "filePath": "packages/react/toggle-group/src/toggle-group.tsx",
+      "lineRange": [
+        208,
+        238
+      ],
+      "summary": "共享禁用与方向配置，按 rovingFocus 选项组合焦点漫游根和 Primitive.div。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toggle-group"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroupItem",
+      "type": "function",
+      "name": "ToggleGroupItem",
+      "filePath": "packages/react/toggle-group/src/toggle-group.tsx",
+      "lineRange": [
+        255,
+        276
+      ],
+      "summary": "从组值推导按压与禁用状态，按配置注册为可聚焦且可标记 active 的焦点漫游项。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toggle-group"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroupItemImpl",
+      "type": "function",
+      "name": "ToggleGroupItemImpl",
+      "filePath": "packages/react/toggle-group/src/toggle-group.tsx",
+      "lineRange": [
+        295,
+        314
+      ],
+      "summary": "将单选组项转换成 radio 语义，并将 Toggle 按压变化转发为组值激活或取消。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toggle-group"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/toggle/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/toggle/src/index.ts",
+      "summary": "重新导出toggle的组合部件、短别名和属性类型，作为包的公共导入入口。",
+      "tags": [
+        "公共入口",
+        "部件导出",
+        "toggle"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/toggle/src/toggle.test.tsx",
+      "type": "file",
+      "name": "toggle.test.tsx",
+      "filePath": "packages/react/toggle/src/toggle.test.tsx",
+      "summary": "验证 Toggle 的默认、受控和禁用状态下点击行为、按压属性、无障碍及 asChild 属性转发。",
+      "tags": [
+        "单元测试",
+        "按压状态",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/toggle/src/toggle.tsx",
+      "type": "file",
+      "name": "toggle.tsx",
+      "filePath": "packages/react/toggle/src/toggle.tsx",
+      "summary": "以可控状态 Hook 管理 pressed，组合消费者点击事件并在 Primitive.button 上暴露 aria-pressed 和 on/off 状态。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toggle"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/toggle/src/toggle.tsx:Toggle",
+      "type": "function",
+      "name": "Toggle",
+      "filePath": "packages/react/toggle/src/toggle.tsx",
+      "lineRange": [
+        32,
+        57
+      ],
+      "summary": "创建可控或非受控按压按钮，将点击事件组合后切换 pressed，并暴露 ARIA 和 data-state。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toggle"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/toolbar/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/toolbar/src/index.ts",
+      "summary": "重新导出toolbar的组合部件、短别名和属性类型，作为包的公共导入入口。",
+      "tags": [
+        "公共入口",
+        "部件导出",
+        "toolbar"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/toolbar/src/toolbar.test.tsx",
+      "type": "file",
+      "name": "toolbar.test.tsx",
+      "filePath": "packages/react/toolbar/src/toolbar.test.tsx",
+      "summary": "验证工具栏单次点击、链接自身与传送后代的空格键边界，以及各部件的属性和 asChild 转发。",
+      "tags": [
+        "单元测试",
+        "键盘交互",
+        "组合部件"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/toolbar/src/toolbar.test.tsx:component",
+      "type": "function",
+      "name": "component",
+      "filePath": "packages/react/toolbar/src/toolbar.test.tsx",
+      "lineRange": [
+        7,
+        17
+      ],
+      "summary": "构造带一个按钮和可配置点击处理的最小工具栏，供事件次数回归测试使用。",
+      "tags": [
+        "单元测试",
+        "键盘交互",
+        "组合部件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/toolbar/src/toolbar.tsx",
+      "type": "file",
+      "name": "toolbar.tsx",
+      "filePath": "packages/react/toolbar/src/toolbar.tsx",
+      "summary": "把按钮、链接、分隔线和切换组组合进共享焦点漫游工具栏，统一方向并避免内嵌 ToggleGroup 重复管理焦点。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toolbar"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/toolbar/src/toolbar.tsx:Toolbar",
+      "type": "function",
+      "name": "Toolbar",
+      "filePath": "packages/react/toolbar/src/toolbar.tsx",
+      "lineRange": [
+        46,
+        69
+      ],
+      "summary": "建立方向上下文，以焦点漫游根包裹 toolbar 宿主并设置方向语义。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toolbar"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarSeparator",
+      "type": "function",
+      "name": "ToolbarSeparator",
+      "filePath": "packages/react/toolbar/src/toolbar.tsx",
+      "lineRange": [
+        87,
+        97
+      ],
+      "summary": "读取工具栏方向，令分隔线采用垂直于工具栏轴的方向。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toolbar"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarButton",
+      "type": "function",
+      "name": "ToolbarButton",
+      "filePath": "packages/react/toolbar/src/toolbar.tsx",
+      "lineRange": [
+        109,
+        117
+      ],
+      "summary": "把 Primitive.button 注册为可根据 disabled 状态导航的焦点漫游项。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toolbar"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarLink",
+      "type": "function",
+      "name": "ToolbarLink",
+      "filePath": "packages/react/toolbar/src/toolbar.tsx",
+      "lineRange": [
+        129,
+        153
+      ],
+      "summary": "将链接纳入焦点漫游，仅在链接本身接收空格键时触发点击，隔离后代冒泡。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toolbar"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarToggleGroup",
+      "type": "function",
+      "name": "ToolbarToggleGroup",
+      "filePath": "packages/react/toolbar/src/toolbar.tsx",
+      "lineRange": [
+        172,
+        189
+      ],
+      "summary": "继承工具栏方向并禁用内层 ToggleGroup 自身焦点漫游，避免重复导航。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toolbar"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarToggleItem",
+      "type": "function",
+      "name": "ToolbarToggleItem",
+      "filePath": "packages/react/toolbar/src/toolbar.tsx",
+      "lineRange": [
+        205,
+        215
+      ],
+      "summary": "将 ToggleGroup 项通过 ToolbarButton 的 asChild 组合进统一工具栏焦点序列。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toolbar"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/tooltip/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/tooltip/src/index.ts",
+      "summary": "重新导出tooltip的组合部件、短别名和属性类型，作为包的公共导入入口。",
+      "tags": [
+        "公共入口",
+        "部件导出",
+        "tooltip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/tooltip/src/tooltip.test.tsx",
+      "type": "file",
+      "name": "tooltip.test.tsx",
+      "filePath": "packages/react/tooltip/src/tooltip.test.tsx",
+      "summary": "验证悬停内容、aria-describedby 合并去重、自定义 id、单次子内容渲染和多提示间的延迟与重渲染边界。",
+      "tags": [
+        "单元测试",
+        "提示语义",
+        "延迟行为"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/tooltip/src/tooltip.tsx",
+      "type": "file",
+      "name": "tooltip.tsx",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "summary": "管理延迟打开、跳过延迟、焦点和指针交互，通过 Popper/Portal 定位并计算指针宽容多边形保持可悬停内容。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:TooltipProvider",
+      "type": "function",
+      "name": "TooltipProvider",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        66,
+        112
+      ],
+      "summary": "共享延迟策略与指针传送标记，在提示间移动时用计时器决定是否跳过打开延迟。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:Tooltip",
+      "type": "function",
+      "name": "Tooltip",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        155,
+        260
+      ],
+      "summary": "维护开关、触发器和内容 id，协调受控状态及延迟打开，通知其他提示关闭。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:TooltipPortal",
+      "type": "function",
+      "name": "TooltipPortal",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        358,
+        370
+      ],
+      "summary": "通过 Presence 按开关或强制挂载状态把提示内容传送到目标容器。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:getExitSideFromRect",
+      "type": "function",
+      "name": "getExitSideFromRect",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        629,
+        647
+      ],
+      "summary": "比较离开点到矩形四边的距离，推导指针离开方向。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:getPaddedExitPoints",
+      "type": "function",
+      "name": "getPaddedExitPoints",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        649,
+        678
+      ],
+      "summary": "按离开方向生成带宽容间距的两个起点，扩展指针移动走廊。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:isPointInPolygon",
+      "type": "function",
+      "name": "isPointInPolygon",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        692,
+        709
+      ],
+      "summary": "利用射线交点奇偶性判断指针是否仍处于宽容多边形内。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:getHull",
+      "type": "function",
+      "name": "getHull",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        713,
+        723
+      ],
+      "summary": "先按坐标排序点集，再构建用于指针宽容区域的凸包。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:getHullPresorted",
+      "type": "function",
+      "name": "getHullPresorted",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        726,
+        765
+      ],
+      "summary": "对已排序点集建立上下凸包，合并外缘顶点以支持稳定悬停走廊。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:concatAriaDescribedby",
+      "type": "function",
+      "name": "concatAriaDescribedby",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        768,
+        778
+      ],
+      "summary": "规范化并去重多个 ARIA 描述 id 列表，返回可用于 aria-describedby 的空格分隔引用。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:TooltipTrigger",
+      "type": "function",
+      "name": "TooltipTrigger",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        273,
+        330
+      ],
+      "summary": "组合锚点与触发按钮，区分触摸、悬停、焦点和点击，并合并 aria-describedby 引用。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:TooltipContent",
+      "type": "function",
+      "name": "TooltipContent",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        388,
+        402
+      ],
+      "summary": "根据挂载与开关状态保留内容，选择普通或具有指针宽容区的内容实现。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:TooltipContentHoverable",
+      "type": "function",
+      "name": "TooltipContentHoverable",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        414,
+        483
+      ],
+      "summary": "监听触发器和内容的离开位置，创建凸包宽容区并在指针越界后关闭提示。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:TooltipContentImpl",
+      "type": "function",
+      "name": "TooltipContentImpl",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        514,
+        606
+      ],
+      "summary": "组合可关闭层和定位内容，注册模态焦点分支，响应滚动与其他提示打开并提供无重复的可访问描述。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/tooltip/src/tooltip.tsx:TooltipArrow",
+      "type": "function",
+      "name": "TooltipArrow",
+      "filePath": "packages/react/tooltip/src/tooltip.tsx",
+      "lineRange": [
+        618,
+        622
+      ],
+      "summary": "将 Tooltip 的定位作用域传给 Popper 箭头并转发属性与引用。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tooltip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/use-callback-ref/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/use-callback-ref/src/index.ts",
+      "summary": "导出稳定回调引用 Hook。",
+      "tags": [
+        "公共入口",
+        "共享Hook",
+        "重新导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "type": "file",
+      "name": "use-callback-ref.tsx",
+      "filePath": "packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "summary": "通过稳定函数身份调用最新回调，在插入 effect 或布局 effect 更新 ref，避免依赖变化引发额外执行。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/use-callback-ref/src/use-callback-ref.tsx:useCallbackRef",
+      "type": "function",
+      "name": "useCallbackRef",
+      "filePath": "packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "lineRange": [
+        15,
+        31
+      ],
+      "summary": "用 ref 保存当前回调并返回稳定包装函数，在提交阶段及时更新回调实现。",
+      "tags": [
+        "共享Hook",
+        "状态兼容",
+        "React"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.test.tsx",
+      "target": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroupImplSingle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroupImplMultiple",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroupImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroupItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroupItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "function:packages/react/toggle-group/src/toggle-group.tsx:ToggleGroupItemImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toggle/src/toggle.test.tsx",
+      "target": "file:packages/react/toggle/src/toggle.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/toggle/src/toggle.tsx",
+      "target": "function:packages/react/toggle/src/toggle.tsx:Toggle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toggle/src/toggle.tsx",
+      "target": "function:packages/react/toggle/src/toggle.tsx:Toggle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.test.tsx",
+      "target": "function:packages/react/toolbar/src/toolbar.test.tsx:component",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.test.tsx",
+      "target": "file:packages/react/toolbar/src/toolbar.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "function:packages/react/toolbar/src/toolbar.tsx:Toolbar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "function:packages/react/toolbar/src/toolbar.tsx:Toolbar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarSeparator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarSeparator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarButton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarLink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarLink",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarToggleGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarToggleGroup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarToggleItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "function:packages/react/toolbar/src/toolbar.tsx:ToolbarToggleItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.test.tsx",
+      "target": "file:packages/react/tooltip/src/tooltip.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:TooltipProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:TooltipProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:Tooltip",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:Tooltip",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:TooltipPortal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:TooltipPortal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:getExitSideFromRect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:getPaddedExitPoints",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:isPointInPolygon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:getHull",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:getHullPresorted",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:concatAriaDescribedby",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:TooltipTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:TooltipTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:TooltipContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:TooltipContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:TooltipContentHoverable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:TooltipContentImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:TooltipArrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "function:packages/react/tooltip/src/tooltip.tsx:TooltipArrow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "target": "function:packages/react/use-callback-ref/src/use-callback-ref.tsx:useCallbackRef",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "target": "function:packages/react/use-callback-ref/src/use-callback-ref.tsx:useCallbackRef",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "file:packages/react/toggle/src/toggle.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "file:packages/react/direction/src/direction.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toggle/src/toggle.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toggle/src/toggle.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "file:packages/react/separator/src/separator.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "file:packages/react/direction/src/direction.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "file:packages/react/popper/src/popper.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "file:packages/react/portal/src/portal.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "file:packages/react/presence/src/presence.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "file:packages/react/slot/src/slot.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "file:packages/react/visually-hidden/src/visually-hidden.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "target": "file:packages/react/toggle-group/src/toggle-group.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/toggle/src/toggle.tsx",
+      "target": "file:packages/react/toggle/src/toggle.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/toolbar/src/toolbar.tsx",
+      "target": "file:packages/react/toolbar/src/toolbar.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/tooltip/src/tooltip.tsx",
+      "target": "file:packages/react/tooltip/src/tooltip.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

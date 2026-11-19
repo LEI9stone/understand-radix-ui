@@ -1,0 +1,208 @@
+{
+  "batches": [
+    {
+      "batchIndex": 4,
+      "files": 4,
+      "nodes": 23,
+      "edges": 44,
+      "imports": 3,
+      "outputs": [
+        ".ua/intermediate/batch-4.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 15,
+      "files": 20,
+      "nodes": 20,
+      "edges": 21,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-15.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 25,
+      "files": 4,
+      "nodes": 4,
+      "edges": 7,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-25.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 40,
+      "files": 4,
+      "nodes": 4,
+      "edges": 7,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-40.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 42,
+      "files": 4,
+      "nodes": 4,
+      "edges": 7,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-42.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 45,
+      "files": 4,
+      "nodes": 4,
+      "edges": 7,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-45.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 46,
+      "files": 4,
+      "nodes": 4,
+      "edges": 7,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-46.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 48,
+      "files": 4,
+      "nodes": 4,
+      "edges": 7,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-48.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 54,
+      "files": 4,
+      "nodes": 4,
+      "edges": 7,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-54.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 62,
+      "files": 4,
+      "nodes": 4,
+      "edges": 7,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-62.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 64,
+      "files": 4,
+      "nodes": 4,
+      "edges": 7,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-64.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 72,
+      "files": 4,
+      "nodes": 4,
+      "edges": 7,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-72.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 80,
+      "files": 4,
+      "nodes": 4,
+      "edges": 7,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-80.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 81,
+      "files": 25,
+      "nodes": 44,
+      "edges": 54,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-81.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 88,
+      "files": 25,
+      "nodes": 114,
+      "edges": 241,
+      "imports": 7,
+      "outputs": [
+        ".ua/intermediate/batch-88-part-1.json",
+        ".ua/intermediate/batch-88-part-2.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    },
+    {
+      "batchIndex": 90,
+      "files": 25,
+      "nodes": 25,
+      "edges": 77,
+      "imports": 0,
+      "outputs": [
+        ".ua/intermediate/batch-90.json"
+      ],
+      "coverage": "complete",
+      "json": "valid"
+    }
+  ],
+  "warnings": [
+    "CSS 解析器未产生结构，20个样式文件已逐个直接阅读并补齐文件节点。",
+    "CODEOWNERS 与 .nvmrc 无注册解析器，已直接阅读并补齐文件节点。",
+    "React.forwardRef 组件提取不完整，已按源码阅读补齐重要组件及精确行号。",
+    "正式 importMap 未解析多数工作区别名，已用有源码证据的 depends_on 关系补充；未重写 imports。"
+  ],
+  "totalFiles": 143,
+  "totalNodes": 270,
+  "totalEdges": 514,
+  "batchCount": 16,
+  "partCount": 17
+}

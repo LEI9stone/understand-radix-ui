@@ -1,0 +1,1686 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "type": "file",
+      "name": "context-menu.stories.tsx",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "summary": "展示右键菜单的受控状态、模态模式、子菜单、复选与单选项及 Dialog 嵌套，并提供外部覆盖层和关闭行为的回归场景。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/context-menu.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "lineRange": [
+        9,
+        44
+      ],
+      "summary": "演示带样式的右键触发区域、菜单项与动作回调。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/context-menu.stories.tsx:Controlled",
+      "type": "function",
+      "name": "Controlled",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "lineRange": [
+        46,
+        102
+      ],
+      "summary": "通过外部 open 状态控制右键菜单，并展示菜单动作与主动关闭。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/context-menu.stories.tsx:Modality",
+      "type": "function",
+      "name": "Modality",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "lineRange": [
+        104,
+        293
+      ],
+      "summary": "比较不同模态设置下菜单对外部内容和交互的影响。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/context-menu.stories.tsx:Submenus",
+      "type": "function",
+      "name": "Submenus",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "lineRange": [
+        295,
+        475
+      ],
+      "summary": "展示多层右键子菜单及可切换的 RTL 方向，用于指针与键盘导航验证。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/context-menu.stories.tsx:WithExtensionOverlay",
+      "type": "function",
+      "name": "WithExtensionOverlay",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "lineRange": [
+        477,
+        495
+      ],
+      "summary": "在右键菜单打开时提供独立外部覆盖层触发器，复现浏览器扩展截断后续事件的情况。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/context-menu.stories.tsx:DismissesOnlyContextMenuInsideDialog",
+      "type": "function",
+      "name": "DismissesOnlyContextMenuInsideDialog",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "lineRange": [
+        498,
+        562
+      ],
+      "summary": "将右键菜单嵌入 Dialog，检查点击对话框内的菜单外区域时只关闭最内层菜单。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/context-menu.stories.tsx:WithLabels",
+      "type": "function",
+      "name": "WithLabels",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "lineRange": [
+        564,
+        596
+      ],
+      "summary": "将食物选项按组输出并配置组标签，展示菜单的分组语义。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/context-menu.stories.tsx:CheckboxItems",
+      "type": "function",
+      "name": "CheckboxItems",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "lineRange": [
+        598,
+        649
+      ],
+      "summary": "以数组选择状态控制多个复选菜单项，并显示选中标记。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/context-menu.stories.tsx:RadioItems",
+      "type": "function",
+      "name": "RadioItems",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "lineRange": [
+        651,
+        687
+      ],
+      "summary": "以受控值展示互斥文件选项和单选指示器。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/context-menu.stories.tsx:PreventClosing",
+      "type": "function",
+      "name": "PreventClosing",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "lineRange": [
+        689,
+        711
+      ],
+      "summary": "比较默认选择关闭和 preventDefault 保持菜单打开的动作。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/context-menu.stories.tsx:Multiple",
+      "type": "function",
+      "name": "Multiple",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "lineRange": [
+        713,
+        793
+      ],
+      "summary": "渲染多组可定制颜色和渐隐状态的菜单，检查独立实例与动态项目。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/context-menu.stories.tsx:Nested",
+      "type": "function",
+      "name": "Nested",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "lineRange": [
+        795,
+        880
+      ],
+      "summary": "展示嵌套右键触发区域，检查右键事件及父子菜单的交互范围。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/context-menu.stories.tsx:TickIcon",
+      "type": "function",
+      "name": "TickIcon",
+      "filePath": "apps/storybook/stories/context-menu.stories.tsx",
+      "lineRange": [
+        882,
+        896
+      ],
+      "summary": "绘制复选和单选菜单项使用的勾选图标。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/dialog.stories.tsx",
+      "type": "file",
+      "name": "dialog.stories.tsx",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "summary": "覆盖 Dialog 的模态、焦点陷阱、自定义焦点、关闭阻止、Portal 容器、滚动和动画，并展示与下拉菜单、Popover 及 Shadow DOM 的嵌套。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        8,
+        20
+      ],
+      "summary": "展示带标题、描述、遮罩与关闭按钮的基本模态对话框。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:NonModal",
+      "type": "function",
+      "name": "NonModal",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        22,
+        48
+      ],
+      "summary": "展示可与外部页面交互的非模态侧边对话框。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:Controlled",
+      "type": "function",
+      "name": "Controlled",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        50,
+        65
+      ],
+      "summary": "通过 React 状态控制 Dialog 的打开与关闭。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:FocusTrap",
+      "type": "function",
+      "name": "FocusTrap",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        67,
+        94
+      ],
+      "summary": "构造多个可聚焦控件，演示 Dialog 将键盘焦点保留在内部。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:CustomFocus",
+      "type": "function",
+      "name": "CustomFocus",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        96,
+        141
+      ],
+      "summary": "用 ref 和 preventDefault 定制打开后的初始焦点及关闭后的返回焦点。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:NoEscapeDismiss",
+      "type": "function",
+      "name": "NoEscapeDismiss",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        143,
+        160
+      ],
+      "summary": "阻止 Escape 默认关闭事件，使对话框维持打开。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:NoPointerDownOutsideDismiss",
+      "type": "function",
+      "name": "NoPointerDownOutsideDismiss",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        162,
+        177
+      ],
+      "summary": "拦截外部 pointerdown 的默认关闭，演示外部点击策略定制。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:EventPropagation",
+      "type": "function",
+      "name": "EventPropagation",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        179,
+        226
+      ],
+      "summary": "切换内部鼠标、指针和键盘事件传播设置，观察浮层处理与业务事件的组合。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:WithPortalContainer",
+      "type": "function",
+      "name": "WithPortalContainer",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        228,
+        246
+      ],
+      "summary": "通过容器状态将 Dialog Portal 挂载到指定 DOM 区域。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:Animated",
+      "type": "function",
+      "name": "Animated",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        248,
+        260
+      ],
+      "summary": "为 Dialog 遮罩与内容配置进出场动画。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:ForcedMount",
+      "type": "function",
+      "name": "ForcedMount",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        262,
+        274
+      ],
+      "summary": "强制保留关闭状态的 Portal 与内容，供自定义动画生命周期使用。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:InnerScrollable",
+      "type": "function",
+      "name": "InnerScrollable",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        276,
+        289
+      ],
+      "summary": "将滚动区域放在 Dialog 内容内部，展示长内容的模态布局。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:OuterScrollable",
+      "type": "function",
+      "name": "OuterScrollable",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        291,
+        308
+      ],
+      "summary": "使遮罩容器可滚动，让长对话框在外层滚动区域中定位。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        310,
+        512
+      ],
+      "summary": "汇集 Dialog 的内容布局、样式状态和关闭状态用于视觉回归。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:Cypress",
+      "type": "function",
+      "name": "Cypress",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        515,
+        588
+      ],
+      "summary": "通过开关调整模态、动画和销毁按钮，构造焦点陷阱与外部交互的端到端测试夹具。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:WithExtensionOverlay",
+      "type": "function",
+      "name": "WithExtensionOverlay",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        590,
+        613
+      ],
+      "summary": "在 Dialog 内外组合独立覆盖层触发器，检查被拦截的鼠标事件不会误关闭对话框。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:InsideShadowSuggestion",
+      "type": "function",
+      "name": "InsideShadowSuggestion",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        615,
+        631
+      ],
+      "summary": "在内部建立 Shadow Root 和输入建议内容，复现影子树内交互的浮层识别。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:WithDropdownMenu",
+      "type": "function",
+      "name": "WithDropdownMenu",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        634,
+        664
+      ],
+      "summary": "在对话框内部嵌套受控下拉菜单，验证菜单关闭不会连带关闭 Dialog。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:PopoverInModalDialog",
+      "type": "function",
+      "name": "PopoverInModalDialog",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        681,
+        739
+      ],
+      "summary": "在模态 Dialog 中切换 Popover 的模态模式，比较外部点击和焦点行为。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dialog.stories.tsx:NestedLayersInModalDialog",
+      "type": "function",
+      "name": "NestedLayersInModalDialog",
+      "filePath": "apps/storybook/stories/dialog.stories.tsx",
+      "lineRange": [
+        750,
+        818
+      ],
+      "summary": "组合多层模态 Dialog 与内层浮层，验证最上层的关闭和焦点范围。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "type": "file",
+      "name": "dropdown-menu.stories.tsx",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "summary": "演示下拉菜单的多级子菜单、标签、选中项、Dialog/Tooltip 组合及新窗口挂载，提供大量布局、碰撞与状态视觉回归场景。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        15,
+        42
+      ],
+      "summary": "展示触发按钮、基础菜单项和动作回调组成的下拉菜单。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:Modality",
+      "type": "function",
+      "name": "Modality",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        44,
+        189
+      ],
+      "summary": "对照模态和非模态下拉菜单的外部交互行为。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:Submenus",
+      "type": "function",
+      "name": "Submenus",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        191,
+        368
+      ],
+      "summary": "展示多级子菜单、RTL 切换与指针意图导航场景。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:WithExtensionOverlay",
+      "type": "function",
+      "name": "WithExtensionOverlay",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        370,
+        388
+      ],
+      "summary": "在菜单中打开外部覆盖层，验证事件被截断时的根菜单关闭策略。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:InvertedWithSubmenus",
+      "type": "function",
+      "name": "InvertedWithSubmenus",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        390,
+        467
+      ],
+      "summary": "用反向布局展示多层子菜单，验证定位和导航在不同呈现方式下的一致性。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:WithLabels",
+      "type": "function",
+      "name": "WithLabels",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        469,
+        502
+      ],
+      "summary": "按食物组渲染菜单标签和分组条目。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:NestedComposition",
+      "type": "function",
+      "name": "NestedComposition",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        504,
+        565
+      ],
+      "summary": "把菜单触发器和其他可组合部件嵌套，演示事件默认行为与组件组合。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:DismissesOnlyMenuInsideDialog",
+      "type": "function",
+      "name": "DismissesOnlyMenuInsideDialog",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        568,
+        623
+      ],
+      "summary": "把菜单嵌在受控 Dialog 中，回归点击对话框空白区域只关闭菜单的行为。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:SingleItemAsDialogTrigger",
+      "type": "function",
+      "name": "SingleItemAsDialogTrigger",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        625,
+        711
+      ],
+      "summary": "将单个菜单项用作模态或非模态 Dialog 触发器，并在关闭时恢复菜单触发按钮焦点。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:MultipleItemsAsDialogTriggers",
+      "type": "function",
+      "name": "MultipleItemsAsDialogTriggers",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        713,
+        826
+      ],
+      "summary": "分别用多个菜单项打开不同对话框，管理弹层状态与关闭后的焦点归还。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:CheckboxItems",
+      "type": "function",
+      "name": "CheckboxItems",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        828,
+        889
+      ],
+      "summary": "演示全选与单项复选菜单项，选择后可保持菜单打开。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:RadioItems",
+      "type": "function",
+      "name": "RadioItems",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        891,
+        928
+      ],
+      "summary": "演示受控单选菜单值和选中指示器。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:PreventClosing",
+      "type": "function",
+      "name": "PreventClosing",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        930,
+        953
+      ],
+      "summary": "通过选择事件的 preventDefault 演示保持菜单打开的动作。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:WithTooltip",
+      "type": "function",
+      "name": "WithTooltip",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        955,
+        989
+      ],
+      "summary": "将 Tooltip 与下拉触发器、条目组合，验证两类浮层共存。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:InPopupWindow",
+      "type": "function",
+      "name": "InPopupWindow",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        991,
+        1025
+      ],
+      "summary": "创建独立浏览器窗口并挂载下拉菜单，验证 ownerDocument 跨窗口支持。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        1030,
+        1780
+      ],
+      "summary": "汇集菜单方向、对齐、禁用、分组、选中状态与子菜单的视觉回归矩阵。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/dropdown-menu.stories.tsx:TickIcon",
+      "type": "function",
+      "name": "TickIcon",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "lineRange": [
+        1783,
+        1797
+      ],
+      "summary": "提供复选与单选项目的勾选图标。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "file:apps/storybook/stories/context-menu.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "file:apps/storybook/stories/external-overlay.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:Controlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:Controlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:Modality",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:Modality",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:Submenus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:Submenus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:WithExtensionOverlay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:WithExtensionOverlay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:DismissesOnlyContextMenuInsideDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:DismissesOnlyContextMenuInsideDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:WithLabels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:WithLabels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:CheckboxItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:CheckboxItems",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:RadioItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:RadioItems",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:PreventClosing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:PreventClosing",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:Multiple",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:Multiple",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:Nested",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:Nested",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/context-menu.stories.tsx:TickIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "file:apps/storybook/stories/dialog.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "file:apps/storybook/stories/external-overlay.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:NonModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:NonModal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:Controlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:Controlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:FocusTrap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:FocusTrap",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:CustomFocus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:CustomFocus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:NoEscapeDismiss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:NoEscapeDismiss",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:NoPointerDownOutsideDismiss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:NoPointerDownOutsideDismiss",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:EventPropagation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:EventPropagation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:WithPortalContainer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:WithPortalContainer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:Animated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:Animated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:ForcedMount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:ForcedMount",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:InnerScrollable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:InnerScrollable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:OuterScrollable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:OuterScrollable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:Cypress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:Cypress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:WithExtensionOverlay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:WithExtensionOverlay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:InsideShadowSuggestion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:WithDropdownMenu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:WithDropdownMenu",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:PopoverInModalDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:PopoverInModalDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:NestedLayersInModalDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "function:apps/storybook/stories/dialog.stories.tsx:NestedLayersInModalDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "file:apps/storybook/stories/dropdown-menu.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "file:apps/storybook/stories/external-overlay.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:Modality",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:Modality",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:Submenus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:Submenus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:WithExtensionOverlay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:WithExtensionOverlay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:InvertedWithSubmenus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:InvertedWithSubmenus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:WithLabels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:WithLabels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:NestedComposition",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:NestedComposition",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:DismissesOnlyMenuInsideDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:DismissesOnlyMenuInsideDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:SingleItemAsDialogTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:SingleItemAsDialogTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:MultipleItemsAsDialogTriggers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:MultipleItemsAsDialogTriggers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:CheckboxItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:CheckboxItems",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:RadioItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:RadioItems",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:PreventClosing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:PreventClosing",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:WithTooltip",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:WithTooltip",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:InPopupWindow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:InPopupWindow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "function:apps/storybook/stories/dropdown-menu.stories.tsx:TickIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "file:packages/react/context-menu/src/context-menu.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "target": "file:packages/react/dialog/src/dialog.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "file:packages/react/dialog/src/dialog.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "file:packages/react/hover-card/src/hover-card.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.tsx",
+      "target": "file:packages/react/popover/src/popover.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "file:packages/react/dialog/src/dialog.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "file:packages/react/tooltip/src/tooltip.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "target": "file:packages/react/popper/src/popper.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

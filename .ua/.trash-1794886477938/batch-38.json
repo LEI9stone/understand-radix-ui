@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/dropdown-menu/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/dropdown-menu/CHANGELOG.md",
+      "summary": "记录 DropdownMenu 2.2.1 及此前版本的发布历史，用于追溯菜单组件与内部依赖变化。",
+      "tags": [
+        "版本记录",
+        "下拉菜单",
+        "维护文档"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/dropdown-menu/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/dropdown-menu/README.md",
+      "summary": "标识 react-dropdown-menu 包并提供官方文档入口。",
+      "tags": [
+        "包说明",
+        "下拉菜单",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/dropdown-menu/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/dropdown-menu/package.json",
+      "summary": "定义下拉菜单的构建和模块出口，运行依赖 Menu、Context、稳定 ID、受控状态与 ref 组合等基础包。",
+      "tags": [
+        "包配置",
+        "下拉菜单",
+        "依赖管理"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/dropdown-menu/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/dropdown-menu/tsconfig.json",
+      "summary": "约束下拉菜单 src 的编译输入并继承共享 React 库设置，隔离构建产物与依赖目录。",
+      "tags": [
+        "编译配置",
+        "类型检查",
+        "下拉菜单"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/react/dropdown-menu/package.json",
+      "target": "file:packages/react/dropdown-menu/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/dropdown-menu/README.md",
+      "target": "config:packages/react/dropdown-menu/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

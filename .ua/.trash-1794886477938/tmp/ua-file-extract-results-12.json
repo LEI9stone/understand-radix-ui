@@ -1,0 +1,163 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 4
+    }
+  },
+  "results": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/Bug_report.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 40,
+      "nonEmptyLines": 26,
+      "sections": [
+        {
+          "heading": "Bug report",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Current Behavior",
+          "level": 3,
+          "line": 8
+        },
+        {
+          "heading": "Expected behavior",
+          "level": 3,
+          "line": 12
+        },
+        {
+          "heading": "Reproducible example",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "Suggested solution",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "Additional context",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "Your environment",
+          "level": 3,
+          "line": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/Documentation.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 14,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "Documentation",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Relevant Radix Component(s)",
+          "level": 3,
+          "line": 8
+        },
+        {
+          "heading": "Examples from other doc sites",
+          "level": 3,
+          "line": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/Feature_request.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 22,
+      "nonEmptyLines": 13,
+      "sections": [
+        {
+          "heading": "Feature request",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Overview",
+          "level": 3,
+          "line": 8
+        },
+        {
+          "heading": "Examples in other libraries",
+          "level": 3,
+          "line": 12
+        },
+        {
+          "heading": "Who does this impact? Who is this for?",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "Additional context",
+          "level": 3,
+          "line": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/Question.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "sections": [
+        {
+          "heading": "Question",
+          "level": 2,
+          "line": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/menubar/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/menubar/CHANGELOG.md",
+      "summary": "按版本记录菜单栏包的发布变更与依赖更新，最新章节为 1.2.1。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "菜单栏"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/menubar/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/menubar/README.md",
+      "summary": "标识 menubar 包并提供进一步文档入口，作为菜单栏模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "菜单栏"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/menubar/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/menubar/package.json",
+      "summary": "定义 @radix-ui/react-menubar 的源入口、发布导出、构建脚本和 React 对等依赖，配置菜单栏包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "菜单栏"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/menubar/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/menubar/tsconfig.json",
+      "summary": "配置菜单栏包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "菜单栏"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/menubar/CHANGELOG.md",
+      "target": "config:packages/react/menubar/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/menubar/README.md",
+      "target": "config:packages/react/menubar/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/menubar/package.json",
+      "target": "document:packages/react/menubar/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/menubar/tsconfig.json",
+      "target": "config:packages/react/menubar/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/menubar/package.json",
+      "target": "file:packages/react/menubar/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/react/menubar/tsconfig.json",
+      "target": "file:packages/react/menubar/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/menubar/README.md",
+      "target": "file:packages/react/menubar/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

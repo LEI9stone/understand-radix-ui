@@ -1,0 +1,107 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/switch/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/switch/CHANGELOG.md",
+      "summary": "按版本记录开关包的发布变更与依赖更新，最新章节为 1.4.1。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "开关"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/switch/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/switch/README.md",
+      "summary": "标识 switch 包并提供进一步文档入口，作为开关模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "开关"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/switch/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/switch/package.json",
+      "summary": "定义 @radix-ui/react-switch 的源入口、发布导出、构建脚本和 React 对等依赖，配置开关包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "开关"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/switch/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/switch/tsconfig.json",
+      "summary": "配置开关包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "开关"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/switch/CHANGELOG.md",
+      "target": "config:packages/react/switch/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/switch/README.md",
+      "target": "config:packages/react/switch/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/switch/package.json",
+      "target": "document:packages/react/switch/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/switch/tsconfig.json",
+      "target": "config:packages/react/switch/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/switch/package.json",
+      "target": "file:packages/react/switch/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/react/switch/tsconfig.json",
+      "target": "file:packages/react/switch/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/switch/README.md",
+      "target": "file:packages/react/switch/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

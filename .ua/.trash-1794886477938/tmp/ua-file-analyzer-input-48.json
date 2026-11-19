@@ -1,0 +1,35 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "packages/react/one-time-password-field/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/one-time-password-field/README.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/one-time-password-field/package.json",
+      "language": "json",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/one-time-password-field/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "packages/react/one-time-password-field/CHANGELOG.md": [],
+    "packages/react/one-time-password-field/README.md": [],
+    "packages/react/one-time-password-field/package.json": [],
+    "packages/react/one-time-password-field/tsconfig.json": []
+  }
+}

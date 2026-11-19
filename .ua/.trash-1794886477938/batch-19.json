@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/core/number/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/core/number/CHANGELOG.md",
+      "summary": "记录 @radix-ui/number 的版本历史，便于追踪基础数值工具的发布变化。",
+      "tags": [
+        "版本记录",
+        "数值工具",
+        "维护文档"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/core/number/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/core/number/README.md",
+      "summary": "标识 number 工具包并提供组件库文档入口。",
+      "tags": [
+        "包说明",
+        "数值工具",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/core/number/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/core/number/package.json",
+      "summary": "配置 @radix-ui/number 的源码入口、双模块发布产物、类型声明和 radix-build 构建命令，声明无副作用。",
+      "tags": [
+        "包配置",
+        "数值工具",
+        "构建发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/core/number/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/core/number/tsconfig.json",
+      "summary": "定义 number 包的 TypeScript 编译范围、输出目录和共享配置继承。",
+      "tags": [
+        "类型检查",
+        "编译配置",
+        "数值工具"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

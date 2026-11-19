@@ -1,0 +1,1806 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "type": "file",
+      "name": "navigation-menu.tsx",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "实现支持自动或手动激活的导航菜单，管理延迟切换、嵌套导航、共享视口、移动方向动画及内容焦点顺序。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuProvider",
+      "type": "function",
+      "name": "NavigationMenuProvider",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "维护共享视口、指示器轨道及内容注册表，提供上次激活值、稳定回调和项目集合上下文。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        371,
+        436
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuViewportItem",
+      "type": "function",
+      "name": "NavigationMenuViewportItem",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "合并内容引用并只在当前激活项存在真实节点时更新视口测量目标，保持切换平滑。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1203,
+        1221
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:getTabbableCandidates",
+      "type": "function",
+      "name": "getTabbableCandidates",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "遍历内容子树，跳过禁用、隐藏及隐藏输入，收集可进入 Tab 顺序的元素。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1301,
+        1317
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:removeFromTabOrder",
+      "type": "function",
+      "name": "removeFromTabOrder",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "暂存候选元素原有 tabindex 并全部设为 -1，返回恢复焦点顺序的清理函数。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1329,
+        1340
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:useResizeObserver",
+      "type": "function",
+      "name": "useResizeObserver",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "通过稳定回调和动画帧合并 ResizeObserver 通知，避免尺寸观察循环并在卸载时清理。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1342,
+        1365
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenu",
+      "type": "function",
+      "name": "NavigationMenu",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "维护受控激活项目和自动/手动模式，协调悬停延迟、关闭计时及连续项目切换的跳过延迟。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        130,
+        262
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuSub",
+      "type": "function",
+      "name": "NavigationMenuSub",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "继承激活模式并管理子导航当前值，支持 disableToggle 控制再次点击是否关闭。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        300,
+        348
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuList",
+      "type": "function",
+      "name": "NavigationMenuList",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "建立导航列表和指示器轨道，根菜单额外使用键盘焦点组。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        448,
+        469
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuItem",
+      "type": "function",
+      "name": "NavigationMenuItem",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "持有项目值、内容和触发器引用，协调内容进入聚焦及退出时的 Tab 顺序恢复。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        500,
+        549
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuTrigger",
+      "type": "function",
+      "name": "NavigationMenuTrigger",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "注册触发器并处理悬停与点击开关，使用隐藏焦点代理桥接触发器与共享视口内容的 Tab 顺序。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        561,
+        659
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuLink",
+      "type": "function",
+      "name": "NavigationMenuLink",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "渲染可标识当前页的链接，发出可取消选择事件，并在普通选择后请求关闭根内容。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        673,
+        713
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuIndicator",
+      "type": "function",
+      "name": "NavigationMenuIndicator",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "将激活状态指示器传送到列表轨道，并使用 Presence 支持出入动画。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        730,
+        746
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuIndicatorImpl",
+      "type": "function",
+      "name": "NavigationMenuIndicatorImpl",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "观察激活触发器和轨道尺寸，计算指示器长度及偏移并暴露 CSS 变量。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        751,
+        816
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuContent",
+      "type": "function",
+      "name": "NavigationMenuContent",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "根据是否存在共享视口决定就地呈现内容或登记到视口，保留开关动画和指针进入离开行为。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        836,
+        883
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:ViewportContentMounter",
+      "type": "function",
+      "name": "ViewportContentMounter",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "在布局阶段登记共享视口中的内容及引用，卸载时移除注册项，本身不渲染 DOM。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        896,
+        916
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuContentImpl",
+      "type": "function",
+      "name": "NavigationMenuContentImpl",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "组合可关闭层和焦点组，计算切换方向，处理真正离开菜单的焦点、外部点击和内容 Tab 边界。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        939,
+        1080
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuViewport",
+      "type": "function",
+      "name": "NavigationMenuViewport",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "按菜单开关状态挂载共享视口，支持强制保留以配合动画。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1101,
+        1114
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuViewportImpl",
+      "type": "function",
+      "name": "NavigationMenuViewportImpl",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "呈现注册的活跃内容并测量其真实尺寸，保留上次内容支持关闭动画，兼容 asChild 插槽。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        1121,
+        1193
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:FocusGroup",
+      "type": "function",
+      "name": "FocusGroup",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "建立导航内部可聚焦项目集合并继承书写方向。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1230,
+        1243
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.tsx:FocusGroupItem",
+      "type": "function",
+      "name": "FocusGroupItem",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "summary": "注册焦点项目并处理方向键与 Home/End，按方向和当前项决定下一聚焦候选。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1253,
+        1289
+      ]
+    },
+    {
+      "id": "file:packages/react/one-time-password-field/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/one-time-password-field/src/index.ts",
+      "summary": "集中导出验证码输入模块的 Root、Input、HiddenInput、校验类型及属性类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "验证码输入"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    {
+      "id": "file:packages/react/one-time-password-field/src/one-time-password-field.test.tsx",
+      "type": "file",
+      "name": "one-time-password-field.test.tsx",
+      "filePath": "packages/react/one-time-password-field/src/one-time-password-field.test.tsx",
+      "summary": "验证验证码输入的可访问性、密码遮蔽、禁用、数字输入和焦点前进、方向键导航、粘贴截断与属性透传。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "type": "file",
+      "name": "one-time-password-field.tsx",
+      "filePath": "packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "summary": "组合有序输入集合和漫游焦点，实现验证码字符校验、粘贴分发、删除、自动补全、表单重置及填满后提交。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/one-time-password-field/src/one-time-password-field.tsx:focusInput",
+      "type": "function",
+      "name": "focusInput",
+      "filePath": "packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "summary": "聚焦目标输入；若已经聚焦，则在下一动画帧选择其内容以便覆盖输入。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        949,
+        960
+      ]
+    },
+    {
+      "id": "function:packages/react/one-time-password-field/src/one-time-password-field.tsx:OneTimePasswordField",
+      "type": "function",
+      "name": "OneTimePasswordField",
+      "filePath": "packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "summary": "管理有序字符值与校验规则，将输入、删除、粘贴动作转换为状态和焦点更新，并对接自动提交及表单重置。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        215,
+        518
+      ]
+    },
+    {
+      "id": "function:packages/react/one-time-password-field/src/one-time-password-field.tsx:OneTimePasswordFieldHiddenInput",
+      "type": "function",
+      "name": "OneTimePasswordFieldHiddenInput",
+      "filePath": "packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "summary": "输出汇总字符值的只读隐藏输入，以单一名称参与原生表单提交。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        536,
+        564
+      ]
+    },
+    {
+      "id": "function:packages/react/one-time-password-field/src/one-time-password-field.tsx:OneTimePasswordFieldInput",
+      "type": "function",
+      "name": "OneTimePasswordFieldInput",
+      "filePath": "packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "summary": "登记单个字符输入，协调校验、输入选择、剪切删除、自动补全和漫游焦点，处理水合前的索引与占位符。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        595,
+        921
+      ]
+    },
+    {
+      "id": "file:packages/react/password-toggle-field/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/password-toggle-field/src/index.ts",
+      "summary": "集中导出密码显示切换模块的 Root、Input、Toggle、Icon、Slot 及属性类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "密码显示切换"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    {
+      "id": "file:packages/react/password-toggle-field/src/password-toggle-field.test.tsx",
+      "type": "file",
+      "name": "password-toggle-field.test.tsx",
+      "filePath": "packages/react/password-toggle-field/src/password-toggle-field.test.tsx",
+      "summary": "验证密码可见性切换、图标替换、输入值和选择区保留、重新聚焦及提交后的隐藏，并检查属性透传。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/password-toggle-field/src/password-toggle-field.test.tsx:EyeClosedIcon",
+      "type": "function",
+      "name": "EyeClosedIcon",
+      "filePath": "packages/react/password-toggle-field/src/password-toggle-field.test.tsx",
+      "summary": "提供闭眼 SVG 测试图标，用于验证隐藏状态图标的选择与属性组合。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        184,
+        201
+      ]
+    },
+    {
+      "id": "function:packages/react/password-toggle-field/src/password-toggle-field.test.tsx:EyeOpenIcon",
+      "type": "function",
+      "name": "EyeOpenIcon",
+      "filePath": "packages/react/password-toggle-field/src/password-toggle-field.test.tsx",
+      "summary": "提供睁眼 SVG 测试图标，用于验证密码显示状态时的图标替换。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        203,
+        220
+      ]
+    },
+    {
+      "id": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "type": "file",
+      "name": "password-toggle-field.tsx",
+      "filePath": "packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "summary": "协调密码可见状态、输入框、切换按钮和图标，恢复选择区及焦点，并在表单提交或重置时隐藏密码。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleField",
+      "type": "function",
+      "name": "PasswordToggleField",
+      "filePath": "packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "summary": "提供密码可见状态、输入 ID 和引用以及选择区记录，兼容旧拼写回调并在开发时提示迁移。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        66,
+        129
+      ]
+    },
+    {
+      "id": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleFieldSlot",
+      "type": "function",
+      "name": "PasswordToggleFieldSlot",
+      "filePath": "packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "summary": "根据可见状态选择声明式内容或调用 render 属性，让消费者定制可见性提示。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        420,
+        435
+      ]
+    },
+    {
+      "id": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:requestIdleCallback",
+      "type": "function",
+      "name": "requestIdleCallback",
+      "filePath": "packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "summary": "优先调用窗口空闲回调，不支持时以定时器模拟剩余时间，并返回取消函数。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        498,
+        517
+      ]
+    },
+    {
+      "id": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleFieldInput",
+      "type": "function",
+      "name": "PasswordToggleFieldInput",
+      "filePath": "packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "summary": "根据共享可见状态切换输入类型，记录光标选择并在表单重置或提交时恢复隐藏。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        150,
+        231
+      ]
+    },
+    {
+      "id": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleFieldToggle",
+      "type": "function",
+      "name": "PasswordToggleFieldToggle",
+      "filePath": "packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "summary": "以可访问按钮切换密码显示，水合前暂时移出交互与辅助技术，鼠标操作后恢复输入焦点及选择区。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        243,
+        399
+      ]
+    },
+    {
+      "id": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleFieldIcon",
+      "type": "function",
+      "name": "PasswordToggleFieldIcon",
+      "filePath": "packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "summary": "根据密码可见状态选择 SVG 图标，通过 asChild 透传属性并对辅助技术隐藏装饰图形。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        450,
+        475
+      ]
+    },
+    {
+      "id": "file:packages/react/popover/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/popover/src/index.ts",
+      "summary": "集中导出弹出层模块的 Root、Anchor、Trigger、Portal、Content、Title、Description、Close、Arrow 及类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "弹出层"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    {
+      "id": "file:packages/react/popover/src/popover.test.tsx",
+      "type": "file",
+      "name": "popover.test.tsx",
+      "filePath": "packages/react/popover/src/popover.test.tsx",
+      "summary": "验证弹出层开关时 ARIA 引用、标题描述关联、模态及非模态属性透传和 asChild 组合，并包含回调类型约束检查。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/popover/src/popover.tsx",
+      "type": "file",
+      "name": "popover.tsx",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "基于定位和焦点原语构建可控弹出层，区分模态与非模态外部交互，并维护标题描述的 ARIA 关联和嵌套 Portal 分支。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/popover/src/popover.tsx:Popover",
+      "type": "function",
+      "name": "Popover",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "维护可控开关、触发器引用、自定义锚点和标题描述计数，为浮层内容提供定位及语义上下文。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        69,
+        114
+      ]
+    },
+    {
+      "id": "function:packages/react/popover/src/popover.tsx:PopoverPortal",
+      "type": "function",
+      "name": "PopoverPortal",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "将 Presence 管理的弹出内容传送到指定容器，并向后代共享强制挂载选项。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        207,
+        219
+      ]
+    },
+    {
+      "id": "function:packages/react/popover/src/popover.tsx:concatAriaDescribedby",
+      "type": "function",
+      "name": "concatAriaDescribedby",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "拆分并去重多个 ARIA 描述标识串，以单个空格合并，空集合返回 undefined。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        620,
+        630
+      ]
+    },
+    {
+      "id": "function:packages/react/popover/src/popover.tsx:PopoverAnchor",
+      "type": "function",
+      "name": "PopoverAnchor",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "登记自定义定位锚点的存在状态并连接 Popper.Anchor，卸载时恢复默认锚点逻辑。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        126,
+        140
+      ]
+    },
+    {
+      "id": "function:packages/react/popover/src/popover.tsx:PopoverTrigger",
+      "type": "function",
+      "name": "PopoverTrigger",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "为按钮设置动态 ARIA 控制关系和展开状态，若没有自定义锚点则同时作为定位锚点。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        152,
+        180
+      ]
+    },
+    {
+      "id": "function:packages/react/popover/src/popover.tsx:PopoverContent",
+      "type": "function",
+      "name": "PopoverContent",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "由 Presence 管理挂载时机，并按 modal 配置选择内容行为。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        235,
+        254
+      ]
+    },
+    {
+      "id": "function:packages/react/popover/src/popover.tsx:PopoverContentModal",
+      "type": "function",
+      "name": "PopoverContentModal",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "锁定滚动和外部指针、隐藏外部 ARIA 内容，并支持嵌套 Portal 分支与右键关闭后的焦点策略。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        266,
+        335
+      ]
+    },
+    {
+      "id": "function:packages/react/popover/src/popover.tsx:PopoverContentNonModal",
+      "type": "function",
+      "name": "PopoverContentNonModal",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "允许外部交互并按交互来源恢复焦点，避免点击触发器或 Safari 后续焦点事件导致重复关闭。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        337,
+        393
+      ]
+    },
+    {
+      "id": "function:packages/react/popover/src/popover.tsx:PopoverContentImpl",
+      "type": "function",
+      "name": "PopoverContentImpl",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "组合焦点范围、外部关闭层及 Popper 定位，关联标题描述并登记嵌套浮层焦点分支。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        437,
+        526
+      ]
+    },
+    {
+      "id": "function:packages/react/popover/src/popover.tsx:PopoverTitle",
+      "type": "function",
+      "name": "PopoverTitle",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "登记标题存在计数并渲染固定 ID 标题，使内容只在标题实际挂载时引用它。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        536,
+        548
+      ]
+    },
+    {
+      "id": "function:packages/react/popover/src/popover.tsx:PopoverDescription",
+      "type": "function",
+      "name": "PopoverDescription",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "登记描述存在计数并渲染描述 ID，支持动态 ARIA 描述组合。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        558,
+        571
+      ]
+    },
+    {
+      "id": "function:packages/react/popover/src/popover.tsx:PopoverClose",
+      "type": "function",
+      "name": "PopoverClose",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "组合消费者点击回调与关闭动作，保留原生按钮语义。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        582,
+        595
+      ]
+    },
+    {
+      "id": "function:packages/react/popover/src/popover.tsx:PopoverArrow",
+      "type": "function",
+      "name": "PopoverArrow",
+      "filePath": "packages/react/popover/src/popover.tsx",
+      "summary": "共享弹出层定位作用域并渲染对应箭头。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        605,
+        611
+      ]
+    },
+    {
+      "id": "file:packages/react/popper/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/popper/src/index.ts",
+      "summary": "集中导出浮层定位模块的 定位作用域、锚点、内容、箭头、方向和对齐选项及类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "浮层定位"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    {
+      "id": "file:packages/react/popper/src/popper.test.tsx",
+      "type": "file",
+      "name": "popper.test.tsx",
+      "filePath": "packages/react/popper/src/popper.test.tsx",
+      "summary": "验证虚拟锚点引用更新、挂载后注册、内容引用稳定性以及锚点、浮层和箭头的属性透传。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/navigation-menu/src/navigation-menu.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuViewportItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:getTabbableCandidates",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:removeFromTabOrder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:useResizeObserver",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenu",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuSub",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuSub",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuList",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuList",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuLink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuLink",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuIndicator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuIndicator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuIndicatorImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:ViewportContentMounter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuContentImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuViewport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuViewport",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuViewportImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:FocusGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.tsx:FocusGroupItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/context/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/primitive/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/use-controllable-state/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/compose-refs/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/direction/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/presence/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/slot/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/id/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/collection/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/dismissable-layer/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/use-previous/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/use-layout-effect/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/use-callback-ref/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "target": "file:packages/react/visually-hidden/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.test.tsx",
+      "target": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "file:packages/react/one-time-password-field/src/one-time-password-field.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "function:packages/react/one-time-password-field/src/one-time-password-field.tsx:focusInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "function:packages/react/one-time-password-field/src/one-time-password-field.tsx:OneTimePasswordField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "function:packages/react/one-time-password-field/src/one-time-password-field.tsx:OneTimePasswordField",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "function:packages/react/one-time-password-field/src/one-time-password-field.tsx:OneTimePasswordFieldHiddenInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "function:packages/react/one-time-password-field/src/one-time-password-field.tsx:OneTimePasswordFieldHiddenInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "function:packages/react/one-time-password-field/src/one-time-password-field.tsx:OneTimePasswordFieldInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "function:packages/react/one-time-password-field/src/one-time-password-field.tsx:OneTimePasswordFieldInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "file:packages/react/primitive/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "file:packages/react/compose-refs/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "file:packages/react/use-controllable-state/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "file:packages/react/collection/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "file:packages/react/roving-focus/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "file:packages/react/use-is-hydrated/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "file:packages/react/context/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "target": "file:packages/react/direction/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.test.tsx",
+      "target": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.test.tsx",
+      "target": "function:packages/react/password-toggle-field/src/password-toggle-field.test.tsx:EyeClosedIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.test.tsx",
+      "target": "function:packages/react/password-toggle-field/src/password-toggle-field.test.tsx:EyeOpenIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "file:packages/react/password-toggle-field/src/password-toggle-field.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleField",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleFieldSlot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleFieldSlot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:requestIdleCallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleFieldInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleFieldInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleFieldToggle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleFieldToggle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleFieldIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "function:packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleFieldIcon",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "file:packages/react/use-controllable-state/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "file:packages/react/primitive/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "file:packages/react/compose-refs/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "file:packages/react/id/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "file:packages/react/use-is-hydrated/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "file:packages/react/use-effect-event/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "target": "file:packages/react/context/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.test.tsx",
+      "target": "file:packages/react/popover/src/popover.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/popover/src/popover.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:Popover",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:Popover",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverPortal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverPortal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:concatAriaDescribedby",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverAnchor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverAnchor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverContentModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverContentNonModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverContentImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverTitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverTitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverDescription",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverDescription",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverClose",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverClose",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverArrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "function:packages/react/popover/src/popover.tsx:PopoverArrow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/use-layout-effect/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/compose-refs/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/context/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/dismissable-layer/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/focus-guards/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/focus-scope/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/id/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/popper/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/portal/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/presence/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/primitive/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/slot/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/popover.tsx",
+      "target": "file:packages/react/use-controllable-state/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.test.tsx",
+      "target": "file:packages/react/popper/src/popper.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/one-time-password-field/src/index.ts",
+      "target": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/password-toggle-field/src/index.ts",
+      "target": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popover/src/index.ts",
+      "target": "file:packages/react/popover/src/popover.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/popper/src/index.ts",
+      "target": "file:packages/react/popper/src/popper.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/dialog/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/dialog/CHANGELOG.md",
+      "summary": "记录 Dialog 多 aria-describedby 支持、模态内嵌 Portal 浮层的焦点和滚动修复、外部扩展覆盖层事件与回调类型兼容修复。",
+      "tags": [
+        "变更记录",
+        "对话框",
+        "浮层兼容"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/dialog/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/dialog/README.md",
+      "summary": "提供 Dialog 官方文档链接，作为可访问对话框组件使用入口。",
+      "tags": [
+        "组件文档",
+        "对话框",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/dialog/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/dialog/package.json",
+      "summary": "声明 Dialog 的 Context、DismissableLayer、FocusScope/Guards、Portal、Presence、Slot 和 react-remove-scroll 依赖，配置 React peer 与模块发布入口。",
+      "tags": [
+        "包清单",
+        "对话框",
+        "交互依赖"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/dialog/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/dialog/tsconfig.json",
+      "summary": "为 Dialog 组件继承共享 React 库类型配置，检查 src 并指定 dist 产物目录。",
+      "tags": [
+        "类型配置",
+        "对话框",
+        "构建配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/dialog/README.md",
+      "target": "config:packages/react/dialog/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/dialog/CHANGELOG.md",
+      "target": "config:packages/react/dialog/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/dialog/tsconfig.json",
+      "target": "config:internal/typescript-config/react-library.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/progress/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/progress/CHANGELOG.md",
+      "summary": "记录 Progress 的回调类型修复、可选属性类型兼容及底层依赖更新。",
+      "tags": [
+        "变更记录",
+        "版本发布",
+        "进度指示组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/progress/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/progress/README.md",
+      "summary": "提供 进度指示组件 包的文档入口，引导使用者查看官方组件文档。",
+      "tags": [
+        "文档",
+        "包入口",
+        "组件文档"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/progress/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/progress/package.json",
+      "summary": "声明 进度指示组件 包的源码入口、发布产物、构建脚本与依赖约束，控制该包在工作区和发布后的消费方式。",
+      "tags": [
+        "包配置",
+        "构建发布",
+        "进度指示组件"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/progress/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/progress/tsconfig.json",
+      "summary": "为 进度指示组件 包配置 TypeScript 编译范围和共享编译选项，将源码检查与包构建配置衔接。",
+      "tags": [
+        "编译配置",
+        "类型检查",
+        "进度指示组件"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/progress/README.md",
+      "target": "config:packages/react/progress/package.json",
+      "type": "documents",
+      "weight": 0.5,
+      "direction": "forward"
+    },
+    {
+      "source": "document:packages/react/progress/CHANGELOG.md",
+      "target": "config:packages/react/progress/package.json",
+      "type": "documents",
+      "weight": 0.5,
+      "direction": "forward"
+    },
+    {
+      "source": "config:packages/react/progress/package.json",
+      "target": "config:packages/react/progress/tsconfig.json",
+      "type": "configures",
+      "weight": 0.6,
+      "direction": "forward"
+    }
+  ]
+}

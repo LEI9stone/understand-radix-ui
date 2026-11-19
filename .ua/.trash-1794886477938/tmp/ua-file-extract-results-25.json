@@ -1,0 +1,268 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 4
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/announce/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 63,
+      "nonEmptyLines": 35,
+      "sections": [
+        {
+          "heading": "@radix-ui/react-announce",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "0.3.0",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "0.2.16",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "0.2.15",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "0.2.14",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "0.2.13",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "0.2.12",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "0.2.11",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "0.2.10",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "0.2.9",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "0.2.8",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "0.2.7",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "0.2.6",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "0.2.5",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "0.2.4",
+          "level": 2,
+          "line": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    },
+    {
+      "path": "packages/react/announce/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        {
+          "heading": "`react-announce`",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "packages/react/announce/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 74,
+      "nonEmptyLines": 74,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "license",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "source",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "main",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "module",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "publishConfig",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "files",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "sideEffects",
+          "level": 1,
+          "line": 29
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 30
+        },
+        {
+          "heading": "dependencies",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 42
+        },
+        {
+          "heading": "peerDependencies",
+          "level": 1,
+          "line": 51
+        },
+        {
+          "heading": "peerDependenciesMeta",
+          "level": 1,
+          "line": 57
+        },
+        {
+          "heading": "homepage",
+          "level": 1,
+          "line": 65
+        },
+        {
+          "heading": "repository",
+          "level": 1,
+          "line": 66
+        },
+        {
+          "heading": "bugs",
+          "level": 1,
+          "line": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": "packages/react/announce/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "extends",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "exclude",
+          "level": 1,
+          "line": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

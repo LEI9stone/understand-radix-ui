@@ -1,0 +1,1207 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/ssr-testing/app/one-time-password-field/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/one-time-password-field/page.tsx",
+      "summary": "展示六位验证码输入的自动排序与显式 index 两种组合，并包含隐藏输入以验证服务端初始输出。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "one-time-password-field"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/one-time-password-field/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/one-time-password-field/page.tsx",
+      "lineRange": [
+        4,
+        28
+      ],
+      "summary": "展示六位验证码输入的自动排序与显式 index 两种组合，并包含隐藏输入以验证服务端初始输出。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "one-time-password-field"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/page.tsx",
+      "summary": "测试应用空首页，仅输出空 Fragment，为各组件独立路由提供根入口。",
+      "tags": [
+        "服务端验证",
+        "路由入口",
+        "Next.js"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/page.tsx",
+      "lineRange": [
+        1,
+        3
+      ],
+      "summary": "返回空 Fragment，保持测试应用首页不引入组件行为。",
+      "tags": [
+        "服务端验证",
+        "路由入口",
+        "Next.js"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/password-toggle-field/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/password-toggle-field/page.tsx",
+      "summary": "展示文字和眼睛图标两种密码显隐切换按钮，覆盖 PasswordToggleField 各部件的服务端输出。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "password-toggle-field"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/password-toggle-field/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/password-toggle-field/page.tsx",
+      "lineRange": [
+        4,
+        25
+      ],
+      "summary": "展示文字和眼睛图标两种密码显隐切换按钮，覆盖 PasswordToggleField 各部件的服务端输出。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "password-toggle-field"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/password-toggle-field/page.tsx:EyeClosedIcon",
+      "type": "function",
+      "name": "EyeClosedIcon",
+      "filePath": "apps/ssr-testing/app/password-toggle-field/page.tsx",
+      "lineRange": [
+        27,
+        43
+      ],
+      "summary": "绘制闭眼图标，用作密码隐藏状态的自定义图形。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "password-toggle-field"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/password-toggle-field/page.tsx:EyeOpenIcon",
+      "type": "function",
+      "name": "EyeOpenIcon",
+      "filePath": "apps/ssr-testing/app/password-toggle-field/page.tsx",
+      "lineRange": [
+        45,
+        61
+      ],
+      "summary": "绘制睁眼图标，用作密码可见状态的自定义图形。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "password-toggle-field"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/popover/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/popover/page.tsx",
+      "summary": "组合弹出层触发器、Portal、内容、关闭按钮与箭头，验证基础服务端渲染。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "popover"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/popover/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/popover/page.tsx",
+      "lineRange": [
+        4,
+        16
+      ],
+      "summary": "组合弹出层触发器、Portal、内容、关闭按钮与箭头，验证基础服务端渲染。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "popover"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/progress/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/progress/page.tsx",
+      "summary": "渲染 value 为 20 的进度根节点与指示器，用于检查进度语义的服务端输出。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "progress"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/progress/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/progress/page.tsx",
+      "lineRange": [
+        4,
+        10
+      ],
+      "summary": "渲染 value 为 20 的进度根节点与指示器，用于检查进度语义的服务端输出。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "progress"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/radio-group/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/radio-group/page.tsx",
+      "summary": "在标签中组合三个宠物单选项与选中指示器，验证默认选中项及标签关联。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "radio-group"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/radio-group/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/radio-group/page.tsx",
+      "lineRange": [
+        4,
+        35
+      ],
+      "summary": "在标签中组合三个宠物单选项与选中指示器，验证默认选中项及标签关联。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "radio-group"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/roving-focus-group/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/roving-focus-group/page.tsx",
+      "summary": "排列横向、纵向、双向、循环与嵌套按钮组，配合客户端方向切换验证焦点漫游示例。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "roving-focus-group"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/roving-focus-group/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/roving-focus-group/page.tsx",
+      "lineRange": [
+        4,
+        106
+      ],
+      "summary": "排列横向、纵向、双向、循环与嵌套按钮组，配合客户端方向切换验证焦点漫游示例。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "roving-focus-group"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "type": "file",
+      "name": "roving-focus.client.tsx",
+      "filePath": "apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "summary": "为焦点漫游示例维护文字方向和按钮组选中状态，将普通按钮组合为 RovingFocus 项并让聚焦联动选择。",
+      "tags": [
+        "客户端演示",
+        "焦点漫游",
+        "方向切换"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx:RovingFocusProvider",
+      "type": "function",
+      "name": "RovingFocusProvider",
+      "filePath": "apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "lineRange": [
+        16,
+        23
+      ],
+      "summary": "在上下文中保存 ltr/rtl 方向并更新包裹容器的 dir。",
+      "tags": [
+        "客户端演示",
+        "焦点漫游",
+        "方向切换"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx:RovingFocusToggle",
+      "type": "function",
+      "name": "RovingFocusToggle",
+      "filePath": "apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "lineRange": [
+        25,
+        32
+      ],
+      "summary": "提供切换 ltr/rtl 的按钮，驱动所有示例的方向变化。",
+      "tags": [
+        "客户端演示",
+        "焦点漫游",
+        "方向切换"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx:ButtonGroup",
+      "type": "function",
+      "name": "ButtonGroup",
+      "filePath": "apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "lineRange": [
+        42,
+        59
+      ],
+      "summary": "保存按钮组当前值，并以共享方向、方向轴和循环选项创建 RovingFocus 根。",
+      "tags": [
+        "客户端演示",
+        "焦点漫游",
+        "方向切换"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx:Button",
+      "type": "function",
+      "name": "Button",
+      "filePath": "apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "lineRange": [
+        65,
+        97
+      ],
+      "summary": "将普通按钮包裹为焦点漫游项，以选中状态标记 active，并在有选中值时让焦点触发选择。",
+      "tags": [
+        "客户端演示",
+        "焦点漫游",
+        "方向切换"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/rsc/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/rsc/page.tsx",
+      "summary": "作为有意保留的 Server Component，在模块作用域创建 Slot 工厂并渲染 Primitive 组件，以拦截导入阶段的 RSC 回归。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "rsc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/rsc/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/rsc/page.tsx",
+      "lineRange": [
+        10,
+        32
+      ],
+      "summary": "作为有意保留的 Server Component，在模块作用域创建 Slot 工厂并渲染 Primitive 组件，以拦截导入阶段的 RSC 回归。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "rsc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/scroll-area/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/scroll-area/page.tsx",
+      "summary": "以超宽重复内容组合双向滚动条、Thumb、Viewport 和 Corner，验证滚动区域服务端布局。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "scroll-area"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/scroll-area/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/scroll-area/page.tsx",
+      "lineRange": [
+        4,
+        28
+      ],
+      "summary": "以超宽重复内容组合双向滚动条、Thumb、Viewport 和 Corner，验证滚动区域服务端布局。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "scroll-area"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/scroll-area/page.tsx:LongContent",
+      "type": "function",
+      "name": "LongContent",
+      "filePath": "apps/ssr-testing/app/scroll-area/page.tsx",
+      "lineRange": [
+        30,
+        77
+      ],
+      "summary": "提供段落与列表形式的长内容，制造横纵溢出以演示滚动行为。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "scroll-area"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/select/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/select/page.tsx",
+      "summary": "分别在普通容器和表单中组合 Select 内容、选项、选中指示和滚动按钮，验证默认值与占位展示。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "select"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/select/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/select/page.tsx",
+      "lineRange": [
+        4,
+        64
+      ],
+      "summary": "分别在普通容器和表单中组合 Select 内容、选项、选中指示和滚动按钮，验证默认值与占位展示。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "select"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/separator/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/separator/page.tsx",
+      "summary": "渲染包含内容的 Separator 根节点，验证分隔线的服务端宿主元素。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "separator"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/separator/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/separator/page.tsx",
+      "lineRange": [
+        4,
+        6
+      ],
+      "summary": "渲染包含内容的 Separator 根节点，验证分隔线的服务端宿主元素。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "separator"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/slider/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/slider/page.tsx",
+      "summary": "渲染初值为 20 和 50 的双滑块滑动条，组合 Track、Range 与两个 Thumb 以检查区间布局。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "slider"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slider/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/slider/page.tsx",
+      "lineRange": [
+        4,
+        52
+      ],
+      "summary": "渲染初值为 20 和 50 的双滑块滑动条，组合 Track、Range 与两个 Thumb 以检查区间布局。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "slider"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/switch/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/switch/page.tsx",
+      "summary": "组合 Switch 根节点与 Thumb，验证开关初始状态的服务端输出。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "switch"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/switch/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/switch/page.tsx",
+      "lineRange": [
+        4,
+        10
+      ],
+      "summary": "组合 Switch 根节点与 Thumb，验证开关初始状态的服务端输出。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "switch"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/tabs/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/tabs/page.tsx",
+      "summary": "展示默认选中 one 的纵向选项卡，组合三个触发器及对应面板验证初始可见内容。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "tabs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/tabs/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/tabs/page.tsx",
+      "lineRange": [
+        4,
+        24
+      ],
+      "summary": "展示默认选中 one 的纵向选项卡，组合三个触发器及对应面板验证初始可见内容。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "tabs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/toast/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/toast/page.tsx",
+      "summary": "组合通知 Provider、Root、标题、描述、操作、关闭按钮和 Viewport，验证通知部件的服务端兼容。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/toast/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/toast/page.tsx",
+      "lineRange": [
+        4,
+        17
+      ],
+      "summary": "组合通知 Provider、Root、标题、描述、操作、关闭按钮和 Viewport，验证通知部件的服务端兼容。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/toggle-group/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/toggle-group/page.tsx",
+      "summary": "展示默认选中第一项的单选 ToggleGroup，验证两个切换项的初始按压语义。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "toggle-group"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/toggle-group/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/toggle-group/page.tsx",
+      "lineRange": [
+        4,
+        11
+      ],
+      "summary": "展示默认选中第一项的单选 ToggleGroup，验证两个切换项的初始按压语义。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "toggle-group"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/toolbar/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/toolbar/page.tsx",
+      "summary": "展示纵向工具栏的按钮、分隔线与链接部件，用于验证方向和角色在服务端的输出。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "toolbar"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/toolbar/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/toolbar/page.tsx",
+      "lineRange": [
+        4,
+        12
+      ],
+      "summary": "展示纵向工具栏的按钮、分隔线与链接部件，用于验证方向和角色在服务端的输出。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "toolbar"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/tooltip/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/tooltip/page.tsx",
+      "summary": "组合 Tooltip 提供器、触发器、Portal、内容及箭头，验证悬停和焦点提示的服务端结构。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "tooltip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/tooltip/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/tooltip/page.tsx",
+      "lineRange": [
+        4,
+        18
+      ],
+      "summary": "组合 Tooltip 提供器、触发器、Portal、内容及箭头，验证悬停和焦点提示的服务端结构。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "tooltip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/visually-hidden/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/visually-hidden/page.tsx",
+      "summary": "渲染视觉隐藏内容的演示，验证该内容仍存在于服务端文档结构。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "visually-hidden"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/visually-hidden/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/visually-hidden/page.tsx",
+      "lineRange": [
+        4,
+        11
+      ],
+      "summary": "渲染视觉隐藏内容的演示，验证该内容仍存在于服务端文档结构。",
+      "tags": [
+        "服务端验证",
+        "演示页面",
+        "visually-hidden"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/next.config.js",
+      "type": "file",
+      "name": "next.config.js",
+      "filePath": "apps/ssr-testing/next.config.js",
+      "summary": "允许 Next.js 访问工作区外目录，并在该服务端验证应用构建时忽略 TypeScript 错误。",
+      "tags": [
+        "应用配置",
+        "Next.js",
+        "工作区"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/.storybook/main.ts",
+      "type": "file",
+      "name": "main.ts",
+      "filePath": "apps/storybook/.storybook/main.ts",
+      "summary": "配置 Storybook 的 MDX 与组件故事发现、React Webpack5、实验 RSC 和严格模式，并用 SWC 自动 JSX 运行时构建。",
+      "tags": [
+        "Storybook",
+        "构建配置",
+        "组件文档"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/.storybook/manager-head.html",
+      "type": "file",
+      "name": "manager-head.html",
+      "filePath": "apps/storybook/.storybook/manager-head.html",
+      "summary": "为 Storybook 管理页添加 PNG 与 SVG 站点图标声明。",
+      "tags": [
+        "Storybook",
+        "页面头部",
+        "图标"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/.storybook/manager.ts",
+      "type": "file",
+      "name": "manager.ts",
+      "filePath": "apps/storybook/.storybook/manager.ts",
+      "summary": "为 Storybook 管理界面采用浅色主题并禁用全局快捷键，避免影响交互示例。",
+      "tags": [
+        "Storybook",
+        "界面配置",
+        "快捷键"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/.storybook/preview.css",
+      "type": "file",
+      "name": "preview.css",
+      "filePath": "apps/storybook/.storybook/preview.css",
+      "summary": "导入 Radix 明暗色板，统一盒模型、hidden 行为与系统字体，为组件演示提供基础样式。",
+      "tags": [
+        "Storybook",
+        "样式",
+        "颜色"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/ssr-testing/app/one-time-password-field/page.tsx",
+      "target": "function:apps/ssr-testing/app/one-time-password-field/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/one-time-password-field/page.tsx",
+      "target": "function:apps/ssr-testing/app/one-time-password-field/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/page.tsx",
+      "target": "function:apps/ssr-testing/app/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/page.tsx",
+      "target": "function:apps/ssr-testing/app/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/password-toggle-field/page.tsx",
+      "target": "function:apps/ssr-testing/app/password-toggle-field/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/password-toggle-field/page.tsx",
+      "target": "function:apps/ssr-testing/app/password-toggle-field/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/password-toggle-field/page.tsx",
+      "target": "function:apps/ssr-testing/app/password-toggle-field/page.tsx:EyeClosedIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/password-toggle-field/page.tsx",
+      "target": "function:apps/ssr-testing/app/password-toggle-field/page.tsx:EyeOpenIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/popover/page.tsx",
+      "target": "function:apps/ssr-testing/app/popover/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/popover/page.tsx",
+      "target": "function:apps/ssr-testing/app/popover/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/progress/page.tsx",
+      "target": "function:apps/ssr-testing/app/progress/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/progress/page.tsx",
+      "target": "function:apps/ssr-testing/app/progress/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/radio-group/page.tsx",
+      "target": "function:apps/ssr-testing/app/radio-group/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/radio-group/page.tsx",
+      "target": "function:apps/ssr-testing/app/radio-group/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/roving-focus-group/page.tsx",
+      "target": "function:apps/ssr-testing/app/roving-focus-group/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/roving-focus-group/page.tsx",
+      "target": "function:apps/ssr-testing/app/roving-focus-group/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/roving-focus-group/page.tsx",
+      "target": "file:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "target": "function:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx:RovingFocusProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "target": "function:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx:RovingFocusProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "target": "function:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx:RovingFocusToggle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "target": "function:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx:RovingFocusToggle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "target": "function:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx:ButtonGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "target": "function:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx:ButtonGroup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "target": "function:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx:Button",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "target": "function:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx:Button",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/rsc/page.tsx",
+      "target": "function:apps/ssr-testing/app/rsc/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/rsc/page.tsx",
+      "target": "function:apps/ssr-testing/app/rsc/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/scroll-area/page.tsx",
+      "target": "function:apps/ssr-testing/app/scroll-area/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/scroll-area/page.tsx",
+      "target": "function:apps/ssr-testing/app/scroll-area/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/scroll-area/page.tsx",
+      "target": "function:apps/ssr-testing/app/scroll-area/page.tsx:LongContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/select/page.tsx",
+      "target": "function:apps/ssr-testing/app/select/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/select/page.tsx",
+      "target": "function:apps/ssr-testing/app/select/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/separator/page.tsx",
+      "target": "function:apps/ssr-testing/app/separator/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/separator/page.tsx",
+      "target": "function:apps/ssr-testing/app/separator/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slider/page.tsx",
+      "target": "function:apps/ssr-testing/app/slider/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slider/page.tsx",
+      "target": "function:apps/ssr-testing/app/slider/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/switch/page.tsx",
+      "target": "function:apps/ssr-testing/app/switch/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/switch/page.tsx",
+      "target": "function:apps/ssr-testing/app/switch/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/tabs/page.tsx",
+      "target": "function:apps/ssr-testing/app/tabs/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/tabs/page.tsx",
+      "target": "function:apps/ssr-testing/app/tabs/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/toast/page.tsx",
+      "target": "function:apps/ssr-testing/app/toast/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/toast/page.tsx",
+      "target": "function:apps/ssr-testing/app/toast/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/toggle-group/page.tsx",
+      "target": "function:apps/ssr-testing/app/toggle-group/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/toggle-group/page.tsx",
+      "target": "function:apps/ssr-testing/app/toggle-group/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/toolbar/page.tsx",
+      "target": "function:apps/ssr-testing/app/toolbar/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/toolbar/page.tsx",
+      "target": "function:apps/ssr-testing/app/toolbar/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/tooltip/page.tsx",
+      "target": "function:apps/ssr-testing/app/tooltip/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/tooltip/page.tsx",
+      "target": "function:apps/ssr-testing/app/tooltip/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/visually-hidden/page.tsx",
+      "target": "function:apps/ssr-testing/app/visually-hidden/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/visually-hidden/page.tsx",
+      "target": "function:apps/ssr-testing/app/visually-hidden/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/select/page.tsx",
+      "target": "file:packages/react/select/src/select.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/separator/page.tsx",
+      "target": "file:packages/react/separator/src/separator.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slider/page.tsx",
+      "target": "file:packages/react/slider/src/slider.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/switch/page.tsx",
+      "target": "file:packages/react/switch/src/switch.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/tabs/page.tsx",
+      "target": "file:packages/react/tabs/src/tabs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/toast/page.tsx",
+      "target": "file:packages/react/toast/src/toast.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/toggle-group/page.tsx",
+      "target": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/toolbar/page.tsx",
+      "target": "file:packages/react/toolbar/src/toolbar.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/tooltip/page.tsx",
+      "target": "file:packages/react/tooltip/src/tooltip.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "target": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/rsc/page.tsx",
+      "target": "file:packages/react/slot/src/slot.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/scroll-area/page.tsx",
+      "target": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

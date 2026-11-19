@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/use-effect-event/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/use-effect-event/CHANGELOG.md",
+      "summary": "记录潜在缺失 React API 的条件导入兼容修复，以及 RSC 回滚与布局 effect 依赖更新。",
+      "tags": [
+        "变更记录",
+        "效果事件",
+        "版本发布"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/use-effect-event/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/use-effect-event/README.md",
+      "summary": "标明该工具仅供内部使用；文档标题仍为 react-use-is-hydrated，与所在 use-effect-event 包名称不一致。",
+      "tags": [
+        "包文档",
+        "效果事件",
+        "使用范围"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/use-effect-event/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/use-effect-event/package.json",
+      "summary": "声明 useEffectEvent 兼容工具的源码及双模块发布产物，依赖布局 effect Hook 并允许 React 16 至 19 消费。",
+      "tags": [
+        "包配置",
+        "效果事件",
+        "模块发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/use-effect-event/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/use-effect-event/tsconfig.json",
+      "summary": "为效果事件包继承内部 React 库 TypeScript 编译规则，将 src 纳入编译并将产物定位到 dist。",
+      "tags": [
+        "编译配置",
+        "React库",
+        "TypeScript"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/use-effect-event/README.md",
+      "target": "config:packages/react/use-effect-event/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/use-effect-event/CHANGELOG.md",
+      "target": "config:packages/react/use-effect-event/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/use-effect-event/tsconfig.json",
+      "target": "config:packages/react/use-effect-event/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

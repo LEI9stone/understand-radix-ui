@@ -1,0 +1,28 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 5,
+  "crossBatchEdgesAdded": 0,
+  "additionalEdgesAdded": 14,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "完整读取129行合并报告：无大规模节点ID或复杂度修正，五项 could-not-fix 均为补充依赖边使用了不存在的实现文件名。",
+    "已以扫描清单、实际文件和入口导出确认 create-context.tsx 与 roving-focus-group.tsx，恢复五条 depends_on；未新增或伪造文件节点。",
+    "正式 importMap 共 115 条，全部已存在；未添加推测性 imports。",
+    "扫描清单 694 个文件全部有文件级节点；无图谱外文件路径、悬空边、非法节点类型或非法复杂度。",
+    "补充 14 条由已读 tsconfig include src 直接证明的 configures，连接孤立包配置与各自公开入口。",
+    "仍有 65 个孤立节点，多为独立变更说明、仓库模板、类型声明和构建辅助文件；孤立不表示文件遗漏，未为消除警告建立猜测关系。",
+    "主会话收到系统任务中断报告，但本地所有已执行工具均成功，系统未提供中断原因；已保留诊断并按一次恢复指令完成本阶段落盘。"
+  ],
+  "stats": {
+    "totalNodes": 1574,
+    "totalEdges": 2531,
+    "analyzedFiles": 694,
+    "coveredFiles": 694,
+    "imports": 115,
+    "orphanNodes": 65,
+    "missingFiles": 0,
+    "danglingEdges": 0
+  }
+}

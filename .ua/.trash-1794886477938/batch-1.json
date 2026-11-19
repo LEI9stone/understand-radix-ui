@@ -1,0 +1,617 @@
+{
+  "nodes": [
+    {
+      "id": "file:e2e/collection.spec.ts",
+      "type": "file",
+      "name": "collection.spec.ts",
+      "filePath": "e2e/collection.spec.ts",
+      "summary": "验证 Collection 在 ViewTransition 重排和删除动画的首帧就反映最新项目位置，防止 DOM 顺序更新滞后。",
+      "tags": [
+        "测试",
+        "集合",
+        "视图过渡"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:e2e/collection.spec.ts:recordViewTransitions",
+      "type": "function",
+      "name": "recordViewTransitions",
+      "filePath": "e2e/collection.spec.ts",
+      "lineRange": [
+        12,
+        38
+      ],
+      "summary": "在页面初始化前包裹 startViewTransition，记录过渡就绪时和首个动画帧中的项目位置，供动画一致性断言使用。",
+      "tags": [
+        "测试",
+        "集合",
+        "视图过渡"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:e2e/context-menu.spec.ts",
+      "type": "file",
+      "name": "context-menu.spec.ts",
+      "filePath": "e2e/context-menu.spec.ts",
+      "summary": "回归右键菜单的指针意图区、长按、键盘子菜单和 RTL 行为，并验证外部覆盖层与 Dialog 内的分层关闭。",
+      "tags": [
+        "测试",
+        "右键菜单",
+        "键盘导航"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:e2e/dialog.spec.ts",
+      "type": "file",
+      "name": "dialog.spec.ts",
+      "filePath": "e2e/dialog.spec.ts",
+      "summary": "覆盖模态与非模态对话框的鼠标、触控、键盘、焦点陷阱和嵌套菜单关闭，包含 Shadow DOM 与外部覆盖层回归。",
+      "tags": [
+        "测试",
+        "对话框",
+        "焦点管理"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:e2e/dropdown-menu.spec.ts",
+      "type": "file",
+      "name": "dropdown-menu.spec.ts",
+      "filePath": "e2e/dropdown-menu.spec.ts",
+      "summary": "回归下拉菜单的子菜单指针路径、碰撞翻转、键盘查找和 RTL 导航，确保外部交互仅关闭适当的浮层。",
+      "tags": [
+        "测试",
+        "下拉菜单",
+        "指针交互"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:e2e/form.spec.ts",
+      "type": "file",
+      "name": "form.spec.ts",
+      "filePath": "e2e/form.spec.ts",
+      "summary": "验证标签关联、原生有效性状态、同步与异步自定义校验及服务端错误，检查阻止提交和首个错误控件聚焦。",
+      "tags": [
+        "测试",
+        "表单",
+        "校验"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:e2e/helpers.ts",
+      "type": "file",
+      "name": "helpers.ts",
+      "filePath": "e2e/helpers.ts",
+      "summary": "封装 Storybook 导航、定位框坐标、键盘和指针事件及 CDP 触摸手势，为组件端到端用例提供一致的输入模拟。",
+      "tags": [
+        "测试",
+        "辅助函数",
+        "输入模拟"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:e2e/helpers.ts:visitStory",
+      "type": "function",
+      "name": "visitStory",
+      "filePath": "e2e/helpers.ts",
+      "lineRange": [
+        9,
+        11
+      ],
+      "summary": "把组件故事名称转换为默认 Cypress 故事的 iframe 地址并导航。",
+      "tags": [
+        "测试",
+        "辅助函数",
+        "输入模拟"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:e2e/helpers.ts:visitStoryById",
+      "type": "function",
+      "name": "visitStoryById",
+      "filePath": "e2e/helpers.ts",
+      "lineRange": [
+        17,
+        19
+      ],
+      "summary": "直接按 Storybook 故事 ID 导航到 iframe，支持非默认测试故事。",
+      "tags": [
+        "测试",
+        "辅助函数",
+        "输入模拟"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:e2e/helpers.ts:offsetFor",
+      "type": "function",
+      "name": "offsetFor",
+      "filePath": "e2e/helpers.ts",
+      "lineRange": [
+        44,
+        71
+      ],
+      "summary": "根据元素边界与中心、上下左右等位置名称计算有效的相对指针坐标。",
+      "tags": [
+        "测试",
+        "辅助函数",
+        "输入模拟"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:e2e/helpers.ts:hoverAt",
+      "type": "function",
+      "name": "hoverAt",
+      "filePath": "e2e/helpers.ts",
+      "lineRange": [
+        82,
+        85
+      ],
+      "summary": "取得元素边界后把指针移动到指定相对位置。",
+      "tags": [
+        "测试",
+        "辅助函数",
+        "输入模拟"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:e2e/helpers.ts:pointerOutAt",
+      "type": "function",
+      "name": "pointerOutAt",
+      "filePath": "e2e/helpers.ts",
+      "lineRange": [
+        91,
+        101
+      ],
+      "summary": "根据目标位置合成带坐标的 pointerout 事件，模拟离开元素的具体方向。",
+      "tags": [
+        "测试",
+        "辅助函数",
+        "输入模拟"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:e2e/helpers.ts:keydown",
+      "type": "function",
+      "name": "keydown",
+      "filePath": "e2e/helpers.ts",
+      "lineRange": [
+        104,
+        106
+      ],
+      "summary": "向定位器派发指定按键的 keydown，精确触发组件键盘处理。",
+      "tags": [
+        "测试",
+        "辅助函数",
+        "输入模拟"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:e2e/helpers.ts:pointerOver",
+      "type": "function",
+      "name": "pointerOver",
+      "filePath": "e2e/helpers.ts",
+      "lineRange": [
+        112,
+        117
+      ],
+      "summary": "定位文本元素并确认可见，再将指针悬停其上。",
+      "tags": [
+        "测试",
+        "辅助函数",
+        "输入模拟"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:e2e/helpers.ts:pointerExitRightToLeft",
+      "type": "function",
+      "name": "pointerExitRightToLeft",
+      "filePath": "e2e/helpers.ts",
+      "lineRange": [
+        120,
+        126
+      ],
+      "summary": "沿右侧到左侧的边界移动并发出 pointerout，测试菜单的离开意图判断。",
+      "tags": [
+        "测试",
+        "辅助函数",
+        "输入模拟"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:e2e/helpers.ts:pointerExitLeftToRight",
+      "type": "function",
+      "name": "pointerExitLeftToRight",
+      "filePath": "e2e/helpers.ts",
+      "lineRange": [
+        129,
+        135
+      ],
+      "summary": "沿左侧到右侧的边界移动并发出 pointerout，测试反方向菜单指针路径。",
+      "tags": [
+        "测试",
+        "辅助函数",
+        "输入模拟"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:e2e/helpers.ts:longTouch",
+      "type": "function",
+      "name": "longTouch",
+      "filePath": "e2e/helpers.ts",
+      "lineRange": [
+        141,
+        156
+      ],
+      "summary": "派发触控 pointerdown 并等待长按阈值，用于打开触摸右键菜单。",
+      "tags": [
+        "测试",
+        "辅助函数",
+        "输入模拟"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:e2e/helpers.ts:touchSwipe",
+      "type": "function",
+      "name": "touchSwipe",
+      "filePath": "e2e/helpers.ts",
+      "lineRange": [
+        163,
+        211
+      ],
+      "summary": "以 CDP touchStart、touchMove、touchEnd 模拟指定方向和长度的真实触摸滑动。",
+      "tags": [
+        "测试",
+        "辅助函数",
+        "输入模拟"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:e2e/menubar.spec.ts",
+      "type": "file",
+      "name": "menubar.spec.ts",
+      "filePath": "e2e/menubar.spec.ts",
+      "summary": "验证菜单栏触发器切换、子菜单指针意图区、焦点与 typeahead，并覆盖 Portal、RTL 和扩展覆盖层的关闭行为。",
+      "tags": [
+        "测试",
+        "菜单栏",
+        "键盘导航"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:e2e/popover.spec.ts",
+      "type": "file",
+      "name": "popover.spec.ts",
+      "filePath": "e2e/popover.spec.ts",
+      "summary": "检查 Popover 对外部覆盖层的交互容忍，以及嵌套在 Dialog 时模态与非模态浮层的关闭边界。",
+      "tags": [
+        "测试",
+        "弹出层",
+        "层级关闭"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:e2e/popper.spec.ts",
+      "type": "file",
+      "name": "popper.spec.ts",
+      "filePath": "e2e/popper.spec.ts",
+      "summary": "检查锚点被滚动容器裁切时隐藏浮层，并验证带变换和溢出裁剪的 Portal 容器不会误改可用空间测量。",
+      "tags": [
+        "测试",
+        "浮层定位",
+        "碰撞边界"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:e2e/scroll-area.spec.ts",
+      "type": "file",
+      "name": "scroll-area.spec.ts",
+      "filePath": "e2e/scroll-area.spec.ts",
+      "summary": "回归一条滚动条消失时角落宽高 CSS 变量归零，避免残留的滚动条交角占位。",
+      "tags": [
+        "测试",
+        "滚动区域",
+        "尺寸测量"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:e2e/select.spec.ts",
+      "type": "file",
+      "name": "select.spec.ts",
+      "filePath": "e2e/select.spec.ts",
+      "summary": "验证 Select 的表单提交、空值占位和外部值更新定位，覆盖覆盖层、Dialog/Popover 嵌套关闭及 Shadow DOM 触摸滚动。",
+      "tags": [
+        "测试",
+        "选择器",
+        "表单联动"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:e2e/toast.spec.ts",
+      "type": "file",
+      "name": "toast.spec.ts",
+      "filePath": "e2e/toast.spec.ts",
+      "summary": "验证多条 Toast 的焦点和倒序 Tab 遍历、无 Toast 时的自然顺序，以及默认和自定义播报容器与超时清理。",
+      "tags": [
+        "测试",
+        "通知",
+        "辅助技术"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:e2e/toggle-group.spec.ts",
+      "type": "file",
+      "name": "toggle-group.spec.ts",
+      "filePath": "e2e/toggle-group.spec.ts",
+      "summary": "验证 ToggleGroup 位于 Dialog 首个可聚焦位置时，对话框打开能正确将焦点移入组内。",
+      "tags": [
+        "测试",
+        "切换组",
+        "焦点管理"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:e2e/collection.spec.ts",
+      "target": "file:e2e/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:e2e/collection.spec.ts",
+      "target": "function:e2e/collection.spec.ts:recordViewTransitions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:e2e/context-menu.spec.ts",
+      "target": "file:e2e/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:e2e/dialog.spec.ts",
+      "target": "file:e2e/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:e2e/dropdown-menu.spec.ts",
+      "target": "file:e2e/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:e2e/form.spec.ts",
+      "target": "file:e2e/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:visitStory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:visitStory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:visitStoryById",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:visitStoryById",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:offsetFor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:hoverAt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:hoverAt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:pointerOutAt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:pointerOutAt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:keydown",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:keydown",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:pointerOver",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:pointerOver",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:pointerExitRightToLeft",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:pointerExitRightToLeft",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:pointerExitLeftToRight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:pointerExitLeftToRight",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:longTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:longTouch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:touchSwipe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:e2e/helpers.ts",
+      "target": "function:e2e/helpers.ts:touchSwipe",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:e2e/menubar.spec.ts",
+      "target": "file:e2e/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:e2e/popover.spec.ts",
+      "target": "file:e2e/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:e2e/popper.spec.ts",
+      "target": "file:e2e/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:e2e/scroll-area.spec.ts",
+      "target": "file:e2e/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:e2e/select.spec.ts",
+      "target": "file:e2e/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:e2e/toast.spec.ts",
+      "target": "file:e2e/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:e2e/toggle-group.spec.ts",
+      "target": "file:e2e/helpers.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

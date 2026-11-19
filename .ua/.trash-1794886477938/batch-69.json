@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/toolbar/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/toolbar/CHANGELOG.md",
+      "summary": "维护工具栏组件 1.2.1 及 1.1 系列发布历史，帮助判断组件与内部依赖升级影响。",
+      "tags": [
+        "版本记录",
+        "工具栏",
+        "维护文档"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/toolbar/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/toolbar/README.md",
+      "summary": "提供 react-toolbar 包的标识及使用文档入口。",
+      "tags": [
+        "包说明",
+        "工具栏",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/toolbar/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/toolbar/package.json",
+      "summary": "配置工具栏包的发布出口与 React peer 范围，组合 roving-focus、Separator、ToggleGroup 和方向支持。",
+      "tags": [
+        "包配置",
+        "工具栏",
+        "键盘导航"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/toolbar/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/toolbar/tsconfig.json",
+      "summary": "为工具栏源码继承共享 React 库编译设置，指定 dist 输出并限制 src 输入。",
+      "tags": [
+        "编译配置",
+        "工具栏",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/react/toolbar/package.json",
+      "target": "file:packages/react/toolbar/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/toolbar/README.md",
+      "target": "config:packages/react/toolbar/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

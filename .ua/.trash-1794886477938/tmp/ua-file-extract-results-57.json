@@ -1,0 +1,578 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 4
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/radix-ui/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 516,
+      "nonEmptyLines": 358,
+      "sections": [
+        {
+          "heading": "radix-ui",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1.8.1",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "1.8.0",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Context Menu",
+          "level": 3,
+          "line": 10
+        },
+        {
+          "heading": "Navigation Menu",
+          "level": 3,
+          "line": 14
+        },
+        {
+          "heading": "Popover",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "Select",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "Slider",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "Slot",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "Toast",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "Tooltip",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "Other updates",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "1.7.0",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Dialog",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "Navigation Menu",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Popover",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "Scroll Area",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "Slider",
+          "level": 3,
+          "line": 97
+        },
+        {
+          "heading": "Other updates",
+          "level": 3,
+          "line": 101
+        },
+        {
+          "heading": "1.6.6, 1.6.7",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "1.6.5",
+          "level": 2,
+          "line": 113
+        },
+        {
+          "heading": "1.6.4",
+          "level": 2,
+          "line": 117
+        },
+        {
+          "heading": "1.6.3",
+          "level": 2,
+          "line": 121
+        },
+        {
+          "heading": "Dialog",
+          "level": 3,
+          "line": 123
+        },
+        {
+          "heading": "Slider",
+          "level": 3,
+          "line": 127
+        },
+        {
+          "heading": "Toast",
+          "level": 3,
+          "line": 131
+        },
+        {
+          "heading": "Tooltip",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "Other updates",
+          "level": 3,
+          "line": 139
+        },
+        {
+          "heading": "1.6.2",
+          "level": 2,
+          "line": 148
+        },
+        {
+          "heading": "Other updates",
+          "level": 3,
+          "line": 150
+        },
+        {
+          "heading": "1.6.1",
+          "level": 2,
+          "line": 165
+        },
+        {
+          "heading": "1.6.0",
+          "level": 2,
+          "line": 171
+        },
+        {
+          "heading": "Avatar",
+          "level": 3,
+          "line": 177
+        },
+        {
+          "heading": "Password Toggle Field",
+          "level": 3,
+          "line": 184
+        },
+        {
+          "heading": "Scroll Area",
+          "level": 3,
+          "line": 189
+        },
+        {
+          "heading": "Slot",
+          "level": 3,
+          "line": 193
+        },
+        {
+          "heading": "Toggle Group",
+          "level": 3,
+          "line": 197
+        },
+        {
+          "heading": "Select",
+          "level": 3,
+          "line": 201
+        },
+        {
+          "heading": "Other updates",
+          "level": 3,
+          "line": 206
+        },
+        {
+          "heading": "1.5.0",
+          "level": 2,
+          "line": 214
+        },
+        {
+          "heading": "Context Menu",
+          "level": 3,
+          "line": 216
+        },
+        {
+          "heading": "Dialog",
+          "level": 3,
+          "line": 240
+        },
+        {
+          "heading": "One-Time Password Field",
+          "level": 3,
+          "line": 245
+        },
+        {
+          "heading": "Popper",
+          "level": 3,
+          "line": 251
+        },
+        {
+          "heading": "Presence",
+          "level": 3,
+          "line": 256
+        },
+        {
+          "heading": "Radio Group",
+          "level": 3,
+          "line": 260
+        },
+        {
+          "heading": "Select",
+          "level": 3,
+          "line": 284
+        },
+        {
+          "heading": "Slider",
+          "level": 3,
+          "line": 308
+        },
+        {
+          "heading": "Slot",
+          "level": 3,
+          "line": 341
+        },
+        {
+          "heading": "Switch",
+          "level": 3,
+          "line": 347
+        },
+        {
+          "heading": "Tooltip",
+          "level": 3,
+          "line": 367
+        },
+        {
+          "heading": "Other changes",
+          "level": 3,
+          "line": 372
+        },
+        {
+          "heading": "1.4.3",
+          "level": 2,
+          "line": 382
+        },
+        {
+          "heading": "One-Time Password Field",
+          "level": 3,
+          "line": 384
+        },
+        {
+          "heading": "Popper",
+          "level": 3,
+          "line": 389
+        },
+        {
+          "heading": "Presence",
+          "level": 3,
+          "line": 393
+        },
+        {
+          "heading": "Slot",
+          "level": 3,
+          "line": 397
+        },
+        {
+          "heading": "Toast",
+          "level": 3,
+          "line": 401
+        },
+        {
+          "heading": "Other changes",
+          "level": 3,
+          "line": 408
+        },
+        {
+          "heading": "1.4.2",
+          "level": 2,
+          "line": 412
+        },
+        {
+          "heading": "1.4.1",
+          "level": 2,
+          "line": 416
+        },
+        {
+          "heading": "1.4.0",
+          "level": 2,
+          "line": 420
+        },
+        {
+          "heading": "Introduce new Password Toggle Field primitive",
+          "level": 3,
+          "line": 422
+        },
+        {
+          "heading": "Other updates",
+          "level": 3,
+          "line": 459
+        },
+        {
+          "heading": "1.3.4",
+          "level": 2,
+          "line": 464
+        },
+        {
+          "heading": "1.3.3",
+          "level": 2,
+          "line": 468
+        },
+        {
+          "heading": "1.3.2",
+          "level": 2,
+          "line": 472
+        },
+        {
+          "heading": "1.3.1",
+          "level": 2,
+          "line": 476
+        },
+        {
+          "heading": "1.3.0",
+          "level": 2,
+          "line": 480
+        },
+        {
+          "heading": "Introduce new One Time Password Field primitive",
+          "level": 3,
+          "line": 482
+        },
+        {
+          "heading": "Other updates",
+          "level": 3,
+          "line": 514
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 71
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 36,
+      "nonEmptyLines": 19,
+      "sections": [
+        {
+          "heading": "Radix Primitives",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Documentation",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Releases",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Community",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Thanks",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "License",
+          "level": 2,
+          "line": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 145,
+      "nonEmptyLines": 145,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "license",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "source",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "main",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "module",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "exports",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "publishConfig",
+          "level": 1,
+          "line": 12
+        },
+        {
+          "heading": "files",
+          "level": 1,
+          "line": 40
+        },
+        {
+          "heading": "sideEffects",
+          "level": 1,
+          "line": 45
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 46
+        },
+        {
+          "heading": "dependencies",
+          "level": 1,
+          "line": 56
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 113
+        },
+        {
+          "heading": "peerDependencies",
+          "level": 1,
+          "line": 122
+        },
+        {
+          "heading": "peerDependenciesMeta",
+          "level": 1,
+          "line": 128
+        },
+        {
+          "heading": "homepage",
+          "level": 1,
+          "line": 136
+        },
+        {
+          "heading": "repository",
+          "level": 1,
+          "line": 137
+        },
+        {
+          "heading": "bugs",
+          "level": 1,
+          "line": 142
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "extends",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "exclude",
+          "level": 1,
+          "line": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

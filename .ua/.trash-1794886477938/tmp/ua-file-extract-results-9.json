@@ -1,0 +1,510 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 3,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 3,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/scroll-area/src/scroll-area.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 551,
+      "nonEmptyLines": 481,
+      "functions": [
+        {
+          "name": "assignScrollbarsSizes",
+          "startLine": 41,
+          "endLine": 46,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "assignScrollbarsSizes",
+          "callee": "document.querySelectorAll",
+          "lineNumber": 42
+        },
+        {
+          "caller": "assignScrollbarsSizes",
+          "callee": "Object.defineProperty",
+          "lineNumber": 43
+        },
+        {
+          "caller": "assignScrollbarsSizes",
+          "callee": "Object.defineProperty",
+          "lineNumber": 44
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/scroll-area/src/scroll-area.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1191,
+      "nonEmptyLines": 1085,
+      "functions": [
+        {
+          "name": "toInt",
+          "startLine": 1053,
+          "endLine": 1055,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "getThumbRatio",
+          "startLine": 1057,
+          "endLine": 1060,
+          "params": [
+            "viewportSize",
+            "contentSize"
+          ]
+        },
+        {
+          "name": "getThumbSize",
+          "startLine": 1062,
+          "endLine": 1068,
+          "params": [
+            "sizes"
+          ]
+        },
+        {
+          "name": "getScrollPositionFromPointer",
+          "startLine": 1070,
+          "endLine": 1086,
+          "params": [
+            "pointerPos",
+            "pointerOffset",
+            "sizes",
+            "dir"
+          ]
+        },
+        {
+          "name": "getThumbOffsetFromScroll",
+          "startLine": 1088,
+          "endLine": 1098,
+          "params": [
+            "scrollPos",
+            "sizes",
+            "dir"
+          ]
+        },
+        {
+          "name": "linearScale",
+          "startLine": 1101,
+          "endLine": 1107,
+          "params": [
+            "input",
+            "output"
+          ]
+        },
+        {
+          "name": "isScrollingWithinScrollbarBounds",
+          "startLine": 1109,
+          "endLine": 1111,
+          "params": [
+            "scrollPos",
+            "maxScrollPos"
+          ]
+        },
+        {
+          "name": "addUnlinkedScrollListener",
+          "startLine": 1115,
+          "endLine": 1128,
+          "params": [
+            "node",
+            "handler"
+          ]
+        },
+        {
+          "name": "useDebounceCallback",
+          "startLine": 1130,
+          "endLine": 1138,
+          "params": [
+            "callback",
+            "delay"
+          ]
+        },
+        {
+          "name": "useResizeObserver",
+          "startLine": 1140,
+          "endLine": 1163,
+          "params": [
+            "element",
+            "onResize"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createScrollAreaScope",
+          "line": 1167,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollArea",
+          "line": 1167,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaViewport",
+          "line": 1167,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaContent",
+          "line": 1167,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaScrollbar",
+          "line": 1167,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaThumb",
+          "line": 1167,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaCorner",
+          "line": 1167,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 1167,
+          "isDefault": false
+        },
+        {
+          "name": "Viewport",
+          "line": 1167,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 1167,
+          "isDefault": false
+        },
+        {
+          "name": "Scrollbar",
+          "line": 1167,
+          "isDefault": false
+        },
+        {
+          "name": "Thumb",
+          "line": 1167,
+          "isDefault": false
+        },
+        {
+          "name": "Corner",
+          "line": 1167,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaProps",
+          "line": 1184,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaViewportProps",
+          "line": 1184,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaContentProps",
+          "line": 1184,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaScrollbarProps",
+          "line": 1184,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaThumbProps",
+          "line": 1184,
+          "isDefault": false
+        },
+        {
+          "name": "ScrollAreaCornerProps",
+          "line": 1184,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "handlePointerEnter",
+          "callee": "window.clearTimeout",
+          "lineNumber": 379
+        },
+        {
+          "caller": "handlePointerEnter",
+          "callee": "setVisible",
+          "lineNumber": 380
+        },
+        {
+          "caller": "handlePointerLeave",
+          "callee": "window.setTimeout",
+          "lineNumber": 383
+        },
+        {
+          "caller": "handlePointerLeave",
+          "callee": "setVisible",
+          "lineNumber": 383
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "send",
+          "lineNumber": 458
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "debounceScrollEnd",
+          "lineNumber": 459
+        },
+        {
+          "caller": "getScrollPosition",
+          "callee": "getScrollPositionFromPointer",
+          "lineNumber": 556
+        },
+        {
+          "caller": "handleDragScroll",
+          "callee": "onDragScroll",
+          "lineNumber": 804
+        },
+        {
+          "caller": "handleWheel",
+          "callee": "scrollbar?.contains",
+          "lineNumber": 815
+        },
+        {
+          "caller": "handleWheel",
+          "callee": "handleWheelScroll",
+          "lineNumber": 816
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "debounceScrollEnd",
+          "lineNumber": 937
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "addUnlinkedScrollListener",
+          "lineNumber": 939
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "onThumbPositionChange",
+          "lineNumber": 941
+        },
+        {
+          "caller": "toInt",
+          "callee": "parseInt",
+          "lineNumber": 1054
+        },
+        {
+          "caller": "getThumbRatio",
+          "callee": "isNaN",
+          "lineNumber": 1059
+        },
+        {
+          "caller": "getThumbSize",
+          "callee": "getThumbRatio",
+          "lineNumber": 1063
+        },
+        {
+          "caller": "getThumbSize",
+          "callee": "Math.max",
+          "lineNumber": 1067
+        },
+        {
+          "caller": "getScrollPositionFromPointer",
+          "callee": "getThumbSize",
+          "lineNumber": 1076
+        },
+        {
+          "caller": "getScrollPositionFromPointer",
+          "callee": "linearScale",
+          "lineNumber": 1084
+        },
+        {
+          "caller": "getScrollPositionFromPointer",
+          "callee": "interpolate",
+          "lineNumber": 1085
+        },
+        {
+          "caller": "getThumbOffsetFromScroll",
+          "callee": "getThumbSize",
+          "lineNumber": 1089
+        },
+        {
+          "caller": "getThumbOffsetFromScroll",
+          "callee": "clamp",
+          "lineNumber": 1095
+        },
+        {
+          "caller": "getThumbOffsetFromScroll",
+          "callee": "linearScale",
+          "lineNumber": 1096
+        },
+        {
+          "caller": "getThumbOffsetFromScroll",
+          "callee": "interpolate",
+          "lineNumber": 1097
+        },
+        {
+          "caller": "loop",
+          "callee": "handler",
+          "lineNumber": 1122
+        },
+        {
+          "caller": "loop",
+          "callee": "window.requestAnimationFrame",
+          "lineNumber": 1124
+        },
+        {
+          "caller": "addUnlinkedScrollListener",
+          "callee": "loop",
+          "lineNumber": 1126
+        },
+        {
+          "caller": "addUnlinkedScrollListener",
+          "callee": "window.cancelAnimationFrame",
+          "lineNumber": 1127
+        },
+        {
+          "caller": "useDebounceCallback",
+          "callee": "useCallbackRef",
+          "lineNumber": 1131
+        },
+        {
+          "caller": "useDebounceCallback",
+          "callee": "React.useRef",
+          "lineNumber": 1132
+        },
+        {
+          "caller": "useDebounceCallback",
+          "callee": "React.useEffect",
+          "lineNumber": 1133
+        },
+        {
+          "caller": "useDebounceCallback",
+          "callee": "window.clearTimeout",
+          "lineNumber": 1133
+        },
+        {
+          "caller": "useDebounceCallback",
+          "callee": "React.useCallback",
+          "lineNumber": 1134
+        },
+        {
+          "caller": "useDebounceCallback",
+          "callee": "window.clearTimeout",
+          "lineNumber": 1135
+        },
+        {
+          "caller": "useDebounceCallback",
+          "callee": "window.setTimeout",
+          "lineNumber": 1136
+        },
+        {
+          "caller": "useResizeObserver",
+          "callee": "useCallbackRef",
+          "lineNumber": 1141
+        },
+        {
+          "caller": "useResizeObserver",
+          "callee": "useLayoutEffect",
+          "lineNumber": 1142
+        },
+        {
+          "caller": "useResizeObserver",
+          "callee": "cancelAnimationFrame",
+          "lineNumber": 1153
+        },
+        {
+          "caller": "useResizeObserver",
+          "callee": "window.requestAnimationFrame",
+          "lineNumber": 1154
+        },
+        {
+          "caller": "useResizeObserver",
+          "callee": "resizeObserver.observe",
+          "lineNumber": 1156
+        },
+        {
+          "caller": "useResizeObserver",
+          "callee": "window.cancelAnimationFrame",
+          "lineNumber": 1158
+        },
+        {
+          "caller": "useResizeObserver",
+          "callee": "resizeObserver.unobserve",
+          "lineNumber": 1159
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 19,
+        "functionCount": 10,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/scroll-area/src/use-state-machine.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "useStateMachine",
+          "startLine": 12,
+          "endLine": 20,
+          "params": [
+            "initialState",
+            "machine"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useStateMachine",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useStateMachine",
+          "callee": "React.useReducer",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/Bug_report.md",
+      "language": "markdown",
+      "sizeLines": 40,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/Documentation.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/Feature_request.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/Question.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".github/ISSUE_TEMPLATE/Bug_report.md": [],
+    ".github/ISSUE_TEMPLATE/Documentation.md": [],
+    ".github/ISSUE_TEMPLATE/Feature_request.md": [],
+    ".github/ISSUE_TEMPLATE/Question.md": []
+  }
+}

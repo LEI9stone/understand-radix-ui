@@ -1,0 +1,28 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "apps/ssr-testing/README.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "apps/ssr-testing/package.json",
+      "language": "json",
+      "sizeLines": 24,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/ssr-testing/tsconfig.json",
+      "language": "json",
+      "sizeLines": 8,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "apps/ssr-testing/README.md": [],
+    "apps/ssr-testing/package.json": [],
+    "apps/ssr-testing/tsconfig.json": []
+  }
+}

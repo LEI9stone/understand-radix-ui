@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "packages/react/radix-ui/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/internal.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/label.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/menubar.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/navigation-menu.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/popover.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/portal.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/progress.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/radio-group.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/scroll-area.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/select.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/separator.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/slider.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/slot.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/switch.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/tabs.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/toast.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/toggle-group.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/toggle.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/toolbar.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/tooltip.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/unstable/one-time-password-field.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/unstable/password-toggle-field.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/visually-hidden.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/roving-focus/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "packages/react/radix-ui/src/index.ts": [],
+    "packages/react/radix-ui/src/internal.ts": [],
+    "packages/react/radix-ui/src/label.ts": [],
+    "packages/react/radix-ui/src/menubar.ts": [],
+    "packages/react/radix-ui/src/navigation-menu.ts": [],
+    "packages/react/radix-ui/src/popover.ts": [],
+    "packages/react/radix-ui/src/portal.ts": [],
+    "packages/react/radix-ui/src/progress.ts": [],
+    "packages/react/radix-ui/src/radio-group.ts": [],
+    "packages/react/radix-ui/src/scroll-area.ts": [],
+    "packages/react/radix-ui/src/select.ts": [],
+    "packages/react/radix-ui/src/separator.ts": [],
+    "packages/react/radix-ui/src/slider.ts": [],
+    "packages/react/radix-ui/src/slot.ts": [],
+    "packages/react/radix-ui/src/switch.ts": [],
+    "packages/react/radix-ui/src/tabs.ts": [],
+    "packages/react/radix-ui/src/toast.ts": [],
+    "packages/react/radix-ui/src/toggle-group.ts": [],
+    "packages/react/radix-ui/src/toggle.ts": [],
+    "packages/react/radix-ui/src/toolbar.ts": [],
+    "packages/react/radix-ui/src/tooltip.ts": [],
+    "packages/react/radix-ui/src/unstable/one-time-password-field.ts": [],
+    "packages/react/radix-ui/src/unstable/password-toggle-field.ts": [],
+    "packages/react/radix-ui/src/visually-hidden.ts": [],
+    "packages/react/roving-focus/src/index.ts": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/id/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/id/CHANGELOG.md",
+      "summary": "记录稳定 ID 工具 1.1.4、1.1.3 与 1.1.2 的发布条目，帮助定位标识生成能力的版本变化。",
+      "tags": [
+        "版本记录",
+        "标识生成",
+        "维护文档"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/id/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/id/README.md",
+      "summary": "提供 react-id 包的标识和文档入口。",
+      "tags": [
+        "包说明",
+        "标识生成",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/id/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/id/package.json",
+      "summary": "定义稳定 ID 工具的构建及双模块类型入口，声明 React peer 范围与 use-layout-effect 运行依赖。",
+      "tags": [
+        "包配置",
+        "标识生成",
+        "服务端兼容"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/id/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/id/tsconfig.json",
+      "summary": "为 ID Hook 源码继承共享 React 库配置，限定 src 输入与 dist 输出。",
+      "tags": [
+        "编译配置",
+        "标识生成",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/react/id/package.json",
+      "target": "file:packages/react/id/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/id/README.md",
+      "target": "config:packages/react/id/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

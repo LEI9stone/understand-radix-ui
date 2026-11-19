@@ -1,0 +1,560 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 3,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 3,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/radio-group/src/radio-group.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1137,
+      "nonEmptyLines": 990,
+      "functions": [
+        {
+          "name": "ClassicRadioGroup",
+          "startLine": 26,
+          "endLine": 36,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "describeRadio",
+          "startLine": 38,
+          "endLine": 41,
+          "params": [
+            "target"
+          ]
+        },
+        {
+          "name": "ComposableRadioGroup",
+          "startLine": 43,
+          "endLine": 56,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "observe",
+          "callee": "this.cb",
+          "lineNumber": 17
+        },
+        {
+          "caller": "ClassicRadioGroup",
+          "callee": "VALUES.map",
+          "lineNumber": 29
+        },
+        {
+          "caller": "ComposableRadioGroup",
+          "callee": "VALUES.map",
+          "lineNumber": 46
+        },
+        {
+          "caller": "ControlledRadioGroup",
+          "callee": "React.useState",
+          "lineNumber": 170
+        },
+        {
+          "caller": "ControlledRadioGroup",
+          "callee": "React.useState",
+          "lineNumber": 171
+        },
+        {
+          "caller": "ControlledRadioGroup",
+          "callee": "onValueChange",
+          "lineNumber": 178
+        },
+        {
+          "caller": "ControlledRadioGroup",
+          "callee": "setValue",
+          "lineNumber": 179
+        },
+        {
+          "caller": "ControlledRadioGroup",
+          "callee": "VALUES.map",
+          "lineNumber": 182
+        },
+        {
+          "caller": "ControlledRadioGroup",
+          "callee": "setBlockChange",
+          "lineNumber": 188
+        },
+        {
+          "caller": "ResettableRadioGroup",
+          "callee": "React.useState",
+          "lineNumber": 219
+        },
+        {
+          "caller": "ResettableRadioGroup",
+          "callee": "VALUES.map",
+          "lineNumber": 223
+        },
+        {
+          "caller": "ResettableRadioGroup",
+          "callee": "setValue",
+          "lineNumber": 229
+        },
+        {
+          "caller": "App",
+          "callee": "onChange",
+          "lineNumber": 339
+        },
+        {
+          "caller": "App",
+          "callee": "VALUES.map",
+          "lineNumber": 342
+        },
+        {
+          "caller": "App",
+          "callee": "VALUES.map",
+          "lineNumber": 383
+        },
+        {
+          "caller": "DelayedApp",
+          "callee": "React.useState",
+          "lineNumber": 427
+        },
+        {
+          "caller": "DelayedApp",
+          "callee": "onFormChange",
+          "lineNumber": 429
+        },
+        {
+          "caller": "DelayedApp",
+          "callee": "describeRadio",
+          "lineNumber": 429
+        },
+        {
+          "caller": "DelayedApp",
+          "callee": "setTimeout",
+          "lineNumber": 435
+        },
+        {
+          "caller": "DelayedApp",
+          "callee": "setValue",
+          "lineNumber": 435
+        },
+        {
+          "caller": "TransitionApp",
+          "callee": "React.useState",
+          "lineNumber": 457
+        },
+        {
+          "caller": "TransitionApp",
+          "callee": "onFormChange",
+          "lineNumber": 459
+        },
+        {
+          "caller": "TransitionApp",
+          "callee": "describeRadio",
+          "lineNumber": 459
+        },
+        {
+          "caller": "TransitionApp",
+          "callee": "React.startTransition",
+          "lineNumber": 465
+        },
+        {
+          "caller": "TransitionApp",
+          "callee": "setValue",
+          "lineNumber": 465
+        },
+        {
+          "caller": "CoercingApp",
+          "callee": "React.useState",
+          "lineNumber": 486
+        },
+        {
+          "caller": "CoercingApp",
+          "callee": "onFormChange",
+          "lineNumber": 488
+        },
+        {
+          "caller": "CoercingApp",
+          "callee": "describeRadio",
+          "lineNumber": 488
+        },
+        {
+          "caller": "CoercingApp",
+          "callee": "setValue",
+          "lineNumber": 493
+        },
+        {
+          "caller": "DelayedApp",
+          "callee": "React.useState",
+          "lineNumber": 515
+        },
+        {
+          "caller": "DelayedApp",
+          "callee": "onFormChange",
+          "lineNumber": 517
+        },
+        {
+          "caller": "DelayedApp",
+          "callee": "describeRadio",
+          "lineNumber": 517
+        },
+        {
+          "caller": "DelayedApp",
+          "callee": "setTimeout",
+          "lineNumber": 524
+        },
+        {
+          "caller": "DelayedApp",
+          "callee": "setValue",
+          "lineNumber": 524
+        },
+        {
+          "caller": "DelayedApp",
+          "callee": "VALUES.map",
+          "lineNumber": 527
+        },
+        {
+          "caller": "DelayedApp",
+          "callee": "event.stopPropagation",
+          "lineNumber": 532
+        },
+        {
+          "caller": "App",
+          "callee": "React.useRef",
+          "lineNumber": 556
+        },
+        {
+          "caller": "App",
+          "callee": "React.useRef",
+          "lineNumber": 557
+        },
+        {
+          "caller": "App",
+          "callee": "aRef.current?.click",
+          "lineNumber": 561
+        },
+        {
+          "caller": "App",
+          "callee": "bRef.current?.click",
+          "lineNumber": 566
+        },
+        {
+          "caller": "ControlledRadioGroup",
+          "callee": "React.useState",
+          "lineNumber": 645
+        },
+        {
+          "caller": "ControlledRadioGroup",
+          "callee": "VALUES.map",
+          "lineNumber": 649
+        },
+        {
+          "caller": "ControlledRadioGroup",
+          "callee": "React.useState",
+          "lineNumber": 702
+        },
+        {
+          "caller": "ControlledRadioGroup",
+          "callee": "VALUES.map",
+          "lineNumber": 715
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radio-group/src/radio-group.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 354,
+      "nonEmptyLines": 323,
+      "functions": [
+        {
+          "name": "RadioGroupItemProvider",
+          "startLine": 149,
+          "endLine": 178,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createRadioGroupScope",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroup",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupItem",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupItemProvider",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupItemTrigger",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupItemBubbleInput",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupIndicator",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "ItemProvider",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "ItemTrigger",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "ItemBubbleInput",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "Indicator",
+          "line": 330,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupProps",
+          "line": 347,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupItemProps",
+          "line": 347,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupItemProviderProps",
+          "line": 347,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupItemTriggerProps",
+          "line": 347,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupItemBubbleInputProps",
+          "line": 347,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupIndicatorProps",
+          "line": 347,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "reset",
+          "callee": "setValue",
+          "lineNumber": 98
+        },
+        {
+          "caller": "RadioGroupItemProvider",
+          "callee": "useRadioGroupContext",
+          "lineNumber": 158
+        },
+        {
+          "caller": "RadioGroupItemProvider",
+          "callee": "useRadioScope",
+          "lineNumber": 159
+        },
+        {
+          "caller": "RadioGroupItemProvider",
+          "callee": "context.onValueChange",
+          "lineNumber": 171
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "ARROW_KEYS.includes",
+          "lineNumber": 201
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 19,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radio-group/src/radio.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 402,
+      "nonEmptyLines": 361,
+      "functions": [
+        {
+          "name": "RadioProvider",
+          "startLine": 54,
+          "endLine": 103,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "isFunction",
+          "startLine": 384,
+          "endLine": 386,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "getState",
+          "startLine": 388,
+          "endLine": 390,
+          "params": [
+            "checked"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createRadioScope",
+          "line": 392,
+          "isDefault": false
+        },
+        {
+          "name": "useRadioContext",
+          "line": 392,
+          "isDefault": false
+        },
+        {
+          "name": "Radio",
+          "line": 392,
+          "isDefault": false
+        },
+        {
+          "name": "RadioProvider",
+          "line": 392,
+          "isDefault": false
+        },
+        {
+          "name": "RadioTrigger",
+          "line": 392,
+          "isDefault": false
+        },
+        {
+          "name": "RadioIndicator",
+          "line": 392,
+          "isDefault": false
+        },
+        {
+          "name": "RadioBubbleInput",
+          "line": 392,
+          "isDefault": false
+        },
+        {
+          "name": "RadioProps",
+          "line": 402,
+          "isDefault": false
+        },
+        {
+          "name": "RadioProviderProps",
+          "line": 402,
+          "isDefault": false
+        },
+        {
+          "name": "RadioTriggerProps",
+          "line": 402,
+          "isDefault": false
+        },
+        {
+          "name": "RadioBubbleInputProps",
+          "line": 402,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RadioProvider",
+          "callee": "React.useState",
+          "lineNumber": 69
+        },
+        {
+          "caller": "RadioProvider",
+          "callee": "React.useState",
+          "lineNumber": 70
+        },
+        {
+          "caller": "RadioProvider",
+          "callee": "React.useState",
+          "lineNumber": 74
+        },
+        {
+          "caller": "RadioProvider",
+          "callee": "control.closest",
+          "lineNumber": 77
+        },
+        {
+          "caller": "RadioProvider",
+          "callee": "onCheck",
+          "lineNumber": 95
+        },
+        {
+          "caller": "RadioProvider",
+          "callee": "isFunction",
+          "lineNumber": 100
+        },
+        {
+          "caller": "RadioProvider",
+          "callee": "internal_do_not_use_render",
+          "lineNumber": 100
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    }
+  ]
+}

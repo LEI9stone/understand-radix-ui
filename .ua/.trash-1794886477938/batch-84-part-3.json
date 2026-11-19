@@ -1,0 +1,920 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/storybook/stories/toggle.stories.tsx",
+      "type": "file",
+      "name": "toggle.stories.tsx",
+      "filePath": "apps/storybook/stories/toggle.stories.tsx",
+      "summary": "展示 Toggle 的基础样式、受控按下状态及视觉回归组合。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toggle.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/toggle.stories.tsx",
+      "lineRange": [
+        7,
+        7
+      ],
+      "summary": "组合 Toggle 切换按钮 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toggle.stories.tsx:Controlled",
+      "type": "function",
+      "name": "Controlled",
+      "filePath": "apps/storybook/stories/toggle.stories.tsx",
+      "lineRange": [
+        9,
+        17
+      ],
+      "summary": "用 React 状态控制 Toggle 切换按钮，将状态更新回调与界面显示保持同步。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toggle.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/toggle.stories.tsx",
+      "lineRange": [
+        19,
+        52
+      ],
+      "summary": "集中排列 Toggle 切换按钮 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/toolbar.stories.tsx",
+      "type": "file",
+      "name": "toolbar.stories.tsx",
+      "filePath": "apps/storybook/stories/toolbar.stories.tsx",
+      "summary": "组合 Toolbar 按钮、链接和切换组，展示方向与布局变化下的工具栏。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/toolbar.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/toolbar.stories.tsx",
+      "lineRange": [
+        6,
+        11
+      ],
+      "summary": "组合 Toolbar 工具栏 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toolbar.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/toolbar.stories.tsx",
+      "lineRange": [
+        13,
+        28
+      ],
+      "summary": "集中排列 Toolbar 工具栏 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/toolbar.stories.tsx:ToolbarExample",
+      "type": "function",
+      "name": "ToolbarExample",
+      "filePath": "apps/storybook/stories/toolbar.stories.tsx",
+      "lineRange": [
+        31,
+        88
+      ],
+      "summary": "依据标题、文字方向和布局方向构造工具栏，组合切换项、链接及独立按钮。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "type": "file",
+      "name": "tooltip.stories.tsx",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "summary": "覆盖 Tooltip 延迟、内容定制、定位、可访问名称、外部引用、卸载和悬停策略，以及对话框和滚动容器组合。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        10,
+        22
+      ],
+      "summary": "组合 Tooltip 提示 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:Controlled",
+      "type": "function",
+      "name": "Controlled",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        24,
+        41
+      ],
+      "summary": "用 React 状态控制 Tooltip 提示，将状态更新回调与界面显示保持同步。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:CustomDurations",
+      "type": "function",
+      "name": "CustomDurations",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        43,
+        242
+      ],
+      "summary": "排列多个 Provider 与提示实例，对比延迟配置和连续触发时的开启行为。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:CustomContent",
+      "type": "function",
+      "name": "CustomContent",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        244,
+        384
+      ],
+      "summary": "在 Tooltip 中组合不同自定义内容，验证复杂内容的显示。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:Positions",
+      "type": "function",
+      "name": "Positions",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        386,
+        509
+      ],
+      "summary": "排列多个方位和对齐方式，展示 Tooltip 相对触发器的位置。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:AriaLabel",
+      "type": "function",
+      "name": "AriaLabel",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        511,
+        529
+      ],
+      "summary": "使用独立的 aria-label 提供无障碍名称，展示播报文本与可见内容的区别。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:WithText",
+      "type": "function",
+      "name": "WithText",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        531,
+        554
+      ],
+      "summary": "以文字元素作为触发内容，演示行内文字上的 Tooltip。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:WithExternalRef",
+      "type": "function",
+      "name": "WithExternalRef",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        556,
+        574
+      ],
+      "summary": "创建外部引用并在副作用中访问触发元素，验证引用转发。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:Unmount",
+      "type": "function",
+      "name": "Unmount",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        576,
+        604
+      ],
+      "summary": "动态卸载提示相关元素，检验显示中的 Tooltip 随组件移除而清理。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:Animated",
+      "type": "function",
+      "name": "Animated",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        606,
+        621
+      ],
+      "summary": "为 Tooltip 提示 应用状态相关动画样式，演示交互过程中的视觉过渡。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:SlottableContent",
+      "type": "function",
+      "name": "SlottableContent",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        623,
+        637
+      ],
+      "summary": "以自定义子元素承载 Tooltip 内容，演示内容属性的插槽合并。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:WithinDialog",
+      "type": "function",
+      "name": "WithinDialog",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        639,
+        659
+      ],
+      "summary": "将 Tooltip 放入对话框，检验浮层嵌套和焦点交互。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:KeepOpenOnActivation",
+      "type": "function",
+      "name": "KeepOpenOnActivation",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        661,
+        689
+      ],
+      "summary": "取消触发器激活事件的默认行为，展示点击后保持 Tooltip 打开的策略。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:WithinScrollable",
+      "type": "function",
+      "name": "WithinScrollable",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        691,
+        730
+      ],
+      "summary": "在可滚动区域中展示 Tooltip，观察滚动与浮层定位的关系。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:DisableHoverableContent",
+      "type": "function",
+      "name": "DisableHoverableContent",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        732,
+        790
+      ],
+      "summary": "比较禁用内容悬停与允许悬停的行为，检验指针进入提示区域时的关闭策略。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        795,
+        1080
+      ],
+      "summary": "集中排列 Tooltip 提示 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/tooltip.stories.tsx:SimpleTooltip",
+      "type": "function",
+      "name": "SimpleTooltip",
+      "filePath": "apps/storybook/stories/tooltip.stories.tsx",
+      "lineRange": [
+        1083,
+        1107
+      ],
+      "summary": "封装根节点、触发器和内容，并转发开关控制及无障碍名称，简化多个故事的提示构造。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/visually-hidden.stories.tsx",
+      "type": "file",
+      "name": "visually-hidden.stories.tsx",
+      "filePath": "apps/storybook/stories/visually-hidden.stories.tsx",
+      "summary": "展示 VisuallyHidden 内容在视觉隐藏后仍可由辅助技术访问的用法。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/visually-hidden.stories.tsx:Basic",
+      "type": "function",
+      "name": "Basic",
+      "filePath": "apps/storybook/stories/visually-hidden.stories.tsx",
+      "lineRange": [
+        5,
+        10
+      ],
+      "summary": "渲染包含视觉隐藏内容的基础示例，展示屏幕阅读器可访问的隐藏文字。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/storybook/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/storybook/tsconfig.json",
+      "summary": "继承共享 React 库编译配置，将 stories 和 CSS 类型声明纳入 Storybook 的类型检查。",
+      "tags": [
+        "项目配置",
+        "工作区管理",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/storybook/stories/toggle.stories.tsx",
+      "target": "file:apps/storybook/stories/toggle.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle.stories.tsx:Controlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle.stories.tsx:Controlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle.stories.tsx",
+      "target": "function:apps/storybook/stories/toggle.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toolbar.stories.tsx",
+      "target": "file:apps/storybook/stories/toolbar.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/toolbar.stories.tsx",
+      "target": "function:apps/storybook/stories/toolbar.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toolbar.stories.tsx",
+      "target": "function:apps/storybook/stories/toolbar.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toolbar.stories.tsx",
+      "target": "function:apps/storybook/stories/toolbar.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/toolbar.stories.tsx",
+      "target": "function:apps/storybook/stories/toolbar.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/toolbar.stories.tsx",
+      "target": "function:apps/storybook/stories/toolbar.stories.tsx:ToolbarExample",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "file:apps/storybook/stories/tooltip.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:Controlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:Controlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:CustomDurations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:CustomDurations",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:CustomContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:CustomContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:Positions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:Positions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:AriaLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:AriaLabel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:WithText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:WithText",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:WithExternalRef",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:WithExternalRef",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:Unmount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:Unmount",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:Animated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:Animated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:SlottableContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:SlottableContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:WithinDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:WithinDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:KeepOpenOnActivation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:KeepOpenOnActivation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:WithinScrollable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:WithinScrollable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:DisableHoverableContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:DisableHoverableContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "target": "function:apps/storybook/stories/tooltip.stories.tsx:SimpleTooltip",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/visually-hidden.stories.tsx",
+      "target": "function:apps/storybook/stories/visually-hidden.stories.tsx:Basic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/visually-hidden.stories.tsx",
+      "target": "function:apps/storybook/stories/visually-hidden.stories.tsx:Basic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/radio-group.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/roving-focus-group.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/scroll-area.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/separator.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/slider.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/slot.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/switch.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/tabs.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/toast.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/toggle.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/toolbar.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/storybook/tsconfig.json",
+      "target": "file:apps/storybook/stories/visually-hidden.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

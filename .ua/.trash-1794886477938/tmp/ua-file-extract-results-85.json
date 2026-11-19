@@ -1,0 +1,1870 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 24,
+  "filesSkipped": [
+    "packages/core/primitive/bench/aria-hidden.bench.mts"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 24,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 23,
+      "failed": 0,
+      "skipped": 1
+    }
+  },
+  "results": [
+    {
+      "path": "internal/test-utils/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "extends",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "exclude",
+          "level": 1,
+          "line": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "internal/typescript-config/react-library/index.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/env-check/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/env-check/src/internal/is-development.false.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "exports": [
+        {
+          "name": "IS_DEVELOPMENT",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/env-check/src/internal/is-development.true.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "exports": [
+        {
+          "name": "IS_DEVELOPMENT",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/number/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "exports": [
+        {
+          "name": "clamp",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/number/src/number.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "clamp",
+          "startLine": 1,
+          "endLine": 3,
+          "params": [
+            "value",
+            "[min, max]"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "clamp",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clamp",
+          "callee": "Math.min",
+          "lineNumber": 2
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.max",
+          "lineNumber": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/primitive/bench/aria-hidden.page.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 167,
+      "nonEmptyLines": 143,
+      "functions": [
+        {
+          "name": "buildTree",
+          "startLine": 35,
+          "endLine": 47,
+          "params": [
+            "depth",
+            "breadth"
+          ]
+        },
+        {
+          "name": "getDeepestDescendant",
+          "startLine": 49,
+          "endLine": 55,
+          "params": [
+            "element",
+            "childIndex"
+          ]
+        },
+        {
+          "name": "forceStyleAndLayout",
+          "startLine": 100,
+          "endLine": 102,
+          "params": []
+        },
+        {
+          "name": "getMedian",
+          "startLine": 104,
+          "endLine": 108,
+          "params": [
+            "values"
+          ]
+        },
+        {
+          "name": "measureMedianMs",
+          "startLine": 110,
+          "endLine": 126,
+          "params": [
+            "runCycle"
+          ]
+        },
+        {
+          "name": "runScenario",
+          "startLine": 128,
+          "endLine": 167,
+          "params": [
+            "name",
+            "options"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "scenarioNames",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "runScenario",
+          "line": 128,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "buildTree",
+          "callee": "document.createElement",
+          "lineNumber": 36
+        },
+        {
+          "caller": "buildTree",
+          "callee": "element.append",
+          "lineNumber": 39
+        },
+        {
+          "caller": "buildTree",
+          "callee": "buildTree",
+          "lineNumber": 39
+        },
+        {
+          "caller": "buildTree",
+          "callee": "document.createElement",
+          "lineNumber": 42
+        },
+        {
+          "caller": "buildTree",
+          "callee": "element.append",
+          "lineNumber": 44
+        },
+        {
+          "caller": "getDeepestDescendant",
+          "callee": "Math.min",
+          "lineNumber": 52
+        },
+        {
+          "caller": "forceStyleAndLayout",
+          "callee": "document.body.getBoundingClientRect",
+          "lineNumber": 101
+        },
+        {
+          "caller": "getMedian",
+          "callee": "[...values].sort",
+          "lineNumber": 105
+        },
+        {
+          "caller": "getMedian",
+          "callee": "Math.floor",
+          "lineNumber": 106
+        },
+        {
+          "caller": "measureMedianMs",
+          "callee": "runCycle",
+          "lineNumber": 112
+        },
+        {
+          "caller": "measureMedianMs",
+          "callee": "performance.now",
+          "lineNumber": 117
+        },
+        {
+          "caller": "measureMedianMs",
+          "callee": "runCycle",
+          "lineNumber": 119
+        },
+        {
+          "caller": "measureMedianMs",
+          "callee": "samples.push",
+          "lineNumber": 121
+        },
+        {
+          "caller": "measureMedianMs",
+          "callee": "performance.now",
+          "lineNumber": 121
+        },
+        {
+          "caller": "measureMedianMs",
+          "callee": "forceStyleAndLayout",
+          "lineNumber": 124
+        },
+        {
+          "caller": "measureMedianMs",
+          "callee": "getMedian",
+          "lineNumber": 125
+        },
+        {
+          "caller": "runScenario",
+          "callee": "scenarios.find",
+          "lineNumber": 129
+        },
+        {
+          "caller": "runScenario",
+          "callee": "document.createElement",
+          "lineNumber": 134
+        },
+        {
+          "caller": "runScenario",
+          "callee": "document.head.append",
+          "lineNumber": 136
+        },
+        {
+          "caller": "runScenario",
+          "callee": "buildTree",
+          "lineNumber": 138
+        },
+        {
+          "caller": "runScenario",
+          "callee": "scenario.decorate",
+          "lineNumber": 139
+        },
+        {
+          "caller": "runScenario",
+          "callee": "document.createElement",
+          "lineNumber": 140
+        },
+        {
+          "caller": "runScenario",
+          "callee": "document.createElement",
+          "lineNumber": 141
+        },
+        {
+          "caller": "runScenario",
+          "callee": "portal.append",
+          "lineNumber": 142
+        },
+        {
+          "caller": "runScenario",
+          "callee": "document.body.append",
+          "lineNumber": 143
+        },
+        {
+          "caller": "runScenario",
+          "callee": "forceStyleAndLayout",
+          "lineNumber": 144
+        },
+        {
+          "caller": "runScenario",
+          "callee": "hideOthers",
+          "lineNumber": 148
+        },
+        {
+          "caller": "runScenario",
+          "callee": "document.querySelectorAll",
+          "lineNumber": 149
+        },
+        {
+          "caller": "runScenario",
+          "callee": "undoForCount",
+          "lineNumber": 150
+        },
+        {
+          "caller": "runScenario",
+          "callee": "measureMedianMs",
+          "lineNumber": 152
+        },
+        {
+          "caller": "runScenario",
+          "callee": "hideOthers(targets, document.body)",
+          "lineNumber": 153
+        },
+        {
+          "caller": "runScenario",
+          "callee": "hideOthers",
+          "lineNumber": 153
+        },
+        {
+          "caller": "runScenario",
+          "callee": "measureMedianMs",
+          "lineNumber": 156
+        },
+        {
+          "caller": "runScenario",
+          "callee": "hideOthers",
+          "lineNumber": 157
+        },
+        {
+          "caller": "runScenario",
+          "callee": "forceStyleAndLayout",
+          "lineNumber": 158
+        },
+        {
+          "caller": "runScenario",
+          "callee": "undo",
+          "lineNumber": 159
+        },
+        {
+          "caller": "runScenario",
+          "callee": "forceStyleAndLayout",
+          "lineNumber": 160
+        },
+        {
+          "caller": "runScenario",
+          "callee": "document.body.replaceChildren",
+          "lineNumber": 163
+        },
+        {
+          "caller": "runScenario",
+          "callee": "style.remove",
+          "lineNumber": 164
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/primitive/src/aria-hidden.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 556,
+      "nonEmptyLines": 447,
+      "functions": [
+        {
+          "name": "getNearestAttribute",
+          "startLine": 536,
+          "endLine": 556,
+          "params": [
+            "node",
+            "name",
+            "parent"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getNearestAttribute",
+          "line": 536,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "factory",
+          "callee": "React.createRef",
+          "lineNumber": 22
+        },
+        {
+          "caller": "factory",
+          "callee": "React.createRef",
+          "lineNumber": 23
+        },
+        {
+          "caller": "factory",
+          "callee": "React.createRef",
+          "lineNumber": 24
+        },
+        {
+          "caller": "factory",
+          "callee": "React.createRef",
+          "lineNumber": 25
+        },
+        {
+          "caller": "factory",
+          "callee": "render",
+          "lineNumber": 26
+        },
+        {
+          "caller": "factory",
+          "callee": "html",
+          "lineNumber": 47
+        },
+        {
+          "caller": "getTarget",
+          "callee": "this.root.querySelector",
+          "lineNumber": 476
+        },
+        {
+          "caller": "getAnotherTarget",
+          "callee": "this.root.querySelector",
+          "lineNumber": 479
+        },
+        {
+          "caller": "constructor",
+          "callee": "super",
+          "lineNumber": 482
+        },
+        {
+          "caller": "constructor",
+          "callee": "this.attachShadow",
+          "lineNumber": 485
+        },
+        {
+          "caller": "constructor",
+          "callee": "createRoot",
+          "lineNumber": 486
+        },
+        {
+          "caller": "constructor",
+          "callee": "act",
+          "lineNumber": 487
+        },
+        {
+          "caller": "constructor",
+          "callee": "this.reactRoot.render",
+          "lineNumber": 487
+        },
+        {
+          "caller": "getNearestAttribute",
+          "callee": "node.getAttribute",
+          "lineNumber": 541
+        },
+        {
+          "caller": "getNearestAttribute",
+          "callee": "getNearestAttribute",
+          "lineNumber": 555
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/primitive/src/aria-hidden.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 242,
+      "nonEmptyLines": 208,
+      "functions": [
+        {
+          "name": "unwrapHost",
+          "startLine": 33,
+          "endLine": 35,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "correctTargets",
+          "startLine": 37,
+          "endLine": 61,
+          "params": [
+            "parent",
+            "targets"
+          ]
+        },
+        {
+          "name": "applyAttributeToOthers",
+          "startLine": 71,
+          "endLine": 186,
+          "params": [
+            "originalTargets",
+            "parentNode",
+            "markerName",
+            "controlAttribute"
+          ]
+        },
+        {
+          "name": "hideOthers",
+          "startLine": 196,
+          "endLine": 202,
+          "params": [
+            "originalTargets",
+            "parentNode",
+            "markerName"
+          ]
+        },
+        {
+          "name": "inertOthers",
+          "startLine": 212,
+          "endLine": 218,
+          "params": [
+            "originalTargets",
+            "parentNode",
+            "markerName"
+          ]
+        },
+        {
+          "name": "supportsInert",
+          "startLine": 220,
+          "endLine": 222,
+          "params": []
+        },
+        {
+          "name": "suppressOthers",
+          "startLine": 233,
+          "endLine": 239,
+          "params": [
+            "originalTargets",
+            "parentNode",
+            "markerName"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "hideOthers",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "inertOthers",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "supportsInert",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "suppressOthers",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "Undo",
+          "line": 242,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "unwrapHost",
+          "callee": "unwrapHost",
+          "lineNumber": 34
+        },
+        {
+          "caller": "correctTargets",
+          "callee": "parent.contains",
+          "lineNumber": 40
+        },
+        {
+          "caller": "correctTargets",
+          "callee": "correctedTargets.add",
+          "lineNumber": 41
+        },
+        {
+          "caller": "correctTargets",
+          "callee": "unwrapHost",
+          "lineNumber": 43
+        },
+        {
+          "caller": "correctTargets",
+          "callee": "parent.contains",
+          "lineNumber": 44
+        },
+        {
+          "caller": "correctTargets",
+          "callee": "correctedTargets.add",
+          "lineNumber": 45
+        },
+        {
+          "caller": "correctTargets",
+          "callee": "console.error",
+          "lineNumber": 48
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "correctTargets",
+          "lineNumber": 77
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "parentNode.querySelectorAll",
+          "lineNumber": 82
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "targets.add",
+          "lineNumber": 84
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "markerMap.get",
+          "lineNumber": 87
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "markerMap.set",
+          "lineNumber": 90
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "targets.forEach",
+          "lineNumber": 97
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "deep",
+          "lineNumber": 98
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "elementsToKeep.clear",
+          "lineNumber": 99
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "counterMap.get",
+          "lineNumber": 104
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "markerCounter.get",
+          "lineNumber": 105
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "counterMap.set",
+          "lineNumber": 107
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "markerCounter.set",
+          "lineNumber": 108
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "uncontrolledNodes.has",
+          "lineNumber": 111
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "node.removeAttribute",
+          "lineNumber": 112
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "uncontrolledNodes.delete",
+          "lineNumber": 115
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "node.removeAttribute",
+          "lineNumber": 119
+        },
+        {
+          "caller": "applyAttributeToOthers",
+          "callee": "markerMap.clear",
+          "lineNumber": 129
+        },
+        {
+          "caller": "keep",
+          "callee": "elementsToKeep.has",
+          "lineNumber": 134
+        },
+        {
+          "caller": "keep",
+          "callee": "elementsToKeep.add",
+          "lineNumber": 138
+        },
+        {
+          "caller": "keep",
+          "callee": "keep",
+          "lineNumber": 139
+        },
+        {
+          "caller": "deep",
+          "callee": "elementsToStop.has",
+          "lineNumber": 143
+        },
+        {
+          "caller": "deep",
+          "callee": "SKIPPED_ELEMENTS.has",
+          "lineNumber": 148
+        },
+        {
+          "caller": "deep",
+          "callee": "elementsToKeep.has",
+          "lineNumber": 152
+        },
+        {
+          "caller": "deep",
+          "callee": "deep",
+          "lineNumber": 153
+        },
+        {
+          "caller": "deep",
+          "callee": "node.getAttribute",
+          "lineNumber": 156
+        },
+        {
+          "caller": "deep",
+          "callee": "counterMap.get",
+          "lineNumber": 160
+        },
+        {
+          "caller": "deep",
+          "callee": "markerCounter?.get",
+          "lineNumber": 161
+        },
+        {
+          "caller": "deep",
+          "callee": "counterMap.set",
+          "lineNumber": 163
+        },
+        {
+          "caller": "deep",
+          "callee": "markerCounter?.set",
+          "lineNumber": 164
+        },
+        {
+          "caller": "deep",
+          "callee": "hiddenNodes.add",
+          "lineNumber": 165
+        },
+        {
+          "caller": "deep",
+          "callee": "uncontrolledNodes.set",
+          "lineNumber": 168
+        },
+        {
+          "caller": "deep",
+          "callee": "node.setAttribute",
+          "lineNumber": 172
+        },
+        {
+          "caller": "deep",
+          "callee": "node.setAttribute",
+          "lineNumber": 176
+        },
+        {
+          "caller": "deep",
+          "callee": "console.error",
+          "lineNumber": 180
+        },
+        {
+          "caller": "hideOthers",
+          "callee": "applyAttributeToOthers",
+          "lineNumber": 201
+        },
+        {
+          "caller": "inertOthers",
+          "callee": "applyAttributeToOthers",
+          "lineNumber": 217
+        },
+        {
+          "caller": "supportsInert",
+          "callee": "HTMLElement.prototype.hasOwnProperty",
+          "lineNumber": 221
+        },
+        {
+          "caller": "suppressOthers",
+          "callee": "(supportsInert() ? inertOthers : hideOthers)",
+          "lineNumber": 238
+        },
+        {
+          "caller": "suppressOthers",
+          "callee": "supportsInert",
+          "lineNumber": 238
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 7,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/primitive/src/can-use-dom.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "exports": [
+        {
+          "name": "canUseDOM",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/primitive/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/primitive/src/primitive.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "composeEventHandlers",
+          "startLine": 4,
+          "endLine": 16,
+          "params": [
+            "originalEventHandler",
+            "ourEventHandler",
+            "{ checkForDefaultPrevented = true }"
+          ]
+        },
+        {
+          "name": "getOwnerWindow",
+          "startLine": 18,
+          "endLine": 24,
+          "params": [
+            "element"
+          ]
+        },
+        {
+          "name": "getOwnerDocument",
+          "startLine": 26,
+          "endLine": 32,
+          "params": [
+            "element"
+          ]
+        },
+        {
+          "name": "getActiveElement",
+          "startLine": 38,
+          "endLine": 64,
+          "params": [
+            "node",
+            "activeDescendant"
+          ]
+        },
+        {
+          "name": "isFrame",
+          "startLine": 66,
+          "endLine": 68,
+          "params": [
+            "element"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "composeEventHandlers",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "getOwnerWindow",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "getOwnerDocument",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "getActiveElement",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "isFrame",
+          "line": 66,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "composeEventHandlers",
+          "callee": "originalEventHandler",
+          "lineNumber": 10
+        },
+        {
+          "caller": "composeEventHandlers",
+          "callee": "ourEventHandler",
+          "lineNumber": 13
+        },
+        {
+          "caller": "getActiveElement",
+          "callee": "getOwnerDocument",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getActiveElement",
+          "callee": "isFrame",
+          "lineNumber": 49
+        },
+        {
+          "caller": "getActiveElement",
+          "callee": "getActiveElement",
+          "lineNumber": 50
+        },
+        {
+          "caller": "getActiveElement",
+          "callee": "activeElement.getAttribute",
+          "lineNumber": 54
+        },
+        {
+          "caller": "getActiveElement",
+          "callee": "getOwnerDocument(activeElement).getElementById",
+          "lineNumber": 56
+        },
+        {
+          "caller": "getActiveElement",
+          "callee": "getOwnerDocument",
+          "lineNumber": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/primitive/src/types.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/rect/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "exports": [
+        {
+          "name": "observeElementRect",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "Measurable",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/core/rect/src/observe-element-rect.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 109,
+      "nonEmptyLines": 90,
+      "functions": [
+        {
+          "name": "observeElementRect",
+          "startLine": 11,
+          "endLine": 55,
+          "params": [
+            "elementToObserve",
+            "callback"
+          ]
+        },
+        {
+          "name": "runLoop",
+          "startLine": 70,
+          "endLine": 91,
+          "params": []
+        },
+        {
+          "name": "rectEquals",
+          "startLine": 97,
+          "endLine": 106,
+          "params": [
+            "rect1",
+            "rect2"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "observeElementRect",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "Measurable",
+          "line": 109,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "observeElementRect",
+          "callee": "observedElements.get",
+          "lineNumber": 17
+        },
+        {
+          "caller": "observeElementRect",
+          "callee": "observedElements.set",
+          "lineNumber": 22
+        },
+        {
+          "caller": "observeElementRect",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 26
+        },
+        {
+          "caller": "observeElementRect",
+          "callee": "observedData.callbacks.push",
+          "lineNumber": 30
+        },
+        {
+          "caller": "observeElementRect",
+          "callee": "callback",
+          "lineNumber": 31
+        },
+        {
+          "caller": "observeElementRect",
+          "callee": "elementToObserve.getBoundingClientRect",
+          "lineNumber": 31
+        },
+        {
+          "caller": "observeElementRect",
+          "callee": "observedElements.get",
+          "lineNumber": 35
+        },
+        {
+          "caller": "observeElementRect",
+          "callee": "observedData.callbacks.indexOf",
+          "lineNumber": 39
+        },
+        {
+          "caller": "observeElementRect",
+          "callee": "observedData.callbacks.splice",
+          "lineNumber": 41
+        },
+        {
+          "caller": "observeElementRect",
+          "callee": "observedElements.delete",
+          "lineNumber": 47
+        },
+        {
+          "caller": "observeElementRect",
+          "callee": "cancelAnimationFrame",
+          "lineNumber": 51
+        },
+        {
+          "caller": "runLoop",
+          "callee": "observedElements.forEach",
+          "lineNumber": 74
+        },
+        {
+          "caller": "runLoop",
+          "callee": "element.getBoundingClientRect",
+          "lineNumber": 75
+        },
+        {
+          "caller": "runLoop",
+          "callee": "rectEquals",
+          "lineNumber": 78
+        },
+        {
+          "caller": "runLoop",
+          "callee": "changedRectsData.push",
+          "lineNumber": 80
+        },
+        {
+          "caller": "runLoop",
+          "callee": "changedRectsData.forEach",
+          "lineNumber": 86
+        },
+        {
+          "caller": "runLoop",
+          "callee": "data.callbacks.forEach",
+          "lineNumber": 87
+        },
+        {
+          "caller": "runLoop",
+          "callee": "callback",
+          "lineNumber": 87
+        },
+        {
+          "caller": "runLoop",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 90
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/accessible-icon/src/accesible-icon.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 56,
+      "functions": [
+        {
+          "name": "AccessibleIconTest",
+          "startLine": 10,
+          "endLine": 12,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/accessible-icon/src/accessible-icon.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "AccessibleIcon",
+          "startLine": 13,
+          "endLine": 25,
+          "params": [
+            "{ children, label }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AccessibleIcon",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "AccessibleIconProps",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AccessibleIcon",
+          "callee": "React.Children.only",
+          "lineNumber": 14
+        },
+        {
+          "caller": "AccessibleIcon",
+          "callee": "React.cloneElement",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/accessible-icon/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "exports": [
+        {
+          "name": "AccessibleIcon",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "AccessibleIconProps",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/accordion/src/accordion.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1368,
+      "nonEmptyLines": 1200,
+      "callGraph": [
+        {
+          "caller": "ControlledSingleAccordion",
+          "callee": "React.useState",
+          "lineNumber": 622
+        },
+        {
+          "caller": "ControlledSingleAccordion",
+          "callee": "setValue",
+          "lineNumber": 630
+        },
+        {
+          "caller": "ControlledSingleAccordion",
+          "callee": "onValueChange",
+          "lineNumber": 631
+        },
+        {
+          "caller": "ControlledSingleAccordion",
+          "callee": "ITEMS.map",
+          "lineNumber": 634
+        },
+        {
+          "caller": "ControlledSingleAccordion",
+          "callee": "val.toLowerCase",
+          "lineNumber": 635
+        },
+        {
+          "caller": "ControlledSingleAccordion",
+          "callee": "val.toLowerCase",
+          "lineNumber": 636
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 964
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 988
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 1012
+        },
+        {
+          "caller": "List",
+          "callee": "React.useState",
+          "lineNumber": 1039
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 1043
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 1073
+        },
+        {
+          "caller": "Deferred",
+          "callee": "React.use",
+          "lineNumber": 1105
+        },
+        {
+          "caller": "Deferred",
+          "callee": "React.use",
+          "lineNumber": 1163
+        },
+        {
+          "caller": "List",
+          "callee": "ITEMS.map",
+          "lineNumber": 1310
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/accordion/src/accordion.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 578,
+      "nonEmptyLines": 517,
+      "functions": [
+        {
+          "name": "getState",
+          "startLine": 552,
+          "endLine": 554,
+          "params": [
+            "open"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createAccordionScope",
+          "line": 556,
+          "isDefault": false
+        },
+        {
+          "name": "Accordion",
+          "line": 556,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionItem",
+          "line": 556,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionHeader",
+          "line": 556,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionTrigger",
+          "line": 556,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionContent",
+          "line": 556,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 556,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 556,
+          "isDefault": false
+        },
+        {
+          "name": "Header",
+          "line": 556,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 556,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 556,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionSingleProps",
+          "line": 571,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionMultipleProps",
+          "line": 571,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionItemProps",
+          "line": 571,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionHeaderProps",
+          "line": 571,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionTriggerProps",
+          "line": 571,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionContentProps",
+          "line": 571,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 17,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/accordion/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 24,
+      "exports": [
+        {
+          "name": "createAccordionScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Accordion",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionHeader",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Header",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionSingleProps",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionMultipleProps",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionItemProps",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionHeaderProps",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionTriggerProps",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "AccordionContentProps",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 17,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/alert-dialog/src/alert-dialog.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 543,
+      "nonEmptyLines": 470,
+      "functions": [
+        {
+          "name": "cleanupModal",
+          "startLine": 539,
+          "endLine": 543,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "cleanupModal",
+          "callee": "cleanup",
+          "lineNumber": 540
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/alert-dialog/src/alert-dialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 230,
+      "nonEmptyLines": 193,
+      "functions": [
+        {
+          "name": "AlertDialog",
+          "startLine": 25,
+          "endLine": 29,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "AlertDialogPortal",
+          "startLine": 54,
+          "endLine": 60,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createAlertDialogScope",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialog",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogTrigger",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogPortal",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogOverlay",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogContent",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogAction",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogCancel",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogTitle",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogDescription",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "Overlay",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "Action",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "Cancel",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "Title",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "Description",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogProps",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogTriggerProps",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogPortalProps",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogOverlayProps",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogContentProps",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogActionProps",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogCancelProps",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogTitleProps",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogDescriptionProps",
+          "line": 220,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AlertDialog",
+          "callee": "useDialogScope",
+          "lineNumber": 27
+        },
+        {
+          "caller": "AlertDialogPortal",
+          "callee": "useDialogScope",
+          "lineNumber": 58
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 28,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    }
+  ]
+}

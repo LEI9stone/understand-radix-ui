@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/compose-refs/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/compose-refs/CHANGELOG.md",
+      "summary": "记录引用组合工具的 RSC 兼容回滚、CI 来源证明重新发布及仓库元数据更新。",
+      "tags": [
+        "变更记录",
+        "引用组合",
+        "版本发布"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/compose-refs/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/compose-refs/README.md",
+      "summary": "声明引用组合是内部工具，不面向公共使用。",
+      "tags": [
+        "包文档",
+        "引用组合",
+        "使用范围"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/compose-refs/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/compose-refs/package.json",
+      "summary": "声明 ref 组合工具的源码与 ESM/CommonJS 发布入口，配置 React peer 依赖及内部构建工具，无运行时工作区依赖。",
+      "tags": [
+        "包配置",
+        "引用组合",
+        "模块发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/compose-refs/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/compose-refs/tsconfig.json",
+      "summary": "为引用组合包继承内部 React 库 TypeScript 编译规则，将 src 纳入编译并将产物定位到 dist。",
+      "tags": [
+        "编译配置",
+        "React库",
+        "TypeScript"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/compose-refs/README.md",
+      "target": "config:packages/react/compose-refs/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/compose-refs/CHANGELOG.md",
+      "target": "config:packages/react/compose-refs/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/compose-refs/tsconfig.json",
+      "target": "config:packages/react/compose-refs/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

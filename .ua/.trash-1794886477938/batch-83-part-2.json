@@ -1,0 +1,1540 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/storybook/stories/aspect-ratio.stories.tsx",
+      "type": "file",
+      "name": "aspect-ratio.stories.tsx",
+      "filePath": "apps/storybook/stories/aspect-ratio.stories.tsx",
+      "summary": "展示 AspectRatio 约束图像容器比例的方式，覆盖默认与自定义宽高比。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/aspect-ratio.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/aspect-ratio.stories.tsx",
+      "lineRange": [
+        14,
+        20
+      ],
+      "summary": "组合 AspectRatio 比例容器 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/aspect-ratio.stories.tsx:CustomRatios",
+      "type": "function",
+      "name": "CustomRatios",
+      "filePath": "apps/storybook/stories/aspect-ratio.stories.tsx",
+      "lineRange": [
+        22,
+        39
+      ],
+      "summary": "使用多个自定义比例渲染图片区域，对比 AspectRatio 对容器高度的约束。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/aspect-ratio.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/aspect-ratio.stories.tsx",
+      "lineRange": [
+        41,
+        66
+      ],
+      "summary": "集中排列 AspectRatio 比例容器 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/avatar.stories.tsx",
+      "type": "file",
+      "name": "avatar.stories.tsx",
+      "filePath": "apps/storybook/stories/avatar.stories.tsx",
+      "summary": "展示 Avatar 图片与回退内容，并通过切换图片地址检验加载及错误回退。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/avatar.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/avatar.stories.tsx",
+      "lineRange": [
+        11,
+        51
+      ],
+      "summary": "组合 Avatar 头像 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/avatar.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/avatar.stories.tsx",
+      "lineRange": [
+        53,
+        88
+      ],
+      "summary": "集中排列 Avatar 头像 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/avatar.stories.tsx:SourceChanger",
+      "type": "function",
+      "name": "SourceChanger",
+      "filePath": "apps/storybook/stories/avatar.stories.tsx",
+      "lineRange": [
+        100,
+        116
+      ],
+      "summary": "定时轮换 sources 中的图片地址，将当前地址通过渲染回调传给子组件，并在卸载时清理定时器。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "type": "file",
+      "name": "checkbox.stories.tsx",
+      "filePath": "apps/storybook/stories/checkbox.stories.tsx",
+      "summary": "覆盖 Checkbox 分部件与旧接口的受控、半选、表单和动画场景，用于观察原生表单事件与选中状态同步。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/checkbox.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/checkbox.stories.tsx",
+      "lineRange": [
+        8,
+        63
+      ],
+      "summary": "组合 Checkbox 复选框 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/checkbox.stories.tsx:Controlled",
+      "type": "function",
+      "name": "Controlled",
+      "filePath": "apps/storybook/stories/checkbox.stories.tsx",
+      "lineRange": [
+        65,
+        79
+      ],
+      "summary": "用 React 状态控制 Checkbox 复选框，将状态更新回调与界面显示保持同步。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/checkbox.stories.tsx:Indeterminate",
+      "type": "function",
+      "name": "Indeterminate",
+      "filePath": "apps/storybook/stories/checkbox.stories.tsx",
+      "lineRange": [
+        81,
+        106
+      ],
+      "summary": "以受控状态在半选与布尔选中值之间切换，演示 Checkbox 的三态行为。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/checkbox.stories.tsx:WithinForm",
+      "type": "function",
+      "name": "WithinForm",
+      "filePath": "apps/storybook/stories/checkbox.stories.tsx",
+      "lineRange": [
+        108,
+        254
+      ],
+      "summary": "组合多个复选框字段，收集表单与字段变化数据，验证受控值、事件冒泡和必填等表单行为。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyStyled",
+      "type": "function",
+      "name": "LegacyStyled",
+      "filePath": "apps/storybook/stories/checkbox.stories.tsx",
+      "lineRange": [
+        256,
+        303
+      ],
+      "summary": "用旧版 Checkbox 根节点与指示器接口展示带样式的复选框。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyControlled",
+      "type": "function",
+      "name": "LegacyControlled",
+      "filePath": "apps/storybook/stories/checkbox.stories.tsx",
+      "lineRange": [
+        305,
+        322
+      ],
+      "summary": "使用 React 状态控制旧版 Checkbox 的选中值。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyIndeterminate",
+      "type": "function",
+      "name": "LegacyIndeterminate",
+      "filePath": "apps/storybook/stories/checkbox.stories.tsx",
+      "lineRange": [
+        324,
+        347
+      ],
+      "summary": "切换旧版 Checkbox 的半选状态与普通选中状态。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyWithinForm",
+      "type": "function",
+      "name": "LegacyWithinForm",
+      "filePath": "apps/storybook/stories/checkbox.stories.tsx",
+      "lineRange": [
+        349,
+        420
+      ],
+      "summary": "将旧版 Checkbox 放入表单，记录提交数据并观察字段变化事件的传播。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyAnimated",
+      "type": "function",
+      "name": "LegacyAnimated",
+      "filePath": "apps/storybook/stories/checkbox.stories.tsx",
+      "lineRange": [
+        422,
+        445
+      ],
+      "summary": "为旧版 Checkbox 指示器添加动画，使用受控选中值触发状态过渡。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyChromatic",
+      "type": "function",
+      "name": "LegacyChromatic",
+      "filePath": "apps/storybook/stories/checkbox.stories.tsx",
+      "lineRange": [
+        447,
+        512
+      ],
+      "summary": "排列旧版 Checkbox 的多个选中与禁用展示场景，供 Chromatic 比较视觉结果。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/collapsible.stories.tsx",
+      "type": "file",
+      "name": "collapsible.stories.tsx",
+      "filePath": "apps/storybook/stories/collapsible.stories.tsx",
+      "summary": "展示 Collapsible 的受控展开、垂直及水平动画，并汇集视觉回归场景。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/collapsible.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/collapsible.stories.tsx",
+      "lineRange": [
+        7,
+        12
+      ],
+      "summary": "组合 Collapsible 折叠区域 的基础部件和展示样式，提供可直接操作的组件使用示例。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/collapsible.stories.tsx:Controlled",
+      "type": "function",
+      "name": "Controlled",
+      "filePath": "apps/storybook/stories/collapsible.stories.tsx",
+      "lineRange": [
+        14,
+        26
+      ],
+      "summary": "用 React 状态控制 Collapsible 折叠区域，将状态更新回调与界面显示保持同步。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/collapsible.stories.tsx:Animated",
+      "type": "function",
+      "name": "Animated",
+      "filePath": "apps/storybook/stories/collapsible.stories.tsx",
+      "lineRange": [
+        28,
+        48
+      ],
+      "summary": "为 Collapsible 折叠区域 应用状态相关动画样式，演示交互过程中的视觉过渡。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/collapsible.stories.tsx:AnimatedHorizontal",
+      "type": "function",
+      "name": "AnimatedHorizontal",
+      "filePath": "apps/storybook/stories/collapsible.stories.tsx",
+      "lineRange": [
+        50,
+        59
+      ],
+      "summary": "使用水平尺寸动画展示 Collapsible 内容展开和收起。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/collapsible.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/collapsible.stories.tsx",
+      "lineRange": [
+        61,
+        114
+      ],
+      "summary": "集中排列 Collapsible 折叠区域 的不同展示状态与布局，为 Chromatic 视觉回归提供稳定截图场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/collection.stories.tsx",
+      "type": "file",
+      "name": "collection.stories.tsx",
+      "filePath": "apps/storybook/stories/collection.stories.tsx",
+      "summary": "验证 Collection 按 DOM 顺序收集条目时对包装元素、片段、动态插入、嵌套及视图过渡重排的处理。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/collection.stories.tsx:Basic",
+      "type": "function",
+      "name": "Basic",
+      "filePath": "apps/storybook/stories/collection.stories.tsx",
+      "lineRange": [
+        8,
+        15
+      ],
+      "summary": "渲染一组基本 Collection 条目，建立条目收集顺序的参考场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/collection.stories.tsx:WithElementInBetween",
+      "type": "function",
+      "name": "WithElementInBetween",
+      "filePath": "apps/storybook/stories/collection.stories.tsx",
+      "lineRange": [
+        17,
+        28
+      ],
+      "summary": "在集合条目之间插入非条目元素，检验集合只登记真实条目。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/collection.stories.tsx:WithWrappedItem",
+      "type": "function",
+      "name": "WithWrappedItem",
+      "filePath": "apps/storybook/stories/collection.stories.tsx",
+      "lineRange": [
+        32,
+        40
+      ],
+      "summary": "将集合条目放入额外包装层，演示跨组件包装的条目收集。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/collection.stories.tsx:WithFragment",
+      "type": "function",
+      "name": "WithFragment",
+      "filePath": "apps/storybook/stories/collection.stories.tsx",
+      "lineRange": [
+        42,
+        56
+      ],
+      "summary": "使用 React Fragment 组织条目，检验片段不会干扰条目顺序。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/collection.stories.tsx:DynamicInsertion",
+      "type": "function",
+      "name": "DynamicInsertion",
+      "filePath": "apps/storybook/stories/collection.stories.tsx",
+      "lineRange": [
+        58,
+        76
+      ],
+      "summary": "通过按钮动态插入条目并强制更新，检验集合登记结果随 DOM 变化更新。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/collection.stories.tsx:WrappedItems",
+      "type": "function",
+      "name": "WrappedItems",
+      "filePath": "apps/storybook/stories/collection.stories.tsx",
+      "lineRange": [
+        78,
+        87
+      ],
+      "summary": "根据 hasTomato 条件在包装组件内插入条目，服务于动态插入场景。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/collection.stories.tsx:WithChangingItem",
+      "type": "function",
+      "name": "WithChangingItem",
+      "filePath": "apps/storybook/stories/collection.stories.tsx",
+      "lineRange": [
+        89,
+        105
+      ],
+      "summary": "动态切换条目禁用状态，验证集合中的条目元数据能够更新。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/collection.stories.tsx:Nested",
+      "type": "function",
+      "name": "Nested",
+      "filePath": "apps/storybook/stories/collection.stories.tsx",
+      "lineRange": [
+        107,
+        122
+      ],
+      "summary": "嵌套多个集合，检验内外集合的登记作用域保持独立。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/collection.stories.tsx:ViewTransitionReorder",
+      "type": "function",
+      "name": "ViewTransitionReorder",
+      "filePath": "apps/storybook/stories/collection.stories.tsx",
+      "lineRange": [
+        172,
+        219
+      ],
+      "summary": "在 React 过渡中反转、移除或更新水果条目，检验视图过渡期间集合索引和排序。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/collection.stories.tsx:TransitionItem",
+      "type": "function",
+      "name": "TransitionItem",
+      "filePath": "apps/storybook/stories/collection.stories.tsx",
+      "lineRange": [
+        221,
+        232
+      ],
+      "summary": "读取过渡集合并计算自身索引，展示条目在重排前后的定位信息。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "type": "file",
+      "name": "dismissable-layer.stories.tsx",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "summary": "演示 DismissableLayer 的外部点击、焦点、Escape 关闭策略，并组合焦点作用域与滚动锁构造多层对话框和弹出层。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/dismissable-layer.stories.tsx:Basic",
+      "type": "function",
+      "name": "Basic",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "lineRange": [
+        23,
+        125
+      ],
+      "summary": "通过开关配置 Escape、外部指针和外部焦点的关闭策略，以及外部指针事件禁用行为。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dismissable-layer.stories.tsx:Nested",
+      "type": "function",
+      "name": "Nested",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "lineRange": [
+        127,
+        134
+      ],
+      "summary": "嵌套可关闭区域，展示层级之间的外部交互判定。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dismissable-layer.stories.tsx:WithFocusScope",
+      "type": "function",
+      "name": "WithFocusScope",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "lineRange": [
+        136,
+        187
+      ],
+      "summary": "组合焦点限制区域与可关闭层，检验焦点恢复和外部交互关闭的配合。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dismissable-layer.stories.tsx:DismissableBox",
+      "type": "function",
+      "name": "DismissableBox",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "lineRange": [
+        191,
+        227
+      ],
+      "summary": "维护独立区域的开关状态和引用，处理外部交互时的取消及关闭。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dismissable-layer.stories.tsx:DialogExample",
+      "type": "function",
+      "name": "DialogExample",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "lineRange": [
+        229,
+        255
+      ],
+      "summary": "组合示例对话框与可交互子元素，演示模态层内外的操作行为。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverFullyModal",
+      "type": "function",
+      "name": "PopoverFullyModal",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "lineRange": [
+        257,
+        288
+      ],
+      "summary": "演示完全模态弹出层对焦点和外部交互的限制。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverSemiModal",
+      "type": "function",
+      "name": "PopoverSemiModal",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "lineRange": [
+        290,
+        344
+      ],
+      "summary": "维护弹出层颜色等状态，在部分外部交互中阻止默认行为，展示半模态层策略。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverNonModal",
+      "type": "function",
+      "name": "PopoverNonModal",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "lineRange": [
+        346,
+        393
+      ],
+      "summary": "展示允许外围交互的非模态弹出层及其关闭行为。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverInDialog",
+      "type": "function",
+      "name": "PopoverInDialog",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "lineRange": [
+        395,
+        416
+      ],
+      "summary": "在对话框中嵌套弹出层，验证内外层的关闭和焦点管理。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverNested",
+      "type": "function",
+      "name": "PopoverNested",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "lineRange": [
+        418,
+        473
+      ],
+      "summary": "组合多级弹出层并记录外围交互，检验事件在不同层级的分发。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dismissable-layer.stories.tsx:DummyDialog",
+      "type": "function",
+      "name": "DummyDialog",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "lineRange": [
+        485,
+        548
+      ],
+      "summary": "用焦点作用域、可关闭层及滚动限制实现供故事复用的示例模态对话框。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dismissable-layer.stories.tsx:DummyPopover",
+      "type": "function",
+      "name": "DummyPopover",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "lineRange": [
+        561,
+        648
+      ],
+      "summary": "构造可配置焦点限制、滚动阻止及外部事件处理的弹出层，并管理关闭后的焦点恢复。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "内部组件"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/dismissable-layer.stories.tsx:InPopupWindow",
+      "type": "function",
+      "name": "InPopupWindow",
+      "filePath": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "lineRange": [
+        650,
+        668
+      ],
+      "summary": "创建独立浏览器窗口并挂载可关闭层，验证组件使用所属文档处理交互。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/focus-scope.stories.tsx",
+      "type": "file",
+      "name": "focus-scope.stories.tsx",
+      "filePath": "apps/storybook/stories/focus-scope.stories.tsx",
+      "summary": "展示 FocusScope 的焦点限制、多作用域协调和挂载卸载时的自动聚焦选项。",
+      "tags": [
+        "组件演示",
+        "交互验证",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/focus-scope.stories.tsx:Basic",
+      "type": "function",
+      "name": "Basic",
+      "filePath": "apps/storybook/stories/focus-scope.stories.tsx",
+      "lineRange": [
+        6,
+        52
+      ],
+      "summary": "切换焦点限制和销毁按钮，观察 FocusScope 中的焦点循环及卸载行为。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/focus-scope.stories.tsx:Multiple",
+      "type": "function",
+      "name": "Multiple",
+      "filePath": "apps/storybook/stories/focus-scope.stories.tsx",
+      "lineRange": [
+        54,
+        120
+      ],
+      "summary": "并列维护两个焦点作用域的限制状态，检验多个作用域之间的焦点协调。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/focus-scope.stories.tsx:WithOptions",
+      "type": "function",
+      "name": "WithOptions",
+      "filePath": "apps/storybook/stories/focus-scope.stories.tsx",
+      "lineRange": [
+        125,
+        264
+      ],
+      "summary": "交互配置焦点捕获、挂载聚焦、卸载恢复及空表单，支持将焦点移到指定引用元素。",
+      "tags": [
+        "组件示例",
+        "交互逻辑",
+        "导出函数"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/storybook/stories/aspect-ratio.stories.tsx",
+      "target": "file:apps/storybook/stories/aspect-ratio.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/aspect-ratio.stories.tsx",
+      "target": "function:apps/storybook/stories/aspect-ratio.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/aspect-ratio.stories.tsx",
+      "target": "function:apps/storybook/stories/aspect-ratio.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/aspect-ratio.stories.tsx",
+      "target": "function:apps/storybook/stories/aspect-ratio.stories.tsx:CustomRatios",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/aspect-ratio.stories.tsx",
+      "target": "function:apps/storybook/stories/aspect-ratio.stories.tsx:CustomRatios",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/aspect-ratio.stories.tsx",
+      "target": "function:apps/storybook/stories/aspect-ratio.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/aspect-ratio.stories.tsx",
+      "target": "function:apps/storybook/stories/aspect-ratio.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/avatar.stories.tsx",
+      "target": "file:apps/storybook/stories/avatar.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/avatar.stories.tsx",
+      "target": "function:apps/storybook/stories/avatar.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/avatar.stories.tsx",
+      "target": "function:apps/storybook/stories/avatar.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/avatar.stories.tsx",
+      "target": "function:apps/storybook/stories/avatar.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/avatar.stories.tsx",
+      "target": "function:apps/storybook/stories/avatar.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/avatar.stories.tsx",
+      "target": "function:apps/storybook/stories/avatar.stories.tsx:SourceChanger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "file:apps/storybook/stories/checkbox.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:Controlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:Controlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:Indeterminate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:Indeterminate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:WithinForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:WithinForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyStyled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyStyled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyControlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyControlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyIndeterminate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyIndeterminate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyWithinForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyWithinForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyAnimated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyAnimated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyChromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "target": "function:apps/storybook/stories/checkbox.stories.tsx:LegacyChromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collapsible.stories.tsx",
+      "target": "file:apps/storybook/stories/collapsible.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/collapsible.stories.tsx",
+      "target": "function:apps/storybook/stories/collapsible.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collapsible.stories.tsx",
+      "target": "function:apps/storybook/stories/collapsible.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collapsible.stories.tsx",
+      "target": "function:apps/storybook/stories/collapsible.stories.tsx:Controlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collapsible.stories.tsx",
+      "target": "function:apps/storybook/stories/collapsible.stories.tsx:Controlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collapsible.stories.tsx",
+      "target": "function:apps/storybook/stories/collapsible.stories.tsx:Animated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collapsible.stories.tsx",
+      "target": "function:apps/storybook/stories/collapsible.stories.tsx:Animated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collapsible.stories.tsx",
+      "target": "function:apps/storybook/stories/collapsible.stories.tsx:AnimatedHorizontal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collapsible.stories.tsx",
+      "target": "function:apps/storybook/stories/collapsible.stories.tsx:AnimatedHorizontal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collapsible.stories.tsx",
+      "target": "function:apps/storybook/stories/collapsible.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collapsible.stories.tsx",
+      "target": "function:apps/storybook/stories/collapsible.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:Basic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:Basic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:WithElementInBetween",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:WithElementInBetween",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:WithWrappedItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:WithWrappedItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:WithFragment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:WithFragment",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:DynamicInsertion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:DynamicInsertion",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:WrappedItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:WithChangingItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:WithChangingItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:Nested",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:Nested",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:ViewTransitionReorder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:ViewTransitionReorder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/collection.stories.tsx",
+      "target": "function:apps/storybook/stories/collection.stories.tsx:TransitionItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:Basic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:Basic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:Nested",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:Nested",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:WithFocusScope",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:WithFocusScope",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:DismissableBox",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:DialogExample",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:DialogExample",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverFullyModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverFullyModal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverSemiModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverSemiModal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverNonModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverNonModal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverInDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverInDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverNested",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:PopoverNested",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:DummyDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:DummyPopover",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:InPopupWindow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/dismissable-layer.stories.tsx",
+      "target": "function:apps/storybook/stories/dismissable-layer.stories.tsx:InPopupWindow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/focus-scope.stories.tsx",
+      "target": "function:apps/storybook/stories/focus-scope.stories.tsx:Basic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/focus-scope.stories.tsx",
+      "target": "function:apps/storybook/stories/focus-scope.stories.tsx:Basic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/focus-scope.stories.tsx",
+      "target": "function:apps/storybook/stories/focus-scope.stories.tsx:Multiple",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/focus-scope.stories.tsx",
+      "target": "function:apps/storybook/stories/focus-scope.stories.tsx:Multiple",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/focus-scope.stories.tsx",
+      "target": "function:apps/storybook/stories/focus-scope.stories.tsx:WithOptions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/focus-scope.stories.tsx",
+      "target": "function:apps/storybook/stories/focus-scope.stories.tsx:WithOptions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,856 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 25,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/popper/src/popper.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 496,
+      "nonEmptyLines": 438,
+      "functions": [
+        {
+          "name": "Popper",
+          "startLine": 64,
+          "endLine": 79,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "isNotNull",
+          "startLine": 434,
+          "endLine": 436,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "transformOrigin",
+          "startLine": 438,
+          "endLine": 473,
+          "params": [
+            "options"
+          ]
+        },
+        {
+          "name": "getSideAndAlignFromPlacement",
+          "startLine": 475,
+          "endLine": 478,
+          "params": [
+            "placement"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createPopperScope",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "Popper",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "PopperAnchor",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "PopperContent",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "PopperArrow",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "Anchor",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "SIDE_OPTIONS",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "ALIGN_OPTIONS",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "PopperProps",
+          "line": 496,
+          "isDefault": false
+        },
+        {
+          "name": "PopperAnchorProps",
+          "line": 496,
+          "isDefault": false
+        },
+        {
+          "name": "PopperContentProps",
+          "line": 496,
+          "isDefault": false
+        },
+        {
+          "name": "PopperArrowProps",
+          "line": 496,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Popper",
+          "callee": "React.useState",
+          "lineNumber": 66
+        },
+        {
+          "caller": "Popper",
+          "callee": "React.useState",
+          "lineNumber": 67
+        },
+        {
+          "caller": "fn",
+          "callee": "getSideAndAlignFromPlacement",
+          "lineNumber": 449
+        },
+        {
+          "caller": "getSideAndAlignFromPlacement",
+          "callee": "placement.split",
+          "lineNumber": 476
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/portal/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "exports": [
+        {
+          "name": "Portal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PortalProps",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/portal/src/portal.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 94,
+      "nonEmptyLines": 80,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/portal/src/portal.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 33,
+      "exports": [
+        {
+          "name": "Portal",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "PortalProps",
+          "line": 38,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/presence/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "exports": [
+        {
+          "name": "Presence",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PresenceProps",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/primitive/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "exports": [
+        {
+          "name": "Primitive",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "dispatchDiscreteCustomEvent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PrimitivePropsWithRef",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/primitive/src/primitive.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 344,
+      "nonEmptyLines": 290,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/primitive/src/primitive.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 116,
+      "nonEmptyLines": 101,
+      "functions": [
+        {
+          "name": "dispatchDiscreteCustomEvent",
+          "startLine": 103,
+          "endLine": 105,
+          "params": [
+            "target",
+            "event"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Primitive",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "dispatchDiscreteCustomEvent",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "PrimitivePropsWithRef",
+          "line": 116,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "dispatchDiscreteCustomEvent",
+          "callee": "ReactDOM.flushSync",
+          "lineNumber": 104
+        },
+        {
+          "caller": "dispatchDiscreteCustomEvent",
+          "callee": "target.dispatchEvent",
+          "lineNumber": 104
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/progress/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "exports": [
+        {
+          "name": "createProgressScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Progress",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ProgressIndicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Indicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ProgressProps",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "ProgressIndicatorProps",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/progress/src/progress.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 127,
+      "nonEmptyLines": 109,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/progress/src/progress.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 160,
+      "nonEmptyLines": 134,
+      "functions": [
+        {
+          "name": "defaultGetValueLabel",
+          "startLine": 106,
+          "endLine": 108,
+          "params": [
+            "value",
+            "max"
+          ]
+        },
+        {
+          "name": "getProgressState",
+          "startLine": 110,
+          "endLine": 112,
+          "params": [
+            "value",
+            "maxValue"
+          ]
+        },
+        {
+          "name": "isNumber",
+          "startLine": 114,
+          "endLine": 116,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "isValidMaxNumber",
+          "startLine": 118,
+          "endLine": 125,
+          "params": [
+            "max"
+          ]
+        },
+        {
+          "name": "isValidValueNumber",
+          "startLine": 127,
+          "endLine": 135,
+          "params": [
+            "value",
+            "max"
+          ]
+        },
+        {
+          "name": "getInvalidMaxError",
+          "startLine": 138,
+          "endLine": 140,
+          "params": [
+            "propValue",
+            "componentName"
+          ]
+        },
+        {
+          "name": "getInvalidValueError",
+          "startLine": 142,
+          "endLine": 149,
+          "params": [
+            "propValue",
+            "componentName"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createProgressScope",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "Progress",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "ProgressIndicator",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "Indicator",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "ProgressProps",
+          "line": 160,
+          "isDefault": false
+        },
+        {
+          "name": "ProgressIndicatorProps",
+          "line": 160,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "defaultGetValueLabel",
+          "callee": "Math.round",
+          "lineNumber": 107
+        },
+        {
+          "caller": "isValidMaxNumber",
+          "callee": "isNumber",
+          "lineNumber": 121
+        },
+        {
+          "caller": "isValidMaxNumber",
+          "callee": "isNaN",
+          "lineNumber": 122
+        },
+        {
+          "caller": "isValidValueNumber",
+          "callee": "isNumber",
+          "lineNumber": 130
+        },
+        {
+          "caller": "isValidValueNumber",
+          "callee": "isNaN",
+          "lineNumber": 131
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 7,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radio-group/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 26,
+      "exports": [
+        {
+          "name": "createRadioGroupScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_RadioGroupItemProvider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_RadioGroupItemTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_RadioGroupItemBubbleInput",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupIndicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_ItemProvider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_ItemTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_ItemBubbleInput",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Indicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupItemProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_RadioGroupItemProviderProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_RadioGroupItemTriggerProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "unstable_RadioGroupItemBubbleInputProps",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroupIndicatorProps",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/src/accessible-icon.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/src/accordion.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/src/alert-dialog.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/src/aspect-ratio.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/src/avatar.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/src/checkbox.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/src/collapsible.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/src/context-menu.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/src/dialog.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/src/direction.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/src/dropdown-menu.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/src/form.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/radix-ui/src/hover-card.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

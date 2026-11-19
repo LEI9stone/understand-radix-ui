@@ -1,0 +1,107 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/slider/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/slider/CHANGELOG.md",
+      "summary": "按版本记录滑块包的发布变更与依赖更新，最新章节为 1.6.1。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "滑块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/slider/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/slider/README.md",
+      "summary": "标识 slider 包并提供进一步文档入口，作为滑块模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "滑块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/slider/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/slider/package.json",
+      "summary": "定义 @radix-ui/react-slider 的源入口、发布导出、构建脚本和 React 对等依赖，配置滑块包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "滑块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/slider/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/slider/tsconfig.json",
+      "summary": "配置滑块包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "滑块"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/slider/CHANGELOG.md",
+      "target": "config:packages/react/slider/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/slider/README.md",
+      "target": "config:packages/react/slider/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/slider/package.json",
+      "target": "document:packages/react/slider/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/slider/tsconfig.json",
+      "target": "config:packages/react/slider/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/slider/package.json",
+      "target": "file:packages/react/slider/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/react/slider/tsconfig.json",
+      "target": "file:packages/react/slider/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/slider/README.md",
+      "target": "file:packages/react/slider/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

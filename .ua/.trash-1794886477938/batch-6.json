@@ -1,0 +1,531 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/ssr-testing/app/slot/client.tsx",
+      "type": "file",
+      "name": "client.tsx",
+      "filePath": "apps/ssr-testing/app/slot/client.tsx",
+      "summary": "在客户端边界定义 Link、Button 与多层 Slottable 测试组件，覆盖 asChild、ref 转发及渲染函数形式的插槽组合。",
+      "tags": [
+        "客户端组件",
+        "插槽",
+        "服务端渲染"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/client.tsx:Link",
+      "type": "function",
+      "name": "Link",
+      "filePath": "apps/ssr-testing/app/slot/client.tsx",
+      "lineRange": [
+        6,
+        12
+      ],
+      "summary": "根据 asChild 选择 Slot.Root 或原生 a，并把属性和 ref 转发到实际节点。",
+      "tags": [
+        "客户端组件",
+        "插槽",
+        "服务端渲染"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/client.tsx:LinkSlottable",
+      "type": "function",
+      "name": "LinkSlottable",
+      "filePath": "apps/ssr-testing/app/slot/client.tsx",
+      "lineRange": [
+        14,
+        26
+      ],
+      "summary": "在链接左右插入辅助内容，并以 Slottable 指明应接收合并属性的子元素。",
+      "tags": [
+        "客户端组件",
+        "插槽",
+        "服务端渲染"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/client.tsx:LinkButton",
+      "type": "function",
+      "name": "LinkButton",
+      "filePath": "apps/ssr-testing/app/slot/client.tsx",
+      "lineRange": [
+        28,
+        37
+      ],
+      "summary": "把 Link 放入 asChild Button，验证两层可组合组件的属性与 ref 透传。",
+      "tags": [
+        "客户端组件",
+        "插槽",
+        "服务端渲染"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/client.tsx:Button",
+      "type": "function",
+      "name": "Button",
+      "filePath": "apps/ssr-testing/app/slot/client.tsx",
+      "lineRange": [
+        39,
+        45
+      ],
+      "summary": "根据 asChild 使用 Slot.Root 或原生 button，并附加测试用的 flex 布局。",
+      "tags": [
+        "客户端组件",
+        "插槽",
+        "服务端渲染"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/client.tsx:ButtonSlottable",
+      "type": "function",
+      "name": "ButtonSlottable",
+      "filePath": "apps/ssr-testing/app/slot/client.tsx",
+      "lineRange": [
+        47,
+        59
+      ],
+      "summary": "在按钮的左右内容之间指定 Slottable 子节点，验证多子元素结构下的插槽合并。",
+      "tags": [
+        "客户端组件",
+        "插槽",
+        "服务端渲染"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/client.tsx:ButtonNestedSlottable",
+      "type": "function",
+      "name": "ButtonNestedSlottable",
+      "filePath": "apps/ssr-testing/app/slot/client.tsx",
+      "lineRange": [
+        61,
+        79
+      ],
+      "summary": "用 Slottable 的 child 与渲染函数将目标嵌套在加粗内容中，验证深层插槽定位。",
+      "tags": [
+        "客户端组件",
+        "插槽",
+        "服务端渲染"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/client.tsx:IconButtonNestedSlottable",
+      "type": "function",
+      "name": "IconButtonNestedSlottable",
+      "filePath": "apps/ssr-testing/app/slot/client.tsx",
+      "lineRange": [
+        81,
+        99
+      ],
+      "summary": "将图标与加粗目标放进嵌套 Slot，验证嵌套插槽与按钮包装的组合。",
+      "tags": [
+        "客户端组件",
+        "插槽",
+        "服务端渲染"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/slot/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/slot/page.tsx",
+      "summary": "并列渲染服务端与客户端的多种 Link/Button/Slottable 嵌套案例，展示 SSR 与水合边界上的插槽兼容性。",
+      "tags": [
+        "测试页面",
+        "插槽",
+        "服务端渲染"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/slot/page.tsx",
+      "lineRange": [
+        5,
+        141
+      ],
+      "summary": "组织服务端和客户端组件组合矩阵，比较 asChild、左右附属内容与深层 Slottable 的实际输出。",
+      "tags": [
+        "测试页面",
+        "插槽",
+        "服务端渲染"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/slot/server.tsx",
+      "type": "file",
+      "name": "server.tsx",
+      "filePath": "apps/ssr-testing/app/slot/server.tsx",
+      "summary": "提供服务器侧的对照版 Link/Button/Slottable 组合，并在图标按钮内部嵌入 Client.Button，检查跨客户端边界的嵌套插槽。",
+      "tags": [
+        "服务端组件",
+        "插槽",
+        "组件组合"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/server.tsx:Link",
+      "type": "function",
+      "name": "Link",
+      "filePath": "apps/ssr-testing/app/slot/server.tsx",
+      "lineRange": [
+        5,
+        11
+      ],
+      "summary": "根据 asChild 选择 Slot.Root 或原生 a，并把属性和 ref 转发到实际节点。",
+      "tags": [
+        "服务端组件",
+        "插槽",
+        "组件组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/server.tsx:LinkSlottable",
+      "type": "function",
+      "name": "LinkSlottable",
+      "filePath": "apps/ssr-testing/app/slot/server.tsx",
+      "lineRange": [
+        13,
+        25
+      ],
+      "summary": "在链接左右插入辅助内容，并以 Slottable 指明应接收合并属性的子元素。",
+      "tags": [
+        "服务端组件",
+        "插槽",
+        "组件组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/server.tsx:LinkButton",
+      "type": "function",
+      "name": "LinkButton",
+      "filePath": "apps/ssr-testing/app/slot/server.tsx",
+      "lineRange": [
+        27,
+        36
+      ],
+      "summary": "把 Link 放入 asChild Button，验证两层可组合组件的属性与 ref 透传。",
+      "tags": [
+        "服务端组件",
+        "插槽",
+        "组件组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/server.tsx:Button",
+      "type": "function",
+      "name": "Button",
+      "filePath": "apps/ssr-testing/app/slot/server.tsx",
+      "lineRange": [
+        38,
+        44
+      ],
+      "summary": "根据 asChild 使用 Slot.Root 或原生 button，并附加测试用的 flex 布局。",
+      "tags": [
+        "服务端组件",
+        "插槽",
+        "组件组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/server.tsx:ButtonSlottable",
+      "type": "function",
+      "name": "ButtonSlottable",
+      "filePath": "apps/ssr-testing/app/slot/server.tsx",
+      "lineRange": [
+        46,
+        58
+      ],
+      "summary": "在按钮的左右内容之间指定 Slottable 子节点，验证多子元素结构下的插槽合并。",
+      "tags": [
+        "服务端组件",
+        "插槽",
+        "组件组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/server.tsx:ButtonNestedSlottable",
+      "type": "function",
+      "name": "ButtonNestedSlottable",
+      "filePath": "apps/ssr-testing/app/slot/server.tsx",
+      "lineRange": [
+        60,
+        78
+      ],
+      "summary": "用 Slottable 的 child 与渲染函数将目标嵌套在加粗内容中，验证深层插槽定位。",
+      "tags": [
+        "服务端组件",
+        "插槽",
+        "组件组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/slot/server.tsx:IconButtonNestedSlottable",
+      "type": "function",
+      "name": "IconButtonNestedSlottable",
+      "filePath": "apps/ssr-testing/app/slot/server.tsx",
+      "lineRange": [
+        80,
+        98
+      ],
+      "summary": "将图标与加粗目标放进嵌套 Slot，验证嵌套插槽与按钮包装的组合。",
+      "tags": [
+        "服务端组件",
+        "插槽",
+        "组件组合"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:Link",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:Link",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:LinkSlottable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:LinkSlottable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:LinkButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:LinkButton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:Button",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:Button",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:ButtonSlottable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:ButtonSlottable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:ButtonNestedSlottable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:ButtonNestedSlottable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:IconButtonNestedSlottable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/client.tsx",
+      "target": "function:apps/ssr-testing/app/slot/client.tsx:IconButtonNestedSlottable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/page.tsx",
+      "target": "file:apps/ssr-testing/app/slot/client.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/page.tsx",
+      "target": "file:apps/ssr-testing/app/slot/server.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/page.tsx",
+      "target": "function:apps/ssr-testing/app/slot/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/page.tsx",
+      "target": "function:apps/ssr-testing/app/slot/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "file:apps/ssr-testing/app/slot/client.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:Link",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:Link",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:LinkSlottable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:LinkSlottable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:LinkButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:LinkButton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:Button",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:Button",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:ButtonSlottable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:ButtonSlottable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:ButtonNestedSlottable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:ButtonNestedSlottable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:IconButtonNestedSlottable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/slot/server.tsx",
+      "target": "function:apps/ssr-testing/app/slot/server.tsx:IconButtonNestedSlottable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

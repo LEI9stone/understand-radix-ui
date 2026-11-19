@@ -1,0 +1,4019 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 25,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/context-menu/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 56,
+      "exports": [
+        {
+          "name": "createContextMenuScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenu",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuPortal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuLabel",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuCheckboxItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuRadioGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuRadioItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuItemIndicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuSeparator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuArrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuSub",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuSubTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuSubContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Group",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Label",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "CheckboxItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "RadioItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ItemIndicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Separator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Sub",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SubTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SubContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuTriggerProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuPortalProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuContentProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuGroupProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuLabelProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuItemProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuCheckboxItemProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuRadioGroupProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuRadioItemProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuItemIndicatorProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuSeparatorProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuArrowProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuSubProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuSubTriggerProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ContextMenuSubContentProps",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 49,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/context/src/create-context.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 228,
+      "nonEmptyLines": 193,
+      "functions": [
+        {
+          "name": "createContext",
+          "startLine": 26,
+          "endLine": 63,
+          "params": [
+            "rootComponentName",
+            "defaultContext"
+          ]
+        },
+        {
+          "name": "createContextScope",
+          "startLine": 106,
+          "endLine": 183,
+          "params": [
+            "scopeName",
+            "createContextScopeDeps"
+          ]
+        },
+        {
+          "name": "composeContextScopes",
+          "startLine": 189,
+          "endLine": 215,
+          "params": [
+            "...scopes"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createContext",
+          "line": 219,
+          "isDefault": false
+        },
+        {
+          "name": "createContextScope",
+          "line": 219,
+          "isDefault": false
+        },
+        {
+          "name": "CreateScope",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "CreateScopedContext",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "Scope",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "UseAssertedContext",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "UseAssertedScopedContext",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "UseContext",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "UseScopedContext",
+          "line": 220,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createContext",
+          "callee": "React.createContext",
+          "lineNumber": 30
+        },
+        {
+          "caller": "Provider",
+          "callee": "React.useMemo",
+          "lineNumber": 37
+        },
+        {
+          "caller": "Provider",
+          "callee": "Object.values",
+          "lineNumber": 37
+        },
+        {
+          "caller": "useContext",
+          "callee": "React.useContext",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createContext",
+          "callee": "React.createContext",
+          "lineNumber": 120
+        },
+        {
+          "caller": "Provider",
+          "callee": "React.useMemo",
+          "lineNumber": 130
+        },
+        {
+          "caller": "Provider",
+          "callee": "Object.values",
+          "lineNumber": 130
+        },
+        {
+          "caller": "useContext",
+          "callee": "React.useContext",
+          "lineNumber": 153
+        },
+        {
+          "caller": "createScope",
+          "callee": "defaultContexts.map",
+          "lineNumber": 169
+        },
+        {
+          "caller": "createScope",
+          "callee": "React.createContext",
+          "lineNumber": 170
+        },
+        {
+          "caller": "createScope",
+          "callee": "React.useMemo",
+          "lineNumber": 174
+        },
+        {
+          "caller": "createContextScope",
+          "callee": "composeContextScopes",
+          "lineNumber": 182
+        },
+        {
+          "caller": "createScope",
+          "callee": "scopes.map",
+          "lineNumber": 194
+        },
+        {
+          "caller": "createScope",
+          "callee": "createScope",
+          "lineNumber": 195
+        },
+        {
+          "caller": "createScope",
+          "callee": "scopeHooks.reduce",
+          "lineNumber": 200
+        },
+        {
+          "caller": "createScope",
+          "callee": "useScope",
+          "lineNumber": 204
+        },
+        {
+          "caller": "createScope",
+          "callee": "React.useMemo",
+          "lineNumber": 209
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/context/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "exports": [
+        {
+          "name": "createContext",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "createContextScope",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "CreateScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Scope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "UseAssertedContext",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "UseAssertedScopedContext",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "UseContext",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "UseScopedContext",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/dialog/src/dialog.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1197,
+      "nonEmptyLines": 1049,
+      "functions": [
+        {
+          "name": "DialogTest",
+          "startLine": 16,
+          "endLine": 25,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "cleanupModal",
+          "startLine": 1193,
+          "endLine": 1197,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "waitForScrollLock",
+          "callee": "fireEvent.wheel",
+          "lineNumber": 423
+        },
+        {
+          "caller": "waitForScrollLock",
+          "callee": "act",
+          "lineNumber": 427
+        },
+        {
+          "caller": "waitForScrollLock",
+          "callee": "window.setTimeout",
+          "lineNumber": 428
+        },
+        {
+          "caller": "PortalledBranch",
+          "callee": "React.useState",
+          "lineNumber": 481
+        },
+        {
+          "caller": "PortalledBranch",
+          "callee": "useFocusScopeBranch",
+          "lineNumber": 482
+        },
+        {
+          "caller": "PortalledBranch",
+          "callee": "ReactDOM.createPortal",
+          "lineNumber": 483
+        },
+        {
+          "caller": "TwoDialogsTest",
+          "callee": "React.useState",
+          "lineNumber": 538
+        },
+        {
+          "caller": "TwoDialogsTest",
+          "callee": "React.useState",
+          "lineNumber": 539
+        },
+        {
+          "caller": "TwoDialogsTest",
+          "callee": "setOpenA",
+          "lineNumber": 548
+        },
+        {
+          "caller": "TwoDialogsTest",
+          "callee": "setOpenB",
+          "lineNumber": 558
+        },
+        {
+          "caller": "waitForDocumentPointerDownListener",
+          "callee": "act",
+          "lineNumber": 580
+        },
+        {
+          "caller": "waitForDocumentPointerDownListener",
+          "callee": "window.setTimeout",
+          "lineNumber": 581
+        },
+        {
+          "caller": "firePointerMouseClick",
+          "callee": "fireEvent.pointerDown",
+          "lineNumber": 586
+        },
+        {
+          "caller": "firePointerMouseClick",
+          "callee": "fireEvent.mouseDown",
+          "lineNumber": 587
+        },
+        {
+          "caller": "firePointerMouseClick",
+          "callee": "fireEvent.pointerUp",
+          "lineNumber": 588
+        },
+        {
+          "caller": "firePointerMouseClick",
+          "callee": "fireEvent.mouseUp",
+          "lineNumber": 589
+        },
+        {
+          "caller": "firePointerMouseClick",
+          "callee": "fireEvent.click",
+          "lineNumber": 590
+        },
+        {
+          "caller": "ControlledDialog",
+          "callee": "React.useState",
+          "lineNumber": 601
+        },
+        {
+          "caller": "ControlledDialog",
+          "callee": "React.useState",
+          "lineNumber": 602
+        },
+        {
+          "caller": "ControlledDialog",
+          "callee": "onOpenChange",
+          "lineNumber": 608
+        },
+        {
+          "caller": "ControlledDialog",
+          "callee": "setOpen",
+          "lineNumber": 609
+        },
+        {
+          "caller": "ControlledDialog",
+          "callee": "setMenuOpen",
+          "lineNumber": 616
+        },
+        {
+          "caller": "waitForDocumentPointerDownListener",
+          "callee": "act",
+          "lineNumber": 652
+        },
+        {
+          "caller": "waitForDocumentPointerDownListener",
+          "callee": "window.setTimeout",
+          "lineNumber": 653
+        },
+        {
+          "caller": "cleanupModal",
+          "callee": "cleanup",
+          "lineNumber": 1194
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/dialog/src/dialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 683,
+      "nonEmptyLines": 607,
+      "functions": [
+        {
+          "name": "Dialog",
+          "startLine": 68,
+          "endLine": 130,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "DialogPortal",
+          "startLine": 187,
+          "endLine": 201,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "WarningProvider",
+          "startLine": 610,
+          "endLine": 619,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "concatAriaDescribedby",
+          "startLine": 624,
+          "endLine": 638,
+          "params": [
+            "...values"
+          ]
+        },
+        {
+          "name": "getState",
+          "startLine": 640,
+          "endLine": 642,
+          "params": [
+            "open"
+          ]
+        },
+        {
+          "name": "toValidId",
+          "startLine": 644,
+          "endLine": 651,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "WarningProvider",
+          "line": 610,
+          "isDefault": false
+        },
+        {
+          "name": "createDialogScope",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "Dialog",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "DialogTrigger",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "DialogPortal",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "DialogOverlay",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "DialogContent",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "DialogTitle",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "DialogDescription",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "DialogClose",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "Overlay",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "Title",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "Description",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "Close",
+          "line": 653,
+          "isDefault": false
+        },
+        {
+          "name": "DialogProps",
+          "line": 674,
+          "isDefault": false
+        },
+        {
+          "name": "DialogTriggerProps",
+          "line": 674,
+          "isDefault": false
+        },
+        {
+          "name": "DialogPortalProps",
+          "line": 674,
+          "isDefault": false
+        },
+        {
+          "name": "DialogOverlayProps",
+          "line": 674,
+          "isDefault": false
+        },
+        {
+          "name": "DialogContentProps",
+          "line": 674,
+          "isDefault": false
+        },
+        {
+          "name": "DialogTitleProps",
+          "line": 674,
+          "isDefault": false
+        },
+        {
+          "name": "DialogDescriptionProps",
+          "line": 674,
+          "isDefault": false
+        },
+        {
+          "name": "DialogCloseProps",
+          "line": 674,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Dialog",
+          "callee": "React.useRef",
+          "lineNumber": 77
+        },
+        {
+          "caller": "Dialog",
+          "callee": "React.useRef",
+          "lineNumber": 78
+        },
+        {
+          "caller": "Dialog",
+          "callee": "useFocusScopeBranchRegistry",
+          "lineNumber": 79
+        },
+        {
+          "caller": "Dialog",
+          "callee": "useControllableState",
+          "lineNumber": 80
+        },
+        {
+          "caller": "Dialog",
+          "callee": "useId",
+          "lineNumber": 87
+        },
+        {
+          "caller": "Dialog",
+          "callee": "useId",
+          "lineNumber": 88
+        },
+        {
+          "caller": "Dialog",
+          "callee": "React.useState",
+          "lineNumber": 89
+        },
+        {
+          "caller": "Dialog",
+          "callee": "React.useState",
+          "lineNumber": 90
+        },
+        {
+          "caller": "Dialog",
+          "callee": "React.useState",
+          "lineNumber": 91
+        },
+        {
+          "caller": "Dialog",
+          "callee": "React.useState",
+          "lineNumber": 93
+        },
+        {
+          "caller": "Dialog",
+          "callee": "React.useEffect",
+          "lineNumber": 97
+        },
+        {
+          "caller": "Dialog",
+          "callee": "console.warn",
+          "lineNumber": 99
+        },
+        {
+          "caller": "Dialog",
+          "callee": "React.useCallback",
+          "lineNumber": 122
+        },
+        {
+          "caller": "Dialog",
+          "callee": "setOpen",
+          "lineNumber": 122
+        },
+        {
+          "caller": "DialogPortal",
+          "callee": "useDialogContext",
+          "lineNumber": 189
+        },
+        {
+          "caller": "DialogPortal",
+          "callee": "React.Children.map",
+          "lineNumber": 192
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "value.trim().split",
+          "lineNumber": 630
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "value.trim",
+          "lineNumber": 630
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "ids.add",
+          "lineNumber": 632
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "Array.from(ids).join",
+          "lineNumber": 637
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "Array.from",
+          "lineNumber": 637
+        },
+        {
+          "caller": "toValidId",
+          "callee": "String",
+          "lineNumber": 648
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 26,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/dialog/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 34,
+      "exports": [
+        {
+          "name": "createDialogScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Dialog",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DialogTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DialogPortal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DialogOverlay",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DialogContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DialogTitle",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DialogDescription",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DialogClose",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Overlay",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Title",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Description",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Close",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "WarningProvider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DialogProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "DialogTriggerProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "DialogPortalProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "DialogOverlayProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "DialogContentProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "DialogTitleProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "DialogDescriptionProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "DialogCloseProps",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 26,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/direction/src/direction.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "DirectionProvider",
+          "startLine": 20,
+          "endLine": 23,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "useDirection",
+          "startLine": 27,
+          "endLine": 30,
+          "params": [
+            "localDir"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useDirection",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "Provider",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "DirectionProvider",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useDirection",
+          "callee": "React.useContext",
+          "lineNumber": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/direction/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 8,
+      "exports": [
+        {
+          "name": "useDirection",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Provider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DirectionProvider",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/dismissable-layer/src/dismissable-layer.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 817,
+      "nonEmptyLines": 652,
+      "functions": [
+        {
+          "name": "waitForDocumentPointerDownListener",
+          "startLine": 7,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "renderDismissableLayer",
+          "startLine": 13,
+          "endLine": 26,
+          "params": [
+            "props",
+            "extraContent"
+          ]
+        },
+        {
+          "name": "dispatchComposedPointerDown",
+          "startLine": 28,
+          "endLine": 36,
+          "params": [
+            "target"
+          ]
+        },
+        {
+          "name": "firePointerMouseClick",
+          "startLine": 38,
+          "endLine": 44,
+          "params": [
+            "target"
+          ]
+        },
+        {
+          "name": "ShadowButton",
+          "startLine": 46,
+          "endLine": 63,
+          "params": []
+        },
+        {
+          "name": "cleanupLayer",
+          "startLine": 813,
+          "endLine": 817,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "waitForDocumentPointerDownListener",
+          "callee": "act",
+          "lineNumber": 8
+        },
+        {
+          "caller": "waitForDocumentPointerDownListener",
+          "callee": "window.setTimeout",
+          "lineNumber": 9
+        },
+        {
+          "caller": "renderDismissableLayer",
+          "callee": "render",
+          "lineNumber": 17
+        },
+        {
+          "caller": "dispatchComposedPointerDown",
+          "callee": "target.dispatchEvent",
+          "lineNumber": 29
+        },
+        {
+          "caller": "firePointerMouseClick",
+          "callee": "fireEvent.pointerDown",
+          "lineNumber": 39
+        },
+        {
+          "caller": "firePointerMouseClick",
+          "callee": "fireEvent.mouseDown",
+          "lineNumber": 40
+        },
+        {
+          "caller": "firePointerMouseClick",
+          "callee": "fireEvent.pointerUp",
+          "lineNumber": 41
+        },
+        {
+          "caller": "firePointerMouseClick",
+          "callee": "fireEvent.mouseUp",
+          "lineNumber": 42
+        },
+        {
+          "caller": "firePointerMouseClick",
+          "callee": "fireEvent.click",
+          "lineNumber": 43
+        },
+        {
+          "caller": "ShadowButton",
+          "callee": "React.useRef",
+          "lineNumber": 47
+        },
+        {
+          "caller": "ShadowButton",
+          "callee": "React.useEffect",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ShadowButton",
+          "callee": "host.attachShadow",
+          "lineNumber": 55
+        },
+        {
+          "caller": "ShadowButton",
+          "callee": "document.createElement",
+          "lineNumber": 56
+        },
+        {
+          "caller": "ShadowButton",
+          "callee": "shadowRoot.append",
+          "lineNumber": 59
+        },
+        {
+          "caller": "DispatchClickOnMount",
+          "callee": "React.useEffect",
+          "lineNumber": 201
+        },
+        {
+          "caller": "DispatchClickOnMount",
+          "callee": "targetRef.current?.dispatchEvent",
+          "lineNumber": 202
+        },
+        {
+          "caller": "Test",
+          "callee": "React.useRef",
+          "lineNumber": 209
+        },
+        {
+          "caller": "stopPropagation",
+          "callee": "event.stopPropagation",
+          "lineNumber": 304
+        },
+        {
+          "caller": "stopPropagation",
+          "callee": "event.stopPropagation",
+          "lineNumber": 324
+        },
+        {
+          "caller": "Surface",
+          "callee": "DismissableLayer.useDismissableLayerSurface",
+          "lineNumber": 341
+        },
+        {
+          "caller": "Surface",
+          "callee": "event.stopPropagation",
+          "lineNumber": 343
+        },
+        {
+          "caller": "Surface",
+          "callee": "DismissableLayer.useDismissableLayerSurface",
+          "lineNumber": 368
+        },
+        {
+          "caller": "Surface",
+          "callee": "event.stopPropagation",
+          "lineNumber": 370
+        },
+        {
+          "caller": "Surface",
+          "callee": "DismissableLayer.useDismissableLayerSurface",
+          "lineNumber": 395
+        },
+        {
+          "caller": "Surface",
+          "callee": "event.stopPropagation",
+          "lineNumber": 397
+        },
+        {
+          "caller": "stopPropagation",
+          "callee": "event.stopPropagation",
+          "lineNumber": 417
+        },
+        {
+          "caller": "Surface",
+          "callee": "DismissableLayer.useDismissableLayerSurface",
+          "lineNumber": 436
+        },
+        {
+          "caller": "stopPropagation",
+          "callee": "event.stopPropagation",
+          "lineNumber": 467
+        },
+        {
+          "caller": "Test",
+          "callee": "React.useState",
+          "lineNumber": 557
+        },
+        {
+          "caller": "Test",
+          "callee": "onEscapeKeyDown",
+          "lineNumber": 559
+        },
+        {
+          "caller": "Test",
+          "callee": "setCount",
+          "lineNumber": 560
+        },
+        {
+          "caller": "Test",
+          "callee": "React.useState",
+          "lineNumber": 582
+        },
+        {
+          "caller": "Test",
+          "callee": "event.preventDefault",
+          "lineNumber": 586
+        },
+        {
+          "caller": "Test",
+          "callee": "setBlocked",
+          "lineNumber": 590
+        },
+        {
+          "caller": "handleUpdate",
+          "callee": "screen.getByTestId",
+          "lineNumber": 736
+        },
+        {
+          "caller": "cleanupLayer",
+          "callee": "cleanup",
+          "lineNumber": 814
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 604,
+      "nonEmptyLines": 547,
+      "functions": [
+        {
+          "name": "NOOP_CLICK_LISTENER_FOR_IOS_SAFARI_TAPS",
+          "startLine": 296,
+          "endLine": 296,
+          "params": []
+        },
+        {
+          "name": "useDismissableLayerSurface",
+          "startLine": 301,
+          "endLine": 318,
+          "params": []
+        },
+        {
+          "name": "IS_TRUE",
+          "startLine": 323,
+          "endLine": 323,
+          "params": []
+        },
+        {
+          "name": "usePointerDownOutside",
+          "startLine": 330,
+          "endLine": 542,
+          "params": [
+            "onPointerDownOutside",
+            "args"
+          ]
+        },
+        {
+          "name": "useFocusOutside",
+          "startLine": 548,
+          "endLine": 572,
+          "params": [
+            "onFocusOutside",
+            "ownerDocument"
+          ]
+        },
+        {
+          "name": "dispatchUpdate",
+          "startLine": 574,
+          "endLine": 577,
+          "params": []
+        },
+        {
+          "name": "handleAndDispatchCustomEvent",
+          "startLine": 579,
+          "endLine": 594,
+          "params": [
+            "name",
+            "handler",
+            "detail",
+            "{ discrete }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DismissableLayer",
+          "line": 596,
+          "isDefault": false
+        },
+        {
+          "name": "DismissableLayerBranch",
+          "line": 596,
+          "isDefault": false
+        },
+        {
+          "name": "useDismissableLayerSurface",
+          "line": 596,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 596,
+          "isDefault": false
+        },
+        {
+          "name": "Branch",
+          "line": 596,
+          "isDefault": false
+        },
+        {
+          "name": "DismissableLayerProps",
+          "line": 604,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "handleUpdate",
+          "callee": "force",
+          "lineNumber": 238
+        },
+        {
+          "caller": "useDismissableLayerSurface",
+          "callee": "React.useContext",
+          "lineNumber": 302
+        },
+        {
+          "caller": "useDismissableLayerSurface",
+          "callee": "React.useState",
+          "lineNumber": 303
+        },
+        {
+          "caller": "useDismissableLayerSurface",
+          "callee": "React.useEffect",
+          "lineNumber": 305
+        },
+        {
+          "caller": "useDismissableLayerSurface",
+          "callee": "context.dismissableSurfaces.add",
+          "lineNumber": 309
+        },
+        {
+          "caller": "useDismissableLayerSurface",
+          "callee": "node.addEventListener",
+          "lineNumber": 310
+        },
+        {
+          "caller": "useDismissableLayerSurface",
+          "callee": "context.dismissableSurfaces.delete",
+          "lineNumber": 312
+        },
+        {
+          "caller": "useDismissableLayerSurface",
+          "callee": "node.removeEventListener",
+          "lineNumber": 313
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "useCallbackRef",
+          "lineNumber": 349
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "React.useRef",
+          "lineNumber": 350
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "React.useRef",
+          "lineNumber": 351
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "React.useRef",
+          "lineNumber": 352
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "React.useRef",
+          "lineNumber": 353
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "React.useEffect",
+          "lineNumber": 355
+        },
+        {
+          "caller": "resetOutsideInteraction",
+          "callee": "interceptedOutsideInteractionEventsRef.current.clear",
+          "lineNumber": 361
+        },
+        {
+          "caller": "isOutsideInteractionIntercepted",
+          "callee": "Array.from(interceptedOutsideInteractionEventsRef.current.values()).some",
+          "lineNumber": 365
+        },
+        {
+          "caller": "isOutsideInteractionIntercepted",
+          "callee": "Array.from",
+          "lineNumber": 365
+        },
+        {
+          "caller": "isOutsideInteractionIntercepted",
+          "callee": "interceptedOutsideInteractionEventsRef.current.values",
+          "lineNumber": 365
+        },
+        {
+          "caller": "handleInteractionCapture",
+          "callee": "[...dismissableSurfaces].some",
+          "lineNumber": 376
+        },
+        {
+          "caller": "handleInteractionCapture",
+          "callee": "surface.contains",
+          "lineNumber": 376
+        },
+        {
+          "caller": "handleInteractionCapture",
+          "callee": "interceptedOutsideInteractionEventsRef.current.set",
+          "lineNumber": 379
+        },
+        {
+          "caller": "handleInteractionCapture",
+          "callee": "window.setTimeout",
+          "lineNumber": 383
+        },
+        {
+          "caller": "handleInteractionCapture",
+          "callee": "timers.delete",
+          "lineNumber": 384
+        },
+        {
+          "caller": "handleInteractionCapture",
+          "callee": "handleClickRef.current",
+          "lineNumber": 386
+        },
+        {
+          "caller": "handleInteractionCapture",
+          "callee": "timers.add",
+          "lineNumber": 389
+        },
+        {
+          "caller": "handleInteractionBubble",
+          "callee": "interceptedOutsideInteractionEventsRef.current.set",
+          "lineNumber": 395
+        },
+        {
+          "caller": "handlePointerDown",
+          "callee": "shouldHandlePointerDownOutside",
+          "lineNumber": 401
+        },
+        {
+          "caller": "handlePointerDown",
+          "callee": "ownerDocument.removeEventListener",
+          "lineNumber": 402
+        },
+        {
+          "caller": "handlePointerDown",
+          "callee": "resetOutsideInteraction",
+          "lineNumber": 403
+        },
+        {
+          "caller": "handlePointerDown",
+          "callee": "interceptedOutsideInteractionEventsRef.current.clear",
+          "lineNumber": 411
+        },
+        {
+          "caller": "handleAndDispatchPointerDownOutsideEvent",
+          "callee": "ownerDocument.removeEventListener",
+          "lineNumber": 414
+        },
+        {
+          "caller": "handleAndDispatchPointerDownOutsideEvent",
+          "callee": "isOutsideInteractionIntercepted",
+          "lineNumber": 415
+        },
+        {
+          "caller": "handleAndDispatchPointerDownOutsideEvent",
+          "callee": "resetOutsideInteraction",
+          "lineNumber": 416
+        },
+        {
+          "caller": "handleAndDispatchPointerDownOutsideEvent",
+          "callee": "handleAndDispatchCustomEvent",
+          "lineNumber": 419
+        },
+        {
+          "caller": "handlePointerDown",
+          "callee": "handleAndDispatchPointerDownOutsideEvent",
+          "lineNumber": 455
+        },
+        {
+          "caller": "handlePointerDown",
+          "callee": "ownerDocument.removeEventListener",
+          "lineNumber": 457
+        },
+        {
+          "caller": "handlePointerDown",
+          "callee": "handleAndDispatchPointerDownOutsideEvent",
+          "lineNumber": 460
+        },
+        {
+          "caller": "handlePointerDown",
+          "callee": "queueMicrotask",
+          "lineNumber": 467
+        },
+        {
+          "caller": "handlePointerDown",
+          "callee": "handleAndDispatchPointerDownOutsideEvent",
+          "lineNumber": 469
+        },
+        {
+          "caller": "handlePointerDown",
+          "callee": "ownerDocument.addEventListener",
+          "lineNumber": 473
+        },
+        {
+          "caller": "handlePointerDown",
+          "callee": "ownerDocument.removeEventListener",
+          "lineNumber": 478
+        },
+        {
+          "caller": "handlePointerDown",
+          "callee": "resetOutsideInteraction",
+          "lineNumber": 479
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "ownerDocument.addEventListener",
+          "lineNumber": 494
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "ownerDocument.addEventListener",
+          "lineNumber": 495
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "window.setTimeout",
+          "lineNumber": 511
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "timers.delete",
+          "lineNumber": 512
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "ownerDocument.addEventListener",
+          "lineNumber": 513
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "timers.add",
+          "lineNumber": 515
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "resetOutsideInteraction",
+          "lineNumber": 518
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "window.clearTimeout",
+          "lineNumber": 520
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "ownerDocument.removeEventListener",
+          "lineNumber": 522
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "ownerDocument.removeEventListener",
+          "lineNumber": 523
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "ownerDocument.removeEventListener",
+          "lineNumber": 525
+        },
+        {
+          "caller": "usePointerDownOutside",
+          "callee": "ownerDocument.removeEventListener",
+          "lineNumber": 526
+        },
+        {
+          "caller": "useFocusOutside",
+          "callee": "useCallbackRef",
+          "lineNumber": 552
+        },
+        {
+          "caller": "useFocusOutside",
+          "callee": "React.useRef",
+          "lineNumber": 553
+        },
+        {
+          "caller": "useFocusOutside",
+          "callee": "React.useEffect",
+          "lineNumber": 555
+        },
+        {
+          "caller": "handleFocus",
+          "callee": "handleAndDispatchCustomEvent",
+          "lineNumber": 559
+        },
+        {
+          "caller": "useFocusOutside",
+          "callee": "ownerDocument.addEventListener",
+          "lineNumber": 564
+        },
+        {
+          "caller": "useFocusOutside",
+          "callee": "ownerDocument.removeEventListener",
+          "lineNumber": 565
+        },
+        {
+          "caller": "dispatchUpdate",
+          "callee": "document.dispatchEvent",
+          "lineNumber": 576
+        },
+        {
+          "caller": "handleAndDispatchCustomEvent",
+          "callee": "target.addEventListener",
+          "lineNumber": 587
+        },
+        {
+          "caller": "handleAndDispatchCustomEvent",
+          "callee": "dispatchDiscreteCustomEvent",
+          "lineNumber": 590
+        },
+        {
+          "caller": "handleAndDispatchCustomEvent",
+          "callee": "target.dispatchEvent",
+          "lineNumber": 592
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 7,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/dismissable-layer/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "exports": [
+        {
+          "name": "DismissableLayer",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DismissableLayerBranch",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Branch",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "useDismissableLayerSurface",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DismissableLayerProps",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/dropdown-menu/src/dropdown-menu.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1286,
+      "nonEmptyLines": 1131,
+      "functions": [
+        {
+          "name": "DropdownMenuTest",
+          "startLine": 13,
+          "endLine": 22,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "DropdownMenuWithSubTest",
+          "startLine": 24,
+          "endLine": 41,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "cleanupModal",
+          "startLine": 1282,
+          "endLine": 1286,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "MenuWithPortaledInput",
+          "callee": "event.preventDefault",
+          "lineNumber": 99
+        },
+        {
+          "caller": "MenuWithPortaledInput",
+          "callee": "ReactDOM.createPortal",
+          "lineNumber": 101
+        },
+        {
+          "caller": "renderClosed",
+          "callee": "render",
+          "lineNumber": 156
+        },
+        {
+          "caller": "renderClosed",
+          "callee": "waitFor",
+          "lineNumber": 157
+        },
+        {
+          "caller": "renderClosed",
+          "callee": "screen.getByText",
+          "lineNumber": 157
+        },
+        {
+          "caller": "renderClosed",
+          "callee": "rerender",
+          "lineNumber": 158
+        },
+        {
+          "caller": "renderClosed",
+          "callee": "screen.getByTestId",
+          "lineNumber": 159
+        },
+        {
+          "caller": "renderClosed",
+          "callee": "input.focus",
+          "lineNumber": 160
+        },
+        {
+          "caller": "renderClosedSub",
+          "callee": "render",
+          "lineNumber": 196
+        },
+        {
+          "caller": "renderClosedSub",
+          "callee": "waitFor",
+          "lineNumber": 197
+        },
+        {
+          "caller": "renderClosedSub",
+          "callee": "screen.getByText",
+          "lineNumber": 197
+        },
+        {
+          "caller": "renderClosedSub",
+          "callee": "rerender",
+          "lineNumber": 198
+        },
+        {
+          "caller": "renderClosedSub",
+          "callee": "screen.getByText",
+          "lineNumber": 199
+        },
+        {
+          "caller": "renderClosedSub",
+          "callee": "item.focus",
+          "lineNumber": 200
+        },
+        {
+          "caller": "cleanupModal",
+          "callee": "cleanup",
+          "lineNumber": 1283
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 531,
+      "nonEmptyLines": 468,
+      "functions": [
+        {
+          "name": "DropdownMenu",
+          "startLine": 55,
+          "endLine": 90,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "DropdownMenuPortal",
+          "startLine": 156,
+          "endLine": 162,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "DropdownMenuSub",
+          "startLine": 404,
+          "endLine": 421,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createDropdownMenuScope",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenu",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuTrigger",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuPortal",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuContent",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuGroup",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuLabel",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuItem",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuCheckboxItem",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuRadioGroup",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuRadioItem",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuItemIndicator",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSeparator",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuArrow",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSub",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSubTrigger",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSubContent",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Group",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Label",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "CheckboxItem",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroup",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "RadioItem",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "ItemIndicator",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Separator",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Sub",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "SubTrigger",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "SubContent",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuTriggerProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuPortalProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuContentProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuGroupProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuLabelProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuItemProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuCheckboxItemProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuRadioGroupProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuRadioItemProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuItemIndicatorProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSeparatorProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuArrowProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSubProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSubTriggerProps",
+          "line": 514,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSubContentProps",
+          "line": 514,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DropdownMenu",
+          "callee": "useMenuScope",
+          "lineNumber": 65
+        },
+        {
+          "caller": "DropdownMenu",
+          "callee": "React.useRef",
+          "lineNumber": 66
+        },
+        {
+          "caller": "DropdownMenu",
+          "callee": "useControllableState",
+          "lineNumber": 67
+        },
+        {
+          "caller": "DropdownMenu",
+          "callee": "useId",
+          "lineNumber": 77
+        },
+        {
+          "caller": "DropdownMenu",
+          "callee": "useId",
+          "lineNumber": 79
+        },
+        {
+          "caller": "DropdownMenu",
+          "callee": "React.useCallback",
+          "lineNumber": 82
+        },
+        {
+          "caller": "DropdownMenu",
+          "callee": "setOpen",
+          "lineNumber": 82
+        },
+        {
+          "caller": "DropdownMenuPortal",
+          "callee": "useMenuScope",
+          "lineNumber": 160
+        },
+        {
+          "caller": "DropdownMenuSub",
+          "callee": "useMenuScope",
+          "lineNumber": 408
+        },
+        {
+          "caller": "DropdownMenuSub",
+          "callee": "useControllableState",
+          "lineNumber": 409
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 49,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/dropdown-menu/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 56,
+      "exports": [
+        {
+          "name": "createDropdownMenuScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenu",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuPortal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuLabel",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuCheckboxItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuRadioGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuRadioItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuItemIndicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSeparator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuArrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSub",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSubTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSubContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Group",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Label",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "CheckboxItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "RadioItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ItemIndicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Separator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Sub",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SubTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SubContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuTriggerProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuPortalProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuContentProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuGroupProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuLabelProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuItemProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuCheckboxItemProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuRadioGroupProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuRadioItemProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuItemIndicatorProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSeparatorProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuArrowProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSubProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSubTriggerProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSubContentProps",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 49,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/focus-guards/src/focus-guards.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 128,
+      "nonEmptyLines": 110,
+      "functions": [
+        {
+          "name": "Guarded",
+          "startLine": 6,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "getGuards",
+          "startLine": 11,
+          "endLine": 13,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Guarded",
+          "callee": "useFocusGuards",
+          "lineNumber": 7
+        },
+        {
+          "caller": "getGuards",
+          "callee": "document.querySelectorAll",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/focus-guards/src/focus-guards.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 67,
+      "functions": [
+        {
+          "name": "FocusGuards",
+          "startLine": 17,
+          "endLine": 20,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "useFocusGuards",
+          "startLine": 26,
+          "endLine": 57,
+          "params": []
+        },
+        {
+          "name": "createFocusGuard",
+          "startLine": 59,
+          "endLine": 68,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FocusGuards",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "useFocusGuards",
+          "line": 70,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "FocusGuards",
+          "callee": "useFocusGuards",
+          "lineNumber": 18
+        },
+        {
+          "caller": "useFocusGuards",
+          "callee": "React.useEffect",
+          "lineNumber": 27
+        },
+        {
+          "caller": "useFocusGuards",
+          "callee": "createFocusGuard",
+          "lineNumber": 29
+        },
+        {
+          "caller": "useFocusGuards",
+          "callee": "createFocusGuard",
+          "lineNumber": 29
+        },
+        {
+          "caller": "useFocusGuards",
+          "callee": "document.body.insertAdjacentElement",
+          "lineNumber": 41
+        },
+        {
+          "caller": "useFocusGuards",
+          "callee": "document.body.insertAdjacentElement",
+          "lineNumber": 44
+        },
+        {
+          "caller": "useFocusGuards",
+          "callee": "guards?.start.remove",
+          "lineNumber": 50
+        },
+        {
+          "caller": "useFocusGuards",
+          "callee": "guards?.end.remove",
+          "lineNumber": 51
+        },
+        {
+          "caller": "useFocusGuards",
+          "callee": "Math.max",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createFocusGuard",
+          "callee": "document.createElement",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createFocusGuard",
+          "callee": "element.setAttribute",
+          "lineNumber": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/focus-guards/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 8,
+      "exports": [
+        {
+          "name": "FocusGuards",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "useFocusGuards",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/focus-scope/src/focus-scope.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 407,
+      "nonEmptyLines": 360,
+      "functions": [
+        {
+          "name": "TestField",
+          "startLine": 307,
+          "endLine": 314,
+          "params": [
+            "{ label, ...props }"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "BranchHarness",
+          "callee": "React.useState",
+          "lineNumber": 131
+        },
+        {
+          "caller": "TestField",
+          "callee": "label.toLowerCase",
+          "lineNumber": 311
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/focus-scope/src/focus-scope.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 488,
+      "nonEmptyLines": 435,
+      "functions": [
+        {
+          "name": "FocusScopeBranchProvider",
+          "startLine": 283,
+          "endLine": 290,
+          "params": [
+            "{ registry, children }"
+          ]
+        },
+        {
+          "name": "useFocusScopeBranchRegistry",
+          "startLine": 292,
+          "endLine": 302,
+          "params": []
+        },
+        {
+          "name": "useFocusScopeBranch",
+          "startLine": 308,
+          "endLine": 315,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "focusFirst",
+          "startLine": 325,
+          "endLine": 331,
+          "params": [
+            "candidates",
+            "{ select = false }"
+          ]
+        },
+        {
+          "name": "getTabbableEdges",
+          "startLine": 336,
+          "endLine": 341,
+          "params": [
+            "container"
+          ]
+        },
+        {
+          "name": "getTabbableCandidates",
+          "startLine": 353,
+          "endLine": 377,
+          "params": [
+            "container"
+          ]
+        },
+        {
+          "name": "findVisible",
+          "startLine": 383,
+          "endLine": 402,
+          "params": [
+            "elements",
+            "container"
+          ]
+        },
+        {
+          "name": "isHidden",
+          "startLine": 404,
+          "endLine": 413,
+          "params": [
+            "node",
+            "{ upTo }"
+          ]
+        },
+        {
+          "name": "isSelectableInput",
+          "startLine": 415,
+          "endLine": 420,
+          "params": [
+            "element"
+          ]
+        },
+        {
+          "name": "focus",
+          "startLine": 422,
+          "endLine": 435,
+          "params": [
+            "element",
+            "{ select = false }"
+          ]
+        },
+        {
+          "name": "createFocusScopesStack",
+          "startLine": 444,
+          "endLine": 465,
+          "params": []
+        },
+        {
+          "name": "arrayRemove",
+          "startLine": 467,
+          "endLine": 474,
+          "params": [
+            "array",
+            "item"
+          ]
+        },
+        {
+          "name": "removeLinks",
+          "startLine": 476,
+          "endLine": 478,
+          "params": [
+            "items"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FocusScope",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "FocusScopeBranchProvider",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "useFocusScopeBranchRegistry",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "useFocusScopeBranch",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 480,
+          "isDefault": false
+        },
+        {
+          "name": "FocusScopeProps",
+          "line": 488,
+          "isDefault": false
+        },
+        {
+          "name": "FocusScopeBranchProviderProps",
+          "line": 488,
+          "isDefault": false
+        },
+        {
+          "name": "FocusScopeBranchRegistry",
+          "line": 488,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "handleFocusIn",
+          "callee": "isTargetInScope",
+          "lineNumber": 106
+        },
+        {
+          "caller": "handleFocusIn",
+          "callee": "focus",
+          "lineNumber": 109
+        },
+        {
+          "caller": "handleFocusOut",
+          "callee": "isTargetInScope",
+          "lineNumber": 136
+        },
+        {
+          "caller": "handleFocusOut",
+          "callee": "focus",
+          "lineNumber": 137
+        },
+        {
+          "caller": "handleMutations",
+          "callee": "focus",
+          "lineNumber": 148
+        },
+        {
+          "caller": "useFocusScopeBranchRegistry",
+          "callee": "React.useState",
+          "lineNumber": 293
+        },
+        {
+          "caller": "useFocusScopeBranchRegistry",
+          "callee": "React.useMemo",
+          "lineNumber": 294
+        },
+        {
+          "caller": "useFocusScopeBranchRegistry",
+          "callee": "setNodes",
+          "lineNumber": 296
+        },
+        {
+          "caller": "useFocusScopeBranchRegistry",
+          "callee": "prev.includes",
+          "lineNumber": 296
+        },
+        {
+          "caller": "useFocusScopeBranchRegistry",
+          "callee": "setNodes",
+          "lineNumber": 297
+        },
+        {
+          "caller": "useFocusScopeBranchRegistry",
+          "callee": "prev.filter",
+          "lineNumber": 297
+        },
+        {
+          "caller": "useFocusScopeBranch",
+          "callee": "React.useContext",
+          "lineNumber": 309
+        },
+        {
+          "caller": "useFocusScopeBranch",
+          "callee": "React.useEffect",
+          "lineNumber": 310
+        },
+        {
+          "caller": "useFocusScopeBranch",
+          "callee": "registry.add",
+          "lineNumber": 312
+        },
+        {
+          "caller": "useFocusScopeBranch",
+          "callee": "registry.remove",
+          "lineNumber": 313
+        },
+        {
+          "caller": "focusFirst",
+          "callee": "focus",
+          "lineNumber": 328
+        },
+        {
+          "caller": "getTabbableEdges",
+          "callee": "getTabbableCandidates",
+          "lineNumber": 337
+        },
+        {
+          "caller": "getTabbableEdges",
+          "callee": "findVisible",
+          "lineNumber": 338
+        },
+        {
+          "caller": "getTabbableEdges",
+          "callee": "findVisible",
+          "lineNumber": 339
+        },
+        {
+          "caller": "getTabbableEdges",
+          "callee": "candidates.reverse",
+          "lineNumber": 339
+        },
+        {
+          "caller": "getTabbableCandidates",
+          "callee": "document.createTreeWalker",
+          "lineNumber": 356
+        },
+        {
+          "caller": "getTabbableCandidates",
+          "callee": "walker.nextNode",
+          "lineNumber": 371
+        },
+        {
+          "caller": "getTabbableCandidates",
+          "callee": "nodes.push",
+          "lineNumber": 372
+        },
+        {
+          "caller": "findVisible",
+          "callee": "container.checkVisibility",
+          "lineNumber": 391
+        },
+        {
+          "caller": "findVisible",
+          "callee": "element.checkVisibility",
+          "lineNumber": 395
+        },
+        {
+          "caller": "findVisible",
+          "callee": "isHidden",
+          "lineNumber": 396
+        },
+        {
+          "caller": "isHidden",
+          "callee": "getComputedStyle",
+          "lineNumber": 405
+        },
+        {
+          "caller": "isHidden",
+          "callee": "getComputedStyle",
+          "lineNumber": 409
+        },
+        {
+          "caller": "focus",
+          "callee": "element.focus",
+          "lineNumber": 430
+        },
+        {
+          "caller": "focus",
+          "callee": "isSelectableInput",
+          "lineNumber": 432
+        },
+        {
+          "caller": "focus",
+          "callee": "element.select",
+          "lineNumber": 433
+        },
+        {
+          "caller": "add",
+          "callee": "activeFocusScope?.pause",
+          "lineNumber": 453
+        },
+        {
+          "caller": "add",
+          "callee": "arrayRemove",
+          "lineNumber": 456
+        },
+        {
+          "caller": "add",
+          "callee": "stack.unshift",
+          "lineNumber": 457
+        },
+        {
+          "caller": "remove",
+          "callee": "arrayRemove",
+          "lineNumber": 461
+        },
+        {
+          "caller": "remove",
+          "callee": "stack[0]?.resume",
+          "lineNumber": 462
+        },
+        {
+          "caller": "arrayRemove",
+          "callee": "updatedArray.indexOf",
+          "lineNumber": 469
+        },
+        {
+          "caller": "arrayRemove",
+          "callee": "updatedArray.splice",
+          "lineNumber": 471
+        },
+        {
+          "caller": "removeLinks",
+          "callee": "items.filter",
+          "lineNumber": 477
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 13,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/focus-scope/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 14,
+      "exports": [
+        {
+          "name": "FocusScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "FocusScopeBranchProvider",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "useFocusScopeBranchRegistry",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "useFocusScopeBranch",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "FocusScopeProps",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "FocusScopeBranchProviderProps",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "FocusScopeBranchRegistry",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/form/src/form.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 782,
+      "nonEmptyLines": 678,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/form/src/form.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 785,
+      "nonEmptyLines": 681,
+      "functions": [
+        {
+          "name": "FormValidityState",
+          "startLine": 636,
+          "endLine": 648,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "validityStateToObject",
+          "startLine": 676,
+          "endLine": 682,
+          "params": [
+            "validity"
+          ]
+        },
+        {
+          "name": "isHTMLElement",
+          "startLine": 684,
+          "endLine": 686,
+          "params": [
+            "element"
+          ]
+        },
+        {
+          "name": "isFormControl",
+          "startLine": 688,
+          "endLine": 690,
+          "params": [
+            "element"
+          ]
+        },
+        {
+          "name": "isInvalid",
+          "startLine": 692,
+          "endLine": 697,
+          "params": [
+            "control"
+          ]
+        },
+        {
+          "name": "getFirstInvalidControl",
+          "startLine": 699,
+          "endLine": 703,
+          "params": [
+            "form"
+          ]
+        },
+        {
+          "name": "isAsyncCustomMatcherEntry",
+          "startLine": 705,
+          "endLine": 710,
+          "params": [
+            "entry",
+            "args"
+          ]
+        },
+        {
+          "name": "isSyncCustomMatcherEntry",
+          "startLine": 712,
+          "endLine": 714,
+          "params": [
+            "entry"
+          ]
+        },
+        {
+          "name": "returnsPromise",
+          "startLine": 716,
+          "endLine": 718,
+          "params": [
+            "func",
+            "args"
+          ]
+        },
+        {
+          "name": "hasBuiltInError",
+          "startLine": 720,
+          "endLine": 730,
+          "params": [
+            "validity"
+          ]
+        },
+        {
+          "name": "getValidAttribute",
+          "startLine": 732,
+          "endLine": 735,
+          "params": [
+            "validity",
+            "serverInvalid"
+          ]
+        },
+        {
+          "name": "getInvalidAttribute",
+          "startLine": 737,
+          "endLine": 740,
+          "params": [
+            "validity",
+            "serverInvalid"
+          ]
+        },
+        {
+          "name": "concatAriaDescribedby",
+          "startLine": 743,
+          "endLine": 753,
+          "params": [
+            "...values"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createFormScope",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "Form",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "FormField",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "FormLabel",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "FormControl",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "FormMessage",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "FormValidityState",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "FormSubmit",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "Field",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "Label",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "Control",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "Message",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "ValidityState",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "Submit",
+          "line": 757,
+          "isDefault": false
+        },
+        {
+          "name": "FormProps",
+          "line": 777,
+          "isDefault": false
+        },
+        {
+          "name": "FormFieldProps",
+          "line": 777,
+          "isDefault": false
+        },
+        {
+          "name": "FormLabelProps",
+          "line": 777,
+          "isDefault": false
+        },
+        {
+          "name": "FormControlProps",
+          "line": 777,
+          "isDefault": false
+        },
+        {
+          "name": "FormMessageProps",
+          "line": 777,
+          "isDefault": false
+        },
+        {
+          "name": "FormValidityStateProps",
+          "line": 777,
+          "isDefault": false
+        },
+        {
+          "name": "FormSubmitProps",
+          "line": 777,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "handleChange",
+          "callee": "updateControlValidity",
+          "lineNumber": 388
+        },
+        {
+          "caller": "FormValidityState",
+          "callee": "useValidationContext",
+          "lineNumber": 638
+        },
+        {
+          "caller": "FormValidityState",
+          "callee": "useFormFieldContext",
+          "lineNumber": 639
+        },
+        {
+          "caller": "FormValidityState",
+          "callee": "validationContext.getFieldValidity",
+          "lineNumber": 646
+        },
+        {
+          "caller": "FormValidityState",
+          "callee": "children",
+          "lineNumber": 647
+        },
+        {
+          "caller": "isInvalid",
+          "callee": "isFormControl",
+          "lineNumber": 694
+        },
+        {
+          "caller": "isInvalid",
+          "callee": "control.getAttribute",
+          "lineNumber": 695
+        },
+        {
+          "caller": "getFirstInvalidControl",
+          "callee": "Array.from(elements).filter(isHTMLElement).filter",
+          "lineNumber": 701
+        },
+        {
+          "caller": "getFirstInvalidControl",
+          "callee": "Array.from(elements).filter",
+          "lineNumber": 701
+        },
+        {
+          "caller": "getFirstInvalidControl",
+          "callee": "Array.from",
+          "lineNumber": 701
+        },
+        {
+          "caller": "isAsyncCustomMatcherEntry",
+          "callee": "returnsPromise",
+          "lineNumber": 709
+        },
+        {
+          "caller": "returnsPromise",
+          "callee": "func",
+          "lineNumber": 717
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "String(value).trim().split",
+          "lineNumber": 747
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "String(value).trim",
+          "lineNumber": 747
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "String",
+          "lineNumber": 747
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "ids.add",
+          "lineNumber": 748
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "Array.from(ids).join",
+          "lineNumber": 752
+        },
+        {
+          "caller": "concatAriaDescribedby",
+          "callee": "Array.from",
+          "lineNumber": 752
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 22,
+        "functionCount": 13,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/form/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 29,
+      "exports": [
+        {
+          "name": "createFormScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Form",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "FormField",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "FormLabel",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "FormControl",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "FormMessage",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "FormValidityState",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "FormSubmit",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Field",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Label",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Control",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Message",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ValidityState",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Submit",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "FormProps",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "FormFieldProps",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "FormLabelProps",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "FormControlProps",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "FormMessageProps",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "FormValidityStateProps",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "FormSubmitProps",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 22,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/hover-card/src/hover-card.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 311,
+      "nonEmptyLines": 267,
+      "functions": [
+        {
+          "name": "renderHoverCard",
+          "startLine": 6,
+          "endLine": 16,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "renderHoverCard",
+          "callee": "render",
+          "lineNumber": 7
+        },
+        {
+          "caller": "renderHoverCard",
+          "callee": "screen.getByText",
+          "lineNumber": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/hover-card/src/hover-card.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 436,
+      "nonEmptyLines": 388,
+      "functions": [
+        {
+          "name": "HoverCard",
+          "startLine": 52,
+          "endLine": 111,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "HoverCardPortal",
+          "startLine": 175,
+          "endLine": 189,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "excludeTouch",
+          "startLine": 392,
+          "endLine": 395,
+          "params": [
+            "eventHandler"
+          ]
+        },
+        {
+          "name": "getTabbableNodes",
+          "startLine": 401,
+          "endLine": 413,
+          "params": [
+            "container"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createHoverCardScope",
+          "line": 415,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCard",
+          "line": 415,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardTrigger",
+          "line": 415,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardPortal",
+          "line": 415,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardContent",
+          "line": 415,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardArrow",
+          "line": 415,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 415,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 415,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 415,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 415,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 415,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardProps",
+          "line": 430,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardTriggerProps",
+          "line": 430,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardPortalProps",
+          "line": 430,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardContentProps",
+          "line": 430,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardArrowProps",
+          "line": 430,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "HoverCard",
+          "callee": "usePopperScope",
+          "lineNumber": 62
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "React.useRef",
+          "lineNumber": 63
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "React.useRef",
+          "lineNumber": 64
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "React.useRef",
+          "lineNumber": 65
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "React.useRef",
+          "lineNumber": 66
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "useControllableState",
+          "lineNumber": 68
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "React.useCallback",
+          "lineNumber": 75
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "clearTimeout",
+          "lineNumber": 76
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "window.setTimeout",
+          "lineNumber": 77
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "setOpen",
+          "lineNumber": 77
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "React.useCallback",
+          "lineNumber": 80
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "clearTimeout",
+          "lineNumber": 81
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "window.setTimeout",
+          "lineNumber": 83
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "setOpen",
+          "lineNumber": 83
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "React.useCallback",
+          "lineNumber": 87
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "setOpen",
+          "lineNumber": 87
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "React.useEffect",
+          "lineNumber": 90
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "clearTimeout",
+          "lineNumber": 92
+        },
+        {
+          "caller": "HoverCard",
+          "callee": "clearTimeout",
+          "lineNumber": 93
+        },
+        {
+          "caller": "HoverCardPortal",
+          "callee": "useHoverCardContext",
+          "lineNumber": 179
+        },
+        {
+          "caller": "handlePointerUp",
+          "callee": "setContainSelection",
+          "lineNumber": 303
+        },
+        {
+          "caller": "handlePointerUp",
+          "callee": "setTimeout",
+          "lineNumber": 307
+        },
+        {
+          "caller": "handlePointerUp",
+          "callee": "document.getSelection()?.toString",
+          "lineNumber": 308
+        },
+        {
+          "caller": "handlePointerUp",
+          "callee": "document.getSelection",
+          "lineNumber": 308
+        },
+        {
+          "caller": "excludeTouch",
+          "callee": "eventHandler",
+          "lineNumber": 394
+        },
+        {
+          "caller": "getTabbableNodes",
+          "callee": "document.createTreeWalker",
+          "lineNumber": 403
+        },
+        {
+          "caller": "getTabbableNodes",
+          "callee": "walker.nextNode",
+          "lineNumber": 411
+        },
+        {
+          "caller": "getTabbableNodes",
+          "callee": "nodes.push",
+          "lineNumber": 411
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 16,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    }
+  ]
+}

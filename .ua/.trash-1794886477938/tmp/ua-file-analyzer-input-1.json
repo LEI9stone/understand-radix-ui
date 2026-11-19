@@ -1,0 +1,122 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "e2e/collection.spec.ts",
+      "language": "typescript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/context-menu.spec.ts",
+      "language": "typescript",
+      "sizeLines": 336,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/dialog.spec.ts",
+      "language": "typescript",
+      "sizeLines": 309,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/dropdown-menu.spec.ts",
+      "language": "typescript",
+      "sizeLines": 327,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/form.spec.ts",
+      "language": "typescript",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/helpers.ts",
+      "language": "typescript",
+      "sizeLines": 211,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/menubar.spec.ts",
+      "language": "typescript",
+      "sizeLines": 321,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/popover.spec.ts",
+      "language": "typescript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/popper.spec.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/scroll-area.spec.ts",
+      "language": "typescript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/select.spec.ts",
+      "language": "typescript",
+      "sizeLines": 187,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/toast.spec.ts",
+      "language": "typescript",
+      "sizeLines": 173,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/toggle-group.spec.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "e2e/collection.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/context-menu.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/dialog.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/dropdown-menu.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/form.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/helpers.ts": [],
+    "e2e/menubar.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/popover.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/popper.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/scroll-area.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/select.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/toast.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/toggle-group.spec.ts": [
+      "e2e/helpers.ts"
+    ]
+  }
+}

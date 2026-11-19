@@ -1,0 +1,48 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "apps/ssr-testing/app/primitive-merge/nodes.mjs",
+      "language": "javascript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/primitive-merge/page.tsx",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/primitive-merge/primitive-node.tsx",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/primitive-merge/providers.tsx",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/scripts/assert-primitive-merge.mjs",
+      "language": "javascript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "apps/ssr-testing/app/primitive-merge/nodes.mjs": [],
+    "apps/ssr-testing/app/primitive-merge/page.tsx": [
+      "apps/ssr-testing/app/primitive-merge/nodes.mjs",
+      "apps/ssr-testing/app/primitive-merge/primitive-node.tsx",
+      "apps/ssr-testing/app/primitive-merge/providers.tsx"
+    ],
+    "apps/ssr-testing/app/primitive-merge/primitive-node.tsx": [],
+    "apps/ssr-testing/app/primitive-merge/providers.tsx": [],
+    "apps/ssr-testing/scripts/assert-primitive-merge.mjs": [
+      "apps/ssr-testing/app/primitive-merge/nodes.mjs"
+    ]
+  }
+}

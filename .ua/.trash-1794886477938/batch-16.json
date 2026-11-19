@@ -1,0 +1,266 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/storybook/stories/progress.stories.module.css",
+      "type": "file",
+      "name": "progress.stories.module.css",
+      "filePath": "apps/storybook/stories/progress.stories.module.css",
+      "summary": "定义进度轨道、指示条及加载/不确定/完成状态颜色，并通过伪元素显示 data-value 和 data-max 以检验状态属性。",
+      "tags": [
+        "示例样式",
+        "状态属性",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/radio-group.stories.module.css",
+      "type": "file",
+      "name": "radio-group.stories.module.css",
+      "filePath": "apps/storybook/stories/radio-group.stories.module.css",
+      "summary": "为圆形单选项、焦点边框、禁用态和选中指示器提供示例样式，使用 checked/unchecked 状态驱动淡入淡出动画。",
+      "tags": [
+        "示例样式",
+        "状态属性",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/scroll-area.stories.module.css",
+      "type": "file",
+      "name": "scroll-area.stories.module.css",
+      "filePath": "apps/storybook/stories/scroll-area.stories.module.css",
+      "summary": "定义滚动视口、横纵滚动条、圆角拇指与交角样式；扩展拇指的44px触摸命中区并禁用默认触摸平移。",
+      "tags": [
+        "示例样式",
+        "状态属性",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/select.stories.module.css",
+      "type": "file",
+      "name": "select.stories.module.css",
+      "filePath": "apps/storybook/stories/select.stories.module.css",
+      "summary": "为触发器、内容、分组、选项与滚动按钮提供示例样式，消费触发器宽度/内容可用高度 CSS 变量并处理 RTL 与开关动画。",
+      "tags": [
+        "示例样式",
+        "状态属性",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/separator.stories.module.css",
+      "type": "file",
+      "name": "separator.stories.module.css",
+      "filePath": "apps/storybook/stories/separator.stories.module.css",
+      "summary": "根据 data-orientation 将分隔线设置为横向全宽细线或纵向固定高度细线。",
+      "tags": [
+        "示例样式",
+        "状态属性",
+        "视觉回归"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/slider.stories.module.css",
+      "type": "file",
+      "name": "slider.stories.module.css",
+      "filePath": "apps/storybook/stories/slider.stories.module.css",
+      "summary": "定义横纵滑轨、范围和滑块样式，扩展44px触摸命中区并用 aria-valuenow 显示数值，展示焦点与禁用状态。",
+      "tags": [
+        "示例样式",
+        "状态属性",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/switch.stories.module.css",
+      "type": "file",
+      "name": "switch.stories.module.css",
+      "filePath": "apps/storybook/stories/switch.stories.module.css",
+      "summary": "以 CSS 变量描述轨道、拇指和间距；checked 状态改变颜色与拇指位移，同时提供焦点、禁用和属性验证样式。",
+      "tags": [
+        "示例样式",
+        "状态属性",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/tabs.stories.module.css",
+      "type": "file",
+      "name": "tabs.stories.module.css",
+      "filePath": "apps/storybook/stories/tabs.stories.module.css",
+      "summary": "为横纵标签列表、活动触发器、内容和焦点边框提供示例样式，并配置状态动画与 data-state 属性验证。",
+      "tags": [
+        "示例样式",
+        "状态属性",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/toast.stories.module.css",
+      "type": "file",
+      "name": "toast.stories.module.css",
+      "filePath": "apps/storybook/stories/toast.stories.module.css",
+      "summary": "定义通知视口、标题、按钮和进度条样式；根据 data-swipe 状态及位移 CSS 变量处理四向滑动退出和恢复动画。",
+      "tags": [
+        "示例样式",
+        "状态属性",
+        "视觉回归"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/storybook/stories/toggle-group.stories.module.css",
+      "type": "file",
+      "name": "toggle-group.stories.module.css",
+      "filePath": "apps/storybook/stories/toggle-group.stories.module.css",
+      "summary": "定义单/多选切换组的排列、项目边框、焦点环和 on/off 状态样式，用于示例与属性视觉验证。",
+      "tags": [
+        "示例样式",
+        "状态属性",
+        "视觉回归"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/toggle.stories.module.css",
+      "type": "file",
+      "name": "toggle.stories.module.css",
+      "filePath": "apps/storybook/stories/toggle.stories.module.css",
+      "summary": "以红绿背景区分开关按钮 off/on 状态，并为焦点、禁用和属性回归提供视觉样式。",
+      "tags": [
+        "示例样式",
+        "状态属性",
+        "视觉回归"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/toolbar.stories.module.css",
+      "type": "file",
+      "name": "toolbar.stories.module.css",
+      "filePath": "apps/storybook/stories/toolbar.stories.module.css",
+      "summary": "定义横纵工具栏、分隔符、链接、切换按钮和组，同时为内嵌下拉菜单提供高亮、禁用及进入退出动画。",
+      "tags": [
+        "示例样式",
+        "状态属性",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/tooltip.stories.module.css",
+      "type": "file",
+      "name": "tooltip.stories.module.css",
+      "filePath": "apps/storybook/stories/tooltip.stories.module.css",
+      "summary": "消费 Tooltip 变换原点变量，按 delayed-open、instant-open 和 closed 配置不同动画，并提供定位网格与箭头视觉回归样式。",
+      "tags": [
+        "示例样式",
+        "状态属性",
+        "视觉回归"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/storybook/stories/progress.stories.module.css",
+      "target": "file:apps/storybook/stories/progress.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/radio-group.stories.module.css",
+      "target": "file:apps/storybook/stories/radio-group.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/scroll-area.stories.module.css",
+      "target": "file:apps/storybook/stories/scroll-area.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.module.css",
+      "target": "file:apps/storybook/stories/select.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/separator.stories.module.css",
+      "target": "file:apps/storybook/stories/separator.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/slider.stories.module.css",
+      "target": "file:apps/storybook/stories/slider.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/switch.stories.module.css",
+      "target": "file:apps/storybook/stories/switch.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/tabs.stories.module.css",
+      "target": "file:apps/storybook/stories/tabs.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/toast.stories.module.css",
+      "target": "file:apps/storybook/stories/toast.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle-group.stories.module.css",
+      "target": "file:apps/storybook/stories/toggle-group.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/toggle.stories.module.css",
+      "target": "file:apps/storybook/stories/toggle.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/toolbar.stories.module.css",
+      "target": "file:apps/storybook/stories/toolbar.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/tooltip.stories.module.css",
+      "target": "file:apps/storybook/stories/tooltip.stories.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "pipeline:.github/workflows/build.yml",
+      "type": "pipeline",
+      "name": "build.yml",
+      "filePath": ".github/workflows/build.yml",
+      "summary": "在 main/stable 的提交及拉取请求中并行执行构建、单元测试和 Playwright 端到端测试，构建任务还检查 composed refs。",
+      "tags": [
+        "持续集成",
+        "构建",
+        "测试"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "pipeline:.github/workflows/chromatic.yml",
+      "type": "pipeline",
+      "name": "chromatic.yml",
+      "filePath": ".github/workflows/chromatic.yml",
+      "summary": "在 main 提交或拉取请求时通过 Chromatic 上传 Storybook，取消同一分支的过期任务以支持视觉回归审查。",
+      "tags": [
+        "持续集成",
+        "视觉回归",
+        "Storybook"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:.github/workflows/publish.yml",
+      "type": "pipeline",
+      "name": "publish.yml",
+      "filePath": ".github/workflows/publish.yml",
+      "summary": "区分 main 快照发布与 stable 正式发布，检测快照变更并在正式发布成功后自动创建 stable 回流 main 的待审查 PR。",
+      "tags": [
+        "持续集成",
+        "版本发布",
+        "变更检测"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "pipeline:.github/workflows/ssr.yml",
+      "type": "pipeline",
+      "name": "ssr.yml",
+      "filePath": ".github/workflows/ssr.yml",
+      "summary": "为 main/stable 拉取请求构建 Next.js 测试应用并断言 Primitive 跨 RSC 边界渲染，拦截模块导入阶段的服务端兼容性回归。",
+      "tags": [
+        "持续集成",
+        "服务端渲染",
+        "兼容性"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pipeline:.github/workflows/build.yml",
+      "target": "config:package.json",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "pipeline:.github/workflows/chromatic.yml",
+      "target": "file:apps/storybook/.storybook/main.ts",
+      "type": "deploys",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "pipeline:.github/workflows/publish.yml",
+      "target": "config:.changeset/config.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "pipeline:.github/workflows/ssr.yml",
+      "target": "config:apps/ssr-testing/package.json",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

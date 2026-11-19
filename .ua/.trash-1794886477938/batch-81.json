@@ -1,0 +1,1032 @@
+{
+  "nodes": [
+    {
+      "id": "file:.changeset/changelog.cjs",
+      "type": "file",
+      "name": "changelog.cjs",
+      "filePath": ".changeset/changelog.cjs",
+      "summary": "实现 Changesets 的依赖变更行、版本条目和更新日志格式化，优先排列 Overview 并将其他变更归入单独小节。",
+      "tags": [
+        "发布工具",
+        "更新日志",
+        "格式化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:.changeset/changelog.cjs:getChangelogText",
+      "type": "function",
+      "name": "getChangelogText",
+      "filePath": ".changeset/changelog.cjs",
+      "summary": "等待异步日志文本，排序 Overview 和其他标题，并合并普通变更为 Other updates 小节。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        25,
+        52
+      ]
+    },
+    {
+      "id": "function:.changeset/changelog.cjs:getDependencyReleaseLine",
+      "type": "function",
+      "name": "getDependencyReleaseLine",
+      "filePath": ".changeset/changelog.cjs",
+      "summary": "把更新的依赖名称和新版本格式化为发布日志条目，没有更新时返回空文本。",
+      "tags": [
+        "发布工具",
+        "日志生成",
+        "导出函数"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": "function:.changeset/changelog.cjs:getReleaseLine",
+      "type": "function",
+      "name": "getReleaseLine",
+      "filePath": ".changeset/changelog.cjs",
+      "summary": "将 Changeset 首行转换成项目符号或三级标题，并保留后续多行说明。",
+      "tags": [
+        "发布工具",
+        "日志生成",
+        "导出函数"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        14,
+        20
+      ]
+    },
+    {
+      "id": "function:.changeset/changelog.cjs:getChangelogEntry",
+      "type": "function",
+      "name": "getChangelogEntry",
+      "filePath": ".changeset/changelog.cjs",
+      "summary": "汇总当前发布版本的全部级别变更，生成以新版本号开头的 Markdown 条目。",
+      "tags": [
+        "发布工具",
+        "日志生成",
+        "导出函数"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        58,
+        66
+      ]
+    },
+    {
+      "id": "file:.github/CODEOWNERS",
+      "type": "file",
+      "name": "CODEOWNERS",
+      "filePath": ".github/CODEOWNERS",
+      "summary": "声明希望为新拉取请求添加的审阅者，用于代码所有权与评审协作。",
+      "tags": [
+        "仓库治理",
+        "评审",
+        "所有权"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.github/CONTRIBUTING.md",
+      "type": "document",
+      "name": "CONTRIBUTING.md",
+      "filePath": ".github/CONTRIBUTING.md",
+      "summary": "介绍 Radix 贡献原则、问题反馈和拉取请求准备流程，并提供本地开发说明。",
+      "tags": [
+        "文档",
+        "贡献指南",
+        "开发流程"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.github/PULL_REQUEST_TEMPLATE.md",
+      "type": "document",
+      "name": "PULL_REQUEST_TEMPLATE.md",
+      "filePath": ".github/PULL_REQUEST_TEMPLATE.md",
+      "summary": "为拉取请求提供提交前检查清单和变更描述位置，帮助维护者进行一致评审。",
+      "tags": [
+        "文档",
+        "拉取请求",
+        "评审规范"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.github/actions/ci-setup/action.yml",
+      "type": "config",
+      "name": "action.yml",
+      "filePath": ".github/actions/ci-setup/action.yml",
+      "summary": "组合式 CI 初始化动作，从 packageManager 读取 pnpm 版本并按 .nvmrc 安装 Node.js；可选安装支持 OIDC 的 npm 后执行冻结锁文件安装。",
+      "tags": [
+        "配置",
+        "持续集成",
+        "依赖安装"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.github/actions/detect-snapshot-changes/action.yml",
+      "type": "config",
+      "name": "action.yml",
+      "filePath": ".github/actions/detect-snapshot-changes/action.yml",
+      "summary": "读取 npm next 快照版本与发布时间，按 UTC 日期避免同日重复发布，并比较上次发布前的提交以过滤文档、测试及应用等非发布变更。",
+      "tags": [
+        "配置",
+        "快照发布",
+        "变更检测"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.github/actions/publish-snapshot/action.yml",
+      "type": "config",
+      "name": "action.yml",
+      "filePath": ".github/actions/publish-snapshot/action.yml",
+      "summary": "复用 CI 初始化后构建全部包、生成 next 快照版本并以 provenance 发布到 npm。",
+      "tags": [
+        "配置",
+        "快照发布",
+        "持续集成"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.github/actions/publish-stable/action.yml",
+      "type": "config",
+      "name": "action.yml",
+      "filePath": ".github/actions/publish-stable/action.yml",
+      "summary": "复用 CI 初始化和包构建，通过 Changesets 创建版本 PR 或发布稳定包，并强制附带 provenance 证明。",
+      "tags": [
+        "配置",
+        "稳定发布",
+        "持续集成"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.nvmrc",
+      "type": "file",
+      "name": ".nvmrc",
+      "filePath": ".nvmrc",
+      "summary": "将本地及 CI Node.js 主版本固定为 24，统一开发运行时。",
+      "tags": [
+        "运行时",
+        "版本固定",
+        "开发环境"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".ua/config.json",
+      "summary": "保存本项目知识图谱的中文输出语言偏好，供后续增量分析保持语言一致。",
+      "tags": [
+        "分析配置",
+        "中文输出",
+        "知识图谱"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/ssr-testing/app/accessible-icon/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/accessible-icon/page.tsx",
+      "summary": "在按钮内为图标提供 Close 可访问名称，检查服务端渲染后的图标语义。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/accessible-icon/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/accessible-icon/page.tsx",
+      "summary": "在按钮内为图标提供 Close 可访问名称，检查服务端渲染后的图标语义。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/accordion/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/accordion/page.tsx",
+      "summary": "渲染可同时展开多项的折叠面板，包含禁用项和内容内按钮，检查 SSR 下的结构与交互。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/accordion/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/accordion/page.tsx",
+      "summary": "渲染可同时展开多项的折叠面板，包含禁用项和内容内按钮，检查 SSR 下的结构与交互。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        47
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/alert-dialog/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/alert-dialog/page.tsx",
+      "summary": "组合触发器、Portal、遮罩、标题、描述和确认取消按钮，提供警告对话框 SSR 样例。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/alert-dialog/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/alert-dialog/page.tsx",
+      "summary": "组合触发器、Portal、遮罩、标题、描述和确认取消按钮，提供警告对话框 SSR 样例。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        21
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/avatar/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/avatar/page.tsx",
+      "summary": "组合头像图片与回退字符，检查服务端初始状态与客户端图片加载的兼容性。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/avatar/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/avatar/page.tsx",
+      "summary": "组合头像图片与回退字符，检查服务端初始状态与客户端图片加载的兼容性。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        11
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/checkbox/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/checkbox/page.tsx",
+      "summary": "渲染复选框根组件与勾选指示器，提供最小 SSR 交互入口。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/checkbox/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/checkbox/page.tsx",
+      "summary": "渲染复选框根组件与勾选指示器，提供最小 SSR 交互入口。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/collapsible/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/collapsible/page.tsx",
+      "summary": "组合折叠触发器与内容，检查 SSR 输出和水合后的展开行为。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/collapsible/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/collapsible/page.tsx",
+      "summary": "组合折叠触发器与内容，检查 SSR 输出和水合后的展开行为。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        11
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/context-menu/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/context-menu/page.tsx",
+      "summary": "组合右键触发区、Portal、菜单项与禁用项，检查上下文菜单在 SSR 应用中的使用。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/context-menu/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/context-menu/page.tsx",
+      "summary": "组合右键触发区、Portal、菜单项与禁用项，检查上下文菜单在 SSR 应用中的使用。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        20
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/dialog/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/dialog/page.tsx",
+      "summary": "组合默认展开的对话框、遮罩、标题描述和关闭按钮，观察 Portal 与水合行为。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/dialog/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/dialog/page.tsx",
+      "summary": "组合默认展开的对话框、遮罩、标题描述和关闭按钮，观察 Portal 与水合行为。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        18
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/dropdown-menu/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/dropdown-menu/page.tsx",
+      "summary": "组合下拉触发器、带偏移的内容、禁用项和箭头，提供 SSR 菜单使用样例。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/dropdown-menu/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/dropdown-menu/page.tsx",
+      "summary": "组合下拉触发器、带偏移的内容、禁用项和箭头，提供 SSR 菜单使用样例。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        21
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/form/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/form/page.tsx",
+      "summary": "组合必填 email 字段及缺值、格式不符提示，检查 SSR 下的表单验证语义。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/form/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/form/page.tsx",
+      "summary": "组合必填 email 字段及缺值、格式不符提示，检查 SSR 下的表单验证语义。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        15
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/hover-card/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/hover-card/page.tsx",
+      "summary": "组合悬停触发器、Portal 内容和箭头，提供悬停卡片的 SSR 样例。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/hover-card/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/hover-card/page.tsx",
+      "summary": "组合悬停触发器、Portal 内容和箭头，提供悬停卡片的 SSR 样例。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        16
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/label/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/label/page.tsx",
+      "summary": "渲染 Label.Root，作为标签组件在 SSR 页面中的最小检查入口。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/label/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/label/page.tsx",
+      "summary": "渲染 Label.Root，作为标签组件在 SSR 页面中的最小检查入口。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        6
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/layout.tsx",
+      "type": "file",
+      "name": "layout.tsx",
+      "filePath": "apps/ssr-testing/app/layout.tsx",
+      "summary": "在 React.StrictMode 下提供 SSR/RSC 测试应用的 HTML 外壳、组件路由导航和页面内容区域。",
+      "tags": [
+        "服务端渲染",
+        "应用布局",
+        "组件导航"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/layout.tsx:Layout",
+      "type": "function",
+      "name": "Layout",
+      "filePath": "apps/ssr-testing/app/layout.tsx",
+      "summary": "构建包含所有组件测试链接的双栏页面，将子路由内容包裹在严格模式和统一 HTML 文档内。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        5,
+        56
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/menubar/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/menubar/page.tsx",
+      "summary": "组合菜单栏、触发器、Portal、菜单标签、项目和箭头，展示 SSR 场景下的菜单栏结构。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/menubar/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/menubar/page.tsx",
+      "summary": "组合菜单栏、触发器、Portal、菜单标签、项目和箭头，展示 SSR 场景下的菜单栏结构。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        21
+      ]
+    },
+    {
+      "id": "file:apps/ssr-testing/app/navigation-menu/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "apps/ssr-testing/app/navigation-menu/page.tsx",
+      "summary": "组合可展开导航项和直接链接，展示导航菜单在 SSR 应用中的两种项目结构。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/ssr-testing/app/navigation-menu/page.tsx:Page",
+      "type": "function",
+      "name": "Page",
+      "filePath": "apps/ssr-testing/app/navigation-menu/page.tsx",
+      "summary": "组合可展开导航项和直接链接，展示导航菜单在 SSR 应用中的两种项目结构。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        21
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:.changeset/changelog.cjs",
+      "target": "function:.changeset/changelog.cjs:getChangelogText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.changeset/changelog.cjs",
+      "target": "function:.changeset/changelog.cjs:getDependencyReleaseLine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.changeset/changelog.cjs",
+      "target": "function:.changeset/changelog.cjs:getDependencyReleaseLine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.changeset/changelog.cjs",
+      "target": "function:.changeset/changelog.cjs:getReleaseLine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.changeset/changelog.cjs",
+      "target": "function:.changeset/changelog.cjs:getReleaseLine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:.changeset/changelog.cjs",
+      "target": "function:.changeset/changelog.cjs:getChangelogEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.changeset/changelog.cjs",
+      "target": "function:.changeset/changelog.cjs:getChangelogEntry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "config:.github/actions/ci-setup/action.yml",
+      "target": "file:.nvmrc",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.github/actions/publish-snapshot/action.yml",
+      "target": "config:.github/actions/ci-setup/action.yml",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:.github/actions/publish-stable/action.yml",
+      "target": "config:.github/actions/ci-setup/action.yml",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/accessible-icon/page.tsx",
+      "target": "function:apps/ssr-testing/app/accessible-icon/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/accessible-icon/page.tsx",
+      "target": "function:apps/ssr-testing/app/accessible-icon/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/accessible-icon/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/accordion/page.tsx",
+      "target": "function:apps/ssr-testing/app/accordion/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/accordion/page.tsx",
+      "target": "function:apps/ssr-testing/app/accordion/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/accordion/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/alert-dialog/page.tsx",
+      "target": "function:apps/ssr-testing/app/alert-dialog/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/alert-dialog/page.tsx",
+      "target": "function:apps/ssr-testing/app/alert-dialog/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/alert-dialog/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/avatar/page.tsx",
+      "target": "function:apps/ssr-testing/app/avatar/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/avatar/page.tsx",
+      "target": "function:apps/ssr-testing/app/avatar/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/avatar/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/checkbox/page.tsx",
+      "target": "function:apps/ssr-testing/app/checkbox/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/checkbox/page.tsx",
+      "target": "function:apps/ssr-testing/app/checkbox/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/checkbox/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/collapsible/page.tsx",
+      "target": "function:apps/ssr-testing/app/collapsible/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/collapsible/page.tsx",
+      "target": "function:apps/ssr-testing/app/collapsible/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/collapsible/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/context-menu/page.tsx",
+      "target": "function:apps/ssr-testing/app/context-menu/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/context-menu/page.tsx",
+      "target": "function:apps/ssr-testing/app/context-menu/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/context-menu/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/dialog/page.tsx",
+      "target": "function:apps/ssr-testing/app/dialog/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/dialog/page.tsx",
+      "target": "function:apps/ssr-testing/app/dialog/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/dialog/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/dropdown-menu/page.tsx",
+      "target": "function:apps/ssr-testing/app/dropdown-menu/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/dropdown-menu/page.tsx",
+      "target": "function:apps/ssr-testing/app/dropdown-menu/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/dropdown-menu/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/form/page.tsx",
+      "target": "function:apps/ssr-testing/app/form/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/form/page.tsx",
+      "target": "function:apps/ssr-testing/app/form/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/form/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/hover-card/page.tsx",
+      "target": "function:apps/ssr-testing/app/hover-card/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/hover-card/page.tsx",
+      "target": "function:apps/ssr-testing/app/hover-card/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/hover-card/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/label/page.tsx",
+      "target": "function:apps/ssr-testing/app/label/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/label/page.tsx",
+      "target": "function:apps/ssr-testing/app/label/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/label/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/layout.tsx",
+      "target": "function:apps/ssr-testing/app/layout.tsx:Layout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/layout.tsx",
+      "target": "function:apps/ssr-testing/app/layout.tsx:Layout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/menubar/page.tsx",
+      "target": "function:apps/ssr-testing/app/menubar/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/menubar/page.tsx",
+      "target": "function:apps/ssr-testing/app/menubar/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/menubar/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/ssr-testing/app/navigation-menu/page.tsx",
+      "target": "function:apps/ssr-testing/app/navigation-menu/page.tsx:Page",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/ssr-testing/app/navigation-menu/page.tsx",
+      "target": "function:apps/ssr-testing/app/navigation-menu/page.tsx:Page",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/ssr-testing/app/navigation-menu/page.tsx",
+      "target": "file:packages/react/radix-ui/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

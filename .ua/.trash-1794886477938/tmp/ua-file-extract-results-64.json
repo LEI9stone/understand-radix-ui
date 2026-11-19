@@ -1,0 +1,288 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 4
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/switch/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 85,
+      "nonEmptyLines": 49,
+      "sections": [
+        {
+          "heading": "@radix-ui/react-switch",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1.4.1",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "1.4.0",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "1.3.8",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "1.3.7",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "1.3.6",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "1.3.5",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "1.3.4",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "1.3.3",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "1.3.2",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "1.3.1",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "1.3.0",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "1.2.6",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "1.2.5",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "1.2.4",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "1.2.3",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "1.2.2",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "1.2.1",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "1.2.0",
+          "level": 2,
+          "line": 81
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 19
+      }
+    },
+    {
+      "path": "packages/react/switch/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        {
+          "heading": "`react-switch`",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "packages/react/switch/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 77,
+      "nonEmptyLines": 77,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "license",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "source",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "main",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "module",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "publishConfig",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "files",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "sideEffects",
+          "level": 1,
+          "line": 29
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 30
+        },
+        {
+          "heading": "dependencies",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 45
+        },
+        {
+          "heading": "peerDependencies",
+          "level": 1,
+          "line": 54
+        },
+        {
+          "heading": "peerDependenciesMeta",
+          "level": 1,
+          "line": 60
+        },
+        {
+          "heading": "homepage",
+          "level": 1,
+          "line": 68
+        },
+        {
+          "heading": "repository",
+          "level": 1,
+          "line": 69
+        },
+        {
+          "heading": "bugs",
+          "level": 1,
+          "line": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": "packages/react/switch/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "extends",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "exclude",
+          "level": 1,
+          "line": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

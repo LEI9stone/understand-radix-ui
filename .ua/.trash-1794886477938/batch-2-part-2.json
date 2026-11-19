@@ -1,0 +1,745 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/storybook/stories/external-overlay.tsx",
+      "type": "file",
+      "name": "external-overlay.tsx",
+      "filePath": "apps/storybook/stories/external-overlay.tsx",
+      "summary": "通过原生 DOM 构建独立覆盖层并停止其事件传播，模拟浏览器扩展浮层，供各类 DismissableLayer 消费组件复现外部交互问题。",
+      "tags": [
+        "组件示例",
+        "外部覆盖层",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/external-overlay.tsx:ExternalOverlayTrigger",
+      "type": "function",
+      "name": "ExternalOverlayTrigger",
+      "filePath": "apps/storybook/stories/external-overlay.tsx",
+      "lineRange": [
+        7,
+        25
+      ],
+      "summary": "管理独立覆盖层的创建与清理，在组件卸载或再次触发时销毁上次覆盖层。",
+      "tags": [
+        "组件示例",
+        "外部覆盖层",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/external-overlay.tsx:createExternalOverlay",
+      "type": "function",
+      "name": "createExternalOverlay",
+      "filePath": "apps/storybook/stories/external-overlay.tsx",
+      "lineRange": [
+        27,
+        75
+      ],
+      "summary": "创建包含操作与关闭按钮的原生覆盖层，拦截后续事件并返回完整的事件监听和 DOM 清理函数。",
+      "tags": [
+        "组件示例",
+        "外部覆盖层",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/menubar.stories.tsx",
+      "type": "file",
+      "name": "menubar.stories.tsx",
+      "filePath": "apps/storybook/stories/menubar.stories.tsx",
+      "summary": "展示完整 Menubar 的子菜单、单选复选项、RTL 与循环导航，并提供外部覆盖层、Dialog 内关闭边界及视觉回归矩阵。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/menubar.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/menubar.stories.tsx",
+      "lineRange": [
+        11,
+        196
+      ],
+      "summary": "构建多菜单菜单栏，允许切换 RTL 与循环导航并管理复选和单选菜单值。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/menubar.stories.tsx:WithExtensionOverlay",
+      "type": "function",
+      "name": "WithExtensionOverlay",
+      "filePath": "apps/storybook/stories/menubar.stories.tsx",
+      "lineRange": [
+        198,
+        218
+      ],
+      "summary": "在菜单栏菜单打开时触发外部覆盖层，用于事件截断回归。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/menubar.stories.tsx:DismissesOnlyMenubarInsideDialog",
+      "type": "function",
+      "name": "DismissesOnlyMenubarInsideDialog",
+      "filePath": "apps/storybook/stories/menubar.stories.tsx",
+      "lineRange": [
+        221,
+        276
+      ],
+      "summary": "在 Dialog 中控制菜单栏当前打开项，检查菜单外点击只关闭菜单。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/menubar.stories.tsx:Cypress",
+      "type": "function",
+      "name": "Cypress",
+      "filePath": "apps/storybook/stories/menubar.stories.tsx",
+      "lineRange": [
+        278,
+        431
+      ],
+      "summary": "提供可切换 RTL、循环与 Portal 的菜单栏测试页面，覆盖焦点和跨菜单键盘导航。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/menubar.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/menubar.stories.tsx",
+      "lineRange": [
+        433,
+        844
+      ],
+      "summary": "展示菜单栏菜单、子菜单、分组与选择状态的视觉回归组合。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/menubar.stories.tsx:TickIcon",
+      "type": "function",
+      "name": "TickIcon",
+      "filePath": "apps/storybook/stories/menubar.stories.tsx",
+      "lineRange": [
+        847,
+        861
+      ],
+      "summary": "绘制菜单项选中状态的勾选图标。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/popover.stories.tsx",
+      "type": "file",
+      "name": "popover.stories.tsx",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "summary": "展示 Popover 的标题描述、碰撞边界、模态、动画、嵌套、自定义锚点与 asChild 触发器，并检查 Dialog 中的分层关闭。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/popover.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "lineRange": [
+        11,
+        28
+      ],
+      "summary": "展示触发器、Portal 内容和箭头组成的基本弹出层。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popover.stories.tsx:WithTitleAndDescription",
+      "type": "function",
+      "name": "WithTitleAndDescription",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "lineRange": [
+        31,
+        51
+      ],
+      "summary": "为弹出层内容添加可访问的标题和描述关联。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popover.stories.tsx:Boundary",
+      "type": "function",
+      "name": "Boundary",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "lineRange": [
+        54,
+        91
+      ],
+      "summary": "通过容器引用定义碰撞边界，演示浮层在受限空间中的定位。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popover.stories.tsx:Modality",
+      "type": "function",
+      "name": "Modality",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "lineRange": [
+        93,
+        134
+      ],
+      "summary": "并列比较模态与非模态 Popover 的外部交互行为。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/popover.stories.tsx:Controlled",
+      "type": "function",
+      "name": "Controlled",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "lineRange": [
+        136,
+        153
+      ],
+      "summary": "通过外部 React 状态管理 Popover 的打开。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popover.stories.tsx:WithExtensionOverlay",
+      "type": "function",
+      "name": "WithExtensionOverlay",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "lineRange": [
+        155,
+        175
+      ],
+      "summary": "在弹出层内触发独立覆盖层，检查被拦截的事件不会误关闭 Popover。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popover.stories.tsx:DismissesOnlyPopoverInsideDialog",
+      "type": "function",
+      "name": "DismissesOnlyPopoverInsideDialog",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "lineRange": [
+        178,
+        244
+      ],
+      "summary": "将 Popover 嵌入 Dialog，允许切换模态并验证内层关闭范围。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/popover.stories.tsx:Animated",
+      "type": "function",
+      "name": "Animated",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "lineRange": [
+        246,
+        265
+      ],
+      "summary": "为打开和关闭状态配置弹出层动画。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popover.stories.tsx:ForcedMount",
+      "type": "function",
+      "name": "ForcedMount",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "lineRange": [
+        267,
+        283
+      ],
+      "summary": "在关闭时仍挂载弹出层，展示自定义动画所需的受控挂载。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popover.stories.tsx:Nested",
+      "type": "function",
+      "name": "Nested",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "lineRange": [
+        285,
+        354
+      ],
+      "summary": "组合多层 Popover，并将关闭后的焦点送回适当的按钮。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/popover.stories.tsx:CustomAnchor",
+      "type": "function",
+      "name": "CustomAnchor",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "lineRange": [
+        356,
+        383
+      ],
+      "summary": "使用独立 Anchor 而非触发器作为浮层定位基准。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popover.stories.tsx:WithSlottedTrigger",
+      "type": "function",
+      "name": "WithSlottedTrigger",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "lineRange": [
+        385,
+        401
+      ],
+      "summary": "用 asChild 插槽触发器演示业务元素事件与 Popover 触发行为的组合。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/popover.stories.tsx:Chromatic",
+      "type": "function",
+      "name": "Chromatic",
+      "filePath": "apps/storybook/stories/popover.stories.tsx",
+      "lineRange": [
+        406,
+        751
+      ],
+      "summary": "覆盖弹出层方向、对齐、锚点与内容状态的视觉回归矩阵。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/storybook/stories/external-overlay.tsx",
+      "target": "function:apps/storybook/stories/external-overlay.tsx:ExternalOverlayTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/external-overlay.tsx",
+      "target": "function:apps/storybook/stories/external-overlay.tsx:ExternalOverlayTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/external-overlay.tsx",
+      "target": "function:apps/storybook/stories/external-overlay.tsx:createExternalOverlay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "file:apps/storybook/stories/external-overlay.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "file:apps/storybook/stories/menubar.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "function:apps/storybook/stories/menubar.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "function:apps/storybook/stories/menubar.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "function:apps/storybook/stories/menubar.stories.tsx:WithExtensionOverlay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "function:apps/storybook/stories/menubar.stories.tsx:WithExtensionOverlay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "function:apps/storybook/stories/menubar.stories.tsx:DismissesOnlyMenubarInsideDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "function:apps/storybook/stories/menubar.stories.tsx:DismissesOnlyMenubarInsideDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "function:apps/storybook/stories/menubar.stories.tsx:Cypress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "function:apps/storybook/stories/menubar.stories.tsx:Cypress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "function:apps/storybook/stories/menubar.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "function:apps/storybook/stories/menubar.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "function:apps/storybook/stories/menubar.stories.tsx:TickIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "file:apps/storybook/stories/external-overlay.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "file:apps/storybook/stories/popover.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:WithTitleAndDescription",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:WithTitleAndDescription",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Boundary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Boundary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Modality",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Modality",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Controlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Controlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:WithExtensionOverlay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:WithExtensionOverlay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:DismissesOnlyPopoverInsideDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:DismissesOnlyPopoverInsideDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Animated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Animated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:ForcedMount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:ForcedMount",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Nested",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Nested",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:CustomAnchor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:CustomAnchor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:WithSlottedTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:WithSlottedTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Chromatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "function:apps/storybook/stories/popover.stories.tsx:Chromatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "file:packages/react/menubar/src/menubar.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.tsx",
+      "target": "file:packages/react/dialog/src/dialog.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "file:packages/react/popover/src/popover.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "file:packages/react/dialog/src/dialog.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.tsx",
+      "target": "file:packages/react/popper/src/popper.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

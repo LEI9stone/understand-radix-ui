@@ -1,0 +1,355 @@
+{
+  "nodes": [
+    {
+      "id": "config:e2e/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "e2e/tsconfig.json",
+      "summary": "为端到端测试配置 ES2022、DOM 与 Node 类型、Bundler 模块解析和严格检查，并关闭代码输出。",
+      "tags": [
+        "项目配置",
+        "工作区管理",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:internal/builder/builder.js",
+      "type": "file",
+      "name": "builder.js",
+      "filePath": "internal/builder/builder.js",
+      "summary": "并行生成 CJS、ESM 与类型声明产物，并清理类型文件中的 React 模块扩展，避免发布类型向使用方泄漏全局声明。",
+      "tags": [
+        "构建工具",
+        "产物生成",
+        "类型声明"
+      ],
+      "complexity": "complex",
+      "languageNotes": "JavaScript 使用 @ts-check 与 JSDoc 类型注解；声明清理器以括号深度扫描并跳过字符串和注释。"
+    },
+    {
+      "id": "function:internal/builder/builder.js:build",
+      "type": "function",
+      "name": "build",
+      "filePath": "internal/builder/builder.js",
+      "lineRange": [
+        13,
+        107
+      ],
+      "summary": "读取包清单并选择入口，以 esbuild 并行输出 CJS 和 ESM、以 tsup 生成声明，最后清理 React 模块扩展；对 radix-ui 子路径和 env-check 额外入口作专门处理。",
+      "tags": [
+        "构建流程",
+        "声明处理",
+        "内部函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:internal/builder/builder.js:stripLeakedReactModuleAugmentations",
+      "type": "function",
+      "name": "stripLeakedReactModuleAugmentations",
+      "filePath": "internal/builder/builder.js",
+      "lineRange": [
+        117,
+        131
+      ],
+      "summary": "递归收集输出目录中的 .d.ts 与 .d.mts 声明文件，并并行执行 React 模块扩展清理。",
+      "tags": [
+        "构建流程",
+        "声明处理",
+        "内部函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:internal/builder/builder.js:stripReactModuleAugmentationsFromDeclarationFile",
+      "type": "function",
+      "name": "stripReactModuleAugmentationsFromDeclarationFile",
+      "filePath": "internal/builder/builder.js",
+      "lineRange": [
+        136,
+        150
+      ],
+      "summary": "读取单个类型声明文件，删除 React 模块扩展，并只在内容发生变化时写回。",
+      "tags": [
+        "构建流程",
+        "声明处理",
+        "内部函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:internal/builder/builder.js:removeReactModuleAugmentations",
+      "type": "function",
+      "name": "removeReactModuleAugmentations",
+      "filePath": "internal/builder/builder.js",
+      "lineRange": [
+        155,
+        210
+      ],
+      "summary": "定位 declare module react 块，查找匹配结束括号并移除扩展及尾部分隔符，保留其余声明；不闭合的块会抛错。",
+      "tags": [
+        "构建流程",
+        "声明处理",
+        "内部函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:internal/builder/builder.js:getMatchingClosingBraceIndex",
+      "type": "function",
+      "name": "getMatchingClosingBraceIndex",
+      "filePath": "internal/builder/builder.js",
+      "lineRange": [
+        216,
+        253
+      ],
+      "summary": "按括号深度查找指定起始花括号的结束位置，并跳过字符串、行注释和块注释中的括号。",
+      "tags": [
+        "构建流程",
+        "声明处理",
+        "内部函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:internal/builder/builder.js:skipStringLiteral",
+      "type": "function",
+      "name": "skipStringLiteral",
+      "filePath": "internal/builder/builder.js",
+      "lineRange": [
+        260,
+        279
+      ],
+      "summary": "跳过带单引号、双引号或反引号的字符串，跨过反斜杠转义以避免误判结束引号。",
+      "tags": [
+        "构建流程",
+        "声明处理",
+        "内部函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:internal/builder/builder.js:skipLineComment",
+      "type": "function",
+      "name": "skipLineComment",
+      "filePath": "internal/builder/builder.js",
+      "lineRange": [
+        285,
+        293
+      ],
+      "summary": "从行注释起始位置扫描到换行符，返回括号匹配器可继续扫描的位置。",
+      "tags": [
+        "构建流程",
+        "声明处理",
+        "内部函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:internal/builder/builder.js:skipBlockComment",
+      "type": "function",
+      "name": "skipBlockComment",
+      "filePath": "internal/builder/builder.js",
+      "lineRange": [
+        299,
+        311
+      ],
+      "summary": "扫描到块注释结束符并返回其后位置；未找到结束符时返回文本末尾。",
+      "tags": [
+        "构建流程",
+        "声明处理",
+        "内部函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:internal/builder/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "internal/builder/package.json",
+      "summary": "声明内部构建器的模块导出及 radix-build 命令入口，并固定 esbuild 和 tsup 构建依赖。",
+      "tags": [
+        "项目配置",
+        "工作区管理",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:internal/builder/radix-build.js",
+      "type": "file",
+      "name": "radix-build.js",
+      "filePath": "internal/builder/radix-build.js",
+      "summary": "读取命令行指定包目录并调用 build，处理未捕获异步错误以及进程中断和终止信号。",
+      "tags": [
+        "构建工具",
+        "产物生成",
+        "类型声明"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:internal/builder/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "internal/builder/tsconfig.json",
+      "summary": "继承共享基础配置，允许检查构建器 JavaScript，设置根目录并关闭编译输出。",
+      "tags": [
+        "项目配置",
+        "工作区管理",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:internal/builder/builder.js",
+      "target": "function:internal/builder/builder.js:build",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:internal/builder/builder.js",
+      "target": "function:internal/builder/builder.js:build",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:internal/builder/builder.js",
+      "target": "function:internal/builder/builder.js:stripLeakedReactModuleAugmentations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:internal/builder/builder.js",
+      "target": "function:internal/builder/builder.js:stripReactModuleAugmentationsFromDeclarationFile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:internal/builder/builder.js",
+      "target": "function:internal/builder/builder.js:removeReactModuleAugmentations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:internal/builder/builder.js",
+      "target": "function:internal/builder/builder.js:getMatchingClosingBraceIndex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:internal/builder/builder.js",
+      "target": "function:internal/builder/builder.js:skipStringLiteral",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:internal/builder/builder.js",
+      "target": "function:internal/builder/builder.js:skipLineComment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:internal/builder/builder.js",
+      "target": "function:internal/builder/builder.js:skipBlockComment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "function:internal/builder/builder.js:build",
+      "target": "function:internal/builder/builder.js:stripLeakedReactModuleAugmentations",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:internal/builder/builder.js:stripLeakedReactModuleAugmentations",
+      "target": "function:internal/builder/builder.js:stripReactModuleAugmentationsFromDeclarationFile",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:internal/builder/builder.js:stripReactModuleAugmentationsFromDeclarationFile",
+      "target": "function:internal/builder/builder.js:removeReactModuleAugmentations",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:internal/builder/builder.js:removeReactModuleAugmentations",
+      "target": "function:internal/builder/builder.js:getMatchingClosingBraceIndex",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:internal/builder/builder.js:getMatchingClosingBraceIndex",
+      "target": "function:internal/builder/builder.js:skipStringLiteral",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:internal/builder/builder.js:getMatchingClosingBraceIndex",
+      "target": "function:internal/builder/builder.js:skipLineComment",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:internal/builder/builder.js:getMatchingClosingBraceIndex",
+      "target": "function:internal/builder/builder.js:skipBlockComment",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:internal/builder/radix-build.js",
+      "target": "file:internal/builder/builder.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "config:internal/builder/package.json",
+      "target": "file:internal/builder/builder.js",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:internal/builder/package.json",
+      "target": "file:internal/builder/radix-build.js",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:internal/builder/tsconfig.json",
+      "target": "file:internal/builder/builder.js",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:internal/builder/radix-build.js",
+      "target": "function:internal/builder/builder.js:build",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

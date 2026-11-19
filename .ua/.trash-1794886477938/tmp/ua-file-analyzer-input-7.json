@@ -1,0 +1,32 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "packages/react/presence/src/presence.test.tsx",
+      "language": "typescript",
+      "sizeLines": 145,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/presence/src/presence.tsx",
+      "language": "typescript",
+      "sizeLines": 280,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/presence/src/use-state-machine.tsx",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "packages/react/presence/src/presence.test.tsx": [
+      "packages/react/presence/src/presence.tsx"
+    ],
+    "packages/react/presence/src/presence.tsx": [
+      "packages/react/presence/src/use-state-machine.tsx"
+    ],
+    "packages/react/presence/src/use-state-machine.tsx": []
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 4
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/focus-scope/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 78,
+      "nonEmptyLines": 44,
+      "sections": [
+        {
+          "heading": "@radix-ui/react-focus-scope",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1.3.1",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "1.3.0",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "1.2.0",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "1.1.16",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "1.1.15",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "1.1.14",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "1.1.13",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "1.1.12",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "1.1.11",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "Other updates",
+          "level": 3,
+          "line": 46
+        },
+        {
+          "heading": "1.1.10",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "1.1.9",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "1.1.8",
+          "level": 2,
+          "line": 59
+        },
+        {
+          "heading": "1.1.7",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "1.1.6",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "1.1.5",
+          "level": 2,
+          "line": 72
+        },
+        {
+          "heading": "1.1.4",
+          "level": 2,
+          "line": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "packages/react/focus-scope/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        {
+          "heading": "`react-focus-scope`",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "packages/react/focus-scope/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 75,
+      "nonEmptyLines": 75,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "license",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "source",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "main",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "module",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "publishConfig",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "files",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "sideEffects",
+          "level": 1,
+          "line": 29
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 30
+        },
+        {
+          "heading": "dependencies",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 42
+        },
+        {
+          "heading": "peerDependencies",
+          "level": 1,
+          "line": 52
+        },
+        {
+          "heading": "peerDependenciesMeta",
+          "level": 1,
+          "line": 58
+        },
+        {
+          "heading": "homepage",
+          "level": 1,
+          "line": 66
+        },
+        {
+          "heading": "repository",
+          "level": 1,
+          "line": 67
+        },
+        {
+          "heading": "bugs",
+          "level": 1,
+          "line": 72
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": "packages/react/focus-scope/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "extends",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "exclude",
+          "level": 1,
+          "line": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

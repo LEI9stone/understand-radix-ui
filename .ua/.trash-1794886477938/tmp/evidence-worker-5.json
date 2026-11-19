@@ -1,0 +1,5939 @@
+[
+  {
+    "batchIndex": 7,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/presence/src/presence.test.tsx",
+        "nonEmptyLines": 133,
+        "calls": [
+          "App → React.useRef",
+          "App → React.useReducer",
+          "App → forceRender"
+        ]
+      },
+      {
+        "path": "packages/react/presence/src/presence.tsx",
+        "nonEmptyLines": 255,
+        "functions": [
+          {
+            "name": "Presence",
+            "startLine": 10,
+            "endLine": 23,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "usePresence",
+            "startLine": 29,
+            "endLine": 187,
+            "params": [
+              "present"
+            ]
+          },
+          {
+            "name": "setRef",
+            "startLine": 193,
+            "endLine": 199,
+            "params": [
+              "ref",
+              "value"
+            ]
+          },
+          {
+            "name": "useStableComposedRefs",
+            "startLine": 215,
+            "endLine": 245,
+            "params": [
+              "...refs"
+            ]
+          },
+          {
+            "name": "getAnimationName",
+            "startLine": 247,
+            "endLine": 249,
+            "params": [
+              "styles"
+            ]
+          },
+          {
+            "name": "getElementRef",
+            "startLine": 256,
+            "endLine": 273,
+            "params": [
+              "element"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Presence",
+            "line": 275,
+            "isDefault": false
+          },
+          {
+            "name": "Root",
+            "line": 275,
+            "isDefault": false
+          },
+          {
+            "name": "PresenceProps",
+            "line": 280,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Presence → usePresence",
+          "Presence → children",
+          "Presence → React.Children.only",
+          "Presence → useStableComposedRefs",
+          "Presence → getElementRef",
+          "Presence → React.cloneElement",
+          "usePresence → React.useState",
+          "usePresence → React.useRef",
+          "usePresence → useStateMachine",
+          "usePresence → React.useEffect",
+          "usePresence → getAnimationName",
+          "usePresence → useLayoutEffect",
+          "usePresence → send",
+          "handleAnimationEnd → getAnimationName",
+          "handleAnimationEnd → currentAnimationName.includes",
+          "handleAnimationEnd → CSS.escape",
+          "handleAnimationEnd → send",
+          "handleAnimationEnd → ownerWindow.setTimeout",
+          "handleAnimationStart → getAnimationName",
+          "usePresence → node.addEventListener",
+          "usePresence → ownerWindow.clearTimeout",
+          "usePresence → node.removeEventListener",
+          "usePresence → ['mounted', 'unmountSuspended'].includes",
+          "usePresence → React.useCallback",
+          "usePresence → getComputedStyle",
+          "usePresence → setNode",
+          "setRef → ref",
+          "useStableComposedRefs → React.useRef",
+          "useStableComposedRefs → React.useCallback",
+          "useStableComposedRefs → currentRefs.map",
+          "useStableComposedRefs → setRef",
+          "useStableComposedRefs → cleanup",
+          "getElementRef → Object.getOwnPropertyDescriptor"
+        ]
+      },
+      {
+        "path": "packages/react/presence/src/use-state-machine.tsx",
+        "nonEmptyLines": 17,
+        "functions": [
+          {
+            "name": "useStateMachine",
+            "startLine": 12,
+            "endLine": 20,
+            "params": [
+              "initialState",
+              "machine"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "useStateMachine",
+            "line": 12,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "useStateMachine → React.useReducer"
+        ]
+      }
+    ]
+  },
+  {
+    "batchIndex": 8,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/radio-group/src/radio-group.test.tsx",
+        "nonEmptyLines": 990,
+        "functions": [
+          {
+            "name": "ClassicRadioGroup",
+            "startLine": 26,
+            "endLine": 36,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "describeRadio",
+            "startLine": 38,
+            "endLine": 41,
+            "params": [
+              "target"
+            ]
+          },
+          {
+            "name": "ComposableRadioGroup",
+            "startLine": 43,
+            "endLine": 56,
+            "params": [
+              "props"
+            ]
+          }
+        ],
+        "calls": [
+          "observe → this.cb",
+          "ClassicRadioGroup → VALUES.map",
+          "ComposableRadioGroup → VALUES.map",
+          "ControlledRadioGroup → React.useState",
+          "ControlledRadioGroup → onValueChange",
+          "ControlledRadioGroup → setValue",
+          "ControlledRadioGroup → VALUES.map",
+          "ControlledRadioGroup → setBlockChange",
+          "ResettableRadioGroup → React.useState",
+          "ResettableRadioGroup → VALUES.map",
+          "ResettableRadioGroup → setValue",
+          "App → onChange",
+          "App → VALUES.map",
+          "DelayedApp → React.useState",
+          "DelayedApp → onFormChange",
+          "DelayedApp → describeRadio",
+          "DelayedApp → setTimeout",
+          "DelayedApp → setValue",
+          "TransitionApp → React.useState",
+          "TransitionApp → onFormChange",
+          "TransitionApp → describeRadio",
+          "TransitionApp → React.startTransition",
+          "TransitionApp → setValue",
+          "CoercingApp → React.useState",
+          "CoercingApp → onFormChange",
+          "CoercingApp → describeRadio",
+          "CoercingApp → setValue",
+          "DelayedApp → VALUES.map",
+          "DelayedApp → event.stopPropagation",
+          "App → React.useRef",
+          "App → aRef.current?.click",
+          "App → bRef.current?.click"
+        ]
+      },
+      {
+        "path": "packages/react/radio-group/src/radio-group.tsx",
+        "nonEmptyLines": 323,
+        "functions": [
+          {
+            "name": "RadioGroupItemProvider",
+            "startLine": 149,
+            "endLine": 178,
+            "params": [
+              "props"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "createRadioGroupScope",
+            "line": 330,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroup",
+            "line": 330,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupItem",
+            "line": 330,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupItemProvider",
+            "line": 330,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupItemTrigger",
+            "line": 330,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupItemBubbleInput",
+            "line": 330,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupIndicator",
+            "line": 330,
+            "isDefault": false
+          },
+          {
+            "name": "Root",
+            "line": 330,
+            "isDefault": false
+          },
+          {
+            "name": "Item",
+            "line": 330,
+            "isDefault": false
+          },
+          {
+            "name": "ItemProvider",
+            "line": 330,
+            "isDefault": false
+          },
+          {
+            "name": "ItemTrigger",
+            "line": 330,
+            "isDefault": false
+          },
+          {
+            "name": "ItemBubbleInput",
+            "line": 330,
+            "isDefault": false
+          },
+          {
+            "name": "Indicator",
+            "line": 330,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupProps",
+            "line": 347,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupItemProps",
+            "line": 347,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupItemProviderProps",
+            "line": 347,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupItemTriggerProps",
+            "line": 347,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupItemBubbleInputProps",
+            "line": 347,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupIndicatorProps",
+            "line": 347,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "reset → setValue",
+          "RadioGroupItemProvider → useRadioGroupContext",
+          "RadioGroupItemProvider → useRadioScope",
+          "RadioGroupItemProvider → context.onValueChange",
+          "handleKeyDown → ARROW_KEYS.includes"
+        ]
+      },
+      {
+        "path": "packages/react/radio-group/src/radio.tsx",
+        "nonEmptyLines": 361,
+        "functions": [
+          {
+            "name": "RadioProvider",
+            "startLine": 54,
+            "endLine": 103,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "isFunction",
+            "startLine": 384,
+            "endLine": 386,
+            "params": [
+              "value"
+            ]
+          },
+          {
+            "name": "getState",
+            "startLine": 388,
+            "endLine": 390,
+            "params": [
+              "checked"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "createRadioScope",
+            "line": 392,
+            "isDefault": false
+          },
+          {
+            "name": "useRadioContext",
+            "line": 392,
+            "isDefault": false
+          },
+          {
+            "name": "Radio",
+            "line": 392,
+            "isDefault": false
+          },
+          {
+            "name": "RadioProvider",
+            "line": 392,
+            "isDefault": false
+          },
+          {
+            "name": "RadioTrigger",
+            "line": 392,
+            "isDefault": false
+          },
+          {
+            "name": "RadioIndicator",
+            "line": 392,
+            "isDefault": false
+          },
+          {
+            "name": "RadioBubbleInput",
+            "line": 392,
+            "isDefault": false
+          },
+          {
+            "name": "RadioProps",
+            "line": 402,
+            "isDefault": false
+          },
+          {
+            "name": "RadioProviderProps",
+            "line": 402,
+            "isDefault": false
+          },
+          {
+            "name": "RadioTriggerProps",
+            "line": 402,
+            "isDefault": false
+          },
+          {
+            "name": "RadioBubbleInputProps",
+            "line": 402,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "RadioProvider → React.useState",
+          "RadioProvider → control.closest",
+          "RadioProvider → onCheck",
+          "RadioProvider → isFunction",
+          "RadioProvider → internal_do_not_use_render"
+        ]
+      }
+    ]
+  },
+  {
+    "batchIndex": 21,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/core/rect/CHANGELOG.md",
+        "nonEmptyLines": 5,
+        "sections": [
+          "@radix-ui/rect",
+          "1.1.3",
+          "1.1.2"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/core/rect/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`rect`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/core/rect/package.json",
+        "nonEmptyLines": 51,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "devDependencies",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/core/rect/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 23,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/accordion/CHANGELOG.md",
+        "nonEmptyLines": 49,
+        "sections": [
+          "@radix-ui/react-accordion",
+          "1.3.1",
+          "1.3.0",
+          "1.2.21",
+          "1.2.20",
+          "1.2.19",
+          "1.2.18",
+          "1.2.17",
+          "1.2.16",
+          "1.2.15",
+          "1.2.14",
+          "1.2.13",
+          "1.2.12",
+          "1.2.11",
+          "1.2.10",
+          "1.2.9",
+          "1.2.8",
+          "1.2.7",
+          "1.2.6",
+          "1.2.5"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/accordion/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`react-accordion`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/accordion/package.json",
+        "nonEmptyLines": 80,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "dependencies",
+          "devDependencies",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/accordion/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 33,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/context-menu/CHANGELOG.md",
+        "nonEmptyLines": 56,
+        "sections": [
+          "@radix-ui/react-context-menu",
+          "2.4.1",
+          "2.4.0",
+          "2.3.8",
+          "2.3.7",
+          "2.3.6",
+          "2.3.5",
+          "2.3.4",
+          "2.3.3",
+          "2.3.2",
+          "2.3.1",
+          "2.3.0",
+          "2.2.16",
+          "2.2.15",
+          "2.2.14",
+          "2.2.13",
+          "2.2.12",
+          "2.2.11",
+          "2.2.10",
+          "2.2.9",
+          "2.2.8"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/context-menu/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`react-context-menu`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/context-menu/package.json",
+        "nonEmptyLines": 78,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "dependencies",
+          "devDependencies",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/context-menu/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 37,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/dismissable-layer/CHANGELOG.md",
+        "nonEmptyLines": 47,
+        "sections": [
+          "@radix-ui/react-dismissable-layer",
+          "1.2.1",
+          "1.2.0",
+          "1.1.20",
+          "1.1.19",
+          "1.1.18",
+          "1.1.17",
+          "1.1.16",
+          "1.1.15",
+          "1.1.14",
+          "Other updates",
+          "1.1.13",
+          "1.1.12",
+          "1.1.11",
+          "1.1.10",
+          "1.1.9",
+          "1.1.8",
+          "1.1.7"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/dismissable-layer/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`react-dismissable-layer`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/dismissable-layer/package.json",
+        "nonEmptyLines": 78,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "dependencies",
+          "devDependencies",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/dismissable-layer/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 44,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/label/CHANGELOG.md",
+        "nonEmptyLines": 34,
+        "sections": [
+          "@radix-ui/react-label",
+          "2.1.17",
+          "2.1.16",
+          "2.1.15",
+          "2.1.14",
+          "2.1.13",
+          "2.1.12",
+          "2.1.11",
+          "2.1.10",
+          "2.1.9",
+          "2.1.8",
+          "2.1.7",
+          "2.1.6",
+          "2.1.5",
+          "2.1.4"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/label/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`react-label`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/label/package.json",
+        "nonEmptyLines": 72,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "dependencies",
+          "devDependencies",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/label/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 53,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/presence/CHANGELOG.md",
+        "nonEmptyLines": 22,
+        "sections": [
+          "@radix-ui/react-presence",
+          "1.1.11",
+          "1.1.10",
+          "1.1.9",
+          "1.1.8",
+          "1.1.7",
+          "1.1.6",
+          "1.1.5",
+          "1.1.4"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/presence/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`react-presence`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/presence/package.json",
+        "nonEmptyLines": 72,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "dependencies",
+          "devDependencies",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/presence/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 55,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/progress/CHANGELOG.md",
+        "nonEmptyLines": 39,
+        "sections": [
+          "@radix-ui/react-progress",
+          "1.2.1",
+          "1.2.0",
+          "1.1.17",
+          "1.1.16",
+          "1.1.15",
+          "1.1.14",
+          "1.1.13",
+          "1.1.12",
+          "1.1.11",
+          "1.1.10",
+          "1.1.9",
+          "1.1.8",
+          "1.1.7",
+          "1.1.6",
+          "1.1.5",
+          "1.1.4"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/progress/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`react-progress`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/progress/package.json",
+        "nonEmptyLines": 73,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "dependencies",
+          "devDependencies",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/progress/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 59,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/scroll-area/CHANGELOG.md",
+        "nonEmptyLines": 59,
+        "sections": [
+          "@radix-ui/react-scroll-area",
+          "1.4.0",
+          "1.3.0",
+          "1.2.18",
+          "1.2.17",
+          "1.2.16",
+          "1.2.15",
+          "1.2.14",
+          "1.2.13",
+          "Other updates",
+          "1.2.12",
+          "1.2.11",
+          "1.2.10",
+          "1.2.9",
+          "1.2.8",
+          "1.2.7",
+          "1.2.6",
+          "1.2.5"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/scroll-area/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`react-scroll-area`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/scroll-area/package.json",
+        "nonEmptyLines": 83,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "dependencies",
+          "devDependencies",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/scroll-area/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 60,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/select/CHANGELOG.md",
+        "nonEmptyLines": 66,
+        "sections": [
+          "@radix-ui/react-select",
+          "2.4.1",
+          "2.4.0",
+          "2.3.8",
+          "2.3.7",
+          "2.3.6",
+          "2.3.5",
+          "2.3.4",
+          "2.3.3",
+          "2.3.2",
+          "Other updates",
+          "2.3.1",
+          "2.3.0",
+          "2.2.6",
+          "2.2.5",
+          "2.2.4",
+          "2.2.3",
+          "2.2.2",
+          "2.2.1",
+          "2.2.0"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/select/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`react-select`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/select/package.json",
+        "nonEmptyLines": 93,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "dependencies",
+          "devDependencies",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/select/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 61,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/separator/CHANGELOG.md",
+        "nonEmptyLines": 35,
+        "sections": [
+          "@radix-ui/react-separator",
+          "1.2.0",
+          "1.1.16",
+          "1.1.15",
+          "1.1.14",
+          "1.1.13",
+          "1.1.12",
+          "1.1.11",
+          "1.1.10",
+          "1.1.9",
+          "1.1.8",
+          "1.1.7",
+          "1.1.6",
+          "1.1.5",
+          "1.1.4"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/separator/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`react-separator`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/separator/package.json",
+        "nonEmptyLines": 72,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "dependencies",
+          "devDependencies",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/separator/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 67,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/toggle-group/CHANGELOG.md",
+        "nonEmptyLines": 48,
+        "sections": [
+          "@radix-ui/react-toggle-group",
+          "1.2.1",
+          "1.2.0",
+          "1.1.20",
+          "1.1.19",
+          "1.1.18",
+          "1.1.17",
+          "1.1.16",
+          "1.1.15",
+          "1.1.14",
+          "1.1.13",
+          "1.1.12",
+          "1.1.11",
+          "1.1.10",
+          "1.1.9",
+          "1.1.8",
+          "1.1.7",
+          "1.1.6",
+          "1.1.5",
+          "1.1.4"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/toggle-group/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`react-toggle-group`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/toggle-group/package.json",
+        "nonEmptyLines": 78,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "dependencies",
+          "devDependencies",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/toggle-group/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 74,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/use-escape-keydown/CHANGELOG.md",
+        "nonEmptyLines": 15,
+        "sections": [
+          "@radix-ui/react-use-escape-keydown",
+          "1.1.6",
+          "1.1.5",
+          "1.1.4",
+          "1.1.3",
+          "Other updates",
+          "1.1.2"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/use-escape-keydown/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`react-use-escape-keydown`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/use-escape-keydown/package.json",
+        "nonEmptyLines": 67,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "dependencies",
+          "devDependencies",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/use-escape-keydown/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 75,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/use-is-hydrated/CHANGELOG.md",
+        "nonEmptyLines": 10,
+        "sections": [
+          "@radix-ui/react-use-is-hydrated",
+          "0.1.3",
+          "0.1.2",
+          "0.1.1",
+          "0.1.0"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/use-is-hydrated/README.md",
+        "nonEmptyLines": 3,
+        "sections": [
+          "`react-use-is-hydrated`",
+          "Usage"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/use-is-hydrated/package.json",
+        "nonEmptyLines": 65,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "devDependencies",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/use-is-hydrated/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 77,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/use-previous/CHANGELOG.md",
+        "nonEmptyLines": 7,
+        "sections": [
+          "@radix-ui/react-use-previous",
+          "1.1.4",
+          "1.1.3",
+          "1.1.2"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/use-previous/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`react-use-previous`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/use-previous/package.json",
+        "nonEmptyLines": 64,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "devDependencies",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/use-previous/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 78,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/use-rect/CHANGELOG.md",
+        "nonEmptyLines": 9,
+        "sections": [
+          "@radix-ui/react-use-rect",
+          "1.1.4",
+          "1.1.3",
+          "1.1.2"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/use-rect/README.md",
+        "nonEmptyLines": 2,
+        "sections": [
+          "`react-use-rect`"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/use-rect/package.json",
+        "nonEmptyLines": 67,
+        "sections": [
+          "name",
+          "version",
+          "license",
+          "source",
+          "main",
+          "module",
+          "publishConfig",
+          "files",
+          "sideEffects",
+          "scripts",
+          "dependencies",
+          "devDependencies",
+          "peerDependencies",
+          "peerDependenciesMeta",
+          "homepage",
+          "repository",
+          "bugs"
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/use-rect/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      }
+    ]
+  },
+  {
+    "batchIndex": 83,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "apps/storybook/.storybook/preview.ts",
+        "nonEmptyLines": 18,
+        "calls": []
+      },
+      {
+        "path": "apps/storybook/index.d.ts",
+        "nonEmptyLines": 6,
+        "calls": []
+      },
+      {
+        "path": "apps/storybook/package.json",
+        "nonEmptyLines": 36,
+        "sections": [
+          "name",
+          "private",
+          "version",
+          "type",
+          "scripts",
+          "dependencies",
+          "devDependencies"
+        ],
+        "calls": []
+      },
+      {
+        "path": "apps/storybook/stories/accessible-icon.stories.tsx",
+        "nonEmptyLines": 23,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 5,
+            "endLine": 11,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 13,
+            "endLine": 20,
+            "params": []
+          },
+          {
+            "name": "CrossIcon",
+            "startLine": 24,
+            "endLine": 28,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 5,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 13,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "apps/storybook/stories/accordion.stories.tsx",
+        "nonEmptyLines": 693,
+        "functions": [
+          {
+            "name": "Single",
+            "startLine": 8,
+            "endLine": 145,
+            "params": []
+          },
+          {
+            "name": "Multiple",
+            "startLine": 147,
+            "endLine": 242,
+            "params": []
+          },
+          {
+            "name": "Animated",
+            "startLine": 244,
+            "endLine": 322,
+            "params": []
+          },
+          {
+            "name": "Animated2D",
+            "startLine": 324,
+            "endLine": 349,
+            "params": []
+          },
+          {
+            "name": "AnimatedControlled",
+            "startLine": 351,
+            "endLine": 395,
+            "params": []
+          },
+          {
+            "name": "OutsideViewport",
+            "startLine": 397,
+            "endLine": 447,
+            "params": []
+          },
+          {
+            "name": "Horizontal",
+            "startLine": 449,
+            "endLine": 493,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 495,
+            "endLine": 722,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Single",
+            "line": 8,
+            "isDefault": false
+          },
+          {
+            "name": "Multiple",
+            "line": 147,
+            "isDefault": false
+          },
+          {
+            "name": "Animated",
+            "line": 244,
+            "isDefault": false
+          },
+          {
+            "name": "Animated2D",
+            "line": 324,
+            "isDefault": false
+          },
+          {
+            "name": "AnimatedControlled",
+            "line": 351,
+            "isDefault": false
+          },
+          {
+            "name": "OutsideViewport",
+            "line": 397,
+            "isDefault": false
+          },
+          {
+            "name": "Horizontal",
+            "line": 449,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 495,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Single → React.useState",
+          "Multiple → React.useState",
+          "Animated → React.useState",
+          "Animated → React.useRef",
+          "Animated → React.useEffect",
+          "Animated → window.setTimeout",
+          "Animated → setCount",
+          "Animated → setHasDynamicContent",
+          "Animated → clearTimeout",
+          "Animated → values.map",
+          "Animated → [...Array(count)].map",
+          "Animated → Array",
+          "Animated2D → values.map",
+          "AnimatedControlled → React.useState",
+          "Chromatic → items.map",
+          "Chromatic → ['Two', 'Four'].includes"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/alert-dialog.stories.tsx",
+        "nonEmptyLines": 260,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 7,
+            "endLine": 22,
+            "params": []
+          },
+          {
+            "name": "Controlled",
+            "startLine": 24,
+            "endLine": 63,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 65,
+            "endLine": 273,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 7,
+            "isDefault": false
+          },
+          {
+            "name": "Controlled",
+            "line": 24,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 65,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Controlled → React.useState",
+          "Controlled → e.preventDefault",
+          "Controlled → setHousePurchased"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/arrow.stories.tsx",
+        "nonEmptyLines": 29,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 10,
+            "endLine": 12,
+            "params": []
+          },
+          {
+            "name": "CustomSizes",
+            "startLine": 14,
+            "endLine": 20,
+            "params": []
+          },
+          {
+            "name": "CustomArrow",
+            "startLine": 22,
+            "endLine": 34,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 10,
+            "isDefault": false
+          },
+          {
+            "name": "CustomSizes",
+            "line": 14,
+            "isDefault": false
+          },
+          {
+            "name": "CustomArrow",
+            "line": 22,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "apps/storybook/stories/aspect-ratio.stories.tsx",
+        "nonEmptyLines": 61,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 14,
+            "endLine": 20,
+            "params": []
+          },
+          {
+            "name": "CustomRatios",
+            "startLine": 22,
+            "endLine": 39,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 41,
+            "endLine": 66,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 14,
+            "isDefault": false
+          },
+          {
+            "name": "CustomRatios",
+            "line": 22,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 41,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "apps/storybook/stories/avatar.stories.tsx",
+        "nonEmptyLines": 104,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 11,
+            "endLine": 51,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 53,
+            "endLine": 88,
+            "params": []
+          },
+          {
+            "name": "AvatarIcon",
+            "startLine": 91,
+            "endLine": 98,
+            "params": []
+          },
+          {
+            "name": "SourceChanger",
+            "startLine": 100,
+            "endLine": 116,
+            "params": [
+              "{\n  sources,\n  children,\n}"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 11,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 53,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "SourceChanger → React.useState",
+          "SourceChanger → React.useEffect",
+          "SourceChanger → setInterval",
+          "SourceChanger → sources.indexOf",
+          "SourceChanger → setSrc",
+          "SourceChanger → clearInterval",
+          "SourceChanger → children"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/checkbox.stories.tsx",
+        "nonEmptyLines": 447,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 8,
+            "endLine": 63,
+            "params": []
+          },
+          {
+            "name": "Controlled",
+            "startLine": 65,
+            "endLine": 79,
+            "params": []
+          },
+          {
+            "name": "Indeterminate",
+            "startLine": 81,
+            "endLine": 106,
+            "params": []
+          },
+          {
+            "name": "WithinForm",
+            "startLine": 108,
+            "endLine": 254,
+            "params": []
+          },
+          {
+            "name": "LegacyStyled",
+            "startLine": 256,
+            "endLine": 303,
+            "params": []
+          },
+          {
+            "name": "LegacyControlled",
+            "startLine": 305,
+            "endLine": 322,
+            "params": []
+          },
+          {
+            "name": "LegacyIndeterminate",
+            "startLine": 324,
+            "endLine": 347,
+            "params": []
+          },
+          {
+            "name": "LegacyWithinForm",
+            "startLine": 349,
+            "endLine": 420,
+            "params": []
+          },
+          {
+            "name": "LegacyAnimated",
+            "startLine": 422,
+            "endLine": 445,
+            "params": []
+          },
+          {
+            "name": "LegacyChromatic",
+            "startLine": 447,
+            "endLine": 512,
+            "params": []
+          },
+          {
+            "name": "Label",
+            "startLine": 515,
+            "endLine": 515,
+            "params": [
+              "props"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 8,
+            "isDefault": false
+          },
+          {
+            "name": "Controlled",
+            "line": 65,
+            "isDefault": false
+          },
+          {
+            "name": "Indeterminate",
+            "line": 81,
+            "isDefault": false
+          },
+          {
+            "name": "WithinForm",
+            "line": 108,
+            "isDefault": false
+          },
+          {
+            "name": "LegacyStyled",
+            "line": 256,
+            "isDefault": false
+          },
+          {
+            "name": "LegacyControlled",
+            "line": 305,
+            "isDefault": false
+          },
+          {
+            "name": "LegacyIndeterminate",
+            "line": 324,
+            "isDefault": false
+          },
+          {
+            "name": "LegacyWithinForm",
+            "line": 349,
+            "isDefault": false
+          },
+          {
+            "name": "LegacyAnimated",
+            "line": 422,
+            "isDefault": false
+          },
+          {
+            "name": "LegacyChromatic",
+            "line": 447,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Controlled → React.useState",
+          "Indeterminate → React.useState",
+          "Indeterminate → setChecked",
+          "WithinForm → React.useState",
+          "setFieldChecked → window.alert",
+          "setFieldChecked → setFieldData",
+          "WithinForm → event.preventDefault",
+          "WithinForm → setFormData",
+          "WithinForm → setChecked",
+          "WithinForm → ['1', '2', '3', '4'].map",
+          "WithinForm → setFieldChecked",
+          "WithinForm → event.stopPropagation",
+          "WithinForm → JSON.stringify",
+          "LegacyControlled → React.useState",
+          "LegacyIndeterminate → React.useState",
+          "LegacyIndeterminate → setChecked",
+          "LegacyWithinForm → React.useState",
+          "LegacyWithinForm → event.preventDefault",
+          "LegacyWithinForm → setData",
+          "LegacyWithinForm → String",
+          "LegacyWithinForm → setChecked",
+          "LegacyWithinForm → event.stopPropagation",
+          "LegacyAnimated → React.useState",
+          "LegacyAnimated → [styles.indicator, styles.animatedIndicator].join",
+          "LegacyAnimated → setChecked"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/collapsible.stories.tsx",
+        "nonEmptyLines": 101,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 7,
+            "endLine": 12,
+            "params": []
+          },
+          {
+            "name": "Controlled",
+            "startLine": 14,
+            "endLine": 26,
+            "params": []
+          },
+          {
+            "name": "Animated",
+            "startLine": 28,
+            "endLine": 48,
+            "params": []
+          },
+          {
+            "name": "AnimatedHorizontal",
+            "startLine": 50,
+            "endLine": 59,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 61,
+            "endLine": 114,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 7,
+            "isDefault": false
+          },
+          {
+            "name": "Controlled",
+            "line": 14,
+            "isDefault": false
+          },
+          {
+            "name": "Animated",
+            "line": 28,
+            "isDefault": false
+          },
+          {
+            "name": "AnimatedHorizontal",
+            "line": 50,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 61,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Controlled → React.useState"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/collection.stories.tsx",
+        "nonEmptyLines": 206,
+        "functions": [
+          {
+            "name": "Basic",
+            "startLine": 8,
+            "endLine": 15,
+            "params": []
+          },
+          {
+            "name": "WithElementInBetween",
+            "startLine": 17,
+            "endLine": 28,
+            "params": []
+          },
+          {
+            "name": "Tomato",
+            "startLine": 30,
+            "endLine": 30,
+            "params": []
+          },
+          {
+            "name": "WithWrappedItem",
+            "startLine": 32,
+            "endLine": 40,
+            "params": []
+          },
+          {
+            "name": "WithFragment",
+            "startLine": 42,
+            "endLine": 56,
+            "params": []
+          },
+          {
+            "name": "DynamicInsertion",
+            "startLine": 58,
+            "endLine": 76,
+            "params": []
+          },
+          {
+            "name": "WrappedItems",
+            "startLine": 78,
+            "endLine": 87,
+            "params": [
+              "{ hasTomato }"
+            ]
+          },
+          {
+            "name": "WithChangingItem",
+            "startLine": 89,
+            "endLine": 105,
+            "params": []
+          },
+          {
+            "name": "Nested",
+            "startLine": 107,
+            "endLine": 122,
+            "params": []
+          },
+          {
+            "name": "List",
+            "startLine": 134,
+            "endLine": 142,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "Item",
+            "startLine": 149,
+            "endLine": 155,
+            "params": [
+              "{ disabled = false, ...props }"
+            ]
+          },
+          {
+            "name": "LogItems",
+            "startLine": 161,
+            "endLine": 165,
+            "params": [
+              "{ name = 'items' }"
+            ]
+          },
+          {
+            "name": "ViewTransitionReorder",
+            "startLine": 172,
+            "endLine": 219,
+            "params": []
+          },
+          {
+            "name": "TransitionItem",
+            "startLine": 221,
+            "endLine": 232,
+            "params": [
+              "{ label }"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Basic",
+            "line": 8,
+            "isDefault": false
+          },
+          {
+            "name": "WithElementInBetween",
+            "line": 17,
+            "isDefault": false
+          },
+          {
+            "name": "WithWrappedItem",
+            "line": 32,
+            "isDefault": false
+          },
+          {
+            "name": "WithFragment",
+            "line": 42,
+            "isDefault": false
+          },
+          {
+            "name": "DynamicInsertion",
+            "line": 58,
+            "isDefault": false
+          },
+          {
+            "name": "WithChangingItem",
+            "line": 89,
+            "isDefault": false
+          },
+          {
+            "name": "Nested",
+            "line": 107,
+            "isDefault": false
+          },
+          {
+            "name": "ViewTransitionReorder",
+            "line": 172,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "DynamicInsertion → React.useState",
+          "DynamicInsertion → setHasTomato",
+          "DynamicInsertion → forceUpdate",
+          "WithChangingItem → React.useState",
+          "WithChangingItem → setIsDisabled",
+          "LogItems → useCollection",
+          "LogItems → React.useEffect",
+          "LogItems → console.log",
+          "LogItems → getItems",
+          "ViewTransitionReorder → React.useState",
+          "ViewTransitionReorder → React.startTransition",
+          "ViewTransitionReorder → setFruits",
+          "ViewTransitionReorder → current.toReversed",
+          "ViewTransitionReorder → current.slice",
+          "ViewTransitionReorder → fruits.map",
+          "TransitionItem → useTransitionCollection",
+          "TransitionItem → React.useState",
+          "TransitionItem → collection.indexOf"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/dismissable-layer.stories.tsx",
+        "nonEmptyLines": 623,
+        "functions": [
+          {
+            "name": "Basic",
+            "startLine": 23,
+            "endLine": 125,
+            "params": []
+          },
+          {
+            "name": "Nested",
+            "startLine": 127,
+            "endLine": 134,
+            "params": []
+          },
+          {
+            "name": "WithFocusScope",
+            "startLine": 136,
+            "endLine": 187,
+            "params": []
+          },
+          {
+            "name": "DismissableBox",
+            "startLine": 191,
+            "endLine": 227,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "DialogExample",
+            "startLine": 229,
+            "endLine": 255,
+            "params": []
+          },
+          {
+            "name": "PopoverFullyModal",
+            "startLine": 257,
+            "endLine": 288,
+            "params": []
+          },
+          {
+            "name": "PopoverSemiModal",
+            "startLine": 290,
+            "endLine": 344,
+            "params": []
+          },
+          {
+            "name": "PopoverNonModal",
+            "startLine": 346,
+            "endLine": 393,
+            "params": []
+          },
+          {
+            "name": "PopoverInDialog",
+            "startLine": 395,
+            "endLine": 416,
+            "params": []
+          },
+          {
+            "name": "PopoverNested",
+            "startLine": 418,
+            "endLine": 473,
+            "params": []
+          },
+          {
+            "name": "DummyDialog",
+            "startLine": 485,
+            "endLine": 548,
+            "params": [
+              "{ children, openLabel = 'Open', closeLabel = 'Close' }"
+            ]
+          },
+          {
+            "name": "DummyPopover",
+            "startLine": 561,
+            "endLine": 648,
+            "params": [
+              "{\n  children,\n  openLabel = 'Open',\n  closeLabel = 'Close',\n  color = '#333',\n  trapped = true,\n  onEscapeKeyDown,\n  onPointerDownOutside,\n  onFocusOutside,\n  onInteractOutside,\n  disableOutsidePointerEvents = false,\n  preventScroll = false,\n}"
+            ]
+          },
+          {
+            "name": "InPopupWindow",
+            "startLine": 650,
+            "endLine": 668,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Basic",
+            "line": 23,
+            "isDefault": false
+          },
+          {
+            "name": "Nested",
+            "line": 127,
+            "isDefault": false
+          },
+          {
+            "name": "WithFocusScope",
+            "line": 136,
+            "isDefault": false
+          },
+          {
+            "name": "DialogExample",
+            "line": 229,
+            "isDefault": false
+          },
+          {
+            "name": "PopoverFullyModal",
+            "line": 257,
+            "isDefault": false
+          },
+          {
+            "name": "PopoverSemiModal",
+            "line": 290,
+            "isDefault": false
+          },
+          {
+            "name": "PopoverNonModal",
+            "line": 346,
+            "isDefault": false
+          },
+          {
+            "name": "PopoverInDialog",
+            "line": 395,
+            "isDefault": false
+          },
+          {
+            "name": "PopoverNested",
+            "line": 418,
+            "isDefault": false
+          },
+          {
+            "name": "InPopupWindow",
+            "line": 650,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Basic → React.useState",
+          "Basic → React.useRef",
+          "Basic → setDismissOnEscape",
+          "Basic → setDismissOnPointerDownOutside",
+          "Basic → setDismissOnFocusOutside",
+          "Basic → setDisableOutsidePointerEvents",
+          "Basic → setOpen",
+          "Basic → event.preventDefault",
+          "Basic → alert",
+          "WithFocusScope → React.useState",
+          "WithFocusScope → React.useRef",
+          "WithFocusScope → setOpen",
+          "WithFocusScope → event.preventDefault",
+          "WithFocusScope → alert",
+          "DismissableBox → React.useState",
+          "DismissableBox → React.useRef",
+          "DismissableBox → setOpen",
+          "DismissableBox → event.preventDefault",
+          "DialogExample → window.alert",
+          "PopoverFullyModal → window.alert",
+          "PopoverSemiModal → React.useState",
+          "PopoverSemiModal → React.useRef",
+          "PopoverSemiModal → event.preventDefault",
+          "PopoverSemiModal → window.alert",
+          "PopoverSemiModal → setColor",
+          "PopoverNonModal → window.alert",
+          "PopoverInDialog → window.alert",
+          "PopoverNested → console.log",
+          "PopoverNested → window.alert",
+          "DummyDialog → React.useState",
+          "DummyDialog → setOpen",
+          "DummyPopover → React.useState",
+          "DummyPopover → React.useRef",
+          "DummyPopover → setOpen",
+          "DummyPopover → setSkipUnmountAutoFocus",
+          "DummyPopover → event.preventDefault",
+          "DummyPopover → onPointerDownOutside",
+          "InPopupWindow → React.useCallback",
+          "InPopupWindow → window.open",
+          "InPopupWindow → console.error",
+          "InPopupWindow → popupWindow.document.createElement",
+          "InPopupWindow → popupWindow.document.body.append",
+          "InPopupWindow → ReactDOM.createRoot(containerNode).render",
+          "InPopupWindow → ReactDOM.createRoot"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/focus-scope.stories.tsx",
+        "nonEmptyLines": 248,
+        "functions": [
+          {
+            "name": "Basic",
+            "startLine": 6,
+            "endLine": 52,
+            "params": []
+          },
+          {
+            "name": "Multiple",
+            "startLine": 54,
+            "endLine": 120,
+            "params": []
+          },
+          {
+            "name": "WithOptions",
+            "startLine": 125,
+            "endLine": 264,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Basic",
+            "line": 6,
+            "isDefault": false
+          },
+          {
+            "name": "Multiple",
+            "line": 54,
+            "isDefault": false
+          },
+          {
+            "name": "WithOptions",
+            "line": 125,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Basic → React.useState",
+          "Basic → setTrapped",
+          "Basic → setHasDestroyButton",
+          "Multiple → React.useState",
+          "Multiple → setTrapped1",
+          "Multiple → setTrapped2",
+          "WithOptions → React.useState",
+          "WithOptions → React.useRef",
+          "WithOptions → setTrapFocus",
+          "WithOptions → setFocusOnMount",
+          "WithOptions → setIsEmptyForm",
+          "WithOptions → setFocusOnUnmount",
+          "WithOptions → setOpen",
+          "WithOptions → event.preventDefault",
+          "WithOptions → focusOnMount.current?.focus",
+          "WithOptions → focusOnUnmount.current?.focus"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/form.stories.tsx",
+        "nonEmptyLines": 197,
+        "functions": [
+          {
+            "name": "Basic",
+            "startLine": 7,
+            "endLine": 75,
+            "params": []
+          },
+          {
+            "name": "Cypress",
+            "startLine": 77,
+            "endLine": 182,
+            "params": []
+          },
+          {
+            "name": "OutsideField",
+            "startLine": 184,
+            "endLine": 223,
+            "params": []
+          },
+          {
+            "name": "wait",
+            "startLine": 225,
+            "endLine": 227,
+            "params": [
+              "ms"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Basic",
+            "line": 7,
+            "isDefault": false
+          },
+          {
+            "name": "Cypress",
+            "line": 77,
+            "isDefault": false
+          },
+          {
+            "name": "OutsideField",
+            "line": 184,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Basic → React.useState",
+          "Basic → setServerErrors",
+          "Basic → event.preventDefault",
+          "Basic → setLoading",
+          "Basic → wait",
+          "Basic → (formData.get('email') as string).includes",
+          "Basic → formData.get",
+          "Basic → errors.add",
+          "Basic → (formData.get('password') as string).includes",
+          "Basic → Object.fromEntries",
+          "Basic → [...errors].map",
+          "Basic → window.alert",
+          "Basic → JSON.stringify",
+          "Basic → value.match",
+          "Cypress → React.useState",
+          "Cypress → setServerErrors",
+          "Cypress → event.preventDefault",
+          "Cypress → setData",
+          "Cypress → Object.fromEntries",
+          "Cypress → wait",
+          "Cypress → String",
+          "Cypress → JSON.stringify",
+          "Cypress → setSimulateServerErrors",
+          "OutsideField → event.preventDefault",
+          "OutsideField → window.alert",
+          "OutsideField → JSON.stringify",
+          "OutsideField → Object.fromEntries",
+          "wait → setTimeout"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/hover-card.stories.tsx",
+        "nonEmptyLines": 743,
+        "functions": [
+          {
+            "name": "contentClass",
+            "startLine": 10,
+            "endLine": 16,
+            "params": [
+              "{ animated }"
+            ]
+          },
+          {
+            "name": "Basic",
+            "startLine": 18,
+            "endLine": 34,
+            "params": []
+          },
+          {
+            "name": "ContainTextSelection",
+            "startLine": 36,
+            "endLine": 154,
+            "params": []
+          },
+          {
+            "name": "AsyncUpdate",
+            "startLine": 156,
+            "endLine": 196,
+            "params": []
+          },
+          {
+            "name": "CustomDurations",
+            "startLine": 198,
+            "endLine": 239,
+            "params": []
+          },
+          {
+            "name": "Controlled",
+            "startLine": 241,
+            "endLine": 259,
+            "params": []
+          },
+          {
+            "name": "Layerable",
+            "startLine": 261,
+            "endLine": 294,
+            "params": []
+          },
+          {
+            "name": "Animated",
+            "startLine": 296,
+            "endLine": 312,
+            "params": []
+          },
+          {
+            "name": "ForcedMount",
+            "startLine": 314,
+            "endLine": 330,
+            "params": []
+          },
+          {
+            "name": "Nested",
+            "startLine": 332,
+            "endLine": 402,
+            "params": []
+          },
+          {
+            "name": "NonPortal",
+            "startLine": 404,
+            "endLine": 421,
+            "params": []
+          },
+          {
+            "name": "WithSlottedTrigger",
+            "startLine": 423,
+            "endLine": 439,
+            "params": []
+          },
+          {
+            "name": "WithSlottedContent",
+            "startLine": 441,
+            "endLine": 455,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 460,
+            "endLine": 769,
+            "params": []
+          },
+          {
+            "name": "CardContentPlaceholder",
+            "startLine": 772,
+            "endLine": 790,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Basic",
+            "line": 18,
+            "isDefault": false
+          },
+          {
+            "name": "ContainTextSelection",
+            "line": 36,
+            "isDefault": false
+          },
+          {
+            "name": "AsyncUpdate",
+            "line": 156,
+            "isDefault": false
+          },
+          {
+            "name": "CustomDurations",
+            "line": 198,
+            "isDefault": false
+          },
+          {
+            "name": "Controlled",
+            "line": 241,
+            "isDefault": false
+          },
+          {
+            "name": "Layerable",
+            "line": 261,
+            "isDefault": false
+          },
+          {
+            "name": "Animated",
+            "line": 296,
+            "isDefault": false
+          },
+          {
+            "name": "ForcedMount",
+            "line": 314,
+            "isDefault": false
+          },
+          {
+            "name": "Nested",
+            "line": 332,
+            "isDefault": false
+          },
+          {
+            "name": "NonPortal",
+            "line": 404,
+            "isDefault": false
+          },
+          {
+            "name": "WithSlottedTrigger",
+            "line": 423,
+            "isDefault": false
+          },
+          {
+            "name": "WithSlottedContent",
+            "line": 441,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 460,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "contentClass → [\n    styles.content, ///\n    animated && styles.animatedContent,\n  ]\n    .filter(Boolean)\n    .join",
+          "contentClass → [\n    styles.content, ///\n    animated && styles.animatedContent,\n  ]\n    .filter",
+          "ContainTextSelection → contentClass",
+          "AsyncUpdate → React.useState",
+          "AsyncUpdate → React.useRef",
+          "AsyncUpdate → React.useCallback",
+          "AsyncUpdate → clearTimeout",
+          "AsyncUpdate → window.setTimeout",
+          "AsyncUpdate → setContentLoaded",
+          "AsyncUpdate → setOpen",
+          "AsyncUpdate → React.useEffect",
+          "Controlled → React.useState",
+          "Animated → contentClass",
+          "WithSlottedTrigger → console.log",
+          "Chromatic → SIDES.map",
+          "Chromatic → ALIGN_OPTIONS.map"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/label.stories.tsx",
+        "nonEmptyLines": 33,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 8,
+            "endLine": 8,
+            "params": []
+          },
+          {
+            "name": "WithControl",
+            "startLine": 10,
+            "endLine": 23,
+            "params": []
+          },
+          {
+            "name": "WithInputNumber",
+            "startLine": 25,
+            "endLine": 32,
+            "params": [
+              "_props"
+            ]
+          },
+          {
+            "name": "Control",
+            "startLine": 34,
+            "endLine": 40,
+            "params": [
+              "props"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 8,
+            "isDefault": false
+          },
+          {
+            "name": "WithControl",
+            "line": 10,
+            "isDefault": false
+          },
+          {
+            "name": "WithInputNumber",
+            "line": 25,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Control → window.alert"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/menu.stories.tsx",
+        "nonEmptyLines": 428,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 12,
+            "endLine": 31,
+            "params": []
+          },
+          {
+            "name": "Submenus",
+            "startLine": 33,
+            "endLine": 158,
+            "params": []
+          },
+          {
+            "name": "WithLabels",
+            "startLine": 160,
+            "endLine": 183,
+            "params": []
+          },
+          {
+            "name": "Typeahead",
+            "startLine": 192,
+            "endLine": 251,
+            "params": []
+          },
+          {
+            "name": "CheckboxItems",
+            "startLine": 253,
+            "endLine": 298,
+            "params": []
+          },
+          {
+            "name": "RadioItems",
+            "startLine": 300,
+            "endLine": 328,
+            "params": []
+          },
+          {
+            "name": "Animated",
+            "startLine": 330,
+            "endLine": 377,
+            "params": []
+          },
+          {
+            "name": "MenuWithAnchor",
+            "startLine": 384,
+            "endLine": 402,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "Submenu",
+            "startLine": 404,
+            "endLine": 437,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "TickIcon",
+            "startLine": 439,
+            "endLine": 453,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 12,
+            "isDefault": false
+          },
+          {
+            "name": "Submenus",
+            "line": 33,
+            "isDefault": false
+          },
+          {
+            "name": "WithLabels",
+            "line": 160,
+            "isDefault": false
+          },
+          {
+            "name": "Typeahead",
+            "line": 192,
+            "isDefault": false
+          },
+          {
+            "name": "CheckboxItems",
+            "line": 253,
+            "isDefault": false
+          },
+          {
+            "name": "RadioItems",
+            "line": 300,
+            "isDefault": false
+          },
+          {
+            "name": "Animated",
+            "line": 330,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Styled → window.alert",
+          "Submenus → React.useState",
+          "Submenus → React.useEffect",
+          "Submenus → document.documentElement.setAttribute",
+          "Submenus → document.documentElement.removeAttribute",
+          "Submenus → setRtl",
+          "Submenus → setAnimated",
+          "Submenus → setScrollable",
+          "Submenus → window.alert",
+          "WithLabels → foodGroups.map",
+          "WithLabels → foodGroup.foods.map",
+          "WithLabels → window.alert",
+          "Typeahead → foodGroups.map",
+          "Typeahead → foodGroup.foods.map",
+          "Typeahead → suits.map",
+          "CheckboxItems → React.useState",
+          "handleSelectAll → setSelection",
+          "CheckboxItems → options.map",
+          "CheckboxItems → selection.includes",
+          "CheckboxItems → setSelection",
+          "CheckboxItems → current.includes",
+          "CheckboxItems → current.filter",
+          "CheckboxItems → current.concat",
+          "RadioItems → React.useState",
+          "RadioItems → window.alert",
+          "RadioItems → files.map",
+          "Animated → React.useState",
+          "Animated → setOpen",
+          "Animated → checkboxItems.map",
+          "Animated → files.map",
+          "MenuWithAnchor → event.preventDefault",
+          "Submenu → [styles.item, styles.subTrigger].join",
+          "Submenu → [animated && styles.animatedContent, styles.content].filter(Boolean).join",
+          "Submenu → [animated && styles.animatedContent, styles.content].filter"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/navigation-menu.stories.tsx",
+        "nonEmptyLines": 512,
+        "functions": [
+          {
+            "name": "Basic",
+            "startLine": 10,
+            "endLine": 58,
+            "params": []
+          },
+          {
+            "name": "CustomDurations",
+            "startLine": 60,
+            "endLine": 93,
+            "params": []
+          },
+          {
+            "name": "Viewport",
+            "startLine": 95,
+            "endLine": 186,
+            "params": []
+          },
+          {
+            "name": "StoryFrame",
+            "startLine": 400,
+            "endLine": 462,
+            "params": [
+              "{ children }"
+            ]
+          },
+          {
+            "name": "DurationNavigation",
+            "startLine": 464,
+            "endLine": 513,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "TriggerWithIndicator",
+            "startLine": 515,
+            "endLine": 525,
+            "params": [
+              "{\n  children,\n  disabled,\n}"
+            ]
+          },
+          {
+            "name": "CaretDownIcon",
+            "startLine": 527,
+            "endLine": 536,
+            "params": []
+          },
+          {
+            "name": "LinkGroup",
+            "startLine": 538,
+            "endLine": 560,
+            "params": [
+              "{\n  items,\n  bordered = true,\n}"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Basic",
+            "line": 10,
+            "isDefault": false
+          },
+          {
+            "name": "CustomDurations",
+            "line": 60,
+            "isDefault": false
+          },
+          {
+            "name": "Viewport",
+            "line": 95,
+            "isDefault": false
+          },
+          {
+            "name": "Submenus",
+            "line": 194,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "StoryFrame → React.useState",
+          "StoryFrame → setRtl",
+          "LinkGroup → [bordered && styles.borderdList, styles.list].filter(Boolean).join",
+          "LinkGroup → [bordered && styles.borderdList, styles.list].filter",
+          "LinkGroup → items.map"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/one-time-password-field.stories.tsx",
+        "nonEmptyLines": 255,
+        "functions": [
+          {
+            "name": "UncontrolledImpl",
+            "startLine": 42,
+            "endLine": 107,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "ControlledImpl",
+            "startLine": 114,
+            "endLine": 193,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "ErrorMessage",
+            "startLine": 240,
+            "endLine": 242,
+            "params": [
+              "{ children }"
+            ]
+          },
+          {
+            "name": "Dialog",
+            "startLine": 244,
+            "endLine": 274,
+            "params": [
+              "{\n  trigger,\n  title = 'Hello!',\n  content,\n  open,\n  onOpenChange,\n}"
+            ]
+          },
+          {
+            "name": "getInputValues",
+            "startLine": 276,
+            "endLine": 278,
+            "params": [
+              "inputs"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Uncontrolled",
+            "line": 37,
+            "isDefault": false
+          },
+          {
+            "name": "Controlled",
+            "line": 109,
+            "isDefault": false
+          },
+          {
+            "name": "PastedAndDeletedControlled",
+            "line": 195,
+            "isDefault": false
+          },
+          {
+            "name": "PastedAndDeletedUncontrolled",
+            "line": 216,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "UncontrolledImpl → React.useState",
+          "UncontrolledImpl → React.useRef",
+          "UncontrolledImpl → formData.get",
+          "UncontrolledImpl → event.preventDefault",
+          "UncontrolledImpl → setFormState",
+          "UncontrolledImpl → Math.random",
+          "UncontrolledImpl → setShowSuccessMessage",
+          "ControlledImpl → React.useState",
+          "ControlledImpl → React.useRef",
+          "ControlledImpl → event.preventDefault",
+          "ControlledImpl → setError",
+          "ControlledImpl → Math.random",
+          "ControlledImpl → setShowSuccessMessage",
+          "ControlledImpl → setCode",
+          "Dialog → React.useRef",
+          "Dialog → React.useLayoutEffect",
+          "getInputValues → inputs.map((input) => input.value).join",
+          "getInputValues → inputs.map"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/password-toggle-field.stories.tsx",
+        "nonEmptyLines": 143,
+        "functions": [
+          {
+            "name": "EyeClosedIcon",
+            "startLine": 120,
+            "endLine": 134,
+            "params": []
+          },
+          {
+            "name": "EyeOpenIcon",
+            "startLine": 136,
+            "endLine": 150,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Uncontrolled",
+            "line": 15,
+            "isDefault": false
+          },
+          {
+            "name": "Controlled",
+            "line": 41,
+            "isDefault": false
+          },
+          {
+            "name": "InsideForm",
+            "line": 75,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "apps/storybook/stories/popper.stories.tsx",
+        "nonEmptyLines": 607,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 10,
+            "endLine": 28,
+            "params": []
+          },
+          {
+            "name": "WithCustomArrow",
+            "startLine": 30,
+            "endLine": 50,
+            "params": []
+          },
+          {
+            "name": "Animated",
+            "startLine": 52,
+            "endLine": 76,
+            "params": []
+          },
+          {
+            "name": "WithPortal",
+            "startLine": 78,
+            "endLine": 98,
+            "params": []
+          },
+          {
+            "name": "WithSideBasedAnchorStyling",
+            "startLine": 100,
+            "endLine": 160,
+            "params": []
+          },
+          {
+            "name": "WithUpdatePositionStrategyAlways",
+            "startLine": 162,
+            "endLine": 197,
+            "params": []
+          },
+          {
+            "name": "HideWhenDetachedInScrollContainer",
+            "startLine": 205,
+            "endLine": 241,
+            "params": []
+          },
+          {
+            "name": "AvailableSizeWithCustomPortal",
+            "startLine": 249,
+            "endLine": 288,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 290,
+            "endLine": 603,
+            "params": []
+          },
+          {
+            "name": "Scrollable",
+            "startLine": 606,
+            "endLine": 611,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "CustomArrow",
+            "startLine": 613,
+            "endLine": 625,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "anchorClass",
+            "startLine": 627,
+            "endLine": 635,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "contentClass",
+            "startLine": 637,
+            "endLine": 645,
+            "params": [
+              "props"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 10,
+            "isDefault": false
+          },
+          {
+            "name": "WithCustomArrow",
+            "line": 30,
+            "isDefault": false
+          },
+          {
+            "name": "Animated",
+            "line": 52,
+            "isDefault": false
+          },
+          {
+            "name": "WithPortal",
+            "line": 78,
+            "isDefault": false
+          },
+          {
+            "name": "WithSideBasedAnchorStyling",
+            "line": 100,
+            "isDefault": false
+          },
+          {
+            "name": "WithUpdatePositionStrategyAlways",
+            "line": 162,
+            "isDefault": false
+          },
+          {
+            "name": "HideWhenDetachedInScrollContainer",
+            "line": 205,
+            "isDefault": false
+          },
+          {
+            "name": "AvailableSizeWithCustomPortal",
+            "line": 249,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 290,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Styled → React.useState",
+          "Styled → setOpen",
+          "WithCustomArrow → React.useState",
+          "WithCustomArrow → setOpen",
+          "Animated → React.useState",
+          "Animated → setOpen",
+          "Animated → [styles.content, styles.animatedContent].join",
+          "WithPortal → React.useState",
+          "WithPortal → setOpen",
+          "WithSideBasedAnchorStyling → React.useState",
+          "WithSideBasedAnchorStyling → setPreferredSide",
+          "WithSideBasedAnchorStyling → setPreferredAlign",
+          "WithSideBasedAnchorStyling → cx",
+          "WithSideBasedAnchorStyling → setOpen",
+          "WithSideBasedAnchorStyling → [styles.content, styles.animatedContent].join",
+          "WithUpdatePositionStrategyAlways → React.useState",
+          "WithUpdatePositionStrategyAlways → React.useEffect",
+          "WithUpdatePositionStrategyAlways → setInterval",
+          "WithUpdatePositionStrategyAlways → setLeft",
+          "WithUpdatePositionStrategyAlways → clearInterval",
+          "WithUpdatePositionStrategyAlways → setOpen",
+          "HideWhenDetachedInScrollContainer → React.useState",
+          "AvailableSizeWithCustomPortal → React.useState",
+          "AvailableSizeWithCustomPortal → ReactDOM.createPortal",
+          "Chromatic → React.useState",
+          "Chromatic → anchorClass",
+          "Chromatic → contentClass",
+          "Chromatic → Array.from",
+          "anchorClass → [\n    styles.anchor,\n    props.size === 'small' && styles.anchorSmall,\n    props.size === 'large' && styles.anchorLarge,\n  ]\n    .filter(Boolean)\n    .join",
+          "anchorClass → [\n    styles.anchor,\n    props.size === 'small' && styles.anchorSmall,\n    props.size === 'large' && styles.anchorLarge,\n  ]\n    .filter",
+          "contentClass → [\n    styles.content,\n    props.size === 'small' && styles.contentSmall,\n    props.size === 'large' && styles.contentLarge,\n  ]\n    .filter(Boolean)\n    .join",
+          "contentClass → [\n    styles.content,\n    props.size === 'small' && styles.contentSmall,\n    props.size === 'large' && styles.contentLarge,\n  ]\n    .filter"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/portal.stories.tsx",
+        "nonEmptyLines": 140,
+        "functions": [
+          {
+            "name": "Base",
+            "startLine": 6,
+            "endLine": 30,
+            "params": []
+          },
+          {
+            "name": "CustomContainer",
+            "startLine": 32,
+            "endLine": 55,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 57,
+            "endLine": 151,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Base",
+            "line": 6,
+            "isDefault": false
+          },
+          {
+            "name": "CustomContainer",
+            "line": 32,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 57,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "CustomContainer → React.useState",
+          "Chromatic → React.useState"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/presence.stories.tsx",
+        "nonEmptyLines": 96,
+        "functions": [
+          {
+            "name": "Basic",
+            "startLine": 7,
+            "endLine": 19,
+            "params": []
+          },
+          {
+            "name": "WithMountAnimation",
+            "startLine": 21,
+            "endLine": 21,
+            "params": []
+          },
+          {
+            "name": "WithUnmountAnimation",
+            "startLine": 22,
+            "endLine": 22,
+            "params": []
+          },
+          {
+            "name": "WithMultipleMountAnimations",
+            "startLine": 23,
+            "endLine": 25,
+            "params": []
+          },
+          {
+            "name": "WithOpenAndCloseAnimation",
+            "startLine": 26,
+            "endLine": 28,
+            "params": []
+          },
+          {
+            "name": "WithMultipleOpenAndCloseAnimations",
+            "startLine": 29,
+            "endLine": 31,
+            "params": []
+          },
+          {
+            "name": "WithDeferredMountAnimation",
+            "startLine": 33,
+            "endLine": 62,
+            "params": []
+          },
+          {
+            "name": "Animation",
+            "startLine": 64,
+            "endLine": 78,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "Toggles",
+            "startLine": 80,
+            "endLine": 108,
+            "params": [
+              "{ open, onOpenChange, nodeRef }"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Basic",
+            "line": 7,
+            "isDefault": false
+          },
+          {
+            "name": "WithMountAnimation",
+            "line": 21,
+            "isDefault": false
+          },
+          {
+            "name": "WithUnmountAnimation",
+            "line": 22,
+            "isDefault": false
+          },
+          {
+            "name": "WithMultipleMountAnimations",
+            "line": 23,
+            "isDefault": false
+          },
+          {
+            "name": "WithOpenAndCloseAnimation",
+            "line": 26,
+            "isDefault": false
+          },
+          {
+            "name": "WithMultipleOpenAndCloseAnimations",
+            "line": 29,
+            "isDefault": false
+          },
+          {
+            "name": "WithDeferredMountAnimation",
+            "line": 33,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Basic → React.useState",
+          "Basic → setOpen",
+          "WithDeferredMountAnimation → React.useRef",
+          "WithDeferredMountAnimation → React.useState",
+          "WithDeferredMountAnimation → React.useEffect",
+          "WithDeferredMountAnimation → window.setTimeout",
+          "WithDeferredMountAnimation → setAnimate",
+          "WithDeferredMountAnimation → window.clearTimeout",
+          "Animation → React.useRef",
+          "Animation → React.useState",
+          "Toggles → onOpenChange"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/progress.stories.tsx",
+        "nonEmptyLines": 109,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 9,
+            "endLine": 26,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 28,
+            "endLine": 66,
+            "params": []
+          },
+          {
+            "name": "ProgressRange",
+            "startLine": 69,
+            "endLine": 86,
+            "params": [
+              "{ value, setValue, max = 100 }"
+            ]
+          },
+          {
+            "name": "useProgressValueState",
+            "startLine": 89,
+            "endLine": 93,
+            "params": [
+              "initialState",
+              "max"
+            ]
+          },
+          {
+            "name": "useIndeterminateToggle",
+            "startLine": 95,
+            "endLine": 112,
+            "params": [
+              "value",
+              "setValue"
+            ]
+          },
+          {
+            "name": "usePreviousValueRef",
+            "startLine": 114,
+            "endLine": 122,
+            "params": [
+              "value"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 9,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 28,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Styled → useProgressValueState",
+          "Styled → useIndeterminateToggle",
+          "ProgressRange → usePreviousValueRef",
+          "ProgressRange → Number",
+          "ProgressRange → isNaN",
+          "ProgressRange → setValue",
+          "useProgressValueState → React.useState",
+          "useProgressValueState → Math.round",
+          "useIndeterminateToggle → usePreviousValueRef",
+          "useIndeterminateToggle → React.useCallback",
+          "useIndeterminateToggle → setValue",
+          "usePreviousValueRef → React.useRef",
+          "usePreviousValueRef → React.useEffect"
+        ]
+      }
+    ]
+  },
+  {
+    "batchIndex": 84,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "apps/storybook/stories/radio-group.stories.tsx",
+        "nonEmptyLines": 561,
+        "functions": [
+          {
+            "name": "Parts",
+            "startLine": 8,
+            "endLine": 38,
+            "params": []
+          },
+          {
+            "name": "PartsWithinForm",
+            "startLine": 40,
+            "endLine": 149,
+            "params": []
+          },
+          {
+            "name": "WithinFormReset",
+            "startLine": 151,
+            "endLine": 198,
+            "params": []
+          },
+          {
+            "name": "LegacyStyled",
+            "startLine": 200,
+            "endLine": 224,
+            "params": []
+          },
+          {
+            "name": "LegacyControlled",
+            "startLine": 226,
+            "endLine": 242,
+            "params": []
+          },
+          {
+            "name": "LegacyUnset",
+            "startLine": 244,
+            "endLine": 268,
+            "params": []
+          },
+          {
+            "name": "LegacyWithinForm",
+            "startLine": 270,
+            "endLine": 350,
+            "params": []
+          },
+          {
+            "name": "LegacyAnimated",
+            "startLine": 352,
+            "endLine": 379,
+            "params": []
+          },
+          {
+            "name": "LegacyChromatic",
+            "startLine": 381,
+            "endLine": 606,
+            "params": []
+          },
+          {
+            "name": "Label",
+            "startLine": 609,
+            "endLine": 609,
+            "params": [
+              "props"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Parts",
+            "line": 8,
+            "isDefault": false
+          },
+          {
+            "name": "PartsWithinForm",
+            "line": 40,
+            "isDefault": false
+          },
+          {
+            "name": "WithinFormReset",
+            "line": 151,
+            "isDefault": false
+          },
+          {
+            "name": "LegacyStyled",
+            "line": 200,
+            "isDefault": false
+          },
+          {
+            "name": "LegacyControlled",
+            "line": 226,
+            "isDefault": false
+          },
+          {
+            "name": "LegacyUnset",
+            "line": 244,
+            "isDefault": false
+          },
+          {
+            "name": "LegacyWithinForm",
+            "line": 270,
+            "isDefault": false
+          },
+          {
+            "name": "LegacyAnimated",
+            "line": 352,
+            "isDefault": false
+          },
+          {
+            "name": "LegacyChromatic",
+            "line": 381,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "PartsWithinForm → React.useState",
+          "setFieldValue → window.alert",
+          "setFieldValue → setFieldData",
+          "PartsWithinForm → event.preventDefault",
+          "PartsWithinForm → setFormData",
+          "PartsWithinForm → setFieldValue",
+          "PartsWithinForm → ['1', '2', '3', '4'].map",
+          "PartsWithinForm → event.stopPropagation",
+          "PartsWithinForm → JSON.stringify",
+          "WithinFormReset → React.useState",
+          "WithinFormReset → event.preventDefault",
+          "WithinFormReset → ['1', '2', '3'].map",
+          "LegacyControlled → React.useState",
+          "LegacyWithinForm → React.useState",
+          "LegacyWithinForm → event.preventDefault",
+          "LegacyWithinForm → setData",
+          "LegacyWithinForm → event.stopPropagation",
+          "LegacyAnimated → [styles.indicator, styles.animatedIndicator].join",
+          "LegacyChromatic → React.useRef",
+          "LegacyChromatic → React.useEffect",
+          "LegacyChromatic → manualFocusRef.current?.focus"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/roving-focus-group.stories.tsx",
+        "nonEmptyLines": 186,
+        "functions": [
+          {
+            "name": "Basic",
+            "startLine": 8,
+            "endLine": 84,
+            "params": []
+          },
+          {
+            "name": "Nested",
+            "startLine": 86,
+            "endLine": 110,
+            "params": []
+          },
+          {
+            "name": "EdgeCases",
+            "startLine": 112,
+            "endLine": 149,
+            "params": []
+          },
+          {
+            "name": "ButtonGroup",
+            "startLine": 159,
+            "endLine": 174,
+            "params": [
+              "{ defaultValue, ...props }"
+            ]
+          },
+          {
+            "name": "Button",
+            "startLine": 178,
+            "endLine": 210,
+            "params": [
+              "props"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Basic",
+            "line": 8,
+            "isDefault": false
+          },
+          {
+            "name": "Nested",
+            "line": 86,
+            "isDefault": false
+          },
+          {
+            "name": "EdgeCases",
+            "line": 112,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Basic → React.useState",
+          "Basic → setDir",
+          "EdgeCases → React.useState",
+          "EdgeCases → setExtra",
+          "EdgeCases → setDisabled",
+          "EdgeCases → setHidden",
+          "EdgeCases → setDisabled3To5",
+          "ButtonGroup → React.useState",
+          "Button → React.useContext",
+          "Button → setValue",
+          "Button → composeEventHandlers",
+          "Button → event.target.click"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/scroll-area.stories.tsx",
+        "nonEmptyLines": 414,
+        "functions": [
+          {
+            "name": "Basic",
+            "startLine": 7,
+            "endLine": 56,
+            "params": []
+          },
+          {
+            "name": "Resizable",
+            "startLine": 58,
+            "endLine": 76,
+            "params": []
+          },
+          {
+            "name": "ContentChange",
+            "startLine": 78,
+            "endLine": 94,
+            "params": []
+          },
+          {
+            "name": "Animated",
+            "startLine": 96,
+            "endLine": 106,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 108,
+            "endLine": 309,
+            "params": []
+          },
+          {
+            "name": "ChromaticDynamicContentBeforeLoaded",
+            "startLine": 314,
+            "endLine": 362,
+            "params": []
+          },
+          {
+            "name": "ChromaticDynamicContentAfterLoaded",
+            "startLine": 365,
+            "endLine": 365,
+            "params": []
+          },
+          {
+            "name": "Cypress",
+            "startLine": 371,
+            "endLine": 408,
+            "params": []
+          },
+          {
+            "name": "ScrollAreaStory",
+            "startLine": 411,
+            "endLine": 442,
+            "params": [
+              "{\n  children,\n  animated = false,\n  vertical = true,\n  horizontal = true,\n  ...props\n}"
+            ]
+          },
+          {
+            "name": "Copy",
+            "startLine": 444,
+            "endLine": 462,
+            "params": [
+              "props"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Basic",
+            "line": 7,
+            "isDefault": false
+          },
+          {
+            "name": "Resizable",
+            "line": 58,
+            "isDefault": false
+          },
+          {
+            "name": "ContentChange",
+            "line": 78,
+            "isDefault": false
+          },
+          {
+            "name": "Animated",
+            "line": 96,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 108,
+            "isDefault": false
+          },
+          {
+            "name": "ChromaticDynamicContentBeforeLoaded",
+            "line": 314,
+            "isDefault": false
+          },
+          {
+            "name": "ChromaticDynamicContentAfterLoaded",
+            "line": 365,
+            "isDefault": false
+          },
+          {
+            "name": "Cypress",
+            "line": 371,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Basic → React.useState",
+          "Basic → (formData as any).entries",
+          "Basic → [...entries].map",
+          "Basic → Object.fromEntries",
+          "Basic → setProps",
+          "Basic → Array.from({ length: 30 }).map",
+          "Basic → Array.from",
+          "Resizable → Array.from({ length: 30 }).map",
+          "Resizable → Array.from",
+          "ContentChange → React.useState",
+          "ContentChange → setVerticalCount",
+          "ContentChange → setHorizontalCount",
+          "ContentChange → Array.from({ length: verticalCount }).map",
+          "ContentChange → Array.from",
+          "Animated → Array.from({ length: 30 }).map",
+          "Animated → Array.from",
+          "Chromatic → Array.from({ length: 10 }).map",
+          "Chromatic → Array.from",
+          "Chromatic → Array.from({ length: 1 }).map",
+          "Chromatic → Array.from({ length: 100 }).map",
+          "ChromaticDynamicContentBeforeLoaded → React.useState",
+          "ChromaticDynamicContentBeforeLoaded → React.useEffect",
+          "ChromaticDynamicContentBeforeLoaded → setTimeout",
+          "ChromaticDynamicContentBeforeLoaded → setShowContent",
+          "ChromaticDynamicContentBeforeLoaded → Array.from({ length: 30 }).map",
+          "ChromaticDynamicContentBeforeLoaded → Array.from",
+          "Cypress → React.useState",
+          "Cypress → setHorizontalOverflow",
+          "Cypress → Array.from({ length: 30 }).map",
+          "Cypress → Array.from",
+          "ScrollAreaStory → [animated && styles.animatedThumb, styles.thumb].filter(Boolean).join",
+          "ScrollAreaStory → [animated && styles.animatedThumb, styles.thumb].filter"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/separator.stories.tsx",
+        "nonEmptyLines": 25,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 6,
+            "endLine": 28,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 6,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "apps/storybook/stories/slider.stories.tsx",
+        "nonEmptyLines": 715,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 9,
+            "endLine": 16,
+            "params": []
+          },
+          {
+            "name": "WithOnValueCommit",
+            "startLine": 18,
+            "endLine": 28,
+            "params": []
+          },
+          {
+            "name": "RightToLeft",
+            "startLine": 30,
+            "endLine": 37,
+            "params": []
+          },
+          {
+            "name": "Horizontal",
+            "startLine": 39,
+            "endLine": 61,
+            "params": []
+          },
+          {
+            "name": "Vertical",
+            "startLine": 63,
+            "endLine": 80,
+            "params": []
+          },
+          {
+            "name": "Inversions",
+            "startLine": 82,
+            "endLine": 195,
+            "params": []
+          },
+          {
+            "name": "WithMinimumStepsBetweenThumbs",
+            "startLine": 197,
+            "endLine": 205,
+            "params": []
+          },
+          {
+            "name": "WithPreserveThumbOrder",
+            "startLine": 207,
+            "endLine": 249,
+            "params": []
+          },
+          {
+            "name": "WithMultipleRanges",
+            "startLine": 251,
+            "endLine": 284,
+            "params": []
+          },
+          {
+            "name": "SmallSteps",
+            "startLine": 286,
+            "endLine": 306,
+            "params": []
+          },
+          {
+            "name": "WithinForm",
+            "startLine": 308,
+            "endLine": 425,
+            "params": []
+          },
+          {
+            "name": "WithinFormReset",
+            "startLine": 427,
+            "endLine": 472,
+            "params": []
+          },
+          {
+            "name": "BubbleInputWithinForm",
+            "startLine": 474,
+            "endLine": 519,
+            "params": []
+          },
+          {
+            "name": "Parts",
+            "startLine": 521,
+            "endLine": 564,
+            "params": []
+          },
+          {
+            "name": "Strict",
+            "startLine": 566,
+            "endLine": 584,
+            "params": []
+          },
+          {
+            "name": "InScrollableContext",
+            "startLine": 586,
+            "endLine": 604,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 606,
+            "endLine": 788,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 9,
+            "isDefault": false
+          },
+          {
+            "name": "WithOnValueCommit",
+            "line": 18,
+            "isDefault": false
+          },
+          {
+            "name": "RightToLeft",
+            "line": 30,
+            "isDefault": false
+          },
+          {
+            "name": "Horizontal",
+            "line": 39,
+            "isDefault": false
+          },
+          {
+            "name": "Vertical",
+            "line": 63,
+            "isDefault": false
+          },
+          {
+            "name": "Inversions",
+            "line": 82,
+            "isDefault": false
+          },
+          {
+            "name": "WithMinimumStepsBetweenThumbs",
+            "line": 197,
+            "isDefault": false
+          },
+          {
+            "name": "WithPreserveThumbOrder",
+            "line": 207,
+            "isDefault": false
+          },
+          {
+            "name": "WithMultipleRanges",
+            "line": 251,
+            "isDefault": false
+          },
+          {
+            "name": "SmallSteps",
+            "line": 286,
+            "isDefault": false
+          },
+          {
+            "name": "WithinForm",
+            "line": 308,
+            "isDefault": false
+          },
+          {
+            "name": "WithinFormReset",
+            "line": 427,
+            "isDefault": false
+          },
+          {
+            "name": "BubbleInputWithinForm",
+            "line": 474,
+            "isDefault": false
+          },
+          {
+            "name": "Parts",
+            "line": 521,
+            "isDefault": false
+          },
+          {
+            "name": "Strict",
+            "line": 566,
+            "isDefault": false
+          },
+          {
+            "name": "InScrollableContext",
+            "line": 586,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 606,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Horizontal → console.log",
+          "WithMultipleRanges → React.useState",
+          "WithMultipleRanges → setMinStepsBetweenThumbs",
+          "WithMultipleRanges → Number",
+          "SmallSteps → React.useState",
+          "WithinForm → React.useState",
+          "setFieldValue → setFieldData",
+          "WithinForm → event.preventDefault",
+          "WithinForm → console.log",
+          "WithinForm → serialize",
+          "WithinForm → setData",
+          "WithinForm → String",
+          "WithinForm → JSON.stringify",
+          "WithinForm → setFieldValue",
+          "WithinForm → Number",
+          "WithinFormReset → React.useState",
+          "WithinFormReset → event.preventDefault",
+          "WithinFormReset → String",
+          "BubbleInputWithinForm → React.useState",
+          "BubbleInputWithinForm → event.preventDefault",
+          "BubbleInputWithinForm → console.log",
+          "BubbleInputWithinForm → serialize",
+          "BubbleInputWithinForm → setData",
+          "BubbleInputWithinForm → String",
+          "BubbleInputWithinForm → JSON.stringify",
+          "Parts → React.useState",
+          "Parts → event.preventDefault",
+          "Parts → console.log",
+          "Parts → serialize",
+          "Parts → setData",
+          "Parts → JSON.stringify",
+          "InScrollableContext → React.useState",
+          "InScrollableContext → setValue"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/slot.stories.tsx",
+        "nonEmptyLines": 351,
+        "functions": [
+          {
+            "name": "WithSlottable",
+            "startLine": 17,
+            "endLine": 21,
+            "params": []
+          },
+          {
+            "name": "WithComposedEvents",
+            "startLine": 23,
+            "endLine": 59,
+            "params": []
+          },
+          {
+            "name": "ButtonAsLink",
+            "startLine": 61,
+            "endLine": 84,
+            "params": []
+          },
+          {
+            "name": "WithLazyComponent",
+            "startLine": 95,
+            "endLine": 103,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 105,
+            "endLine": 270,
+            "params": []
+          },
+          {
+            "name": "SlotWithoutSlottable",
+            "startLine": 294,
+            "endLine": 296,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "SlotWithSlottable",
+            "startLine": 298,
+            "endLine": 303,
+            "params": [
+              "{ children, ...props }"
+            ]
+          },
+          {
+            "name": "SlotWithFalseInternalChild",
+            "startLine": 305,
+            "endLine": 307,
+            "params": [
+              "{ children, ...props }"
+            ]
+          },
+          {
+            "name": "SlotWithNullInternalChild",
+            "startLine": 309,
+            "endLine": 311,
+            "params": [
+              "{ children, ...props }"
+            ]
+          },
+          {
+            "name": "SlotWithPreventableEvent",
+            "startLine": 313,
+            "endLine": 323,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "SlotWithoutPreventableEvent",
+            "startLine": 325,
+            "endLine": 333,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "Button",
+            "startLine": 335,
+            "endLine": 368,
+            "params": [
+              "{\n  children,\n  asChild = false,\n  iconLeft,\n  iconRight,\n  ...props\n}"
+            ]
+          },
+          {
+            "name": "MockIcon",
+            "startLine": 370,
+            "endLine": 381,
+            "params": [
+              "{ color = 'tomato', ...props }"
+            ]
+          },
+          {
+            "name": "MockTag",
+            "startLine": 383,
+            "endLine": 394,
+            "params": [
+              "{\n  onDelete,\n  ...props\n}"
+            ]
+          },
+          {
+            "name": "wait",
+            "startLine": 396,
+            "endLine": 398,
+            "params": [
+              "ms"
+            ]
+          }
+        ],
+        "classes": [
+          {
+            "name": "ErrorBoundary",
+            "startLine": 275,
+            "endLine": 291,
+            "methods": [
+              "constructor",
+              "getDerivedStateFromError",
+              "render"
+            ],
+            "properties": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "WithoutSlottable",
+            "line": 9,
+            "isDefault": false
+          },
+          {
+            "name": "WithSlottable",
+            "line": 17,
+            "isDefault": false
+          },
+          {
+            "name": "WithComposedEvents",
+            "line": 23,
+            "isDefault": false
+          },
+          {
+            "name": "ButtonAsLink",
+            "line": 61,
+            "isDefault": false
+          },
+          {
+            "name": "WithLazyComponent",
+            "line": 95,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 105,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "WithComposedEvents → console.log",
+          "WithComposedEvents → event.preventDefault",
+          "WithLazyComponent → console.log",
+          "Chromatic → alert",
+          "constructor → super",
+          "SlotWithPreventableEvent → props.onClick",
+          "SlotWithPreventableEvent → console.log",
+          "SlotWithoutPreventableEvent → props.onClick",
+          "SlotWithoutPreventableEvent → console.log",
+          "wait → setTimeout"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/switch.stories.tsx",
+        "nonEmptyLines": 295,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 8,
+            "endLine": 18,
+            "params": []
+          },
+          {
+            "name": "Controlled",
+            "startLine": 20,
+            "endLine": 37,
+            "params": []
+          },
+          {
+            "name": "WithinForm",
+            "startLine": 39,
+            "endLine": 156,
+            "params": []
+          },
+          {
+            "name": "WithinFormReset",
+            "startLine": 158,
+            "endLine": 201,
+            "params": []
+          },
+          {
+            "name": "Parts",
+            "startLine": 203,
+            "endLine": 217,
+            "params": []
+          },
+          {
+            "name": "PartsWithinForm",
+            "startLine": 219,
+            "endLine": 288,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 290,
+            "endLine": 335,
+            "params": []
+          },
+          {
+            "name": "Label",
+            "startLine": 338,
+            "endLine": 338,
+            "params": [
+              "props"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 8,
+            "isDefault": false
+          },
+          {
+            "name": "Controlled",
+            "line": 20,
+            "isDefault": false
+          },
+          {
+            "name": "WithinForm",
+            "line": 39,
+            "isDefault": false
+          },
+          {
+            "name": "WithinFormReset",
+            "line": 158,
+            "isDefault": false
+          },
+          {
+            "name": "Parts",
+            "line": 203,
+            "isDefault": false
+          },
+          {
+            "name": "PartsWithinForm",
+            "line": 219,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 290,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Controlled → React.useState",
+          "WithinForm → React.useState",
+          "setFieldChecked → window.alert",
+          "setFieldChecked → setFieldData",
+          "WithinForm → event.preventDefault",
+          "WithinForm → setFormData",
+          "WithinForm → ['1', '2', '3', '4'].map",
+          "WithinForm → setFieldChecked",
+          "WithinForm → event.stopPropagation",
+          "WithinForm → JSON.stringify",
+          "WithinFormReset → React.useState",
+          "WithinFormReset → event.preventDefault",
+          "WithinFormReset → String",
+          "Parts → React.useState",
+          "PartsWithinForm → React.useState",
+          "PartsWithinForm → event.preventDefault",
+          "PartsWithinForm → setData",
+          "PartsWithinForm → String",
+          "PartsWithinForm → event.stopPropagation"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/tabs.stories.tsx",
+        "nonEmptyLines": 349,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 8,
+            "endLine": 69,
+            "params": []
+          },
+          {
+            "name": "Animated",
+            "startLine": 71,
+            "endLine": 133,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 135,
+            "endLine": 363,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 8,
+            "isDefault": false
+          },
+          {
+            "name": "Animated",
+            "line": 71,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 135,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "apps/storybook/stories/toast.stories.tsx",
+        "nonEmptyLines": 485,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 7,
+            "endLine": 12,
+            "params": []
+          },
+          {
+            "name": "Controlled",
+            "startLine": 14,
+            "endLine": 57,
+            "params": []
+          },
+          {
+            "name": "FromDialog",
+            "startLine": 59,
+            "endLine": 92,
+            "params": []
+          },
+          {
+            "name": "Promise",
+            "startLine": 94,
+            "endLine": 132,
+            "params": []
+          },
+          {
+            "name": "KeyChange",
+            "startLine": 134,
+            "endLine": 158,
+            "params": []
+          },
+          {
+            "name": "PauseResumeProps",
+            "startLine": 160,
+            "endLine": 174,
+            "params": []
+          },
+          {
+            "name": "Animated",
+            "startLine": 178,
+            "endLine": 218,
+            "params": []
+          },
+          {
+            "name": "Cypress",
+            "startLine": 220,
+            "endLine": 264,
+            "params": []
+          },
+          {
+            "name": "CustomAnnouncerContainer",
+            "startLine": 266,
+            "endLine": 307,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 311,
+            "endLine": 474,
+            "params": []
+          },
+          {
+            "name": "ToastUpgradeAvailable",
+            "startLine": 479,
+            "endLine": 498,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "ToastSubscribeSuccess",
+            "startLine": 500,
+            "endLine": 512,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "ToastWithProgress",
+            "startLine": 514,
+            "endLine": 538,
+            "params": [
+              "props"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 7,
+            "isDefault": false
+          },
+          {
+            "name": "Controlled",
+            "line": 14,
+            "isDefault": false
+          },
+          {
+            "name": "FromDialog",
+            "line": 59,
+            "isDefault": false
+          },
+          {
+            "name": "Promise",
+            "line": 94,
+            "isDefault": false
+          },
+          {
+            "name": "KeyChange",
+            "line": 134,
+            "isDefault": false
+          },
+          {
+            "name": "PauseResumeProps",
+            "line": 160,
+            "isDefault": false
+          },
+          {
+            "name": "Animated",
+            "line": 178,
+            "isDefault": false
+          },
+          {
+            "name": "Cypress",
+            "line": 220,
+            "isDefault": false
+          },
+          {
+            "name": "CustomAnnouncerContainer",
+            "line": 266,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 311,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Controlled → React.useState",
+          "Controlled → React.useEffect",
+          "Controlled → window.setTimeout",
+          "Controlled → setHasUpgrade",
+          "Controlled → window.clearTimeout",
+          "Controlled → setIsSubscribed",
+          "Controlled → setErrorCount",
+          "Controlled → setSavedCount",
+          "Controlled → [...Array(errorCount)].map",
+          "Controlled → Array",
+          "Controlled → [styles.root, styles.errorRoot].join",
+          "Controlled → console.log",
+          "Controlled → [...Array(savedCount)].map",
+          "FromDialog → React.useState",
+          "FromDialog → setOpen",
+          "FromDialog → [styles.root, styles.errorRoot].join",
+          "FromDialog → console.log",
+          "Promise → React.useState",
+          "Promise → React.useEffect",
+          "Promise → window.setTimeout",
+          "Promise → setSaving",
+          "Promise → window.clearTimeout",
+          "Promise → setOpen",
+          "Promise → event.preventDefault",
+          "KeyChange → React.useState",
+          "KeyChange → setToastOneCount",
+          "KeyChange → setToastTwoCount",
+          "KeyChange → String",
+          "PauseResumeProps → React.useState",
+          "PauseResumeProps → setToastCount",
+          "PauseResumeProps → [...Array(toastCount)].map",
+          "PauseResumeProps → Array",
+          "Animated → React.useState",
+          "Animated → React.useRef",
+          "Animated → (['up', 'down'] as Direction[]).includes",
+          "Animated → setOpen",
+          "Animated → window.clearTimeout",
+          "Animated → window.setTimeout",
+          "Animated → setSwipeDirection",
+          "Animated → [styles.root, styles.animatedRoot].join",
+          "Cypress → React.useState",
+          "Cypress → setCount",
+          "Cypress → [...Array(count)].map",
+          "Cypress → Array",
+          "CustomAnnouncerContainer → React.useState",
+          "CustomAnnouncerContainer → React.useRef",
+          "CustomAnnouncerContainer → setOpen",
+          "Chromatic → React.useState",
+          "ToastSubscribeSuccess → [styles.header, styles.successHeader].join",
+          "ToastWithProgress → React.useState",
+          "ToastWithProgress → setPaused"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/toggle-group.stories.tsx",
+        "nonEmptyLines": 315,
+        "functions": [
+          {
+            "name": "Single",
+            "startLine": 9,
+            "endLine": 46,
+            "params": []
+          },
+          {
+            "name": "Vertical",
+            "startLine": 48,
+            "endLine": 68,
+            "params": []
+          },
+          {
+            "name": "Multiple",
+            "startLine": 70,
+            "endLine": 112,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 114,
+            "endLine": 297,
+            "params": []
+          },
+          {
+            "name": "Cypress",
+            "startLine": 301,
+            "endLine": 333,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Single",
+            "line": 9,
+            "isDefault": false
+          },
+          {
+            "name": "Vertical",
+            "line": 48,
+            "isDefault": false
+          },
+          {
+            "name": "Multiple",
+            "line": 70,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 114,
+            "isDefault": false
+          },
+          {
+            "name": "Cypress",
+            "line": 301,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Single → React.useState",
+          "Multiple → React.useState"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/toggle.stories.tsx",
+        "nonEmptyLines": 43,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 7,
+            "endLine": 7,
+            "params": []
+          },
+          {
+            "name": "Controlled",
+            "startLine": 9,
+            "endLine": 17,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 19,
+            "endLine": 52,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 7,
+            "isDefault": false
+          },
+          {
+            "name": "Controlled",
+            "line": 9,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 19,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Controlled → React.useState"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/toolbar.stories.tsx",
+        "nonEmptyLines": 82,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 6,
+            "endLine": 11,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 13,
+            "endLine": 28,
+            "params": []
+          },
+          {
+            "name": "ToolbarExample",
+            "startLine": 31,
+            "endLine": 88,
+            "params": [
+              "{ title, dir, orientation }"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 6,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 13,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "ToolbarExample → [styles.toolbarItem, styles.toolbarToggleItem].join",
+          "ToolbarExample → [styles.toolbarItem, styles.toolbarLink].join",
+          "ToolbarExample → [styles.toolbarItem, styles.toolbarToggleButton].join"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/tooltip.stories.tsx",
+        "nonEmptyLines": 1051,
+        "functions": [
+          {
+            "name": "Styled",
+            "startLine": 10,
+            "endLine": 22,
+            "params": []
+          },
+          {
+            "name": "Controlled",
+            "startLine": 24,
+            "endLine": 41,
+            "params": []
+          },
+          {
+            "name": "CustomDurations",
+            "startLine": 43,
+            "endLine": 242,
+            "params": []
+          },
+          {
+            "name": "CustomContent",
+            "startLine": 244,
+            "endLine": 384,
+            "params": []
+          },
+          {
+            "name": "Positions",
+            "startLine": 386,
+            "endLine": 509,
+            "params": []
+          },
+          {
+            "name": "AriaLabel",
+            "startLine": 511,
+            "endLine": 529,
+            "params": []
+          },
+          {
+            "name": "WithText",
+            "startLine": 531,
+            "endLine": 554,
+            "params": []
+          },
+          {
+            "name": "WithExternalRef",
+            "startLine": 556,
+            "endLine": 574,
+            "params": []
+          },
+          {
+            "name": "Unmount",
+            "startLine": 576,
+            "endLine": 604,
+            "params": []
+          },
+          {
+            "name": "Animated",
+            "startLine": 606,
+            "endLine": 621,
+            "params": []
+          },
+          {
+            "name": "SlottableContent",
+            "startLine": 623,
+            "endLine": 637,
+            "params": []
+          },
+          {
+            "name": "WithinDialog",
+            "startLine": 639,
+            "endLine": 659,
+            "params": []
+          },
+          {
+            "name": "KeepOpenOnActivation",
+            "startLine": 661,
+            "endLine": 689,
+            "params": []
+          },
+          {
+            "name": "WithinScrollable",
+            "startLine": 691,
+            "endLine": 730,
+            "params": []
+          },
+          {
+            "name": "DisableHoverableContent",
+            "startLine": 732,
+            "endLine": 790,
+            "params": []
+          },
+          {
+            "name": "Chromatic",
+            "startLine": 795,
+            "endLine": 1080,
+            "params": []
+          },
+          {
+            "name": "SimpleTooltip",
+            "startLine": 1083,
+            "endLine": 1107,
+            "params": [
+              "{\n  children,\n  label,\n  'aria-label': ariaLabel,\n  open,\n  onOpenChange,\n  ...props\n}"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Styled",
+            "line": 10,
+            "isDefault": false
+          },
+          {
+            "name": "Controlled",
+            "line": 24,
+            "isDefault": false
+          },
+          {
+            "name": "CustomDurations",
+            "line": 43,
+            "isDefault": false
+          },
+          {
+            "name": "CustomContent",
+            "line": 244,
+            "isDefault": false
+          },
+          {
+            "name": "Positions",
+            "line": 386,
+            "isDefault": false
+          },
+          {
+            "name": "AriaLabel",
+            "line": 511,
+            "isDefault": false
+          },
+          {
+            "name": "WithText",
+            "line": 531,
+            "isDefault": false
+          },
+          {
+            "name": "WithExternalRef",
+            "line": 556,
+            "isDefault": false
+          },
+          {
+            "name": "Unmount",
+            "line": 576,
+            "isDefault": false
+          },
+          {
+            "name": "Animated",
+            "line": 606,
+            "isDefault": false
+          },
+          {
+            "name": "SlottableContent",
+            "line": 623,
+            "isDefault": false
+          },
+          {
+            "name": "WithinDialog",
+            "line": 639,
+            "isDefault": false
+          },
+          {
+            "name": "KeepOpenOnActivation",
+            "line": 661,
+            "isDefault": false
+          },
+          {
+            "name": "WithinScrollable",
+            "line": 691,
+            "isDefault": false
+          },
+          {
+            "name": "DisableHoverableContent",
+            "line": 732,
+            "isDefault": false
+          },
+          {
+            "name": "Chromatic",
+            "line": 795,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Controlled → React.useState",
+          "WithExternalRef → React.useRef",
+          "WithExternalRef → React.useEffect",
+          "Unmount → React.useState",
+          "Unmount → setIsMounted",
+          "Animated → [styles.content, styles.animatedContent].join",
+          "KeepOpenOnActivation → React.useRef",
+          "KeepOpenOnActivation → event.preventDefault",
+          "Chromatic → SIDES.map",
+          "Chromatic → ALIGN_OPTIONS.map"
+        ]
+      },
+      {
+        "path": "apps/storybook/stories/visually-hidden.stories.tsx",
+        "nonEmptyLines": 8,
+        "functions": [
+          {
+            "name": "Basic",
+            "startLine": 5,
+            "endLine": 10,
+            "params": []
+          }
+        ],
+        "exports": [
+          {
+            "name": "Basic",
+            "line": 5,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "apps/storybook/tsconfig.json",
+        "nonEmptyLines": 4,
+        "sections": [
+          "extends",
+          "include"
+        ],
+        "calls": []
+      },
+      {
+        "path": "e2e/tsconfig.json",
+        "nonEmptyLines": 14,
+        "sections": [
+          "compilerOptions",
+          "include"
+        ],
+        "calls": []
+      },
+      {
+        "path": "internal/builder/builder.js",
+        "nonEmptyLines": 261,
+        "functions": [
+          {
+            "name": "build",
+            "startLine": 13,
+            "endLine": 107,
+            "params": [
+              "relativePath"
+            ]
+          },
+          {
+            "name": "stripLeakedReactModuleAugmentations",
+            "startLine": 117,
+            "endLine": 131,
+            "params": [
+              "distDirectoryPath"
+            ]
+          },
+          {
+            "name": "stripReactModuleAugmentationsFromDeclarationFile",
+            "startLine": 136,
+            "endLine": 150,
+            "params": [
+              "declarationFilePath"
+            ]
+          },
+          {
+            "name": "removeReactModuleAugmentations",
+            "startLine": 155,
+            "endLine": 210,
+            "params": [
+              "declarationContents"
+            ]
+          },
+          {
+            "name": "getMatchingClosingBraceIndex",
+            "startLine": 216,
+            "endLine": 253,
+            "params": [
+              "content",
+              "openingBraceIndex"
+            ]
+          },
+          {
+            "name": "skipStringLiteral",
+            "startLine": 260,
+            "endLine": 279,
+            "params": [
+              "content",
+              "startIndex",
+              "quoteCharacter"
+            ]
+          },
+          {
+            "name": "skipLineComment",
+            "startLine": 285,
+            "endLine": 293,
+            "params": [
+              "content",
+              "startIndex"
+            ]
+          },
+          {
+            "name": "skipBlockComment",
+            "startLine": 299,
+            "endLine": 311,
+            "params": [
+              "content",
+              "startIndex"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "build",
+            "line": 13,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "build → path.resolve",
+          "build → fs.existsSync",
+          "build → fs.promises.readFile(packageJsonPath, 'utf-8').catch",
+          "build → fs.promises.readFile",
+          "build → console.error",
+          "build → process.exit",
+          "build → JSON.parse",
+          "build → fs\n      .readdirSync(sourceDirectory, { recursive: true })\n      .map((entry) => entry.toString().split(path.sep).join('/'))\n      .filter((file) => file.endsWith('.ts') && !file.endsWith('.d.ts') && file !== 'index.ts')\n      .sort",
+          "build → fs\n      .readdirSync(sourceDirectory, { recursive: true })\n      .map((entry) => entry.toString().split(path.sep).join('/'))\n      .filter",
+          "build → fs\n      .readdirSync(sourceDirectory, { recursive: true })\n      .map",
+          "build → fs\n      .readdirSync",
+          "build → entry.toString().split(path.sep).join",
+          "build → entry.toString().split",
+          "build → entry.toString",
+          "build → file.endsWith",
+          "build → files.push",
+          "build → files.map",
+          "build → tasks.push",
+          "build → esbuild.build(esbuildConfig).then",
+          "build → esbuild.build",
+          "build → console.log",
+          "build → esbuild\n      .build({\n        ...esbuildConfig,\n        format: 'esm',\n        outExtension: { '.js': '.mjs' },\n      })\n      .then",
+          "build → esbuild\n      .build",
+          "build → tsup\n      .build({\n        entry: entryPoints,\n        format: ['cjs', 'esm'],\n        dts: { only: true },\n        outDir: dist,\n        silent: true,\n        external: [/@radix-ui\\/.+/],\n      })\n      .then",
+          "build → tsup\n      .build",
+          "build → Promise.all",
+          "build → stripLeakedReactModuleAugmentations",
+          "stripLeakedReactModuleAugmentations → fs.promises\n    .readdir(distDirectoryPath, { recursive: true })\n    .catch",
+          "stripLeakedReactModuleAugmentations → fs.promises\n    .readdir",
+          "stripLeakedReactModuleAugmentations → distEntries\n    .map((entry) => entry.toString())\n    .filter((fileName) => DECLARATION_FILE_REGEX.test(fileName))\n    .map",
+          "stripLeakedReactModuleAugmentations → distEntries\n    .map((entry) => entry.toString())\n    .filter",
+          "stripLeakedReactModuleAugmentations → distEntries\n    .map",
+          "stripLeakedReactModuleAugmentations → entry.toString",
+          "stripLeakedReactModuleAugmentations → DECLARATION_FILE_REGEX.test",
+          "stripLeakedReactModuleAugmentations → path.resolve",
+          "stripLeakedReactModuleAugmentations → Promise.all",
+          "stripLeakedReactModuleAugmentations → declarationFilePaths.map",
+          "stripLeakedReactModuleAugmentations → stripReactModuleAugmentationsFromDeclarationFile",
+          "stripReactModuleAugmentationsFromDeclarationFile → fs.promises.readFile",
+          "stripReactModuleAugmentationsFromDeclarationFile → removeReactModuleAugmentations",
+          "stripReactModuleAugmentationsFromDeclarationFile → fs.promises.writeFile",
+          "removeReactModuleAugmentations → REACT_MODULE_AUGMENTATION_START_REGEX.exec",
+          "removeReactModuleAugmentations → getMatchingClosingBraceIndex",
+          "removeReactModuleAugmentations → declarationContents.slice",
+          "removeReactModuleAugmentations → /\\s/.test",
+          "removeReactModuleAugmentations → declarationContents.charAt",
+          "getMatchingClosingBraceIndex → skipStringLiteral",
+          "getMatchingClosingBraceIndex → skipLineComment",
+          "getMatchingClosingBraceIndex → skipBlockComment"
+        ]
+      },
+      {
+        "path": "internal/builder/package.json",
+        "nonEmptyLines": 21,
+        "sections": [
+          "name",
+          "version",
+          "private",
+          "license",
+          "type",
+          "main",
+          "exports",
+          "bin",
+          "dependencies",
+          "devDependencies"
+        ],
+        "calls": []
+      },
+      {
+        "path": "internal/builder/radix-build.js",
+        "nonEmptyLines": 12,
+        "calls": []
+      },
+      {
+        "path": "internal/builder/tsconfig.json",
+        "nonEmptyLines": 10,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      },
+      {
+        "path": "internal/test-data/foods.ts",
+        "nonEmptyLines": 41,
+        "exports": [
+          {
+            "name": "foodGroups",
+            "line": 1,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "internal/test-data/package.json",
+        "nonEmptyLines": 18,
+        "sections": [
+          "name",
+          "version",
+          "private",
+          "license",
+          "type",
+          "devDependencies",
+          "exports",
+          "scripts"
+        ],
+        "calls": []
+      },
+      {
+        "path": "internal/test-data/tsconfig.json",
+        "nonEmptyLines": 9,
+        "sections": [
+          "extends",
+          "compilerOptions",
+          "include",
+          "exclude"
+        ],
+        "calls": []
+      },
+      {
+        "path": "internal/test-utils/package.json",
+        "nonEmptyLines": 27,
+        "sections": [
+          "name",
+          "version",
+          "private",
+          "license",
+          "type",
+          "exports",
+          "scripts",
+          "devDependencies",
+          "peerDependencies"
+        ],
+        "calls": []
+      },
+      {
+        "path": "internal/test-utils/ref-stability.tsx",
+        "nonEmptyLines": 55,
+        "functions": [
+          {
+            "name": "assertStableComposedRef",
+            "startLine": 35,
+            "endLine": 60,
+            "params": [
+              "renderWithRef",
+              "{ maxRenders = DEFAULT_MAX_RENDERS }"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "assertStableComposedRef",
+            "line": 35,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Probe → React.useReducer",
+          "Probe → Object.create",
+          "Probe → React.useCallback",
+          "Probe → forceRender",
+          "Probe → renderWithRef",
+          "assertStableComposedRef → expect(() => render(<Probe />)).not.toThrow",
+          "assertStableComposedRef → expect",
+          "assertStableComposedRef → render",
+          "assertStableComposedRef → expect(\n    renderCount,\n    `Expected the component to settle, but it rendered ${renderCount} times ` +\n      `(>= ${maxRenders}). This usually means a composed ref callback is being ` +\n      `recreated on every render. Pass stable refs (e.g. state setters) directly ` +\n      `to \\`useComposedRefs\\`, or wrap inline callbacks in \\`useCallbackRef\\`.`,\n  ).toBeLessThan"
+        ]
+      }
+    ]
+  },
+  {
+    "batchIndex": 89,
+    "filesSkipped": [],
+    "filesUnreadable": [],
+    "results": [
+      {
+        "path": "packages/react/popper/src/popper.tsx",
+        "nonEmptyLines": 438,
+        "functions": [
+          {
+            "name": "Popper",
+            "startLine": 64,
+            "endLine": 79,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "isNotNull",
+            "startLine": 434,
+            "endLine": 436,
+            "params": [
+              "value"
+            ]
+          },
+          {
+            "name": "transformOrigin",
+            "startLine": 438,
+            "endLine": 473,
+            "params": [
+              "options"
+            ]
+          },
+          {
+            "name": "getSideAndAlignFromPlacement",
+            "startLine": 475,
+            "endLine": 478,
+            "params": [
+              "placement"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "createPopperScope",
+            "line": 480,
+            "isDefault": false
+          },
+          {
+            "name": "Popper",
+            "line": 480,
+            "isDefault": false
+          },
+          {
+            "name": "PopperAnchor",
+            "line": 480,
+            "isDefault": false
+          },
+          {
+            "name": "PopperContent",
+            "line": 480,
+            "isDefault": false
+          },
+          {
+            "name": "PopperArrow",
+            "line": 480,
+            "isDefault": false
+          },
+          {
+            "name": "Root",
+            "line": 480,
+            "isDefault": false
+          },
+          {
+            "name": "Anchor",
+            "line": 480,
+            "isDefault": false
+          },
+          {
+            "name": "Content",
+            "line": 480,
+            "isDefault": false
+          },
+          {
+            "name": "Arrow",
+            "line": 480,
+            "isDefault": false
+          },
+          {
+            "name": "SIDE_OPTIONS",
+            "line": 480,
+            "isDefault": false
+          },
+          {
+            "name": "ALIGN_OPTIONS",
+            "line": 480,
+            "isDefault": false
+          },
+          {
+            "name": "PopperProps",
+            "line": 496,
+            "isDefault": false
+          },
+          {
+            "name": "PopperAnchorProps",
+            "line": 496,
+            "isDefault": false
+          },
+          {
+            "name": "PopperContentProps",
+            "line": 496,
+            "isDefault": false
+          },
+          {
+            "name": "PopperArrowProps",
+            "line": 496,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "Popper → React.useState",
+          "fn → getSideAndAlignFromPlacement",
+          "getSideAndAlignFromPlacement → placement.split"
+        ]
+      },
+      {
+        "path": "packages/react/portal/src/index.ts",
+        "nonEmptyLines": 7,
+        "exports": [
+          {
+            "name": "Portal",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "Root",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "PortalProps",
+            "line": 7,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/portal/src/portal.test.tsx",
+        "nonEmptyLines": 80,
+        "calls": []
+      },
+      {
+        "path": "packages/react/portal/src/portal.tsx",
+        "nonEmptyLines": 33,
+        "exports": [
+          {
+            "name": "Portal",
+            "line": 33,
+            "isDefault": false
+          },
+          {
+            "name": "Root",
+            "line": 33,
+            "isDefault": false
+          },
+          {
+            "name": "PortalProps",
+            "line": 38,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/presence/src/index.ts",
+        "nonEmptyLines": 3,
+        "exports": [
+          {
+            "name": "Presence",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "Root",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "PresenceProps",
+            "line": 3,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/primitive/src/index.ts",
+        "nonEmptyLines": 9,
+        "exports": [
+          {
+            "name": "Primitive",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "Root",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "dispatchDiscreteCustomEvent",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "PrimitivePropsWithRef",
+            "line": 9,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/primitive/src/primitive.test.tsx",
+        "nonEmptyLines": 290,
+        "calls": []
+      },
+      {
+        "path": "packages/react/primitive/src/primitive.tsx",
+        "nonEmptyLines": 101,
+        "functions": [
+          {
+            "name": "dispatchDiscreteCustomEvent",
+            "startLine": 103,
+            "endLine": 105,
+            "params": [
+              "target",
+              "event"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "Primitive",
+            "line": 109,
+            "isDefault": false
+          },
+          {
+            "name": "Root",
+            "line": 109,
+            "isDefault": false
+          },
+          {
+            "name": "dispatchDiscreteCustomEvent",
+            "line": 109,
+            "isDefault": false
+          },
+          {
+            "name": "PrimitivePropsWithRef",
+            "line": 116,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "dispatchDiscreteCustomEvent → ReactDOM.flushSync",
+          "dispatchDiscreteCustomEvent → target.dispatchEvent"
+        ]
+      },
+      {
+        "path": "packages/react/progress/src/index.ts",
+        "nonEmptyLines": 11,
+        "exports": [
+          {
+            "name": "createProgressScope",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "Progress",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "ProgressIndicator",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "Root",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "Indicator",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "ProgressProps",
+            "line": 11,
+            "isDefault": false
+          },
+          {
+            "name": "ProgressIndicatorProps",
+            "line": 11,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/progress/src/progress.test.tsx",
+        "nonEmptyLines": 109,
+        "calls": []
+      },
+      {
+        "path": "packages/react/progress/src/progress.tsx",
+        "nonEmptyLines": 134,
+        "functions": [
+          {
+            "name": "defaultGetValueLabel",
+            "startLine": 106,
+            "endLine": 108,
+            "params": [
+              "value",
+              "max"
+            ]
+          },
+          {
+            "name": "getProgressState",
+            "startLine": 110,
+            "endLine": 112,
+            "params": [
+              "value",
+              "maxValue"
+            ]
+          },
+          {
+            "name": "isNumber",
+            "startLine": 114,
+            "endLine": 116,
+            "params": [
+              "value"
+            ]
+          },
+          {
+            "name": "isValidMaxNumber",
+            "startLine": 118,
+            "endLine": 125,
+            "params": [
+              "max"
+            ]
+          },
+          {
+            "name": "isValidValueNumber",
+            "startLine": 127,
+            "endLine": 135,
+            "params": [
+              "value",
+              "max"
+            ]
+          },
+          {
+            "name": "getInvalidMaxError",
+            "startLine": 138,
+            "endLine": 140,
+            "params": [
+              "propValue",
+              "componentName"
+            ]
+          },
+          {
+            "name": "getInvalidValueError",
+            "startLine": 142,
+            "endLine": 149,
+            "params": [
+              "propValue",
+              "componentName"
+            ]
+          }
+        ],
+        "exports": [
+          {
+            "name": "createProgressScope",
+            "line": 151,
+            "isDefault": false
+          },
+          {
+            "name": "Progress",
+            "line": 151,
+            "isDefault": false
+          },
+          {
+            "name": "ProgressIndicator",
+            "line": 151,
+            "isDefault": false
+          },
+          {
+            "name": "Root",
+            "line": 151,
+            "isDefault": false
+          },
+          {
+            "name": "Indicator",
+            "line": 151,
+            "isDefault": false
+          },
+          {
+            "name": "ProgressProps",
+            "line": 160,
+            "isDefault": false
+          },
+          {
+            "name": "ProgressIndicatorProps",
+            "line": 160,
+            "isDefault": false
+          }
+        ],
+        "calls": [
+          "defaultGetValueLabel → Math.round",
+          "isValidMaxNumber → isNumber",
+          "isValidMaxNumber → isNaN",
+          "isValidValueNumber → isNumber",
+          "isValidValueNumber → isNaN"
+        ]
+      },
+      {
+        "path": "packages/react/radio-group/src/index.ts",
+        "nonEmptyLines": 26,
+        "exports": [
+          {
+            "name": "createRadioGroupScope",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroup",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupItem",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "unstable_RadioGroupItemProvider",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "unstable_RadioGroupItemTrigger",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "unstable_RadioGroupItemBubbleInput",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupIndicator",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "Root",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "Item",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "unstable_ItemProvider",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "unstable_ItemTrigger",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "unstable_ItemBubbleInput",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "Indicator",
+            "line": 2,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupProps",
+            "line": 19,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupItemProps",
+            "line": 19,
+            "isDefault": false
+          },
+          {
+            "name": "unstable_RadioGroupItemProviderProps",
+            "line": 19,
+            "isDefault": false
+          },
+          {
+            "name": "unstable_RadioGroupItemTriggerProps",
+            "line": 19,
+            "isDefault": false
+          },
+          {
+            "name": "unstable_RadioGroupItemBubbleInputProps",
+            "line": 19,
+            "isDefault": false
+          },
+          {
+            "name": "RadioGroupIndicatorProps",
+            "line": 19,
+            "isDefault": false
+          }
+        ],
+        "calls": []
+      },
+      {
+        "path": "packages/react/radix-ui/src/accessible-icon.ts",
+        "nonEmptyLines": 1,
+        "calls": []
+      },
+      {
+        "path": "packages/react/radix-ui/src/accordion.ts",
+        "nonEmptyLines": 1,
+        "calls": []
+      },
+      {
+        "path": "packages/react/radix-ui/src/alert-dialog.ts",
+        "nonEmptyLines": 1,
+        "calls": []
+      },
+      {
+        "path": "packages/react/radix-ui/src/aspect-ratio.ts",
+        "nonEmptyLines": 1,
+        "calls": []
+      },
+      {
+        "path": "packages/react/radix-ui/src/avatar.ts",
+        "nonEmptyLines": 1,
+        "calls": []
+      },
+      {
+        "path": "packages/react/radix-ui/src/checkbox.ts",
+        "nonEmptyLines": 1,
+        "calls": []
+      },
+      {
+        "path": "packages/react/radix-ui/src/collapsible.ts",
+        "nonEmptyLines": 1,
+        "calls": []
+      },
+      {
+        "path": "packages/react/radix-ui/src/context-menu.ts",
+        "nonEmptyLines": 1,
+        "calls": []
+      },
+      {
+        "path": "packages/react/radix-ui/src/dialog.ts",
+        "nonEmptyLines": 1,
+        "calls": []
+      },
+      {
+        "path": "packages/react/radix-ui/src/direction.ts",
+        "nonEmptyLines": 1,
+        "calls": []
+      },
+      {
+        "path": "packages/react/radix-ui/src/dropdown-menu.ts",
+        "nonEmptyLines": 1,
+        "calls": []
+      },
+      {
+        "path": "packages/react/radix-ui/src/form.ts",
+        "nonEmptyLines": 1,
+        "calls": []
+      },
+      {
+        "path": "packages/react/radix-ui/src/hover-card.ts",
+        "nonEmptyLines": 1,
+        "calls": []
+      }
+    ]
+  }
+]

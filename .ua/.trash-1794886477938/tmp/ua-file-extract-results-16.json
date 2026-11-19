@@ -1,0 +1,32 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 0,
+  "filesSkipped": [
+    "apps/storybook/stories/progress.stories.module.css",
+    "apps/storybook/stories/radio-group.stories.module.css",
+    "apps/storybook/stories/scroll-area.stories.module.css",
+    "apps/storybook/stories/select.stories.module.css",
+    "apps/storybook/stories/separator.stories.module.css",
+    "apps/storybook/stories/slider.stories.module.css",
+    "apps/storybook/stories/switch.stories.module.css",
+    "apps/storybook/stories/tabs.stories.module.css",
+    "apps/storybook/stories/toast.stories.module.css",
+    "apps/storybook/stories/toggle-group.stories.module.css",
+    "apps/storybook/stories/toggle.stories.module.css",
+    "apps/storybook/stories/toolbar.stories.module.css",
+    "apps/storybook/stories/tooltip.stories.module.css"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 0,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": []
+}

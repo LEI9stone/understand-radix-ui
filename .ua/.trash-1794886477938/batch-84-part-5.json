@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "id": "file:internal/test-data/foods.ts",
+      "type": "file",
+      "name": "foods.ts",
+      "filePath": "internal/test-data/foods.ts",
+      "summary": "导出带可选分组标签、项目值与禁用标记的食品数据，为菜单和选择类组件故事提供一致测试内容。",
+      "tags": [
+        "测试数据",
+        "分组内容",
+        "组件演示"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:internal/test-data/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "internal/test-data/package.json",
+      "summary": "以通配子路径导出内部 TypeScript 测试数据，并声明检查脚本和共享编译配置依赖。",
+      "tags": [
+        "项目配置",
+        "工作区管理",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:internal/test-data/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "internal/test-data/tsconfig.json",
+      "summary": "为内部测试数据继承基础 TypeScript 配置，指定当前根目录与 dist 输出目录，并排除依赖及构建产物。",
+      "tags": [
+        "项目配置",
+        "工作区管理",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:internal/test-utils/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "internal/test-utils/package.json",
+      "summary": "将内部测试工具按通配子路径导出为 TSX，并声明 React、Testing Library 与 Vitest 的开发及宿主依赖。",
+      "tags": [
+        "项目配置",
+        "工作区管理",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:internal/test-utils/ref-stability.tsx",
+      "type": "file",
+      "name": "ref-stability.tsx",
+      "filePath": "internal/test-utils/ref-stability.tsx",
+      "summary": "提供组合 ref 稳定性回归断言，通过稳定引用触发重新渲染并限制渲染次数，检测引用反复拆装导致的循环更新。",
+      "tags": [
+        "测试工具",
+        "引用稳定性",
+        "回归验证"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "空依赖 useCallback 保持探针 ref 身份稳定，将循环更新归因于被测组件；同时断言不抛异常和渲染次数上界。"
+    },
+    {
+      "id": "function:internal/test-utils/ref-stability.tsx:assertStableComposedRef",
+      "type": "function",
+      "name": "assertStableComposedRef",
+      "filePath": "internal/test-utils/ref-stability.tsx",
+      "lineRange": [
+        35,
+        60
+      ],
+      "summary": "用具有稳定回调 ref 的 Probe 渲染被测组件，断言渲染不抛错且次数少于阈值，定位组合 ref 在 React 19 中反复拆装导致的循环。",
+      "tags": [
+        "回归断言",
+        "引用稳定性",
+        "渲染检测"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:internal/test-utils/ref-stability.tsx",
+      "target": "function:internal/test-utils/ref-stability.tsx:assertStableComposedRef",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:internal/test-utils/ref-stability.tsx",
+      "target": "function:internal/test-utils/ref-stability.tsx:assertStableComposedRef",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "config:internal/test-data/package.json",
+      "target": "file:internal/test-data/foods.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:internal/test-data/tsconfig.json",
+      "target": "file:internal/test-data/foods.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:internal/test-utils/package.json",
+      "target": "file:internal/test-utils/ref-stability.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

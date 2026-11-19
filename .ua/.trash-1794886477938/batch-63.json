@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/slot/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/slot/CHANGELOG.md",
+      "summary": "记录 Slot 的版本历史，包括 SlotProps 与 createSlot 泛型能力的扩展，帮助评估组合 API 的兼容性。",
+      "tags": [
+        "版本记录",
+        "插槽组合",
+        "泛型"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/slot/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/slot/README.md",
+      "summary": "提供 react-slot 包标识与文档入口，定位组件属性转交的组合基础包。",
+      "tags": [
+        "包说明",
+        "插槽组合",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/slot/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/slot/package.json",
+      "summary": "为 Slot 包定义源码、ESM/CommonJS 类型出口和 React peer 范围，运行依赖 compose-refs 保持组合引用行为。",
+      "tags": [
+        "包配置",
+        "插槽组合",
+        "引用组合"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/slot/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/slot/tsconfig.json",
+      "summary": "对 Slot 源码应用共享 React 库类型设置，限定输入范围和独立输出目录。",
+      "tags": [
+        "编译配置",
+        "插槽组合",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/react/slot/package.json",
+      "target": "file:packages/react/slot/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/slot/CHANGELOG.md",
+      "target": "config:packages/react/slot/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

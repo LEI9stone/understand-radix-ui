@@ -1,0 +1,3741 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 25,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 18,
+      "failed": 0,
+      "skipped": 7
+    }
+  },
+  "results": [
+    {
+      "path": "apps/storybook/stories/radio-group.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 609,
+      "nonEmptyLines": 561,
+      "functions": [
+        {
+          "name": "Parts",
+          "startLine": 8,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "PartsWithinForm",
+          "startLine": 40,
+          "endLine": 149,
+          "params": []
+        },
+        {
+          "name": "WithinFormReset",
+          "startLine": 151,
+          "endLine": 198,
+          "params": []
+        },
+        {
+          "name": "LegacyStyled",
+          "startLine": 200,
+          "endLine": 224,
+          "params": []
+        },
+        {
+          "name": "LegacyControlled",
+          "startLine": 226,
+          "endLine": 242,
+          "params": []
+        },
+        {
+          "name": "LegacyUnset",
+          "startLine": 244,
+          "endLine": 268,
+          "params": []
+        },
+        {
+          "name": "LegacyWithinForm",
+          "startLine": 270,
+          "endLine": 350,
+          "params": []
+        },
+        {
+          "name": "LegacyAnimated",
+          "startLine": 352,
+          "endLine": 379,
+          "params": []
+        },
+        {
+          "name": "LegacyChromatic",
+          "startLine": 381,
+          "endLine": 606,
+          "params": []
+        },
+        {
+          "name": "Label",
+          "startLine": 609,
+          "endLine": 609,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Parts",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "PartsWithinForm",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "WithinFormReset",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "LegacyStyled",
+          "line": 200,
+          "isDefault": false
+        },
+        {
+          "name": "LegacyControlled",
+          "line": 226,
+          "isDefault": false
+        },
+        {
+          "name": "LegacyUnset",
+          "line": 244,
+          "isDefault": false
+        },
+        {
+          "name": "LegacyWithinForm",
+          "line": 270,
+          "isDefault": false
+        },
+        {
+          "name": "LegacyAnimated",
+          "line": 352,
+          "isDefault": false
+        },
+        {
+          "name": "LegacyChromatic",
+          "line": 381,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PartsWithinForm",
+          "callee": "React.useState",
+          "lineNumber": 41
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "React.useState",
+          "lineNumber": 46
+        },
+        {
+          "caller": "setFieldValue",
+          "callee": "window.alert",
+          "lineNumber": 54
+        },
+        {
+          "caller": "setFieldValue",
+          "callee": "setFieldData",
+          "lineNumber": 56
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "event.preventDefault",
+          "lineNumber": 64
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "setFormData",
+          "lineNumber": 67
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "setFieldValue",
+          "lineNumber": 77
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "['1', '2', '3', '4'].map",
+          "lineNumber": 79
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "setFieldValue",
+          "lineNumber": 99
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "['1', '2', '3', '4'].map",
+          "lineNumber": 101
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "event.stopPropagation",
+          "lineNumber": 105
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "['1', '2', '3', '4'].map",
+          "lineNumber": 122
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "setFieldValue",
+          "lineNumber": 130
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 141
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 145
+        },
+        {
+          "caller": "WithinFormReset",
+          "callee": "React.useState",
+          "lineNumber": 152
+        },
+        {
+          "caller": "WithinFormReset",
+          "callee": "event.preventDefault",
+          "lineNumber": 155
+        },
+        {
+          "caller": "WithinFormReset",
+          "callee": "['1', '2', '3'].map",
+          "lineNumber": 165
+        },
+        {
+          "caller": "WithinFormReset",
+          "callee": "['1', '2', '3'].map",
+          "lineNumber": 184
+        },
+        {
+          "caller": "LegacyControlled",
+          "callee": "React.useState",
+          "lineNumber": 227
+        },
+        {
+          "caller": "LegacyWithinForm",
+          "callee": "React.useState",
+          "lineNumber": 271
+        },
+        {
+          "caller": "LegacyWithinForm",
+          "callee": "event.preventDefault",
+          "lineNumber": 275
+        },
+        {
+          "caller": "LegacyWithinForm",
+          "callee": "setData",
+          "lineNumber": 278
+        },
+        {
+          "caller": "LegacyWithinForm",
+          "callee": "event.stopPropagation",
+          "lineNumber": 323
+        },
+        {
+          "caller": "LegacyWithinForm",
+          "callee": "event.stopPropagation",
+          "lineNumber": 330
+        },
+        {
+          "caller": "LegacyWithinForm",
+          "callee": "event.stopPropagation",
+          "lineNumber": 337
+        },
+        {
+          "caller": "LegacyAnimated",
+          "callee": "[styles.indicator, styles.animatedIndicator].join",
+          "lineNumber": 353
+        },
+        {
+          "caller": "LegacyChromatic",
+          "callee": "React.useRef",
+          "lineNumber": 382
+        },
+        {
+          "caller": "LegacyChromatic",
+          "callee": "React.useEffect",
+          "lineNumber": 384
+        },
+        {
+          "caller": "LegacyChromatic",
+          "callee": "manualFocusRef.current?.focus",
+          "lineNumber": 385
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 9,
+        "functionCount": 10,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/roving-focus-group.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 210,
+      "nonEmptyLines": 186,
+      "functions": [
+        {
+          "name": "Basic",
+          "startLine": 8,
+          "endLine": 84,
+          "params": []
+        },
+        {
+          "name": "Nested",
+          "startLine": 86,
+          "endLine": 110,
+          "params": []
+        },
+        {
+          "name": "EdgeCases",
+          "startLine": 112,
+          "endLine": 149,
+          "params": []
+        },
+        {
+          "name": "ButtonGroup",
+          "startLine": 159,
+          "endLine": 174,
+          "params": [
+            "{ defaultValue, ...props }"
+          ]
+        },
+        {
+          "name": "Button",
+          "startLine": 178,
+          "endLine": 210,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Basic",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Nested",
+          "line": 86,
+          "isDefault": false
+        },
+        {
+          "name": "EdgeCases",
+          "line": 112,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Basic",
+          "callee": "React.useState",
+          "lineNumber": 9
+        },
+        {
+          "caller": "Basic",
+          "callee": "setDir",
+          "lineNumber": 15
+        },
+        {
+          "caller": "EdgeCases",
+          "callee": "React.useState",
+          "lineNumber": 113
+        },
+        {
+          "caller": "EdgeCases",
+          "callee": "React.useState",
+          "lineNumber": 114
+        },
+        {
+          "caller": "EdgeCases",
+          "callee": "React.useState",
+          "lineNumber": 115
+        },
+        {
+          "caller": "EdgeCases",
+          "callee": "React.useState",
+          "lineNumber": 116
+        },
+        {
+          "caller": "EdgeCases",
+          "callee": "setExtra",
+          "lineNumber": 120
+        },
+        {
+          "caller": "EdgeCases",
+          "callee": "setDisabled",
+          "lineNumber": 121
+        },
+        {
+          "caller": "EdgeCases",
+          "callee": "setHidden",
+          "lineNumber": 122
+        },
+        {
+          "caller": "EdgeCases",
+          "callee": "setDisabled3To5",
+          "lineNumber": 123
+        },
+        {
+          "caller": "ButtonGroup",
+          "callee": "React.useState",
+          "lineNumber": 160
+        },
+        {
+          "caller": "Button",
+          "callee": "React.useContext",
+          "lineNumber": 179
+        },
+        {
+          "caller": "Button",
+          "callee": "setValue",
+          "lineNumber": 201
+        },
+        {
+          "caller": "Button",
+          "callee": "composeEventHandlers",
+          "lineNumber": 202
+        },
+        {
+          "caller": "Button",
+          "callee": "event.target.click",
+          "lineNumber": 204
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/scroll-area.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 462,
+      "nonEmptyLines": 414,
+      "functions": [
+        {
+          "name": "Basic",
+          "startLine": 7,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "Resizable",
+          "startLine": 58,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "ContentChange",
+          "startLine": 78,
+          "endLine": 94,
+          "params": []
+        },
+        {
+          "name": "Animated",
+          "startLine": 96,
+          "endLine": 106,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 108,
+          "endLine": 309,
+          "params": []
+        },
+        {
+          "name": "ChromaticDynamicContentBeforeLoaded",
+          "startLine": 314,
+          "endLine": 362,
+          "params": []
+        },
+        {
+          "name": "ChromaticDynamicContentAfterLoaded",
+          "startLine": 365,
+          "endLine": 365,
+          "params": []
+        },
+        {
+          "name": "Cypress",
+          "startLine": 371,
+          "endLine": 408,
+          "params": []
+        },
+        {
+          "name": "ScrollAreaStory",
+          "startLine": 411,
+          "endLine": 442,
+          "params": [
+            "{\n  children,\n  animated = false,\n  vertical = true,\n  horizontal = true,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "Copy",
+          "startLine": 444,
+          "endLine": 462,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Basic",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Resizable",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "ContentChange",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "Animated",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "ChromaticDynamicContentBeforeLoaded",
+          "line": 314,
+          "isDefault": false
+        },
+        {
+          "name": "ChromaticDynamicContentAfterLoaded",
+          "line": 365,
+          "isDefault": false
+        },
+        {
+          "name": "Cypress",
+          "line": 371,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Basic",
+          "callee": "React.useState",
+          "lineNumber": 8
+        },
+        {
+          "caller": "Basic",
+          "callee": "(formData as any).entries",
+          "lineNumber": 15
+        },
+        {
+          "caller": "Basic",
+          "callee": "[...entries].map",
+          "lineNumber": 16
+        },
+        {
+          "caller": "Basic",
+          "callee": "Object.fromEntries",
+          "lineNumber": 17
+        },
+        {
+          "caller": "Basic",
+          "callee": "setProps",
+          "lineNumber": 18
+        },
+        {
+          "caller": "Basic",
+          "callee": "Array.from({ length: 30 }).map",
+          "lineNumber": 50
+        },
+        {
+          "caller": "Basic",
+          "callee": "Array.from",
+          "lineNumber": 50
+        },
+        {
+          "caller": "Resizable",
+          "callee": "Array.from({ length: 30 }).map",
+          "lineNumber": 71
+        },
+        {
+          "caller": "Resizable",
+          "callee": "Array.from",
+          "lineNumber": 71
+        },
+        {
+          "caller": "ContentChange",
+          "callee": "React.useState",
+          "lineNumber": 79
+        },
+        {
+          "caller": "ContentChange",
+          "callee": "React.useState",
+          "lineNumber": 80
+        },
+        {
+          "caller": "ContentChange",
+          "callee": "setVerticalCount",
+          "lineNumber": 83
+        },
+        {
+          "caller": "ContentChange",
+          "callee": "setHorizontalCount",
+          "lineNumber": 84
+        },
+        {
+          "caller": "ContentChange",
+          "callee": "Array.from({ length: verticalCount }).map",
+          "lineNumber": 88
+        },
+        {
+          "caller": "ContentChange",
+          "callee": "Array.from",
+          "lineNumber": 88
+        },
+        {
+          "caller": "Animated",
+          "callee": "Array.from({ length: 30 }).map",
+          "lineNumber": 100
+        },
+        {
+          "caller": "Animated",
+          "callee": "Array.from",
+          "lineNumber": 100
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 113
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 113
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 125
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 125
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 137
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 137
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 149
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 149
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 162
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 162
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 174
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 174
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 186
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 186
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 198
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 198
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 211
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 211
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 1 }).map",
+          "lineNumber": 218
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 218
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 225
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 225
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 237
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 237
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 249
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 249
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 261
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 261
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 1 }).map",
+          "lineNumber": 273
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 273
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 280
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 280
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 100 }).map",
+          "lineNumber": 287
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 287
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 295
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 295
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from({ length: 10 }).map",
+          "lineNumber": 303
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "Array.from",
+          "lineNumber": 303
+        },
+        {
+          "caller": "ChromaticDynamicContentBeforeLoaded",
+          "callee": "React.useState",
+          "lineNumber": 315
+        },
+        {
+          "caller": "ChromaticDynamicContentBeforeLoaded",
+          "callee": "React.useEffect",
+          "lineNumber": 317
+        },
+        {
+          "caller": "ChromaticDynamicContentBeforeLoaded",
+          "callee": "setTimeout",
+          "lineNumber": 318
+        },
+        {
+          "caller": "ChromaticDynamicContentBeforeLoaded",
+          "callee": "setShowContent",
+          "lineNumber": 319
+        },
+        {
+          "caller": "ChromaticDynamicContentBeforeLoaded",
+          "callee": "Array.from({ length: 30 }).map",
+          "lineNumber": 328
+        },
+        {
+          "caller": "ChromaticDynamicContentBeforeLoaded",
+          "callee": "Array.from",
+          "lineNumber": 328
+        },
+        {
+          "caller": "ChromaticDynamicContentBeforeLoaded",
+          "callee": "Array.from({ length: 30 }).map",
+          "lineNumber": 337
+        },
+        {
+          "caller": "ChromaticDynamicContentBeforeLoaded",
+          "callee": "Array.from",
+          "lineNumber": 337
+        },
+        {
+          "caller": "ChromaticDynamicContentBeforeLoaded",
+          "callee": "Array.from({ length: 30 }).map",
+          "lineNumber": 346
+        },
+        {
+          "caller": "ChromaticDynamicContentBeforeLoaded",
+          "callee": "Array.from",
+          "lineNumber": 346
+        },
+        {
+          "caller": "ChromaticDynamicContentBeforeLoaded",
+          "callee": "Array.from({ length: 30 }).map",
+          "lineNumber": 355
+        },
+        {
+          "caller": "ChromaticDynamicContentBeforeLoaded",
+          "callee": "Array.from",
+          "lineNumber": 355
+        },
+        {
+          "caller": "Cypress",
+          "callee": "React.useState",
+          "lineNumber": 372
+        },
+        {
+          "caller": "Cypress",
+          "callee": "setHorizontalOverflow",
+          "lineNumber": 377
+        },
+        {
+          "caller": "Cypress",
+          "callee": "Array.from({ length: 30 }).map",
+          "lineNumber": 390
+        },
+        {
+          "caller": "Cypress",
+          "callee": "Array.from",
+          "lineNumber": 390
+        },
+        {
+          "caller": "ScrollAreaStory",
+          "callee": "[animated && styles.animatedThumb, styles.thumb].filter(Boolean).join",
+          "lineNumber": 429
+        },
+        {
+          "caller": "ScrollAreaStory",
+          "callee": "[animated && styles.animatedThumb, styles.thumb].filter",
+          "lineNumber": 429
+        },
+        {
+          "caller": "ScrollAreaStory",
+          "callee": "[animated && styles.animatedThumb, styles.thumb].filter(Boolean).join",
+          "lineNumber": 436
+        },
+        {
+          "caller": "ScrollAreaStory",
+          "callee": "[animated && styles.animatedThumb, styles.thumb].filter",
+          "lineNumber": 436
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 8,
+        "functionCount": 10,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/separator.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 6,
+          "endLine": 28,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/slider.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 789,
+      "nonEmptyLines": 715,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 9,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "WithOnValueCommit",
+          "startLine": 18,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "RightToLeft",
+          "startLine": 30,
+          "endLine": 37,
+          "params": []
+        },
+        {
+          "name": "Horizontal",
+          "startLine": 39,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "Vertical",
+          "startLine": 63,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "Inversions",
+          "startLine": 82,
+          "endLine": 195,
+          "params": []
+        },
+        {
+          "name": "WithMinimumStepsBetweenThumbs",
+          "startLine": 197,
+          "endLine": 205,
+          "params": []
+        },
+        {
+          "name": "WithPreserveThumbOrder",
+          "startLine": 207,
+          "endLine": 249,
+          "params": []
+        },
+        {
+          "name": "WithMultipleRanges",
+          "startLine": 251,
+          "endLine": 284,
+          "params": []
+        },
+        {
+          "name": "SmallSteps",
+          "startLine": 286,
+          "endLine": 306,
+          "params": []
+        },
+        {
+          "name": "WithinForm",
+          "startLine": 308,
+          "endLine": 425,
+          "params": []
+        },
+        {
+          "name": "WithinFormReset",
+          "startLine": 427,
+          "endLine": 472,
+          "params": []
+        },
+        {
+          "name": "BubbleInputWithinForm",
+          "startLine": 474,
+          "endLine": 519,
+          "params": []
+        },
+        {
+          "name": "Parts",
+          "startLine": 521,
+          "endLine": 564,
+          "params": []
+        },
+        {
+          "name": "Strict",
+          "startLine": 566,
+          "endLine": 584,
+          "params": []
+        },
+        {
+          "name": "InScrollableContext",
+          "startLine": 586,
+          "endLine": 604,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 606,
+          "endLine": 788,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "WithOnValueCommit",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "RightToLeft",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "Horizontal",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "Vertical",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "Inversions",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "WithMinimumStepsBetweenThumbs",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "WithPreserveThumbOrder",
+          "line": 207,
+          "isDefault": false
+        },
+        {
+          "name": "WithMultipleRanges",
+          "line": 251,
+          "isDefault": false
+        },
+        {
+          "name": "SmallSteps",
+          "line": 286,
+          "isDefault": false
+        },
+        {
+          "name": "WithinForm",
+          "line": 308,
+          "isDefault": false
+        },
+        {
+          "name": "WithinFormReset",
+          "line": 427,
+          "isDefault": false
+        },
+        {
+          "name": "BubbleInputWithinForm",
+          "line": 474,
+          "isDefault": false
+        },
+        {
+          "name": "Parts",
+          "line": 521,
+          "isDefault": false
+        },
+        {
+          "name": "Strict",
+          "line": 566,
+          "isDefault": false
+        },
+        {
+          "name": "InScrollableContext",
+          "line": 586,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 606,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Horizontal",
+          "callee": "console.log",
+          "lineNumber": 45
+        },
+        {
+          "caller": "WithMultipleRanges",
+          "callee": "React.useState",
+          "lineNumber": 252
+        },
+        {
+          "caller": "WithMultipleRanges",
+          "callee": "setMinStepsBetweenThumbs",
+          "lineNumber": 261
+        },
+        {
+          "caller": "WithMultipleRanges",
+          "callee": "Number",
+          "lineNumber": 261
+        },
+        {
+          "caller": "SmallSteps",
+          "callee": "React.useState",
+          "lineNumber": 287
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "React.useState",
+          "lineNumber": 309
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "React.useState",
+          "lineNumber": 317
+        },
+        {
+          "caller": "setFieldValue",
+          "callee": "setFieldData",
+          "lineNumber": 322
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "event.preventDefault",
+          "lineNumber": 329
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "console.log",
+          "lineNumber": 330
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "serialize",
+          "lineNumber": 330
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "serialize",
+          "lineNumber": 333
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "setData",
+          "lineNumber": 334
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "String",
+          "lineNumber": 338
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "String",
+          "lineNumber": 351
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 367
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "setFieldValue",
+          "lineNumber": 385
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "setFieldValue",
+          "lineNumber": 406
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "Number",
+          "lineNumber": 406
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 417
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 421
+        },
+        {
+          "caller": "WithinFormReset",
+          "callee": "React.useState",
+          "lineNumber": 428
+        },
+        {
+          "caller": "WithinFormReset",
+          "callee": "event.preventDefault",
+          "lineNumber": 431
+        },
+        {
+          "caller": "WithinFormReset",
+          "callee": "String",
+          "lineNumber": 452
+        },
+        {
+          "caller": "BubbleInputWithinForm",
+          "callee": "React.useState",
+          "lineNumber": 475
+        },
+        {
+          "caller": "BubbleInputWithinForm",
+          "callee": "event.preventDefault",
+          "lineNumber": 479
+        },
+        {
+          "caller": "BubbleInputWithinForm",
+          "callee": "console.log",
+          "lineNumber": 480
+        },
+        {
+          "caller": "BubbleInputWithinForm",
+          "callee": "serialize",
+          "lineNumber": 480
+        },
+        {
+          "caller": "BubbleInputWithinForm",
+          "callee": "setData",
+          "lineNumber": 483
+        },
+        {
+          "caller": "BubbleInputWithinForm",
+          "callee": "serialize",
+          "lineNumber": 483
+        },
+        {
+          "caller": "BubbleInputWithinForm",
+          "callee": "String",
+          "lineNumber": 492
+        },
+        {
+          "caller": "BubbleInputWithinForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 505
+        },
+        {
+          "caller": "Parts",
+          "callee": "React.useState",
+          "lineNumber": 522
+        },
+        {
+          "caller": "Parts",
+          "callee": "event.preventDefault",
+          "lineNumber": 526
+        },
+        {
+          "caller": "Parts",
+          "callee": "console.log",
+          "lineNumber": 527
+        },
+        {
+          "caller": "Parts",
+          "callee": "serialize",
+          "lineNumber": 527
+        },
+        {
+          "caller": "Parts",
+          "callee": "setData",
+          "lineNumber": 530
+        },
+        {
+          "caller": "Parts",
+          "callee": "serialize",
+          "lineNumber": 530
+        },
+        {
+          "caller": "Parts",
+          "callee": "JSON.stringify",
+          "lineNumber": 542
+        },
+        {
+          "caller": "InScrollableContext",
+          "callee": "React.useState",
+          "lineNumber": 587
+        },
+        {
+          "caller": "InScrollableContext",
+          "callee": "setValue",
+          "lineNumber": 595
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 17,
+        "functionCount": 17,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/slot.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 398,
+      "nonEmptyLines": 351,
+      "functions": [
+        {
+          "name": "WithSlottable",
+          "startLine": 17,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "WithComposedEvents",
+          "startLine": 23,
+          "endLine": 59,
+          "params": []
+        },
+        {
+          "name": "ButtonAsLink",
+          "startLine": 61,
+          "endLine": 84,
+          "params": []
+        },
+        {
+          "name": "WithLazyComponent",
+          "startLine": 95,
+          "endLine": 103,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 105,
+          "endLine": 270,
+          "params": []
+        },
+        {
+          "name": "SlotWithoutSlottable",
+          "startLine": 294,
+          "endLine": 296,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "SlotWithSlottable",
+          "startLine": 298,
+          "endLine": 303,
+          "params": [
+            "{ children, ...props }"
+          ]
+        },
+        {
+          "name": "SlotWithFalseInternalChild",
+          "startLine": 305,
+          "endLine": 307,
+          "params": [
+            "{ children, ...props }"
+          ]
+        },
+        {
+          "name": "SlotWithNullInternalChild",
+          "startLine": 309,
+          "endLine": 311,
+          "params": [
+            "{ children, ...props }"
+          ]
+        },
+        {
+          "name": "SlotWithPreventableEvent",
+          "startLine": 313,
+          "endLine": 323,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "SlotWithoutPreventableEvent",
+          "startLine": 325,
+          "endLine": 333,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "Button",
+          "startLine": 335,
+          "endLine": 368,
+          "params": [
+            "{\n  children,\n  asChild = false,\n  iconLeft,\n  iconRight,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "MockIcon",
+          "startLine": 370,
+          "endLine": 381,
+          "params": [
+            "{ color = 'tomato', ...props }"
+          ]
+        },
+        {
+          "name": "MockTag",
+          "startLine": 383,
+          "endLine": 394,
+          "params": [
+            "{\n  onDelete,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "wait",
+          "startLine": 396,
+          "endLine": 398,
+          "params": [
+            "ms"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ErrorBoundary",
+          "startLine": 275,
+          "endLine": 291,
+          "methods": [
+            "constructor",
+            "getDerivedStateFromError",
+            "render"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "WithoutSlottable",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "WithSlottable",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "WithComposedEvents",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "ButtonAsLink",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "WithLazyComponent",
+          "line": 95,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 105,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "WithComposedEvents",
+          "callee": "console.log",
+          "lineNumber": 27
+        },
+        {
+          "caller": "WithComposedEvents",
+          "callee": "console.log",
+          "lineNumber": 34
+        },
+        {
+          "caller": "WithComposedEvents",
+          "callee": "event.preventDefault",
+          "lineNumber": 35
+        },
+        {
+          "caller": "WithComposedEvents",
+          "callee": "console.log",
+          "lineNumber": 44
+        },
+        {
+          "caller": "WithComposedEvents",
+          "callee": "console.log",
+          "lineNumber": 51
+        },
+        {
+          "caller": "WithComposedEvents",
+          "callee": "event.preventDefault",
+          "lineNumber": 52
+        },
+        {
+          "caller": "WithLazyComponent",
+          "callee": "console.log",
+          "lineNumber": 98
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "alert",
+          "lineNumber": 267
+        },
+        {
+          "caller": "constructor",
+          "callee": "super",
+          "lineNumber": 277
+        },
+        {
+          "caller": "SlotWithPreventableEvent",
+          "callee": "props.onClick",
+          "lineNumber": 317
+        },
+        {
+          "caller": "SlotWithPreventableEvent",
+          "callee": "console.log",
+          "lineNumber": 319
+        },
+        {
+          "caller": "SlotWithoutPreventableEvent",
+          "callee": "props.onClick",
+          "lineNumber": 329
+        },
+        {
+          "caller": "SlotWithoutPreventableEvent",
+          "callee": "console.log",
+          "lineNumber": 330
+        },
+        {
+          "caller": "wait",
+          "callee": "setTimeout",
+          "lineNumber": 397
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "apps/storybook/stories/switch.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 338,
+      "nonEmptyLines": 295,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 8,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "Controlled",
+          "startLine": 20,
+          "endLine": 37,
+          "params": []
+        },
+        {
+          "name": "WithinForm",
+          "startLine": 39,
+          "endLine": 156,
+          "params": []
+        },
+        {
+          "name": "WithinFormReset",
+          "startLine": 158,
+          "endLine": 201,
+          "params": []
+        },
+        {
+          "name": "Parts",
+          "startLine": 203,
+          "endLine": 217,
+          "params": []
+        },
+        {
+          "name": "PartsWithinForm",
+          "startLine": 219,
+          "endLine": 288,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 290,
+          "endLine": 335,
+          "params": []
+        },
+        {
+          "name": "Label",
+          "startLine": 338,
+          "endLine": 338,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Controlled",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "WithinForm",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "WithinFormReset",
+          "line": 158,
+          "isDefault": false
+        },
+        {
+          "name": "Parts",
+          "line": 203,
+          "isDefault": false
+        },
+        {
+          "name": "PartsWithinForm",
+          "line": 219,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 290,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Controlled",
+          "callee": "React.useState",
+          "lineNumber": 21
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "React.useState",
+          "lineNumber": 40
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "React.useState",
+          "lineNumber": 41
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "React.useState",
+          "lineNumber": 42
+        },
+        {
+          "caller": "setFieldChecked",
+          "callee": "window.alert",
+          "lineNumber": 48
+        },
+        {
+          "caller": "setFieldChecked",
+          "callee": "setFieldData",
+          "lineNumber": 50
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "event.preventDefault",
+          "lineNumber": 56
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "setFormData",
+          "lineNumber": 59
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "['1', '2', '3', '4'].map",
+          "lineNumber": 81
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "setFieldChecked",
+          "lineNumber": 89
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "['1', '2', '3', '4'].map",
+          "lineNumber": 102
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "setFieldChecked",
+          "lineNumber": 109
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "event.stopPropagation",
+          "lineNumber": 110
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "['1', '2', '3', '4'].map",
+          "lineNumber": 123
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "setFieldChecked",
+          "lineNumber": 134
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 148
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 152
+        },
+        {
+          "caller": "WithinFormReset",
+          "callee": "React.useState",
+          "lineNumber": 159
+        },
+        {
+          "caller": "WithinFormReset",
+          "callee": "event.preventDefault",
+          "lineNumber": 162
+        },
+        {
+          "caller": "WithinFormReset",
+          "callee": "String",
+          "lineNumber": 182
+        },
+        {
+          "caller": "Parts",
+          "callee": "React.useState",
+          "lineNumber": 204
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "React.useState",
+          "lineNumber": 220
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "event.preventDefault",
+          "lineNumber": 224
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "setData",
+          "lineNumber": 227
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "String",
+          "lineNumber": 231
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "String",
+          "lineNumber": 244
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "String",
+          "lineNumber": 257
+        },
+        {
+          "caller": "PartsWithinForm",
+          "callee": "event.stopPropagation",
+          "lineNumber": 261
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 7,
+        "functionCount": 8,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/tabs.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 364,
+      "nonEmptyLines": 349,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 8,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "Animated",
+          "startLine": 71,
+          "endLine": 133,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 135,
+          "endLine": 363,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Animated",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 135,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/toast.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 538,
+      "nonEmptyLines": 485,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 7,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "Controlled",
+          "startLine": 14,
+          "endLine": 57,
+          "params": []
+        },
+        {
+          "name": "FromDialog",
+          "startLine": 59,
+          "endLine": 92,
+          "params": []
+        },
+        {
+          "name": "Promise",
+          "startLine": 94,
+          "endLine": 132,
+          "params": []
+        },
+        {
+          "name": "KeyChange",
+          "startLine": 134,
+          "endLine": 158,
+          "params": []
+        },
+        {
+          "name": "PauseResumeProps",
+          "startLine": 160,
+          "endLine": 174,
+          "params": []
+        },
+        {
+          "name": "Animated",
+          "startLine": 178,
+          "endLine": 218,
+          "params": []
+        },
+        {
+          "name": "Cypress",
+          "startLine": 220,
+          "endLine": 264,
+          "params": []
+        },
+        {
+          "name": "CustomAnnouncerContainer",
+          "startLine": 266,
+          "endLine": 307,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 311,
+          "endLine": 474,
+          "params": []
+        },
+        {
+          "name": "ToastUpgradeAvailable",
+          "startLine": 479,
+          "endLine": 498,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "ToastSubscribeSuccess",
+          "startLine": 500,
+          "endLine": 512,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "ToastWithProgress",
+          "startLine": 514,
+          "endLine": 538,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Controlled",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "FromDialog",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "Promise",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "KeyChange",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "PauseResumeProps",
+          "line": 160,
+          "isDefault": false
+        },
+        {
+          "name": "Animated",
+          "line": 178,
+          "isDefault": false
+        },
+        {
+          "name": "Cypress",
+          "line": 220,
+          "isDefault": false
+        },
+        {
+          "name": "CustomAnnouncerContainer",
+          "line": 266,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 311,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Controlled",
+          "callee": "React.useState",
+          "lineNumber": 15
+        },
+        {
+          "caller": "Controlled",
+          "callee": "React.useState",
+          "lineNumber": 16
+        },
+        {
+          "caller": "Controlled",
+          "callee": "React.useState",
+          "lineNumber": 17
+        },
+        {
+          "caller": "Controlled",
+          "callee": "React.useState",
+          "lineNumber": 18
+        },
+        {
+          "caller": "Controlled",
+          "callee": "React.useEffect",
+          "lineNumber": 20
+        },
+        {
+          "caller": "Controlled",
+          "callee": "window.setTimeout",
+          "lineNumber": 22
+        },
+        {
+          "caller": "Controlled",
+          "callee": "setHasUpgrade",
+          "lineNumber": 22
+        },
+        {
+          "caller": "Controlled",
+          "callee": "window.clearTimeout",
+          "lineNumber": 23
+        },
+        {
+          "caller": "Controlled",
+          "callee": "setIsSubscribed",
+          "lineNumber": 29
+        },
+        {
+          "caller": "Controlled",
+          "callee": "setErrorCount",
+          "lineNumber": 30
+        },
+        {
+          "caller": "Controlled",
+          "callee": "setSavedCount",
+          "lineNumber": 31
+        },
+        {
+          "caller": "Controlled",
+          "callee": "[...Array(errorCount)].map",
+          "lineNumber": 35
+        },
+        {
+          "caller": "Controlled",
+          "callee": "Array",
+          "lineNumber": 35
+        },
+        {
+          "caller": "Controlled",
+          "callee": "[styles.root, styles.errorRoot].join",
+          "lineNumber": 36
+        },
+        {
+          "caller": "Controlled",
+          "callee": "console.log",
+          "lineNumber": 41
+        },
+        {
+          "caller": "Controlled",
+          "callee": "[...Array(savedCount)].map",
+          "lineNumber": 48
+        },
+        {
+          "caller": "Controlled",
+          "callee": "Array",
+          "lineNumber": 48
+        },
+        {
+          "caller": "FromDialog",
+          "callee": "React.useState",
+          "lineNumber": 60
+        },
+        {
+          "caller": "FromDialog",
+          "callee": "setOpen",
+          "lineNumber": 69
+        },
+        {
+          "caller": "FromDialog",
+          "callee": "[styles.root, styles.errorRoot].join",
+          "lineNumber": 77
+        },
+        {
+          "caller": "FromDialog",
+          "callee": "console.log",
+          "lineNumber": 83
+        },
+        {
+          "caller": "Promise",
+          "callee": "React.useState",
+          "lineNumber": 95
+        },
+        {
+          "caller": "Promise",
+          "callee": "React.useState",
+          "lineNumber": 96
+        },
+        {
+          "caller": "Promise",
+          "callee": "React.useEffect",
+          "lineNumber": 98
+        },
+        {
+          "caller": "Promise",
+          "callee": "window.setTimeout",
+          "lineNumber": 100
+        },
+        {
+          "caller": "Promise",
+          "callee": "setSaving",
+          "lineNumber": 100
+        },
+        {
+          "caller": "Promise",
+          "callee": "window.clearTimeout",
+          "lineNumber": 101
+        },
+        {
+          "caller": "Promise",
+          "callee": "setSaving",
+          "lineNumber": 109
+        },
+        {
+          "caller": "Promise",
+          "callee": "setOpen",
+          "lineNumber": 110
+        },
+        {
+          "caller": "Promise",
+          "callee": "event.preventDefault",
+          "lineNumber": 111
+        },
+        {
+          "caller": "KeyChange",
+          "callee": "React.useState",
+          "lineNumber": 135
+        },
+        {
+          "caller": "KeyChange",
+          "callee": "React.useState",
+          "lineNumber": 136
+        },
+        {
+          "caller": "KeyChange",
+          "callee": "setToastOneCount",
+          "lineNumber": 140
+        },
+        {
+          "caller": "KeyChange",
+          "callee": "setToastTwoCount",
+          "lineNumber": 141
+        },
+        {
+          "caller": "KeyChange",
+          "callee": "String",
+          "lineNumber": 144
+        },
+        {
+          "caller": "KeyChange",
+          "callee": "String",
+          "lineNumber": 150
+        },
+        {
+          "caller": "PauseResumeProps",
+          "callee": "React.useState",
+          "lineNumber": 161
+        },
+        {
+          "caller": "PauseResumeProps",
+          "callee": "setToastCount",
+          "lineNumber": 165
+        },
+        {
+          "caller": "PauseResumeProps",
+          "callee": "[...Array(toastCount)].map",
+          "lineNumber": 167
+        },
+        {
+          "caller": "PauseResumeProps",
+          "callee": "Array",
+          "lineNumber": 167
+        },
+        {
+          "caller": "Animated",
+          "callee": "React.useState",
+          "lineNumber": 179
+        },
+        {
+          "caller": "Animated",
+          "callee": "React.useState",
+          "lineNumber": 180
+        },
+        {
+          "caller": "Animated",
+          "callee": "React.useRef",
+          "lineNumber": 181
+        },
+        {
+          "caller": "Animated",
+          "callee": "(['up', 'down'] as Direction[]).includes",
+          "lineNumber": 185
+        },
+        {
+          "caller": "Animated",
+          "callee": "setOpen",
+          "lineNumber": 189
+        },
+        {
+          "caller": "Animated",
+          "callee": "window.clearTimeout",
+          "lineNumber": 190
+        },
+        {
+          "caller": "Animated",
+          "callee": "window.setTimeout",
+          "lineNumber": 191
+        },
+        {
+          "caller": "Animated",
+          "callee": "setOpen",
+          "lineNumber": 191
+        },
+        {
+          "caller": "Animated",
+          "callee": "setSwipeDirection",
+          "lineNumber": 199
+        },
+        {
+          "caller": "Animated",
+          "callee": "[styles.root, styles.animatedRoot].join",
+          "lineNumber": 208
+        },
+        {
+          "caller": "Cypress",
+          "callee": "React.useState",
+          "lineNumber": 221
+        },
+        {
+          "caller": "Cypress",
+          "callee": "setCount",
+          "lineNumber": 225
+        },
+        {
+          "caller": "Cypress",
+          "callee": "[...Array(count)].map",
+          "lineNumber": 231
+        },
+        {
+          "caller": "Cypress",
+          "callee": "Array",
+          "lineNumber": 231
+        },
+        {
+          "caller": "CustomAnnouncerContainer",
+          "callee": "React.useState",
+          "lineNumber": 267
+        },
+        {
+          "caller": "CustomAnnouncerContainer",
+          "callee": "React.useRef",
+          "lineNumber": 268
+        },
+        {
+          "caller": "CustomAnnouncerContainer",
+          "callee": "setOpen",
+          "lineNumber": 286
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "React.useState",
+          "lineNumber": 312
+        },
+        {
+          "caller": "ToastSubscribeSuccess",
+          "callee": "[styles.header, styles.successHeader].join",
+          "lineNumber": 502
+        },
+        {
+          "caller": "ToastWithProgress",
+          "callee": "React.useState",
+          "lineNumber": 515
+        },
+        {
+          "caller": "ToastWithProgress",
+          "callee": "setPaused",
+          "lineNumber": 522
+        },
+        {
+          "caller": "ToastWithProgress",
+          "callee": "setPaused",
+          "lineNumber": 523
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 10,
+        "functionCount": 13,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/toggle-group.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 334,
+      "nonEmptyLines": 315,
+      "functions": [
+        {
+          "name": "Single",
+          "startLine": 9,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "Vertical",
+          "startLine": 48,
+          "endLine": 68,
+          "params": []
+        },
+        {
+          "name": "Multiple",
+          "startLine": 70,
+          "endLine": 112,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 114,
+          "endLine": 297,
+          "params": []
+        },
+        {
+          "name": "Cypress",
+          "startLine": 301,
+          "endLine": 333,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Single",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Vertical",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "Multiple",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "Cypress",
+          "line": 301,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Single",
+          "callee": "React.useState",
+          "lineNumber": 10
+        },
+        {
+          "caller": "Multiple",
+          "callee": "React.useState",
+          "lineNumber": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/toggle.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "Controlled",
+          "startLine": 9,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 19,
+          "endLine": 52,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Controlled",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Controlled",
+          "callee": "React.useState",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/toolbar.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 88,
+      "nonEmptyLines": 82,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 6,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 13,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "ToolbarExample",
+          "startLine": 31,
+          "endLine": 88,
+          "params": [
+            "{ title, dir, orientation }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ToolbarExample",
+          "callee": "[styles.toolbarItem, styles.toolbarToggleItem].join",
+          "lineNumber": 32
+        },
+        {
+          "caller": "ToolbarExample",
+          "callee": "[styles.toolbarItem, styles.toolbarLink].join",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ToolbarExample",
+          "callee": "[styles.toolbarItem, styles.toolbarToggleButton].join",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/tooltip.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1107,
+      "nonEmptyLines": 1051,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 10,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "Controlled",
+          "startLine": 24,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "CustomDurations",
+          "startLine": 43,
+          "endLine": 242,
+          "params": []
+        },
+        {
+          "name": "CustomContent",
+          "startLine": 244,
+          "endLine": 384,
+          "params": []
+        },
+        {
+          "name": "Positions",
+          "startLine": 386,
+          "endLine": 509,
+          "params": []
+        },
+        {
+          "name": "AriaLabel",
+          "startLine": 511,
+          "endLine": 529,
+          "params": []
+        },
+        {
+          "name": "WithText",
+          "startLine": 531,
+          "endLine": 554,
+          "params": []
+        },
+        {
+          "name": "WithExternalRef",
+          "startLine": 556,
+          "endLine": 574,
+          "params": []
+        },
+        {
+          "name": "Unmount",
+          "startLine": 576,
+          "endLine": 604,
+          "params": []
+        },
+        {
+          "name": "Animated",
+          "startLine": 606,
+          "endLine": 621,
+          "params": []
+        },
+        {
+          "name": "SlottableContent",
+          "startLine": 623,
+          "endLine": 637,
+          "params": []
+        },
+        {
+          "name": "WithinDialog",
+          "startLine": 639,
+          "endLine": 659,
+          "params": []
+        },
+        {
+          "name": "KeepOpenOnActivation",
+          "startLine": 661,
+          "endLine": 689,
+          "params": []
+        },
+        {
+          "name": "WithinScrollable",
+          "startLine": 691,
+          "endLine": 730,
+          "params": []
+        },
+        {
+          "name": "DisableHoverableContent",
+          "startLine": 732,
+          "endLine": 790,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 795,
+          "endLine": 1080,
+          "params": []
+        },
+        {
+          "name": "SimpleTooltip",
+          "startLine": 1083,
+          "endLine": 1107,
+          "params": [
+            "{\n  children,\n  label,\n  'aria-label': ariaLabel,\n  open,\n  onOpenChange,\n  ...props\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "Controlled",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "CustomDurations",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "CustomContent",
+          "line": 244,
+          "isDefault": false
+        },
+        {
+          "name": "Positions",
+          "line": 386,
+          "isDefault": false
+        },
+        {
+          "name": "AriaLabel",
+          "line": 511,
+          "isDefault": false
+        },
+        {
+          "name": "WithText",
+          "line": 531,
+          "isDefault": false
+        },
+        {
+          "name": "WithExternalRef",
+          "line": 556,
+          "isDefault": false
+        },
+        {
+          "name": "Unmount",
+          "line": 576,
+          "isDefault": false
+        },
+        {
+          "name": "Animated",
+          "line": 606,
+          "isDefault": false
+        },
+        {
+          "name": "SlottableContent",
+          "line": 623,
+          "isDefault": false
+        },
+        {
+          "name": "WithinDialog",
+          "line": 639,
+          "isDefault": false
+        },
+        {
+          "name": "KeepOpenOnActivation",
+          "line": 661,
+          "isDefault": false
+        },
+        {
+          "name": "WithinScrollable",
+          "line": 691,
+          "isDefault": false
+        },
+        {
+          "name": "DisableHoverableContent",
+          "line": 732,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 795,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Controlled",
+          "callee": "React.useState",
+          "lineNumber": 25
+        },
+        {
+          "caller": "WithExternalRef",
+          "callee": "React.useRef",
+          "lineNumber": 557
+        },
+        {
+          "caller": "WithExternalRef",
+          "callee": "React.useEffect",
+          "lineNumber": 559
+        },
+        {
+          "caller": "Unmount",
+          "callee": "React.useState",
+          "lineNumber": 577
+        },
+        {
+          "caller": "Unmount",
+          "callee": "setIsMounted",
+          "lineNumber": 596
+        },
+        {
+          "caller": "Animated",
+          "callee": "[styles.content, styles.animatedContent].join",
+          "lineNumber": 607
+        },
+        {
+          "caller": "KeepOpenOnActivation",
+          "callee": "React.useRef",
+          "lineNumber": 662
+        },
+        {
+          "caller": "KeepOpenOnActivation",
+          "callee": "event.preventDefault",
+          "lineNumber": 670
+        },
+        {
+          "caller": "KeepOpenOnActivation",
+          "callee": "event.preventDefault",
+          "lineNumber": 679
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 870
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 871
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 897
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 898
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 923
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 924
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 951
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 952
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 977
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 978
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 1004
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 1005
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 16,
+        "functionCount": 17,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/visually-hidden.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "functions": [
+        {
+          "name": "Basic",
+          "startLine": 5,
+          "endLine": 10,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Basic",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "sections": [
+        {
+          "heading": "extends",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "e2e/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 14,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "internal/builder/builder.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 311,
+      "nonEmptyLines": 261,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 13,
+          "endLine": 107,
+          "params": [
+            "relativePath"
+          ]
+        },
+        {
+          "name": "stripLeakedReactModuleAugmentations",
+          "startLine": 117,
+          "endLine": 131,
+          "params": [
+            "distDirectoryPath"
+          ]
+        },
+        {
+          "name": "stripReactModuleAugmentationsFromDeclarationFile",
+          "startLine": 136,
+          "endLine": 150,
+          "params": [
+            "declarationFilePath"
+          ]
+        },
+        {
+          "name": "removeReactModuleAugmentations",
+          "startLine": 155,
+          "endLine": 210,
+          "params": [
+            "declarationContents"
+          ]
+        },
+        {
+          "name": "getMatchingClosingBraceIndex",
+          "startLine": 216,
+          "endLine": 253,
+          "params": [
+            "content",
+            "openingBraceIndex"
+          ]
+        },
+        {
+          "name": "skipStringLiteral",
+          "startLine": 260,
+          "endLine": 279,
+          "params": [
+            "content",
+            "startIndex",
+            "quoteCharacter"
+          ]
+        },
+        {
+          "name": "skipLineComment",
+          "startLine": 285,
+          "endLine": 293,
+          "params": [
+            "content",
+            "startIndex"
+          ]
+        },
+        {
+          "name": "skipBlockComment",
+          "startLine": 299,
+          "endLine": 311,
+          "params": [
+            "content",
+            "startIndex"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "path.resolve",
+          "lineNumber": 14
+        },
+        {
+          "caller": "build",
+          "callee": "fs.existsSync",
+          "lineNumber": 15
+        },
+        {
+          "caller": "build",
+          "callee": "fs.promises.readFile(packageJsonPath, 'utf-8').catch",
+          "lineNumber": 19
+        },
+        {
+          "caller": "build",
+          "callee": "fs.promises.readFile",
+          "lineNumber": 19
+        },
+        {
+          "caller": "build",
+          "callee": "console.error",
+          "lineNumber": 20
+        },
+        {
+          "caller": "build",
+          "callee": "process.exit",
+          "lineNumber": 21
+        },
+        {
+          "caller": "build",
+          "callee": "JSON.parse",
+          "lineNumber": 27
+        },
+        {
+          "caller": "build",
+          "callee": "console.error",
+          "lineNumber": 29
+        },
+        {
+          "caller": "build",
+          "callee": "process.exit",
+          "lineNumber": 30
+        },
+        {
+          "caller": "build",
+          "callee": "path.resolve",
+          "lineNumber": 42
+        },
+        {
+          "caller": "build",
+          "callee": "fs\n      .readdirSync(sourceDirectory, { recursive: true })\n      .map((entry) => entry.toString().split(path.sep).join('/'))\n      .filter((file) => file.endsWith('.ts') && !file.endsWith('.d.ts') && file !== 'index.ts')\n      .sort",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "fs\n      .readdirSync(sourceDirectory, { recursive: true })\n      .map((entry) => entry.toString().split(path.sep).join('/'))\n      .filter",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "fs\n      .readdirSync(sourceDirectory, { recursive: true })\n      .map",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "fs\n      .readdirSync",
+          "lineNumber": 43
+        },
+        {
+          "caller": "build",
+          "callee": "entry.toString().split(path.sep).join",
+          "lineNumber": 45
+        },
+        {
+          "caller": "build",
+          "callee": "entry.toString().split",
+          "lineNumber": 45
+        },
+        {
+          "caller": "build",
+          "callee": "entry.toString",
+          "lineNumber": 45
+        },
+        {
+          "caller": "build",
+          "callee": "file.endsWith",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "file.endsWith",
+          "lineNumber": 46
+        },
+        {
+          "caller": "build",
+          "callee": "files.push",
+          "lineNumber": 48
+        },
+        {
+          "caller": "build",
+          "callee": "files.push",
+          "lineNumber": 51
+        },
+        {
+          "caller": "build",
+          "callee": "files.map",
+          "lineNumber": 58
+        },
+        {
+          "caller": "build",
+          "callee": "tasks.push",
+          "lineNumber": 74
+        },
+        {
+          "caller": "build",
+          "callee": "esbuild.build(esbuildConfig).then",
+          "lineNumber": 74
+        },
+        {
+          "caller": "build",
+          "callee": "esbuild.build",
+          "lineNumber": 74
+        },
+        {
+          "caller": "build",
+          "callee": "console.log",
+          "lineNumber": 74
+        },
+        {
+          "caller": "build",
+          "callee": "tasks.push",
+          "lineNumber": 75
+        },
+        {
+          "caller": "build",
+          "callee": "esbuild\n      .build({\n        ...esbuildConfig,\n        format: 'esm',\n        outExtension: { '.js': '.mjs' },\n      })\n      .then",
+          "lineNumber": 76
+        },
+        {
+          "caller": "build",
+          "callee": "esbuild\n      .build",
+          "lineNumber": 76
+        },
+        {
+          "caller": "build",
+          "callee": "console.log",
+          "lineNumber": 82
+        },
+        {
+          "caller": "build",
+          "callee": "tasks.push",
+          "lineNumber": 92
+        },
+        {
+          "caller": "build",
+          "callee": "tsup\n      .build({\n        entry: entryPoints,\n        format: ['cjs', 'esm'],\n        dts: { only: true },\n        outDir: dist,\n        silent: true,\n        external: [/@radix-ui\\/.+/],\n      })\n      .then",
+          "lineNumber": 93
+        },
+        {
+          "caller": "build",
+          "callee": "tsup\n      .build",
+          "lineNumber": 93
+        },
+        {
+          "caller": "build",
+          "callee": "console.log",
+          "lineNumber": 102
+        },
+        {
+          "caller": "build",
+          "callee": "Promise.all",
+          "lineNumber": 105
+        },
+        {
+          "caller": "build",
+          "callee": "stripLeakedReactModuleAugmentations",
+          "lineNumber": 106
+        },
+        {
+          "caller": "stripLeakedReactModuleAugmentations",
+          "callee": "fs.promises\n    .readdir(distDirectoryPath, { recursive: true })\n    .catch",
+          "lineNumber": 118
+        },
+        {
+          "caller": "stripLeakedReactModuleAugmentations",
+          "callee": "fs.promises\n    .readdir",
+          "lineNumber": 118
+        },
+        {
+          "caller": "stripLeakedReactModuleAugmentations",
+          "callee": "distEntries\n    .map((entry) => entry.toString())\n    .filter((fileName) => DECLARATION_FILE_REGEX.test(fileName))\n    .map",
+          "lineNumber": 121
+        },
+        {
+          "caller": "stripLeakedReactModuleAugmentations",
+          "callee": "distEntries\n    .map((entry) => entry.toString())\n    .filter",
+          "lineNumber": 121
+        },
+        {
+          "caller": "stripLeakedReactModuleAugmentations",
+          "callee": "distEntries\n    .map",
+          "lineNumber": 121
+        },
+        {
+          "caller": "stripLeakedReactModuleAugmentations",
+          "callee": "entry.toString",
+          "lineNumber": 122
+        },
+        {
+          "caller": "stripLeakedReactModuleAugmentations",
+          "callee": "DECLARATION_FILE_REGEX.test",
+          "lineNumber": 123
+        },
+        {
+          "caller": "stripLeakedReactModuleAugmentations",
+          "callee": "path.resolve",
+          "lineNumber": 124
+        },
+        {
+          "caller": "stripLeakedReactModuleAugmentations",
+          "callee": "Promise.all",
+          "lineNumber": 126
+        },
+        {
+          "caller": "stripLeakedReactModuleAugmentations",
+          "callee": "declarationFilePaths.map",
+          "lineNumber": 127
+        },
+        {
+          "caller": "stripLeakedReactModuleAugmentations",
+          "callee": "stripReactModuleAugmentationsFromDeclarationFile",
+          "lineNumber": 128
+        },
+        {
+          "caller": "stripReactModuleAugmentationsFromDeclarationFile",
+          "callee": "fs.promises.readFile",
+          "lineNumber": 137
+        },
+        {
+          "caller": "stripReactModuleAugmentationsFromDeclarationFile",
+          "callee": "removeReactModuleAugmentations",
+          "lineNumber": 139
+        },
+        {
+          "caller": "stripReactModuleAugmentationsFromDeclarationFile",
+          "callee": "fs.promises.writeFile",
+          "lineNumber": 145
+        },
+        {
+          "caller": "removeReactModuleAugmentations",
+          "callee": "REACT_MODULE_AUGMENTATION_START_REGEX.exec",
+          "lineNumber": 164
+        },
+        {
+          "caller": "removeReactModuleAugmentations",
+          "callee": "getMatchingClosingBraceIndex",
+          "lineNumber": 168
+        },
+        {
+          "caller": "removeReactModuleAugmentations",
+          "callee": "declarationContents.slice",
+          "lineNumber": 179
+        },
+        {
+          "caller": "removeReactModuleAugmentations",
+          "callee": "/\\s/.test",
+          "lineNumber": 184
+        },
+        {
+          "caller": "removeReactModuleAugmentations",
+          "callee": "declarationContents.charAt",
+          "lineNumber": 184
+        },
+        {
+          "caller": "removeReactModuleAugmentations",
+          "callee": "declarationContents.charAt",
+          "lineNumber": 189
+        },
+        {
+          "caller": "removeReactModuleAugmentations",
+          "callee": "declarationContents.charAt",
+          "lineNumber": 195
+        },
+        {
+          "caller": "removeReactModuleAugmentations",
+          "callee": "declarationContents.charAt",
+          "lineNumber": 196
+        },
+        {
+          "caller": "removeReactModuleAugmentations",
+          "callee": "declarationContents.slice",
+          "lineNumber": 208
+        },
+        {
+          "caller": "getMatchingClosingBraceIndex",
+          "callee": "skipStringLiteral",
+          "lineNumber": 225
+        },
+        {
+          "caller": "getMatchingClosingBraceIndex",
+          "callee": "skipLineComment",
+          "lineNumber": 230
+        },
+        {
+          "caller": "getMatchingClosingBraceIndex",
+          "callee": "skipBlockComment",
+          "lineNumber": 235
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 8,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "internal/builder/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 21,
+      "nonEmptyLines": 21,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "private",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "license",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "type",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "main",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "exports",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "bin",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "dependencies",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": "internal/builder/radix-build.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 12,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "internal/builder/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 10,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "extends",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "exclude",
+          "level": 1,
+          "line": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "internal/test-data/foods.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 41,
+      "exports": [
+        {
+          "name": "foodGroups",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "internal/test-data/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 18,
+      "nonEmptyLines": 18,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "private",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "license",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "type",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "exports",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "internal/test-data/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "extends",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "include",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "exclude",
+          "level": 1,
+          "line": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "internal/test-utils/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 27,
+      "nonEmptyLines": 27,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "private",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "license",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "type",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "exports",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "peerDependencies",
+          "level": 1,
+          "line": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "internal/test-utils/ref-stability.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "assertStableComposedRef",
+          "startLine": 35,
+          "endLine": 60,
+          "params": [
+            "renderWithRef",
+            "{ maxRenders = DEFAULT_MAX_RENDERS }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "assertStableComposedRef",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Probe",
+          "callee": "React.useReducer",
+          "lineNumber": 43
+        },
+        {
+          "caller": "Probe",
+          "callee": "Object.create",
+          "lineNumber": 43
+        },
+        {
+          "caller": "Probe",
+          "callee": "React.useCallback",
+          "lineNumber": 46
+        },
+        {
+          "caller": "Probe",
+          "callee": "forceRender",
+          "lineNumber": 47
+        },
+        {
+          "caller": "Probe",
+          "callee": "renderWithRef",
+          "lineNumber": 49
+        },
+        {
+          "caller": "assertStableComposedRef",
+          "callee": "expect(() => render(<Probe />)).not.toThrow",
+          "lineNumber": 52
+        },
+        {
+          "caller": "assertStableComposedRef",
+          "callee": "expect",
+          "lineNumber": 52
+        },
+        {
+          "caller": "assertStableComposedRef",
+          "callee": "render",
+          "lineNumber": 52
+        },
+        {
+          "caller": "assertStableComposedRef",
+          "callee": "expect(\n    renderCount,\n    `Expected the component to settle, but it rendered ${renderCount} times ` +\n      `(>= ${maxRenders}). This usually means a composed ref callback is being ` +\n      `recreated on every render. Pass stable refs (e.g. state setters) directly ` +\n      `to \\`useComposedRefs\\`, or wrap inline callbacks in \\`useCallbackRef\\`.`,\n  ).toBeLessThan",
+          "lineNumber": 53
+        },
+        {
+          "caller": "assertStableComposedRef",
+          "callee": "expect",
+          "lineNumber": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

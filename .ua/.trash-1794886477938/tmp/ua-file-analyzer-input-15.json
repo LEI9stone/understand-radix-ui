@@ -1,0 +1,147 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "apps/storybook/stories/accordion.stories.module.css",
+      "language": "css",
+      "sizeLines": 159,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/alert-dialog.stories.module.css",
+      "language": "css",
+      "sizeLines": 78,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/aspect-ratio.stories.module.css",
+      "language": "css",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/avatar.stories.module.css",
+      "language": "css",
+      "sizeLines": 34,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/checkbox.stories.module.css",
+      "language": "css",
+      "sizeLines": 90,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/collapsible.stories.module.css",
+      "language": "css",
+      "sizeLines": 124,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/context-menu.stories.module.css",
+      "language": "css",
+      "sizeLines": 101,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/dialog.stories.module.css",
+      "language": "css",
+      "sizeLines": 133,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/dropdown-menu.stories.module.css",
+      "language": "css",
+      "sizeLines": 179,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/form.stories.module.css",
+      "language": "css",
+      "sizeLines": 10,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/hover-card.stories.module.css",
+      "language": "css",
+      "sizeLines": 89,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/label.stories.module.css",
+      "language": "css",
+      "sizeLines": 23,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/menu.stories.module.css",
+      "language": "css",
+      "sizeLines": 105,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/menubar.stories.module.css",
+      "language": "css",
+      "sizeLines": 123,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/navigation-menu.stories.module.css",
+      "language": "css",
+      "sizeLines": 373,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/one-time-password-field.stories.module.css",
+      "language": "css",
+      "sizeLines": 92,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/password-toggle-field.stories.module.css",
+      "language": "css",
+      "sizeLines": 65,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/popover.stories.module.css",
+      "language": "css",
+      "sizeLines": 92,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/popper.stories.module.css",
+      "language": "css",
+      "sizeLines": 115,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/presence.stories.module.css",
+      "language": "css",
+      "sizeLines": 73,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "apps/storybook/stories/accordion.stories.module.css": [],
+    "apps/storybook/stories/alert-dialog.stories.module.css": [],
+    "apps/storybook/stories/aspect-ratio.stories.module.css": [],
+    "apps/storybook/stories/avatar.stories.module.css": [],
+    "apps/storybook/stories/checkbox.stories.module.css": [],
+    "apps/storybook/stories/collapsible.stories.module.css": [],
+    "apps/storybook/stories/context-menu.stories.module.css": [],
+    "apps/storybook/stories/dialog.stories.module.css": [],
+    "apps/storybook/stories/dropdown-menu.stories.module.css": [],
+    "apps/storybook/stories/form.stories.module.css": [],
+    "apps/storybook/stories/hover-card.stories.module.css": [],
+    "apps/storybook/stories/label.stories.module.css": [],
+    "apps/storybook/stories/menu.stories.module.css": [],
+    "apps/storybook/stories/menubar.stories.module.css": [],
+    "apps/storybook/stories/navigation-menu.stories.module.css": [],
+    "apps/storybook/stories/one-time-password-field.stories.module.css": [],
+    "apps/storybook/stories/password-toggle-field.stories.module.css": [],
+    "apps/storybook/stories/popover.stories.module.css": [],
+    "apps/storybook/stories/popper.stories.module.css": [],
+    "apps/storybook/stories/presence.stories.module.css": []
+  }
+}

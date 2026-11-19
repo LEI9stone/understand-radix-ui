@@ -1,0 +1,1163 @@
+{
+  "worker": 3,
+  "load": 32497,
+  "batches": [
+    {
+      "batchIndex": 9,
+      "files": [
+        {
+          "path": "packages/react/scroll-area/src/scroll-area.test.tsx",
+          "language": "typescript",
+          "sizeLines": 551,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/scroll-area/src/scroll-area.tsx",
+          "language": "typescript",
+          "sizeLines": 1191,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/scroll-area/src/use-state-machine.ts",
+          "language": "typescript",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/scroll-area/src/scroll-area.test.tsx": [
+          "packages/react/scroll-area/src/scroll-area.tsx"
+        ],
+        "packages/react/scroll-area/src/scroll-area.tsx": [
+          "packages/react/scroll-area/src/use-state-machine.ts"
+        ],
+        "packages/react/scroll-area/src/use-state-machine.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 13,
+      "files": [
+        {
+          "path": ".oxfmtrc.json",
+          "language": "json",
+          "sizeLines": 23,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".oxlintrc.json",
+          "language": "json",
+          "sizeLines": 240,
+          "fileCategory": "config"
+        },
+        {
+          "path": "AGENTS.md",
+          "language": "markdown",
+          "sizeLines": 81,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "language": "markdown",
+          "sizeLines": 76,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 54,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "context7.json",
+          "language": "json",
+          "sizeLines": 4,
+          "fileCategory": "config"
+        },
+        {
+          "path": "package.json",
+          "language": "json",
+          "sizeLines": 65,
+          "fileCategory": "config"
+        },
+        {
+          "path": "philosophy.md",
+          "language": "markdown",
+          "sizeLines": 91,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "pnpm-workspace.yaml",
+          "language": "yaml",
+          "sizeLines": 19,
+          "fileCategory": "config"
+        },
+        {
+          "path": "release-process.md",
+          "language": "markdown",
+          "sizeLines": 47,
+          "fileCategory": "docs"
+        }
+      ],
+      "batchImportData": {
+        ".oxfmtrc.json": [],
+        ".oxlintrc.json": [],
+        "AGENTS.md": [],
+        "CODE_OF_CONDUCT.md": [],
+        "README.md": [],
+        "context7.json": [],
+        "package.json": [],
+        "philosophy.md": [],
+        "pnpm-workspace.yaml": [],
+        "release-process.md": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 19,
+      "files": [
+        {
+          "path": "packages/core/number/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 9,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/core/number/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/core/number/package.json",
+          "language": "json",
+          "sizeLines": 51,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/core/number/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/core/number/CHANGELOG.md": [],
+        "packages/core/number/README.md": [],
+        "packages/core/number/package.json": [],
+        "packages/core/number/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 22,
+      "files": [
+        {
+          "path": "packages/react/accessible-icon/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 62,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/accessible-icon/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/accessible-icon/package.json",
+          "language": "json",
+          "sizeLines": 72,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/accessible-icon/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/accessible-icon/CHANGELOG.md": [],
+        "packages/react/accessible-icon/README.md": [],
+        "packages/react/accessible-icon/package.json": [],
+        "packages/react/accessible-icon/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 28,
+      "files": [
+        {
+          "path": "packages/react/avatar/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 88,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/avatar/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/avatar/package.json",
+          "language": "json",
+          "sizeLines": 78,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/avatar/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/avatar/CHANGELOG.md": [],
+        "packages/react/avatar/README.md": [],
+        "packages/react/avatar/package.json": [],
+        "packages/react/avatar/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 34,
+      "files": [
+        {
+          "path": "packages/react/context/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 29,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/context/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/context/package.json",
+          "language": "json",
+          "sizeLines": 64,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/context/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/context/CHANGELOG.md": [],
+        "packages/react/context/README.md": [],
+        "packages/react/context/package.json": [],
+        "packages/react/context/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 38,
+      "files": [
+        {
+          "path": "packages/react/dropdown-menu/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 95,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/dropdown-menu/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/dropdown-menu/package.json",
+          "language": "json",
+          "sizeLines": 80,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/dropdown-menu/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/dropdown-menu/CHANGELOG.md": [],
+        "packages/react/dropdown-menu/README.md": [],
+        "packages/react/dropdown-menu/package.json": [],
+        "packages/react/dropdown-menu/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 39,
+      "files": [
+        {
+          "path": "packages/react/focus-guards/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 22,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/focus-guards/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/focus-guards/package.json",
+          "language": "json",
+          "sizeLines": 64,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/focus-guards/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/focus-guards/CHANGELOG.md": [],
+        "packages/react/focus-guards/README.md": [],
+        "packages/react/focus-guards/package.json": [],
+        "packages/react/focus-guards/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 41,
+      "files": [
+        {
+          "path": "packages/react/form/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 74,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/form/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/form/package.json",
+          "language": "json",
+          "sizeLines": 77,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/form/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/form/CHANGELOG.md": [],
+        "packages/react/form/README.md": [],
+        "packages/react/form/package.json": [],
+        "packages/react/form/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 43,
+      "files": [
+        {
+          "path": "packages/react/id/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 16,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/id/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/id/package.json",
+          "language": "json",
+          "sizeLines": 67,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/id/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/id/CHANGELOG.md": [],
+        "packages/react/id/README.md": [],
+        "packages/react/id/package.json": [],
+        "packages/react/id/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 52,
+      "files": [
+        {
+          "path": "packages/react/portal/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 63,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/portal/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/portal/package.json",
+          "language": "json",
+          "sizeLines": 73,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/portal/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/portal/CHANGELOG.md": [],
+        "packages/react/portal/README.md": [],
+        "packages/react/portal/package.json": [],
+        "packages/react/portal/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 63,
+      "files": [
+        {
+          "path": "packages/react/slot/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 55,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/slot/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/slot/package.json",
+          "language": "json",
+          "sizeLines": 67,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/slot/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/slot/CHANGELOG.md": [],
+        "packages/react/slot/README.md": [],
+        "packages/react/slot/package.json": [],
+        "packages/react/slot/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 65,
+      "files": [
+        {
+          "path": "packages/react/tabs/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 92,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/tabs/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/tabs/package.json",
+          "language": "json",
+          "sizeLines": 79,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/tabs/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/tabs/CHANGELOG.md": [],
+        "packages/react/tabs/README.md": [],
+        "packages/react/tabs/package.json": [],
+        "packages/react/tabs/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 66,
+      "files": [
+        {
+          "path": "packages/react/toast/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 99,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/toast/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/toast/package.json",
+          "language": "json",
+          "sizeLines": 84,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/toast/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/toast/CHANGELOG.md": [],
+        "packages/react/toast/README.md": [],
+        "packages/react/toast/package.json": [],
+        "packages/react/toast/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 69,
+      "files": [
+        {
+          "path": "packages/react/toolbar/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 84,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/toolbar/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/toolbar/package.json",
+          "language": "json",
+          "sizeLines": 78,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/toolbar/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/toolbar/CHANGELOG.md": [],
+        "packages/react/toolbar/README.md": [],
+        "packages/react/toolbar/package.json": [],
+        "packages/react/toolbar/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 76,
+      "files": [
+        {
+          "path": "packages/react/use-layout-effect/CHANGELOG.md",
+          "language": "markdown",
+          "sizeLines": 13,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/use-layout-effect/README.md",
+          "language": "markdown",
+          "sizeLines": 3,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "packages/react/use-layout-effect/package.json",
+          "language": "json",
+          "sizeLines": 64,
+          "fileCategory": "config"
+        },
+        {
+          "path": "packages/react/use-layout-effect/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/use-layout-effect/CHANGELOG.md": [],
+        "packages/react/use-layout-effect/README.md": [],
+        "packages/react/use-layout-effect/package.json": [],
+        "packages/react/use-layout-effect/tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 85,
+      "files": [
+        {
+          "path": "internal/test-utils/tsconfig.json",
+          "language": "json",
+          "sizeLines": 9,
+          "fileCategory": "config"
+        },
+        {
+          "path": "internal/typescript-config/react-library/index.d.ts",
+          "language": "typescript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/env-check/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 1,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/env-check/src/internal/is-development.false.ts",
+          "language": "typescript",
+          "sizeLines": 1,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/env-check/src/internal/is-development.true.ts",
+          "language": "typescript",
+          "sizeLines": 1,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/number/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 1,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/number/src/number.ts",
+          "language": "typescript",
+          "sizeLines": 5,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/primitive/bench/aria-hidden.bench.mts",
+          "language": "mts",
+          "sizeLines": 111,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/primitive/bench/aria-hidden.page.ts",
+          "language": "typescript",
+          "sizeLines": 167,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/primitive/src/aria-hidden.test.tsx",
+          "language": "typescript",
+          "sizeLines": 556,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/primitive/src/aria-hidden.ts",
+          "language": "typescript",
+          "sizeLines": 242,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/primitive/src/can-use-dom.ts",
+          "language": "typescript",
+          "sizeLines": 6,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/primitive/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 4,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/primitive/src/primitive.tsx",
+          "language": "typescript",
+          "sizeLines": 68,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/primitive/src/types.ts",
+          "language": "typescript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/rect/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 2,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/core/rect/src/observe-element-rect.ts",
+          "language": "typescript",
+          "sizeLines": 109,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/accessible-icon/src/accesible-icon.test.tsx",
+          "language": "typescript",
+          "sizeLines": 69,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/accessible-icon/src/accessible-icon.tsx",
+          "language": "typescript",
+          "sizeLines": 32,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/accessible-icon/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 7,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/accordion/src/accordion.test.tsx",
+          "language": "typescript",
+          "sizeLines": 1368,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/accordion/src/accordion.tsx",
+          "language": "typescript",
+          "sizeLines": 578,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/accordion/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 24,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/alert-dialog/src/alert-dialog.test.tsx",
+          "language": "typescript",
+          "sizeLines": 543,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/alert-dialog/src/alert-dialog.tsx",
+          "language": "typescript",
+          "sizeLines": 230,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "internal/test-utils/tsconfig.json": [],
+        "internal/typescript-config/react-library/index.d.ts": [],
+        "packages/core/env-check/src/index.ts": [],
+        "packages/core/env-check/src/internal/is-development.false.ts": [],
+        "packages/core/env-check/src/internal/is-development.true.ts": [],
+        "packages/core/number/src/index.ts": [],
+        "packages/core/number/src/number.ts": [],
+        "packages/core/primitive/bench/aria-hidden.bench.mts": [],
+        "packages/core/primitive/bench/aria-hidden.page.ts": [
+          "packages/core/primitive/src/aria-hidden.ts"
+        ],
+        "packages/core/primitive/src/aria-hidden.test.tsx": [],
+        "packages/core/primitive/src/aria-hidden.ts": [],
+        "packages/core/primitive/src/can-use-dom.ts": [],
+        "packages/core/primitive/src/index.ts": [],
+        "packages/core/primitive/src/primitive.tsx": [
+          "packages/core/primitive/src/can-use-dom.ts"
+        ],
+        "packages/core/primitive/src/types.ts": [],
+        "packages/core/rect/src/index.ts": [],
+        "packages/core/rect/src/observe-element-rect.ts": [],
+        "packages/react/accessible-icon/src/accesible-icon.test.tsx": [
+          "packages/react/accessible-icon/src/accessible-icon.tsx"
+        ],
+        "packages/react/accessible-icon/src/accessible-icon.tsx": [],
+        "packages/react/accessible-icon/src/index.ts": [],
+        "packages/react/accordion/src/accordion.test.tsx": [
+          "packages/react/accordion/src/accordion.tsx"
+        ],
+        "packages/react/accordion/src/accordion.tsx": [],
+        "packages/react/accordion/src/index.ts": [],
+        "packages/react/alert-dialog/src/alert-dialog.test.tsx": [
+          "packages/react/alert-dialog/src/alert-dialog.tsx"
+        ],
+        "packages/react/alert-dialog/src/alert-dialog.tsx": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 87,
+      "files": [
+        {
+          "path": "packages/react/context-menu/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 56,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/context/src/create-context.tsx",
+          "language": "typescript",
+          "sizeLines": 228,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/context/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/dialog/src/dialog.test.tsx",
+          "language": "typescript",
+          "sizeLines": 1197,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/dialog/src/dialog.tsx",
+          "language": "typescript",
+          "sizeLines": 683,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/dialog/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 34,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/direction/src/direction.tsx",
+          "language": "typescript",
+          "sizeLines": 38,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/direction/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/dismissable-layer/src/dismissable-layer.test.tsx",
+          "language": "typescript",
+          "sizeLines": 817,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/dismissable-layer/src/dismissable-layer.tsx",
+          "language": "typescript",
+          "sizeLines": 604,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/dismissable-layer/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 11,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.test.tsx",
+          "language": "typescript",
+          "sizeLines": 1286,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "language": "typescript",
+          "sizeLines": 531,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/dropdown-menu/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 56,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/focus-guards/src/focus-guards.test.tsx",
+          "language": "typescript",
+          "sizeLines": 128,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/focus-guards/src/focus-guards.tsx",
+          "language": "typescript",
+          "sizeLines": 76,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/focus-guards/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/focus-scope/src/focus-scope.test.tsx",
+          "language": "typescript",
+          "sizeLines": 407,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/focus-scope/src/focus-scope.tsx",
+          "language": "typescript",
+          "sizeLines": 488,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/focus-scope/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 14,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/form/src/form.test.tsx",
+          "language": "typescript",
+          "sizeLines": 782,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/form/src/form.tsx",
+          "language": "typescript",
+          "sizeLines": 785,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/form/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 30,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/hover-card/src/hover-card.test.tsx",
+          "language": "typescript",
+          "sizeLines": 311,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/hover-card/src/hover-card.tsx",
+          "language": "typescript",
+          "sizeLines": 436,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/context-menu/src/index.ts": [],
+        "packages/react/context/src/create-context.tsx": [],
+        "packages/react/context/src/index.ts": [],
+        "packages/react/dialog/src/dialog.test.tsx": [
+          "packages/react/dialog/src/dialog.tsx"
+        ],
+        "packages/react/dialog/src/dialog.tsx": [],
+        "packages/react/dialog/src/index.ts": [],
+        "packages/react/direction/src/direction.tsx": [],
+        "packages/react/direction/src/index.ts": [],
+        "packages/react/dismissable-layer/src/dismissable-layer.test.tsx": [
+          "packages/react/dismissable-layer/src/dismissable-layer.tsx"
+        ],
+        "packages/react/dismissable-layer/src/dismissable-layer.tsx": [],
+        "packages/react/dismissable-layer/src/index.ts": [],
+        "packages/react/dropdown-menu/src/dropdown-menu.test.tsx": [
+          "packages/react/dropdown-menu/src/dropdown-menu.tsx"
+        ],
+        "packages/react/dropdown-menu/src/dropdown-menu.tsx": [],
+        "packages/react/dropdown-menu/src/index.ts": [],
+        "packages/react/focus-guards/src/focus-guards.test.tsx": [
+          "packages/react/focus-guards/src/focus-guards.tsx"
+        ],
+        "packages/react/focus-guards/src/focus-guards.tsx": [],
+        "packages/react/focus-guards/src/index.ts": [],
+        "packages/react/focus-scope/src/focus-scope.test.tsx": [
+          "packages/react/focus-scope/src/focus-scope.tsx"
+        ],
+        "packages/react/focus-scope/src/focus-scope.tsx": [],
+        "packages/react/focus-scope/src/index.ts": [],
+        "packages/react/form/src/form.test.tsx": [],
+        "packages/react/form/src/form.tsx": [],
+        "packages/react/form/src/index.ts": [],
+        "packages/react/hover-card/src/hover-card.test.tsx": [
+          "packages/react/hover-card/src/hover-card.tsx"
+        ],
+        "packages/react/hover-card/src/hover-card.tsx": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 93,
+      "files": [
+        {
+          "path": "packages/react/use-layout-effect/src/use-layout-effect.tsx",
+          "language": "typescript",
+          "sizeLines": 12,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/use-previous/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 1,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/use-previous/src/use-previous.tsx",
+          "language": "typescript",
+          "sizeLines": 18,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/use-rect/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 1,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/use-rect/src/use-rect.tsx",
+          "language": "typescript",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/use-size/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 1,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/use-size/src/use-size.test.tsx",
+          "language": "typescript",
+          "sizeLines": 265,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/use-size/src/use-size.tsx",
+          "language": "typescript",
+          "sizeLines": 77,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/visually-hidden/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/visually-hidden/src/visually-hidden.test.tsx",
+          "language": "typescript",
+          "sizeLines": 63,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/react/visually-hidden/src/visually-hidden.tsx",
+          "language": "typescript",
+          "sizeLines": 47,
+          "fileCategory": "code"
+        },
+        {
+          "path": "patches/@changesets__apply-release-plan.patch",
+          "language": "patch",
+          "sizeLines": 40,
+          "fileCategory": "code"
+        },
+        {
+          "path": "playwright.config.ts",
+          "language": "typescript",
+          "sizeLines": 41,
+          "fileCategory": "code"
+        },
+        {
+          "path": "scripts/check-composed-refs.mjs",
+          "language": "javascript",
+          "sizeLines": 123,
+          "fileCategory": "code"
+        },
+        {
+          "path": "scripts/rsc-client-boundary-stub.mts",
+          "language": "mts",
+          "sizeLines": 100,
+          "fileCategory": "code"
+        },
+        {
+          "path": "scripts/rsc-compatibility.rsc.test.ts",
+          "language": "typescript",
+          "sizeLines": 87,
+          "fileCategory": "code"
+        },
+        {
+          "path": "scripts/setup-tests.ts",
+          "language": "typescript",
+          "sizeLines": 23,
+          "fileCategory": "code"
+        },
+        {
+          "path": "types/global.d.ts",
+          "language": "typescript",
+          "sizeLines": 15,
+          "fileCategory": "code"
+        },
+        {
+          "path": "types/index.d.ts",
+          "language": "typescript",
+          "sizeLines": 4,
+          "fileCategory": "code"
+        },
+        {
+          "path": "vitest.config.mts",
+          "language": "mts",
+          "sizeLines": 47,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "packages/react/use-layout-effect/src/use-layout-effect.tsx": [],
+        "packages/react/use-previous/src/index.ts": [],
+        "packages/react/use-previous/src/use-previous.tsx": [],
+        "packages/react/use-rect/src/index.ts": [],
+        "packages/react/use-rect/src/use-rect.tsx": [],
+        "packages/react/use-size/src/index.ts": [],
+        "packages/react/use-size/src/use-size.test.tsx": [
+          "packages/react/use-size/src/use-size.tsx"
+        ],
+        "packages/react/use-size/src/use-size.tsx": [],
+        "packages/react/visually-hidden/src/index.ts": [],
+        "packages/react/visually-hidden/src/visually-hidden.test.tsx": [
+          "packages/react/visually-hidden/src/visually-hidden.tsx"
+        ],
+        "packages/react/visually-hidden/src/visually-hidden.tsx": [],
+        "patches/@changesets__apply-release-plan.patch": [],
+        "playwright.config.ts": [],
+        "scripts/check-composed-refs.mjs": [],
+        "scripts/rsc-client-boundary-stub.mts": [],
+        "scripts/rsc-compatibility.rsc.test.ts": [
+          "scripts/rsc-client-boundary-stub.mts"
+        ],
+        "scripts/setup-tests.ts": [],
+        "types/global.d.ts": [],
+        "types/index.d.ts": [],
+        "vitest.config.mts": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

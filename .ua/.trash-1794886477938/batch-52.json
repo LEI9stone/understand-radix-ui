@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/portal/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/portal/CHANGELOG.md",
+      "summary": "维护 Portal 包 1.2.0 及 1.1 系列的发布记录，支持传送节点能力与依赖变化的追溯。",
+      "tags": [
+        "版本记录",
+        "传送节点",
+        "维护文档"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/portal/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/portal/README.md",
+      "summary": "标识 react-portal 包并给出其官方文档入口。",
+      "tags": [
+        "包说明",
+        "传送节点",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/portal/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/portal/package.json",
+      "summary": "配置 Portal 的源码与模块出口、React 和 ReactDOM peer 兼容范围，声明 Primitive 与安全布局效应依赖。",
+      "tags": [
+        "包配置",
+        "传送节点",
+        "依赖管理"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/portal/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/portal/tsconfig.json",
+      "summary": "将 Portal 源码纳入共享 React 库编译设置，并排除 node_modules 和 dist 避免重复检查。",
+      "tags": [
+        "编译配置",
+        "传送节点",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/react/portal/package.json",
+      "target": "file:packages/react/portal/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/portal/README.md",
+      "target": "config:packages/react/portal/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

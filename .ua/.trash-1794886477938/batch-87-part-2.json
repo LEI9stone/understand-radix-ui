@@ -1,0 +1,1267 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/dropdown-menu/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/dropdown-menu/src/index.ts",
+      "summary": "导出下拉菜单全部复合部件、短别名、作用域工厂与类型，形成客户端公共 API。",
+      "tags": [
+        "入口点",
+        "下拉菜单",
+        "导出聚合"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/focus-guards/src/focus-guards.test.tsx",
+      "type": "file",
+      "name": "focus-guards.test.tsx",
+      "filePath": "packages/react/focus-guards/src/focus-guards.test.tsx",
+      "summary": "验证文档边缘焦点守卫的创建、共享复用、边界重定位及最后一个使用者卸载后的清理。",
+      "tags": [
+        "测试",
+        "焦点守卫",
+        "共享资源"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/focus-guards/src/focus-guards.tsx",
+      "type": "file",
+      "name": "focus-guards.tsx",
+      "filePath": "packages/react/focus-guards/src/focus-guards.tsx",
+      "summary": "在 body 两端维护一对共享焦点守卫，按使用者计数复用并清理，且只在边界失效时调整 DOM 以减少布局开销。",
+      "tags": [
+        "焦点守卫",
+        "共享资源",
+        "性能优化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/focus-guards/src/focus-guards.tsx:FocusGuards",
+      "type": "function",
+      "name": "FocusGuards",
+      "filePath": "packages/react/focus-guards/src/focus-guards.tsx",
+      "lineRange": [
+        17,
+        20
+      ],
+      "summary": "调用共享焦点守卫 Hook 后直接返回 children，在不增加 DOM 包装的情况下提供边界守卫。",
+      "tags": [
+        "组件",
+        "焦点守卫",
+        "透明包装"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/focus-guards/src/focus-guards.tsx:useFocusGuards",
+      "type": "function",
+      "name": "useFocusGuards",
+      "filePath": "packages/react/focus-guards/src/focus-guards.tsx",
+      "lineRange": [
+        26,
+        57
+      ],
+      "summary": "复用文档起止两个守卫，修复其 body 首尾位置并引用计数，最后一个订阅清理时移除守卫。",
+      "tags": [
+        "自定义钩子",
+        "焦点守卫",
+        "引用计数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/focus-guards/src/focus-guards.tsx:createFocusGuard",
+      "type": "function",
+      "name": "createFocusGuard",
+      "filePath": "packages/react/focus-guards/src/focus-guards.tsx",
+      "lineRange": [
+        59,
+        68
+      ],
+      "summary": "创建透明、可 Tab 聚焦且不拦截指针的固定 span，作为文档焦点边界哨兵。",
+      "tags": [
+        "DOM构造",
+        "焦点守卫",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/focus-guards/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/focus-guards/src/index.ts",
+      "summary": "导出 FocusGuards 包装组件和 useFocusGuards，提供统一文档焦点边界能力。",
+      "tags": [
+        "入口点",
+        "焦点守卫",
+        "导出聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/focus-scope/src/focus-scope.test.tsx",
+      "type": "file",
+      "name": "focus-scope.test.tsx",
+      "filePath": "packages/react/focus-scope/src/focus-scope.test.tsx",
+      "summary": "验证 FocusScope 的自动聚焦、Tab 循环、焦点陷阱与卸载恢复，并通过输入字段覆盖交互行为。",
+      "tags": [
+        "测试",
+        "焦点作用域",
+        "键盘导航"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "type": "file",
+      "name": "focus-scope.tsx",
+      "filePath": "packages/react/focus-scope/src/focus-scope.tsx",
+      "summary": "实现可循环与可捕获的焦点作用域，维护嵌套暂停栈、挂载卸载自动焦点和 Portal 分支注册，兼容输入法及可见性检测。",
+      "tags": [
+        "焦点作用域",
+        "键盘导航",
+        "分支注册"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/focus-scope/src/focus-scope.tsx:FocusScopeBranchProvider",
+      "type": "function",
+      "name": "FocusScopeBranchProvider",
+      "filePath": "packages/react/focus-scope/src/focus-scope.tsx",
+      "lineRange": [
+        283,
+        290
+      ],
+      "summary": "向后代提供焦点分支注册表，无有效注册表时透明传递子节点以继承更高层作用域。",
+      "tags": [
+        "组件",
+        "分支注册",
+        "上下文"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/focus-scope/src/focus-scope.tsx:useFocusScopeBranchRegistry",
+      "type": "function",
+      "name": "useFocusScopeBranchRegistry",
+      "filePath": "packages/react/focus-scope/src/focus-scope.tsx",
+      "lineRange": [
+        292,
+        302
+      ],
+      "summary": "维护分支节点数组及稳定的添加移除接口，避免重复注册并供模态层焦点和滚动锁共同使用。",
+      "tags": [
+        "自定义钩子",
+        "分支注册",
+        "稳定引用"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/focus-scope/src/focus-scope.tsx:useFocusScopeBranch",
+      "type": "function",
+      "name": "useFocusScopeBranch",
+      "filePath": "packages/react/focus-scope/src/focus-scope.tsx",
+      "lineRange": [
+        308,
+        315
+      ],
+      "summary": "将指定 Portal 节点注册到最近祖先焦点作用域，并在节点或注册表变化及卸载时取消注册。",
+      "tags": [
+        "自定义钩子",
+        "分支注册",
+        "清理机制"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/focus-scope/src/focus-scope.tsx:getTabbableCandidates",
+      "type": "function",
+      "name": "getTabbableCandidates",
+      "filePath": "packages/react/focus-scope/src/focus-scope.tsx",
+      "lineRange": [
+        353,
+        377
+      ],
+      "summary": "使用 TreeWalker 依 DOM 顺序查找非禁用、非隐藏且 tabIndex 非负的元素，作为后续可见性筛选候选。",
+      "tags": [
+        "DOM遍历",
+        "键盘导航",
+        "焦点候选"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/focus-scope/src/focus-scope.tsx:findVisible",
+      "type": "function",
+      "name": "findVisible",
+      "filePath": "packages/react/focus-scope/src/focus-scope.tsx",
+      "lineRange": [
+        383,
+        402
+      ],
+      "summary": "优先使用原生 checkVisibility 查找首个可见候选，缺少可靠支持时回退祖先样式检查。",
+      "tags": [
+        "可见性检测",
+        "浏览器兼容",
+        "焦点候选"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/focus-scope/src/focus-scope.tsx:isHidden",
+      "type": "function",
+      "name": "isHidden",
+      "filePath": "packages/react/focus-scope/src/focus-scope.tsx",
+      "lineRange": [
+        404,
+        413
+      ],
+      "summary": "检查元素 visibility 和到容器边界之前各祖先的 display，判断候选是否被样式隐藏。",
+      "tags": [
+        "可见性检测",
+        "祖先遍历",
+        "样式查询"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/focus-scope/src/focus-scope.tsx:focus",
+      "type": "function",
+      "name": "focus",
+      "filePath": "packages/react/focus-scope/src/focus-scope.tsx",
+      "lineRange": [
+        422,
+        435
+      ],
+      "summary": "在目标可聚焦时阻止页面滚动地移动焦点，并仅在焦点实际改变且目标支持时选中文本。",
+      "tags": [
+        "焦点管理",
+        "输入选择",
+        "DOM工具"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/focus-scope/src/focus-scope.tsx:createFocusScopesStack",
+      "type": "function",
+      "name": "createFocusScopesStack",
+      "filePath": "packages/react/focus-scope/src/focus-scope.tsx",
+      "lineRange": [
+        444,
+        465
+      ],
+      "summary": "维护最近活动作用域栈，新增时暂停旧顶层，移除后恢复上一个作用域，防止嵌套焦点陷阱互相竞争。",
+      "tags": [
+        "焦点栈",
+        "嵌套交互",
+        "暂停恢复"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/focus-scope/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/focus-scope/src/index.ts",
+      "summary": "公开 FocusScope、分支 Provider、注册表和分支注册 Hook 及类型，支撑嵌套跨 Portal 的焦点管理。",
+      "tags": [
+        "入口点",
+        "焦点作用域",
+        "导出聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/form/src/form.test.tsx",
+      "type": "file",
+      "name": "form.test.tsx",
+      "filePath": "packages/react/form/src/form.test.tsx",
+      "summary": "验证表单原生与同步异步自定义校验、服务端错误、消息关联、重置及无效字段焦点处理。",
+      "tags": [
+        "测试",
+        "表单校验",
+        "错误提示"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/form/src/form.tsx",
+      "type": "file",
+      "name": "form.tsx",
+      "filePath": "packages/react/form/src/form.tsx",
+      "summary": "组合表单、字段、标签、输入控件与错误消息，整合原生 ValidityState、同步异步校验和服务端错误，并维护 aria-describedby 与首个无效字段聚焦。",
+      "tags": [
+        "组件",
+        "表单校验",
+        "错误提示",
+        "ARIA"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/form/src/form.tsx:FormValidityState",
+      "type": "function",
+      "name": "FormValidityState",
+      "filePath": "packages/react/form/src/form.tsx",
+      "lineRange": [
+        636,
+        648
+      ],
+      "summary": "从显式字段名或字段 Context 取出校验状态，并通过 children 渲染函数交给使用者自定义展示。",
+      "tags": [
+        "组件",
+        "表单校验",
+        "渲染函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/form/src/form.tsx:hasBuiltInError",
+      "type": "function",
+      "name": "hasBuiltInError",
+      "filePath": "packages/react/form/src/form.tsx",
+      "lineRange": [
+        720,
+        730
+      ],
+      "summary": "遍历 ValidityState 的原生错误标志，排除 valid 与 customError，以决定是否优先停止自定义校验。",
+      "tags": [
+        "校验工具",
+        "原生约束",
+        "错误优先级"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/form/src/form.tsx:concatAriaDescribedby",
+      "type": "function",
+      "name": "concatAriaDescribedby",
+      "filePath": "packages/react/form/src/form.tsx",
+      "lineRange": [
+        743,
+        753
+      ],
+      "summary": "从未知输入中仅提取描述 ID 字符串，按空白拆分去重并合并为 aria-describedby 值。",
+      "tags": [
+        "ARIA",
+        "标识合并",
+        "去重"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/form/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/form/src/index.ts",
+      "summary": "公开 Form 复合组件、校验状态渲染接口、作用域工厂和属性类型。",
+      "tags": [
+        "入口点",
+        "表单",
+        "导出聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/hover-card/src/hover-card.test.tsx",
+      "type": "file",
+      "name": "hover-card.test.tsx",
+      "filePath": "packages/react/hover-card/src/hover-card.test.tsx",
+      "summary": "用虚拟计时器验证悬停卡片的延迟开启、提前离开取消、延迟关闭与连续扫过多个触发器的回归行为。",
+      "tags": [
+        "测试",
+        "悬停卡片",
+        "定时器"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/hover-card/src/hover-card.test.tsx:renderHoverCard",
+      "type": "function",
+      "name": "renderHoverCard",
+      "filePath": "packages/react/hover-card/src/hover-card.test.tsx",
+      "lineRange": [
+        6,
+        16
+      ],
+      "summary": "渲染使用默认开关延迟的触发器与传送内容，返回触发器供虚拟时间交互测试使用。",
+      "tags": [
+        "测试辅助",
+        "悬停卡片",
+        "定时器"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/hover-card/src/hover-card.tsx",
+      "type": "file",
+      "name": "hover-card.tsx",
+      "filePath": "packages/react/hover-card/src/hover-card.tsx",
+      "summary": "组合 Popper 定位、Portal 与可关闭层实现延迟悬停卡片，跟踪文本选择和指针按下状态，并把嵌套传送内容注册为祖先焦点分支。",
+      "tags": [
+        "组件",
+        "悬停卡片",
+        "浮层定位"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/hover-card/src/hover-card.tsx:HoverCard",
+      "type": "function",
+      "name": "HoverCard",
+      "filePath": "packages/react/hover-card/src/hover-card.tsx",
+      "lineRange": [
+        52,
+        111
+      ],
+      "summary": "管理受控展开状态和开关定时器，在文本已选中或内容被按下时延缓关闭，并提供 Popper 根定位环境。",
+      "tags": [
+        "组件",
+        "定时器",
+        "受控状态"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardPortal",
+      "type": "function",
+      "name": "HoverCardPortal",
+      "filePath": "packages/react/hover-card/src/hover-card.tsx",
+      "lineRange": [
+        175,
+        189
+      ],
+      "summary": "把开关和 forceMount 状态交给 Presence，并通过 Portal 将卡片内容挂载到目标容器。",
+      "tags": [
+        "组件",
+        "传送节点",
+        "挂载控制"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/hover-card/src/hover-card.tsx:getTabbableNodes",
+      "type": "function",
+      "name": "getTabbableNodes",
+      "filePath": "packages/react/hover-card/src/hover-card.tsx",
+      "lineRange": [
+        401,
+        413
+      ],
+      "summary": "遍历内容中 tabIndex 非负的节点，让悬停卡片将其移出正常 Tab 顺序。",
+      "tags": [
+        "DOM遍历",
+        "键盘导航",
+        "焦点候选"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/focus-scope/src/focus-scope.tsx:FocusScope",
+      "type": "function",
+      "name": "FocusScope",
+      "filePath": "packages/react/focus-scope/src/focus-scope.tsx",
+      "lineRange": [
+        56,
+        248
+      ],
+      "summary": "管理挂载卸载焦点、Tab 边界循环和焦点陷阱，允许登记分支并在嵌套作用域激活时暂停自身。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/form/src/form.tsx:Form",
+      "type": "function",
+      "name": "Form",
+      "filePath": "packages/react/form/src/form.tsx",
+      "lineRange": [
+        56,
+        186
+      ],
+      "summary": "集中维护字段原生有效性、自定义校验器、错误和消息 ID，提交无效时聚焦首个错误控件并协调服务端错误清理。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/form/src/form.tsx:FormField",
+      "type": "function",
+      "name": "FormField",
+      "filePath": "packages/react/form/src/form.tsx",
+      "lineRange": [
+        209,
+        227
+      ],
+      "summary": "提供字段名、稳定 ID 和服务端无效标志，并在容器上暴露 data-valid/data-invalid。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/form/src/form.tsx:FormLabel",
+      "type": "function",
+      "name": "FormLabel",
+      "filePath": "packages/react/form/src/form.tsx",
+      "lineRange": [
+        241,
+        273
+      ],
+      "summary": "通过字段上下文或显式属性确定名称与 htmlFor，呈现校验样式状态并验证关联完整性。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/form/src/form.tsx:FormControl",
+      "type": "function",
+      "name": "FormControl",
+      "filePath": "packages/react/form/src/form.tsx",
+      "lineRange": [
+        285,
+        455
+      ],
+      "summary": "绑定输入控件与字段身份，优先执行原生约束，再运行同步和异步自定义匹配，处理重置及首个服务端错误焦点。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/form/src/form.tsx:FormMessage",
+      "type": "function",
+      "name": "FormMessage",
+      "filePath": "packages/react/form/src/form.tsx",
+      "lineRange": [
+        498,
+        521
+      ],
+      "summary": "根据 match 配置选择默认、原生错误或自定义校验消息，并支持跨字段名关联。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/form/src/form.tsx:FormBuiltInMessage",
+      "type": "function",
+      "name": "FormBuiltInMessage",
+      "filePath": "packages/react/form/src/form.tsx",
+      "lineRange": [
+        530,
+        551
+      ],
+      "summary": "根据 ValidityState 指定标志或 forceMatch 显示原生错误消息。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/form/src/form.tsx:FormCustomMessage",
+      "type": "function",
+      "name": "FormCustomMessage",
+      "filePath": "packages/react/form/src/form.tsx",
+      "lineRange": [
+        560,
+        596
+      ],
+      "summary": "注册自定义校验匹配器，并在无原生错误且匹配错误存在时显示对应消息。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/form/src/form.tsx:FormMessageImpl",
+      "type": "function",
+      "name": "FormMessageImpl",
+      "filePath": "packages/react/form/src/form.tsx",
+      "lineRange": [
+        604,
+        623
+      ],
+      "summary": "为消息生成稳定 ID，注册到字段描述集合并在卸载时清理。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/form/src/form.tsx:FormSubmit",
+      "type": "function",
+      "name": "FormSubmit",
+      "filePath": "packages/react/form/src/form.tsx",
+      "lineRange": [
+        658,
+        663
+      ],
+      "summary": "渲染默认 type=submit 的 Primitive 按钮并透传 ref 和属性。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardTrigger",
+      "type": "function",
+      "name": "HoverCardTrigger",
+      "filePath": "packages/react/hover-card/src/hover-card.tsx",
+      "lineRange": [
+        123,
+        148
+      ],
+      "summary": "以 Popper.Anchor 包装链接，组合非触摸悬停与焦点事件驱动延迟开关。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardContent",
+      "type": "function",
+      "name": "HoverCardContent",
+      "filePath": "packages/react/hover-card/src/hover-card.tsx",
+      "lineRange": [
+        206,
+        227
+      ],
+      "summary": "以 Presence 控制内容挂载并组合内容悬停开关事件。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardContentImpl",
+      "type": "function",
+      "name": "HoverCardContentImpl",
+      "filePath": "packages/react/hover-card/src/hover-card.tsx",
+      "lineRange": [
+        258,
+        372
+      ],
+      "summary": "组合可关闭层和 Popper 定位，保留文本选择并注册祖先焦点分支，调整内容 Tab 顺序。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardArrow",
+      "type": "function",
+      "name": "HoverCardArrow",
+      "filePath": "packages/react/hover-card/src/hover-card.tsx",
+      "lineRange": [
+        382,
+        388
+      ],
+      "summary": "桥接 Popper 作用域并透传箭头属性及 DOM 引用。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/focus-guards/src/focus-guards.test.tsx",
+      "target": "file:packages/react/focus-guards/src/focus-guards.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/focus-guards/src/focus-guards.tsx",
+      "target": "function:packages/react/focus-guards/src/focus-guards.tsx:FocusGuards",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/focus-guards/src/focus-guards.tsx",
+      "target": "function:packages/react/focus-guards/src/focus-guards.tsx:FocusGuards",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/focus-guards/src/focus-guards.tsx",
+      "target": "function:packages/react/focus-guards/src/focus-guards.tsx:useFocusGuards",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/focus-guards/src/focus-guards.tsx",
+      "target": "function:packages/react/focus-guards/src/focus-guards.tsx:useFocusGuards",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/focus-guards/src/focus-guards.tsx",
+      "target": "function:packages/react/focus-guards/src/focus-guards.tsx:createFocusGuard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.test.tsx",
+      "target": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "function:packages/react/focus-scope/src/focus-scope.tsx:FocusScopeBranchProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "function:packages/react/focus-scope/src/focus-scope.tsx:FocusScopeBranchProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "function:packages/react/focus-scope/src/focus-scope.tsx:useFocusScopeBranchRegistry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "function:packages/react/focus-scope/src/focus-scope.tsx:useFocusScopeBranchRegistry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "function:packages/react/focus-scope/src/focus-scope.tsx:useFocusScopeBranch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "function:packages/react/focus-scope/src/focus-scope.tsx:useFocusScopeBranch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "function:packages/react/focus-scope/src/focus-scope.tsx:getTabbableCandidates",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "function:packages/react/focus-scope/src/focus-scope.tsx:findVisible",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "function:packages/react/focus-scope/src/focus-scope.tsx:isHidden",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "function:packages/react/focus-scope/src/focus-scope.tsx:focus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "function:packages/react/focus-scope/src/focus-scope.tsx:createFocusScopesStack",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormValidityState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormValidityState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:hasBuiltInError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:concatAriaDescribedby",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.test.tsx",
+      "target": "function:packages/react/hover-card/src/hover-card.test.tsx:renderHoverCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.test.tsx",
+      "target": "file:packages/react/hover-card/src/hover-card.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "function:packages/react/hover-card/src/hover-card.tsx:HoverCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "function:packages/react/hover-card/src/hover-card.tsx:HoverCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardPortal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardPortal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "function:packages/react/hover-card/src/hover-card.tsx:getTabbableNodes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "function:packages/react/focus-scope/src/focus-scope.tsx:FocusScope",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "function:packages/react/focus-scope/src/focus-scope.tsx:FocusScope",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:Form",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:Form",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormField",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormLabel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormControl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormControl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormBuiltInMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormCustomMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormMessageImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormSubmit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "function:packages/react/form/src/form.tsx:FormSubmit",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardContentImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardArrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "function:packages/react/hover-card/src/hover-card.tsx:HoverCardArrow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "file:packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "file:packages/react/id/src/id.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "file:packages/react/label/src/label.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "file:packages/react/popper/src/popper.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "file:packages/react/portal/src/portal.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "file:packages/react/presence/src/presence.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/focus-guards/src/focus-guards.tsx",
+      "target": "file:packages/react/focus-guards/src/focus-guards.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "target": "file:packages/react/focus-scope/src/focus-scope.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/form/src/form.tsx",
+      "target": "file:packages/react/form/src/form.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/hover-card/src/hover-card.tsx",
+      "target": "file:packages/react/hover-card/src/hover-card.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/dropdown-menu/src/index.ts",
+      "target": "file:packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/focus-guards/src/index.ts",
+      "target": "file:packages/react/focus-guards/src/focus-guards.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/focus-scope/src/index.ts",
+      "target": "file:packages/react/focus-scope/src/focus-scope.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/form/src/index.ts",
+      "target": "file:packages/react/form/src/form.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "apps/storybook/stories/context-menu.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 896,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/dialog.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 818,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 1797,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/external-overlay.tsx",
+      "language": "typescript",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/menubar.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 861,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/popover.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 752,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/select.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 1877,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "apps/storybook/stories/context-menu.stories.tsx": [
+      "apps/storybook/stories/context-menu.stories.module.css",
+      "apps/storybook/stories/external-overlay.tsx"
+    ],
+    "apps/storybook/stories/dialog.stories.tsx": [
+      "apps/storybook/stories/dialog.stories.module.css",
+      "apps/storybook/stories/external-overlay.tsx"
+    ],
+    "apps/storybook/stories/dropdown-menu.stories.tsx": [
+      "apps/storybook/stories/dropdown-menu.stories.module.css",
+      "apps/storybook/stories/external-overlay.tsx"
+    ],
+    "apps/storybook/stories/external-overlay.tsx": [],
+    "apps/storybook/stories/menubar.stories.tsx": [
+      "apps/storybook/stories/external-overlay.tsx",
+      "apps/storybook/stories/menubar.stories.module.css"
+    ],
+    "apps/storybook/stories/popover.stories.tsx": [
+      "apps/storybook/stories/external-overlay.tsx",
+      "apps/storybook/stories/popover.stories.module.css"
+    ],
+    "apps/storybook/stories/select.stories.tsx": [
+      "apps/storybook/stories/external-overlay.tsx",
+      "apps/storybook/stories/select.stories.module.css"
+    ]
+  }
+}

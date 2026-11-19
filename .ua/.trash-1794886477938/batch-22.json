@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/accessible-icon/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/accessible-icon/CHANGELOG.md",
+      "summary": "记录 AccessibleIcon 包的历次版本发布和依赖更新，支持无障碍图标能力的版本追溯。",
+      "tags": [
+        "版本记录",
+        "可访问性",
+        "图标"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/accessible-icon/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/accessible-icon/README.md",
+      "summary": "标识 react-accessible-icon 包并链接其官方使用文档。",
+      "tags": [
+        "包说明",
+        "图标",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/accessible-icon/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/accessible-icon/package.json",
+      "summary": "定义 AccessibleIcon 的源码与发布入口、React 兼容范围和构建命令，运行时依赖 visually-hidden 提供读屏标签。",
+      "tags": [
+        "包配置",
+        "可访问性",
+        "依赖管理"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/accessible-icon/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/accessible-icon/tsconfig.json",
+      "summary": "继承共享 React 库编译配置，检查 src 目录并把 dist 与 node_modules 排除在编译输入之外。",
+      "tags": [
+        "类型检查",
+        "编译配置",
+        "React"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

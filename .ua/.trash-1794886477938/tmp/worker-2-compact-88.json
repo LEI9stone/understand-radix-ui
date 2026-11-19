@@ -1,0 +1,2979 @@
+{
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "results": [
+    {
+      "path": "packages/react/hover-card/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 23,
+      "exports": [
+        {
+          "name": "createHoverCardScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCard",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardPortal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardArrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardProps",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardTriggerProps",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardPortalProps",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardContentProps",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "HoverCardArrowProps",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 16,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/id/src/id.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "useId",
+          "startLine": 8,
+          "endLine": 15,
+          "params": [
+            "deterministicId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useId",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      },
+      "calls": [
+        "useId -> React.useState",
+        "useId -> useReactId",
+        "useId -> useLayoutEffect",
+        "useId -> setId",
+        "useId -> String"
+      ]
+    },
+    {
+      "path": "packages/react/id/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "exports": [
+        {
+          "name": "useId",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/label/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "exports": [
+        {
+          "name": "Label",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "LabelProps",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/label/src/label.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 51,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/label/src/label.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 33,
+      "exports": [
+        {
+          "name": "Label",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "LabelProps",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/menu/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 56,
+      "exports": [
+        {
+          "name": "createMenuScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Menu",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuAnchor",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuPortal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuLabel",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuCheckboxItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuRadioGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuRadioItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuItemIndicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSeparator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuArrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSub",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSubTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSubContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Anchor",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Group",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Label",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "CheckboxItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "RadioItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ItemIndicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Separator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Sub",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SubTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SubContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenuProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuAnchorProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuPortalProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuContentProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuGroupProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuLabelProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuItemProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuCheckboxItemProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuRadioGroupProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuRadioItemProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuItemIndicatorProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSeparatorProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuArrowProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSubProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSubTriggerProps",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSubContentProps",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 49,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/menu/src/menu.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1450,
+      "nonEmptyLines": 1307,
+      "functions": [
+        {
+          "name": "Menu",
+          "startLine": 97,
+          "endLine": 156,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "MenuPortal",
+          "startLine": 199,
+          "endLine": 211,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "MenuSub",
+          "startLine": 1031,
+          "endLine": 1066,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "getOpenState",
+          "startLine": 1300,
+          "endLine": 1302,
+          "params": [
+            "open"
+          ]
+        },
+        {
+          "name": "isIndeterminate",
+          "startLine": 1304,
+          "endLine": 1306,
+          "params": [
+            "checked"
+          ]
+        },
+        {
+          "name": "getCheckedState",
+          "startLine": 1308,
+          "endLine": 1310,
+          "params": [
+            "checked"
+          ]
+        },
+        {
+          "name": "focusFirst",
+          "startLine": 1312,
+          "endLine": 1320,
+          "params": [
+            "candidates"
+          ]
+        },
+        {
+          "name": "wrapArray",
+          "startLine": 1326,
+          "endLine": 1328,
+          "params": [
+            "array",
+            "startIndex"
+          ]
+        },
+        {
+          "name": "getNextMatch",
+          "startLine": 1347,
+          "endLine": 1358,
+          "params": [
+            "values",
+            "search",
+            "currentMatch"
+          ]
+        },
+        {
+          "name": "isPointInPolygon",
+          "startLine": 1367,
+          "endLine": 1384,
+          "params": [
+            "point",
+            "polygon"
+          ]
+        },
+        {
+          "name": "isPointerInGraceArea",
+          "startLine": 1386,
+          "endLine": 1390,
+          "params": [
+            "event",
+            "area"
+          ]
+        },
+        {
+          "name": "whenMouse",
+          "startLine": 1392,
+          "endLine": 1394,
+          "params": [
+            "handler"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createMenuScope",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "Menu",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuAnchor",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuPortal",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuContent",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuGroup",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuLabel",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuItem",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuCheckboxItem",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuRadioGroup",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuRadioItem",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuItemIndicator",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSeparator",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuArrow",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSub",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSubTrigger",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSubContent",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "Anchor",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "Group",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "Label",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "CheckboxItem",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroup",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "RadioItem",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "ItemIndicator",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "Separator",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "Sub",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "SubTrigger",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "SubContent",
+          "line": 1396,
+          "isDefault": false
+        },
+        {
+          "name": "MenuProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuAnchorProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuPortalProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuContentProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuGroupProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuLabelProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuItemProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuCheckboxItemProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuRadioGroupProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuRadioItemProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuItemIndicatorProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSeparatorProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuArrowProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSubProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSubTriggerProps",
+          "line": 1433,
+          "isDefault": false
+        },
+        {
+          "name": "MenuSubContentProps",
+          "line": 1433,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 49,
+        "functionCount": 12,
+        "classCount": 0
+      },
+      "calls": [
+        "Menu -> usePopperScope",
+        "Menu -> React.useState",
+        "Menu -> React.useRef",
+        "Menu -> useCallbackRef",
+        "Menu -> useDirection",
+        "Menu -> React.useEffect",
+        "handleKeyDown -> document.addEventListener",
+        "Menu -> document.addEventListener",
+        "Menu -> document.removeEventListener",
+        "handleBlur -> handleOpenChange",
+        "Menu -> window.addEventListener",
+        "Menu -> window.removeEventListener",
+        "Menu -> React.useCallback",
+        "Menu -> handleOpenChange",
+        "MenuPortal -> useMenuContext",
+        "handleTypeaheadSearch -> getItems().filter",
+        "handleTypeaheadSearch -> getItems",
+        "handleTypeaheadSearch -> items.find",
+        "handleTypeaheadSearch -> items.map",
+        "handleTypeaheadSearch -> getNextMatch",
+        "updateSearch -> window.clearTimeout",
+        "updateSearch -> window.setTimeout",
+        "updateSearch -> updateSearch",
+        "handleTypeaheadSearch -> updateSearch",
+        "handleTypeaheadSearch -> setTimeout",
+        "handleTypeaheadSearch -> (newItem as HTMLElement).focus",
+        "handleSelect -> menuItem.addEventListener",
+        "handleSelect -> onSelect",
+        "handleSelect -> dispatchDiscreteCustomEvent",
+        "handleSelect -> rootContext.onClose",
+        "MenuSub -> useMenuContext",
+        "MenuSub -> usePopperScope",
+        "MenuSub -> React.useState",
+        "MenuSub -> useCallbackRef",
+        "MenuSub -> React.useEffect",
+        "MenuSub -> handleOpenChange",
+        "MenuSub -> useId",
+        "getCheckedState -> isIndeterminate",
+        "focusFirst -> candidate.focus",
+        "wrapArray -> array.map",
+        "getNextMatch -> Array.from(search).every",
+        "getNextMatch -> Array.from",
+        "getNextMatch -> values.indexOf",
+        "getNextMatch -> wrapArray",
+        "getNextMatch -> Math.max",
+        "getNextMatch -> wrappedValues.filter",
+        "getNextMatch -> wrappedValues.find",
+        "getNextMatch -> value.toLowerCase().startsWith",
+        "getNextMatch -> value.toLowerCase",
+        "getNextMatch -> normalizedSearch.toLowerCase",
+        "isPointerInGraceArea -> isPointInPolygon",
+        "whenMouse -> handler"
+      ]
+    },
+    {
+      "path": "packages/react/menubar/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 59,
+      "exports": [
+        {
+          "name": "createMenubarScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Menubar",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarMenu",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarPortal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarLabel",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarCheckboxItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarRadioGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarRadioItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarItemIndicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSeparator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarArrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSub",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSubTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSubContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Menu",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Group",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Label",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "CheckboxItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroup",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "RadioItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ItemIndicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Separator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Sub",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SubTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SubContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarMenuProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarTriggerProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarPortalProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarContentProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarGroupProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarLabelProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarItemProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarCheckboxItemProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarRadioGroupProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarRadioItemProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarItemIndicatorProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSeparatorProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarArrowProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSubProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSubTriggerProps",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSubContentProps",
+          "line": 41,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 52,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/menubar/src/menubar.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1114,
+      "nonEmptyLines": 982,
+      "functions": [
+        {
+          "name": "MenubarTest",
+          "startLine": 9,
+          "endLine": 20,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/menubar/src/menubar.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 719,
+      "nonEmptyLines": 635,
+      "functions": [
+        {
+          "name": "MenubarMenu",
+          "startLine": 160,
+          "endLine": 199,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "MenubarPortal",
+          "startLine": 290,
+          "endLine": 294,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "MenubarSub",
+          "startLine": 569,
+          "endLine": 584,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "wrapArray",
+          "startLine": 658,
+          "endLine": 660,
+          "params": [
+            "array",
+            "startIndex"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createMenubarScope",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "Menubar",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarMenu",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarTrigger",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarPortal",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarContent",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarGroup",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarLabel",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarItem",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarCheckboxItem",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarRadioGroup",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarRadioItem",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarItemIndicator",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSeparator",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarArrow",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSub",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSubTrigger",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSubContent",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "Menu",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "Group",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "Label",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "CheckboxItem",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "RadioGroup",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "RadioItem",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "ItemIndicator",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "Separator",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "Sub",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "SubTrigger",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "SubContent",
+          "line": 662,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarMenuProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarTriggerProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarPortalProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarContentProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarGroupProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarLabelProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarItemProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarCheckboxItemProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarRadioGroupProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarRadioItemProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarItemIndicatorProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSeparatorProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarArrowProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSubProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSubTriggerProps",
+          "line": 701,
+          "isDefault": false
+        },
+        {
+          "name": "MenubarSubContentProps",
+          "line": 701,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 52,
+        "functionCount": 4,
+        "classCount": 0
+      },
+      "calls": [
+        "MenubarMenu -> useId",
+        "MenubarMenu -> useMenubarContext",
+        "MenubarMenu -> useMenuScope",
+        "MenubarMenu -> React.useRef",
+        "MenubarMenu -> React.useEffect",
+        "MenubarMenu -> context.onMenuClose",
+        "MenubarPortal -> useMenuScope",
+        "MenubarSub -> useMenuScope",
+        "MenubarSub -> useControllableState",
+        "wrapArray -> array.map"
+      ]
+    },
+    {
+      "path": "packages/react/navigation-menu/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 35,
+      "exports": [
+        {
+          "name": "createNavigationMenuScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenu",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuSub",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuList",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuItem",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuLink",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuIndicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuViewport",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Sub",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "List",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Link",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Indicator",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Viewport",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuSubProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuListProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuItemProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuTriggerProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuLinkProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuIndicatorProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuContentProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuViewportProps",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 28,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/navigation-menu/src/navigation-menu.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1029,
+      "nonEmptyLines": 893,
+      "functions": [
+        {
+          "name": "NavigationMenuTest",
+          "startLine": 10,
+          "endLine": 22,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "NavigationMenuSubTest",
+          "startLine": 103,
+          "endLine": 114,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1418,
+      "nonEmptyLines": 1286,
+      "functions": [
+        {
+          "name": "NavigationMenuProvider",
+          "startLine": 371,
+          "endLine": 436,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "NavigationMenuViewportItem",
+          "startLine": 1203,
+          "endLine": 1221,
+          "params": [
+            "{\n  contentRef,\n  isActive,\n  onActiveContentChange,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "getTabbableCandidates",
+          "startLine": 1301,
+          "endLine": 1317,
+          "params": [
+            "container"
+          ]
+        },
+        {
+          "name": "focusFirst",
+          "startLine": 1319,
+          "endLine": 1327,
+          "params": [
+            "candidates"
+          ]
+        },
+        {
+          "name": "removeFromTabOrder",
+          "startLine": 1329,
+          "endLine": 1340,
+          "params": [
+            "candidates"
+          ]
+        },
+        {
+          "name": "useResizeObserver",
+          "startLine": 1342,
+          "endLine": 1365,
+          "params": [
+            "element",
+            "onResize"
+          ]
+        },
+        {
+          "name": "getOpenState",
+          "startLine": 1367,
+          "endLine": 1369,
+          "params": [
+            "open"
+          ]
+        },
+        {
+          "name": "makeTriggerId",
+          "startLine": 1371,
+          "endLine": 1373,
+          "params": [
+            "baseId",
+            "value"
+          ]
+        },
+        {
+          "name": "makeContentId",
+          "startLine": 1375,
+          "endLine": 1377,
+          "params": [
+            "baseId",
+            "value"
+          ]
+        },
+        {
+          "name": "whenMouse",
+          "startLine": 1379,
+          "endLine": 1381,
+          "params": [
+            "handler"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createNavigationMenuScope",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenu",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuSub",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuList",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuItem",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuTrigger",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuLink",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuIndicator",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuContent",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuViewport",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "Sub",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "List",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "Item",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "Link",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "Indicator",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "Viewport",
+          "line": 1385,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuProps",
+          "line": 1408,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuSubProps",
+          "line": 1408,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuListProps",
+          "line": 1408,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuItemProps",
+          "line": 1408,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuTriggerProps",
+          "line": 1408,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuLinkProps",
+          "line": 1408,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuIndicatorProps",
+          "line": 1408,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuContentProps",
+          "line": 1408,
+          "isDefault": false
+        },
+        {
+          "name": "NavigationMenuViewportProps",
+          "line": 1408,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 28,
+        "functionCount": 10,
+        "classCount": 0
+      },
+      "calls": [
+        "NavigationMenuProvider -> React.useState",
+        "NavigationMenuProvider -> usePrevious",
+        "NavigationMenuProvider -> useId",
+        "NavigationMenuProvider -> useCallbackRef",
+        "NavigationMenuProvider -> React.useCallback",
+        "NavigationMenuProvider -> setViewportContent",
+        "NavigationMenuProvider -> prevContent.set",
+        "NavigationMenuProvider -> prevContent.has",
+        "NavigationMenuProvider -> prevContent.delete",
+        "handlePositionChange -> setPosition",
+        "handleClose -> onItemDismiss",
+        "handleClose -> onRootContentClose",
+        "handleClose -> content.contains",
+        "handleClose -> triggerRef.current?.focus",
+        "handleSizeChange -> setSize",
+        "NavigationMenuViewportItem -> React.useCallback",
+        "NavigationMenuViewportItem -> onActiveContentChange",
+        "NavigationMenuViewportItem -> useComposedRefs",
+        "getTabbableCandidates -> document.createTreeWalker",
+        "getTabbableCandidates -> walker.nextNode",
+        "getTabbableCandidates -> nodes.push",
+        "focusFirst -> candidates.some",
+        "focusFirst -> candidate.focus",
+        "removeFromTabOrder -> candidates.forEach",
+        "removeFromTabOrder -> candidate.getAttribute",
+        "removeFromTabOrder -> candidate.setAttribute",
+        "useResizeObserver -> useCallbackRef",
+        "useResizeObserver -> useLayoutEffect",
+        "useResizeObserver -> cancelAnimationFrame",
+        "useResizeObserver -> window.requestAnimationFrame",
+        "useResizeObserver -> resizeObserver.observe",
+        "useResizeObserver -> window.cancelAnimationFrame",
+        "useResizeObserver -> resizeObserver.unobserve",
+        "whenMouse -> handler"
+      ]
+    },
+    {
+      "path": "packages/react/one-time-password-field/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 16,
+      "exports": [
+        {
+          "name": "OneTimePasswordFieldProps",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "OneTimePasswordFieldInputProps",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "OneTimePasswordFieldHiddenInputProps",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "InputValidationType",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "OneTimePasswordField",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "OneTimePasswordFieldInput",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "OneTimePasswordFieldHiddenInput",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Input",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "HiddenInput",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/one-time-password-field/src/one-time-password-field.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 277,
+      "nonEmptyLines": 239,
+      "functions": [
+        {
+          "name": "getInputValues",
+          "startLine": 117,
+          "endLine": 119,
+          "params": [
+            "inputs"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      },
+      "calls": [
+        "getInputValues -> inputs.map((input) => input.value).join",
+        "getInputValues -> inputs.map"
+      ]
+    },
+    {
+      "path": "packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 995,
+      "nonEmptyLines": 920,
+      "functions": [
+        {
+          "name": "isFormElement",
+          "startLine": 941,
+          "endLine": 943,
+          "params": [
+            "element"
+          ]
+        },
+        {
+          "name": "removeWhitespace",
+          "startLine": 945,
+          "endLine": 947,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "focusInput",
+          "startLine": 949,
+          "endLine": 960,
+          "params": [
+            "element"
+          ]
+        },
+        {
+          "name": "isInputEvent",
+          "startLine": 962,
+          "endLine": 964,
+          "params": [
+            "event"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "OneTimePasswordField",
+          "line": 923,
+          "isDefault": false
+        },
+        {
+          "name": "OneTimePasswordFieldInput",
+          "line": 923,
+          "isDefault": false
+        },
+        {
+          "name": "OneTimePasswordFieldHiddenInput",
+          "line": 923,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 923,
+          "isDefault": false
+        },
+        {
+          "name": "Input",
+          "line": 923,
+          "isDefault": false
+        },
+        {
+          "name": "HiddenInput",
+          "line": 923,
+          "isDefault": false
+        },
+        {
+          "name": "OneTimePasswordFieldProps",
+          "line": 932,
+          "isDefault": false
+        },
+        {
+          "name": "OneTimePasswordFieldInputProps",
+          "line": 932,
+          "isDefault": false
+        },
+        {
+          "name": "OneTimePasswordFieldHiddenInputProps",
+          "line": 932,
+          "isDefault": false
+        },
+        {
+          "name": "InputValidationType",
+          "line": 932,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 4,
+        "classCount": 0
+      },
+      "calls": [
+        "reset -> dispatch",
+        "removeWhitespace -> value.replace",
+        "focusInput -> window.requestAnimationFrame",
+        "focusInput -> element.select",
+        "focusInput -> element.focus"
+      ]
+    },
+    {
+      "path": "packages/react/password-toggle-field/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 21,
+      "exports": [
+        {
+          "name": "PasswordToggleFieldProps",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldInputProps",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldToggleProps",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldIconProps",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldSlotProps",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleField",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldInput",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldToggle",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldIcon",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldSlot",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Input",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Toggle",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Icon",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Slot",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/password-toggle-field/src/password-toggle-field.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 388,
+      "nonEmptyLines": 333,
+      "functions": [
+        {
+          "name": "EyeClosedIcon",
+          "startLine": 184,
+          "endLine": 201,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "EyeOpenIcon",
+          "startLine": 203,
+          "endLine": 220,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 517,
+      "nonEmptyLines": 460,
+      "functions": [
+        {
+          "name": "PasswordToggleField",
+          "startLine": 66,
+          "endLine": 129,
+          "params": [
+            "{\n  __scopePasswordToggleField,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "PasswordToggleFieldSlot",
+          "startLine": 420,
+          "endLine": 435,
+          "params": [
+            "{\n  __scopePasswordToggleField,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "requestIdleCallback",
+          "startLine": 498,
+          "endLine": 517,
+          "params": [
+            "window",
+            "callback",
+            "options"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PasswordToggleField",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldInput",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldToggle",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldSlot",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldIcon",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Input",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Toggle",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Slot",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "Icon",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldProps",
+          "line": 490,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldInputProps",
+          "line": 490,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldToggleProps",
+          "line": 490,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldIconProps",
+          "line": 490,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordToggleFieldSlotProps",
+          "line": 490,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 3,
+        "classCount": 0
+      },
+      "calls": [
+        "PasswordToggleField -> useId",
+        "PasswordToggleField -> React.useState",
+        "PasswordToggleField -> React.useCallback",
+        "PasswordToggleField -> setInputIdState",
+        "PasswordToggleField -> String",
+        "PasswordToggleField -> React.useEffect",
+        "PasswordToggleField -> console.warn",
+        "PasswordToggleField -> useControllableState",
+        "PasswordToggleField -> React.useRef",
+        "checkForInnerTextLabel -> setInternalAriaLabel",
+        "handlePointerUp -> requestIdleCallback",
+        "PasswordToggleFieldSlot -> usePasswordToggleFieldContext",
+        "PasswordToggleFieldSlot -> props.render",
+        "requestIdleCallback -> window.requestIdleCallback",
+        "requestIdleCallback -> window.cancelIdleCallback",
+        "requestIdleCallback -> Date.now",
+        "requestIdleCallback -> window.setTimeout",
+        "timeRemaining -> Math.max",
+        "timeRemaining -> Date.now",
+        "requestIdleCallback -> callback",
+        "requestIdleCallback -> window.clearTimeout"
+      ]
+    },
+    {
+      "path": "packages/react/popover/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 35,
+      "exports": [
+        {
+          "name": "createPopoverScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Popover",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverAnchor",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverTrigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverPortal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverTitle",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverDescription",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverClose",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverArrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Anchor",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Title",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Description",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Close",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverAnchorProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverTriggerProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverPortalProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverContentProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverTitleProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverDescriptionProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverCloseProps",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverArrowProps",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 28,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/popover/src/popover.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 745,
+      "nonEmptyLines": 644,
+      "functions": [
+        {
+          "name": "PopoverTest",
+          "startLine": 10,
+          "endLine": 17,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "cleanupModal",
+          "startLine": 727,
+          "endLine": 731,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      },
+      "calls": [
+        "openContent -> fireEvent.click",
+        "openContent -> rendered.getByText",
+        "openContent -> rendered.getByRole",
+        "cleanupModal -> cleanup"
+      ]
+    },
+    {
+      "path": "packages/react/popover/src/popover.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 665,
+      "nonEmptyLines": 590,
+      "functions": [
+        {
+          "name": "Popover",
+          "startLine": 69,
+          "endLine": 114,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "PopoverPortal",
+          "startLine": 207,
+          "endLine": 219,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "getState",
+          "startLine": 615,
+          "endLine": 617,
+          "params": [
+            "open"
+          ]
+        },
+        {
+          "name": "concatAriaDescribedby",
+          "startLine": 620,
+          "endLine": 630,
+          "params": [
+            "...values"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createPopoverScope",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "Popover",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverAnchor",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverTrigger",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverPortal",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverContent",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverTitle",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverDescription",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverClose",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverArrow",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "Anchor",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "Trigger",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "Portal",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "Title",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "Description",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "Close",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 632,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverProps",
+          "line": 655,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverAnchorProps",
+          "line": 655,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverTriggerProps",
+          "line": 655,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverPortalProps",
+          "line": 655,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverContentProps",
+          "line": 655,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverTitleProps",
+          "line": 655,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverDescriptionProps",
+          "line": 655,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverCloseProps",
+          "line": 655,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverArrowProps",
+          "line": 655,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 28,
+        "functionCount": 4,
+        "classCount": 0
+      },
+      "calls": [
+        "Popover -> usePopperScope",
+        "Popover -> React.useRef",
+        "Popover -> React.useState",
+        "Popover -> useControllableState",
+        "Popover -> useId",
+        "Popover -> React.useCallback",
+        "Popover -> setOpen",
+        "Popover -> setHasCustomAnchor",
+        "PopoverPortal -> usePopoverContext",
+        "concatAriaDescribedby -> String(value).trim().split",
+        "concatAriaDescribedby -> String(value).trim",
+        "concatAriaDescribedby -> String",
+        "concatAriaDescribedby -> ids.add",
+        "concatAriaDescribedby -> Array.from(ids).join",
+        "concatAriaDescribedby -> Array.from"
+      ]
+    },
+    {
+      "path": "packages/react/popper/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 23,
+      "exports": [
+        {
+          "name": "createPopperScope",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Popper",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PopperAnchor",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PopperContent",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PopperArrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Anchor",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Arrow",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SIDE_OPTIONS",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "ALIGN_OPTIONS",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "PopperProps",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "PopperAnchorProps",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "PopperContentProps",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "PopperArrowProps",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 15,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "calls": []
+    },
+    {
+      "path": "packages/react/popper/src/popper.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 295,
+      "nonEmptyLines": 254,
+      "functions": [
+        {
+          "name": "makeVirtual",
+          "startLine": 7,
+          "endLine": 11,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      },
+      "calls": [
+        "makeVirtual -> vi.fn",
+        "makeVirtual -> DOMRect.fromRect",
+        "Test -> React.useRef",
+        "Test -> React.useReducer",
+        "Test -> force"
+      ]
+    }
+  ]
+}

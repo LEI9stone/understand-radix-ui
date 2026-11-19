@@ -1,0 +1,1265 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 25,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 25,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/context-menu/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 56,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 49,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "createContextMenuScope",
+        "ContextMenu",
+        "ContextMenuTrigger",
+        "ContextMenuPortal",
+        "ContextMenuContent",
+        "ContextMenuGroup",
+        "ContextMenuLabel",
+        "ContextMenuItem",
+        "ContextMenuCheckboxItem",
+        "ContextMenuRadioGroup",
+        "ContextMenuRadioItem",
+        "ContextMenuItemIndicator",
+        "ContextMenuSeparator",
+        "ContextMenuArrow",
+        "ContextMenuSub",
+        "ContextMenuSubTrigger",
+        "ContextMenuSubContent",
+        "Root",
+        "Trigger",
+        "Portal",
+        "Content",
+        "Group",
+        "Label",
+        "Item",
+        "CheckboxItem",
+        "RadioGroup",
+        "RadioItem",
+        "ItemIndicator",
+        "Separator",
+        "Arrow",
+        "Sub",
+        "SubTrigger",
+        "SubContent",
+        "ContextMenuProps",
+        "ContextMenuTriggerProps",
+        "ContextMenuPortalProps",
+        "ContextMenuContentProps",
+        "ContextMenuGroupProps",
+        "ContextMenuLabelProps",
+        "ContextMenuItemProps",
+        "ContextMenuCheckboxItemProps",
+        "ContextMenuRadioGroupProps",
+        "ContextMenuRadioItemProps",
+        "ContextMenuItemIndicatorProps",
+        "ContextMenuSeparatorProps",
+        "ContextMenuArrowProps",
+        "ContextMenuSubProps",
+        "ContextMenuSubTriggerProps",
+        "ContextMenuSubContentProps"
+      ]
+    },
+    {
+      "path": "packages/react/context/src/create-context.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 228,
+      "nonEmptyLines": 193,
+      "functions": [
+        {
+          "name": "createContext",
+          "startLine": 26,
+          "endLine": 63,
+          "params": [
+            "rootComponentName",
+            "defaultContext"
+          ]
+        },
+        {
+          "name": "createContextScope",
+          "startLine": 106,
+          "endLine": 183,
+          "params": [
+            "scopeName",
+            "createContextScopeDeps"
+          ]
+        },
+        {
+          "name": "composeContextScopes",
+          "startLine": 189,
+          "endLine": 215,
+          "params": [
+            "...scopes"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 3,
+        "classCount": 0
+      },
+      "exports": [
+        "createContext",
+        "createContextScope",
+        "CreateScope",
+        "CreateScopedContext",
+        "Scope",
+        "UseAssertedContext",
+        "UseAssertedScopedContext",
+        "UseContext",
+        "UseScopedContext"
+      ]
+    },
+    {
+      "path": "packages/react/context/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "createContext",
+        "createContextScope",
+        "CreateScope",
+        "Scope",
+        "UseAssertedContext",
+        "UseAssertedScopedContext",
+        "UseContext",
+        "UseScopedContext"
+      ]
+    },
+    {
+      "path": "packages/react/dialog/src/dialog.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1197,
+      "nonEmptyLines": 1049,
+      "functions": [
+        {
+          "name": "DialogTest",
+          "startLine": 16,
+          "endLine": 25,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "cleanupModal",
+          "startLine": 1193,
+          "endLine": 1197,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/dialog/src/dialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 683,
+      "nonEmptyLines": 607,
+      "functions": [
+        {
+          "name": "Dialog",
+          "startLine": 68,
+          "endLine": 130,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "DialogPortal",
+          "startLine": 187,
+          "endLine": 201,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "WarningProvider",
+          "startLine": 610,
+          "endLine": 619,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "concatAriaDescribedby",
+          "startLine": 624,
+          "endLine": 638,
+          "params": [
+            "...values"
+          ]
+        },
+        {
+          "name": "getState",
+          "startLine": 640,
+          "endLine": 642,
+          "params": [
+            "open"
+          ]
+        },
+        {
+          "name": "toValidId",
+          "startLine": 644,
+          "endLine": 651,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 26,
+        "functionCount": 6,
+        "classCount": 0
+      },
+      "exports": [
+        "WarningProvider",
+        "createDialogScope",
+        "Dialog",
+        "DialogTrigger",
+        "DialogPortal",
+        "DialogOverlay",
+        "DialogContent",
+        "DialogTitle",
+        "DialogDescription",
+        "DialogClose",
+        "Root",
+        "Trigger",
+        "Portal",
+        "Overlay",
+        "Content",
+        "Title",
+        "Description",
+        "Close",
+        "DialogProps",
+        "DialogTriggerProps",
+        "DialogPortalProps",
+        "DialogOverlayProps",
+        "DialogContentProps",
+        "DialogTitleProps",
+        "DialogDescriptionProps",
+        "DialogCloseProps"
+      ]
+    },
+    {
+      "path": "packages/react/dialog/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 34,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 26,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "createDialogScope",
+        "Dialog",
+        "DialogTrigger",
+        "DialogPortal",
+        "DialogOverlay",
+        "DialogContent",
+        "DialogTitle",
+        "DialogDescription",
+        "DialogClose",
+        "Root",
+        "Trigger",
+        "Portal",
+        "Overlay",
+        "Content",
+        "Title",
+        "Description",
+        "Close",
+        "WarningProvider",
+        "DialogProps",
+        "DialogTriggerProps",
+        "DialogPortalProps",
+        "DialogOverlayProps",
+        "DialogContentProps",
+        "DialogTitleProps",
+        "DialogDescriptionProps",
+        "DialogCloseProps"
+      ]
+    },
+    {
+      "path": "packages/react/direction/src/direction.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "DirectionProvider",
+          "startLine": 20,
+          "endLine": 23,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "useDirection",
+          "startLine": 27,
+          "endLine": 30,
+          "params": [
+            "localDir"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 0
+      },
+      "exports": [
+        "useDirection",
+        "Provider",
+        "DirectionProvider"
+      ]
+    },
+    {
+      "path": "packages/react/direction/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "useDirection",
+        "Provider",
+        "DirectionProvider"
+      ]
+    },
+    {
+      "path": "packages/react/dismissable-layer/src/dismissable-layer.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 817,
+      "nonEmptyLines": 652,
+      "functions": [
+        {
+          "name": "waitForDocumentPointerDownListener",
+          "startLine": 7,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "renderDismissableLayer",
+          "startLine": 13,
+          "endLine": 26,
+          "params": [
+            "props",
+            "extraContent"
+          ]
+        },
+        {
+          "name": "dispatchComposedPointerDown",
+          "startLine": 28,
+          "endLine": 36,
+          "params": [
+            "target"
+          ]
+        },
+        {
+          "name": "firePointerMouseClick",
+          "startLine": 38,
+          "endLine": 44,
+          "params": [
+            "target"
+          ]
+        },
+        {
+          "name": "ShadowButton",
+          "startLine": 46,
+          "endLine": 63,
+          "params": []
+        },
+        {
+          "name": "cleanupLayer",
+          "startLine": 813,
+          "endLine": 817,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 604,
+      "nonEmptyLines": 547,
+      "functions": [
+        {
+          "name": "NOOP_CLICK_LISTENER_FOR_IOS_SAFARI_TAPS",
+          "startLine": 296,
+          "endLine": 296,
+          "params": []
+        },
+        {
+          "name": "useDismissableLayerSurface",
+          "startLine": 301,
+          "endLine": 318,
+          "params": []
+        },
+        {
+          "name": "IS_TRUE",
+          "startLine": 323,
+          "endLine": 323,
+          "params": []
+        },
+        {
+          "name": "usePointerDownOutside",
+          "startLine": 330,
+          "endLine": 542,
+          "params": [
+            "onPointerDownOutside",
+            "args"
+          ]
+        },
+        {
+          "name": "useFocusOutside",
+          "startLine": 548,
+          "endLine": 572,
+          "params": [
+            "onFocusOutside",
+            "ownerDocument"
+          ]
+        },
+        {
+          "name": "dispatchUpdate",
+          "startLine": 574,
+          "endLine": 577,
+          "params": []
+        },
+        {
+          "name": "handleAndDispatchCustomEvent",
+          "startLine": 579,
+          "endLine": 594,
+          "params": [
+            "name",
+            "handler",
+            "detail",
+            "{ discrete }"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 7,
+        "classCount": 0
+      },
+      "exports": [
+        "DismissableLayer",
+        "DismissableLayerBranch",
+        "useDismissableLayerSurface",
+        "Root",
+        "Branch",
+        "DismissableLayerProps"
+      ]
+    },
+    {
+      "path": "packages/react/dismissable-layer/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "DismissableLayer",
+        "DismissableLayerBranch",
+        "Root",
+        "Branch",
+        "useDismissableLayerSurface",
+        "DismissableLayerProps"
+      ]
+    },
+    {
+      "path": "packages/react/dropdown-menu/src/dropdown-menu.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1286,
+      "nonEmptyLines": 1131,
+      "functions": [
+        {
+          "name": "DropdownMenuTest",
+          "startLine": 13,
+          "endLine": 22,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "DropdownMenuWithSubTest",
+          "startLine": 24,
+          "endLine": 41,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "cleanupModal",
+          "startLine": 1282,
+          "endLine": 1286,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 531,
+      "nonEmptyLines": 468,
+      "functions": [
+        {
+          "name": "DropdownMenu",
+          "startLine": 55,
+          "endLine": 90,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "DropdownMenuPortal",
+          "startLine": 156,
+          "endLine": 162,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "DropdownMenuSub",
+          "startLine": 404,
+          "endLine": 421,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 49,
+        "functionCount": 3,
+        "classCount": 0
+      },
+      "exports": [
+        "createDropdownMenuScope",
+        "DropdownMenu",
+        "DropdownMenuTrigger",
+        "DropdownMenuPortal",
+        "DropdownMenuContent",
+        "DropdownMenuGroup",
+        "DropdownMenuLabel",
+        "DropdownMenuItem",
+        "DropdownMenuCheckboxItem",
+        "DropdownMenuRadioGroup",
+        "DropdownMenuRadioItem",
+        "DropdownMenuItemIndicator",
+        "DropdownMenuSeparator",
+        "DropdownMenuArrow",
+        "DropdownMenuSub",
+        "DropdownMenuSubTrigger",
+        "DropdownMenuSubContent",
+        "Root",
+        "Trigger",
+        "Portal",
+        "Content",
+        "Group",
+        "Label",
+        "Item",
+        "CheckboxItem",
+        "RadioGroup",
+        "RadioItem",
+        "ItemIndicator",
+        "Separator",
+        "Arrow",
+        "Sub",
+        "SubTrigger",
+        "SubContent",
+        "DropdownMenuProps",
+        "DropdownMenuTriggerProps",
+        "DropdownMenuPortalProps",
+        "DropdownMenuContentProps",
+        "DropdownMenuGroupProps",
+        "DropdownMenuLabelProps",
+        "DropdownMenuItemProps",
+        "DropdownMenuCheckboxItemProps",
+        "DropdownMenuRadioGroupProps",
+        "DropdownMenuRadioItemProps",
+        "DropdownMenuItemIndicatorProps",
+        "DropdownMenuSeparatorProps",
+        "DropdownMenuArrowProps",
+        "DropdownMenuSubProps",
+        "DropdownMenuSubTriggerProps",
+        "DropdownMenuSubContentProps"
+      ]
+    },
+    {
+      "path": "packages/react/dropdown-menu/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 56,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 49,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "createDropdownMenuScope",
+        "DropdownMenu",
+        "DropdownMenuTrigger",
+        "DropdownMenuPortal",
+        "DropdownMenuContent",
+        "DropdownMenuGroup",
+        "DropdownMenuLabel",
+        "DropdownMenuItem",
+        "DropdownMenuCheckboxItem",
+        "DropdownMenuRadioGroup",
+        "DropdownMenuRadioItem",
+        "DropdownMenuItemIndicator",
+        "DropdownMenuSeparator",
+        "DropdownMenuArrow",
+        "DropdownMenuSub",
+        "DropdownMenuSubTrigger",
+        "DropdownMenuSubContent",
+        "Root",
+        "Trigger",
+        "Portal",
+        "Content",
+        "Group",
+        "Label",
+        "Item",
+        "CheckboxItem",
+        "RadioGroup",
+        "RadioItem",
+        "ItemIndicator",
+        "Separator",
+        "Arrow",
+        "Sub",
+        "SubTrigger",
+        "SubContent",
+        "DropdownMenuProps",
+        "DropdownMenuTriggerProps",
+        "DropdownMenuPortalProps",
+        "DropdownMenuContentProps",
+        "DropdownMenuGroupProps",
+        "DropdownMenuLabelProps",
+        "DropdownMenuItemProps",
+        "DropdownMenuCheckboxItemProps",
+        "DropdownMenuRadioGroupProps",
+        "DropdownMenuRadioItemProps",
+        "DropdownMenuItemIndicatorProps",
+        "DropdownMenuSeparatorProps",
+        "DropdownMenuArrowProps",
+        "DropdownMenuSubProps",
+        "DropdownMenuSubTriggerProps",
+        "DropdownMenuSubContentProps"
+      ]
+    },
+    {
+      "path": "packages/react/focus-guards/src/focus-guards.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 128,
+      "nonEmptyLines": 110,
+      "functions": [
+        {
+          "name": "Guarded",
+          "startLine": 6,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "getGuards",
+          "startLine": 11,
+          "endLine": 13,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/focus-guards/src/focus-guards.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 67,
+      "functions": [
+        {
+          "name": "FocusGuards",
+          "startLine": 17,
+          "endLine": 20,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "useFocusGuards",
+          "startLine": 26,
+          "endLine": 57,
+          "params": []
+        },
+        {
+          "name": "createFocusGuard",
+          "startLine": 59,
+          "endLine": 68,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      },
+      "exports": [
+        "FocusGuards",
+        "Root",
+        "useFocusGuards"
+      ]
+    },
+    {
+      "path": "packages/react/focus-guards/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "FocusGuards",
+        "Root",
+        "useFocusGuards"
+      ]
+    },
+    {
+      "path": "packages/react/focus-scope/src/focus-scope.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 407,
+      "nonEmptyLines": 360,
+      "functions": [
+        {
+          "name": "TestField",
+          "startLine": 307,
+          "endLine": 314,
+          "params": [
+            "{ label, ...props }"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/focus-scope/src/focus-scope.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 488,
+      "nonEmptyLines": 435,
+      "functions": [
+        {
+          "name": "FocusScopeBranchProvider",
+          "startLine": 283,
+          "endLine": 290,
+          "params": [
+            "{ registry, children }"
+          ]
+        },
+        {
+          "name": "useFocusScopeBranchRegistry",
+          "startLine": 292,
+          "endLine": 302,
+          "params": []
+        },
+        {
+          "name": "useFocusScopeBranch",
+          "startLine": 308,
+          "endLine": 315,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "focusFirst",
+          "startLine": 325,
+          "endLine": 331,
+          "params": [
+            "candidates",
+            "{ select = false }"
+          ]
+        },
+        {
+          "name": "getTabbableEdges",
+          "startLine": 336,
+          "endLine": 341,
+          "params": [
+            "container"
+          ]
+        },
+        {
+          "name": "getTabbableCandidates",
+          "startLine": 353,
+          "endLine": 377,
+          "params": [
+            "container"
+          ]
+        },
+        {
+          "name": "findVisible",
+          "startLine": 383,
+          "endLine": 402,
+          "params": [
+            "elements",
+            "container"
+          ]
+        },
+        {
+          "name": "isHidden",
+          "startLine": 404,
+          "endLine": 413,
+          "params": [
+            "node",
+            "{ upTo }"
+          ]
+        },
+        {
+          "name": "isSelectableInput",
+          "startLine": 415,
+          "endLine": 420,
+          "params": [
+            "element"
+          ]
+        },
+        {
+          "name": "focus",
+          "startLine": 422,
+          "endLine": 435,
+          "params": [
+            "element",
+            "{ select = false }"
+          ]
+        },
+        {
+          "name": "createFocusScopesStack",
+          "startLine": 444,
+          "endLine": 465,
+          "params": []
+        },
+        {
+          "name": "arrayRemove",
+          "startLine": 467,
+          "endLine": 474,
+          "params": [
+            "array",
+            "item"
+          ]
+        },
+        {
+          "name": "removeLinks",
+          "startLine": 476,
+          "endLine": 478,
+          "params": [
+            "items"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 13,
+        "classCount": 0
+      },
+      "exports": [
+        "FocusScope",
+        "FocusScopeBranchProvider",
+        "useFocusScopeBranchRegistry",
+        "useFocusScopeBranch",
+        "Root",
+        "FocusScopeProps",
+        "FocusScopeBranchProviderProps",
+        "FocusScopeBranchRegistry"
+      ]
+    },
+    {
+      "path": "packages/react/focus-scope/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "FocusScope",
+        "FocusScopeBranchProvider",
+        "useFocusScopeBranchRegistry",
+        "useFocusScopeBranch",
+        "Root",
+        "FocusScopeProps",
+        "FocusScopeBranchProviderProps",
+        "FocusScopeBranchRegistry"
+      ]
+    },
+    {
+      "path": "packages/react/form/src/form.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 782,
+      "nonEmptyLines": 678,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/form/src/form.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 785,
+      "nonEmptyLines": 681,
+      "functions": [
+        {
+          "name": "FormValidityState",
+          "startLine": 636,
+          "endLine": 648,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "validityStateToObject",
+          "startLine": 676,
+          "endLine": 682,
+          "params": [
+            "validity"
+          ]
+        },
+        {
+          "name": "isHTMLElement",
+          "startLine": 684,
+          "endLine": 686,
+          "params": [
+            "element"
+          ]
+        },
+        {
+          "name": "isFormControl",
+          "startLine": 688,
+          "endLine": 690,
+          "params": [
+            "element"
+          ]
+        },
+        {
+          "name": "isInvalid",
+          "startLine": 692,
+          "endLine": 697,
+          "params": [
+            "control"
+          ]
+        },
+        {
+          "name": "getFirstInvalidControl",
+          "startLine": 699,
+          "endLine": 703,
+          "params": [
+            "form"
+          ]
+        },
+        {
+          "name": "isAsyncCustomMatcherEntry",
+          "startLine": 705,
+          "endLine": 710,
+          "params": [
+            "entry",
+            "args"
+          ]
+        },
+        {
+          "name": "isSyncCustomMatcherEntry",
+          "startLine": 712,
+          "endLine": 714,
+          "params": [
+            "entry"
+          ]
+        },
+        {
+          "name": "returnsPromise",
+          "startLine": 716,
+          "endLine": 718,
+          "params": [
+            "func",
+            "args"
+          ]
+        },
+        {
+          "name": "hasBuiltInError",
+          "startLine": 720,
+          "endLine": 730,
+          "params": [
+            "validity"
+          ]
+        },
+        {
+          "name": "getValidAttribute",
+          "startLine": 732,
+          "endLine": 735,
+          "params": [
+            "validity",
+            "serverInvalid"
+          ]
+        },
+        {
+          "name": "getInvalidAttribute",
+          "startLine": 737,
+          "endLine": 740,
+          "params": [
+            "validity",
+            "serverInvalid"
+          ]
+        },
+        {
+          "name": "concatAriaDescribedby",
+          "startLine": 743,
+          "endLine": 753,
+          "params": [
+            "...values"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 22,
+        "functionCount": 13,
+        "classCount": 0
+      },
+      "exports": [
+        "createFormScope",
+        "Form",
+        "FormField",
+        "FormLabel",
+        "FormControl",
+        "FormMessage",
+        "FormValidityState",
+        "FormSubmit",
+        "Root",
+        "Field",
+        "Label",
+        "Control",
+        "Message",
+        "ValidityState",
+        "Submit",
+        "FormProps",
+        "FormFieldProps",
+        "FormLabelProps",
+        "FormControlProps",
+        "FormMessageProps",
+        "FormValidityStateProps",
+        "FormSubmitProps"
+      ]
+    },
+    {
+      "path": "packages/react/form/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 29,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 22,
+        "functionCount": 0,
+        "classCount": 0
+      },
+      "exports": [
+        "createFormScope",
+        "Form",
+        "FormField",
+        "FormLabel",
+        "FormControl",
+        "FormMessage",
+        "FormValidityState",
+        "FormSubmit",
+        "Root",
+        "Field",
+        "Label",
+        "Control",
+        "Message",
+        "ValidityState",
+        "Submit",
+        "FormProps",
+        "FormFieldProps",
+        "FormLabelProps",
+        "FormControlProps",
+        "FormMessageProps",
+        "FormValidityStateProps",
+        "FormSubmitProps"
+      ]
+    },
+    {
+      "path": "packages/react/hover-card/src/hover-card.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 311,
+      "nonEmptyLines": 267,
+      "functions": [
+        {
+          "name": "renderHoverCard",
+          "startLine": 6,
+          "endLine": 16,
+          "params": [
+            "props"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/hover-card/src/hover-card.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 436,
+      "nonEmptyLines": 388,
+      "functions": [
+        {
+          "name": "HoverCard",
+          "startLine": 52,
+          "endLine": 111,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "HoverCardPortal",
+          "startLine": 175,
+          "endLine": 189,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "excludeTouch",
+          "startLine": 392,
+          "endLine": 395,
+          "params": [
+            "eventHandler"
+          ]
+        },
+        {
+          "name": "getTabbableNodes",
+          "startLine": 401,
+          "endLine": 413,
+          "params": [
+            "container"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 16,
+        "functionCount": 4,
+        "classCount": 0
+      },
+      "exports": [
+        "createHoverCardScope",
+        "HoverCard",
+        "HoverCardTrigger",
+        "HoverCardPortal",
+        "HoverCardContent",
+        "HoverCardArrow",
+        "Root",
+        "Trigger",
+        "Portal",
+        "Content",
+        "Arrow",
+        "HoverCardProps",
+        "HoverCardTriggerProps",
+        "HoverCardPortalProps",
+        "HoverCardContentProps",
+        "HoverCardArrowProps"
+      ]
+    }
+  ]
+}

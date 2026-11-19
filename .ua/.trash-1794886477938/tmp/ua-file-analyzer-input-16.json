@@ -1,0 +1,98 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "apps/storybook/stories/progress.stories.module.css",
+      "language": "css",
+      "sizeLines": 53,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/radio-group.stories.module.css",
+      "language": "css",
+      "sizeLines": 95,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/scroll-area.stories.module.css",
+      "language": "css",
+      "sizeLines": 102,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/select.stories.module.css",
+      "language": "css",
+      "sizeLines": 163,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/separator.stories.module.css",
+      "language": "css",
+      "sizeLines": 16,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/slider.stories.module.css",
+      "language": "css",
+      "sizeLines": 111,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/switch.stories.module.css",
+      "language": "css",
+      "sizeLines": 85,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/tabs.stories.module.css",
+      "language": "css",
+      "sizeLines": 119,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/toast.stories.module.css",
+      "language": "css",
+      "sizeLines": 205,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/toggle-group.stories.module.css",
+      "language": "css",
+      "sizeLines": 50,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/toggle.stories.module.css",
+      "language": "css",
+      "sizeLines": 39,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/toolbar.stories.module.css",
+      "language": "css",
+      "sizeLines": 175,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/tooltip.stories.module.css",
+      "language": "css",
+      "sizeLines": 98,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "apps/storybook/stories/progress.stories.module.css": [],
+    "apps/storybook/stories/radio-group.stories.module.css": [],
+    "apps/storybook/stories/scroll-area.stories.module.css": [],
+    "apps/storybook/stories/select.stories.module.css": [],
+    "apps/storybook/stories/separator.stories.module.css": [],
+    "apps/storybook/stories/slider.stories.module.css": [],
+    "apps/storybook/stories/switch.stories.module.css": [],
+    "apps/storybook/stories/tabs.stories.module.css": [],
+    "apps/storybook/stories/toast.stories.module.css": [],
+    "apps/storybook/stories/toggle-group.stories.module.css": [],
+    "apps/storybook/stories/toggle.stories.module.css": [],
+    "apps/storybook/stories/toolbar.stories.module.css": [],
+    "apps/storybook/stories/tooltip.stories.module.css": []
+  }
+}

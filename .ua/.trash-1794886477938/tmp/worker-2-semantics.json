@@ -1,0 +1,3395 @@
+{
+  "files": {
+    "packages/react/collection/src/collection.test.tsx": {
+      "summary": "验证集合初始化、作用域隔离、稳定读取器、DOM 重排、并发渲染及卸载后的注册表一致性。",
+      "tags": [
+        "测试",
+        "集合",
+        "并发渲染"
+      ]
+    },
+    "packages/react/collection/src/collection.tsx": {
+      "summary": "创建按 DOM 文档顺序登记的复合组件集合，区分提交期可同步读取的注册表与驱动渲染的状态快照。通过浅比较、元素引用回调和子节点观察器协调数据更新与排序。",
+      "tags": [
+        "集合",
+        "上下文",
+        "文档顺序"
+      ],
+      "languageNotes": "工厂函数以泛型保留集合元素和附加数据类型，并返回组件插槽与专用 Hook。",
+      "edges": [
+        {
+          "target": "class:packages/react/collection/src/ordered-dictionary.ts:OrderedDict",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/collection/src/collection.test.tsx",
+          "type": "tested_by"
+        }
+      ]
+    },
+    "packages/react/collection/src/ordered-dictionary.test.ts": {
+      "summary": "验证 OrderedDict 的索引插入、相邻访问、负索引、映射过滤、归约和保持顺序的可变及不可变操作。",
+      "tags": [
+        "测试",
+        "有序字典",
+        "边界条件"
+      ]
+    },
+    "packages/react/collection/src/ordered-dictionary.ts": {
+      "summary": "在 Map 之上维护独立键序列，提供按索引和相邻位置访问、重排、排序及数组式不可变转换，供组件集合保持稳定顺序。",
+      "tags": [
+        "有序字典",
+        "数据结构",
+        "泛型"
+      ],
+      "extraSymbols": [
+        {
+          "name": "OrderedDict.insert",
+          "range": [
+            30,
+            55
+          ],
+          "summary": "插入或移动键值到指定位置，支持负索引和越界夹取，重建 Map 迭代顺序。",
+          "tags": [
+            "类方法",
+            "有序字典",
+            "集合操作"
+          ]
+        },
+        {
+          "name": "OrderedDict.setAfter",
+          "range": [
+            96,
+            104
+          ],
+          "summary": "计算目标键之后的位置并调整已有键移动造成的索引偏移。",
+          "tags": [
+            "类方法",
+            "有序字典",
+            "集合操作"
+          ]
+        },
+        {
+          "name": "OrderedDict.from",
+          "range": [
+            157,
+            166
+          ],
+          "summary": "按已有键及偏移量获取值，并将越界目标限制到字典边缘。",
+          "tags": [
+            "类方法",
+            "有序字典",
+            "集合操作"
+          ]
+        },
+        {
+          "name": "OrderedDict.keyFrom",
+          "range": [
+            168,
+            177
+          ],
+          "summary": "按起始键和相对偏移返回目标键，保持边界访问稳定。",
+          "tags": [
+            "类方法",
+            "有序字典",
+            "集合操作"
+          ]
+        },
+        {
+          "name": "OrderedDict.find",
+          "range": [
+            179,
+            191
+          ],
+          "summary": "按有序条目依次执行谓词并返回首个匹配项。",
+          "tags": [
+            "类方法",
+            "有序字典",
+            "集合操作"
+          ]
+        },
+        {
+          "name": "OrderedDict.findIndex",
+          "range": [
+            193,
+            205
+          ],
+          "summary": "按有序条目执行谓词并返回首个匹配条目的索引。",
+          "tags": [
+            "类方法",
+            "有序字典",
+            "集合操作"
+          ]
+        },
+        {
+          "name": "OrderedDict.filter",
+          "range": [
+            217,
+            230
+          ],
+          "summary": "筛选符合谓词的条目并返回保持原始顺序的新 OrderedDict。",
+          "tags": [
+            "类方法",
+            "有序字典",
+            "集合操作"
+          ]
+        },
+        {
+          "name": "OrderedDict.map",
+          "range": [
+            232,
+            243
+          ],
+          "summary": "保持键和顺序不变，对每个值应用转换并创建新的泛型字典。",
+          "tags": [
+            "类方法",
+            "有序字典",
+            "集合操作"
+          ]
+        },
+        {
+          "name": "OrderedDict.reduce",
+          "range": [
+            272,
+            299
+          ],
+          "summary": "按字典正向顺序归约条目，处理无初值和空字典错误。",
+          "tags": [
+            "类方法",
+            "有序字典",
+            "集合操作"
+          ]
+        },
+        {
+          "name": "OrderedDict.reduceRight",
+          "range": [
+            328,
+            354
+          ],
+          "summary": "从末端按索引逆向归约条目，并检测无初值空集合。",
+          "tags": [
+            "类方法",
+            "有序字典",
+            "集合操作"
+          ]
+        },
+        {
+          "name": "OrderedDict.sort",
+          "range": [
+            364,
+            374
+          ],
+          "summary": "校验比较函数后就地排序条目，并同步 Map 和键序列。",
+          "tags": [
+            "类方法",
+            "有序字典",
+            "集合操作"
+          ]
+        },
+        {
+          "name": "OrderedDict.every",
+          "range": [
+            418,
+            430
+          ],
+          "summary": "顺序测试所有条目，在首个不匹配结果处终止遍历。",
+          "tags": [
+            "类方法",
+            "有序字典",
+            "集合操作"
+          ]
+        },
+        {
+          "name": "OrderedDict.some",
+          "range": [
+            432,
+            444
+          ],
+          "summary": "顺序测试条目，在首个匹配结果处提前返回。",
+          "tags": [
+            "类方法",
+            "有序字典",
+            "集合操作"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/collection/src/ordered-dictionary.test.ts",
+          "type": "tested_by"
+        }
+      ]
+    },
+    "apps/storybook/stories/accordion.stories.module.css": {
+      "summary": "定义横向与纵向折叠面板、禁用和展开状态的示例外观，使用内容宽高变量演示一维及二维展开动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/alert-dialog.stories.module.css": {
+      "summary": "定义全屏遮罩、居中警告对话框及取消和确认按钮，提供状态属性可视化与截图布局。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/aspect-ratio.stories.module.css": {
+      "summary": "用弹性居中和彩色背景展示固定宽高比容器中的内容。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/avatar.stories.module.css": {
+      "summary": "定义圆形头像裁剪、图像填充及居中回退内容，避免图像溢出和内容选择。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/checkbox.stories.module.css": {
+      "summary": "以 checked、unchecked 和 indeterminate 属性显示复选框状态，并为指示器提供淡入淡出动画和禁用样式。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/collapsible.stories.module.css": {
+      "summary": "设置折叠触发器和内容外观，使用内容尺寸变量演示高度及宽度展开与关闭动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/context-menu.stories.module.css": {
+      "summary": "定义右键触发区、菜单项、标签和子菜单高亮外观，并按定位原点播放缩放旋转动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/dialog.stories.module.css": {
+      "summary": "提供居中对话框、侧边面板和可滚动遮罩布局，并定义内容与遮罩的挂载和卸载动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/dropdown-menu.stories.module.css": {
+      "summary": "定义下拉菜单高亮与禁用项、选中指示器动画、嵌套对话框和 Chromatic 定位测试网格。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/form.stories.module.css": {
+      "summary": "通过 data-invalid 与 data-valid 将表单字段分别显示为红色和绿色，突出原生验证状态。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/hover-card.stories.module.css": {
+      "summary": "设置悬停卡片与箭头外观，按内容变换原点缩放并演示开关动画和定位截图网格。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/label.stories.module.css": {
+      "summary": "设置标签和对应控制项的行内对齐、边框、间距及悬停状态，用于观察关联点击区域。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/menu.stories.module.css": {
+      "summary": "定义基础菜单项、高亮和禁用状态、子菜单及滚动菜单外观，包含内容与指示器出入动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/menubar.stories.module.css": {
+      "summary": "定义菜单栏触发器和弹出菜单样式，区分键盘高亮与展开状态并演示内容和选中项动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/navigation-menu.stories.module.css": {
+      "summary": "定义横纵导航、共享视口、指示器和嵌套子导航的布局，结合 motion 属性与视口尺寸变量实现方向切换动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/one-time-password-field.stories.module.css": {
+      "summary": "为分段验证码输入、分隔符和输出区提供布局，通过有效和无效状态改变边框与焦点颜色。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/password-toggle-field.stories.module.css": {
+      "summary": "把密码输入和显示切换按钮排成统一字段，使用 :has 和 :focus-visible 展示输入与按钮焦点。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/popover.stories.module.css": {
+      "summary": "定义弹出层与箭头样式、开关淡入淡出动画和 Chromatic 定位测试网格，使用组件提供的变换原点。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/popper.stories.module.css": {
+      "summary": "设置大小不同的锚点与浮层，通过定位方向和对齐属性着色，并演示方向相关的旋转入场。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "apps/storybook/stories/presence.stories.module.css": {
+      "summary": "定义单个及多个挂载卸载动画，以不同持续时间验证 Presence 对动画生命周期的等待。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ]
+    },
+    "packages/react/announce/CHANGELOG.md": {
+      "summary": "按版本记录实时播报包的发布变更与依赖更新，最新章节为 0.3.0。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "实时播报"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/announce/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/announce/README.md": {
+      "summary": "标识 announce 包并提供进一步文档入口，作为实时播报模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "实时播报"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/announce/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/announce/package.json": {
+      "summary": "定义 @radix-ui/react-announce 的源入口、发布导出、构建脚本和 React 对等依赖，配置实时播报包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "实时播报"
+      ],
+      "edges": [
+        {
+          "target": "document:packages/react/announce/README.md",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/announce/tsconfig.json": {
+      "summary": "配置实时播报包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "实时播报"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/announce/package.json",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/focus-scope/CHANGELOG.md": {
+      "summary": "按版本记录焦点范围包的发布变更与依赖更新，最新章节为 1.3.1。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "焦点范围"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/focus-scope/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/focus-scope/README.md": {
+      "summary": "标识 focus-scope 包并提供进一步文档入口，作为焦点范围模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "焦点范围"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/focus-scope/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/focus-scope/package.json": {
+      "summary": "定义 @radix-ui/react-focus-scope 的源入口、发布导出、构建脚本和 React 对等依赖，配置焦点范围包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "焦点范围"
+      ],
+      "edges": [
+        {
+          "target": "document:packages/react/focus-scope/README.md",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/focus-scope/tsconfig.json": {
+      "summary": "配置焦点范围包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "焦点范围"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/focus-scope/package.json",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/hover-card/CHANGELOG.md": {
+      "summary": "按版本记录悬停卡片包的发布变更与依赖更新，最新章节为 1.2.1。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "悬停卡片"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/hover-card/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/hover-card/README.md": {
+      "summary": "标识 hover-card 包并提供进一步文档入口，作为悬停卡片模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "悬停卡片"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/hover-card/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/hover-card/package.json": {
+      "summary": "定义 @radix-ui/react-hover-card 的源入口、发布导出、构建脚本和 React 对等依赖，配置悬停卡片包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "悬停卡片"
+      ],
+      "edges": [
+        {
+          "target": "document:packages/react/hover-card/README.md",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/hover-card/tsconfig.json": {
+      "summary": "配置悬停卡片包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "悬停卡片"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/hover-card/package.json",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/menu/CHANGELOG.md": {
+      "summary": "按版本记录基础菜单包的发布变更与依赖更新，最新章节为 2.2.1。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "基础菜单"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/menu/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/menu/README.md": {
+      "summary": "标识 menu 包并提供进一步文档入口，作为基础菜单模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "基础菜单"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/menu/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/menu/package.json": {
+      "summary": "定义 @radix-ui/react-menu 的源入口、发布导出、构建脚本和 React 对等依赖，配置基础菜单包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "基础菜单"
+      ],
+      "edges": [
+        {
+          "target": "document:packages/react/menu/README.md",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/menu/tsconfig.json": {
+      "summary": "配置基础菜单包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "基础菜单"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/menu/package.json",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/menubar/CHANGELOG.md": {
+      "summary": "按版本记录菜单栏包的发布变更与依赖更新，最新章节为 1.2.1。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "菜单栏"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/menubar/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/menubar/README.md": {
+      "summary": "标识 menubar 包并提供进一步文档入口，作为菜单栏模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "菜单栏"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/menubar/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/menubar/package.json": {
+      "summary": "定义 @radix-ui/react-menubar 的源入口、发布导出、构建脚本和 React 对等依赖，配置菜单栏包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "菜单栏"
+      ],
+      "edges": [
+        {
+          "target": "document:packages/react/menubar/README.md",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/menubar/tsconfig.json": {
+      "summary": "配置菜单栏包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "菜单栏"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/menubar/package.json",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/one-time-password-field/CHANGELOG.md": {
+      "summary": "按版本记录分段验证码输入包的发布变更与依赖更新，最新章节为 0.2.1。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "分段验证码输入"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/one-time-password-field/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/one-time-password-field/README.md": {
+      "summary": "介绍分段验证码输入包，包含安装与使用章节。",
+      "tags": [
+        "文档",
+        "包入口",
+        "分段验证码输入"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/one-time-password-field/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/one-time-password-field/package.json": {
+      "summary": "定义 @radix-ui/react-one-time-password-field 的源入口、发布导出、构建脚本和 React 对等依赖，配置分段验证码输入包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "分段验证码输入"
+      ],
+      "edges": [
+        {
+          "target": "document:packages/react/one-time-password-field/README.md",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/one-time-password-field/tsconfig.json": {
+      "summary": "配置分段验证码输入包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "分段验证码输入"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/one-time-password-field/package.json",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/primitive/CHANGELOG.md": {
+      "summary": "按版本记录多态 DOM 基元包的发布变更与依赖更新，最新章节为 2.2.0。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "多态 DOM 基元"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/primitive/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/primitive/README.md": {
+      "summary": "标识 primitive 包并提供进一步文档入口，作为多态 DOM 基元模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "多态 DOM 基元"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/primitive/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/primitive/package.json": {
+      "summary": "定义 @radix-ui/react-primitive 的源入口、发布导出、构建脚本和 React 对等依赖，配置多态 DOM 基元包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "多态 DOM 基元"
+      ],
+      "edges": [
+        {
+          "target": "document:packages/react/primitive/README.md",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/primitive/tsconfig.json": {
+      "summary": "配置多态 DOM 基元包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "多态 DOM 基元"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/primitive/package.json",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/slider/CHANGELOG.md": {
+      "summary": "按版本记录滑块包的发布变更与依赖更新，最新章节为 1.6.1。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "滑块"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/slider/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/slider/README.md": {
+      "summary": "标识 slider 包并提供进一步文档入口，作为滑块模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "滑块"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/slider/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/slider/package.json": {
+      "summary": "定义 @radix-ui/react-slider 的源入口、发布导出、构建脚本和 React 对等依赖，配置滑块包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "滑块"
+      ],
+      "edges": [
+        {
+          "target": "document:packages/react/slider/README.md",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/slider/tsconfig.json": {
+      "summary": "配置滑块包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "滑块"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/slider/package.json",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/switch/CHANGELOG.md": {
+      "summary": "按版本记录开关包的发布变更与依赖更新，最新章节为 1.4.1。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "开关"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/switch/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/switch/README.md": {
+      "summary": "标识 switch 包并提供进一步文档入口，作为开关模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "开关"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/switch/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/switch/package.json": {
+      "summary": "定义 @radix-ui/react-switch 的源入口、发布导出、构建脚本和 React 对等依赖，配置开关包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "开关"
+      ],
+      "edges": [
+        {
+          "target": "document:packages/react/switch/README.md",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/switch/tsconfig.json": {
+      "summary": "配置开关包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "开关"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/switch/package.json",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/use-controllable-state/CHANGELOG.md": {
+      "summary": "按版本记录受控与非受控状态 Hook包的发布变更与依赖更新，最新章节为 1.3.0。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "受控与非受控状态 Hook"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/use-controllable-state/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/use-controllable-state/README.md": {
+      "summary": "标识 use-controllable-state 包并提供进一步文档入口，作为受控与非受控状态 Hook模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "受控与非受控状态 Hook"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/use-controllable-state/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/use-controllable-state/package.json": {
+      "summary": "定义 @radix-ui/react-use-controllable-state 的源入口、发布导出、构建脚本和 React 对等依赖，配置受控与非受控状态 Hook包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "受控与非受控状态 Hook"
+      ],
+      "edges": [
+        {
+          "target": "document:packages/react/use-controllable-state/README.md",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/use-controllable-state/tsconfig.json": {
+      "summary": "配置受控与非受控状态 Hook包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "受控与非受控状态 Hook"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/use-controllable-state/package.json",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/visually-hidden/CHANGELOG.md": {
+      "summary": "按版本记录视觉隐藏内容包的发布变更与依赖更新，最新章节为 1.2.13。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "视觉隐藏内容"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/visually-hidden/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/visually-hidden/README.md": {
+      "summary": "标识 visually-hidden 包并提供进一步文档入口，作为视觉隐藏内容模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "视觉隐藏内容"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/visually-hidden/package.json",
+          "type": "documents"
+        }
+      ]
+    },
+    "packages/react/visually-hidden/package.json": {
+      "summary": "定义 @radix-ui/react-visually-hidden 的源入口、发布导出、构建脚本和 React 对等依赖，配置视觉隐藏内容包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "视觉隐藏内容"
+      ],
+      "edges": [
+        {
+          "target": "document:packages/react/visually-hidden/README.md",
+          "type": "related"
+        }
+      ]
+    },
+    "packages/react/visually-hidden/tsconfig.json": {
+      "summary": "配置视觉隐藏内容包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "视觉隐藏内容"
+      ],
+      "edges": [
+        {
+          "target": "config:packages/react/visually-hidden/package.json",
+          "type": "related"
+        }
+      ]
+    },
+    ".changeset/changelog.cjs": {
+      "summary": "实现 Changesets 的依赖变更行、版本条目和更新日志格式化，优先排列 Overview 并将其他变更归入单独小节。",
+      "tags": [
+        "发布工具",
+        "更新日志",
+        "格式化"
+      ],
+      "extraSymbols": [
+        {
+          "name": "getDependencyReleaseLine",
+          "range": [
+            5,
+            11
+          ],
+          "summary": "把更新的依赖名称和新版本格式化为发布日志条目，没有更新时返回空文本。",
+          "exported": true,
+          "tags": [
+            "发布工具",
+            "日志生成",
+            "导出函数"
+          ]
+        },
+        {
+          "name": "getReleaseLine",
+          "range": [
+            14,
+            20
+          ],
+          "summary": "将 Changeset 首行转换成项目符号或三级标题，并保留后续多行说明。",
+          "exported": true,
+          "tags": [
+            "发布工具",
+            "日志生成",
+            "导出函数"
+          ]
+        },
+        {
+          "name": "getChangelogEntry",
+          "range": [
+            58,
+            66
+          ],
+          "summary": "汇总当前发布版本的全部级别变更，生成以新版本号开头的 Markdown 条目。",
+          "exported": true,
+          "tags": [
+            "发布工具",
+            "日志生成",
+            "导出函数"
+          ]
+        }
+      ]
+    },
+    ".github/CODEOWNERS": {
+      "summary": "声明希望为新拉取请求添加的审阅者，用于代码所有权与评审协作。",
+      "tags": [
+        "仓库治理",
+        "评审",
+        "所有权"
+      ]
+    },
+    ".nvmrc": {
+      "summary": "将本地及 CI Node.js 主版本固定为 24，统一开发运行时。",
+      "tags": [
+        "运行时",
+        "版本固定",
+        "开发环境"
+      ]
+    },
+    ".ua/config.json": {
+      "summary": "保存本项目知识图谱的中文输出语言偏好，供后续增量分析保持语言一致。",
+      "tags": [
+        "分析配置",
+        "中文输出",
+        "知识图谱"
+      ]
+    },
+    ".github/CONTRIBUTING.md": {
+      "summary": "介绍 Radix 贡献原则、问题反馈和拉取请求准备流程，并提供本地开发说明。",
+      "tags": [
+        "文档",
+        "贡献指南",
+        "开发流程"
+      ]
+    },
+    ".github/PULL_REQUEST_TEMPLATE.md": {
+      "summary": "为拉取请求提供提交前检查清单和变更描述位置，帮助维护者进行一致评审。",
+      "tags": [
+        "文档",
+        "拉取请求",
+        "评审规范"
+      ]
+    },
+    ".github/actions/ci-setup/action.yml": {
+      "summary": "组合式 CI 初始化动作，从 packageManager 读取 pnpm 版本并按 .nvmrc 安装 Node.js；可选安装支持 OIDC 的 npm 后执行冻结锁文件安装。",
+      "tags": [
+        "配置",
+        "持续集成",
+        "依赖安装"
+      ],
+      "edges": [
+        {
+          "target": "file:.nvmrc",
+          "type": "depends_on"
+        }
+      ]
+    },
+    ".github/actions/detect-snapshot-changes/action.yml": {
+      "summary": "读取 npm next 快照版本与发布时间，按 UTC 日期避免同日重复发布，并比较上次发布前的提交以过滤文档、测试及应用等非发布变更。",
+      "tags": [
+        "配置",
+        "快照发布",
+        "变更检测"
+      ]
+    },
+    ".github/actions/publish-snapshot/action.yml": {
+      "summary": "复用 CI 初始化后构建全部包、生成 next 快照版本并以 provenance 发布到 npm。",
+      "tags": [
+        "配置",
+        "快照发布",
+        "持续集成"
+      ],
+      "edges": [
+        {
+          "target": "config:.github/actions/ci-setup/action.yml",
+          "type": "depends_on"
+        }
+      ]
+    },
+    ".github/actions/publish-stable/action.yml": {
+      "summary": "复用 CI 初始化和包构建，通过 Changesets 创建版本 PR 或发布稳定包，并强制附带 provenance 证明。",
+      "tags": [
+        "配置",
+        "稳定发布",
+        "持续集成"
+      ],
+      "edges": [
+        {
+          "target": "config:.github/actions/ci-setup/action.yml",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/accessible-icon/page.tsx": {
+      "summary": "在按钮内为图标提供 Close 可访问名称，检查服务端渲染后的图标语义。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/accordion/page.tsx": {
+      "summary": "渲染可同时展开多项的折叠面板，包含禁用项和内容内按钮，检查 SSR 下的结构与交互。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/alert-dialog/page.tsx": {
+      "summary": "组合触发器、Portal、遮罩、标题、描述和确认取消按钮，提供警告对话框 SSR 样例。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/avatar/page.tsx": {
+      "summary": "组合头像图片与回退字符，检查服务端初始状态与客户端图片加载的兼容性。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/checkbox/page.tsx": {
+      "summary": "渲染复选框根组件与勾选指示器，提供最小 SSR 交互入口。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/collapsible/page.tsx": {
+      "summary": "组合折叠触发器与内容，检查 SSR 输出和水合后的展开行为。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/context-menu/page.tsx": {
+      "summary": "组合右键触发区、Portal、菜单项与禁用项，检查上下文菜单在 SSR 应用中的使用。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/dialog/page.tsx": {
+      "summary": "组合默认展开的对话框、遮罩、标题描述和关闭按钮，观察 Portal 与水合行为。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/dropdown-menu/page.tsx": {
+      "summary": "组合下拉触发器、带偏移的内容、禁用项和箭头，提供 SSR 菜单使用样例。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/form/page.tsx": {
+      "summary": "组合必填 email 字段及缺值、格式不符提示，检查 SSR 下的表单验证语义。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/hover-card/page.tsx": {
+      "summary": "组合悬停触发器、Portal 内容和箭头，提供悬停卡片的 SSR 样例。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/label/page.tsx": {
+      "summary": "渲染 Label.Root，作为标签组件在 SSR 页面中的最小检查入口。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/menubar/page.tsx": {
+      "summary": "组合菜单栏、触发器、Portal、菜单标签、项目和箭头，展示 SSR 场景下的菜单栏结构。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/navigation-menu/page.tsx": {
+      "summary": "组合可展开导航项和直接链接，展示导航菜单在 SSR 应用中的两种项目结构。",
+      "tags": [
+        "服务端渲染",
+        "组件样例",
+        "水合验证"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radix-ui/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "apps/ssr-testing/app/layout.tsx": {
+      "summary": "在 React.StrictMode 下提供 SSR/RSC 测试应用的 HTML 外壳、组件路由导航和页面内容区域。",
+      "tags": [
+        "服务端渲染",
+        "应用布局",
+        "组件导航"
+      ]
+    },
+    "packages/react/id/src/id.tsx": {
+      "summary": "优先采用 React.useId，为旧 React 在布局阶段生成客户端回退 ID，同时允许调用方提供确定性 ID。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/use-layout-effect/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/label/src/label.tsx": {
+      "summary": "以可替换 DOM 的 label 基元实现标签，仅阻止标签本身双击造成的文本选择，同时保留内部表单控件行为。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "extraSymbols": [
+        {
+          "name": "Label",
+          "range": [
+            12,
+            30
+          ],
+          "summary": "渲染可组合的原生标签，透传引用并避免标签本身双击选中文本，不干扰嵌套控制项。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/primitive/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/menu/src/menu.tsx": {
+      "summary": "提供基础菜单和子菜单的复合组件，统一键盘导航、前缀搜索、选择事件、焦点管理、指针宽容区与浮层关闭行为。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "extraSymbols": [
+        {
+          "name": "MenuAnchor",
+          "range": [
+            166,
+            172
+          ],
+          "summary": "将菜单作用域传给 Popper.Anchor，关联定位锚点并透传引用。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuContent",
+          "range": [
+            244,
+            265
+          ],
+          "summary": "按开关和强制挂载状态呈现内容，并选择模态或非模态实现，建立菜单项目集合。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuRootContentModal",
+          "range": [
+            275,
+            316
+          ],
+          "summary": "隐藏外部 ARIA 内容、锁滚动和指针，并在菜单打开时约束焦点。",
+          "exported": false,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuRootContentNonModal",
+          "range": [
+            318,
+            333
+          ],
+          "summary": "呈现不锁焦点、不锁滚动的菜单内容，并在外部关闭事件中更新开关状态。",
+          "exported": false,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuContentImpl",
+          "range": [
+            382,
+            627
+          ],
+          "summary": "组合焦点范围、可关闭层、漫游焦点与 Popper，处理前缀搜索、首尾导航、嵌套 Portal 分支和子菜单宽容区。",
+          "exported": false,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuGroup",
+          "range": [
+            637,
+            642
+          ],
+          "summary": "用 role=group 的 DOM 基元对菜单项分组。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuLabel",
+          "range": [
+            651,
+            656
+          ],
+          "summary": "提供不参与选择的菜单文字标签并透传 DOM 属性和引用。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuItem",
+          "range": [
+            670,
+            740
+          ],
+          "summary": "将键盘与指针选择统一为可取消的自定义选择事件，并在未阻止时关闭菜单。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuItemImpl",
+          "range": [
+            750,
+            818
+          ],
+          "summary": "将项目加入集合和漫游焦点，维护可搜索文本、禁用和高亮状态，并协调鼠标移动聚焦。",
+          "exported": false,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuCheckboxItem",
+          "range": [
+            834,
+            858
+          ],
+          "summary": "将菜单项目组合为支持混合状态的复选项，选择时更新 checked 状态并共享指示器信息。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuRadioGroup",
+          "range": [
+            877,
+            887
+          ],
+          "summary": "通过上下文提供菜单单选值与稳定变更回调，并渲染语义分组。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuRadioItem",
+          "range": [
+            900,
+            922
+          ],
+          "summary": "将选项值与组值比较，暴露 aria-checked 并在选择时通知单选组。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuItemIndicator",
+          "range": [
+            947,
+            971
+          ],
+          "summary": "依据复选或单选状态挂载指示器，支持混合状态与强制挂载动画。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuSeparator",
+          "range": [
+            980,
+            992
+          ],
+          "summary": "渲染带水平方向语义的菜单分隔线。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuArrow",
+          "range": [
+            1002,
+            1008
+          ],
+          "summary": "通过共享定位作用域呈现 Popper 菜单箭头。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuSubTrigger",
+          "range": [
+            1077,
+            1209
+          ],
+          "summary": "处理子菜单延迟展开、方向键打开与鼠标宽容多边形，避免指针前往子菜单时误关闭。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenuSubContent",
+          "range": [
+            1237,
+            1296
+          ],
+          "summary": "按书写方向定位子菜单，管理键盘打开聚焦、Escape 及返回父菜单的方向键行为。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/collection/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/compose-refs/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/context/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/direction/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/dismissable-layer/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/focus-guards/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/focus-scope/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/id/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/popper/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/portal/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/presence/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/primitive/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/roving-focus/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/slot/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-callback-ref/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/menubar/src/menubar.tsx": {
+      "summary": "在基础 Menu 上增加横向菜单切换、当前激活值和漫游焦点，协调鼠标与键盘操作以及子菜单边界。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "extraSymbols": [
+        {
+          "name": "Menubar",
+          "range": [
+            68,
+            136
+          ],
+          "summary": "用受控状态保存激活菜单值，并结合集合和横向漫游焦点维护当前 Tab 停靠点。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenubarTrigger",
+          "range": [
+            211,
+            281
+          ],
+          "summary": "注册菜单触发器并处理点击、悬停切换和键盘开关，保持 ARIA 关联及高亮状态。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenubarContent",
+          "range": [
+            306,
+            393
+          ],
+          "summary": "组合基础菜单内容，按左右方向键跨菜单导航，并根据关闭来源决定是否还原触发器焦点。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenubarGroup",
+          "range": [
+            403,
+            409
+          ],
+          "summary": "携带菜单作用域复用基础 Menu.Group 的分组语义。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenubarLabel",
+          "range": [
+            419,
+            425
+          ],
+          "summary": "携带菜单作用域复用基础菜单标签。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenubarItem",
+          "range": [
+            435,
+            441
+          ],
+          "summary": "携带菜单作用域复用基础菜单选择项目。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenubarCheckboxItem",
+          "range": [
+            451,
+            461
+          ],
+          "summary": "复用基础复选菜单项，并桥接菜单栏的作用域与引用。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenubarRadioGroup",
+          "range": [
+            471,
+            481
+          ],
+          "summary": "复用基础菜单单选组，保留消费者属性与引用。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenubarRadioItem",
+          "range": [
+            491,
+            501
+          ],
+          "summary": "复用基础菜单单选项目并传递菜单栏作用域。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenubarItemIndicator",
+          "range": [
+            511,
+            518
+          ],
+          "summary": "复用基础菜单选中状态指示器。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenubarSeparator",
+          "range": [
+            528,
+            538
+          ],
+          "summary": "复用基础菜单分隔线并透传作用域。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenubarArrow",
+          "range": [
+            548,
+            554
+          ],
+          "summary": "复用基础菜单定位箭头。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenubarSubTrigger",
+          "range": [
+            594,
+            611
+          ],
+          "summary": "标记菜单栏子菜单触发器，供内容方向键处理区分跨菜单与子菜单打开行为。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "MenubarSubContent",
+          "range": [
+            621,
+            650
+          ],
+          "summary": "复用基础子菜单内容，并将定位 CSS 变量转换到菜单栏命名空间。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/collection/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/direction/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/compose-refs/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/context/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/id/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/menu/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/roving-focus/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/primitive/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-controllable-state/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/navigation-menu/src/navigation-menu.tsx": {
+      "summary": "实现支持自动或手动激活的导航菜单，管理延迟切换、嵌套导航、共享视口、移动方向动画及内容焦点顺序。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "extraSymbols": [
+        {
+          "name": "NavigationMenu",
+          "range": [
+            130,
+            262
+          ],
+          "summary": "维护受控激活项目和自动/手动模式，协调悬停延迟、关闭计时及连续项目切换的跳过延迟。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "NavigationMenuSub",
+          "range": [
+            300,
+            348
+          ],
+          "summary": "继承激活模式并管理子导航当前值，支持 disableToggle 控制再次点击是否关闭。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "NavigationMenuList",
+          "range": [
+            448,
+            469
+          ],
+          "summary": "建立导航列表和指示器轨道，根菜单额外使用键盘焦点组。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "NavigationMenuItem",
+          "range": [
+            500,
+            549
+          ],
+          "summary": "持有项目值、内容和触发器引用，协调内容进入聚焦及退出时的 Tab 顺序恢复。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "NavigationMenuTrigger",
+          "range": [
+            561,
+            659
+          ],
+          "summary": "注册触发器并处理悬停与点击开关，使用隐藏焦点代理桥接触发器与共享视口内容的 Tab 顺序。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "NavigationMenuLink",
+          "range": [
+            673,
+            713
+          ],
+          "summary": "渲染可标识当前页的链接，发出可取消选择事件，并在普通选择后请求关闭根内容。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "NavigationMenuIndicator",
+          "range": [
+            730,
+            746
+          ],
+          "summary": "将激活状态指示器传送到列表轨道，并使用 Presence 支持出入动画。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "NavigationMenuIndicatorImpl",
+          "range": [
+            751,
+            816
+          ],
+          "summary": "观察激活触发器和轨道尺寸，计算指示器长度及偏移并暴露 CSS 变量。",
+          "exported": false,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "NavigationMenuContent",
+          "range": [
+            836,
+            883
+          ],
+          "summary": "根据是否存在共享视口决定就地呈现内容或登记到视口，保留开关动画和指针进入离开行为。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "ViewportContentMounter",
+          "range": [
+            896,
+            916
+          ],
+          "summary": "在布局阶段登记共享视口中的内容及引用，卸载时移除注册项，本身不渲染 DOM。",
+          "exported": false,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "NavigationMenuContentImpl",
+          "range": [
+            939,
+            1080
+          ],
+          "summary": "组合可关闭层和焦点组，计算切换方向，处理真正离开菜单的焦点、外部点击和内容 Tab 边界。",
+          "exported": false,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "NavigationMenuViewport",
+          "range": [
+            1101,
+            1114
+          ],
+          "summary": "按菜单开关状态挂载共享视口，支持强制保留以配合动画。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "NavigationMenuViewportImpl",
+          "range": [
+            1121,
+            1193
+          ],
+          "summary": "呈现注册的活跃内容并测量其真实尺寸，保留上次内容支持关闭动画，兼容 asChild 插槽。",
+          "exported": false,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "FocusGroup",
+          "range": [
+            1230,
+            1243
+          ],
+          "summary": "建立导航内部可聚焦项目集合并继承书写方向。",
+          "exported": false,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "FocusGroupItem",
+          "range": [
+            1253,
+            1289
+          ],
+          "summary": "注册焦点项目并处理方向键与 Home/End，按方向和当前项决定下一聚焦候选。",
+          "exported": false,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/context/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/primitive/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-controllable-state/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/compose-refs/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/direction/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/presence/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/slot/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/id/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/collection/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/dismissable-layer/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-previous/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-layout-effect/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-callback-ref/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/visually-hidden/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/one-time-password-field/src/one-time-password-field.tsx": {
+      "summary": "组合有序输入集合和漫游焦点，实现验证码字符校验、粘贴分发、删除、自动补全、表单重置及填满后提交。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "extraSymbols": [
+        {
+          "name": "OneTimePasswordField",
+          "range": [
+            215,
+            518
+          ],
+          "summary": "管理有序字符值与校验规则，将输入、删除、粘贴动作转换为状态和焦点更新，并对接自动提交及表单重置。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "OneTimePasswordFieldHiddenInput",
+          "range": [
+            536,
+            564
+          ],
+          "summary": "输出汇总字符值的只读隐藏输入，以单一名称参与原生表单提交。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "OneTimePasswordFieldInput",
+          "range": [
+            595,
+            921
+          ],
+          "summary": "登记单个字符输入，协调校验、输入选择、剪切删除、自动补全和漫游焦点，处理水合前的索引与占位符。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/primitive/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/compose-refs/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-controllable-state/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/collection/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/roving-focus/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-is-hydrated/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/context/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/direction/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/password-toggle-field/src/password-toggle-field.tsx": {
+      "summary": "协调密码可见状态、输入框、切换按钮和图标，恢复选择区及焦点，并在表单提交或重置时隐藏密码。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "extraSymbols": [
+        {
+          "name": "PasswordToggleFieldInput",
+          "range": [
+            150,
+            231
+          ],
+          "summary": "根据共享可见状态切换输入类型，记录光标选择并在表单重置或提交时恢复隐藏。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "PasswordToggleFieldToggle",
+          "range": [
+            243,
+            399
+          ],
+          "summary": "以可访问按钮切换密码显示，水合前暂时移出交互与辅助技术，鼠标操作后恢复输入焦点及选择区。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "PasswordToggleFieldIcon",
+          "range": [
+            450,
+            475
+          ],
+          "summary": "根据密码可见状态选择 SVG 图标，通过 asChild 透传属性并对辅助技术隐藏装饰图形。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/use-controllable-state/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/primitive/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/compose-refs/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/id/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-is-hydrated/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-effect-event/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/context/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/popover/src/popover.tsx": {
+      "summary": "基于定位和焦点原语构建可控弹出层，区分模态与非模态外部交互，并维护标题描述的 ARIA 关联和嵌套 Portal 分支。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "extraSymbols": [
+        {
+          "name": "PopoverAnchor",
+          "range": [
+            126,
+            140
+          ],
+          "summary": "登记自定义定位锚点的存在状态并连接 Popper.Anchor，卸载时恢复默认锚点逻辑。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "PopoverTrigger",
+          "range": [
+            152,
+            180
+          ],
+          "summary": "为按钮设置动态 ARIA 控制关系和展开状态，若没有自定义锚点则同时作为定位锚点。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "PopoverContent",
+          "range": [
+            235,
+            254
+          ],
+          "summary": "由 Presence 管理挂载时机，并按 modal 配置选择内容行为。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "PopoverContentModal",
+          "range": [
+            266,
+            335
+          ],
+          "summary": "锁定滚动和外部指针、隐藏外部 ARIA 内容，并支持嵌套 Portal 分支与右键关闭后的焦点策略。",
+          "exported": false,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "PopoverContentNonModal",
+          "range": [
+            337,
+            393
+          ],
+          "summary": "允许外部交互并按交互来源恢复焦点，避免点击触发器或 Safari 后续焦点事件导致重复关闭。",
+          "exported": false,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "PopoverContentImpl",
+          "range": [
+            437,
+            526
+          ],
+          "summary": "组合焦点范围、外部关闭层及 Popper 定位，关联标题描述并登记嵌套浮层焦点分支。",
+          "exported": false,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "PopoverTitle",
+          "range": [
+            536,
+            548
+          ],
+          "summary": "登记标题存在计数并渲染固定 ID 标题，使内容只在标题实际挂载时引用它。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "PopoverDescription",
+          "range": [
+            558,
+            571
+          ],
+          "summary": "登记描述存在计数并渲染描述 ID，支持动态 ARIA 描述组合。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "PopoverClose",
+          "range": [
+            582,
+            595
+          ],
+          "summary": "组合消费者点击回调与关闭动作，保留原生按钮语义。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        },
+        {
+          "name": "PopoverArrow",
+          "range": [
+            605,
+            611
+          ],
+          "summary": "共享弹出层定位作用域并渲染对应箭头。",
+          "exported": true,
+          "tags": [
+            "组件",
+            "组合模式",
+            "可访问性"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/use-layout-effect/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/compose-refs/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/context/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/dismissable-layer/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/focus-guards/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/focus-scope/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/id/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/popper/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/portal/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/presence/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/primitive/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/slot/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-controllable-state/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/label/src/label.test.tsx": {
+      "summary": "检查 Label 的额外属性透传及 asChild 模式下属性和引用的组合。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "edges": [
+        {
+          "source": "file:packages/react/label/src/label.tsx",
+          "target": "file:packages/react/label/src/label.test.tsx",
+          "type": "tested_by"
+        }
+      ]
+    },
+    "packages/react/menubar/src/menubar.test.tsx": {
+      "summary": "检查菜单栏各部件的属性透传和 asChild 组合，并验证关闭时不产生悬空 aria-controls 引用。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "edges": [
+        {
+          "source": "file:packages/react/menubar/src/menubar.tsx",
+          "target": "file:packages/react/menubar/src/menubar.test.tsx",
+          "type": "tested_by"
+        }
+      ]
+    },
+    "packages/react/navigation-menu/src/navigation-menu.test.tsx": {
+      "summary": "验证自动和手动激活、子菜单继承与禁用切换、引用稳定性、真实焦点离开时关闭以及各部件的 asChild 透传。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "edges": [
+        {
+          "source": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+          "target": "file:packages/react/navigation-menu/src/navigation-menu.test.tsx",
+          "type": "tested_by"
+        }
+      ]
+    },
+    "packages/react/one-time-password-field/src/one-time-password-field.test.tsx": {
+      "summary": "验证验证码输入的可访问性、密码遮蔽、禁用、数字输入和焦点前进、方向键导航、粘贴截断与属性透传。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "edges": [
+        {
+          "source": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+          "target": "file:packages/react/one-time-password-field/src/one-time-password-field.test.tsx",
+          "type": "tested_by"
+        }
+      ]
+    },
+    "packages/react/password-toggle-field/src/password-toggle-field.test.tsx": {
+      "summary": "验证密码可见性切换、图标替换、输入值和选择区保留、重新聚焦及提交后的隐藏，并检查属性透传。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "edges": [
+        {
+          "source": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+          "target": "file:packages/react/password-toggle-field/src/password-toggle-field.test.tsx",
+          "type": "tested_by"
+        }
+      ]
+    },
+    "packages/react/popover/src/popover.test.tsx": {
+      "summary": "验证弹出层开关时 ARIA 引用、标题描述关联、模态及非模态属性透传和 asChild 组合，并包含回调类型约束检查。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "edges": [
+        {
+          "source": "file:packages/react/popover/src/popover.tsx",
+          "target": "file:packages/react/popover/src/popover.test.tsx",
+          "type": "tested_by"
+        }
+      ]
+    },
+    "packages/react/popper/src/popper.test.tsx": {
+      "summary": "验证虚拟锚点引用更新、挂载后注册、内容引用稳定性以及锚点、浮层和箭头的属性透传。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "edges": [
+        {
+          "source": "file:packages/react/popper/src/popper.tsx",
+          "target": "file:packages/react/popper/src/popper.test.tsx",
+          "type": "tested_by"
+        }
+      ]
+    },
+    "packages/react/hover-card/src/index.ts": {
+      "summary": "集中导出悬停卡片模块的 createHoverCardScope 与 Root、Trigger、Portal、Content、Arrow 及其类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "悬停卡片"
+      ],
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    "packages/react/id/src/index.ts": {
+      "summary": "集中导出标识符 Hook模块的 useId，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "标识符 Hook"
+      ],
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    "packages/react/label/src/index.ts": {
+      "summary": "集中导出标签模块的 Label、Root 和 LabelProps，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "标签"
+      ],
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    "packages/react/menu/src/index.ts": {
+      "summary": "集中导出基础菜单模块的 Menu、各类菜单项、子菜单、作用域工厂及类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "基础菜单"
+      ],
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    "packages/react/menubar/src/index.ts": {
+      "summary": "集中导出菜单栏模块的 Menubar、触发器、内容、项目与子菜单及类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "菜单栏"
+      ],
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    "packages/react/navigation-menu/src/index.ts": {
+      "summary": "集中导出导航菜单模块的 Root、Sub、List、Item、Trigger、Link、Indicator、Content、Viewport 及类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "导航菜单"
+      ],
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    "packages/react/one-time-password-field/src/index.ts": {
+      "summary": "集中导出验证码输入模块的 Root、Input、HiddenInput、校验类型及属性类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "验证码输入"
+      ],
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    "packages/react/password-toggle-field/src/index.ts": {
+      "summary": "集中导出密码显示切换模块的 Root、Input、Toggle、Icon、Slot 及属性类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "密码显示切换"
+      ],
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    "packages/react/popover/src/index.ts": {
+      "summary": "集中导出弹出层模块的 Root、Anchor、Trigger、Portal、Content、Title、Description、Close、Arrow 及类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "弹出层"
+      ],
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    "packages/react/popper/src/index.ts": {
+      "summary": "集中导出浮层定位模块的 定位作用域、锚点、内容、箭头、方向和对齐选项及类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "浮层定位"
+      ],
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    "packages/react/roving-focus/src/index.ts": {
+      "summary": "集中导出漫游焦点模块的 Root、Item、作用域工厂及属性类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "漫游焦点"
+      ],
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    "packages/react/radix-ui/src/index.ts": {
+      "summary": "将独立 React 组件包集中为命名空间导出，提供 radix-ui 总入口，并用 unstable 前缀暴露验证码和密码切换实验组件。",
+      "tags": [
+        "总入口",
+        "命名空间导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/accessible-icon/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/accordion/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/alert-dialog/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/aspect-ratio/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/avatar/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/checkbox/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/collapsible/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/context-menu/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/dialog/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/direction/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/dropdown-menu/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/form/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/hover-card/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/label/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/menubar/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/navigation-menu/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/one-time-password-field/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/password-toggle-field/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/popover/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/portal/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/progress/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/radio-group/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/scroll-area/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/select/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/separator/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/slider/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/slot/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/switch/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/tabs/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/toast/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/toggle/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/toggle-group/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/toolbar/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/tooltip/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/visually-hidden/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/internal.ts": {
+      "summary": "聚合内部交互原语和共享 Hook，并在 BasePrimitive 上附加 Root 与离散自定义事件派发方法，供组合实现使用。",
+      "tags": [
+        "内部入口",
+        "共享原语",
+        "重新导出"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/primitive/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/arrow/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/collection/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/compose-refs/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/context/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/dismissable-layer/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/focus-guards/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/focus-scope/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/menu/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/popper/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/presence/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/roving-focus/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-callback-ref/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-controllable-state/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-effect-event/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-escape-keydown/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-is-hydrated/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-layout-effect/src/index.ts",
+          "type": "depends_on"
+        },
+        {
+          "target": "file:packages/react/use-size/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/label.ts": {
+      "summary": "为 radix-ui/label 子路径转发 @radix-ui/react-label 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/label/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/menubar.ts": {
+      "summary": "为 radix-ui/menubar 子路径转发 @radix-ui/react-menubar 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/menubar/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/navigation-menu.ts": {
+      "summary": "为 radix-ui/navigation-menu 子路径转发 @radix-ui/react-navigation-menu 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/navigation-menu/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/popover.ts": {
+      "summary": "为 radix-ui/popover 子路径转发 @radix-ui/react-popover 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/popover/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/portal.ts": {
+      "summary": "为 radix-ui/portal 子路径转发 @radix-ui/react-portal 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/portal/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/progress.ts": {
+      "summary": "为 radix-ui/progress 子路径转发 @radix-ui/react-progress 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/progress/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/radio-group.ts": {
+      "summary": "为 radix-ui/radio-group 子路径转发 @radix-ui/react-radio-group 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/radio-group/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/scroll-area.ts": {
+      "summary": "为 radix-ui/scroll-area 子路径转发 @radix-ui/react-scroll-area 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/scroll-area/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/select.ts": {
+      "summary": "为 radix-ui/select 子路径转发 @radix-ui/react-select 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/select/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/separator.ts": {
+      "summary": "为 radix-ui/separator 子路径转发 @radix-ui/react-separator 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/separator/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/slider.ts": {
+      "summary": "为 radix-ui/slider 子路径转发 @radix-ui/react-slider 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/slider/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/slot.ts": {
+      "summary": "为 radix-ui/slot 子路径转发 @radix-ui/react-slot 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/slot/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/switch.ts": {
+      "summary": "为 radix-ui/switch 子路径转发 @radix-ui/react-switch 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/switch/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/tabs.ts": {
+      "summary": "为 radix-ui/tabs 子路径转发 @radix-ui/react-tabs 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/tabs/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/toast.ts": {
+      "summary": "为 radix-ui/toast 子路径转发 @radix-ui/react-toast 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/toast/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/toggle-group.ts": {
+      "summary": "为 radix-ui/toggle-group 子路径转发 @radix-ui/react-toggle-group 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/toggle-group/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/toggle.ts": {
+      "summary": "为 radix-ui/toggle 子路径转发 @radix-ui/react-toggle 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/toggle/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/toolbar.ts": {
+      "summary": "为 radix-ui/toolbar 子路径转发 @radix-ui/react-toolbar 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/toolbar/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/tooltip.ts": {
+      "summary": "为 radix-ui/tooltip 子路径转发 @radix-ui/react-tooltip 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/tooltip/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/visually-hidden.ts": {
+      "summary": "为 radix-ui/visually-hidden 子路径转发 @radix-ui/react-visually-hidden 的公开导出，使消费者可以直接使用独立组件入口。",
+      "tags": [
+        "子路径入口",
+        "重新导出",
+        "组件聚合"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/visually-hidden/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/unstable/one-time-password-field.ts": {
+      "summary": "为 radix-ui/unstable/one-time-password-field 转发实验性 one-time-password-field 包的公开组件和类型。",
+      "tags": [
+        "实验接口",
+        "子路径入口",
+        "重新导出"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/one-time-password-field/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    },
+    "packages/react/radix-ui/src/unstable/password-toggle-field.ts": {
+      "summary": "为 radix-ui/unstable/password-toggle-field 转发实验性 password-toggle-field 包的公开组件和类型。",
+      "tags": [
+        "实验接口",
+        "子路径入口",
+        "重新导出"
+      ],
+      "edges": [
+        {
+          "target": "file:packages/react/password-toggle-field/src/index.ts",
+          "type": "depends_on"
+        }
+      ]
+    }
+  },
+  "symbols": {
+    "packages/react/collection/src/collection.tsx:createCollection": "创建具有独立上下文作用域的集合组件和 Hook，利用提交阶段注册、状态快照及 DOM 变化观察维持有序项目数据。",
+    "packages/react/collection/src/collection.tsx:shallowEqual": "逐键比较项目数据对象，避免引用等价的数据在每次渲染中触发重新登记。",
+    "packages/react/collection/src/collection.tsx:isInDocumentOrder": "比较相邻已登记元素的 DOM 位置，在元素连通时检测集合是否偏离文档顺序。",
+    "packages/react/collection/src/collection.tsx:sortByDocumentPosition": "按条目中真实元素的文档先后关系生成排序比较值。",
+    "packages/react/collection/src/collection.tsx:getChildListObserver": "创建仅对子节点增删记录触发回调的 MutationObserver，以刷新集合顺序。",
+    "packages/react/collection/src/ordered-dictionary.ts:OrderedDict": "扩展 Map 并同步维护私有键序列，提供索引与相邻访问、位置插入和保留键顺序的数组式操作。",
+    ".changeset/changelog.cjs:getDependencyReleaseLine": "把更新的依赖名称和新版本格式化为发布日志条目，没有更新时返回空文本。",
+    ".changeset/changelog.cjs:getReleaseLine": "将 Changeset 首行转换成项目符号或三级标题，并保留后续多行说明。",
+    ".changeset/changelog.cjs:getChangelogText": "等待异步日志文本，排序 Overview 和其他标题，并合并普通变更为 Other updates 小节。",
+    ".changeset/changelog.cjs:getChangelogEntry": "汇总当前发布版本的全部级别变更，生成以新版本号开头的 Markdown 条目。",
+    "apps/ssr-testing/app/accessible-icon/page.tsx:Page": "在按钮内为图标提供 Close 可访问名称，检查服务端渲染后的图标语义。",
+    "apps/ssr-testing/app/accordion/page.tsx:Page": "渲染可同时展开多项的折叠面板，包含禁用项和内容内按钮，检查 SSR 下的结构与交互。",
+    "apps/ssr-testing/app/alert-dialog/page.tsx:Page": "组合触发器、Portal、遮罩、标题、描述和确认取消按钮，提供警告对话框 SSR 样例。",
+    "apps/ssr-testing/app/avatar/page.tsx:Page": "组合头像图片与回退字符，检查服务端初始状态与客户端图片加载的兼容性。",
+    "apps/ssr-testing/app/checkbox/page.tsx:Page": "渲染复选框根组件与勾选指示器，提供最小 SSR 交互入口。",
+    "apps/ssr-testing/app/collapsible/page.tsx:Page": "组合折叠触发器与内容，检查 SSR 输出和水合后的展开行为。",
+    "apps/ssr-testing/app/context-menu/page.tsx:Page": "组合右键触发区、Portal、菜单项与禁用项，检查上下文菜单在 SSR 应用中的使用。",
+    "apps/ssr-testing/app/dialog/page.tsx:Page": "组合默认展开的对话框、遮罩、标题描述和关闭按钮，观察 Portal 与水合行为。",
+    "apps/ssr-testing/app/dropdown-menu/page.tsx:Page": "组合下拉触发器、带偏移的内容、禁用项和箭头，提供 SSR 菜单使用样例。",
+    "apps/ssr-testing/app/form/page.tsx:Page": "组合必填 email 字段及缺值、格式不符提示，检查 SSR 下的表单验证语义。",
+    "apps/ssr-testing/app/hover-card/page.tsx:Page": "组合悬停触发器、Portal 内容和箭头，提供悬停卡片的 SSR 样例。",
+    "apps/ssr-testing/app/label/page.tsx:Page": "渲染 Label.Root，作为标签组件在 SSR 页面中的最小检查入口。",
+    "apps/ssr-testing/app/menubar/page.tsx:Page": "组合菜单栏、触发器、Portal、菜单标签、项目和箭头，展示 SSR 场景下的菜单栏结构。",
+    "apps/ssr-testing/app/navigation-menu/page.tsx:Page": "组合可展开导航项和直接链接，展示导航菜单在 SSR 应用中的两种项目结构。",
+    "apps/ssr-testing/app/layout.tsx:Layout": "构建包含所有组件测试链接的双栏页面，将子路由内容包裹在严格模式和统一 HTML 文档内。",
+    "packages/react/id/src/id.tsx:useId": "优先返回显式 ID，否则使用 React 原生 ID，并为旧版本 React 在布局阶段提供递增回退标识。",
+    "packages/react/menu/src/menu.tsx:Menu": "持有菜单开关和输入方式状态，在窗口失焦时关闭菜单，并为定位与方向性提供上下文。",
+    "packages/react/menu/src/menu.tsx:MenuPortal": "将菜单内容传送到指定容器，结合 Presence 支持按开关状态挂载或强制挂载。",
+    "packages/react/menu/src/menu.tsx:MenuSub": "维护子菜单的触发器、内容与 ARIA 标识，并在父菜单关闭或卸载时同步关闭。",
+    "packages/react/menu/src/menu.tsx:getNextMatch": "根据累积搜索串和当前匹配项循环查找下一条文本，支持连续同字符的快速导航。",
+    "packages/react/menu/src/menu.tsx:isPointInPolygon": "以射线交叉规则判断指针坐标是否位于子菜单宽容多边形内。",
+    "packages/react/menubar/src/menubar.tsx:MenubarMenu": "为单个菜单分配稳定值和标识，关联当前菜单栏激活项并以非模态 Menu 呈现。",
+    "packages/react/menubar/src/menubar.tsx:MenubarPortal": "携带菜单作用域将内容委托给基础 Menu 的 Portal。",
+    "packages/react/menubar/src/menubar.tsx:MenubarSub": "用受控状态 Hook 管理菜单栏子菜单的展开值，交给 Menu.Sub 处理底层交互。",
+    "packages/react/menubar/src/menubar.test.tsx:MenubarTest": "构建包含触发器和内容的菜单栏测试夹具，用于检查 ARIA 关联和开关行为。",
+    "packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuProvider": "维护共享视口、指示器轨道及内容注册表，提供上次激活值、稳定回调和项目集合上下文。",
+    "packages/react/navigation-menu/src/navigation-menu.tsx:NavigationMenuViewportItem": "合并内容引用并只在当前激活项存在真实节点时更新视口测量目标，保持切换平滑。",
+    "packages/react/navigation-menu/src/navigation-menu.tsx:getTabbableCandidates": "遍历内容子树，跳过禁用、隐藏及隐藏输入，收集可进入 Tab 顺序的元素。",
+    "packages/react/navigation-menu/src/navigation-menu.tsx:removeFromTabOrder": "暂存候选元素原有 tabindex 并全部设为 -1，返回恢复焦点顺序的清理函数。",
+    "packages/react/navigation-menu/src/navigation-menu.tsx:useResizeObserver": "通过稳定回调和动画帧合并 ResizeObserver 通知，避免尺寸观察循环并在卸载时清理。",
+    "packages/react/navigation-menu/src/navigation-menu.test.tsx:NavigationMenuTest": "构建最小导航根、项目、触发器和内容，支撑激活模式与 ARIA 关系测试。",
+    "packages/react/navigation-menu/src/navigation-menu.test.tsx:NavigationMenuSubTest": "在子导航中组合触发器和内容，验证激活模式继承与 disableToggle 行为。",
+    "packages/react/one-time-password-field/src/one-time-password-field.tsx:focusInput": "聚焦目标输入；若已经聚焦，则在下一动画帧选择其内容以便覆盖输入。",
+    "packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleField": "提供密码可见状态、输入 ID 和引用以及选择区记录，兼容旧拼写回调并在开发时提示迁移。",
+    "packages/react/password-toggle-field/src/password-toggle-field.tsx:PasswordToggleFieldSlot": "根据可见状态选择声明式内容或调用 render 属性，让消费者定制可见性提示。",
+    "packages/react/password-toggle-field/src/password-toggle-field.tsx:requestIdleCallback": "优先调用窗口空闲回调，不支持时以定时器模拟剩余时间，并返回取消函数。",
+    "packages/react/password-toggle-field/src/password-toggle-field.test.tsx:EyeClosedIcon": "提供闭眼 SVG 测试图标，用于验证隐藏状态图标的选择与属性组合。",
+    "packages/react/password-toggle-field/src/password-toggle-field.test.tsx:EyeOpenIcon": "提供睁眼 SVG 测试图标，用于验证密码显示状态时的图标替换。",
+    "packages/react/popover/src/popover.tsx:Popover": "维护可控开关、触发器引用、自定义锚点和标题描述计数，为浮层内容提供定位及语义上下文。",
+    "packages/react/popover/src/popover.tsx:PopoverPortal": "将 Presence 管理的弹出内容传送到指定容器，并向后代共享强制挂载选项。",
+    "packages/react/popover/src/popover.tsx:concatAriaDescribedby": "拆分并去重多个 ARIA 描述标识串，以单个空格合并，空集合返回 undefined。"
+  }
+}

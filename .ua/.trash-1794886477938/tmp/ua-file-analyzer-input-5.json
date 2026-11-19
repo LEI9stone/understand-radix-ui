@@ -1,0 +1,31 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "apps/ssr-testing/app/portal/conditional-portal.tsx",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/portal/custom-portal-container.tsx",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/portal/page.tsx",
+      "language": "typescript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "apps/ssr-testing/app/portal/conditional-portal.tsx": [],
+    "apps/ssr-testing/app/portal/custom-portal-container.tsx": [],
+    "apps/ssr-testing/app/portal/page.tsx": [
+      "apps/ssr-testing/app/portal/conditional-portal.tsx",
+      "apps/ssr-testing/app/portal/custom-portal-container.tsx"
+    ]
+  }
+}

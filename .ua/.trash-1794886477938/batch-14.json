@@ -1,0 +1,59 @@
+{
+  "nodes": [
+    {
+      "id": "document:apps/ssr-testing/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "apps/ssr-testing/README.md",
+      "summary": "说明 Next.js 服务端渲染测试 playground 的目的，以及从仓库根目录通过 dev:ssr 启动的方法。",
+      "tags": [
+        "文档",
+        "服务端渲染",
+        "开发入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/ssr-testing/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/ssr-testing/package.json",
+      "summary": "声明私有 Next.js 测试应用，依赖 workspace radix-ui，并提供生产构建与 Primitive 跨边界断言命令。",
+      "tags": [
+        "应用配置",
+        "服务端渲染",
+        "构建"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/ssr-testing/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/ssr-testing/tsconfig.json",
+      "summary": "继承内部 Next.js TypeScript 配置，启用增量编译并纳入 Next 自动生成的类型文件。",
+      "tags": [
+        "编译配置",
+        "TypeScript",
+        "Next.js"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:apps/ssr-testing/README.md",
+      "target": "config:apps/ssr-testing/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:apps/ssr-testing/tsconfig.json",
+      "target": "file:apps/ssr-testing/app/portal/page.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

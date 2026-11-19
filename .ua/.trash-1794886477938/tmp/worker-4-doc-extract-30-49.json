@@ -1,0 +1,1153 @@
+[
+ {
+  "batchIndex": 30,
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+   "structure": {
+    "succeeded": 4,
+    "failed": 0
+   },
+   "callGraph": {
+    "succeeded": 0,
+    "failed": 0,
+    "skipped": 4
+   }
+  },
+  "results": [
+   {
+    "path": "packages/react/collapsible/CHANGELOG.md",
+    "language": "markdown",
+    "fileCategory": "docs",
+    "totalLines": 85,
+    "nonEmptyLines": 47,
+    "sections": [
+     {
+      "heading": "@radix-ui/react-collapsible",
+      "level": 1,
+      "line": 1
+     },
+     {
+      "heading": "1.2.1",
+      "level": 2,
+      "line": 3
+     },
+     {
+      "heading": "1.2.0",
+      "level": 2,
+      "line": 7
+     },
+     {
+      "heading": "1.1.21",
+      "level": 2,
+      "line": 12
+     },
+     {
+      "heading": "1.1.20",
+      "level": 2,
+      "line": 16
+     },
+     {
+      "heading": "1.1.19",
+      "level": 2,
+      "line": 21
+     },
+     {
+      "heading": "1.1.18",
+      "level": 2,
+      "line": 25
+     },
+     {
+      "heading": "1.1.17",
+      "level": 2,
+      "line": 30
+     },
+     {
+      "heading": "1.1.16",
+      "level": 2,
+      "line": 35
+     },
+     {
+      "heading": "1.1.15",
+      "level": 2,
+      "line": 39
+     },
+     {
+      "heading": "1.1.14",
+      "level": 2,
+      "line": 43
+     },
+     {
+      "heading": "1.1.13",
+      "level": 2,
+      "line": 47
+     },
+     {
+      "heading": "1.1.12",
+      "level": 2,
+      "line": 53
+     },
+     {
+      "heading": "1.1.11",
+      "level": 2,
+      "line": 57
+     },
+     {
+      "heading": "1.1.10",
+      "level": 2,
+      "line": 62
+     },
+     {
+      "heading": "1.1.9",
+      "level": 2,
+      "line": 66
+     },
+     {
+      "heading": "1.1.8",
+      "level": 2,
+      "line": 70
+     },
+     {
+      "heading": "1.1.7",
+      "level": 2,
+      "line": 74
+     },
+     {
+      "heading": "1.1.6",
+      "level": 2,
+      "line": 78
+     },
+     {
+      "heading": "1.1.5",
+      "level": 2,
+      "line": 82
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 20
+    }
+   },
+   {
+    "path": "packages/react/collapsible/README.md",
+    "language": "markdown",
+    "fileCategory": "docs",
+    "totalLines": 3,
+    "nonEmptyLines": 2,
+    "sections": [
+     {
+      "heading": "`react-collapsible`",
+      "level": 1,
+      "line": 1
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 1
+    }
+   },
+   {
+    "path": "packages/react/collapsible/package.json",
+    "language": "json",
+    "fileCategory": "config",
+    "totalLines": 79,
+    "nonEmptyLines": 79,
+    "sections": [
+     {
+      "heading": "name",
+      "level": 1,
+      "line": 2
+     },
+     {
+      "heading": "version",
+      "level": 1,
+      "line": 3
+     },
+     {
+      "heading": "license",
+      "level": 1,
+      "line": 4
+     },
+     {
+      "heading": "source",
+      "level": 1,
+      "line": 5
+     },
+     {
+      "heading": "main",
+      "level": 1,
+      "line": 6
+     },
+     {
+      "heading": "module",
+      "level": 1,
+      "line": 7
+     },
+     {
+      "heading": "publishConfig",
+      "level": 1,
+      "line": 8
+     },
+     {
+      "heading": "files",
+      "level": 1,
+      "line": 25
+     },
+     {
+      "heading": "sideEffects",
+      "level": 1,
+      "line": 29
+     },
+     {
+      "heading": "scripts",
+      "level": 1,
+      "line": 30
+     },
+     {
+      "heading": "dependencies",
+      "level": 1,
+      "line": 37
+     },
+     {
+      "heading": "devDependencies",
+      "level": 1,
+      "line": 47
+     },
+     {
+      "heading": "peerDependencies",
+      "level": 1,
+      "line": 56
+     },
+     {
+      "heading": "peerDependenciesMeta",
+      "level": 1,
+      "line": 62
+     },
+     {
+      "heading": "homepage",
+      "level": 1,
+      "line": 70
+     },
+     {
+      "heading": "repository",
+      "level": 1,
+      "line": 71
+     },
+     {
+      "heading": "bugs",
+      "level": 1,
+      "line": 76
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 17
+    }
+   },
+   {
+    "path": "packages/react/collapsible/tsconfig.json",
+    "language": "json",
+    "fileCategory": "config",
+    "totalLines": 9,
+    "nonEmptyLines": 9,
+    "sections": [
+     {
+      "heading": "extends",
+      "level": 1,
+      "line": 2
+     },
+     {
+      "heading": "compilerOptions",
+      "level": 1,
+      "line": 3
+     },
+     {
+      "heading": "include",
+      "level": 1,
+      "line": 7
+     },
+     {
+      "heading": "exclude",
+      "level": 1,
+      "line": 8
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 4
+    }
+   }
+  ]
+ },
+ {
+  "batchIndex": 31,
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+   "structure": {
+    "succeeded": 4,
+    "failed": 0
+   },
+   "callGraph": {
+    "succeeded": 0,
+    "failed": 0,
+    "skipped": 4
+   }
+  },
+  "results": [
+   {
+    "path": "packages/react/collection/CHANGELOG.md",
+    "language": "markdown",
+    "fileCategory": "docs",
+    "totalLines": 68,
+    "nonEmptyLines": 40,
+    "sections": [
+     {
+      "heading": "@radix-ui/react-collection",
+      "level": 1,
+      "line": 1
+     },
+     {
+      "heading": "1.2.0",
+      "level": 2,
+      "line": 3
+     },
+     {
+      "heading": "1.1.16",
+      "level": 2,
+      "line": 12
+     },
+     {
+      "heading": "1.1.15",
+      "level": 2,
+      "line": 16
+     },
+     {
+      "heading": "1.1.14",
+      "level": 2,
+      "line": 21
+     },
+     {
+      "heading": "1.1.13",
+      "level": 2,
+      "line": 25
+     },
+     {
+      "heading": "1.1.12",
+      "level": 2,
+      "line": 30
+     },
+     {
+      "heading": "1.1.11",
+      "level": 2,
+      "line": 34
+     },
+     {
+      "heading": "1.1.10",
+      "level": 2,
+      "line": 38
+     },
+     {
+      "heading": "1.1.9",
+      "level": 2,
+      "line": 42
+     },
+     {
+      "heading": "1.1.8",
+      "level": 2,
+      "line": 48
+     },
+     {
+      "heading": "1.1.7",
+      "level": 2,
+      "line": 52
+     },
+     {
+      "heading": "1.1.6",
+      "level": 2,
+      "line": 56
+     },
+     {
+      "heading": "1.1.5",
+      "level": 2,
+      "line": 60
+     },
+     {
+      "heading": "1.1.4",
+      "level": 2,
+      "line": 64
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 15
+    }
+   },
+   {
+    "path": "packages/react/collection/README.md",
+    "language": "markdown",
+    "fileCategory": "docs",
+    "totalLines": 3,
+    "nonEmptyLines": 2,
+    "sections": [
+     {
+      "heading": "`react-collection`",
+      "level": 1,
+      "line": 1
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 1
+    }
+   },
+   {
+    "path": "packages/react/collection/package.json",
+    "language": "json",
+    "fileCategory": "config",
+    "totalLines": 76,
+    "nonEmptyLines": 76,
+    "sections": [
+     {
+      "heading": "name",
+      "level": 1,
+      "line": 2
+     },
+     {
+      "heading": "version",
+      "level": 1,
+      "line": 3
+     },
+     {
+      "heading": "license",
+      "level": 1,
+      "line": 4
+     },
+     {
+      "heading": "source",
+      "level": 1,
+      "line": 5
+     },
+     {
+      "heading": "main",
+      "level": 1,
+      "line": 6
+     },
+     {
+      "heading": "module",
+      "level": 1,
+      "line": 7
+     },
+     {
+      "heading": "publishConfig",
+      "level": 1,
+      "line": 8
+     },
+     {
+      "heading": "files",
+      "level": 1,
+      "line": 25
+     },
+     {
+      "heading": "sideEffects",
+      "level": 1,
+      "line": 29
+     },
+     {
+      "heading": "scripts",
+      "level": 1,
+      "line": 30
+     },
+     {
+      "heading": "dependencies",
+      "level": 1,
+      "line": 37
+     },
+     {
+      "heading": "devDependencies",
+      "level": 1,
+      "line": 44
+     },
+     {
+      "heading": "peerDependencies",
+      "level": 1,
+      "line": 53
+     },
+     {
+      "heading": "peerDependenciesMeta",
+      "level": 1,
+      "line": 59
+     },
+     {
+      "heading": "homepage",
+      "level": 1,
+      "line": 67
+     },
+     {
+      "heading": "repository",
+      "level": 1,
+      "line": 68
+     },
+     {
+      "heading": "bugs",
+      "level": 1,
+      "line": 73
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 17
+    }
+   },
+   {
+    "path": "packages/react/collection/tsconfig.json",
+    "language": "json",
+    "fileCategory": "config",
+    "totalLines": 9,
+    "nonEmptyLines": 9,
+    "sections": [
+     {
+      "heading": "extends",
+      "level": 1,
+      "line": 2
+     },
+     {
+      "heading": "compilerOptions",
+      "level": 1,
+      "line": 3
+     },
+     {
+      "heading": "include",
+      "level": 1,
+      "line": 7
+     },
+     {
+      "heading": "exclude",
+      "level": 1,
+      "line": 8
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 4
+    }
+   }
+  ]
+ },
+ {
+  "batchIndex": 35,
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+   "structure": {
+    "succeeded": 4,
+    "failed": 0
+   },
+   "callGraph": {
+    "succeeded": 0,
+    "failed": 0,
+    "skipped": 4
+   }
+  },
+  "results": [
+   {
+    "path": "packages/react/dialog/CHANGELOG.md",
+    "language": "markdown",
+    "fileCategory": "docs",
+    "totalLines": 93,
+    "nonEmptyLines": 55,
+    "sections": [
+     {
+      "heading": "@radix-ui/react-dialog",
+      "level": 1,
+      "line": 1
+     },
+     {
+      "heading": "1.3.1",
+      "level": 2,
+      "line": 3
+     },
+     {
+      "heading": "1.3.0",
+      "level": 2,
+      "line": 8
+     },
+     {
+      "heading": "1.2.0",
+      "level": 2,
+      "line": 13
+     },
+     {
+      "heading": "1.1.23",
+      "level": 2,
+      "line": 19
+     },
+     {
+      "heading": "1.1.22",
+      "level": 2,
+      "line": 24
+     },
+     {
+      "heading": "1.1.21",
+      "level": 2,
+      "line": 28
+     },
+     {
+      "heading": "1.1.20",
+      "level": 2,
+      "line": 33
+     },
+     {
+      "heading": "1.1.19",
+      "level": 2,
+      "line": 39
+     },
+     {
+      "heading": "1.1.18",
+      "level": 2,
+      "line": 43
+     },
+     {
+      "heading": "1.1.17",
+      "level": 2,
+      "line": 47
+     },
+     {
+      "heading": "1.1.16",
+      "level": 2,
+      "line": 53
+     },
+     {
+      "heading": "1.1.15",
+      "level": 2,
+      "line": 61
+     },
+     {
+      "heading": "1.1.14",
+      "level": 2,
+      "line": 65
+     },
+     {
+      "heading": "1.1.13",
+      "level": 2,
+      "line": 70
+     },
+     {
+      "heading": "1.1.12",
+      "level": 2,
+      "line": 74
+     },
+     {
+      "heading": "1.1.11",
+      "level": 2,
+      "line": 78
+     },
+     {
+      "heading": "1.1.10",
+      "level": 2,
+      "line": 82
+     },
+     {
+      "heading": "1.1.9",
+      "level": 2,
+      "line": 86
+     },
+     {
+      "heading": "1.1.8",
+      "level": 2,
+      "line": 90
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 20
+    }
+   },
+   {
+    "path": "packages/react/dialog/README.md",
+    "language": "markdown",
+    "fileCategory": "docs",
+    "totalLines": 3,
+    "nonEmptyLines": 2,
+    "sections": [
+     {
+      "heading": "`react-dialog`",
+      "level": 1,
+      "line": 1
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 1
+    }
+   },
+   {
+    "path": "packages/react/dialog/package.json",
+    "language": "json",
+    "fileCategory": "config",
+    "totalLines": 86,
+    "nonEmptyLines": 86,
+    "sections": [
+     {
+      "heading": "name",
+      "level": 1,
+      "line": 2
+     },
+     {
+      "heading": "version",
+      "level": 1,
+      "line": 3
+     },
+     {
+      "heading": "license",
+      "level": 1,
+      "line": 4
+     },
+     {
+      "heading": "source",
+      "level": 1,
+      "line": 5
+     },
+     {
+      "heading": "main",
+      "level": 1,
+      "line": 6
+     },
+     {
+      "heading": "module",
+      "level": 1,
+      "line": 7
+     },
+     {
+      "heading": "publishConfig",
+      "level": 1,
+      "line": 8
+     },
+     {
+      "heading": "files",
+      "level": 1,
+      "line": 25
+     },
+     {
+      "heading": "sideEffects",
+      "level": 1,
+      "line": 29
+     },
+     {
+      "heading": "scripts",
+      "level": 1,
+      "line": 30
+     },
+     {
+      "heading": "dependencies",
+      "level": 1,
+      "line": 37
+     },
+     {
+      "heading": "devDependencies",
+      "level": 1,
+      "line": 54
+     },
+     {
+      "heading": "peerDependencies",
+      "level": 1,
+      "line": 63
+     },
+     {
+      "heading": "peerDependenciesMeta",
+      "level": 1,
+      "line": 69
+     },
+     {
+      "heading": "homepage",
+      "level": 1,
+      "line": 77
+     },
+     {
+      "heading": "repository",
+      "level": 1,
+      "line": 78
+     },
+     {
+      "heading": "bugs",
+      "level": 1,
+      "line": 83
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 17
+    }
+   },
+   {
+    "path": "packages/react/dialog/tsconfig.json",
+    "language": "json",
+    "fileCategory": "config",
+    "totalLines": 9,
+    "nonEmptyLines": 9,
+    "sections": [
+     {
+      "heading": "extends",
+      "level": 1,
+      "line": 2
+     },
+     {
+      "heading": "compilerOptions",
+      "level": 1,
+      "line": 3
+     },
+     {
+      "heading": "include",
+      "level": 1,
+      "line": 7
+     },
+     {
+      "heading": "exclude",
+      "level": 1,
+      "line": 8
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 4
+    }
+   }
+  ]
+ },
+ {
+  "batchIndex": 49,
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+   "structure": {
+    "succeeded": 4,
+    "failed": 0
+   },
+   "callGraph": {
+    "succeeded": 0,
+    "failed": 0,
+    "skipped": 4
+   }
+  },
+  "results": [
+   {
+    "path": "packages/react/password-toggle-field/CHANGELOG.md",
+    "language": "markdown",
+    "fileCategory": "docs",
+    "totalLines": 108,
+    "nonEmptyLines": 70,
+    "sections": [
+     {
+      "heading": "@radix-ui/react-password-toggle-field",
+      "level": 1,
+      "line": 1
+     },
+     {
+      "heading": "0.2.1",
+      "level": 2,
+      "line": 3
+     },
+     {
+      "heading": "0.2.0",
+      "level": 2,
+      "line": 7
+     },
+     {
+      "heading": "0.1.12",
+      "level": 2,
+      "line": 12
+     },
+     {
+      "heading": "0.1.11",
+      "level": 2,
+      "line": 16
+     },
+     {
+      "heading": "0.1.10",
+      "level": 2,
+      "line": 21
+     },
+     {
+      "heading": "0.1.9",
+      "level": 2,
+      "line": 25
+     },
+     {
+      "heading": "0.1.8",
+      "level": 2,
+      "line": 30
+     },
+     {
+      "heading": "0.1.7",
+      "level": 2,
+      "line": 36
+     },
+     {
+      "heading": "0.1.6",
+      "level": 2,
+      "line": 40
+     },
+     {
+      "heading": "0.1.5",
+      "level": 2,
+      "line": 44
+     },
+     {
+      "heading": "0.1.4",
+      "level": 2,
+      "line": 50
+     },
+     {
+      "heading": "0.1.3",
+      "level": 2,
+      "line": 55
+     },
+     {
+      "heading": "0.1.2",
+      "level": 2,
+      "line": 59
+     },
+     {
+      "heading": "0.1.1",
+      "level": 2,
+      "line": 63
+     },
+     {
+      "heading": "0.1.0",
+      "level": 2,
+      "line": 67
+     },
+     {
+      "heading": "Introduce new Password Toggle Field primitive",
+      "level": 3,
+      "line": 69
+     },
+     {
+      "heading": "Other updates",
+      "level": 3,
+      "line": 106
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 18
+    }
+   },
+   {
+    "path": "packages/react/password-toggle-field/README.md",
+    "language": "markdown",
+    "fileCategory": "docs",
+    "totalLines": 13,
+    "nonEmptyLines": 9,
+    "sections": [
+     {
+      "heading": "`react-password-toggle-field`",
+      "level": 1,
+      "line": 1
+     },
+     {
+      "heading": "Installation",
+      "level": 2,
+      "line": 3
+     },
+     {
+      "heading": "Usage",
+      "level": 2,
+      "line": 11
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 3
+    }
+   },
+   {
+    "path": "packages/react/password-toggle-field/package.json",
+    "language": "json",
+    "fileCategory": "config",
+    "totalLines": 81,
+    "nonEmptyLines": 81,
+    "sections": [
+     {
+      "heading": "name",
+      "level": 1,
+      "line": 2
+     },
+     {
+      "heading": "version",
+      "level": 1,
+      "line": 3
+     },
+     {
+      "heading": "license",
+      "level": 1,
+      "line": 4
+     },
+     {
+      "heading": "source",
+      "level": 1,
+      "line": 5
+     },
+     {
+      "heading": "main",
+      "level": 1,
+      "line": 6
+     },
+     {
+      "heading": "module",
+      "level": 1,
+      "line": 7
+     },
+     {
+      "heading": "publishConfig",
+      "level": 1,
+      "line": 8
+     },
+     {
+      "heading": "files",
+      "level": 1,
+      "line": 25
+     },
+     {
+      "heading": "sideEffects",
+      "level": 1,
+      "line": 30
+     },
+     {
+      "heading": "scripts",
+      "level": 1,
+      "line": 31
+     },
+     {
+      "heading": "dependencies",
+      "level": 1,
+      "line": 38
+     },
+     {
+      "heading": "devDependencies",
+      "level": 1,
+      "line": 49
+     },
+     {
+      "heading": "peerDependencies",
+      "level": 1,
+      "line": 58
+     },
+     {
+      "heading": "peerDependenciesMeta",
+      "level": 1,
+      "line": 64
+     },
+     {
+      "heading": "homepage",
+      "level": 1,
+      "line": 72
+     },
+     {
+      "heading": "repository",
+      "level": 1,
+      "line": 73
+     },
+     {
+      "heading": "bugs",
+      "level": 1,
+      "line": 78
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 17
+    }
+   },
+   {
+    "path": "packages/react/password-toggle-field/tsconfig.json",
+    "language": "json",
+    "fileCategory": "config",
+    "totalLines": 9,
+    "nonEmptyLines": 9,
+    "sections": [
+     {
+      "heading": "extends",
+      "level": 1,
+      "line": 2
+     },
+     {
+      "heading": "compilerOptions",
+      "level": 1,
+      "line": 3
+     },
+     {
+      "heading": "include",
+      "level": 1,
+      "line": 7
+     },
+     {
+      "heading": "exclude",
+      "level": 1,
+      "line": 8
+     }
+    ],
+    "metrics": {
+     "importCount": 0,
+     "exportCount": 0,
+     "functionCount": 0,
+     "classCount": 0,
+     "sectionCount": 4
+    }
+   }
+  ]
+ }
+]

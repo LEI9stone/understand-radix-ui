@@ -1,0 +1,841 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/popper/src/popper.tsx",
+      "type": "file",
+      "name": "popper.tsx",
+      "filePath": "packages/react/popper/src/popper.tsx",
+      "summary": "为浮层提供锚点、固定定位内容与箭头，以 Floating UI 中间件处理偏移、碰撞、可用尺寸、锚点遮蔽和动画变换原点。定位状态通过作用域上下文在部件间同步。",
+      "tags": [
+        "浮层定位",
+        "碰撞处理",
+        "复合组件"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/popper/src/popper.tsx:Popper",
+      "type": "function",
+      "name": "Popper",
+      "filePath": "packages/react/popper/src/popper.tsx",
+      "lineRange": [
+        64,
+        79
+      ],
+      "summary": "为锚点与最终 placement 建立共享状态和作用域 Provider。",
+      "tags": [
+        "浮层定位",
+        "碰撞处理",
+        "复合组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/popper/src/popper.tsx:transformOrigin",
+      "type": "function",
+      "name": "transformOrigin",
+      "filePath": "packages/react/popper/src/popper.tsx",
+      "lineRange": [
+        438,
+        473
+      ],
+      "summary": "结合放置方向、箭头尺寸与偏移计算浮层 CSS 动画原点的 Floating UI 中间件。",
+      "tags": [
+        "浮层定位",
+        "碰撞处理",
+        "复合组件"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/popper/src/popper.tsx:PopperAnchor",
+      "type": "function",
+      "name": "PopperAnchor",
+      "filePath": "packages/react/popper/src/popper.tsx",
+      "lineRange": [
+        93,
+        144
+      ],
+      "summary": "在提交阶段通过稳定引用回调登记 DOM 锚点，并支持虚拟测量对象和实际放置方向属性。",
+      "tags": [
+        "浮层定位",
+        "碰撞处理",
+        "复合组件"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/popper/src/popper.tsx:PopperContent",
+      "type": "function",
+      "name": "PopperContent",
+      "filePath": "packages/react/popper/src/popper.tsx",
+      "lineRange": [
+        182,
+        367
+      ],
+      "summary": "协调固定定位、偏移、碰撞翻转、尺寸测量、箭头数据和隐藏策略，向内容暴露定位结果及 CSS 变量。",
+      "tags": [
+        "浮层定位",
+        "碰撞处理",
+        "复合组件"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/popper/src/popper.tsx:PopperArrow",
+      "type": "function",
+      "name": "PopperArrow",
+      "filePath": "packages/react/popper/src/popper.tsx",
+      "lineRange": [
+        386,
+        430
+      ],
+      "summary": "按内容放置方向旋转和偏移箭头，在箭头无法居中时隐藏，并用包裹元素测量尺寸。",
+      "tags": [
+        "浮层定位",
+        "碰撞处理",
+        "复合组件"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/portal/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/portal/src/index.ts",
+      "summary": "公开 Portal/Root 与属性类型，连接传送门部件实现和消费方。",
+      "tags": [
+        "公共入口",
+        "barrel",
+        "类型导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/portal/src/portal.test.tsx",
+      "type": "file",
+      "name": "portal.test.tsx",
+      "filePath": "packages/react/portal/src/portal.test.tsx",
+      "summary": "验证 Portal 默认与自定义容器、属性与事件透传、引用绑定及 asChild 元素替换。",
+      "tags": [
+        "测试",
+        "Portal",
+        "属性透传"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/portal/src/portal.tsx",
+      "type": "file",
+      "name": "portal.tsx",
+      "filePath": "packages/react/portal/src/portal.tsx",
+      "summary": "将组件渲染到指定容器或挂载后的 document.body；通过布局 Effect 推迟默认容器选择，保留 asChild、属性和 ref 透传。",
+      "tags": [
+        "Portal",
+        "挂载时序",
+        "DOM组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/portal/src/portal.tsx:Portal",
+      "type": "function",
+      "name": "Portal",
+      "filePath": "packages/react/portal/src/portal.tsx",
+      "lineRange": [
+        19,
+        29
+      ],
+      "summary": "支持自定义容器与 DOM 组合的 Portal 部件；默认 body 容器仅在客户端挂载后启用。",
+      "tags": [
+        "Portal",
+        "挂载时序",
+        "DOM组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/presence/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/presence/src/index.ts",
+      "summary": "公开 Presence 挂载存在性组件及其 Root 别名与属性类型。",
+      "tags": [
+        "公共入口",
+        "barrel",
+        "类型导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/primitive/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/primitive/src/index.ts",
+      "summary": "公开 Primitive DOM 映射、Root 别名、自定义事件派发函数及相关泛型属性。",
+      "tags": [
+        "公共入口",
+        "barrel",
+        "类型导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/primitive/src/primitive.test.tsx",
+      "type": "file",
+      "name": "primitive.test.tsx",
+      "filePath": "packages/react/primitive/src/primitive.test.tsx",
+      "summary": "覆盖 Primitive 标签及 asChild 子元素的未消费属性、样式、事件处理和 DOM ref 透传契约。",
+      "tags": [
+        "测试",
+        "DOM原语",
+        "组件组合"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "file",
+      "name": "primitive.tsx",
+      "filePath": "packages/react/primitive/src/primitive.tsx",
+      "summary": "基于预定义 DOM 标签生成统一 Primitive 映射，借助 Slot 实现 asChild；另提供通过 flushSync 保证离散自定义事件更新顺序的工具。",
+      "tags": [
+        "DOM原语",
+        "asChild",
+        "离散事件"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/primitive/src/primitive.tsx:dispatchDiscreteCustomEvent",
+      "type": "function",
+      "name": "dispatchDiscreteCustomEvent",
+      "filePath": "packages/react/primitive/src/primitive.tsx",
+      "lineRange": [
+        103,
+        105
+      ],
+      "summary": "在 ReactDOM.flushSync 中同步派发自定义事件，避免离散事件处理中的更新被意外批处理。",
+      "tags": [
+        "DOM原语",
+        "asChild",
+        "离散事件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/progress/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/progress/src/index.ts",
+      "summary": "公开进度作用域、Root/Indicator 部件、别名与属性类型。",
+      "tags": [
+        "公共入口",
+        "barrel",
+        "类型导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/progress/src/progress.test.tsx",
+      "type": "file",
+      "name": "progress.test.tsx",
+      "filePath": "packages/react/progress/src/progress.test.tsx",
+      "summary": "验证进度条 Root 和 Indicator 的 DOM 属性、引用、事件与 asChild 透传，以及渲染后的 ARIA 和状态属性。",
+      "tags": [
+        "测试",
+        "进度条",
+        "属性透传"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/progress/src/progress.tsx",
+      "type": "file",
+      "name": "progress.tsx",
+      "filePath": "packages/react/progress/src/progress.tsx",
+      "summary": "实现可访问的进度条及指示器，校验最大值与进度值并规范化无效输入，将 loading、complete、indeterminate 状态暴露为 ARIA 和 data 属性。",
+      "tags": [
+        "进度条",
+        "可访问性",
+        "值校验"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/progress/src/progress.tsx:Progress",
+      "type": "function",
+      "name": "Progress",
+      "filePath": "packages/react/progress/src/progress.tsx",
+      "lineRange": [
+        32,
+        73
+      ],
+      "summary": "校验 max/value、生成读屏进度标签并提供 progressbar 语义和共享进度上下文。",
+      "tags": [
+        "进度条",
+        "可访问性",
+        "值校验"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/progress/src/progress.tsx:ProgressIndicator",
+      "type": "function",
+      "name": "ProgressIndicator",
+      "filePath": "packages/react/progress/src/progress.tsx",
+      "lineRange": [
+        84,
+        102
+      ],
+      "summary": "从进度上下文读取当前值与最大值，向指示器透传 DOM 属性和显式 data-state。",
+      "tags": [
+        "进度条",
+        "可访问性",
+        "值校验"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radio-group/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/radio-group/src/index.ts",
+      "summary": "公开单选组根与选项、指示器，并暴露不稳定的 Provider/Trigger/BubbleInput 细粒度部件。",
+      "tags": [
+        "公共入口",
+        "barrel",
+        "类型导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/accessible-icon.ts",
+      "type": "file",
+      "name": "accessible-icon.ts",
+      "filePath": "packages/react/radix-ui/src/accessible-icon.ts",
+      "summary": "为 radix-ui 的 accessible-icon 子路径转发独立可访问图标包的全部公共导出。",
+      "tags": [
+        "聚合子入口",
+        "barrel",
+        "可访问图标"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/accordion.ts",
+      "type": "file",
+      "name": "accordion.ts",
+      "filePath": "packages/react/radix-ui/src/accordion.ts",
+      "summary": "为 radix-ui 的 accordion 子路径转发独立手风琴包的全部公共导出。",
+      "tags": [
+        "聚合子入口",
+        "barrel",
+        "手风琴"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/alert-dialog.ts",
+      "type": "file",
+      "name": "alert-dialog.ts",
+      "filePath": "packages/react/radix-ui/src/alert-dialog.ts",
+      "summary": "为 radix-ui 的 alert-dialog 子路径转发独立警示对话框包的全部公共导出。",
+      "tags": [
+        "聚合子入口",
+        "barrel",
+        "警示对话框"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/aspect-ratio.ts",
+      "type": "file",
+      "name": "aspect-ratio.ts",
+      "filePath": "packages/react/radix-ui/src/aspect-ratio.ts",
+      "summary": "为 radix-ui 的 aspect-ratio 子路径转发独立宽高比容器包的全部公共导出。",
+      "tags": [
+        "聚合子入口",
+        "barrel",
+        "宽高比容器"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/avatar.ts",
+      "type": "file",
+      "name": "avatar.ts",
+      "filePath": "packages/react/radix-ui/src/avatar.ts",
+      "summary": "为 radix-ui 的 avatar 子路径转发独立头像包的全部公共导出。",
+      "tags": [
+        "聚合子入口",
+        "barrel",
+        "头像"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/checkbox.ts",
+      "type": "file",
+      "name": "checkbox.ts",
+      "filePath": "packages/react/radix-ui/src/checkbox.ts",
+      "summary": "为 radix-ui 的 checkbox 子路径转发独立复选框包的全部公共导出。",
+      "tags": [
+        "聚合子入口",
+        "barrel",
+        "复选框"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/collapsible.ts",
+      "type": "file",
+      "name": "collapsible.ts",
+      "filePath": "packages/react/radix-ui/src/collapsible.ts",
+      "summary": "为 radix-ui 的 collapsible 子路径转发独立折叠容器包的全部公共导出。",
+      "tags": [
+        "聚合子入口",
+        "barrel",
+        "折叠容器"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/context-menu.ts",
+      "type": "file",
+      "name": "context-menu.ts",
+      "filePath": "packages/react/radix-ui/src/context-menu.ts",
+      "summary": "为 radix-ui 的 context-menu 子路径转发独立上下文菜单包的全部公共导出。",
+      "tags": [
+        "聚合子入口",
+        "barrel",
+        "上下文菜单"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/dialog.ts",
+      "type": "file",
+      "name": "dialog.ts",
+      "filePath": "packages/react/radix-ui/src/dialog.ts",
+      "summary": "为 radix-ui 的 dialog 子路径转发独立对话框包的全部公共导出。",
+      "tags": [
+        "聚合子入口",
+        "barrel",
+        "对话框"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/direction.ts",
+      "type": "file",
+      "name": "direction.ts",
+      "filePath": "packages/react/radix-ui/src/direction.ts",
+      "summary": "为 radix-ui 的 direction 子路径转发独立文字方向包的全部公共导出。",
+      "tags": [
+        "聚合子入口",
+        "barrel",
+        "文字方向"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/dropdown-menu.ts",
+      "type": "file",
+      "name": "dropdown-menu.ts",
+      "filePath": "packages/react/radix-ui/src/dropdown-menu.ts",
+      "summary": "为 radix-ui 的 dropdown-menu 子路径转发独立下拉菜单包的全部公共导出。",
+      "tags": [
+        "聚合子入口",
+        "barrel",
+        "下拉菜单"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/form.ts",
+      "type": "file",
+      "name": "form.ts",
+      "filePath": "packages/react/radix-ui/src/form.ts",
+      "summary": "为 radix-ui 的 form 子路径转发独立表单包的全部公共导出。",
+      "tags": [
+        "聚合子入口",
+        "barrel",
+        "表单"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/hover-card.ts",
+      "type": "file",
+      "name": "hover-card.ts",
+      "filePath": "packages/react/radix-ui/src/hover-card.ts",
+      "summary": "为 radix-ui 的 hover-card 子路径转发独立悬停卡片包的全部公共导出。",
+      "tags": [
+        "聚合子入口",
+        "barrel",
+        "悬停卡片"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "function:packages/react/popper/src/popper.tsx:Popper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "function:packages/react/popper/src/popper.tsx:Popper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "function:packages/react/popper/src/popper.tsx:transformOrigin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "function:packages/react/popper/src/popper.tsx:PopperAnchor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "function:packages/react/popper/src/popper.tsx:PopperAnchor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "function:packages/react/popper/src/popper.tsx:PopperContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "function:packages/react/popper/src/popper.tsx:PopperContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "function:packages/react/popper/src/popper.tsx:PopperArrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "function:packages/react/popper/src/popper.tsx:PopperArrow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/portal/src/portal.test.tsx",
+      "target": "file:packages/react/portal/src/portal.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/portal/src/portal.tsx",
+      "target": "function:packages/react/portal/src/portal.tsx:Portal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/portal/src/portal.tsx",
+      "target": "function:packages/react/portal/src/portal.tsx:Portal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/primitive/src/primitive.test.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/primitive/src/primitive.tsx",
+      "target": "function:packages/react/primitive/src/primitive.tsx:dispatchDiscreteCustomEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/primitive/src/primitive.tsx",
+      "target": "function:packages/react/primitive/src/primitive.tsx:dispatchDiscreteCustomEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/progress/src/progress.test.tsx",
+      "target": "file:packages/react/progress/src/progress.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/progress/src/progress.tsx",
+      "target": "function:packages/react/progress/src/progress.tsx:Progress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/progress/src/progress.tsx",
+      "target": "function:packages/react/progress/src/progress.tsx:Progress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/progress/src/progress.tsx",
+      "target": "function:packages/react/progress/src/progress.tsx:ProgressIndicator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/progress/src/progress.tsx",
+      "target": "function:packages/react/progress/src/progress.tsx:ProgressIndicator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "file:packages/react/arrow/src/arrow.tsx",
+      "type": "depends_on",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "file:packages/react/context/src/context.tsx",
+      "type": "depends_on",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "file:packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "type": "depends_on",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "depends_on",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/popper/src/popper.tsx",
+      "target": "file:packages/react/use-size/src/use-size.tsx",
+      "type": "depends_on",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "function:packages/react/popper/src/popper.tsx:PopperContent",
+      "target": "function:packages/react/popper/src/popper.tsx:transformOrigin",
+      "type": "calls",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/portal/src/portal.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/portal/src/portal.tsx",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "depends_on",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/primitive/src/primitive.tsx",
+      "target": "file:packages/react/slot/src/slot.tsx",
+      "type": "depends_on",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/progress/src/progress.tsx",
+      "target": "file:packages/react/context/src/context.tsx",
+      "type": "depends_on",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/progress/src/progress.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/portal/src/index.ts",
+      "target": "file:packages/react/portal/src/portal.tsx",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/presence/src/index.ts",
+      "target": "file:packages/react/presence/src/presence.tsx",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/primitive/src/index.ts",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/progress/src/index.ts",
+      "target": "file:packages/react/progress/src/progress.tsx",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radio-group/src/index.ts",
+      "target": "file:packages/react/radio-group/src/radio-group.tsx",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/accessible-icon.ts",
+      "target": "file:packages/react/accessible-icon/src/index.ts",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/accordion.ts",
+      "target": "file:packages/react/accordion/src/index.ts",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/alert-dialog.ts",
+      "target": "file:packages/react/alert-dialog/src/index.ts",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/aspect-ratio.ts",
+      "target": "file:packages/react/aspect-ratio/src/index.ts",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/avatar.ts",
+      "target": "file:packages/react/avatar/src/index.ts",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/checkbox.ts",
+      "target": "file:packages/react/checkbox/src/index.ts",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/collapsible.ts",
+      "target": "file:packages/react/collapsible/src/index.ts",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/context-menu.ts",
+      "target": "file:packages/react/context-menu/src/index.ts",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/dialog.ts",
+      "target": "file:packages/react/dialog/src/index.ts",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/direction.ts",
+      "target": "file:packages/react/direction/src/index.ts",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/dropdown-menu.ts",
+      "target": "file:packages/react/dropdown-menu/src/index.ts",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/form.ts",
+      "target": "file:packages/react/form/src/index.ts",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:packages/react/radix-ui/src/hover-card.ts",
+      "target": "file:packages/react/hover-card/src/index.ts",
+      "type": "exports",
+      "weight": 0.8,
+      "direction": "forward"
+    }
+  ]
+}

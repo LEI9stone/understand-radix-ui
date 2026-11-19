@@ -1,0 +1,93 @@
+[
+  {
+    "order": 1,
+    "title": "项目定位与设计原则",
+    "description": "先从项目概览理解 Radix Primitives 的定位：它为设计系统提供低层、可访问且可定制的组件基础。随后阅读设计哲学，建立 DOM 一对一映射、组合优先、受控与非受控状态以及 data-state 的共同约定。工作区配置说明这些能力如何组织在 apps、internal 和独立组件包中，为后续阅读提供目录地图。",
+    "nodeIds": ["document:README.md", "document:philosophy.md", "config:pnpm-workspace.yaml"]
+  },
+  {
+    "order": 2,
+    "title": "DOM 与插槽组合",
+    "description": "沿着上一站的 DOM 组合原则，先看复用最广的 Primitive 如何生成统一宿主元素，再看 Slot 怎样把属性、事件、样式和 ref 合并到消费者提供的子元素。compose-refs 让内部逻辑和消费者同时持有同一个 DOM 引用，核心事件工具则让消费者有机会取消内部行为。VisuallyHidden 展示了基础部件如何在不强制视觉外观的前提下保留辅助技术可读内容。",
+    "nodeIds": ["file:packages/react/primitive/src/primitive.tsx", "file:packages/react/slot/src/slot.tsx", "file:packages/react/compose-refs/src/compose-refs.tsx", "file:packages/core/primitive/src/primitive.tsx", "file:packages/react/visually-hidden/src/visually-hidden.tsx"],
+    "languageLesson": "forwardRef 负责把引用交给真实宿主，泛型属性类型保留宿主契约；asChild 通过 Slot 合并已有元素，让组合过程不必额外增加 DOM 包裹。"
+  },
+  {
+    "order": 3,
+    "title": "作用域与共享状态",
+    "description": "具备宿主组合能力后，再理解各部件如何共享状态：Context 工厂为嵌套复合组件建立独立作用域，并在缺少 Provider 时给出诊断。useControllableState 统一外部 prop 与内部默认值的更新路径，useCallbackRef 稳定函数身份而仍调用最新回调。方向与稳定 ID 工具把国际化和 ARIA 关联变成各组件可以复用的基础能力。",
+    "nodeIds": ["file:packages/react/context/src/create-context.tsx", "file:packages/react/use-controllable-state/src/use-controllable-state.tsx", "file:packages/react/use-callback-ref/src/use-callback-ref.tsx", "file:packages/react/direction/src/direction.tsx", "file:packages/react/id/src/id.tsx"],
+    "languageLesson": "受控组件以 prop 为值来源，非受控组件保存内部状态；稳定回调引用把函数身份与其读取的最新闭包分开，减少 effect 和消费者的无效更新。"
+  },
+  {
+    "order": 4,
+    "title": "集合与键盘焦点",
+    "description": "在共享状态之上，Collection 进一步解决分散子部件的注册与 DOM 顺序问题；入口同时保留旧实现和实验新实现，阅读时需要辨认消费者实际采用哪套 API。RovingFocusGroup 以集合为基础维护组内唯一 Tab 停靠点，并结合方向、循环配置和激活项处理键盘导航。最后对照 Tabs，观察通用焦点机制如何与选中状态、自动或手动激活以及面板 ARIA 关联组合。",
+    "nodeIds": ["file:packages/react/collection/src/index.ts", "file:packages/react/collection/src/collection-legacy.tsx", "file:packages/react/collection/src/collection.tsx", "file:packages/react/roving-focus/src/roving-focus-group.tsx", "file:packages/react/tabs/src/tabs.tsx"],
+    "languageLesson": "复合组件的 React 子树顺序不一定等于最终 DOM 顺序；集合注册与 DOM 排序让键盘导航跟随用户实际看到的项目排列。"
+  },
+  {
+    "order": 5,
+    "title": "挂载与动画生命周期",
+    "description": "前一站处理可见部件之间的导航，这一站转向内容何时存在、出现在哪里。Portal 把 React 内容渲染到指定 DOM 容器，Presence 则利用状态机和 CSS 动画事件延迟卸载，为退出动画留出生命周期。继续看 Collapsible 如何测量并暴露内容尺寸，再看 Accordion 如何在其上叠加单项或多项展开，理解基础能力逐层组合的方式。",
+    "nodeIds": ["file:packages/react/portal/src/portal.tsx", "file:packages/react/presence/src/presence.tsx", "file:packages/react/presence/src/use-state-machine.tsx", "file:packages/react/collapsible/src/collapsible.tsx", "file:packages/react/accordion/src/accordion.tsx"],
+    "languageLesson": "关闭状态与卸载不是同一时刻；用明确状态机描述动画期间的过渡，能让组件在保留 DOM 时仍准确表达交互状态。"
+  },
+  {
+    "order": 6,
+    "title": "定位与模态交互",
+    "description": "有了 Portal 和挂载生命周期，浮层还需要定位、焦点以及外部交互边界。Popper 使用 Floating UI 处理中间件定位和碰撞，FocusScope 与焦点守卫负责焦点限制、循环和恢复，DismissableLayer 协调外部指针、焦点与 Escape 关闭。核心 aria-hidden 工具以可撤销的屏蔽操作处理模态背景，使视觉层级与辅助技术访问范围保持一致。",
+    "nodeIds": ["file:packages/react/popper/src/popper.tsx", "file:packages/react/focus-scope/src/focus-scope.tsx", "file:packages/react/focus-guards/src/focus-guards.tsx", "file:packages/react/dismissable-layer/src/dismissable-layer.tsx", "file:packages/core/primitive/src/aria-hidden.ts"]
+  },
+  {
+    "order": 7,
+    "title": "以对话框串起组合",
+    "description": "现在以依赖面较广的 Dialog 汇总前面各站：它把状态、Portal、Presence、焦点陷阱、可关闭层、滚动锁与背景屏蔽组合为模态或非模态对话框。对照 AlertDialog 可以看到强制模态、取消按钮初始焦点和禁止外部关闭如何形成更具体的交互约束，Popover 则加入锚点定位和不同外部交互策略。配合故事和单元测试，把源码中的部件职责对应到嵌套浮层、焦点恢复及标题描述关联的实际场景。",
+    "nodeIds": ["file:packages/react/dialog/src/dialog.tsx", "file:packages/react/alert-dialog/src/alert-dialog.tsx", "file:packages/react/popover/src/popover.tsx", "file:apps/storybook/stories/dialog.stories.tsx", "file:packages/react/dialog/src/dialog.test.tsx"]
+  },
+  {
+    "order": 8,
+    "title": "菜单家族的复用边界",
+    "description": "沿用对话框中的分层交互思路，Menu 把键盘导航、输入前缀搜索、选择事件、子菜单和指针宽容区集中到共享实现。DropdownMenu、ContextMenu 与 Menubar 在它上面分别加入按钮触发、右键或长按触发以及菜单栏切换规则。再对照 NavigationMenu 的共享视口和导航切换，可以辨认哪些机制能够复用，哪些交互模型需要独立实现。",
+    "nodeIds": ["file:packages/react/menu/src/menu.tsx", "file:packages/react/dropdown-menu/src/dropdown-menu.tsx", "file:packages/react/context-menu/src/context-menu.tsx", "file:packages/react/menubar/src/menubar.tsx", "file:packages/react/navigation-menu/src/navigation-menu.tsx"]
+  },
+  {
+    "order": 9,
+    "title": "表单状态与原生契约",
+    "description": "菜单选择之后，再看组件如何把自定义交互接回浏览器原生表单契约。Checkbox、Switch 和 RadioGroup 将可访问触发器与隐藏原生输入组合，区分用户操作和程序更新，兼顾提交、重置与事件传播；Select 进一步把选项集合、搜索、焦点和隐藏原生 select 连在一起。Form 则整合原生有效性、同步异步校验、错误消息关联和首个无效字段聚焦，补全从状态到校验反馈的路径。",
+    "nodeIds": ["file:packages/react/checkbox/src/checkbox.tsx", "file:packages/react/switch/src/switch.tsx", "file:packages/react/radio-group/src/radio-group.tsx", "file:packages/react/select/src/select.tsx", "file:packages/react/form/src/form.tsx"]
+  },
+  {
+    "order": 10,
+    "title": "连续输入与通知反馈",
+    "description": "前一站建立了状态与表单联动，这一站观察更复杂的连续交互和时间行为。Slider 处理坐标、方向、数值精度、多 Thumb 顺序及提交时机，ScrollArea 则把原生滚动、尺寸测量和自定义滚动条连接起来。Tooltip 的打开延迟与指针宽容区，以及 Toast 的计时暂停、滑动关闭、焦点导航和播报，展示同一批基础能力如何服务不同交互反馈。",
+    "nodeIds": ["file:packages/react/slider/src/slider.tsx", "file:packages/react/scroll-area/src/scroll-area.tsx", "file:packages/react/tooltip/src/tooltip.tsx", "file:packages/react/toast/src/toast.tsx"]
+  },
+  {
+    "order": 11,
+    "title": "公共入口与发布边界",
+    "description": "理解代表组件后，回到消费者实际进入代码库的位置：这是组件库，没有统一启动应用的主函数。radix-ui 总入口把独立组件包组织为命名空间，子路径文件转发具体组件包，独立包入口再公开部件、别名和类型。结合聚合包清单与 internal 入口，可以区分公开消费面、实验接口和内部组合工具，并沿导出关系追到前面读过的实现。",
+    "nodeIds": ["file:packages/react/radix-ui/src/index.ts", "file:packages/react/radix-ui/src/dialog.ts", "file:packages/react/dialog/src/index.ts", "file:packages/react/radix-ui/src/internal.ts", "config:packages/react/radix-ui/package.json"],
+    "languageLesson": "barrel 入口重新导出已有模块；聚合入口、组件子路径与包发布 exports 共同决定消费者能访问的模块边界，不代表存在额外业务运行层。"
+  },
+  {
+    "order": 12,
+    "title": "行为测试与演示场景",
+    "description": "从公共入口回到维护者视角，先看 Vitest 如何组织单元和 RSC 项目，再看引用稳定性工具如何捕捉 ref 反复拆装导致的更新循环。Storybook 为组件状态、布局和嵌套组合提供可观察场景，Playwright 配置把真实浏览器回归接到本地 Storybook。以 Dialog 端到端用例对照故事，理解测试为何需要覆盖鼠标、触控、键盘、焦点与跨浮层边界。",
+    "nodeIds": ["file:vitest.config.mts", "file:internal/test-utils/ref-stability.tsx", "file:apps/storybook/.storybook/main.ts", "file:playwright.config.ts", "file:e2e/dialog.spec.ts"]
+  },
+  {
+    "order": 13,
+    "title": "服务端与水合兼容",
+    "description": "浏览器行为之外，库还必须保证服务端导入、RSC 边界和客户端水合不会破坏组合契约。RSC 测试在 react-server 条件下检查可发布包，Next.js 的服务端页面则直接在模块作用域创建 Slot 工厂验证导入安全；生产构建断言进一步检查 Primitive 穿过客户端边界后的属性合并。最后对照水合检测和安全布局 effect，理解共享 Hook 如何为这些运行环境提供分支。",
+    "nodeIds": ["file:scripts/rsc-compatibility.rsc.test.ts", "file:apps/ssr-testing/app/rsc/page.tsx", "file:apps/ssr-testing/scripts/assert-primitive-merge.mjs", "file:packages/react/use-is-hydrated/src/use-is-hydrated.tsx", "file:packages/react/use-layout-effect/src/use-layout-effect.tsx"],
+    "languageLesson": "use client 声明模块边界；服务端能够导入一个包，与能够在服务端直接调用其中每个导出，是不同的兼容要求。"
+  },
+  {
+    "order": 14,
+    "title": "构建与版本交付",
+    "description": "最后把已经理解的组件和兼容性契约接到交付流程。根包脚本统一构建、测试和版本命令，内部构建器生成 CJS、ESM 与类型声明并清理不应泄漏的 React 模块扩展。Changesets 配置与发布文档定义版本记录和快照策略，发布流水线则区分 main 快照与 stable 正式发布，并在正式发布后创建回流 main 的待审查 PR。",
+    "nodeIds": ["config:package.json", "file:internal/builder/builder.js", "config:.changeset/config.json", "document:release-process.md", "pipeline:.github/workflows/publish.yml"],
+    "languageLesson": "源码入口用于工作区开发，发布清单将消费者导向构建后的模块和声明文件；理解这两组路径有助于定位只在发布产物中出现的类型或兼容性问题。"
+  }
+]

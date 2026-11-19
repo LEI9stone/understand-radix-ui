@@ -1,0 +1,1102 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "file",
+      "name": "primitive.tsx",
+      "filePath": "packages/core/primitive/src/primitive.tsx",
+      "summary": "提供可取消的事件处理器组合与所属 document/window 查询，支持跨 iframe 及 aria-activedescendant 的活动元素定位。",
+      "tags": [
+        "事件组合",
+        "焦点查询",
+        "DOM工具"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/core/primitive/src/primitive.tsx:composeEventHandlers",
+      "type": "function",
+      "name": "composeEventHandlers",
+      "filePath": "packages/core/primitive/src/primitive.tsx",
+      "lineRange": [
+        4,
+        16
+      ],
+      "summary": "先调用使用者事件处理器，再根据 defaultPrevented 和配置决定是否执行组件内部处理器。",
+      "tags": [
+        "事件组合",
+        "泛型",
+        "取消行为"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/primitive/src/primitive.tsx:getOwnerWindow",
+      "type": "function",
+      "name": "getOwnerWindow",
+      "filePath": "packages/core/primitive/src/primitive.tsx",
+      "lineRange": [
+        18,
+        24
+      ],
+      "summary": "在 DOM 环境中返回节点所属窗口，缺少所属 document 时回退当前 window；服务端调用会抛出明确错误。",
+      "tags": [
+        "DOM环境",
+        "窗口查询",
+        "服务端兼容"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/primitive/src/primitive.tsx:getOwnerDocument",
+      "type": "function",
+      "name": "getOwnerDocument",
+      "filePath": "packages/core/primitive/src/primitive.tsx",
+      "lineRange": [
+        26,
+        32
+      ],
+      "summary": "在 DOM 环境中选择节点所属 document，缺省回退当前 document，并阻止服务端直接访问。",
+      "tags": [
+        "DOM环境",
+        "文档查询",
+        "服务端兼容"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/primitive/src/primitive.tsx:getActiveElement",
+      "type": "function",
+      "name": "getActiveElement",
+      "filePath": "packages/core/primitive/src/primitive.tsx",
+      "lineRange": [
+        38,
+        64
+      ],
+      "summary": "取得所属文档活动元素，递归穿透可访问 iframe，并可解析 aria-activedescendant 指向的逻辑焦点。",
+      "tags": [
+        "焦点查询",
+        "跨框架",
+        "ARIA"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/primitive/src/primitive.tsx:isFrame",
+      "type": "function",
+      "name": "isFrame",
+      "filePath": "packages/core/primitive/src/primitive.tsx",
+      "lineRange": [
+        66,
+        68
+      ],
+      "summary": "使用标签名判断元素是否为 iframe，并通过类型谓词缩窄其 TypeScript 类型。",
+      "tags": [
+        "类型守卫",
+        "DOM查询",
+        "框架元素"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/core/primitive/src/types.ts",
+      "type": "file",
+      "name": "types.ts",
+      "filePath": "packages/core/primitive/src/types.ts",
+      "summary": "以平台计时器函数的 ReturnType 定义 Timeout、Interval 和 Immediate，统一不同运行环境的句柄类型。",
+      "tags": [
+        "类型定义",
+        "计时器",
+        "平台兼容"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/core/rect/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/core/rect/src/index.ts",
+      "summary": "导出元素矩形观察器及 Measurable 类型，形成布局测量工具包入口。",
+      "tags": [
+        "入口点",
+        "导出聚合",
+        "布局测量"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/core/rect/src/observe-element-rect.ts",
+      "type": "file",
+      "name": "observe-element-rect.ts",
+      "filePath": "packages/core/rect/src/observe-element-rect.ts",
+      "summary": "以共享动画帧循环观察多个可测对象的矩形变化，把 DOM 读取与回调阶段分开，避免每个订阅各自建立轮询。",
+      "tags": [
+        "布局测量",
+        "动画帧",
+        "订阅管理"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/core/rect/src/observe-element-rect.ts:observeElementRect",
+      "type": "function",
+      "name": "observeElementRect",
+      "filePath": "packages/core/rect/src/observe-element-rect.ts",
+      "lineRange": [
+        11,
+        55
+      ],
+      "summary": "注册可测对象和变化回调，复用已有订阅与动画循环；最后一个订阅移除时停止轮询并回收记录。",
+      "tags": [
+        "布局测量",
+        "订阅管理",
+        "清理机制"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/rect/src/observe-element-rect.ts:runLoop",
+      "type": "function",
+      "name": "runLoop",
+      "filePath": "packages/core/rect/src/observe-element-rect.ts",
+      "lineRange": [
+        70,
+        91
+      ],
+      "summary": "批量读取所有目标矩形，汇集变化后再分发回调，随后安排下一动画帧。",
+      "tags": [
+        "动画帧",
+        "布局测量",
+        "批量读取"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/rect/src/observe-element-rect.ts:rectEquals",
+      "type": "function",
+      "name": "rectEquals",
+      "filePath": "packages/core/rect/src/observe-element-rect.ts",
+      "lineRange": [
+        97,
+        106
+      ],
+      "summary": "比较两个矩形的尺寸和四边坐标，判断是否需要通知布局订阅者。",
+      "tags": [
+        "几何比较",
+        "纯函数",
+        "变化检测"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/accessible-icon/src/accesible-icon.test.tsx",
+      "type": "file",
+      "name": "accesible-icon.test.tsx",
+      "filePath": "packages/react/accessible-icon/src/accesible-icon.test.tsx",
+      "summary": "验证 AccessibleIcon 提供可查询的无障碍名称、隐藏原始 SVG 并通过 axe 检查基础可访问性。",
+      "tags": [
+        "测试",
+        "图标",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/accessible-icon/src/accessible-icon.tsx",
+      "type": "file",
+      "name": "accessible-icon.tsx",
+      "filePath": "packages/react/accessible-icon/src/accessible-icon.tsx",
+      "summary": "将单个图标从可访问树和键盘焦点中排除，同时渲染视觉隐藏标签，让读屏用户获取图标含义。",
+      "tags": [
+        "组件",
+        "图标",
+        "读屏标签"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/accessible-icon/src/accessible-icon.tsx:AccessibleIcon",
+      "type": "function",
+      "name": "AccessibleIcon",
+      "filePath": "packages/react/accessible-icon/src/accessible-icon.tsx",
+      "lineRange": [
+        13,
+        25
+      ],
+      "summary": "克隆唯一 SVG 子节点并设置 aria-hidden 与不可聚焦属性，再用 VisuallyHidden 输出读屏标签。",
+      "tags": [
+        "组件",
+        "读屏标签",
+        "图标"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/accessible-icon/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/accessible-icon/src/index.ts",
+      "summary": "公开 AccessibleIcon、Root 别名与属性类型，并标记客户端模块边界。",
+      "tags": [
+        "入口点",
+        "客户端边界",
+        "导出聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/accordion/src/accordion.test.tsx",
+      "type": "file",
+      "name": "accordion.test.tsx",
+      "filePath": "packages/react/accordion/src/accordion.test.tsx",
+      "summary": "验证手风琴单选和多选、受控值、展开关闭和禁用状态，并覆盖键盘循环导航、方向布局及 axe 可访问性检查。",
+      "tags": [
+        "测试",
+        "手风琴",
+        "键盘导航"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/accordion/src/accordion.tsx",
+      "type": "file",
+      "name": "accordion.tsx",
+      "filePath": "packages/react/accordion/src/accordion.tsx",
+      "summary": "在 Collapsible 基础上构建单选与多选手风琴，利用作用域 Context 和触发器集合协调展开状态、ARIA 关联和方向键焦点导航。",
+      "tags": [
+        "组件",
+        "手风琴",
+        "键盘导航",
+        "状态管理"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/accordion/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/accordion/src/index.ts",
+      "summary": "导出手风琴 Root、Item、Header、Trigger、Content、作用域工厂及对应属性类型。",
+      "tags": [
+        "入口点",
+        "导出聚合",
+        "客户端边界"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/alert-dialog/src/alert-dialog.test.tsx",
+      "type": "file",
+      "name": "alert-dialog.test.tsx",
+      "filePath": "packages/react/alert-dialog/src/alert-dialog.test.tsx",
+      "summary": "验证警示对话框的模态开启、取消按钮初始焦点、ARIA 可访问性以及各部件的属性与 asChild 透传。",
+      "tags": [
+        "测试",
+        "警示对话框",
+        "焦点管理"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "type": "file",
+      "name": "alert-dialog.tsx",
+      "filePath": "packages/react/alert-dialog/src/alert-dialog.tsx",
+      "summary": "在 Dialog 上构建强制模态的警示对话框，打开时优先聚焦取消按钮，阻止外部交互关闭，并提供操作、取消和语义描述部件。",
+      "tags": [
+        "组件",
+        "警示对话框",
+        "焦点管理"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialog",
+      "type": "function",
+      "name": "AlertDialog",
+      "filePath": "packages/react/alert-dialog/src/alert-dialog.tsx",
+      "lineRange": [
+        25,
+        29
+      ],
+      "summary": "把警示对话框作用域传入 Dialog.Root，并强制启用 modal 模式。",
+      "tags": [
+        "组件",
+        "模态交互",
+        "作用域"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogPortal",
+      "type": "function",
+      "name": "AlertDialogPortal",
+      "filePath": "packages/react/alert-dialog/src/alert-dialog.tsx",
+      "lineRange": [
+        54,
+        60
+      ],
+      "summary": "将警示对话框作用域桥接到 Dialog.Portal，让内容保留 Context 同时渲染到目标容器。",
+      "tags": [
+        "组件",
+        "传送节点",
+        "作用域"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/accordion/src/accordion.tsx:Accordion",
+      "type": "function",
+      "name": "Accordion",
+      "filePath": "packages/react/accordion/src/accordion.tsx",
+      "lineRange": [
+        59,
+        81
+      ],
+      "summary": "为触发器集合提供上下文，并按 single 或 multiple 模式选择对应展开值实现。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/accordion/src/accordion.tsx:AccordionImplSingle",
+      "type": "function",
+      "name": "AccordionImplSingle",
+      "filePath": "packages/react/accordion/src/accordion.tsx",
+      "lineRange": [
+        121,
+        155
+      ],
+      "summary": "用受控或非受控单值表示展开项，并按 collapsible 配置决定能否关闭当前项。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/accordion/src/accordion.tsx:AccordionImplMultiple",
+      "type": "function",
+      "name": "AccordionImplMultiple",
+      "filePath": "packages/react/accordion/src/accordion.tsx",
+      "lineRange": [
+        176,
+        217
+      ],
+      "summary": "用受控或非受控字符串数组维护多个展开项，提供加入与移除展开值的回调。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/accordion/src/accordion.tsx:AccordionImpl",
+      "type": "function",
+      "name": "AccordionImpl",
+      "filePath": "packages/react/accordion/src/accordion.tsx",
+      "lineRange": [
+        250,
+        359
+      ],
+      "summary": "维护可用触发器集合，按 Home、End、方向键及 RTL 规则循环移动焦点。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/accordion/src/accordion.tsx:AccordionItem",
+      "type": "function",
+      "name": "AccordionItem",
+      "filePath": "packages/react/accordion/src/accordion.tsx",
+      "lineRange": [
+        396,
+        432
+      ],
+      "summary": "从展开值和禁用上下文派生项目状态，并桥接到 Collapsible.Root 与独立触发器 ID。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/accordion/src/accordion.tsx:AccordionHeader",
+      "type": "function",
+      "name": "AccordionHeader",
+      "filePath": "packages/react/accordion/src/accordion.tsx",
+      "lineRange": [
+        448,
+        467
+      ],
+      "summary": "渲染标题语义并暴露项目展开、禁用和方向状态。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/accordion/src/accordion.tsx:AccordionTrigger",
+      "type": "function",
+      "name": "AccordionTrigger",
+      "filePath": "packages/react/accordion/src/accordion.tsx",
+      "lineRange": [
+        483,
+        507
+      ],
+      "summary": "把 Collapsible.Trigger 注册为可导航集合项，关联稳定 ID 并表达不可关闭项的 aria-disabled 状态。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/accordion/src/accordion.tsx:AccordionContent",
+      "type": "function",
+      "name": "AccordionContent",
+      "filePath": "packages/react/accordion/src/accordion.tsx",
+      "lineRange": [
+        522,
+        548
+      ],
+      "summary": "在折叠内容上设置 region 与 aria-labelledby，将 Collapsible 的尺寸变量映射为手风琴变量。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogTrigger",
+      "type": "function",
+      "name": "AlertDialogTrigger",
+      "filePath": "packages/react/alert-dialog/src/alert-dialog.tsx",
+      "lineRange": [
+        39,
+        45
+      ],
+      "summary": "桥接作用域并向 Dialog.Trigger 透传属性及 DOM 引用。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogOverlay",
+      "type": "function",
+      "name": "AlertDialogOverlay",
+      "filePath": "packages/react/alert-dialog/src/alert-dialog.tsx",
+      "lineRange": [
+        70,
+        76
+      ],
+      "summary": "桥接作用域并复用 Dialog.Overlay 的背景覆盖与属性透传。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogContent",
+      "type": "function",
+      "name": "AlertDialogContent",
+      "filePath": "packages/react/alert-dialog/src/alert-dialog.tsx",
+      "lineRange": [
+        98,
+        125
+      ],
+      "summary": "设置 alertdialog 语义，打开时聚焦取消操作，阻止指针或其他外部交互直接关闭。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogTitle",
+      "type": "function",
+      "name": "AlertDialogTitle",
+      "filePath": "packages/react/alert-dialog/src/alert-dialog.tsx",
+      "lineRange": [
+        135,
+        141
+      ],
+      "summary": "通过 Dialog.Title 提供警示对话框的可访问名称并保持作用域关联。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogDescription",
+      "type": "function",
+      "name": "AlertDialogDescription",
+      "filePath": "packages/react/alert-dialog/src/alert-dialog.tsx",
+      "lineRange": [
+        151,
+        158
+      ],
+      "summary": "通过 Dialog.Description 提供警示对话框补充说明并保持作用域关联。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogAction",
+      "type": "function",
+      "name": "AlertDialogAction",
+      "filePath": "packages/react/alert-dialog/src/alert-dialog.tsx",
+      "lineRange": [
+        168,
+        174
+      ],
+      "summary": "复用 Dialog.Close 提供确认操作的关闭行为。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogCancel",
+      "type": "function",
+      "name": "AlertDialogCancel",
+      "filePath": "packages/react/alert-dialog/src/alert-dialog.tsx",
+      "lineRange": [
+        185,
+        193
+      ],
+      "summary": "组合外部 ref 与取消按钮内部 ref，为默认聚焦及取消关闭提供目标。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/core/primitive/src/primitive.tsx",
+      "target": "function:packages/core/primitive/src/primitive.tsx:composeEventHandlers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/src/primitive.tsx",
+      "target": "function:packages/core/primitive/src/primitive.tsx:composeEventHandlers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/primitive/src/primitive.tsx",
+      "target": "function:packages/core/primitive/src/primitive.tsx:getOwnerWindow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/src/primitive.tsx",
+      "target": "function:packages/core/primitive/src/primitive.tsx:getOwnerWindow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/primitive/src/primitive.tsx",
+      "target": "function:packages/core/primitive/src/primitive.tsx:getOwnerDocument",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/src/primitive.tsx",
+      "target": "function:packages/core/primitive/src/primitive.tsx:getOwnerDocument",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/primitive/src/primitive.tsx",
+      "target": "function:packages/core/primitive/src/primitive.tsx:getActiveElement",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/src/primitive.tsx",
+      "target": "function:packages/core/primitive/src/primitive.tsx:getActiveElement",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/primitive/src/primitive.tsx",
+      "target": "function:packages/core/primitive/src/primitive.tsx:isFrame",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/src/primitive.tsx",
+      "target": "function:packages/core/primitive/src/primitive.tsx:isFrame",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/primitive/src/primitive.tsx",
+      "target": "file:packages/core/primitive/src/can-use-dom.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/core/rect/src/observe-element-rect.ts",
+      "target": "function:packages/core/rect/src/observe-element-rect.ts:observeElementRect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/rect/src/observe-element-rect.ts",
+      "target": "function:packages/core/rect/src/observe-element-rect.ts:observeElementRect",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/rect/src/observe-element-rect.ts",
+      "target": "function:packages/core/rect/src/observe-element-rect.ts:runLoop",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/rect/src/observe-element-rect.ts",
+      "target": "function:packages/core/rect/src/observe-element-rect.ts:rectEquals",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/accessible-icon/src/accesible-icon.test.tsx",
+      "target": "file:packages/react/accessible-icon/src/accessible-icon.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/accessible-icon/src/accessible-icon.tsx",
+      "target": "function:packages/react/accessible-icon/src/accessible-icon.tsx:AccessibleIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/accessible-icon/src/accessible-icon.tsx",
+      "target": "function:packages/react/accessible-icon/src/accessible-icon.tsx:AccessibleIcon",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.test.tsx",
+      "target": "file:packages/react/accordion/src/accordion.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.test.tsx",
+      "target": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogPortal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogPortal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "function:packages/react/accordion/src/accordion.tsx:Accordion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "function:packages/react/accordion/src/accordion.tsx:Accordion",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "function:packages/react/accordion/src/accordion.tsx:AccordionImplSingle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "function:packages/react/accordion/src/accordion.tsx:AccordionImplMultiple",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "function:packages/react/accordion/src/accordion.tsx:AccordionImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "function:packages/react/accordion/src/accordion.tsx:AccordionItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "function:packages/react/accordion/src/accordion.tsx:AccordionItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "function:packages/react/accordion/src/accordion.tsx:AccordionHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "function:packages/react/accordion/src/accordion.tsx:AccordionHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "function:packages/react/accordion/src/accordion.tsx:AccordionTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "function:packages/react/accordion/src/accordion.tsx:AccordionTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "function:packages/react/accordion/src/accordion.tsx:AccordionContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "function:packages/react/accordion/src/accordion.tsx:AccordionContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogOverlay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogOverlay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogTitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogTitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogDescription",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogDescription",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogAction",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogAction",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogCancel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "function:packages/react/alert-dialog/src/alert-dialog.tsx:AlertDialogCancel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/accessible-icon/src/accessible-icon.tsx",
+      "target": "file:packages/react/visually-hidden/src/visually-hidden.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "file:packages/react/collection/src/collection.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "file:packages/react/collapsible/src/collapsible.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "file:packages/react/id/src/id.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "file:packages/react/direction/src/direction.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "file:packages/react/dialog/src/dialog.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/accessible-icon/src/accessible-icon.tsx",
+      "target": "file:packages/react/accessible-icon/src/accesible-icon.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/accordion/src/accordion.tsx",
+      "target": "file:packages/react/accordion/src/accordion.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "target": "file:packages/react/alert-dialog/src/alert-dialog.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/core/rect/src/index.ts",
+      "target": "file:packages/core/rect/src/observe-element-rect.ts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/accordion/src/index.ts",
+      "target": "file:packages/react/accordion/src/accordion.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/accessible-icon/src/index.ts",
+      "target": "file:packages/react/accessible-icon/src/accessible-icon.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

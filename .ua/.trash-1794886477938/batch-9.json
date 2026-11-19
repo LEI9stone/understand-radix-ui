@@ -1,0 +1,683 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/scroll-area/src/scroll-area.test.tsx",
+      "type": "file",
+      "name": "scroll-area.test.tsx",
+      "filePath": "packages/react/scroll-area/src/scroll-area.test.tsx",
+      "summary": "验证滚动区域各部件的属性与 ref 透传、asChild 组合、显式内容容器以及滚动条角落尺寸回归。测试通过模拟布局尺寸覆盖 jsdom 无真实布局的情形。",
+      "tags": [
+        "测试",
+        "滚动区域",
+        "引用稳定性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "type": "file",
+      "name": "scroll-area.tsx",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "summary": "实现可组合的自定义滚动区域，连接原生视口、内容测量、横纵滚动条、滑块和角落。按悬停、滚动、溢出或常显策略控制可见性，并处理 RTL、拖拽、滚轮和尺寸变化。",
+      "tags": [
+        "组件",
+        "滚动区域",
+        "状态机",
+        "尺寸观察"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:getScrollPositionFromPointer",
+      "type": "function",
+      "name": "getScrollPositionFromPointer",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        1070,
+        1086
+      ],
+      "summary": "将拖拽指针在滚动轨道上的位置映射为视口滚动距离，扣除轨道内边距和滑块抓取偏移，并调整 RTL 方向。",
+      "tags": [
+        "几何计算",
+        "拖拽",
+        "方向支持"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:getThumbOffsetFromScroll",
+      "type": "function",
+      "name": "getThumbOffsetFromScroll",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        1088,
+        1098
+      ],
+      "summary": "将视口滚动距离限制在合法范围，再映射为滑块在轨道上的位移，避免弹性滚动造成滑块越界。",
+      "tags": [
+        "几何计算",
+        "滑块",
+        "边界处理"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:addUnlinkedScrollListener",
+      "type": "function",
+      "name": "addUnlinkedScrollListener",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        1115,
+        1128
+      ],
+      "summary": "用 requestAnimationFrame 比较前后滚动位置，仅在变化时通知滑块位置更新，并返回取消循环的清理函数。",
+      "tags": [
+        "动画帧",
+        "滚动监听",
+        "清理机制"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:useResizeObserver",
+      "type": "function",
+      "name": "useResizeObserver",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        1140,
+        1163
+      ],
+      "summary": "观察元素尺寸变化，将 ResizeObserver 通知合并到动画帧中执行，清理时取消帧任务并停止观察。",
+      "tags": [
+        "尺寸观察",
+        "生命周期",
+        "动画帧"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/scroll-area/src/use-state-machine.ts",
+      "type": "file",
+      "name": "use-state-machine.ts",
+      "filePath": "packages/react/scroll-area/src/use-state-machine.ts",
+      "summary": "通过带状态与事件约束的 reducer 实现局部有限状态机，供滚动条可见性策略派发事件并选择下一状态。",
+      "tags": [
+        "状态机",
+        "泛型",
+        "状态管理"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/use-state-machine.ts:useStateMachine",
+      "type": "function",
+      "name": "useStateMachine",
+      "filePath": "packages/react/scroll-area/src/use-state-machine.ts",
+      "lineRange": [
+        12,
+        20
+      ],
+      "summary": "用 React.useReducer 根据当前状态查找事件转移，未定义转移时保留原状态，并返回状态及类型约束的派发函数。",
+      "tags": [
+        "状态机",
+        "自定义钩子",
+        "泛型"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollArea",
+      "type": "function",
+      "name": "ScrollArea",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        89,
+        147
+      ],
+      "summary": "保存视口、内容和双轴滚动条引用及角落尺寸，在作用域 Context 中共享，并向根 DOM 暴露方向和角落 CSS 变量。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaViewport",
+      "type": "function",
+      "name": "ScrollAreaViewport",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        170,
+        264
+      ],
+      "summary": "隐藏原生滚动条并按可用滚动轴设置 overflow；通过 Slottable 保持 asChild 的目标元素，同时兼容显式与隐式内容容器。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaContent",
+      "type": "function",
+      "name": "ScrollAreaContent",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        290,
+        313
+      ],
+      "summary": "渲染可测量内容容器并注册内容引用，以 display:table 让内容尺寸随子节点增长。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbar",
+      "type": "function",
+      "name": "ScrollAreaScrollbar",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        326,
+        354
+      ],
+      "summary": "注册横轴或纵轴滚动能力，并按根组件的可见性策略选择悬停、滚动、溢出或常显实现。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarScroll",
+      "type": "function",
+      "name": "ScrollAreaScrollbarScroll",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        411,
+        479
+      ],
+      "summary": "通过 hidden、scrolling、idle 和 interacting 状态处理滚动条显示时机，结合滚动结束防抖与延迟隐藏。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarImpl",
+      "type": "function",
+      "name": "ScrollAreaScrollbarImpl",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        772,
+        871
+      ],
+      "summary": "统一滚轮监听、指针捕获、轨道拖动与内容尺寸观察，并提供滑块上下文。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaThumb",
+      "type": "function",
+      "name": "ScrollAreaThumb",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        888,
+        902
+      ],
+      "summary": "依据滚动条上下文中的溢出比例决定是否挂载滑块，并支持 forceMount 交给动画库控制。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaCorner",
+      "type": "function",
+      "name": "ScrollAreaCorner",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        982,
+        993
+      ],
+      "summary": "仅在双轴滚动条同时存在且非滚动显示策略时呈现角落填充区域。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaViewportStyle",
+      "type": "function",
+      "name": "ScrollAreaViewportStyle",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        266,
+        279
+      ],
+      "summary": "渲染隐藏各浏览器原生滚动条的样式，并按 nonce 缓存样式节点。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarHover",
+      "type": "function",
+      "name": "ScrollAreaScrollbarHover",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        363,
+        404
+      ],
+      "summary": "监听根区域指针进入和离开，取消或安排隐藏定时器，并结合溢出检测与 Presence 显示滚动条。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarAuto",
+      "type": "function",
+      "name": "ScrollAreaScrollbarAuto",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        486,
+        514
+      ],
+      "summary": "观察视口和内容尺寸，只在对应轴溢出时显示滚动条，并用防抖合并尺寸变化。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarVisible",
+      "type": "function",
+      "name": "ScrollAreaScrollbarVisible",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        526,
+        606
+      ],
+      "summary": "维护滑块引用与尺寸快照，选择横轴或纵轴实现并把拖动和滚动距离映射为滑块位移。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarX",
+      "type": "function",
+      "name": "ScrollAreaScrollbarX",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        628,
+        682
+      ],
+      "summary": "为横向轨道计算 RTL 位置、宽度和边距，连接水平滚轮及拖动行为。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarY",
+      "type": "function",
+      "name": "ScrollAreaScrollbarY",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        684,
+        739
+      ],
+      "summary": "为纵向轨道计算上下边界与滑块高度，连接垂直滚轮及拖动行为。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaThumbImpl",
+      "type": "function",
+      "name": "ScrollAreaThumbImpl",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        907,
+        971
+      ],
+      "summary": "在原生滚动开始后启动动画帧位置同步，记录滑块内抓取偏移并在滚动结束时清理监听。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaCornerImpl",
+      "type": "function",
+      "name": "ScrollAreaCornerImpl",
+      "filePath": "packages/react/scroll-area/src/scroll-area.tsx",
+      "lineRange": [
+        1000,
+        1049
+      ],
+      "summary": "观察双轴滚动条尺寸以填充交点，并在卸载时清零共享角落变量，避免残留空隙。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.test.tsx",
+      "target": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:getScrollPositionFromPointer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:getThumbOffsetFromScroll",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:addUnlinkedScrollListener",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:useResizeObserver",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "file:packages/react/scroll-area/src/use-state-machine.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/use-state-machine.ts",
+      "target": "function:packages/react/scroll-area/src/use-state-machine.ts:useStateMachine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/use-state-machine.ts",
+      "target": "function:packages/react/scroll-area/src/use-state-machine.ts:useStateMachine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollArea",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollArea",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaViewport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaViewport",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarScroll",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaThumb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaThumb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaCorner",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaCorner",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "file:packages/react/scroll-area/src/use-state-machine.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "file:packages/core/number/src/number.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "file:packages/react/presence/src/presence.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "file:packages/react/slot/src/slot.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "file:packages/react/direction/src/direction.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "file:packages/react/scroll-area/src/scroll-area.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaViewportStyle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarHover",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarAuto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarVisible",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarX",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaScrollbarY",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaThumbImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "target": "function:packages/react/scroll-area/src/scroll-area.tsx:ScrollAreaCornerImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

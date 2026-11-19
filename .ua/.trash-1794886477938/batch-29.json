@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/checkbox/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/checkbox/CHANGELOG.md",
+      "summary": "记录三态复选框与表单冒泡输入的更新，包含受控更新事件、RSC 兼容及回调类型修复。",
+      "tags": [
+        "变更记录",
+        "复选框",
+        "版本发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/checkbox/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/checkbox/README.md",
+      "summary": "提供复选框包名称与官方网站组件使用文档入口。",
+      "tags": [
+        "包文档",
+        "复选框",
+        "使用范围"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/checkbox/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/checkbox/package.json",
+      "summary": "声明复选框包的双模块发布入口、React 兼容范围和构建脚本，依赖 Presence、上下文、尺寸测量与可控状态等内部包。",
+      "tags": [
+        "包配置",
+        "复选框",
+        "模块发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/checkbox/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/checkbox/tsconfig.json",
+      "summary": "为复选框包继承内部 React 库 TypeScript 编译规则，将 src 纳入编译并将产物定位到 dist。",
+      "tags": [
+        "编译配置",
+        "React库",
+        "TypeScript"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/checkbox/README.md",
+      "target": "config:packages/react/checkbox/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/checkbox/CHANGELOG.md",
+      "target": "config:packages/react/checkbox/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/checkbox/tsconfig.json",
+      "target": "config:packages/react/checkbox/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": ".github/workflows/build.yml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/chromatic.yml",
+      "language": "yaml",
+      "sizeLines": 33,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "language": "yaml",
+      "sizeLines": 125,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/ssr.yml",
+      "language": "yaml",
+      "sizeLines": 34,
+      "fileCategory": "infra"
+    }
+  ],
+  "batchImportData": {
+    ".github/workflows/build.yml": [],
+    ".github/workflows/chromatic.yml": [],
+    ".github/workflows/publish.yml": [],
+    ".github/workflows/ssr.yml": []
+  }
+}

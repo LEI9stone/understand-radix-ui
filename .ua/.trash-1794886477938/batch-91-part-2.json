@@ -1,0 +1,1443 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/slot/src/slot.test.tsx",
+      "type": "file",
+      "name": "slot.test.tsx",
+      "filePath": "packages/react/slot/src/slot.test.tsx",
+      "summary": "验证 Slot 事件与属性合并、Slottable 嵌套、懒加载和 Flight 引用、多版本标识互操作及 ref 稳定性。",
+      "tags": [
+        "单元测试",
+        "回归验证",
+        "slot"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/slot/src/slot.test.tsx:Input",
+      "type": "function",
+      "name": "Input",
+      "filePath": "packages/react/slot/src/slot.test.tsx",
+      "lineRange": [
+        713,
+        726
+      ],
+      "summary": "提供可受控输入的 asChild 测试载体，验证 Slot 对输入值和引用的合并。",
+      "tags": [
+        "单元测试",
+        "回归验证",
+        "slot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/slot/src/slot.tsx",
+      "type": "file",
+      "name": "slot.tsx",
+      "filePath": "packages/react/slot/src/slot.tsx",
+      "summary": "实现 asChild 属性与 ref 组合，支持 Slottable、懒加载与 Flight 引用，并合并事件、样式、类名和 ARIA 描述。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slot"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/slot/src/slot.tsx:createSlot",
+      "type": "function",
+      "name": "createSlot",
+      "filePath": "packages/react/slot/src/slot.tsx",
+      "lineRange": [
+        20,
+        93
+      ],
+      "summary": "创建具有所有者名称的 Slot 组件工厂，支持子宿主替换、懒引用解包和明确使用错误。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slot"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/slot/src/slot.tsx:createSlottable",
+      "type": "function",
+      "name": "createSlottable",
+      "filePath": "packages/react/slot/src/slot.tsx",
+      "lineRange": [
+        114,
+        121
+      ],
+      "summary": "创建带共享 Symbol 标记的 Slottable 组件，使多份库副本能识别同一组合协议。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/slot/src/slot.tsx:mergeProps",
+      "type": "function",
+      "name": "mergeProps",
+      "filePath": "packages/react/slot/src/slot.tsx",
+      "lineRange": [
+        144,
+        178
+      ],
+      "summary": "以子元素属性为优先，组合事件、样式、className 和去重后的 aria-describedby。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/slot/src/slot.tsx:getElementRef",
+      "type": "function",
+      "name": "getElementRef",
+      "filePath": "packages/react/slot/src/slot.tsx",
+      "lineRange": [
+        189,
+        206
+      ],
+      "summary": "按 React 18 或 19 的 ref 警告 getter 差异选择安全读取路径。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/slot/src/slot.tsx:isSlottable",
+      "type": "function",
+      "name": "isSlottable",
+      "filePath": "packages/react/slot/src/slot.tsx",
+      "lineRange": [
+        212,
+        221
+      ],
+      "summary": "验证 React 元素类型上的共享 Symbol 标记以识别可投射子树。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/slot/src/slot.tsx:isLazyComponent",
+      "type": "function",
+      "name": "isLazyComponent",
+      "filePath": "packages/react/slot/src/slot.tsx",
+      "lineRange": [
+        230,
+        239
+      ],
+      "summary": "识别带 react.lazy 类型和 Promise 载荷的 Flight 或懒组件引用。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/slot/src/slot.tsx:concatAriaDescribedby",
+      "type": "function",
+      "name": "concatAriaDescribedby",
+      "filePath": "packages/react/slot/src/slot.tsx",
+      "lineRange": [
+        260,
+        270
+      ],
+      "summary": "将多个 ARIA 描述引用规范化、拆分并去重为单个空格分隔列表。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/slot/src/slot.tsx:Slot",
+      "type": "function",
+      "name": "Slot",
+      "filePath": "packages/react/slot/src/slot.tsx",
+      "lineRange": [
+        24,
+        89
+      ],
+      "summary": "解包懒引用并选择 Slottable 目标，合并属性与 ref 后克隆唯一宿主元素，不合法多子元素明确报错。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slot"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/slot/src/slot.tsx:Slottable",
+      "type": "function",
+      "name": "Slottable",
+      "filePath": "packages/react/slot/src/slot.tsx",
+      "lineRange": [
+        115,
+        116
+      ],
+      "summary": "标记要接收 Slot 属性的目标子元素，支持普通子元素与渲染函数两种形式。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "slot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/switch/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/switch/src/index.ts",
+      "summary": "重新导出 switch 的公开组合部件、简短别名和属性类型，定义消费者的包级入口。",
+      "tags": [
+        "公共入口",
+        "模块边界",
+        "switch"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/switch/src/switch.test.tsx",
+      "type": "file",
+      "name": "switch.test.tsx",
+      "filePath": "packages/react/switch/src/switch.test.tsx",
+      "summary": "覆盖开关在普通、受控与外部关联表单中的重置、点击祖先传播以及各组合部件属性转发。",
+      "tags": [
+        "单元测试",
+        "回归验证",
+        "switch"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/switch/src/switch.tsx",
+      "type": "file",
+      "name": "switch.tsx",
+      "filePath": "packages/react/switch/src/switch.tsx",
+      "summary": "将受控开关状态拆为 Provider、Trigger、Thumb 和隐藏 checkbox，同步表单重置并区分用户点击与程序更新传播。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "switch"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/switch/src/switch.tsx:SwitchProvider",
+      "type": "function",
+      "name": "SwitchProvider",
+      "filePath": "packages/react/switch/src/switch.tsx",
+      "lineRange": [
+        57,
+        114
+      ],
+      "summary": "维护 checked、表单属性与 DOM 控制器，记录最后一次用户点击并向组合部件共享上下文。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "switch"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/switch/src/switch.tsx:SwitchTrigger",
+      "type": "function",
+      "name": "SwitchTrigger",
+      "filePath": "packages/react/switch/src/switch.tsx",
+      "lineRange": [
+        130,
+        187
+      ],
+      "summary": "渲染 switch 按钮并记录用户请求，重置时恢复初始值，表单场景把单次点击传播交给隐藏输入。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "switch"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/switch/src/switch.tsx:Switch",
+      "type": "function",
+      "name": "Switch",
+      "filePath": "packages/react/switch/src/switch.tsx",
+      "lineRange": [
+        205,
+        249
+      ],
+      "summary": "组合开关 Provider、Trigger 及表单场景的 BubbleInput，提供默认可重组部件结构。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "switch"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/switch/src/switch.tsx:SwitchThumb",
+      "type": "function",
+      "name": "SwitchThumb",
+      "filePath": "packages/react/switch/src/switch.tsx",
+      "lineRange": [
+        263,
+        274
+      ],
+      "summary": "读取开关状态并把 checked 和 disabled 映射为滑块指示器的数据属性。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "switch"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/switch/src/switch.tsx:SwitchBubbleInput",
+      "type": "function",
+      "name": "SwitchBubbleInput",
+      "filePath": "packages/react/switch/src/switch.tsx",
+      "lineRange": [
+        291,
+        411
+      ],
+      "summary": "同步隐藏 checkbox 的 checked 与尺寸，以单次用户点击通知祖先，并抑制程序更新的重复点击传播。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "switch"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/tabs/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/tabs/src/index.ts",
+      "summary": "重新导出 tabs 的公开组合部件、简短别名和属性类型，定义消费者的包级入口。",
+      "tags": [
+        "公共入口",
+        "模块边界",
+        "tabs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/tabs/src/tabs.test.tsx",
+      "type": "file",
+      "name": "tabs.test.tsx",
+      "filePath": "packages/react/tabs/src/tabs.test.tsx",
+      "summary": "验证切换标签时的 blur 与焦点、可编辑或传送后代的键盘边界、各部件属性转发和回调窄参数类型。",
+      "tags": [
+        "单元测试",
+        "回归验证",
+        "tabs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/tabs/src/tabs.tsx",
+      "type": "file",
+      "name": "tabs.tsx",
+      "filePath": "packages/react/tabs/src/tabs.tsx",
+      "summary": "组合可控选中值、方向和焦点漫游，支持自动或手动激活选项卡，以稳定 id 关联 trigger 与 panel。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tabs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/tabs/src/tabs.tsx:Tabs",
+      "type": "function",
+      "name": "Tabs",
+      "filePath": "packages/react/tabs/src/tabs.tsx",
+      "lineRange": [
+        73,
+        110
+      ],
+      "summary": "维护选中值、方向、激活模式与稳定基准 id，向选项卡列表和面板提供上下文。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tabs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/tabs/src/tabs.tsx:TabsList",
+      "type": "function",
+      "name": "TabsList",
+      "filePath": "packages/react/tabs/src/tabs.tsx",
+      "lineRange": [
+        126,
+        146
+      ],
+      "summary": "将 tablist 宿主纳入方向感知的焦点漫游组，支持循环键盘导航。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tabs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/tabs/src/tabs.tsx:TabsTrigger",
+      "type": "function",
+      "name": "TabsTrigger",
+      "filePath": "packages/react/tabs/src/tabs.tsx",
+      "lineRange": [
+        162,
+        229
+      ],
+      "summary": "创建 ARIA tab 并关联面板，在鼠标、键盘与自动聚焦激活时更新选中值，同时隔离后代按键。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tabs"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/tabs/src/tabs.tsx:TabsContent",
+      "type": "function",
+      "name": "TabsContent",
+      "filePath": "packages/react/tabs/src/tabs.tsx",
+      "lineRange": [
+        250,
+        286
+      ],
+      "summary": "用 Presence 控制面板挂载和隐藏，以 ARIA 引用触发器并防止初始选中面板执行挂载动画。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "tabs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/toast/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/toast/src/index.ts",
+      "summary": "重新导出 toast 的公开组合部件、简短别名和属性类型，定义消费者的包级入口。",
+      "tags": [
+        "公共入口",
+        "模块边界",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/toast/src/toast.test.tsx",
+      "type": "file",
+      "name": "toast.test.tsx",
+      "filePath": "packages/react/toast/src/toast.test.tsx",
+      "summary": "验证 Toast ref 稳定性、Escape 仅移除目标通知、时长变化后暂停恢复、计时器清理与 Suspense 水合兼容。",
+      "tags": [
+        "单元测试",
+        "回归验证",
+        "toast"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:packages/react/toast/src/toast.tsx",
+      "type": "file",
+      "name": "toast.tsx",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "summary": "管理通知队列视口、计时暂停恢复、滑动关闭、快捷键焦点和屏幕阅读器播报，通过 Portal 与可关闭层组合通知。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:ToastProvider",
+      "type": "function",
+      "name": "ToastProvider",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        112,
+        161
+      ],
+      "summary": "共享通知配置、视口和数量，以 transition 调度上下文更新，减少对待水合 Suspense 边界的干扰。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:ToastAnnounce",
+      "type": "function",
+      "name": "ToastAnnounce",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        747,
+        773
+      ],
+      "summary": "下一帧在隐藏 live region 播报通知文字，一秒后清理，并允许指定播报容器。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:getAnnounceTextContent",
+      "type": "function",
+      "name": "getAnnounceTextContent",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        895,
+        919
+      ],
+      "summary": "递归收集通知可播报文本，跳过隐藏内容，并为被排除的操作子树采用替代说明。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:handleAndDispatchCustomEvent",
+      "type": "function",
+      "name": "handleAndDispatchCustomEvent",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        923,
+        941
+      ],
+      "summary": "创建可取消的滑动自定义事件，按是否离散选择普通分发或同步离散分发路径。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:isDeltaInDirection",
+      "type": "function",
+      "name": "isDeltaInDirection",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        943,
+        956
+      ],
+      "summary": "比较横纵位移的主方向和阈值，判断手势是否符合配置的滑动关闭方向。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:useNextFrame",
+      "type": "function",
+      "name": "useNextFrame",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        958,
+        969
+      ],
+      "summary": "经双重 requestAnimationFrame 延后调用稳定回调，并在卸载时取消两帧调度。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:getTabbableCandidates",
+      "type": "function",
+      "name": "getTabbableCandidates",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        985,
+        1001
+      ],
+      "summary": "遍历通知 DOM 子树，过滤隐藏、禁用和不可 Tab 元素以构造近似键盘候选列表。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:ToastViewport",
+      "type": "function",
+      "name": "ToastViewport",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        189,
+        369
+      ],
+      "summary": "注册通知列表与快捷键，按最近通知优先管理 Tab 顺序，指针或焦点进入时暂停自动关闭并借助焦点代理进出文档。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:ToastFocusProxy",
+      "type": "function",
+      "name": "ToastFocusProxy",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        387,
+        405
+      ],
+      "summary": "创建视觉隐藏的焦点入口，仅当焦点由视口外进入时启动通知导航。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:Toast",
+      "type": "function",
+      "name": "Toast",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        432,
+        477
+      ],
+      "summary": "维护可控打开状态并通过 Presence 保留动画，更新滑动数据和位移变量，在滑动结束时关闭。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:ToastImpl",
+      "type": "function",
+      "name": "ToastImpl",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        512,
+        737
+      ],
+      "summary": "管理自动关闭计时和暂停余量，将通知传送到视口并处理 Escape、滑动手势与可访问播报文本。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:ToastTitle",
+      "type": "function",
+      "name": "ToastTitle",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        784,
+        787
+      ],
+      "summary": "将通知标题渲染为 Primitive.div 并转发属性和 ref。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:ToastDescription",
+      "type": "function",
+      "name": "ToastDescription",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        802,
+        805
+      ],
+      "summary": "渲染通知描述宿主并透传消费者属性和引用。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:ToastAction",
+      "type": "function",
+      "name": "ToastAction",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        826,
+        841
+      ],
+      "summary": "要求非空替代说明，以该说明替换屏幕阅读器播报并复用关闭按钮完成通知操作。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:ToastClose",
+      "type": "function",
+      "name": "ToastClose",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        855,
+        869
+      ],
+      "summary": "组合消费者点击处理和上下文关闭操作，并将关闭按钮从默认播报文本中排除。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/toast/src/toast.tsx:ToastAnnounceExclude",
+      "type": "function",
+      "name": "ToastAnnounceExclude",
+      "filePath": "packages/react/toast/src/toast.tsx",
+      "lineRange": [
+        882,
+        892
+      ],
+      "summary": "标记无需直接播报的子树，允许通过 altText 提供替代操作说明。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/toggle-group/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/toggle-group/src/index.ts",
+      "summary": "重新导出 toggle-group 的公开组合部件、简短别名和属性类型，定义消费者的包级入口。",
+      "tags": [
+        "公共入口",
+        "模块边界",
+        "toggle-group"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/slot/src/slot.test.tsx",
+      "target": "function:packages/react/slot/src/slot.test.tsx:Input",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.test.tsx",
+      "target": "file:packages/react/slot/src/slot.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "function:packages/react/slot/src/slot.tsx:createSlot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "function:packages/react/slot/src/slot.tsx:createSlot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "function:packages/react/slot/src/slot.tsx:createSlottable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "function:packages/react/slot/src/slot.tsx:createSlottable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "function:packages/react/slot/src/slot.tsx:mergeProps",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "function:packages/react/slot/src/slot.tsx:getElementRef",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "function:packages/react/slot/src/slot.tsx:isSlottable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "function:packages/react/slot/src/slot.tsx:isLazyComponent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "function:packages/react/slot/src/slot.tsx:concatAriaDescribedby",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "function:packages/react/slot/src/slot.tsx:Slot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "function:packages/react/slot/src/slot.tsx:Slot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "function:packages/react/slot/src/slot.tsx:Slottable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "function:packages/react/slot/src/slot.tsx:Slottable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "function:packages/react/switch/src/switch.tsx:SwitchProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "function:packages/react/switch/src/switch.tsx:SwitchProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "function:packages/react/switch/src/switch.tsx:SwitchTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "function:packages/react/switch/src/switch.tsx:SwitchTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "function:packages/react/switch/src/switch.tsx:Switch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "function:packages/react/switch/src/switch.tsx:Switch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "function:packages/react/switch/src/switch.tsx:SwitchThumb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "function:packages/react/switch/src/switch.tsx:SwitchThumb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "function:packages/react/switch/src/switch.tsx:SwitchBubbleInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "function:packages/react/switch/src/switch.tsx:SwitchBubbleInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.test.tsx",
+      "target": "file:packages/react/tabs/src/tabs.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "function:packages/react/tabs/src/tabs.tsx:Tabs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "function:packages/react/tabs/src/tabs.tsx:Tabs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "function:packages/react/tabs/src/tabs.tsx:TabsList",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "function:packages/react/tabs/src/tabs.tsx:TabsList",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "function:packages/react/tabs/src/tabs.tsx:TabsTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "function:packages/react/tabs/src/tabs.tsx:TabsTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "function:packages/react/tabs/src/tabs.tsx:TabsContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "function:packages/react/tabs/src/tabs.tsx:TabsContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.test.tsx",
+      "target": "file:packages/react/toast/src/toast.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastAnnounce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:getAnnounceTextContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:handleAndDispatchCustomEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:isDeltaInDirection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:useNextFrame",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:getTabbableCandidates",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastViewport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastViewport",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastFocusProxy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:Toast",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:Toast",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastTitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastTitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastDescription",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastDescription",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastAction",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastAction",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastClose",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastClose",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastAnnounceExclude",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "file:packages/react/use-size/src/use-size.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "file:packages/react/presence/src/presence.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "file:packages/react/direction/src/direction.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "file:packages/react/collection/src/collection.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "file:packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "file:packages/react/portal/src/portal.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "file:packages/react/presence/src/presence.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "file:packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "file:packages/react/visually-hidden/src/visually-hidden.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/slot/src/slot.tsx",
+      "target": "file:packages/react/slot/src/slot.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "file:packages/react/switch/src/switch.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "file:packages/react/tabs/src/tabs.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "file:packages/react/toast/src/toast.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "function:packages/react/switch/src/switch.tsx:Switch",
+      "target": "function:packages/react/switch/src/switch.tsx:SwitchProvider",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/switch/src/switch.tsx:Switch",
+      "target": "function:packages/react/switch/src/switch.tsx:SwitchTrigger",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/switch/src/switch.tsx:Switch",
+      "target": "function:packages/react/switch/src/switch.tsx:SwitchBubbleInput",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/toast/src/toast.tsx:Toast",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastImpl",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/toast/src/toast.tsx:ToastImpl",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastAnnounce",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/toast/src/toast.tsx:ToastAction",
+      "target": "function:packages/react/toast/src/toast.tsx:ToastClose",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/switch/src/index.ts",
+      "target": "file:packages/react/switch/src/switch.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/tabs/src/index.ts",
+      "target": "file:packages/react/tabs/src/tabs.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toast/src/index.ts",
+      "target": "file:packages/react/toast/src/toast.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/toggle-group/src/index.ts",
+      "target": "file:packages/react/toggle-group/src/toggle-group.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/switch/src/switch.tsx",
+      "target": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/tabs/src/tabs.tsx",
+      "target": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/toast/src/toast.tsx",
+      "target": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

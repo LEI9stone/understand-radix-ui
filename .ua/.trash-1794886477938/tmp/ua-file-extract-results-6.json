@@ -1,0 +1,147 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 3,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 3,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "apps/ssr-testing/app/slot/client.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 99,
+      "nonEmptyLines": 91,
+      "exports": [
+        {
+          "name": "Link",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "LinkSlottable",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "LinkButton",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "Button",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ButtonSlottable",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "ButtonNestedSlottable",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "IconButtonNestedSlottable",
+          "line": 81,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/slot/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 141,
+      "nonEmptyLines": 95,
+      "functions": [
+        {
+          "name": "Page",
+          "startLine": 5,
+          "endLine": 141,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Page",
+          "line": 5,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/ssr-testing/app/slot/server.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 98,
+      "nonEmptyLines": 91,
+      "exports": [
+        {
+          "name": "Link",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "LinkSlottable",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "LinkButton",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "Button",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "ButtonSlottable",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "ButtonNestedSlottable",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "IconButtonNestedSlottable",
+          "line": 80,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 7,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

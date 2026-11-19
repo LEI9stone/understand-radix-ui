@@ -1,0 +1,413 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/storybook/stories/accordion.stories.module.css",
+      "type": "file",
+      "name": "accordion.stories.module.css",
+      "filePath": "apps/storybook/stories/accordion.stories.module.css",
+      "summary": "定义横向与纵向折叠面板、禁用和展开状态的示例外观，使用内容宽高变量演示一维及二维展开动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/alert-dialog.stories.module.css",
+      "type": "file",
+      "name": "alert-dialog.stories.module.css",
+      "filePath": "apps/storybook/stories/alert-dialog.stories.module.css",
+      "summary": "定义全屏遮罩、居中警告对话框及取消和确认按钮，提供状态属性可视化与截图布局。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/aspect-ratio.stories.module.css",
+      "type": "file",
+      "name": "aspect-ratio.stories.module.css",
+      "filePath": "apps/storybook/stories/aspect-ratio.stories.module.css",
+      "summary": "用弹性居中和彩色背景展示固定宽高比容器中的内容。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/avatar.stories.module.css",
+      "type": "file",
+      "name": "avatar.stories.module.css",
+      "filePath": "apps/storybook/stories/avatar.stories.module.css",
+      "summary": "定义圆形头像裁剪、图像填充及居中回退内容，避免图像溢出和内容选择。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/checkbox.stories.module.css",
+      "type": "file",
+      "name": "checkbox.stories.module.css",
+      "filePath": "apps/storybook/stories/checkbox.stories.module.css",
+      "summary": "以 checked、unchecked 和 indeterminate 属性显示复选框状态，并为指示器提供淡入淡出动画和禁用样式。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/collapsible.stories.module.css",
+      "type": "file",
+      "name": "collapsible.stories.module.css",
+      "filePath": "apps/storybook/stories/collapsible.stories.module.css",
+      "summary": "设置折叠触发器和内容外观，使用内容尺寸变量演示高度及宽度展开与关闭动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/context-menu.stories.module.css",
+      "type": "file",
+      "name": "context-menu.stories.module.css",
+      "filePath": "apps/storybook/stories/context-menu.stories.module.css",
+      "summary": "定义右键触发区、菜单项、标签和子菜单高亮外观，并按定位原点播放缩放旋转动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/dialog.stories.module.css",
+      "type": "file",
+      "name": "dialog.stories.module.css",
+      "filePath": "apps/storybook/stories/dialog.stories.module.css",
+      "summary": "提供居中对话框、侧边面板和可滚动遮罩布局，并定义内容与遮罩的挂载和卸载动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/dropdown-menu.stories.module.css",
+      "type": "file",
+      "name": "dropdown-menu.stories.module.css",
+      "filePath": "apps/storybook/stories/dropdown-menu.stories.module.css",
+      "summary": "定义下拉菜单高亮与禁用项、选中指示器动画、嵌套对话框和 Chromatic 定位测试网格。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/form.stories.module.css",
+      "type": "file",
+      "name": "form.stories.module.css",
+      "filePath": "apps/storybook/stories/form.stories.module.css",
+      "summary": "通过 data-invalid 与 data-valid 将表单字段分别显示为红色和绿色，突出原生验证状态。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/hover-card.stories.module.css",
+      "type": "file",
+      "name": "hover-card.stories.module.css",
+      "filePath": "apps/storybook/stories/hover-card.stories.module.css",
+      "summary": "设置悬停卡片与箭头外观，按内容变换原点缩放并演示开关动画和定位截图网格。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/label.stories.module.css",
+      "type": "file",
+      "name": "label.stories.module.css",
+      "filePath": "apps/storybook/stories/label.stories.module.css",
+      "summary": "设置标签和对应控制项的行内对齐、边框、间距及悬停状态，用于观察关联点击区域。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/storybook/stories/menu.stories.module.css",
+      "type": "file",
+      "name": "menu.stories.module.css",
+      "filePath": "apps/storybook/stories/menu.stories.module.css",
+      "summary": "定义基础菜单项、高亮和禁用状态、子菜单及滚动菜单外观，包含内容与指示器出入动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/menubar.stories.module.css",
+      "type": "file",
+      "name": "menubar.stories.module.css",
+      "filePath": "apps/storybook/stories/menubar.stories.module.css",
+      "summary": "定义菜单栏触发器和弹出菜单样式，区分键盘高亮与展开状态并演示内容和选中项动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/navigation-menu.stories.module.css",
+      "type": "file",
+      "name": "navigation-menu.stories.module.css",
+      "filePath": "apps/storybook/stories/navigation-menu.stories.module.css",
+      "summary": "定义横纵导航、共享视口、指示器和嵌套子导航的布局，结合 motion 属性与视口尺寸变量实现方向切换动画。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/storybook/stories/one-time-password-field.stories.module.css",
+      "type": "file",
+      "name": "one-time-password-field.stories.module.css",
+      "filePath": "apps/storybook/stories/one-time-password-field.stories.module.css",
+      "summary": "为分段验证码输入、分隔符和输出区提供布局，通过有效和无效状态改变边框与焦点颜色。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/password-toggle-field.stories.module.css",
+      "type": "file",
+      "name": "password-toggle-field.stories.module.css",
+      "filePath": "apps/storybook/stories/password-toggle-field.stories.module.css",
+      "summary": "把密码输入和显示切换按钮排成统一字段，使用 :has 和 :focus-visible 展示输入与按钮焦点。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/popover.stories.module.css",
+      "type": "file",
+      "name": "popover.stories.module.css",
+      "filePath": "apps/storybook/stories/popover.stories.module.css",
+      "summary": "定义弹出层与箭头样式、开关淡入淡出动画和 Chromatic 定位测试网格，使用组件提供的变换原点。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/popper.stories.module.css",
+      "type": "file",
+      "name": "popper.stories.module.css",
+      "filePath": "apps/storybook/stories/popper.stories.module.css",
+      "summary": "设置大小不同的锚点与浮层，通过定位方向和对齐属性着色，并演示方向相关的旋转入场。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/storybook/stories/presence.stories.module.css",
+      "type": "file",
+      "name": "presence.stories.module.css",
+      "filePath": "apps/storybook/stories/presence.stories.module.css",
+      "summary": "定义单个及多个挂载卸载动画，以不同持续时间验证 Presence 对动画生命周期的等待。",
+      "tags": [
+        "样式",
+        "示例展示",
+        "状态可视化"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/storybook/stories/accordion.stories.module.css",
+      "target": "file:apps/storybook/stories/accordion.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/alert-dialog.stories.module.css",
+      "target": "file:apps/storybook/stories/alert-dialog.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/aspect-ratio.stories.module.css",
+      "target": "file:apps/storybook/stories/aspect-ratio.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/avatar.stories.module.css",
+      "target": "file:apps/storybook/stories/avatar.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/checkbox.stories.module.css",
+      "target": "file:apps/storybook/stories/checkbox.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/collapsible.stories.module.css",
+      "target": "file:apps/storybook/stories/collapsible.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/context-menu.stories.module.css",
+      "target": "file:apps/storybook/stories/context-menu.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.module.css",
+      "target": "file:apps/storybook/stories/dialog.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/dialog.stories.module.css",
+      "target": "file:apps/storybook/stories/one-time-password-field.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/dropdown-menu.stories.module.css",
+      "target": "file:apps/storybook/stories/dropdown-menu.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/form.stories.module.css",
+      "target": "file:apps/storybook/stories/form.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/hover-card.stories.module.css",
+      "target": "file:apps/storybook/stories/hover-card.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/label.stories.module.css",
+      "target": "file:apps/storybook/stories/label.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/menu.stories.module.css",
+      "target": "file:apps/storybook/stories/menu.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/menubar.stories.module.css",
+      "target": "file:apps/storybook/stories/menubar.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/navigation-menu.stories.module.css",
+      "target": "file:apps/storybook/stories/navigation-menu.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/one-time-password-field.stories.module.css",
+      "target": "file:apps/storybook/stories/one-time-password-field.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/password-toggle-field.stories.module.css",
+      "target": "file:apps/storybook/stories/password-toggle-field.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/popover.stories.module.css",
+      "target": "file:apps/storybook/stories/popover.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/popper.stories.module.css",
+      "target": "file:apps/storybook/stories/popper.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/storybook/stories/presence.stories.module.css",
+      "target": "file:apps/storybook/stories/presence.stories.tsx",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

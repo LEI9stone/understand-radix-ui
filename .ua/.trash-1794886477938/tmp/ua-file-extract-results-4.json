@@ -1,0 +1,1305 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 4,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/collection/src/collection.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1247,
+      "nonEmptyLines": 1177,
+      "functions": [
+        {
+          "name": "CollectionSpy",
+          "startLine": 16,
+          "endLine": 19,
+          "params": [
+            "{ onRender }"
+          ]
+        },
+        {
+          "name": "labelsOf",
+          "startLine": 21,
+          "endLine": 23,
+          "params": [
+            "map"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CollectionSpy",
+          "callee": "onRender",
+          "lineNumber": 17
+        },
+        {
+          "caller": "CollectionSpy",
+          "callee": "useCollection",
+          "lineNumber": 17
+        },
+        {
+          "caller": "labelsOf",
+          "callee": "[...map.values()].map",
+          "lineNumber": 22
+        },
+        {
+          "caller": "labelsOf",
+          "callee": "map.values",
+          "lineNumber": 22
+        },
+        {
+          "caller": "Owner",
+          "callee": "useInitCollection",
+          "lineNumber": 45
+        },
+        {
+          "caller": "OtherSpy",
+          "callee": "useOtherCollection",
+          "lineNumber": 94
+        },
+        {
+          "caller": "GetterSpy",
+          "callee": "useGetCollection",
+          "lineNumber": 166
+        },
+        {
+          "caller": "LabelsButton",
+          "callee": "useGetCollection",
+          "lineNumber": 177
+        },
+        {
+          "caller": "LabelsButton",
+          "callee": "labelsOf",
+          "lineNumber": 178
+        },
+        {
+          "caller": "LabelsButton",
+          "callee": "getCollection",
+          "lineNumber": 178
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 183
+        },
+        {
+          "caller": "LabelsButton",
+          "callee": "useGetCollection",
+          "lineNumber": 208
+        },
+        {
+          "caller": "LabelsButton",
+          "callee": "labelsOf",
+          "lineNumber": 209
+        },
+        {
+          "caller": "LabelsButton",
+          "callee": "getCollection",
+          "lineNumber": 209
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 216
+        },
+        {
+          "caller": "GetterSpy",
+          "callee": "getters.push",
+          "lineNumber": 238
+        },
+        {
+          "caller": "GetterSpy",
+          "callee": "useGetCollection",
+          "lineNumber": 238
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 244
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 270
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 303
+        },
+        {
+          "caller": "LabelsButton",
+          "callee": "useGetCollection",
+          "lineNumber": 325
+        },
+        {
+          "caller": "LabelsButton",
+          "callee": "labelsOf",
+          "lineNumber": 326
+        },
+        {
+          "caller": "LabelsButton",
+          "callee": "getCollection",
+          "lineNumber": 326
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "useGetCollection",
+          "lineNumber": 348
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "React.useLayoutEffect",
+          "lineNumber": 349
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "labelsOf",
+          "lineNumber": 350
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "getCollection",
+          "lineNumber": 350
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 357
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "useGetCollection",
+          "lineNumber": 376
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "React.useLayoutEffect",
+          "lineNumber": 377
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "labelsOf",
+          "lineNumber": 378
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "getCollection",
+          "lineNumber": 378
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 385
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "useGetCollection",
+          "lineNumber": 402
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "React.useLayoutEffect",
+          "lineNumber": 403
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "labelsOf",
+          "lineNumber": 404
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "getCollection",
+          "lineNumber": 404
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 413
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "useGetCollection",
+          "lineNumber": 432
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "React.useLayoutEffect",
+          "lineNumber": 433
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "labelsOf",
+          "lineNumber": 434
+        },
+        {
+          "caller": "LayoutEffectReader",
+          "callee": "getCollection",
+          "lineNumber": 434
+        },
+        {
+          "caller": "Deferred",
+          "callee": "React.use",
+          "lineNumber": 472
+        },
+        {
+          "caller": "LabelsButton",
+          "callee": "useGetCollection",
+          "lineNumber": 477
+        },
+        {
+          "caller": "LabelsButton",
+          "callee": "labelsOf",
+          "lineNumber": 478
+        },
+        {
+          "caller": "LabelsButton",
+          "callee": "getCollection",
+          "lineNumber": 478
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 702
+        },
+        {
+          "caller": "List",
+          "callee": "maps.push",
+          "lineNumber": 749
+        },
+        {
+          "caller": "MemoizedSpy",
+          "callee": "maps.push",
+          "lineNumber": 766
+        },
+        {
+          "caller": "MemoizedSpy",
+          "callee": "useMemoizedCollection",
+          "lineNumber": 766
+        },
+        {
+          "caller": "List",
+          "callee": "React.useCallback",
+          "lineNumber": 770
+        },
+        {
+          "caller": "List",
+          "callee": "React.useMemo",
+          "lineNumber": 771
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 792
+        },
+        {
+          "caller": "List",
+          "callee": "maps.push",
+          "lineNumber": 797
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 857
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 886
+        },
+        {
+          "caller": "List",
+          "callee": "maps.push",
+          "lineNumber": 921
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 939
+        },
+        {
+          "caller": "List",
+          "callee": "maps.push",
+          "lineNumber": 944
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 960
+        },
+        {
+          "caller": "List",
+          "callee": "maps.push",
+          "lineNumber": 965
+        },
+        {
+          "caller": "Deferred",
+          "callee": "React.use",
+          "lineNumber": 984
+        },
+        {
+          "caller": "Deferred",
+          "callee": "React.use",
+          "lineNumber": 1032
+        },
+        {
+          "caller": "List",
+          "callee": "React.useState",
+          "lineNumber": 1119
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 1125
+        },
+        {
+          "caller": "List",
+          "callee": "React.useState",
+          "lineNumber": 1181
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 1187
+        },
+        {
+          "caller": "List",
+          "callee": "React.useState",
+          "lineNumber": 1218
+        },
+        {
+          "caller": "List",
+          "callee": "items.map",
+          "lineNumber": 1224
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/collection/src/collection.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 408,
+      "nonEmptyLines": 355,
+      "functions": [
+        {
+          "name": "createCollection",
+          "startLine": 46,
+          "endLine": 344,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "shallowEqual",
+          "startLine": 349,
+          "endLine": 361,
+          "params": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "isElementPreceding",
+          "startLine": 363,
+          "endLine": 365,
+          "params": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "isInDocumentOrder",
+          "startLine": 367,
+          "endLine": 384,
+          "params": [
+            "dict"
+          ]
+        },
+        {
+          "name": "sortByDocumentPosition",
+          "startLine": 386,
+          "endLine": 395,
+          "params": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "getChildListObserver",
+          "startLine": 397,
+          "endLine": 408,
+          "params": [
+            "callback"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createCollection",
+          "line": 346,
+          "isDefault": false
+        },
+        {
+          "name": "CollectionSlotProps",
+          "line": 347,
+          "isDefault": false
+        },
+        {
+          "name": "CollectionDict",
+          "line": 347,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createCollection",
+          "callee": "createContextScope",
+          "lineNumber": 56
+        },
+        {
+          "caller": "createCollection",
+          "callee": "createCollectionContext",
+          "lineNumber": 74
+        },
+        {
+          "caller": "createCollection",
+          "callee": "createCollectionContext",
+          "lineNumber": 78
+        },
+        {
+          "caller": "CollectionInit",
+          "callee": "useInitCollection",
+          "lineNumber": 103
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "React.useRef",
+          "lineNumber": 114
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "React.useState",
+          "lineNumber": 115
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "useComposedRefs",
+          "lineNumber": 118
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "React.useRef",
+          "lineNumber": 123
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "React.useCallback",
+          "lineNumber": 126
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "isInDocumentOrder",
+          "lineNumber": 128
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "registry.sort",
+          "lineNumber": 129
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "React.useEffect",
+          "lineNumber": 134
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "getChildListObserver",
+          "lineNumber": 139
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "setCollection",
+          "lineNumber": 140
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "map.toSorted",
+          "lineNumber": 141
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "sorted.some",
+          "lineNumber": 142
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "map.keyAt",
+          "lineNumber": 142
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "observer.observe",
+          "lineNumber": 147
+        },
+        {
+          "caller": "CollectionProviderImpl",
+          "callee": "observer.disconnect",
+          "lineNumber": 152
+        },
+        {
+          "caller": "createCollection",
+          "callee": "createSlot",
+          "lineNumber": 184
+        },
+        {
+          "caller": "createCollection",
+          "callee": "React.forwardRef",
+          "lineNumber": 185
+        },
+        {
+          "caller": "createCollection",
+          "callee": "useStableCollectionContext",
+          "lineNumber": 188
+        },
+        {
+          "caller": "createCollection",
+          "callee": "useComposedRefs",
+          "lineNumber": 189
+        },
+        {
+          "caller": "createCollection",
+          "callee": "createSlot",
+          "lineNumber": 208
+        },
+        {
+          "caller": "createCollection",
+          "callee": "React.forwardRef",
+          "lineNumber": 214
+        },
+        {
+          "caller": "createCollection",
+          "callee": "React.useRef",
+          "lineNumber": 217
+        },
+        {
+          "caller": "createCollection",
+          "callee": "useStableCollectionContext",
+          "lineNumber": 218
+        },
+        {
+          "caller": "createCollection",
+          "callee": "React.useRef",
+          "lineNumber": 222
+        },
+        {
+          "caller": "createCollection",
+          "callee": "shallowEqual",
+          "lineNumber": 223
+        },
+        {
+          "caller": "createCollection",
+          "callee": "React.useCallback",
+          "lineNumber": 231
+        },
+        {
+          "caller": "createCollection",
+          "callee": "registry.set",
+          "lineNumber": 235
+        },
+        {
+          "caller": "createCollection",
+          "callee": "registry.delete",
+          "lineNumber": 240
+        },
+        {
+          "caller": "createCollection",
+          "callee": "useComposedRefs",
+          "lineNumber": 245
+        },
+        {
+          "caller": "createCollection",
+          "callee": "useLayoutEffect",
+          "lineNumber": 247
+        },
+        {
+          "caller": "createCollection",
+          "callee": "registry.has",
+          "lineNumber": 250
+        },
+        {
+          "caller": "createCollection",
+          "callee": "registry.set",
+          "lineNumber": 251
+        },
+        {
+          "caller": "createCollection",
+          "callee": "React.useRef",
+          "lineNumber": 255
+        },
+        {
+          "caller": "createCollection",
+          "callee": "React.useEffect",
+          "lineNumber": 260
+        },
+        {
+          "caller": "createCollection",
+          "callee": "setCollection",
+          "lineNumber": 271
+        },
+        {
+          "caller": "createCollection",
+          "callee": "next.delete",
+          "lineNumber": 274
+        },
+        {
+          "caller": "createCollection",
+          "callee": "next.set",
+          "lineNumber": 277
+        },
+        {
+          "caller": "createCollection",
+          "callee": "next.sort",
+          "lineNumber": 279
+        },
+        {
+          "caller": "createCollection",
+          "callee": "React.useEffect",
+          "lineNumber": 283
+        },
+        {
+          "caller": "createCollection",
+          "callee": "setCollection",
+          "lineNumber": 290
+        },
+        {
+          "caller": "createCollection",
+          "callee": "map.has",
+          "lineNumber": 291
+        },
+        {
+          "caller": "createCollection",
+          "callee": "next.delete",
+          "lineNumber": 295
+        },
+        {
+          "caller": "useInitCollection",
+          "callee": "React.useState",
+          "lineNumber": 316
+        },
+        {
+          "caller": "useCollection",
+          "callee": "useStatefulCollectionContext",
+          "lineNumber": 324
+        },
+        {
+          "caller": "useGetCollection",
+          "callee": "useStableCollectionContext",
+          "lineNumber": 329
+        },
+        {
+          "caller": "shallowEqual",
+          "callee": "Object.keys",
+          "lineNumber": 353
+        },
+        {
+          "caller": "shallowEqual",
+          "callee": "Object.keys",
+          "lineNumber": 354
+        },
+        {
+          "caller": "shallowEqual",
+          "callee": "Object.prototype.hasOwnProperty.call",
+          "lineNumber": 357
+        },
+        {
+          "caller": "isElementPreceding",
+          "callee": "b.compareDocumentPosition",
+          "lineNumber": 364
+        },
+        {
+          "caller": "isInDocumentOrder",
+          "callee": "dict.keys",
+          "lineNumber": 371
+        },
+        {
+          "caller": "isInDocumentOrder",
+          "callee": "previous.compareDocumentPosition",
+          "lineNumber": 373
+        },
+        {
+          "caller": "sortByDocumentPosition",
+          "callee": "isElementPreceding",
+          "lineNumber": 392
+        },
+        {
+          "caller": "getChildListObserver",
+          "callee": "callback",
+          "lineNumber": 401
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/collection/src/ordered-dictionary.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1494,
+      "nonEmptyLines": 1379,
+      "functions": [
+        {
+          "name": "expectEntries",
+          "startLine": 4,
+          "endLine": 9,
+          "params": [
+            "dict",
+            "expected"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "expectEntries",
+          "callee": "expect([...dict.entries()]).toEqual",
+          "lineNumber": 7
+        },
+        {
+          "caller": "expectEntries",
+          "callee": "expect",
+          "lineNumber": 7
+        },
+        {
+          "caller": "expectEntries",
+          "callee": "dict.entries",
+          "lineNumber": 7
+        },
+        {
+          "caller": "expectEntries",
+          "callee": "expect(Array.from({ length: dict.size }, (_, index) => dict.entryAt(index))).toEqual",
+          "lineNumber": 8
+        },
+        {
+          "caller": "expectEntries",
+          "callee": "expect",
+          "lineNumber": 8
+        },
+        {
+          "caller": "expectEntries",
+          "callee": "Array.from",
+          "lineNumber": 8
+        },
+        {
+          "caller": "expectEntries",
+          "callee": "dict.entryAt",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/collection/src/ordered-dictionary.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 478,
+      "nonEmptyLines": 434,
+      "functions": [
+        {
+          "name": "at",
+          "startLine": 455,
+          "endLine": 461,
+          "params": [
+            "array",
+            "index"
+          ]
+        },
+        {
+          "name": "toSafeIndex",
+          "startLine": 463,
+          "endLine": 468,
+          "params": [
+            "array",
+            "index"
+          ]
+        },
+        {
+          "name": "toSafeInteger",
+          "startLine": 470,
+          "endLine": 473,
+          "params": [
+            "number"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "OrderedDict",
+          "startLine": 5,
+          "endLine": 445,
+          "methods": [
+            "constructor",
+            "set",
+            "insert",
+            "with",
+            "before",
+            "setBefore",
+            "after",
+            "setAfter",
+            "first",
+            "last",
+            "clear",
+            "delete",
+            "deleteAt",
+            "at",
+            "entryAt",
+            "indexOf",
+            "keyAt",
+            "from",
+            "keyFrom",
+            "find",
+            "findIndex",
+            "filter",
+            "map",
+            "reduce",
+            "reduceRight",
+            "sort",
+            "toSorted",
+            "toReversed",
+            "toSpliced",
+            "slice",
+            "every",
+            "some"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "OrderedDict",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "super",
+          "lineNumber": 10
+        },
+        {
+          "caller": "constructor",
+          "callee": "super.keys",
+          "lineNumber": 11
+        },
+        {
+          "caller": "constructor",
+          "callee": "__instanciated.set",
+          "lineNumber": 12
+        },
+        {
+          "caller": "set",
+          "callee": "__instanciated.get",
+          "lineNumber": 16
+        },
+        {
+          "caller": "set",
+          "callee": "this.has",
+          "lineNumber": 16
+        },
+        {
+          "caller": "set",
+          "callee": "this.#keys.push",
+          "lineNumber": 17
+        },
+        {
+          "caller": "set",
+          "callee": "super.set",
+          "lineNumber": 19
+        },
+        {
+          "caller": "insert",
+          "callee": "this.has",
+          "lineNumber": 31
+        },
+        {
+          "caller": "insert",
+          "callee": "toSafeInteger",
+          "lineNumber": 33
+        },
+        {
+          "caller": "insert",
+          "callee": "Math.min",
+          "lineNumber": 36
+        },
+        {
+          "caller": "insert",
+          "callee": "Math.max",
+          "lineNumber": 37
+        },
+        {
+          "caller": "insert",
+          "callee": "this.#keys.indexOf",
+          "lineNumber": 39
+        },
+        {
+          "caller": "insert",
+          "callee": "this.set",
+          "lineNumber": 40
+        },
+        {
+          "caller": "insert",
+          "callee": "this.#keys.filter",
+          "lineNumber": 44
+        },
+        {
+          "caller": "insert",
+          "callee": "keys.splice",
+          "lineNumber": 45
+        },
+        {
+          "caller": "insert",
+          "callee": "keys.map",
+          "lineNumber": 46
+        },
+        {
+          "caller": "insert",
+          "callee": "this.get",
+          "lineNumber": 48
+        },
+        {
+          "caller": "insert",
+          "callee": "this.clear",
+          "lineNumber": 50
+        },
+        {
+          "caller": "insert",
+          "callee": "this.set",
+          "lineNumber": 52
+        },
+        {
+          "caller": "with",
+          "callee": "copy.insert",
+          "lineNumber": 59
+        },
+        {
+          "caller": "before",
+          "callee": "this.#keys.indexOf",
+          "lineNumber": 64
+        },
+        {
+          "caller": "before",
+          "callee": "this.entryAt",
+          "lineNumber": 68
+        },
+        {
+          "caller": "setBefore",
+          "callee": "this.#keys.indexOf",
+          "lineNumber": 75
+        },
+        {
+          "caller": "setBefore",
+          "callee": "this.#keys.indexOf",
+          "lineNumber": 79
+        },
+        {
+          "caller": "setBefore",
+          "callee": "this.insert",
+          "lineNumber": 81
+        },
+        {
+          "caller": "after",
+          "callee": "this.#keys.indexOf",
+          "lineNumber": 85
+        },
+        {
+          "caller": "after",
+          "callee": "this.entryAt",
+          "lineNumber": 90
+        },
+        {
+          "caller": "setAfter",
+          "callee": "this.#keys.indexOf",
+          "lineNumber": 97
+        },
+        {
+          "caller": "setAfter",
+          "callee": "this.#keys.indexOf",
+          "lineNumber": 101
+        },
+        {
+          "caller": "setAfter",
+          "callee": "this.insert",
+          "lineNumber": 103
+        },
+        {
+          "caller": "first",
+          "callee": "this.entryAt",
+          "lineNumber": 107
+        },
+        {
+          "caller": "last",
+          "callee": "this.entryAt",
+          "lineNumber": 111
+        },
+        {
+          "caller": "clear",
+          "callee": "super.clear",
+          "lineNumber": 116
+        },
+        {
+          "caller": "delete",
+          "callee": "super.delete",
+          "lineNumber": 120
+        },
+        {
+          "caller": "delete",
+          "callee": "this.#keys.splice",
+          "lineNumber": 122
+        },
+        {
+          "caller": "delete",
+          "callee": "this.#keys.indexOf",
+          "lineNumber": 122
+        },
+        {
+          "caller": "deleteAt",
+          "callee": "this.keyAt",
+          "lineNumber": 128
+        },
+        {
+          "caller": "deleteAt",
+          "callee": "this.delete",
+          "lineNumber": 130
+        },
+        {
+          "caller": "at",
+          "callee": "at",
+          "lineNumber": 136
+        },
+        {
+          "caller": "at",
+          "callee": "this.get",
+          "lineNumber": 138
+        },
+        {
+          "caller": "entryAt",
+          "callee": "at",
+          "lineNumber": 143
+        },
+        {
+          "caller": "entryAt",
+          "callee": "this.get",
+          "lineNumber": 145
+        },
+        {
+          "caller": "indexOf",
+          "callee": "this.#keys.indexOf",
+          "lineNumber": 150
+        },
+        {
+          "caller": "keyAt",
+          "callee": "at",
+          "lineNumber": 154
+        },
+        {
+          "caller": "from",
+          "callee": "this.indexOf",
+          "lineNumber": 158
+        },
+        {
+          "caller": "from",
+          "callee": "this.at",
+          "lineNumber": 165
+        },
+        {
+          "caller": "keyFrom",
+          "callee": "this.indexOf",
+          "lineNumber": 169
+        },
+        {
+          "caller": "keyFrom",
+          "callee": "this.keyAt",
+          "lineNumber": 176
+        },
+        {
+          "caller": "find",
+          "callee": "Reflect.apply",
+          "lineNumber": 185
+        },
+        {
+          "caller": "findIndex",
+          "callee": "Reflect.apply",
+          "lineNumber": 199
+        },
+        {
+          "caller": "filter",
+          "callee": "Reflect.apply",
+          "lineNumber": 224
+        },
+        {
+          "caller": "filter",
+          "callee": "entries.push",
+          "lineNumber": 225
+        },
+        {
+          "caller": "map",
+          "callee": "entries.push",
+          "lineNumber": 239
+        },
+        {
+          "caller": "map",
+          "callee": "Reflect.apply",
+          "lineNumber": 239
+        },
+        {
+          "caller": "reduce",
+          "callee": "Reflect.apply",
+          "lineNumber": 294
+        },
+        {
+          "caller": "reduceRight",
+          "callee": "this.entryAt",
+          "lineNumber": 346
+        },
+        {
+          "caller": "reduceRight",
+          "callee": "Reflect.apply",
+          "lineNumber": 350
+        },
+        {
+          "caller": "sort",
+          "callee": "[...this.entries()].sort",
+          "lineNumber": 368
+        },
+        {
+          "caller": "sort",
+          "callee": "this.entries",
+          "lineNumber": 368
+        },
+        {
+          "caller": "sort",
+          "callee": "this.clear",
+          "lineNumber": 369
+        },
+        {
+          "caller": "sort",
+          "callee": "this.set",
+          "lineNumber": 371
+        },
+        {
+          "caller": "toSorted",
+          "callee": "[...this.entries()].sort",
+          "lineNumber": 387
+        },
+        {
+          "caller": "toSorted",
+          "callee": "this.entries",
+          "lineNumber": 387
+        },
+        {
+          "caller": "toReversed",
+          "callee": "this.keyAt",
+          "lineNumber": 394
+        },
+        {
+          "caller": "toReversed",
+          "callee": "this.get",
+          "lineNumber": 395
+        },
+        {
+          "caller": "toReversed",
+          "callee": "reversed.set",
+          "lineNumber": 396
+        },
+        {
+          "caller": "toSpliced",
+          "callee": "this.entries",
+          "lineNumber": 405
+        },
+        {
+          "caller": "toSpliced",
+          "callee": "entries.splice",
+          "lineNumber": 406
+        },
+        {
+          "caller": "slice",
+          "callee": "this.#keys.slice",
+          "lineNumber": 412
+        },
+        {
+          "caller": "slice",
+          "callee": "result.set",
+          "lineNumber": 413
+        },
+        {
+          "caller": "slice",
+          "callee": "this.get",
+          "lineNumber": 413
+        },
+        {
+          "caller": "every",
+          "callee": "Reflect.apply",
+          "lineNumber": 424
+        },
+        {
+          "caller": "some",
+          "callee": "Reflect.apply",
+          "lineNumber": 438
+        },
+        {
+          "caller": "at",
+          "callee": "Array.prototype.at.call",
+          "lineNumber": 457
+        },
+        {
+          "caller": "at",
+          "callee": "toSafeIndex",
+          "lineNumber": 459
+        },
+        {
+          "caller": "toSafeIndex",
+          "callee": "toSafeInteger",
+          "lineNumber": 465
+        },
+        {
+          "caller": "toSafeInteger",
+          "callee": "Math.trunc",
+          "lineNumber": 472
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    }
+  ]
+}

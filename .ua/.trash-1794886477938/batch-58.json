@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/roving-focus/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/roving-focus/CHANGELOG.md",
+      "summary": "记录 RovingFocusGroup 在 FocusScope 中挂载自动聚焦的修复、render props 支持、类型回归与 RSC/tree-shaking 兼容调整。",
+      "tags": [
+        "变更记录",
+        "游走焦点",
+        "键盘导航"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/roving-focus/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/roving-focus/README.md",
+      "summary": "声明 roving-focus 为内部焦点导航工具，不面向公开使用。",
+      "tags": [
+        "包文档",
+        "游走焦点",
+        "内部接口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/roving-focus/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/roving-focus/package.json",
+      "summary": "声明游走焦点组对 Collection、Direction、ID、可控状态、水合和布局 Hook 的依赖，并配置 React peer 与双模块发布。",
+      "tags": [
+        "包清单",
+        "游走焦点",
+        "交互依赖"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/roving-focus/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/roving-focus/tsconfig.json",
+      "summary": "为 RovingFocus 的源码继承共享 React 库类型规则并指定 dist 产物目录。",
+      "tags": [
+        "类型配置",
+        "游走焦点",
+        "构建配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/roving-focus/README.md",
+      "target": "config:packages/react/roving-focus/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/roving-focus/CHANGELOG.md",
+      "target": "config:packages/react/roving-focus/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/roving-focus/tsconfig.json",
+      "target": "config:internal/typescript-config/react-library.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

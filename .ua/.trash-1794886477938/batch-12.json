@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "document:.github/ISSUE_TEMPLATE/Bug_report.md",
+      "type": "document",
+      "name": "Bug_report.md",
+      "filePath": ".github/ISSUE_TEMPLATE/Bug_report.md",
+      "summary": "规范缺陷报告收集当前行为、期望行为、复现、建议方案和运行环境，帮助定位跨浏览器组件问题。",
+      "tags": [
+        "文档",
+        "问题模板",
+        "缺陷反馈"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.github/ISSUE_TEMPLATE/Documentation.md",
+      "type": "document",
+      "name": "Documentation.md",
+      "filePath": ".github/ISSUE_TEMPLATE/Documentation.md",
+      "summary": "引导文档改进反馈指出相关 Radix 组件并提供其他文档网站的参考示例。",
+      "tags": [
+        "文档",
+        "问题模板",
+        "文档改进"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.github/ISSUE_TEMPLATE/Feature_request.md",
+      "type": "document",
+      "name": "Feature_request.md",
+      "filePath": ".github/ISSUE_TEMPLATE/Feature_request.md",
+      "summary": "引导功能建议说明需求概览、其他库的例子、目标使用者与补充背景。",
+      "tags": [
+        "文档",
+        "问题模板",
+        "功能建议"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.github/ISSUE_TEMPLATE/Question.md",
+      "type": "document",
+      "name": "Question.md",
+      "filePath": ".github/ISSUE_TEMPLATE/Question.md",
+      "summary": "提供 GitHub 问题咨询的统一模板入口。",
+      "tags": [
+        "文档",
+        "问题模板",
+        "社区支持"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

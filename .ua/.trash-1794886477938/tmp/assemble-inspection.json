@@ -1,0 +1,544 @@
+{
+  "nodes": 1574,
+  "edges": 2512,
+  "files": 694,
+  "nodeTypes": {
+    "file": 381,
+    "function": 875,
+    "class": 5,
+    "pipeline": 4,
+    "document": 155,
+    "config": 154
+  },
+  "edgeTypes": {
+    "imports": 115,
+    "contains": 893,
+    "exports": 692,
+    "depends_on": 474,
+    "tested_by": 47,
+    "calls": 22,
+    "triggers": 2,
+    "deploys": 1,
+    "documents": 122,
+    "related": 54,
+    "configures": 90
+  },
+  "complexities": {
+    "moderate": 382,
+    "simple": 1057,
+    "complex": 135
+  },
+  "duplicateNodes": [],
+  "invalidNodes": [],
+  "invalidEdges": [],
+  "missingFiles": [],
+  "extraFilePaths": [],
+  "expectedImports": 115,
+  "actualImports": 115,
+  "missingImports": [],
+  "extraImports": [],
+  "orphanFileNodes": [
+    {
+      "id": "document:.changeset/README.md",
+      "type": "document",
+      "filePath": ".changeset/README.md",
+      "summary": "介绍 Changesets 在多包仓库中的版本管理和发布用途，并链接上游使用文档。"
+    },
+    {
+      "id": "document:.changeset/calm-taps-close.md",
+      "type": "document",
+      "filePath": ".changeset/calm-taps-close.md",
+      "summary": "记录 Dialog 与 DismissableLayer 修复 iOS Safari 点击遮罩无法稳定关闭模态框的问题。"
+    },
+    {
+      "id": "document:.changeset/closing-menu-pointer-focus.md",
+      "type": "document",
+      "filePath": ".changeset/closing-menu-pointer-focus.md",
+      "summary": "记录菜单退出动画期间指针经过已关闭菜单仍移动焦点的修复。"
+    },
+    {
+      "id": "document:.changeset/deep-breads-push.md",
+      "type": "document",
+      "filePath": ".changeset/deep-breads-push.md",
+      "summary": "记录将开发环境检查移至独立包的内部重构，涉及状态 Hook、交互组件与底层 primitive。"
+    },
+    {
+      "id": "document:.changeset/five-zoos-smash.md",
+      "type": "document",
+      "filePath": ".changeset/five-zoos-smash.md",
+      "summary": "记录 Select 内组合 ScrollArea 时内联 overflow 样式冲突触发 React 警告的修复。"
+    },
+    {
+      "id": "document:.changeset/fix-nested-context-menu-long-press.md",
+      "type": "document",
+      "filePath": ".changeset/fix-nested-context-menu-long-press.md",
+      "summary": "记录嵌套上下文菜单触发器长按时只启动最内层计时器的修复。"
+    },
+    {
+      "id": "document:.changeset/hot-areas-teach.md",
+      "type": "document",
+      "filePath": ".changeset/hot-areas-teach.md",
+      "summary": "记录为 RadioGroup 根元素增加 aria-disabled 的可访问性变更。"
+    },
+    {
+      "id": "document:.changeset/lazy-scripts-skip.md",
+      "type": "document",
+      "filePath": ".changeset/lazy-scripts-skip.md",
+      "summary": "记录模态组件外部内容隐藏性能优化，避免标记从不渲染的元素并允许隐藏 script 祖先。"
+    },
+    {
+      "id": "document:.changeset/lemon-experts-vanish.md",
+      "type": "document",
+      "filePath": ".changeset/lemon-experts-vanish.md",
+      "summary": "记录移除启用状态 Slider 上多余 aria-disabled 属性的修复。"
+    },
+    {
+      "id": "document:.changeset/ninety-roses-remain.md",
+      "type": "document",
+      "filePath": ".changeset/ninety-roses-remain.md",
+      "summary": "记录以内部实现替换 aria-hidden 依赖，保持模态组件外部内容隐藏行为。"
+    },
+    {
+      "id": "document:.changeset/quiet-bats-defer.md",
+      "type": "document",
+      "filePath": ".changeset/quiet-bats-defer.md",
+      "summary": "记录延迟分发程序化点击的外部交互事件，等待 React 被动 effect 提交结束。"
+    },
+    {
+      "id": "document:.changeset/quiet-kanji-wait.md",
+      "type": "document",
+      "filePath": ".changeset/quiet-kanji-wait.md",
+      "summary": "记录输入法组合期间避免处理 Escape 与 Tab 的修复，覆盖焦点域、可关闭层及 Escape Hook。"
+    },
+    {
+      "id": "document:.changeset/slick-breads-tap.md",
+      "type": "document",
+      "filePath": ".changeset/slick-breads-tap.md",
+      "summary": "记录为 ScrollArea.Content 显式添加 presentation role，避免浏览器由 display 样式推断表格语义。"
+    },
+    {
+      "id": "document:.changeset/smart-games-stick.md",
+      "type": "document",
+      "filePath": ".changeset/smart-games-stick.md",
+      "summary": "记录修复第三方库重新导出 Radix context hooks 时的类型引用。"
+    },
+    {
+      "id": "document:.changeset/sweet-tigers-wink.md",
+      "type": "document",
+      "filePath": ".changeset/sweet-tigers-wink.md",
+      "summary": "记录可关闭层禁止外部指针时首帧无法点击的回归修复。"
+    },
+    {
+      "id": "document:.changeset/tame-bears-call.md",
+      "type": "document",
+      "filePath": ".changeset/tame-bears-call.md",
+      "summary": "记录 Dialog 子部件显式 id 导致标题、描述和内容 ARIA 引用断裂的修复。"
+    },
+    {
+      "id": "document:.changeset/warm-menus-stay.md",
+      "type": "document",
+      "filePath": ".changeset/warm-menus-stay.md",
+      "summary": "记录 React 19 中碰撞翻转的子菜单在指针点击落下之前提前关闭的修复。"
+    },
+    {
+      "id": "document:.github/ISSUE_TEMPLATE/Bug_report.md",
+      "type": "document",
+      "filePath": ".github/ISSUE_TEMPLATE/Bug_report.md",
+      "summary": "规范缺陷报告收集当前行为、期望行为、复现、建议方案和运行环境，帮助定位跨浏览器组件问题。"
+    },
+    {
+      "id": "document:.github/ISSUE_TEMPLATE/Documentation.md",
+      "type": "document",
+      "filePath": ".github/ISSUE_TEMPLATE/Documentation.md",
+      "summary": "引导文档改进反馈指出相关 Radix 组件并提供其他文档网站的参考示例。"
+    },
+    {
+      "id": "document:.github/ISSUE_TEMPLATE/Feature_request.md",
+      "type": "document",
+      "filePath": ".github/ISSUE_TEMPLATE/Feature_request.md",
+      "summary": "引导功能建议说明需求概览、其他库的例子、目标使用者与补充背景。"
+    },
+    {
+      "id": "document:.github/ISSUE_TEMPLATE/Question.md",
+      "type": "document",
+      "filePath": ".github/ISSUE_TEMPLATE/Question.md",
+      "summary": "提供 GitHub 问题咨询的统一模板入口。"
+    },
+    {
+      "id": "document:CODE_OF_CONDUCT.md",
+      "type": "document",
+      "filePath": "CODE_OF_CONDUCT.md",
+      "summary": "定义社区贡献者的行为标准、维护者责任、适用范围和违规处理方式。"
+    },
+    {
+      "id": "config:context7.json",
+      "type": "config",
+      "filePath": "context7.json",
+      "summary": "配置项目的 Context7 文档来源 URL 与公开标识，供外部文档索引关联本仓库。"
+    },
+    {
+      "id": "config:internal/typescript-config/package.json",
+      "type": "config",
+      "filePath": "internal/typescript-config/package.json",
+      "summary": "声明私有 @repo/typescript-config 工作区包，让各库与应用通过共享包路径继承统一编译配置。"
+    },
+    {
+      "id": "document:packages/core/env-check/CHANGELOG.md",
+      "type": "document",
+      "filePath": "packages/core/env-check/CHANGELOG.md",
+      "summary": "记录 env-check 0.0.1 的首次发布。"
+    },
+    {
+      "id": "document:packages/core/env-check/README.md",
+      "type": "document",
+      "filePath": "packages/core/env-check/README.md",
+      "summary": "标明 env-check 仅供 Radix 内部使用，不作为公开使用接口。"
+    },
+    {
+      "id": "config:packages/core/env-check/package.json",
+      "type": "config",
+      "filePath": "packages/core/env-check/package.json",
+      "summary": "将 is-development 子路径按 development/production 条件分别导出 true/false 实现，同时配置 ESM/CJS 类型入口、无副作用发布与 radix-build。"
+    },
+    {
+      "id": "document:packages/core/number/CHANGELOG.md",
+      "type": "document",
+      "filePath": "packages/core/number/CHANGELOG.md",
+      "summary": "记录 @radix-ui/number 的版本历史，便于追踪基础数值工具的发布变化。"
+    },
+    {
+      "id": "document:packages/core/number/README.md",
+      "type": "document",
+      "filePath": "packages/core/number/README.md",
+      "summary": "标识 number 工具包并提供组件库文档入口。"
+    },
+    {
+      "id": "config:packages/core/number/package.json",
+      "type": "config",
+      "filePath": "packages/core/number/package.json",
+      "summary": "配置 @radix-ui/number 的源码入口、双模块发布产物、类型声明和 radix-build 构建命令，声明无副作用。"
+    },
+    {
+      "id": "config:packages/core/number/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/core/number/tsconfig.json",
+      "summary": "定义 number 包的 TypeScript 编译范围、输出目录和共享配置继承。"
+    },
+    {
+      "id": "document:packages/react/accessible-icon/CHANGELOG.md",
+      "type": "document",
+      "filePath": "packages/react/accessible-icon/CHANGELOG.md",
+      "summary": "记录 AccessibleIcon 包的历次版本发布和依赖更新，支持无障碍图标能力的版本追溯。"
+    },
+    {
+      "id": "document:packages/react/accessible-icon/README.md",
+      "type": "document",
+      "filePath": "packages/react/accessible-icon/README.md",
+      "summary": "标识 react-accessible-icon 包并链接其官方使用文档。"
+    },
+    {
+      "id": "config:packages/react/accessible-icon/package.json",
+      "type": "config",
+      "filePath": "packages/react/accessible-icon/package.json",
+      "summary": "定义 AccessibleIcon 的源码与发布入口、React 兼容范围和构建命令，运行时依赖 visually-hidden 提供读屏标签。"
+    },
+    {
+      "id": "config:packages/react/accessible-icon/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/react/accessible-icon/tsconfig.json",
+      "summary": "继承共享 React 库编译配置，检查 src 目录并把 dist 与 node_modules 排除在编译输入之外。"
+    },
+    {
+      "id": "document:packages/react/avatar/CHANGELOG.md",
+      "type": "document",
+      "filePath": "packages/react/avatar/CHANGELOG.md",
+      "summary": "记录头像组件 1.3.1 及此前版本的发布变化，支持图片展示行为和依赖升级的版本追溯。"
+    },
+    {
+      "id": "config:packages/react/avatar/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/react/avatar/tsconfig.json",
+      "summary": "限定头像组件源码的 TypeScript 编译范围，并通过共享配置统一 React 库类型检查。"
+    },
+    {
+      "id": "document:packages/react/context/README.md",
+      "type": "document",
+      "filePath": "packages/react/context/README.md",
+      "summary": "标识 react-context 内部工具包并给出文档入口。"
+    },
+    {
+      "id": "config:packages/react/context/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/react/context/tsconfig.json",
+      "summary": "为上下文工具的 src 目录应用共享 React 库编译设置和独立输出目录。"
+    },
+    {
+      "id": "document:packages/react/dropdown-menu/CHANGELOG.md",
+      "type": "document",
+      "filePath": "packages/react/dropdown-menu/CHANGELOG.md",
+      "summary": "记录 DropdownMenu 2.2.1 及此前版本的发布历史，用于追溯菜单组件与内部依赖变化。"
+    },
+    {
+      "id": "config:packages/react/dropdown-menu/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/react/dropdown-menu/tsconfig.json",
+      "summary": "约束下拉菜单 src 的编译输入并继承共享 React 库设置，隔离构建产物与依赖目录。"
+    },
+    {
+      "id": "document:packages/react/focus-guards/CHANGELOG.md",
+      "type": "document",
+      "filePath": "packages/react/focus-guards/CHANGELOG.md",
+      "summary": "记录焦点守卫工具 1.2.0 及先前版本的发布更新，支持焦点边界能力的维护追踪。"
+    },
+    {
+      "id": "config:packages/react/focus-guards/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/react/focus-guards/tsconfig.json",
+      "summary": "为焦点守卫源码启用共享 React 库类型配置，并指定独立构建输出与排除目录。"
+    },
+    {
+      "id": "document:packages/react/form/README.md",
+      "type": "document",
+      "filePath": "packages/react/form/README.md",
+      "summary": "标识 react-form 包并提供其组件文档入口。"
+    },
+    {
+      "id": "config:packages/react/form/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/react/form/tsconfig.json",
+      "summary": "为表单组件源码设置共享 React 类型检查、输出位置和构建目录排除规则。"
+    },
+    {
+      "id": "document:packages/react/id/CHANGELOG.md",
+      "type": "document",
+      "filePath": "packages/react/id/CHANGELOG.md",
+      "summary": "记录稳定 ID 工具 1.1.4、1.1.3 与 1.1.2 的发布条目，帮助定位标识生成能力的版本变化。"
+    },
+    {
+      "id": "config:packages/react/id/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/react/id/tsconfig.json",
+      "summary": "为 ID Hook 源码继承共享 React 库配置，限定 src 输入与 dist 输出。"
+    },
+    {
+      "id": "document:packages/react/portal/CHANGELOG.md",
+      "type": "document",
+      "filePath": "packages/react/portal/CHANGELOG.md",
+      "summary": "维护 Portal 包 1.2.0 及 1.1 系列的发布记录，支持传送节点能力与依赖变化的追溯。"
+    },
+    {
+      "id": "config:packages/react/portal/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/react/portal/tsconfig.json",
+      "summary": "将 Portal 源码纳入共享 React 库编译设置，并排除 node_modules 和 dist 避免重复检查。"
+    },
+    {
+      "id": "document:packages/react/slot/README.md",
+      "type": "document",
+      "filePath": "packages/react/slot/README.md",
+      "summary": "提供 react-slot 包标识与文档入口，定位组件属性转交的组合基础包。"
+    },
+    {
+      "id": "config:packages/react/slot/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/react/slot/tsconfig.json",
+      "summary": "对 Slot 源码应用共享 React 库类型设置，限定输入范围和独立输出目录。"
+    },
+    {
+      "id": "document:packages/react/tabs/CHANGELOG.md",
+      "type": "document",
+      "filePath": "packages/react/tabs/CHANGELOG.md",
+      "summary": "记录 Tabs 1.2.1 及此前版本的发布条目，供标签页组件升级时追溯兼容变化。"
+    },
+    {
+      "id": "config:packages/react/tabs/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/react/tabs/tsconfig.json",
+      "summary": "为标签页源码设置共享 React 编译规范、类型输入与独立 dist 输出。"
+    },
+    {
+      "id": "document:packages/react/toast/README.md",
+      "type": "document",
+      "filePath": "packages/react/toast/README.md",
+      "summary": "标识 react-toast 包并提供通知组件文档入口。"
+    },
+    {
+      "id": "config:packages/react/toast/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/react/toast/tsconfig.json",
+      "summary": "将 Toast 源码纳入共享 React 库检查设置，并避免对依赖和构建产物重复编译。"
+    },
+    {
+      "id": "document:packages/react/toolbar/CHANGELOG.md",
+      "type": "document",
+      "filePath": "packages/react/toolbar/CHANGELOG.md",
+      "summary": "维护工具栏组件 1.2.1 及 1.1 系列发布历史，帮助判断组件与内部依赖升级影响。"
+    },
+    {
+      "id": "config:packages/react/toolbar/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/react/toolbar/tsconfig.json",
+      "summary": "为工具栏源码继承共享 React 库编译设置，指定 dist 输出并限制 src 输入。"
+    },
+    {
+      "id": "document:packages/react/use-layout-effect/CHANGELOG.md",
+      "type": "document",
+      "filePath": "packages/react/use-layout-effect/CHANGELOG.md",
+      "summary": "记录安全布局效应工具 1.1.4、1.1.3 和 1.1.2 的版本条目。"
+    },
+    {
+      "id": "config:packages/react/use-layout-effect/tsconfig.json",
+      "type": "config",
+      "filePath": "packages/react/use-layout-effect/tsconfig.json",
+      "summary": "为安全布局效应源码应用共享 React 库类型配置与独立输出目录。"
+    },
+    {
+      "id": "file:.github/CODEOWNERS",
+      "type": "file",
+      "filePath": ".github/CODEOWNERS",
+      "summary": "声明希望为新拉取请求添加的审阅者，用于代码所有权与评审协作。"
+    },
+    {
+      "id": "document:.github/CONTRIBUTING.md",
+      "type": "document",
+      "filePath": ".github/CONTRIBUTING.md",
+      "summary": "介绍 Radix 贡献原则、问题反馈和拉取请求准备流程，并提供本地开发说明。"
+    },
+    {
+      "id": "document:.github/PULL_REQUEST_TEMPLATE.md",
+      "type": "document",
+      "filePath": ".github/PULL_REQUEST_TEMPLATE.md",
+      "summary": "为拉取请求提供提交前检查清单和变更描述位置，帮助维护者进行一致评审。"
+    },
+    {
+      "id": "config:.github/actions/detect-snapshot-changes/action.yml",
+      "type": "config",
+      "filePath": ".github/actions/detect-snapshot-changes/action.yml",
+      "summary": "读取 npm next 快照版本与发布时间，按 UTC 日期避免同日重复发布，并比较上次发布前的提交以过滤文档、测试及应用等非发布变更。"
+    },
+    {
+      "id": "config:.ua/config.json",
+      "type": "config",
+      "filePath": ".ua/config.json",
+      "summary": "保存本项目知识图谱的中文输出语言偏好，供后续增量分析保持语言一致。"
+    },
+    {
+      "id": "file:apps/ssr-testing/next.config.js",
+      "type": "file",
+      "filePath": "apps/ssr-testing/next.config.js",
+      "summary": "允许 Next.js 访问工作区外目录，并在该服务端验证应用构建时忽略 TypeScript 错误。"
+    },
+    {
+      "id": "file:apps/storybook/.storybook/manager-head.html",
+      "type": "file",
+      "filePath": "apps/storybook/.storybook/manager-head.html",
+      "summary": "为 Storybook 管理页添加 PNG 与 SVG 站点图标声明。"
+    },
+    {
+      "id": "file:apps/storybook/.storybook/manager.ts",
+      "type": "file",
+      "filePath": "apps/storybook/.storybook/manager.ts",
+      "summary": "为 Storybook 管理界面采用浅色主题并禁用全局快捷键，避免影响交互示例。"
+    },
+    {
+      "id": "file:apps/storybook/index.d.ts",
+      "type": "file",
+      "filePath": "apps/storybook/index.d.ts",
+      "summary": "声明 CSS Modules 的只读类名映射及普通 CSS 导入类型，让故事文件可以通过 TypeScript 类型检查。"
+    },
+    {
+      "id": "config:e2e/tsconfig.json",
+      "type": "config",
+      "filePath": "e2e/tsconfig.json",
+      "summary": "为端到端测试配置 ES2022、DOM 与 Node 类型、Bundler 模块解析和严格检查，并关闭代码输出。"
+    },
+    {
+      "id": "config:internal/test-utils/tsconfig.json",
+      "type": "config",
+      "filePath": "internal/test-utils/tsconfig.json",
+      "summary": "为内部测试工具设置共享 TypeScript 检查规则、源码范围和输出目录，保证各组件测试复用工具的类型一致。"
+    },
+    {
+      "id": "file:internal/typescript-config/react-library/index.d.ts",
+      "type": "file",
+      "filePath": "internal/typescript-config/react-library/index.d.ts",
+      "summary": "为 React 库引入 Node、Testing Library、axe 与测试初始化的环境类型，并声明 CSS Modules 的类名映射。"
+    },
+    {
+      "id": "file:packages/core/env-check/src/index.ts",
+      "type": "file",
+      "filePath": "packages/core/env-check/src/index.ts",
+      "summary": "保留环境判断包的空根模块，实际开发环境常量通过专用子路径提供。"
+    },
+    {
+      "id": "file:packages/core/env-check/src/internal/is-development.false.ts",
+      "type": "file",
+      "filePath": "packages/core/env-check/src/internal/is-development.false.ts",
+      "summary": "导出恒为 false 的开发环境标志，供生产条件出口移除开发期分支。"
+    },
+    {
+      "id": "file:packages/core/primitive/src/types.ts",
+      "type": "file",
+      "filePath": "packages/core/primitive/src/types.ts",
+      "summary": "以平台计时器函数的 ReturnType 定义 Timeout、Interval 和 Immediate，统一不同运行环境的句柄类型。"
+    },
+    {
+      "id": "file:packages/react/slot/src/__snapshots__/slot.test.tsx.snap",
+      "type": "file",
+      "filePath": "packages/react/slot/src/__snapshots__/slot.test.tsx.snap",
+      "summary": "保存 Slot 将按钮组合为链接或普通按钮时的 DOM 快照，覆盖左右图标、嵌套 Slottable 和懒加载子元素。"
+    },
+    {
+      "id": "file:playwright.config.ts",
+      "type": "file",
+      "filePath": "playwright.config.ts",
+      "summary": "配置基于本地 9009 Storybook 的 Chromium E2E 测试，指定触摸支持、超时、CI 重试与报告，并自动复用或启动开发服务。"
+    },
+    {
+      "id": "file:scripts/check-composed-refs.mjs",
+      "type": "file",
+      "filePath": "scripts/check-composed-refs.mjs",
+      "summary": "使用 TypeScript AST 扫描组件源码，拦截内联 useComposedRefs 回调和 JSX 中直接 composeRefs 导致的引用身份不稳定，防止 React 19 无限更新回归。"
+    },
+    {
+      "id": "file:types/global.d.ts",
+      "type": "file",
+      "filePath": "types/global.d.ts",
+      "summary": "声明 CSS Modules 类名映射，并提供 requestIdleCallback 相关句柄、选项和 deadline 类型。"
+    },
+    {
+      "id": "file:types/index.d.ts",
+      "type": "file",
+      "filePath": "types/index.d.ts",
+      "summary": "声明 CSS Modules 导入的类名到字符串映射，为样式模块提供共享类型入口。"
+    }
+  ],
+  "correctEndpoints": [
+    {
+      "id": "file:packages/react/context/src/create-context.tsx",
+      "type": "file",
+      "name": "create-context.tsx",
+      "filePath": "packages/react/context/src/create-context.tsx",
+      "summary": "构建带缺失 Provider 诊断的 Context 工厂与可组合的独立作用域，避免同类复合组件嵌套时意外共享状态。",
+      "tags": [
+        "上下文",
+        "作用域隔离",
+        "泛型"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "type": "file",
+      "name": "roving-focus-group.tsx",
+      "filePath": "packages/react/roving-focus/src/roving-focus-group.tsx",
+      "summary": "维护组内唯一 Tab 停靠点，按方向、循环、激活项与水合阶段注册可聚焦集合，提供方向键和出入组焦点行为。",
+      "tags": [
+        "组合组件",
+        "可访问性",
+        "roving-focus"
+      ],
+      "complexity": "complex"
+    }
+  ]
+}

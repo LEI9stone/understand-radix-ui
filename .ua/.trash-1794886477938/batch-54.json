@@ -1,0 +1,107 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/primitive/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/primitive/CHANGELOG.md",
+      "summary": "按版本记录多态 DOM 基元包的发布变更与依赖更新，最新章节为 2.2.0。",
+      "tags": [
+        "文档",
+        "发布历史",
+        "多态 DOM 基元"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/primitive/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/primitive/README.md",
+      "summary": "标识 primitive 包并提供进一步文档入口，作为多态 DOM 基元模块的简短说明。",
+      "tags": [
+        "文档",
+        "包入口",
+        "多态 DOM 基元"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/primitive/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/primitive/package.json",
+      "summary": "定义 @radix-ui/react-primitive 的源入口、发布导出、构建脚本和 React 对等依赖，配置多态 DOM 基元包的工作区依赖与发布边界。",
+      "tags": [
+        "配置",
+        "包发布",
+        "多态 DOM 基元"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/primitive/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/primitive/tsconfig.json",
+      "summary": "配置多态 DOM 基元包的 TypeScript 继承关系、编译选项及源码包含和排除范围。",
+      "tags": [
+        "配置",
+        "类型检查",
+        "多态 DOM 基元"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/primitive/CHANGELOG.md",
+      "target": "config:packages/react/primitive/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/primitive/README.md",
+      "target": "config:packages/react/primitive/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/primitive/package.json",
+      "target": "document:packages/react/primitive/README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/primitive/tsconfig.json",
+      "target": "config:packages/react/primitive/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/primitive/package.json",
+      "target": "file:packages/react/primitive/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:packages/react/primitive/tsconfig.json",
+      "target": "file:packages/react/primitive/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/primitive/README.md",
+      "target": "file:packages/react/primitive/src/index.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "batches": [
+    {
+      "batchIndex": 9,
+      "files": 3,
+      "parts": 1,
+      "nodes": 24,
+      "edges": 40,
+      "imports": 2
+    },
+    {
+      "batchIndex": 13,
+      "files": 10,
+      "parts": 1,
+      "nodes": 10,
+      "edges": 6,
+      "imports": 0
+    },
+    {
+      "batchIndex": 19,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 0,
+      "imports": 0
+    },
+    {
+      "batchIndex": 22,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 0,
+      "imports": 0
+    },
+    {
+      "batchIndex": 28,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 2,
+      "imports": 0
+    },
+    {
+      "batchIndex": 34,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 2,
+      "imports": 0
+    },
+    {
+      "batchIndex": 38,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 2,
+      "imports": 0
+    },
+    {
+      "batchIndex": 39,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 2,
+      "imports": 0
+    },
+    {
+      "batchIndex": 41,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 2,
+      "imports": 0
+    },
+    {
+      "batchIndex": 43,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 2,
+      "imports": 0
+    },
+    {
+      "batchIndex": 52,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 2,
+      "imports": 0
+    },
+    {
+      "batchIndex": 63,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 2,
+      "imports": 0
+    },
+    {
+      "batchIndex": 65,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 2,
+      "imports": 0
+    },
+    {
+      "batchIndex": 66,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 2,
+      "imports": 0
+    },
+    {
+      "batchIndex": 69,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 2,
+      "imports": 0
+    },
+    {
+      "batchIndex": 76,
+      "files": 4,
+      "parts": 1,
+      "nodes": 4,
+      "edges": 2,
+      "imports": 0
+    },
+    {
+      "batchIndex": 85,
+      "files": 25,
+      "parts": 2,
+      "nodes": 63,
+      "edges": 95,
+      "imports": 5
+    },
+    {
+      "batchIndex": 87,
+      "files": 25,
+      "parts": 2,
+      "nodes": 103,
+      "edges": 192,
+      "imports": 6
+    },
+    {
+      "batchIndex": 93,
+      "files": 20,
+      "parts": 1,
+      "nodes": 29,
+      "edges": 31,
+      "imports": 3
+    }
+  ],
+  "totalFiles": 139,
+  "totalNodes": 285,
+  "totalEdges": 388,
+  "nodeTypes": {
+    "file": 72,
+    "function": 144,
+    "config": 34,
+    "document": 33,
+    "class": 2
+  },
+  "edgeTypes": {
+    "imports": 16,
+    "contains": 146,
+    "exports": 108,
+    "depends_on": 71,
+    "tested_by": 14,
+    "documents": 14,
+    "related": 1,
+    "configures": 18
+  },
+  "issues": []
+}

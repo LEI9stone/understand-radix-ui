@@ -1,0 +1,415 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 3,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 3,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/presence/src/presence.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 145,
+      "nonEmptyLines": 133,
+      "callGraph": [
+        {
+          "caller": "App",
+          "callee": "React.useRef",
+          "lineNumber": 14
+        },
+        {
+          "caller": "App",
+          "callee": "React.useReducer",
+          "lineNumber": 29
+        },
+        {
+          "caller": "App",
+          "callee": "forceRender",
+          "lineNumber": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/presence/src/presence.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 280,
+      "nonEmptyLines": 255,
+      "functions": [
+        {
+          "name": "Presence",
+          "startLine": 10,
+          "endLine": 23,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "usePresence",
+          "startLine": 29,
+          "endLine": 187,
+          "params": [
+            "present"
+          ]
+        },
+        {
+          "name": "setRef",
+          "startLine": 193,
+          "endLine": 199,
+          "params": [
+            "ref",
+            "value"
+          ]
+        },
+        {
+          "name": "useStableComposedRefs",
+          "startLine": 215,
+          "endLine": 245,
+          "params": [
+            "...refs"
+          ]
+        },
+        {
+          "name": "getAnimationName",
+          "startLine": 247,
+          "endLine": 249,
+          "params": [
+            "styles"
+          ]
+        },
+        {
+          "name": "getElementRef",
+          "startLine": 256,
+          "endLine": 273,
+          "params": [
+            "element"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Presence",
+          "line": 275,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 275,
+          "isDefault": false
+        },
+        {
+          "name": "PresenceProps",
+          "line": 280,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Presence",
+          "callee": "usePresence",
+          "lineNumber": 12
+        },
+        {
+          "caller": "Presence",
+          "callee": "children",
+          "lineNumber": 16
+        },
+        {
+          "caller": "Presence",
+          "callee": "React.Children.only",
+          "lineNumber": 17
+        },
+        {
+          "caller": "Presence",
+          "callee": "useStableComposedRefs",
+          "lineNumber": 20
+        },
+        {
+          "caller": "Presence",
+          "callee": "getElementRef",
+          "lineNumber": 20
+        },
+        {
+          "caller": "Presence",
+          "callee": "React.cloneElement",
+          "lineNumber": 22
+        },
+        {
+          "caller": "usePresence",
+          "callee": "React.useState",
+          "lineNumber": 30
+        },
+        {
+          "caller": "usePresence",
+          "callee": "React.useRef",
+          "lineNumber": 31
+        },
+        {
+          "caller": "usePresence",
+          "callee": "React.useRef",
+          "lineNumber": 32
+        },
+        {
+          "caller": "usePresence",
+          "callee": "React.useRef",
+          "lineNumber": 33
+        },
+        {
+          "caller": "usePresence",
+          "callee": "React.useRef",
+          "lineNumber": 34
+        },
+        {
+          "caller": "usePresence",
+          "callee": "useStateMachine",
+          "lineNumber": 36
+        },
+        {
+          "caller": "usePresence",
+          "callee": "React.useEffect",
+          "lineNumber": 50
+        },
+        {
+          "caller": "usePresence",
+          "callee": "getAnimationName",
+          "lineNumber": 59
+        },
+        {
+          "caller": "usePresence",
+          "callee": "useLayoutEffect",
+          "lineNumber": 66
+        },
+        {
+          "caller": "usePresence",
+          "callee": "getAnimationName",
+          "lineNumber": 73
+        },
+        {
+          "caller": "usePresence",
+          "callee": "send",
+          "lineNumber": 81
+        },
+        {
+          "caller": "usePresence",
+          "callee": "send",
+          "lineNumber": 85
+        },
+        {
+          "caller": "usePresence",
+          "callee": "send",
+          "lineNumber": 96
+        },
+        {
+          "caller": "usePresence",
+          "callee": "send",
+          "lineNumber": 98
+        },
+        {
+          "caller": "usePresence",
+          "callee": "useLayoutEffect",
+          "lineNumber": 106
+        },
+        {
+          "caller": "handleAnimationEnd",
+          "callee": "getAnimationName",
+          "lineNumber": 116
+        },
+        {
+          "caller": "handleAnimationEnd",
+          "callee": "currentAnimationName.includes",
+          "lineNumber": 119
+        },
+        {
+          "caller": "handleAnimationEnd",
+          "callee": "CSS.escape",
+          "lineNumber": 119
+        },
+        {
+          "caller": "handleAnimationEnd",
+          "callee": "send",
+          "lineNumber": 131
+        },
+        {
+          "caller": "handleAnimationEnd",
+          "callee": "ownerWindow.setTimeout",
+          "lineNumber": 139
+        },
+        {
+          "caller": "handleAnimationStart",
+          "callee": "getAnimationName",
+          "lineNumber": 150
+        },
+        {
+          "caller": "usePresence",
+          "callee": "node.addEventListener",
+          "lineNumber": 153
+        },
+        {
+          "caller": "usePresence",
+          "callee": "node.addEventListener",
+          "lineNumber": 154
+        },
+        {
+          "caller": "usePresence",
+          "callee": "node.addEventListener",
+          "lineNumber": 155
+        },
+        {
+          "caller": "usePresence",
+          "callee": "ownerWindow.clearTimeout",
+          "lineNumber": 157
+        },
+        {
+          "caller": "usePresence",
+          "callee": "node.removeEventListener",
+          "lineNumber": 158
+        },
+        {
+          "caller": "usePresence",
+          "callee": "node.removeEventListener",
+          "lineNumber": 159
+        },
+        {
+          "caller": "usePresence",
+          "callee": "node.removeEventListener",
+          "lineNumber": 160
+        },
+        {
+          "caller": "usePresence",
+          "callee": "send",
+          "lineNumber": 165
+        },
+        {
+          "caller": "usePresence",
+          "callee": "['mounted', 'unmountSuspended'].includes",
+          "lineNumber": 170
+        },
+        {
+          "caller": "usePresence",
+          "callee": "React.useCallback",
+          "lineNumber": 171
+        },
+        {
+          "caller": "usePresence",
+          "callee": "getComputedStyle",
+          "lineNumber": 173
+        },
+        {
+          "caller": "usePresence",
+          "callee": "getAnimationName",
+          "lineNumber": 180
+        },
+        {
+          "caller": "usePresence",
+          "callee": "setNode",
+          "lineNumber": 184
+        },
+        {
+          "caller": "setRef",
+          "callee": "ref",
+          "lineNumber": 195
+        },
+        {
+          "caller": "useStableComposedRefs",
+          "callee": "React.useRef",
+          "lineNumber": 218
+        },
+        {
+          "caller": "useStableComposedRefs",
+          "callee": "React.useCallback",
+          "lineNumber": 221
+        },
+        {
+          "caller": "useStableComposedRefs",
+          "callee": "currentRefs.map",
+          "lineNumber": 224
+        },
+        {
+          "caller": "useStableComposedRefs",
+          "callee": "setRef",
+          "lineNumber": 225
+        },
+        {
+          "caller": "useStableComposedRefs",
+          "callee": "cleanup",
+          "lineNumber": 237
+        },
+        {
+          "caller": "useStableComposedRefs",
+          "callee": "setRef",
+          "lineNumber": 239
+        },
+        {
+          "caller": "getElementRef",
+          "callee": "Object.getOwnPropertyDescriptor",
+          "lineNumber": 258
+        },
+        {
+          "caller": "getElementRef",
+          "callee": "Object.getOwnPropertyDescriptor",
+          "lineNumber": 265
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/presence/src/use-state-machine.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "useStateMachine",
+          "startLine": 12,
+          "endLine": 20,
+          "params": [
+            "initialState",
+            "machine"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useStateMachine",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useStateMachine",
+          "callee": "React.useReducer",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

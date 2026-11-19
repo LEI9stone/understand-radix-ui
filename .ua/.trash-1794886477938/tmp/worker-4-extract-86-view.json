@@ -1,0 +1,1499 @@
+{
+ "scriptCompleted": true,
+ "filesAnalyzed": 25,
+ "filesSkipped": [],
+ "filesUnreadable": [],
+ "analysisOutcomes": {
+  "structure": {
+   "succeeded": 25,
+   "failed": 0
+  },
+  "callGraph": {
+   "succeeded": 25,
+   "failed": 0,
+   "skipped": 0
+  }
+ },
+ "results": [
+  {
+   "path": "packages/react/alert-dialog/src/index.ts",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 35,
+   "nonEmptyLines": 35,
+   "exports": [
+    {
+     "name": "createAlertDialogScope",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialog",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogTrigger",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogPortal",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogOverlay",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogContent",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogAction",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogCancel",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogTitle",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogDescription",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Trigger",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Portal",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Overlay",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Content",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Action",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Cancel",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Title",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Description",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogProps",
+     "line": 25,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogTriggerProps",
+     "line": 25,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogPortalProps",
+     "line": 25,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogOverlayProps",
+     "line": 25,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogContentProps",
+     "line": 25,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogActionProps",
+     "line": 25,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogCancelProps",
+     "line": 25,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogTitleProps",
+     "line": 25,
+     "isDefault": false
+    },
+    {
+     "name": "AlertDialogDescriptionProps",
+     "line": 25,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 28,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/announce/src/announce.test.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 60,
+   "nonEmptyLines": 51,
+   "metrics": {
+    "importCount": 1,
+    "exportCount": 0,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/announce/src/announce.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 245,
+   "nonEmptyLines": 217,
+   "functions": [
+    {
+     "name": "buildLiveRegionElement",
+     "startLine": 202,
+     "endLine": 222,
+     "params": [
+      "ownerDocument",
+      "{ type, relevant, role, atomic, id }"
+     ]
+    },
+    {
+     "name": "buildSelector",
+     "startLine": 224,
+     "endLine": 234,
+     "params": [
+      "{ type, relevant, role, atomic, id }"
+     ]
+    },
+    {
+     "name": "getLiveRegionPartDataAttr",
+     "startLine": 236,
+     "endLine": 238,
+     "params": [
+      "id"
+     ]
+    }
+   ],
+   "exports": [
+    {
+     "name": "Announce",
+     "line": 240,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 240,
+     "isDefault": false
+    },
+    {
+     "name": "AnnounceProps",
+     "line": 245,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 3,
+    "functionCount": 3,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/announce/src/index.ts",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 7,
+   "nonEmptyLines": 7,
+   "exports": [
+    {
+     "name": "Announce",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AnnounceProps",
+     "line": 7,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 3,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/arrow/src/arrow.test.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 89,
+   "nonEmptyLines": 73,
+   "metrics": {
+    "importCount": 1,
+    "exportCount": 0,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/arrow/src/arrow.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 38,
+   "nonEmptyLines": 33,
+   "exports": [
+    {
+     "name": "Arrow",
+     "line": 33,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 33,
+     "isDefault": false
+    },
+    {
+     "name": "ArrowProps",
+     "line": 38,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 3,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/arrow/src/index.ts",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 7,
+   "nonEmptyLines": 7,
+   "exports": [
+    {
+     "name": "Arrow",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "ArrowProps",
+     "line": 7,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 3,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/aspect-ratio/src/aspect-ratio.test.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 87,
+   "nonEmptyLines": 73,
+   "metrics": {
+    "importCount": 1,
+    "exportCount": 0,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/aspect-ratio/src/aspect-ratio.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 53,
+   "nonEmptyLines": 48,
+   "exports": [
+    {
+     "name": "AspectRatio",
+     "line": 48,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 48,
+     "isDefault": false
+    },
+    {
+     "name": "AspectRatioProps",
+     "line": 53,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 3,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/aspect-ratio/src/index.ts",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 7,
+   "nonEmptyLines": 7,
+   "exports": [
+    {
+     "name": "AspectRatio",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AspectRatioProps",
+     "line": 7,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 3,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/avatar/src/avatar.test.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 639,
+   "nonEmptyLines": 543,
+   "classes": [
+    {
+     "name": "MockImage",
+     "startLine": 405,
+     "endLine": 441,
+     "methods": [
+      "constructor",
+      "src",
+      "src",
+      "complete",
+      "naturalWidth",
+      "onSrcChange"
+     ],
+     "properties": [
+      "_src"
+     ]
+    }
+   ],
+   "metrics": {
+    "importCount": 1,
+    "exportCount": 0,
+    "functionCount": 0,
+    "classCount": 1
+   }
+  },
+  {
+   "path": "packages/react/avatar/src/avatar.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 248,
+   "nonEmptyLines": 211,
+   "functions": [
+    {
+     "name": "useImageLoadingStatus",
+     "startLine": 148,
+     "endLine": 191,
+     "params": [
+      "src",
+      "{\n    loadingStatus,\n    setLoadingStatus,\n    referrerPolicy,\n    crossOrigin,\n  }"
+     ]
+    },
+    {
+     "name": "getImageLoadingStatus",
+     "startLine": 193,
+     "endLine": 199,
+     "params": [
+      "image"
+     ]
+    },
+    {
+     "name": "useImageCount",
+     "startLine": 206,
+     "endLine": 223,
+     "params": []
+    },
+    {
+     "name": "useUpdateImageCount",
+     "startLine": 225,
+     "endLine": 234,
+     "params": [
+      "setImageCount"
+     ]
+    }
+   ],
+   "exports": [
+    {
+     "name": "createAvatarScope",
+     "line": 237,
+     "isDefault": false
+    },
+    {
+     "name": "Avatar",
+     "line": 237,
+     "isDefault": false
+    },
+    {
+     "name": "AvatarImage",
+     "line": 237,
+     "isDefault": false
+    },
+    {
+     "name": "AvatarFallback",
+     "line": 237,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 237,
+     "isDefault": false
+    },
+    {
+     "name": "Image",
+     "line": 237,
+     "isDefault": false
+    },
+    {
+     "name": "Fallback",
+     "line": 237,
+     "isDefault": false
+    },
+    {
+     "name": "AvatarProps",
+     "line": 248,
+     "isDefault": false
+    },
+    {
+     "name": "AvatarImageProps",
+     "line": 248,
+     "isDefault": false
+    },
+    {
+     "name": "AvatarFallbackProps",
+     "line": 248,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 10,
+    "functionCount": 4,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/avatar/src/index.ts",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 13,
+   "nonEmptyLines": 13,
+   "exports": [
+    {
+     "name": "createAvatarScope",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Avatar",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AvatarImage",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AvatarFallback",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Image",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Fallback",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "AvatarProps",
+     "line": 13,
+     "isDefault": false
+    },
+    {
+     "name": "AvatarImageProps",
+     "line": 13,
+     "isDefault": false
+    },
+    {
+     "name": "AvatarFallbackProps",
+     "line": 13,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 10,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/checkbox/src/checkbox.test.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 999,
+   "nonEmptyLines": 867,
+   "functions": [
+    {
+     "name": "LegacyCheckbox",
+     "startLine": 729,
+     "endLine": 747,
+     "params": [
+      "props"
+     ]
+    }
+   ],
+   "metrics": {
+    "importCount": 1,
+    "exportCount": 0,
+    "functionCount": 1,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/checkbox/src/checkbox.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 479,
+   "nonEmptyLines": 437,
+   "functions": [
+    {
+     "name": "CheckboxProvider",
+     "startLine": 63,
+     "endLine": 124,
+     "params": [
+      "props"
+     ]
+    },
+    {
+     "name": "isFunction",
+     "startLine": 445,
+     "endLine": 447,
+     "params": [
+      "value"
+     ]
+    },
+    {
+     "name": "isIndeterminate",
+     "startLine": 449,
+     "endLine": 451,
+     "params": [
+      "checked"
+     ]
+    },
+    {
+     "name": "getState",
+     "startLine": 453,
+     "endLine": 455,
+     "params": [
+      "checked"
+     ]
+    }
+   ],
+   "exports": [
+    {
+     "name": "createCheckboxScope",
+     "line": 457,
+     "isDefault": false
+    },
+    {
+     "name": "Checkbox",
+     "line": 457,
+     "isDefault": false
+    },
+    {
+     "name": "CheckboxProvider",
+     "line": 457,
+     "isDefault": false
+    },
+    {
+     "name": "CheckboxTrigger",
+     "line": 457,
+     "isDefault": false
+    },
+    {
+     "name": "CheckboxIndicator",
+     "line": 457,
+     "isDefault": false
+    },
+    {
+     "name": "CheckboxBubbleInput",
+     "line": 457,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 457,
+     "isDefault": false
+    },
+    {
+     "name": "Provider",
+     "line": 457,
+     "isDefault": false
+    },
+    {
+     "name": "Trigger",
+     "line": 457,
+     "isDefault": false
+    },
+    {
+     "name": "Indicator",
+     "line": 457,
+     "isDefault": false
+    },
+    {
+     "name": "BubbleInput",
+     "line": 457,
+     "isDefault": false
+    },
+    {
+     "name": "CheckboxProps",
+     "line": 472,
+     "isDefault": false
+    },
+    {
+     "name": "CheckboxProviderProps",
+     "line": 472,
+     "isDefault": false
+    },
+    {
+     "name": "CheckboxTriggerProps",
+     "line": 472,
+     "isDefault": false
+    },
+    {
+     "name": "CheckboxIndicatorProps",
+     "line": 472,
+     "isDefault": false
+    },
+    {
+     "name": "CheckboxBubbleInputProps",
+     "line": 472,
+     "isDefault": false
+    },
+    {
+     "name": "CheckedState",
+     "line": 472,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 17,
+    "functionCount": 4,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/checkbox/src/index.ts",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 24,
+   "nonEmptyLines": 24,
+   "exports": [
+    {
+     "name": "createCheckboxScope",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Checkbox",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "unstable_CheckboxProvider",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "unstable_CheckboxTrigger",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "CheckboxIndicator",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "unstable_CheckboxBubbleInput",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "unstable_Provider",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "unstable_Trigger",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Indicator",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "unstable_BubbleInput",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "CheckboxProps",
+     "line": 17,
+     "isDefault": false
+    },
+    {
+     "name": "unstable_CheckboxProviderProps",
+     "line": 17,
+     "isDefault": false
+    },
+    {
+     "name": "unstable_CheckboxTriggerProps",
+     "line": 17,
+     "isDefault": false
+    },
+    {
+     "name": "CheckboxIndicatorProps",
+     "line": 17,
+     "isDefault": false
+    },
+    {
+     "name": "unstable_CheckboxBubbleInputProps",
+     "line": 17,
+     "isDefault": false
+    },
+    {
+     "name": "CheckedState",
+     "line": 17,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 17,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/collapsible/src/collapsible.test.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 335,
+   "nonEmptyLines": 283,
+   "metrics": {
+    "importCount": 1,
+    "exportCount": 0,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/collapsible/src/collapsible.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 244,
+   "nonEmptyLines": 214,
+   "functions": [
+    {
+     "name": "getState",
+     "startLine": 229,
+     "endLine": 231,
+     "params": [
+      "open"
+     ]
+    }
+   ],
+   "exports": [
+    {
+     "name": "createCollapsibleScope",
+     "line": 233,
+     "isDefault": false
+    },
+    {
+     "name": "Collapsible",
+     "line": 233,
+     "isDefault": false
+    },
+    {
+     "name": "CollapsibleTrigger",
+     "line": 233,
+     "isDefault": false
+    },
+    {
+     "name": "CollapsibleContent",
+     "line": 233,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 233,
+     "isDefault": false
+    },
+    {
+     "name": "Trigger",
+     "line": 233,
+     "isDefault": false
+    },
+    {
+     "name": "Content",
+     "line": 233,
+     "isDefault": false
+    },
+    {
+     "name": "CollapsibleProps",
+     "line": 244,
+     "isDefault": false
+    },
+    {
+     "name": "CollapsibleTriggerProps",
+     "line": 244,
+     "isDefault": false
+    },
+    {
+     "name": "CollapsibleContentProps",
+     "line": 244,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 10,
+    "functionCount": 1,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/collapsible/src/index.ts",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 17,
+   "nonEmptyLines": 17,
+   "exports": [
+    {
+     "name": "createCollapsibleScope",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Collapsible",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "CollapsibleTrigger",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "CollapsibleContent",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Trigger",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "Content",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "CollapsibleProps",
+     "line": 13,
+     "isDefault": false
+    },
+    {
+     "name": "CollapsibleTriggerProps",
+     "line": 13,
+     "isDefault": false
+    },
+    {
+     "name": "CollapsibleContentProps",
+     "line": 13,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 10,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/collection/src/collection-legacy.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 138,
+   "nonEmptyLines": 113,
+   "functions": [
+    {
+     "name": "createCollection",
+     "startLine": 17,
+     "endLine": 135,
+     "params": [
+      "name"
+     ]
+    }
+   ],
+   "exports": [
+    {
+     "name": "createCollection",
+     "line": 137,
+     "isDefault": false
+    },
+    {
+     "name": "CollectionProps",
+     "line": 138,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 2,
+    "functionCount": 1,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/collection/src/index.ts",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 9,
+   "nonEmptyLines": 8,
+   "exports": [
+    {
+     "name": "createCollection",
+     "line": 2,
+     "isDefault": false
+    },
+    {
+     "name": "CollectionProps",
+     "line": 3,
+     "isDefault": false
+    },
+    {
+     "name": "unstable_createCollection",
+     "line": 5,
+     "isDefault": false
+    },
+    {
+     "name": "unstable_CollectionSlotProps",
+     "line": 6,
+     "isDefault": false
+    },
+    {
+     "name": "unstable_CollectionDict",
+     "line": 6,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 5,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/compose-refs/src/compose-refs.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 60,
+   "nonEmptyLines": 54,
+   "functions": [
+    {
+     "name": "setRef",
+     "startLine": 9,
+     "endLine": 15,
+     "params": [
+      "ref",
+      "value"
+     ]
+    },
+    {
+     "name": "composeRefs",
+     "startLine": 21,
+     "endLine": 49,
+     "params": [
+      "...refs"
+     ]
+    },
+    {
+     "name": "useComposedRefs",
+     "startLine": 55,
+     "endLine": 58,
+     "params": [
+      "...refs"
+     ]
+    }
+   ],
+   "exports": [
+    {
+     "name": "composeRefs",
+     "line": 60,
+     "isDefault": false
+    },
+    {
+     "name": "useComposedRefs",
+     "line": 60,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 2,
+    "functionCount": 3,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/compose-refs/src/index.ts",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 1,
+   "nonEmptyLines": 1,
+   "exports": [
+    {
+     "name": "composeRefs",
+     "line": 1,
+     "isDefault": false
+    },
+    {
+     "name": "useComposedRefs",
+     "line": 1,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 2,
+    "functionCount": 0,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/context-menu/src/context-menu.test.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 1599,
+   "nonEmptyLines": 1396,
+   "functions": [
+    {
+     "name": "ContextMenuTest",
+     "startLine": 11,
+     "endLine": 22,
+     "params": [
+      "props"
+     ]
+    },
+    {
+     "name": "cleanupModal",
+     "startLine": 1517,
+     "endLine": 1521,
+     "params": []
+    }
+   ],
+   "metrics": {
+    "importCount": 1,
+    "exportCount": 0,
+    "functionCount": 2,
+    "classCount": 0
+   }
+  },
+  {
+   "path": "packages/react/context-menu/src/context-menu.tsx",
+   "language": "typescript",
+   "fileCategory": "code",
+   "totalLines": 599,
+   "nonEmptyLines": 524,
+   "functions": [
+    {
+     "name": "ContextMenu",
+     "startLine": 50,
+     "endLine": 98,
+     "params": [
+      "props"
+     ]
+    },
+    {
+     "name": "ContextMenuPortal",
+     "startLine": 222,
+     "endLine": 228,
+     "params": [
+      "props"
+     ]
+    },
+    {
+     "name": "ContextMenuSub",
+     "startLine": 470,
+     "endLine": 485,
+     "params": [
+      "props"
+     ]
+    },
+    {
+     "name": "whenTouchOrPen",
+     "startLine": 541,
+     "endLine": 543,
+     "params": [
+      "handler"
+     ]
+    }
+   ],
+   "exports": [
+    {
+     "name": "createContextMenuScope",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenu",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuTrigger",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuPortal",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuContent",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuGroup",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuLabel",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuItem",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuCheckboxItem",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuRadioGroup",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuRadioItem",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuItemIndicator",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuSeparator",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuArrow",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuSub",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuSubTrigger",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuSubContent",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "Root",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "Trigger",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "Portal",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "Content",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "Group",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "Label",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "Item",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "CheckboxItem",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "RadioGroup",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "RadioItem",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ItemIndicator",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "Separator",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "Arrow",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "Sub",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "SubTrigger",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "SubContent",
+     "line": 545,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuTriggerProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuPortalProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuContentProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuGroupProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuLabelProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuItemProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuCheckboxItemProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuRadioGroupProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuRadioItemProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuItemIndicatorProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuSeparatorProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuArrowProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuSubProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuSubTriggerProps",
+     "line": 582,
+     "isDefault": false
+    },
+    {
+     "name": "ContextMenuSubContentProps",
+     "line": 582,
+     "isDefault": false
+    }
+   ],
+   "metrics": {
+    "importCount": 0,
+    "exportCount": 49,
+    "functionCount": 4,
+    "classCount": 0
+   }
+  }
+ ]
+}

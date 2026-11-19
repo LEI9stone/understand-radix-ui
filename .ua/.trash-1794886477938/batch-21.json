@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/core/rect/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/core/rect/CHANGELOG.md",
+      "summary": "记录 @radix-ui/rect 1.1.2 与 1.1.3 的发布历史。",
+      "tags": [
+        "变更记录",
+        "版本发布",
+        "矩形观测内部工具"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/core/rect/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/core/rect/README.md",
+      "summary": "说明 矩形观测内部工具 属于内部工具，不面向公共使用。",
+      "tags": [
+        "文档",
+        "包入口",
+        "内部工具"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/core/rect/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/core/rect/package.json",
+      "summary": "声明 矩形观测内部工具 包的源码入口、发布产物、构建脚本与依赖约束，控制该包在工作区和发布后的消费方式。",
+      "tags": [
+        "包配置",
+        "构建发布",
+        "矩形观测内部工具"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/core/rect/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/core/rect/tsconfig.json",
+      "summary": "为 矩形观测内部工具 包配置 TypeScript 编译范围和共享编译选项，将源码检查与包构建配置衔接。",
+      "tags": [
+        "编译配置",
+        "类型检查",
+        "矩形观测内部工具"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/core/rect/README.md",
+      "target": "config:packages/core/rect/package.json",
+      "type": "documents",
+      "weight": 0.5,
+      "direction": "forward"
+    },
+    {
+      "source": "document:packages/core/rect/CHANGELOG.md",
+      "target": "config:packages/core/rect/package.json",
+      "type": "documents",
+      "weight": 0.5,
+      "direction": "forward"
+    },
+    {
+      "source": "config:packages/core/rect/package.json",
+      "target": "config:packages/core/rect/tsconfig.json",
+      "type": "configures",
+      "weight": 0.6,
+      "direction": "forward"
+    }
+  ]
+}

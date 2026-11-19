@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/toggle/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/toggle/CHANGELOG.md",
+      "summary": "记录切换按钮可选属性类型、回调类型、树摇优化与受控状态依赖更新。",
+      "tags": [
+        "变更记录",
+        "切换按钮",
+        "版本发布"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/toggle/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/toggle/README.md",
+      "summary": "提供切换按钮包名称与官方网站组件使用文档入口。",
+      "tags": [
+        "包文档",
+        "切换按钮",
+        "使用范围"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/toggle/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/toggle/package.json",
+      "summary": "声明切换按钮发布与编译配置，仅依赖事件组合 primitive、DOM Primitive 与可控状态 Hook 实现按压切换。",
+      "tags": [
+        "包配置",
+        "切换按钮",
+        "模块发布"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/toggle/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/toggle/tsconfig.json",
+      "summary": "为切换按钮包继承内部 React 库 TypeScript 编译规则，将 src 纳入编译并将产物定位到 dist。",
+      "tags": [
+        "编译配置",
+        "React库",
+        "TypeScript"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/toggle/README.md",
+      "target": "config:packages/react/toggle/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/toggle/CHANGELOG.md",
+      "target": "config:packages/react/toggle/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/toggle/tsconfig.json",
+      "target": "config:packages/react/toggle/package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

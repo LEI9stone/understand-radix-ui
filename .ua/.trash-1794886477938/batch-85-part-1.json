@@ -1,0 +1,547 @@
+{
+  "nodes": [
+    {
+      "id": "config:internal/test-utils/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "internal/test-utils/tsconfig.json",
+      "summary": "为内部测试工具设置共享 TypeScript 检查规则、源码范围和输出目录，保证各组件测试复用工具的类型一致。",
+      "tags": [
+        "测试基础",
+        "编译配置",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:internal/typescript-config/react-library/index.d.ts",
+      "type": "file",
+      "name": "index.d.ts",
+      "filePath": "internal/typescript-config/react-library/index.d.ts",
+      "summary": "为 React 库引入 Node、Testing Library、axe 与测试初始化的环境类型，并声明 CSS Modules 的类名映射。",
+      "tags": [
+        "环境类型",
+        "测试基础",
+        "样式模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/core/env-check/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/core/env-check/src/index.ts",
+      "summary": "保留环境判断包的空根模块，实际开发环境常量通过专用子路径提供。",
+      "tags": [
+        "入口点",
+        "环境判断",
+        "模块边界"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/core/env-check/src/internal/is-development.false.ts",
+      "type": "file",
+      "name": "is-development.false.ts",
+      "filePath": "packages/core/env-check/src/internal/is-development.false.ts",
+      "summary": "导出恒为 false 的开发环境标志，供生产条件出口移除开发期分支。",
+      "tags": [
+        "环境判断",
+        "生产构建",
+        "常量"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/core/env-check/src/internal/is-development.true.ts",
+      "type": "file",
+      "name": "is-development.true.ts",
+      "filePath": "packages/core/env-check/src/internal/is-development.true.ts",
+      "summary": "导出恒为 true 的开发环境标志，启用开发期诊断及警告分支。",
+      "tags": [
+        "环境判断",
+        "开发诊断",
+        "常量"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/core/number/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/core/number/src/index.ts",
+      "summary": "公开导出 clamp 数值边界工具，作为 number 包的统一入口。",
+      "tags": [
+        "入口点",
+        "数值工具",
+        "导出聚合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/core/number/src/number.ts",
+      "type": "file",
+      "name": "number.ts",
+      "filePath": "packages/core/number/src/number.ts",
+      "summary": "提供把数值限制在最小值与最大值之间的 clamp，供滑块、滚动几何等交互计算复用。",
+      "tags": [
+        "数值工具",
+        "边界处理",
+        "纯函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/number/src/number.ts:clamp",
+      "type": "function",
+      "name": "clamp",
+      "filePath": "packages/core/number/src/number.ts",
+      "lineRange": [
+        1,
+        3
+      ],
+      "summary": "将输入限制在给定闭区间内，先应用最小边界再应用最大边界。",
+      "tags": [
+        "数值工具",
+        "纯函数",
+        "边界处理"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/core/primitive/bench/aria-hidden.bench.mts",
+      "type": "file",
+      "name": "aria-hidden.bench.mts",
+      "filePath": "packages/core/primitive/bench/aria-hidden.bench.mts",
+      "summary": "构建 aria-hidden 浏览器基准页面，在 Chromium、Firefox 和 WebKit 中运行各场景，分别比较纯脚本与包含样式布局成本的中位耗时。",
+      "tags": [
+        "性能基准",
+        "浏览器对比",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/core/primitive/bench/aria-hidden.page.ts",
+      "type": "file",
+      "name": "aria-hidden.page.ts",
+      "filePath": "packages/core/primitive/bench/aria-hidden.page.ts",
+      "summary": "构造深层宽树 DOM、脚本和 live region 等不同场景，测量 hideOthers 与撤销操作的脚本和总渲染开销。",
+      "tags": [
+        "性能基准",
+        "DOM树",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/core/primitive/bench/aria-hidden.page.ts:buildTree",
+      "type": "function",
+      "name": "buildTree",
+      "filePath": "packages/core/primitive/bench/aria-hidden.page.ts",
+      "lineRange": [
+        35,
+        47
+      ],
+      "summary": "递归构建指定深度与宽度的 div 树，并在叶子插入 span，生成可重复的基准 DOM。",
+      "tags": [
+        "性能基准",
+        "递归",
+        "DOM构造"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/primitive/bench/aria-hidden.page.ts:measureMedianMs",
+      "type": "function",
+      "name": "measureMedianMs",
+      "filePath": "packages/core/primitive/bench/aria-hidden.page.ts",
+      "lineRange": [
+        110,
+        126
+      ],
+      "summary": "预热后分多组执行给定操作，按每周期平均耗时计算样本中位数，减少偶然波动。",
+      "tags": [
+        "性能基准",
+        "采样统计",
+        "时间测量"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/primitive/bench/aria-hidden.page.ts:runScenario",
+      "type": "function",
+      "name": "runScenario",
+      "filePath": "packages/core/primitive/bench/aria-hidden.page.ts",
+      "lineRange": [
+        128,
+        167
+      ],
+      "summary": "按名称部署带可选 aria-hidden CSS 的 DOM 场景，分别测量屏蔽撤销脚本与强制布局成本，最后清理页面。",
+      "tags": [
+        "性能基准",
+        "场景执行",
+        "资源清理"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/core/primitive/src/aria-hidden.test.tsx",
+      "type": "file",
+      "name": "aria-hidden.test.tsx",
+      "filePath": "packages/core/primitive/src/aria-hidden.test.tsx",
+      "summary": "验证 hideOthers、inertOthers 与 suppressOthers 的屏蔽和恢复行为，覆盖多层调用、已有属性及 Shadow DOM 目标。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "背景屏蔽"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/core/primitive/src/aria-hidden.test.tsx:getNearestAttribute",
+      "type": "function",
+      "name": "getNearestAttribute",
+      "filePath": "packages/core/primitive/src/aria-hidden.test.tsx",
+      "lineRange": [
+        536,
+        556
+      ],
+      "summary": "沿父节点向上查找首个非空属性值，在指定父元素、父 ref 或树边界处停止，用于验证继承屏蔽效果。",
+      "tags": [
+        "测试辅助",
+        "祖先遍历",
+        "属性查询"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/core/primitive/src/aria-hidden.ts",
+      "type": "file",
+      "name": "aria-hidden.ts",
+      "filePath": "packages/core/primitive/src/aria-hidden.ts",
+      "summary": "实现模态界面外部内容的 aria-hidden 或 inert 屏蔽，保留目标祖先和 live region，并用引用计数支持嵌套调用与可靠撤销。",
+      "tags": [
+        "可访问性",
+        "背景屏蔽",
+        "引用计数"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/core/primitive/src/aria-hidden.ts:correctTargets",
+      "type": "function",
+      "name": "correctTargets",
+      "filePath": "packages/core/primitive/src/aria-hidden.ts",
+      "lineRange": [
+        37,
+        61
+      ],
+      "summary": "校验保留目标是否在父容器内，并把跨 Shadow DOM 的目标修正到可包含的宿主元素，开发期报告无效目标。",
+      "tags": [
+        "Shadow-DOM",
+        "目标校验",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/primitive/src/aria-hidden.ts:applyAttributeToOthers",
+      "type": "function",
+      "name": "applyAttributeToOthers",
+      "filePath": "packages/core/primitive/src/aria-hidden.ts",
+      "lineRange": [
+        71,
+        186
+      ],
+      "summary": "保留目标与 live region 的祖先路径，对其余可渲染分支设置控制属性和标记；用引用计数与原始属性记录保障并发屏蔽的正确撤销。",
+      "tags": [
+        "背景屏蔽",
+        "引用计数",
+        "撤销机制"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/core/primitive/src/aria-hidden.ts:hideOthers",
+      "type": "function",
+      "name": "hideOthers",
+      "filePath": "packages/core/primitive/src/aria-hidden.ts",
+      "lineRange": [
+        196,
+        202
+      ],
+      "summary": "为保留目标之外的内容应用 aria-hidden 并返回恢复函数，供模态组件隔离读屏访问。",
+      "tags": [
+        "读屏隔离",
+        "DOM属性",
+        "撤销机制"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/primitive/src/aria-hidden.ts:inertOthers",
+      "type": "function",
+      "name": "inertOthers",
+      "filePath": "packages/core/primitive/src/aria-hidden.ts",
+      "lineRange": [
+        212,
+        218
+      ],
+      "summary": "为保留目标之外的内容应用 inert，同时维护标记属性并返回恢复函数。",
+      "tags": [
+        "交互隔离",
+        "DOM属性",
+        "撤销机制"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/primitive/src/aria-hidden.ts:supportsInert",
+      "type": "function",
+      "name": "supportsInert",
+      "filePath": "packages/core/primitive/src/aria-hidden.ts",
+      "lineRange": [
+        220,
+        222
+      ],
+      "summary": "检测浏览器 HTMLElement 原型是否提供原生 inert 属性，用于选择背景屏蔽策略。",
+      "tags": [
+        "能力检测",
+        "浏览器兼容",
+        "交互隔离"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/primitive/src/aria-hidden.ts:suppressOthers",
+      "type": "function",
+      "name": "suppressOthers",
+      "filePath": "packages/core/primitive/src/aria-hidden.ts",
+      "lineRange": [
+        233,
+        239
+      ],
+      "summary": "优先使用原生 inert 屏蔽背景，在不支持时回退为 aria-hidden，并统一返回撤销函数。",
+      "tags": [
+        "浏览器兼容",
+        "背景屏蔽",
+        "策略选择"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/core/primitive/src/can-use-dom.ts",
+      "type": "file",
+      "name": "can-use-dom.ts",
+      "filePath": "packages/core/primitive/src/can-use-dom.ts",
+      "summary": "检测 window、document 与 createElement 是否存在，为服务端环境访问 DOM 提供前置判断。",
+      "tags": [
+        "环境判断",
+        "DOM能力",
+        "服务端兼容"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/core/primitive/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/core/primitive/src/index.ts",
+      "summary": "聚合核心事件组合、DOM 所属环境及计时器类型出口，供 React 交互包复用。",
+      "tags": [
+        "入口点",
+        "导出聚合",
+        "DOM工具"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/core/primitive/bench/aria-hidden.bench.mts:bundlePage",
+      "type": "function",
+      "name": "bundlePage",
+      "filePath": "packages/core/primitive/bench/aria-hidden.bench.mts",
+      "lineRange": [
+        31,
+        57
+      ],
+      "summary": "调用 Vite 内存构建将基准页面打包为 IIFE，提取生成代码供各浏览器注入运行。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/core/number/src/number.ts",
+      "target": "function:packages/core/number/src/number.ts:clamp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/number/src/number.ts",
+      "target": "function:packages/core/number/src/number.ts:clamp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/primitive/bench/aria-hidden.page.ts",
+      "target": "function:packages/core/primitive/bench/aria-hidden.page.ts:buildTree",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/bench/aria-hidden.page.ts",
+      "target": "function:packages/core/primitive/bench/aria-hidden.page.ts:measureMedianMs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/bench/aria-hidden.page.ts",
+      "target": "function:packages/core/primitive/bench/aria-hidden.page.ts:runScenario",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/bench/aria-hidden.page.ts",
+      "target": "function:packages/core/primitive/bench/aria-hidden.page.ts:runScenario",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/primitive/bench/aria-hidden.page.ts",
+      "target": "file:packages/core/primitive/src/aria-hidden.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/core/primitive/src/aria-hidden.test.tsx",
+      "target": "function:packages/core/primitive/src/aria-hidden.test.tsx:getNearestAttribute",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/src/aria-hidden.test.tsx",
+      "target": "function:packages/core/primitive/src/aria-hidden.test.tsx:getNearestAttribute",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/primitive/src/aria-hidden.ts",
+      "target": "function:packages/core/primitive/src/aria-hidden.ts:correctTargets",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/src/aria-hidden.ts",
+      "target": "function:packages/core/primitive/src/aria-hidden.ts:applyAttributeToOthers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/src/aria-hidden.ts",
+      "target": "function:packages/core/primitive/src/aria-hidden.ts:hideOthers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/src/aria-hidden.ts",
+      "target": "function:packages/core/primitive/src/aria-hidden.ts:hideOthers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/primitive/src/aria-hidden.ts",
+      "target": "function:packages/core/primitive/src/aria-hidden.ts:inertOthers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/src/aria-hidden.ts",
+      "target": "function:packages/core/primitive/src/aria-hidden.ts:inertOthers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/primitive/src/aria-hidden.ts",
+      "target": "function:packages/core/primitive/src/aria-hidden.ts:supportsInert",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/src/aria-hidden.ts",
+      "target": "function:packages/core/primitive/src/aria-hidden.ts:supportsInert",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/primitive/src/aria-hidden.ts",
+      "target": "function:packages/core/primitive/src/aria-hidden.ts:suppressOthers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/src/aria-hidden.ts",
+      "target": "function:packages/core/primitive/src/aria-hidden.ts:suppressOthers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/primitive/bench/aria-hidden.bench.mts",
+      "target": "function:packages/core/primitive/bench/aria-hidden.bench.mts:bundlePage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/core/primitive/src/aria-hidden.ts",
+      "target": "file:packages/core/primitive/src/aria-hidden.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/core/primitive/bench/aria-hidden.bench.mts",
+      "target": "file:packages/core/primitive/bench/aria-hidden.page.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/core/number/src/index.ts",
+      "target": "file:packages/core/number/src/number.ts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/core/primitive/src/index.ts",
+      "target": "file:packages/core/primitive/src/primitive.tsx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

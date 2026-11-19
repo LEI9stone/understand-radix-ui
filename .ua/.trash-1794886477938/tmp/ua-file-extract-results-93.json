@@ -1,0 +1,756 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 17,
+  "filesSkipped": [
+    "patches/@changesets__apply-release-plan.patch",
+    "scripts/rsc-client-boundary-stub.mts",
+    "vitest.config.mts"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 17,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 17,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "exports": [
+        {
+          "name": "useLayoutEffect",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-previous/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "exports": [
+        {
+          "name": "usePrevious",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-previous/src/use-previous.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "usePrevious",
+          "startLine": 3,
+          "endLine": 16,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "usePrevious",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "usePrevious",
+          "callee": "React.useRef",
+          "lineNumber": 4
+        },
+        {
+          "caller": "usePrevious",
+          "callee": "React.useMemo",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-rect/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "exports": [
+        {
+          "name": "useRect",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-rect/src/use-rect.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 22,
+      "functions": [
+        {
+          "name": "useRect",
+          "startLine": 10,
+          "endLine": 23,
+          "params": [
+            "measurable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useRect",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useRect",
+          "callee": "React.useState",
+          "lineNumber": 11
+        },
+        {
+          "caller": "useRect",
+          "callee": "React.useEffect",
+          "lineNumber": 12
+        },
+        {
+          "caller": "useRect",
+          "callee": "observeElementRect",
+          "lineNumber": 14
+        },
+        {
+          "caller": "useRect",
+          "callee": "setRect",
+          "lineNumber": 16
+        },
+        {
+          "caller": "useRect",
+          "callee": "unobserve",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-size/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "exports": [
+        {
+          "name": "useSize",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/use-size/src/use-size.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 265,
+      "nonEmptyLines": 225,
+      "functions": [
+        {
+          "name": "SizeProbe",
+          "startLine": 79,
+          "endLine": 82,
+          "params": [
+            "{ element }"
+          ]
+        },
+        {
+          "name": "Harness",
+          "startLine": 88,
+          "endLine": 96,
+          "params": [
+            "{ disabled = false }"
+          ]
+        },
+        {
+          "name": "getOutput",
+          "startLine": 98,
+          "endLine": 100,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "MockResizeObserver",
+          "startLine": 9,
+          "endLine": 44,
+          "methods": [
+            "constructor",
+            "observe",
+            "unobserve",
+            "disconnect",
+            "emit",
+            "latest",
+            "reset"
+          ],
+          "properties": [
+            "instances",
+            "callback",
+            "observed"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "MockResizeObserver.instances.push",
+          "lineNumber": 17
+        },
+        {
+          "caller": "observe",
+          "callee": "this.observed.set",
+          "lineNumber": 21
+        },
+        {
+          "caller": "unobserve",
+          "callee": "this.observed.delete",
+          "lineNumber": 25
+        },
+        {
+          "caller": "disconnect",
+          "callee": "this.observed.clear",
+          "lineNumber": 29
+        },
+        {
+          "caller": "emit",
+          "callee": "this.callback",
+          "lineNumber": 34
+        },
+        {
+          "caller": "SizeProbe",
+          "callee": "useSize",
+          "lineNumber": 80
+        },
+        {
+          "caller": "Harness",
+          "callee": "React.useState",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getOutput",
+          "callee": "screen.getByTestId",
+          "lineNumber": 99
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "packages/react/use-size/src/use-size.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 64,
+      "functions": [
+        {
+          "name": "useSize",
+          "startLine": 4,
+          "endLine": 75,
+          "params": [
+            "element"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useSize",
+          "line": 77,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useSize",
+          "callee": "React.useState",
+          "lineNumber": 5
+        },
+        {
+          "caller": "useSize",
+          "callee": "useLayoutEffect",
+          "lineNumber": 7
+        },
+        {
+          "caller": "useSize",
+          "callee": "setSize",
+          "lineNumber": 10
+        },
+        {
+          "caller": "useSize",
+          "callee": "Array.isArray",
+          "lineNumber": 15
+        },
+        {
+          "caller": "useSize",
+          "callee": "window.cancelAnimationFrame",
+          "lineNumber": 37
+        },
+        {
+          "caller": "useSize",
+          "callee": "window.requestAnimationFrame",
+          "lineNumber": 38
+        },
+        {
+          "caller": "useSize",
+          "callee": "Array.isArray",
+          "lineNumber": 45
+        },
+        {
+          "caller": "useSize",
+          "callee": "setSize",
+          "lineNumber": 57
+        },
+        {
+          "caller": "useSize",
+          "callee": "resizeObserver.observe",
+          "lineNumber": 61
+        },
+        {
+          "caller": "useSize",
+          "callee": "window.cancelAnimationFrame",
+          "lineNumber": 64
+        },
+        {
+          "caller": "useSize",
+          "callee": "resizeObserver.unobserve",
+          "lineNumber": 65
+        },
+        {
+          "caller": "useSize",
+          "callee": "setSize",
+          "lineNumber": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/visually-hidden/src/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "exports": [
+        {
+          "name": "VisuallyHidden",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "VISUALLY_HIDDEN_STYLES",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "VisuallyHiddenProps",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/visually-hidden/src/visually-hidden.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 55,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/react/visually-hidden/src/visually-hidden.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 47,
+      "nonEmptyLines": 41,
+      "exports": [
+        {
+          "name": "VisuallyHidden",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "Root",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "VISUALLY_HIDDEN_STYLES",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "VisuallyHiddenProps",
+          "line": 47,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "playwright.config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 39,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/check-composed-refs.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 123,
+      "nonEmptyLines": 108,
+      "functions": [
+        {
+          "name": "report",
+          "startLine": 42,
+          "endLine": 45,
+          "params": [
+            "sourceFile",
+            "file",
+            "node",
+            "message"
+          ]
+        },
+        {
+          "name": "isCallTo",
+          "startLine": 59,
+          "endLine": 63,
+          "params": [
+            "node",
+            "name"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "report",
+          "callee": "sourceFile.getLineAndCharacterOfPosition",
+          "lineNumber": 43
+        },
+        {
+          "caller": "report",
+          "callee": "node.getStart",
+          "lineNumber": 43
+        },
+        {
+          "caller": "report",
+          "callee": "violations.push",
+          "lineNumber": 44
+        },
+        {
+          "caller": "report",
+          "callee": "path.relative",
+          "lineNumber": 44
+        },
+        {
+          "caller": "isCallTo",
+          "callee": "ts.isCallExpression",
+          "lineNumber": 61
+        },
+        {
+          "caller": "isCallTo",
+          "callee": "ts.isIdentifier",
+          "lineNumber": 61
+        },
+        {
+          "caller": "findComposeRefs",
+          "callee": "isCallTo",
+          "lineNumber": 76
+        },
+        {
+          "caller": "findComposeRefs",
+          "callee": "report",
+          "lineNumber": 77
+        },
+        {
+          "caller": "findComposeRefs",
+          "callee": "ts.forEachChild",
+          "lineNumber": 79
+        },
+        {
+          "caller": "visit",
+          "callee": "isCallTo",
+          "lineNumber": 84
+        },
+        {
+          "caller": "visit",
+          "callee": "ts.isArrowFunction",
+          "lineNumber": 86
+        },
+        {
+          "caller": "visit",
+          "callee": "ts.isFunctionExpression",
+          "lineNumber": 86
+        },
+        {
+          "caller": "visit",
+          "callee": "report",
+          "lineNumber": 87
+        },
+        {
+          "caller": "visit",
+          "callee": "ts.isJsxAttribute",
+          "lineNumber": 94
+        },
+        {
+          "caller": "visit",
+          "callee": "ts.isJsxExpression",
+          "lineNumber": 96
+        },
+        {
+          "caller": "visit",
+          "callee": "findComposeRefs",
+          "lineNumber": 99
+        },
+        {
+          "caller": "visit",
+          "callee": "ts.forEachChild",
+          "lineNumber": 102
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/rsc-compatibility.rsc.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 87,
+      "nonEmptyLines": 79,
+      "functions": [
+        {
+          "name": "collectPackages",
+          "startLine": 33,
+          "endLine": 60,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "collectPackages",
+          "callee": "path.join",
+          "lineNumber": 36
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "fs.existsSync",
+          "lineNumber": 37
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "fs.readdirSync",
+          "lineNumber": 40
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "path.join",
+          "lineNumber": 41
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "path.join",
+          "lineNumber": 42
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "path.join",
+          "lineNumber": 43
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "fs.existsSync",
+          "lineNumber": 44
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "fs.existsSync",
+          "lineNumber": 44
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "JSON.parse",
+          "lineNumber": 47
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "fs.readFileSync",
+          "lineNumber": 47
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "fs.readFileSync",
+          "lineNumber": 51
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "packages.push",
+          "lineNumber": 52
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "hasUseClientDirective",
+          "lineNumber": 55
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "packages.sort",
+          "lineNumber": 59
+        },
+        {
+          "caller": "collectPackages",
+          "callee": "a.name.localeCompare",
+          "lineNumber": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/setup-tests.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 20,
+      "callGraph": [
+        {
+          "caller": "observe",
+          "callee": "this.cb",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "types/global.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "types/index.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

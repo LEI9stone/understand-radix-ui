@@ -1,0 +1,702 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/alert-dialog/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/alert-dialog/src/index.ts",
+      "summary": "导出 AlertDialog 的根、触发器、Portal、遮罩、内容、确认/取消操作及标题描述，并统一导出各部件属性类型。",
+      "tags": [
+        "公开入口",
+        "警告对话框",
+        "聚合导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/announce/src/announce.test.tsx",
+      "type": "file",
+      "name": "announce.test.tsx",
+      "filePath": "packages/react/announce/src/announce.test.tsx",
+      "summary": "验证 Announce.Root 的普通属性、样式、事件和 ref 透传，以及 asChild 时属性落在消费者子元素上。",
+      "tags": [
+        "单元测试",
+        "播报区域",
+        "插槽组合"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/announce/src/announce.tsx",
+      "type": "file",
+      "name": "announce.tsx",
+      "filePath": "packages/react/announce/src/announce.tsx",
+      "summary": "把可见内容镜像到共享 ARIA live region，按优先级和标识复用播报区域，并在文档隐藏时停用播报；通过引用计数管理 visibilitychange 监听。",
+      "tags": [
+        "可访问性",
+        "播报区域",
+        "共享状态"
+      ],
+      "complexity": "complex",
+      "languageNotes": "通过 Portal 复用 live region，并用 Map 对共享事件监听进行引用计数，避免每个播报组件重复绑定。"
+    },
+    {
+      "id": "function:packages/react/announce/src/announce.tsx:buildLiveRegionElement",
+      "type": "function",
+      "name": "buildLiveRegionElement",
+      "filePath": "packages/react/announce/src/announce.tsx",
+      "lineRange": [
+        202,
+        222
+      ],
+      "summary": "在指定文档 body 创建视觉隐藏的播报区域，设置 aria-live、aria-atomic、role 和可选 aria-relevant。",
+      "tags": [
+        "可访问性",
+        "播报区域",
+        "共享状态"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/announce/src/announce.tsx:buildSelector",
+      "type": "function",
+      "name": "buildSelector",
+      "filePath": "packages/react/announce/src/announce.tsx",
+      "lineRange": [
+        224,
+        234
+      ],
+      "summary": "根据播报优先级、原子更新、相关变化、角色与标识构建匹配选择器，以复用相同配置的 live region。",
+      "tags": [
+        "可访问性",
+        "播报区域",
+        "共享状态"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/announce/src/announce.tsx:Announce",
+      "type": "function",
+      "name": "Announce",
+      "filePath": "packages/react/announce/src/announce.tsx",
+      "lineRange": [
+        96,
+        190
+      ],
+      "summary": "保留可见内容并 Portal 镜像到匹配的播报区域，合并 ref 获取正确 ownerDocument，并在页面隐藏时停用 live region。",
+      "tags": [
+        "可访问性",
+        "播报区域",
+        "共享状态"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/announce/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/announce/src/index.ts",
+      "summary": "提供客户端 Announce/Root 与 AnnounceProps 的公共导出入口。",
+      "tags": [
+        "公开入口",
+        "播报区域",
+        "聚合导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/arrow/src/arrow.test.tsx",
+      "type": "file",
+      "name": "arrow.test.tsx",
+      "filePath": "packages/react/arrow/src/arrow.test.tsx",
+      "summary": "检查 Arrow 的默认宽高和可访问性，并验证 SVG 属性、事件、ref 和 asChild 子元素透传。",
+      "tags": [
+        "单元测试",
+        "浮层箭头",
+        "属性透传"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/arrow/src/arrow.tsx",
+      "type": "file",
+      "name": "arrow.tsx",
+      "filePath": "packages/react/arrow/src/arrow.tsx",
+      "summary": "在 Primitive.svg 上渲染可调尺寸的三角箭头，asChild 模式允许消费者替换完整 SVG 并保留 ref 与属性合并。",
+      "tags": [
+        "基础组件",
+        "浮层箭头",
+        "插槽组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/arrow/src/arrow.tsx:Arrow",
+      "type": "function",
+      "name": "Arrow",
+      "filePath": "packages/react/arrow/src/arrow.tsx",
+      "lineRange": [
+        12,
+        29
+      ],
+      "summary": "默认绘制三角形 SVG，支持尺寸参数；asChild 时使用消费者提供的子元素以替换整个图形。",
+      "tags": [
+        "基础组件",
+        "浮层箭头",
+        "插槽组合"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/arrow/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/arrow/src/index.ts",
+      "summary": "导出内部 Arrow 组件、Root 别名及 SVG 属性类型。",
+      "tags": [
+        "内部入口",
+        "浮层箭头",
+        "聚合导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/aspect-ratio/src/aspect-ratio.test.tsx",
+      "type": "file",
+      "name": "aspect-ratio.test.tsx",
+      "filePath": "packages/react/aspect-ratio/src/aspect-ratio.test.tsx",
+      "summary": "验证宽高比容器的可访问性，以及 DOM 属性、样式、事件和 ref 在普通与 asChild 模式下的透传。",
+      "tags": [
+        "单元测试",
+        "宽高比",
+        "属性透传"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/aspect-ratio/src/aspect-ratio.tsx",
+      "type": "file",
+      "name": "aspect-ratio.tsx",
+      "filePath": "packages/react/aspect-ratio/src/aspect-ratio.tsx",
+      "summary": "以百分比底部内边距建立响应式宽高比包裹容器，再用绝对定位的 Primitive.div 填满区域并转发消费者属性与 ref。",
+      "tags": [
+        "布局组件",
+        "宽高比",
+        "响应式"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/aspect-ratio/src/aspect-ratio.tsx:AspectRatio",
+      "type": "function",
+      "name": "AspectRatio",
+      "filePath": "packages/react/aspect-ratio/src/aspect-ratio.tsx",
+      "lineRange": [
+        14,
+        44
+      ],
+      "summary": "根据 ratio 计算外层百分比占位高度，并将内部 Primitive.div 绝对定位铺满，保持内容在响应式宽度下的比例。",
+      "tags": [
+        "布局组件",
+        "宽高比",
+        "响应式"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/aspect-ratio/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/aspect-ratio/src/index.ts",
+      "summary": "公开 AspectRatio 及 Root 别名，并导出包含 ratio 的属性契约。",
+      "tags": [
+        "公开入口",
+        "宽高比",
+        "聚合导出"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/avatar/src/avatar.test.tsx",
+      "type": "file",
+      "name": "avatar.test.tsx",
+      "filePath": "packages/react/avatar/src/avatar.test.tsx",
+      "summary": "回归 Avatar 的图片加载/缓存/错误与 fallback 延迟、SSR、请求策略和监听清理，并覆盖多个图片告警及全部部件的 asChild/ref 透传。",
+      "tags": [
+        "单元测试",
+        "头像",
+        "图片生命周期"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:packages/react/avatar/src/avatar.test.tsx:MockImage",
+      "type": "class",
+      "name": "MockImage",
+      "filePath": "packages/react/avatar/src/avatar.test.tsx",
+      "lineRange": [
+        405,
+        441
+      ],
+      "summary": "基于 EventTarget 模拟 Image 的 src、complete、naturalWidth 和异步 load 事件，通过缓存还原图片完成后再发事件的浏览器行为。",
+      "tags": [
+        "单元测试",
+        "头像",
+        "图片生命周期"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/avatar/src/avatar.tsx",
+      "type": "file",
+      "name": "avatar.tsx",
+      "filePath": "packages/react/avatar/src/avatar.tsx",
+      "summary": "以共享上下文协调头像图片加载状态和 fallback 显示，支持延迟占位、referrerPolicy/crossOrigin、状态回调以及仅开发环境的重复图片告警。",
+      "tags": [
+        "头像组件",
+        "图片加载",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/avatar/src/avatar.tsx:useImageLoadingStatus",
+      "type": "function",
+      "name": "useImageLoadingStatus",
+      "filePath": "packages/react/avatar/src/avatar.tsx",
+      "lineRange": [
+        148,
+        191
+      ],
+      "summary": "创建离屏 Image 预加载指定 src，设置跨域与请求来源策略，监听 load/error 并在变化或卸载时清理。",
+      "tags": [
+        "头像组件",
+        "图片加载",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:packages/react/avatar/src/avatar.tsx:useImageCount",
+      "type": "function",
+      "name": "useImageCount",
+      "filePath": "packages/react/avatar/src/avatar.tsx",
+      "lineRange": [
+        206,
+        223
+      ],
+      "summary": "仅在开发环境追踪图片数量并对一个头像中多张 Image 发出一次告警，生产环境返回静态状态。",
+      "tags": [
+        "头像组件",
+        "图片加载",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/avatar/src/avatar.tsx:useUpdateImageCount",
+      "type": "function",
+      "name": "useUpdateImageCount",
+      "filePath": "packages/react/avatar/src/avatar.tsx",
+      "lineRange": [
+        225,
+        234
+      ],
+      "summary": "仅开发环境在图片挂载时增加根计数、卸载时减少，用于检测不支持的多图片结构。",
+      "tags": [
+        "头像组件",
+        "图片加载",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/avatar/src/avatar.tsx:Avatar",
+      "type": "function",
+      "name": "Avatar",
+      "filePath": "packages/react/avatar/src/avatar.tsx",
+      "lineRange": [
+        46,
+        67
+      ],
+      "summary": "建立图片加载状态和开发环境图片数量上下文，渲染可组合的根 span。",
+      "tags": [
+        "头像组件",
+        "图片加载",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/avatar/src/avatar.tsx:AvatarImage",
+      "type": "function",
+      "name": "AvatarImage",
+      "filePath": "packages/react/avatar/src/avatar.tsx",
+      "lineRange": [
+        83,
+        114
+      ],
+      "summary": "注册头像图片实例，预加载并监听加载状态，只在图片完成时渲染 img，并以稳定回调通知消费者状态变化。",
+      "tags": [
+        "头像组件",
+        "图片加载",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/avatar/src/avatar.tsx:AvatarFallback",
+      "type": "function",
+      "name": "AvatarFallback",
+      "filePath": "packages/react/avatar/src/avatar.tsx",
+      "lineRange": [
+        127,
+        144
+      ],
+      "summary": "在可选延迟后显示备用内容，图片加载完成时隐藏占位，并清理定时器。",
+      "tags": [
+        "头像组件",
+        "图片加载",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:packages/react/avatar/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/avatar/src/index.ts",
+      "summary": "公开 Avatar、Image、Fallback 部件及别名、作用域工厂和对应属性类型。",
+      "tags": [
+        "公开入口",
+        "头像组件",
+        "聚合导出"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/announce/src/announce.test.tsx",
+      "target": "file:packages/react/announce/src/announce.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/announce/src/announce.tsx",
+      "target": "function:packages/react/announce/src/announce.tsx:buildLiveRegionElement",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/announce/src/announce.tsx",
+      "target": "function:packages/react/announce/src/announce.tsx:buildSelector",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/announce/src/announce.tsx",
+      "target": "function:packages/react/announce/src/announce.tsx:Announce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/announce/src/announce.tsx",
+      "target": "function:packages/react/announce/src/announce.tsx:Announce",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/arrow/src/arrow.test.tsx",
+      "target": "file:packages/react/arrow/src/arrow.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/arrow/src/arrow.tsx",
+      "target": "function:packages/react/arrow/src/arrow.tsx:Arrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/arrow/src/arrow.tsx",
+      "target": "function:packages/react/arrow/src/arrow.tsx:Arrow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/aspect-ratio/src/aspect-ratio.test.tsx",
+      "target": "file:packages/react/aspect-ratio/src/aspect-ratio.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/aspect-ratio/src/aspect-ratio.tsx",
+      "target": "function:packages/react/aspect-ratio/src/aspect-ratio.tsx:AspectRatio",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/aspect-ratio/src/aspect-ratio.tsx",
+      "target": "function:packages/react/aspect-ratio/src/aspect-ratio.tsx:AspectRatio",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.test.tsx",
+      "target": "file:packages/react/avatar/src/avatar.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.test.tsx",
+      "target": "class:packages/react/avatar/src/avatar.test.tsx:MockImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "function:packages/react/avatar/src/avatar.tsx:useImageLoadingStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "function:packages/react/avatar/src/avatar.tsx:useImageCount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "function:packages/react/avatar/src/avatar.tsx:useUpdateImageCount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "function:packages/react/avatar/src/avatar.tsx:Avatar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "function:packages/react/avatar/src/avatar.tsx:Avatar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "function:packages/react/avatar/src/avatar.tsx:AvatarImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "function:packages/react/avatar/src/avatar.tsx:AvatarImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "function:packages/react/avatar/src/avatar.tsx:AvatarFallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "function:packages/react/avatar/src/avatar.tsx:AvatarFallback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/announce/src/announce.tsx",
+      "target": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/announce/src/announce.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/announce/src/announce.tsx",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/arrow/src/arrow.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/aspect-ratio/src/aspect-ratio.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "file:packages/react/context/src/create-context.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "file:packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "file:packages/react/primitive/src/primitive.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "file:packages/core/env-check/src/internal/is-development.true.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/announce/src/announce.tsx",
+      "target": "file:packages/react/announce/src/announce.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/arrow/src/arrow.tsx",
+      "target": "file:packages/react/arrow/src/arrow.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/aspect-ratio/src/aspect-ratio.tsx",
+      "target": "file:packages/react/aspect-ratio/src/aspect-ratio.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/avatar/src/avatar.tsx",
+      "target": "file:packages/react/avatar/src/avatar.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/alert-dialog/src/index.ts",
+      "target": "file:packages/react/alert-dialog/src/alert-dialog.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/announce/src/index.ts",
+      "target": "file:packages/react/announce/src/announce.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/arrow/src/index.ts",
+      "target": "file:packages/react/arrow/src/arrow.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/aspect-ratio/src/index.ts",
+      "target": "file:packages/react/aspect-ratio/src/aspect-ratio.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/avatar/src/index.ts",
+      "target": "file:packages/react/avatar/src/avatar.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:packages/react/announce/src/announce.tsx:Announce",
+      "target": "function:packages/react/announce/src/announce.tsx:buildLiveRegionElement",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/react/announce/src/announce.tsx:Announce",
+      "target": "function:packages/react/announce/src/announce.tsx:buildSelector",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/react/avatar/src/avatar.tsx:Avatar",
+      "target": "function:packages/react/avatar/src/avatar.tsx:useImageCount",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/react/avatar/src/avatar.tsx:AvatarImage",
+      "target": "function:packages/react/avatar/src/avatar.tsx:useImageLoadingStatus",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:packages/react/avatar/src/avatar.tsx:AvatarImage",
+      "target": "function:packages/react/avatar/src/avatar.tsx:useUpdateImageCount",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

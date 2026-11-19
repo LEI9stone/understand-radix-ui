@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/alert-dialog/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/alert-dialog/CHANGELOG.md",
+      "summary": "记录 AlertDialog 的 Dialog 依赖升级、RSC 兼容回退、tree-shaking 改善、开发警告调整及可选类型兼容。",
+      "tags": [
+        "变更记录",
+        "警告对话框",
+        "兼容性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/alert-dialog/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/alert-dialog/README.md",
+      "summary": "链接 AlertDialog 官方组件文档，作为警告确认对话框的使用说明入口。",
+      "tags": [
+        "组件文档",
+        "警告对话框",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/alert-dialog/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/alert-dialog/package.json",
+      "summary": "声明 AlertDialog 的双模块发布与 React peer 范围，依赖 Dialog、Context、ComposeRefs、Primitive 和事件工具构建确认式对话框。",
+      "tags": [
+        "包清单",
+        "警告对话框",
+        "依赖配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/alert-dialog/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/alert-dialog/tsconfig.json",
+      "summary": "为 AlertDialog 源码继承统一 React 库类型检查并指定 dist 输出，隔离依赖与产物。",
+      "tags": [
+        "类型配置",
+        "警告对话框",
+        "构建配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/alert-dialog/README.md",
+      "target": "config:packages/react/alert-dialog/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/alert-dialog/CHANGELOG.md",
+      "target": "config:packages/react/alert-dialog/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/alert-dialog/tsconfig.json",
+      "target": "config:internal/typescript-config/react-library.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

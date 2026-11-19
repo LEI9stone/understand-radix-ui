@@ -1,0 +1,1741 @@
+{
+  "nodes": [
+    {
+      "id": "file:packages/react/hover-card/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/hover-card/src/index.ts",
+      "summary": "集中导出悬停卡片模块的 createHoverCardScope 与 Root、Trigger、Portal、Content、Arrow 及其类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "悬停卡片"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    {
+      "id": "file:packages/react/id/src/id.tsx",
+      "type": "file",
+      "name": "id.tsx",
+      "filePath": "packages/react/id/src/id.tsx",
+      "summary": "优先采用 React.useId，为旧 React 在布局阶段生成客户端回退 ID，同时允许调用方提供确定性 ID。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/id/src/id.tsx:useId",
+      "type": "function",
+      "name": "useId",
+      "filePath": "packages/react/id/src/id.tsx",
+      "summary": "优先返回显式 ID，否则使用 React 原生 ID，并为旧版本 React 在布局阶段提供递增回退标识。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        8,
+        15
+      ]
+    },
+    {
+      "id": "file:packages/react/id/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/id/src/index.ts",
+      "summary": "集中导出标识符 Hook模块的 useId，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "标识符 Hook"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    {
+      "id": "file:packages/react/label/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/label/src/index.ts",
+      "summary": "集中导出标签模块的 Label、Root 和 LabelProps，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "标签"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    {
+      "id": "file:packages/react/label/src/label.test.tsx",
+      "type": "file",
+      "name": "label.test.tsx",
+      "filePath": "packages/react/label/src/label.test.tsx",
+      "summary": "检查 Label 的额外属性透传及 asChild 模式下属性和引用的组合。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/react/label/src/label.tsx",
+      "type": "file",
+      "name": "label.tsx",
+      "filePath": "packages/react/label/src/label.tsx",
+      "summary": "以可替换 DOM 的 label 基元实现标签，仅阻止标签本身双击造成的文本选择，同时保留内部表单控件行为。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:packages/react/label/src/label.tsx:Label",
+      "type": "function",
+      "name": "Label",
+      "filePath": "packages/react/label/src/label.tsx",
+      "summary": "渲染可组合的原生标签，透传引用并避免标签本身双击选中文本，不干扰嵌套控制项。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        12,
+        30
+      ]
+    },
+    {
+      "id": "file:packages/react/menu/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/menu/src/index.ts",
+      "summary": "集中导出基础菜单模块的 Menu、各类菜单项、子菜单、作用域工厂及类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "基础菜单"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    {
+      "id": "file:packages/react/menu/src/menu.tsx",
+      "type": "file",
+      "name": "menu.tsx",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "提供基础菜单和子菜单的复合组件，统一键盘导航、前缀搜索、选择事件、焦点管理、指针宽容区与浮层关闭行为。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:Menu",
+      "type": "function",
+      "name": "Menu",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "持有菜单开关和输入方式状态，在窗口失焦时关闭菜单，并为定位与方向性提供上下文。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        97,
+        156
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuPortal",
+      "type": "function",
+      "name": "MenuPortal",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "将菜单内容传送到指定容器，结合 Presence 支持按开关状态挂载或强制挂载。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        199,
+        211
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuSub",
+      "type": "function",
+      "name": "MenuSub",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "维护子菜单的触发器、内容与 ARIA 标识，并在父菜单关闭或卸载时同步关闭。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1031,
+        1066
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:getNextMatch",
+      "type": "function",
+      "name": "getNextMatch",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "根据累积搜索串和当前匹配项循环查找下一条文本，支持连续同字符的快速导航。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1347,
+        1358
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:isPointInPolygon",
+      "type": "function",
+      "name": "isPointInPolygon",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "以射线交叉规则判断指针坐标是否位于子菜单宽容多边形内。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1367,
+        1384
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuAnchor",
+      "type": "function",
+      "name": "MenuAnchor",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "将菜单作用域传给 Popper.Anchor，关联定位锚点并透传引用。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        166,
+        172
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuContent",
+      "type": "function",
+      "name": "MenuContent",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "按开关和强制挂载状态呈现内容，并选择模态或非模态实现，建立菜单项目集合。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        244,
+        265
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuRootContentModal",
+      "type": "function",
+      "name": "MenuRootContentModal",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "隐藏外部 ARIA 内容、锁滚动和指针，并在菜单打开时约束焦点。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        275,
+        316
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuRootContentNonModal",
+      "type": "function",
+      "name": "MenuRootContentNonModal",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "呈现不锁焦点、不锁滚动的菜单内容，并在外部关闭事件中更新开关状态。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        318,
+        333
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuContentImpl",
+      "type": "function",
+      "name": "MenuContentImpl",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "组合焦点范围、可关闭层、漫游焦点与 Popper，处理前缀搜索、首尾导航、嵌套 Portal 分支和子菜单宽容区。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "complex",
+      "lineRange": [
+        382,
+        627
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuGroup",
+      "type": "function",
+      "name": "MenuGroup",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "用 role=group 的 DOM 基元对菜单项分组。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        637,
+        642
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuLabel",
+      "type": "function",
+      "name": "MenuLabel",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "提供不参与选择的菜单文字标签并透传 DOM 属性和引用。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        651,
+        656
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuItem",
+      "type": "function",
+      "name": "MenuItem",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "将键盘与指针选择统一为可取消的自定义选择事件，并在未阻止时关闭菜单。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        670,
+        740
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuItemImpl",
+      "type": "function",
+      "name": "MenuItemImpl",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "将项目加入集合和漫游焦点，维护可搜索文本、禁用和高亮状态，并协调鼠标移动聚焦。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        750,
+        818
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuCheckboxItem",
+      "type": "function",
+      "name": "MenuCheckboxItem",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "将菜单项目组合为支持混合状态的复选项，选择时更新 checked 状态并共享指示器信息。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        834,
+        858
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuRadioGroup",
+      "type": "function",
+      "name": "MenuRadioGroup",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "通过上下文提供菜单单选值与稳定变更回调，并渲染语义分组。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        877,
+        887
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuRadioItem",
+      "type": "function",
+      "name": "MenuRadioItem",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "将选项值与组值比较，暴露 aria-checked 并在选择时通知单选组。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        900,
+        922
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuItemIndicator",
+      "type": "function",
+      "name": "MenuItemIndicator",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "依据复选或单选状态挂载指示器，支持混合状态与强制挂载动画。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        947,
+        971
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuSeparator",
+      "type": "function",
+      "name": "MenuSeparator",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "渲染带水平方向语义的菜单分隔线。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        980,
+        992
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuArrow",
+      "type": "function",
+      "name": "MenuArrow",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "通过共享定位作用域呈现 Popper 菜单箭头。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1002,
+        1008
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuSubTrigger",
+      "type": "function",
+      "name": "MenuSubTrigger",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "处理子菜单延迟展开、方向键打开与鼠标宽容多边形，避免指针前往子菜单时误关闭。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        1077,
+        1209
+      ]
+    },
+    {
+      "id": "function:packages/react/menu/src/menu.tsx:MenuSubContent",
+      "type": "function",
+      "name": "MenuSubContent",
+      "filePath": "packages/react/menu/src/menu.tsx",
+      "summary": "按书写方向定位子菜单，管理键盘打开聚焦、Escape 及返回父菜单的方向键行为。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        1237,
+        1296
+      ]
+    },
+    {
+      "id": "file:packages/react/menubar/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/menubar/src/index.ts",
+      "summary": "集中导出菜单栏模块的 Menubar、触发器、内容、项目与子菜单及类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "菜单栏"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    {
+      "id": "file:packages/react/menubar/src/menubar.test.tsx",
+      "type": "file",
+      "name": "menubar.test.tsx",
+      "filePath": "packages/react/menubar/src/menubar.test.tsx",
+      "summary": "检查菜单栏各部件的属性透传和 asChild 组合，并验证关闭时不产生悬空 aria-controls 引用。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.test.tsx:MenubarTest",
+      "type": "function",
+      "name": "MenubarTest",
+      "filePath": "packages/react/menubar/src/menubar.test.tsx",
+      "summary": "构建包含触发器和内容的菜单栏测试夹具，用于检查 ARIA 关联和开关行为。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        9,
+        20
+      ]
+    },
+    {
+      "id": "file:packages/react/menubar/src/menubar.tsx",
+      "type": "file",
+      "name": "menubar.tsx",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "在基础 Menu 上增加横向菜单切换、当前激活值和漫游焦点，协调鼠标与键盘操作以及子菜单边界。",
+      "tags": [
+        "组件实现",
+        "可访问性",
+        "复合组件"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarMenu",
+      "type": "function",
+      "name": "MenubarMenu",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "为单个菜单分配稳定值和标识，关联当前菜单栏激活项并以非模态 Menu 呈现。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        160,
+        199
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarPortal",
+      "type": "function",
+      "name": "MenubarPortal",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "携带菜单作用域将内容委托给基础 Menu 的 Portal。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        290,
+        294
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarSub",
+      "type": "function",
+      "name": "MenubarSub",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "用受控状态 Hook 管理菜单栏子菜单的展开值，交给 Menu.Sub 处理底层交互。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        569,
+        584
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:Menubar",
+      "type": "function",
+      "name": "Menubar",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "用受控状态保存激活菜单值，并结合集合和横向漫游焦点维护当前 Tab 停靠点。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        68,
+        136
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarTrigger",
+      "type": "function",
+      "name": "MenubarTrigger",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "注册菜单触发器并处理点击、悬停切换和键盘开关，保持 ARIA 关联及高亮状态。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        211,
+        281
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarContent",
+      "type": "function",
+      "name": "MenubarContent",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "组合基础菜单内容，按左右方向键跨菜单导航，并根据关闭来源决定是否还原触发器焦点。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "moderate",
+      "lineRange": [
+        306,
+        393
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarGroup",
+      "type": "function",
+      "name": "MenubarGroup",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "携带菜单作用域复用基础 Menu.Group 的分组语义。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        403,
+        409
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarLabel",
+      "type": "function",
+      "name": "MenubarLabel",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "携带菜单作用域复用基础菜单标签。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        419,
+        425
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarItem",
+      "type": "function",
+      "name": "MenubarItem",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "携带菜单作用域复用基础菜单选择项目。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        435,
+        441
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarCheckboxItem",
+      "type": "function",
+      "name": "MenubarCheckboxItem",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "复用基础复选菜单项，并桥接菜单栏的作用域与引用。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        451,
+        461
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarRadioGroup",
+      "type": "function",
+      "name": "MenubarRadioGroup",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "复用基础菜单单选组，保留消费者属性与引用。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        471,
+        481
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarRadioItem",
+      "type": "function",
+      "name": "MenubarRadioItem",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "复用基础菜单单选项目并传递菜单栏作用域。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        491,
+        501
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarItemIndicator",
+      "type": "function",
+      "name": "MenubarItemIndicator",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "复用基础菜单选中状态指示器。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        511,
+        518
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarSeparator",
+      "type": "function",
+      "name": "MenubarSeparator",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "复用基础菜单分隔线并透传作用域。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        528,
+        538
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarArrow",
+      "type": "function",
+      "name": "MenubarArrow",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "复用基础菜单定位箭头。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        548,
+        554
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarSubTrigger",
+      "type": "function",
+      "name": "MenubarSubTrigger",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "标记菜单栏子菜单触发器，供内容方向键处理区分跨菜单与子菜单打开行为。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        594,
+        611
+      ]
+    },
+    {
+      "id": "function:packages/react/menubar/src/menubar.tsx:MenubarSubContent",
+      "type": "function",
+      "name": "MenubarSubContent",
+      "filePath": "packages/react/menubar/src/menubar.tsx",
+      "summary": "复用基础子菜单内容，并将定位 CSS 变量转换到菜单栏命名空间。",
+      "tags": [
+        "组件",
+        "组合模式",
+        "可访问性"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        621,
+        650
+      ]
+    },
+    {
+      "id": "file:packages/react/navigation-menu/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "packages/react/navigation-menu/src/index.ts",
+      "summary": "集中导出导航菜单模块的 Root、Sub、List、Item、Trigger、Link、Indicator、Content、Viewport 及类型，为包消费者提供公开入口。",
+      "tags": [
+        "公开入口",
+        "重新导出",
+        "导航菜单"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 barrel 统一暴露组件、短名和类型，保持实现文件与消费入口分离。"
+    },
+    {
+      "id": "file:packages/react/navigation-menu/src/navigation-menu.test.tsx",
+      "type": "file",
+      "name": "navigation-menu.test.tsx",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.test.tsx",
+      "summary": "验证自动和手动激活、子菜单继承与禁用切换、引用稳定性、真实焦点离开时关闭以及各部件的 asChild 透传。",
+      "tags": [
+        "测试",
+        "可访问性",
+        "属性透传"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.test.tsx:NavigationMenuTest",
+      "type": "function",
+      "name": "NavigationMenuTest",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.test.tsx",
+      "summary": "构建最小导航根、项目、触发器和内容，支撑激活模式与 ARIA 关系测试。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        10,
+        22
+      ]
+    },
+    {
+      "id": "function:packages/react/navigation-menu/src/navigation-menu.test.tsx:NavigationMenuSubTest",
+      "type": "function",
+      "name": "NavigationMenuSubTest",
+      "filePath": "packages/react/navigation-menu/src/navigation-menu.test.tsx",
+      "summary": "在子导航中组合触发器和内容，验证激活模式继承与 disableToggle 行为。",
+      "tags": [
+        "函数",
+        "行为实现",
+        "组件协作"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        103,
+        114
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:packages/react/id/src/id.tsx",
+      "target": "function:packages/react/id/src/id.tsx:useId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/id/src/id.tsx",
+      "target": "function:packages/react/id/src/id.tsx:useId",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/id/src/id.tsx",
+      "target": "file:packages/react/use-layout-effect/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/label/src/label.test.tsx",
+      "target": "file:packages/react/label/src/label.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/label/src/label.tsx",
+      "target": "file:packages/react/label/src/label.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/label/src/label.tsx",
+      "target": "function:packages/react/label/src/label.tsx:Label",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/label/src/label.tsx",
+      "target": "function:packages/react/label/src/label.tsx:Label",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/label/src/label.tsx",
+      "target": "file:packages/react/primitive/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:Menu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:Menu",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuPortal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuPortal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuSub",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuSub",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:getNextMatch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:isPointInPolygon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuAnchor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuAnchor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuRootContentModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuRootContentNonModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuContentImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuGroup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuLabel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuItemImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuCheckboxItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuCheckboxItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuRadioGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuRadioGroup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuRadioItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuRadioItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuItemIndicator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuItemIndicator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuSeparator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuSeparator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuArrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuArrow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuSubTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuSubTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuSubContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "function:packages/react/menu/src/menu.tsx:MenuSubContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/collection/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/compose-refs/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/context/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/direction/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/dismissable-layer/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/focus-guards/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/focus-scope/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/id/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/popper/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/portal/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/presence/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/primitive/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/roving-focus/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/slot/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/menu.tsx",
+      "target": "file:packages/react/use-callback-ref/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.test.tsx",
+      "target": "file:packages/react/menubar/src/menubar.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.test.tsx",
+      "target": "function:packages/react/menubar/src/menubar.test.tsx:MenubarTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "file:packages/react/menubar/src/menubar.test.tsx",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarMenu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarMenu",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarPortal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarPortal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarSub",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarSub",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:Menubar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:Menubar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarGroup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarLabel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarCheckboxItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarCheckboxItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarRadioGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarRadioGroup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarRadioItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarRadioItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarItemIndicator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarItemIndicator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarSeparator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarSeparator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarArrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarArrow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarSubTrigger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarSubTrigger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarSubContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "function:packages/react/menubar/src/menubar.tsx:MenubarSubContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "file:packages/react/collection/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "file:packages/react/direction/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "file:packages/react/compose-refs/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "file:packages/react/context/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "file:packages/react/id/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "file:packages/react/menu/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "file:packages/react/roving-focus/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "file:packages/react/primitive/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menubar/src/menubar.tsx",
+      "target": "file:packages/react/use-controllable-state/src/index.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.test.tsx",
+      "target": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.test.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.test.tsx:NavigationMenuTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/navigation-menu.test.tsx",
+      "target": "function:packages/react/navigation-menu/src/navigation-menu.test.tsx:NavigationMenuSubTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:packages/react/hover-card/src/index.ts",
+      "target": "file:packages/react/hover-card/src/hover-card.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/id/src/index.ts",
+      "target": "file:packages/react/id/src/id.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/label/src/index.ts",
+      "target": "file:packages/react/label/src/label.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menu/src/index.ts",
+      "target": "file:packages/react/menu/src/menu.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/menubar/src/index.ts",
+      "target": "file:packages/react/menubar/src/menubar.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:packages/react/navigation-menu/src/index.ts",
+      "target": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

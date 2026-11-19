@@ -1,0 +1,26 @@
+{
+  "filesSkipped": [
+    "apps/storybook/stories/accordion.stories.module.css",
+    "apps/storybook/stories/alert-dialog.stories.module.css",
+    "apps/storybook/stories/aspect-ratio.stories.module.css",
+    "apps/storybook/stories/avatar.stories.module.css",
+    "apps/storybook/stories/checkbox.stories.module.css",
+    "apps/storybook/stories/collapsible.stories.module.css",
+    "apps/storybook/stories/context-menu.stories.module.css",
+    "apps/storybook/stories/dialog.stories.module.css",
+    "apps/storybook/stories/dropdown-menu.stories.module.css",
+    "apps/storybook/stories/form.stories.module.css",
+    "apps/storybook/stories/hover-card.stories.module.css",
+    "apps/storybook/stories/label.stories.module.css",
+    "apps/storybook/stories/menu.stories.module.css",
+    "apps/storybook/stories/menubar.stories.module.css",
+    "apps/storybook/stories/navigation-menu.stories.module.css",
+    "apps/storybook/stories/one-time-password-field.stories.module.css",
+    "apps/storybook/stories/password-toggle-field.stories.module.css",
+    "apps/storybook/stories/popover.stories.module.css",
+    "apps/storybook/stories/popper.stories.module.css",
+    "apps/storybook/stories/presence.stories.module.css"
+  ],
+  "filesUnreadable": [],
+  "results": []
+}

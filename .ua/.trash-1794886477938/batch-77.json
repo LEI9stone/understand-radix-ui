@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/use-previous/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/use-previous/CHANGELOG.md",
+      "summary": "记录 usePrevious 的 1.1.2、1.1.3 与 1.1.4 版本历史。",
+      "tags": [
+        "变更记录",
+        "版本发布",
+        "前次值保存内部 Hook"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/use-previous/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/use-previous/README.md",
+      "summary": "说明 前次值保存内部 Hook 属于内部工具，不面向公共使用。",
+      "tags": [
+        "文档",
+        "包入口",
+        "内部工具"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/use-previous/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/use-previous/package.json",
+      "summary": "声明 前次值保存内部 Hook 包的源码入口、发布产物、构建脚本与依赖约束，控制该包在工作区和发布后的消费方式。",
+      "tags": [
+        "包配置",
+        "构建发布",
+        "前次值保存内部 Hook"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/use-previous/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/use-previous/tsconfig.json",
+      "summary": "为 前次值保存内部 Hook 包配置 TypeScript 编译范围和共享编译选项，将源码检查与包构建配置衔接。",
+      "tags": [
+        "编译配置",
+        "类型检查",
+        "前次值保存内部 Hook"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/use-previous/README.md",
+      "target": "config:packages/react/use-previous/package.json",
+      "type": "documents",
+      "weight": 0.5,
+      "direction": "forward"
+    },
+    {
+      "source": "document:packages/react/use-previous/CHANGELOG.md",
+      "target": "config:packages/react/use-previous/package.json",
+      "type": "documents",
+      "weight": 0.5,
+      "direction": "forward"
+    },
+    {
+      "source": "config:packages/react/use-previous/package.json",
+      "target": "config:packages/react/use-previous/tsconfig.json",
+      "type": "configures",
+      "weight": 0.6,
+      "direction": "forward"
+    }
+  ]
+}

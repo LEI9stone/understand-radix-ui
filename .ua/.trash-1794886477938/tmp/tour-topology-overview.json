@@ -1,0 +1,318 @@
+{
+  "scriptCompleted": true,
+  "entryPointCandidates": [
+    {
+      "id": "document:README.md",
+      "name": "README.md",
+      "type": "document",
+      "summary": "介绍 Radix Primitives 的低层可访问组件定位，以及安装、文档、发布、贡献和社区入口。",
+      "score": 5
+    },
+    {
+      "id": "file:packages/core/env-check/src/index.ts",
+      "name": "index.ts",
+      "type": "file",
+      "summary": "保留环境判断包的空根模块，实际开发环境常量通过专用子路径提供。",
+      "score": 4
+    },
+    {
+      "id": "file:packages/core/primitive/src/index.ts",
+      "name": "index.ts",
+      "type": "file",
+      "summary": "聚合核心事件组合、DOM 所属环境及计时器类型出口，供 React 交互包复用。",
+      "score": 4
+    },
+    {
+      "id": "file:packages/core/rect/src/index.ts",
+      "name": "index.ts",
+      "type": "file",
+      "summary": "导出元素矩形观察器及 Measurable 类型，形成布局测量工具包入口。",
+      "score": 4
+    },
+    {
+      "id": "file:packages/react/collection/src/index.ts",
+      "name": "index.ts",
+      "type": "file",
+      "summary": "同时导出稳定旧版 createCollection 与实验新版集合工厂、SlotProps 和 Dict 类型，维持两套集合 API 的兼容入口。",
+      "score": 4
+    }
+  ],
+  "fanInRanking": [
+    {
+      "id": "file:packages/react/primitive/src/primitive.tsx",
+      "name": "primitive.tsx",
+      "fanIn": 34
+    },
+    {
+      "id": "file:packages/react/context/src/create-context.tsx",
+      "name": "create-context.tsx",
+      "fanIn": 26
+    },
+    {
+      "id": "file:packages/react/compose-refs/src/compose-refs.tsx",
+      "name": "compose-refs.tsx",
+      "fanIn": 24
+    },
+    {
+      "id": "file:packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "name": "use-controllable-state.tsx",
+      "fanIn": 18
+    },
+    {
+      "id": "file:packages/core/primitive/src/primitive.tsx",
+      "name": "primitive.tsx",
+      "fanIn": 16
+    },
+    {
+      "id": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "name": "use-layout-effect.tsx",
+      "fanIn": 16
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/index.ts",
+      "name": "index.ts",
+      "fanIn": 14
+    },
+    {
+      "id": "config:internal/typescript-config/react-library.json",
+      "name": "react-library.json",
+      "fanIn": 13
+    },
+    {
+      "id": "file:e2e/helpers.ts",
+      "name": "helpers.ts",
+      "fanIn": 12
+    },
+    {
+      "id": "file:packages/react/presence/src/presence.tsx",
+      "name": "presence.tsx",
+      "fanIn": 12
+    },
+    {
+      "id": "file:packages/react/primitive/src/index.ts",
+      "name": "index.ts",
+      "fanIn": 11
+    },
+    {
+      "id": "file:packages/react/context/src/index.ts",
+      "name": "index.ts",
+      "fanIn": 10
+    },
+    {
+      "id": "file:packages/react/direction/src/direction.tsx",
+      "name": "direction.tsx",
+      "fanIn": 10
+    },
+    {
+      "id": "file:packages/react/portal/src/portal.tsx",
+      "name": "portal.tsx",
+      "fanIn": 10
+    },
+    {
+      "id": "file:packages/react/dialog/src/dialog.tsx",
+      "name": "dialog.tsx",
+      "fanIn": 9
+    },
+    {
+      "id": "file:packages/react/slot/src/slot.tsx",
+      "name": "slot.tsx",
+      "fanIn": 9
+    },
+    {
+      "id": "file:packages/react/use-controllable-state/src/index.ts",
+      "name": "index.ts",
+      "fanIn": 9
+    },
+    {
+      "id": "file:packages/react/compose-refs/src/index.ts",
+      "name": "index.ts",
+      "fanIn": 8
+    },
+    {
+      "id": "file:packages/react/slot/src/index.ts",
+      "name": "index.ts",
+      "fanIn": 8
+    },
+    {
+      "id": "file:packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "name": "use-callback-ref.tsx",
+      "fanIn": 8
+    }
+  ],
+  "fanOutRanking": [
+    {
+      "id": "file:packages/react/radix-ui/src/index.ts",
+      "name": "index.ts",
+      "fanOut": 35
+    },
+    {
+      "id": "file:packages/react/radix-ui/src/internal.ts",
+      "name": "internal.ts",
+      "fanOut": 19
+    },
+    {
+      "id": "file:packages/react/select/src/select.tsx",
+      "name": "select.tsx",
+      "fanOut": 18
+    },
+    {
+      "id": "file:packages/react/dialog/src/dialog.tsx",
+      "name": "dialog.tsx",
+      "fanOut": 15
+    },
+    {
+      "id": "file:packages/react/menu/src/menu.tsx",
+      "name": "menu.tsx",
+      "fanOut": 15
+    },
+    {
+      "id": "file:packages/react/navigation-menu/src/navigation-menu.tsx",
+      "name": "navigation-menu.tsx",
+      "fanOut": 15
+    },
+    {
+      "id": "config:apps/storybook/tsconfig.json",
+      "name": "tsconfig.json",
+      "fanOut": 14
+    },
+    {
+      "id": "file:packages/react/popover/src/popover.tsx",
+      "name": "popover.tsx",
+      "fanOut": 14
+    },
+    {
+      "id": "file:packages/react/toast/src/toast.tsx",
+      "name": "toast.tsx",
+      "fanOut": 13
+    },
+    {
+      "id": "file:packages/react/tooltip/src/tooltip.tsx",
+      "name": "tooltip.tsx",
+      "fanOut": 13
+    },
+    {
+      "id": "file:packages/react/hover-card/src/hover-card.tsx",
+      "name": "hover-card.tsx",
+      "fanOut": 11
+    },
+    {
+      "id": "file:packages/react/accordion/src/accordion.tsx",
+      "name": "accordion.tsx",
+      "fanOut": 10
+    },
+    {
+      "id": "file:packages/react/menubar/src/menubar.tsx",
+      "name": "menubar.tsx",
+      "fanOut": 10
+    },
+    {
+      "id": "file:packages/react/roving-focus/src/roving-focus-group.tsx",
+      "name": "roving-focus-group.tsx",
+      "fanOut": 10
+    },
+    {
+      "id": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "name": "scroll-area.tsx",
+      "fanOut": 10
+    },
+    {
+      "id": "file:packages/react/slider/src/slider.tsx",
+      "name": "slider.tsx",
+      "fanOut": 10
+    },
+    {
+      "id": "file:packages/react/collapsible/src/collapsible.tsx",
+      "name": "collapsible.tsx",
+      "fanOut": 9
+    },
+    {
+      "id": "file:packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "name": "one-time-password-field.tsx",
+      "fanOut": 9
+    },
+    {
+      "id": "file:packages/react/checkbox/src/checkbox.tsx",
+      "name": "checkbox.tsx",
+      "fanOut": 8
+    },
+    {
+      "id": "file:packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "name": "password-toggle-field.tsx",
+      "fanOut": 8
+    }
+  ],
+  "bfsTraversal": {
+    "startNode": "file:packages/core/env-check/src/index.ts",
+    "order": [
+      "file:packages/core/env-check/src/index.ts"
+    ],
+    "depthMap": {
+      "file:packages/core/env-check/src/index.ts": 0
+    },
+    "byDepth": {
+      "0": [
+        "file:packages/core/env-check/src/index.ts"
+      ]
+    }
+  },
+  "clusters": [],
+  "layers": {
+    "count": 10,
+    "list": [
+      {
+        "id": "layer:dom-foundation",
+        "name": "DOM 与组合基础",
+        "description": "提供核心 DOM/事件/几何工具、环境常量、Primitive、Slot、ref 合并及视觉隐藏语义，构成上层复合组件共享的最小组合基础。"
+      },
+      {
+        "id": "layer:shared-state-hooks",
+        "name": "共享状态与 Hook",
+        "description": "集中管理作用域 Context、DOM 顺序集合、阅读方向、稳定 ID、受控状态、回调和水合兼容及尺寸订阅，供各组件复用状态与生命周期逻辑。"
+      },
+      {
+        "id": "layer:overlay-focus",
+        "name": "浮层定位与焦点交互",
+        "description": "整合背景可访问性屏蔽、Popper 与箭头、Portal、Presence、焦点域和守卫、外部交互关闭与游走焦点，为模态和浮层组件提供交互机制。"
+      },
+      {
+        "id": "layer:accessible-components",
+        "name": "可访问复合组件",
+        "description": "组合基础原语实现对话框、菜单、选择器、表单、折叠内容、滑块、通知等面向使用者的无样式组件，并提供各独立包的部件与类型入口。"
+      },
+      {
+        "id": "layer:public-entrypoints",
+        "name": "统一导出与消费入口",
+        "description": "维护 radix-ui 聚合包的命名空间总入口、组件子路径、内部原语入口及实验性子路径，把独立组件包组织为统一消费界面。"
+      },
+      {
+        "id": "layer:test-verification",
+        "name": "测试与兼容性验证",
+        "description": "汇集组件单元测试、快照、Playwright 场景、性能基准、RSC 导入验证以及共享测试数据和模拟环境，验证可访问性、引用稳定性与浏览器交互契约。"
+      },
+      {
+        "id": "layer:examples-ssr",
+        "name": "组件示例与服务端演示",
+        "description": "通过 Storybook 故事及配套样式展示组件状态和组合方式，并用 Next.js 验证应用演示 SSR、水合、Portal 与 RSC 边界行为。"
+      },
+      {
+        "id": "layer:engineering-ci",
+        "name": "构建工具与持续交付",
+        "description": "实现内部包构建器、Changesets 日志扩展及补丁、引用稳定性静态检查、共享环境声明和 GitHub Actions，支撑构建、回归检查与包发布。"
+      },
+      {
+        "id": "layer:configuration",
+        "name": "工作区与编译配置",
+        "description": "集中定义各包和验证应用的发布清单、TypeScript 继承、pnpm 工作区、代码风格、测试运行器、Storybook 与 CI 复合动作等工程配置。"
+      },
+      {
+        "id": "layer:documentation",
+        "name": "设计原则与维护文档",
+        "description": "保存项目设计哲学、贡献与发布流程、组件使用文档入口、包版本历史、Changeset 说明和社区协作模板。"
+      }
+    ]
+  },
+  "totalNodes": 694,
+  "totalEdges": 951,
+  "inputEdges": 2531,
+  "excludedNonFileEdges": 1580
+}

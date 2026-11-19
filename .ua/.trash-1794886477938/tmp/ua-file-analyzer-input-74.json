@@ -1,0 +1,35 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "packages/react/use-escape-keydown/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-escape-keydown/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-escape-keydown/package.json",
+      "language": "json",
+      "sizeLines": 67,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-escape-keydown/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "packages/react/use-escape-keydown/CHANGELOG.md": [],
+    "packages/react/use-escape-keydown/README.md": [],
+    "packages/react/use-escape-keydown/package.json": [],
+    "packages/react/use-escape-keydown/tsconfig.json": []
+  }
+}

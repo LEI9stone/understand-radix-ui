@@ -1,0 +1,1242 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/storybook/stories/select.stories.tsx",
+      "type": "file",
+      "name": "select.stories.tsx",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "summary": "展示 Select 的定位、分组、typeahead、受控与空值、表单校验/重置、滚动及 Shadow DOM，并构建 Dialog/Popover 内层关闭回归。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:Styled",
+      "type": "function",
+      "name": "Styled",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        18,
+        63
+      ],
+      "summary": "按不同定位模式渲染带箭头、滚动按钮和选中指示器的基本 Select。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:Animated",
+      "type": "function",
+      "name": "Animated",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        65,
+        106
+      ],
+      "summary": "为选择菜单配置进出场动画并展示状态驱动样式。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ForcedMount",
+      "type": "function",
+      "name": "ForcedMount",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        108,
+        145
+      ],
+      "summary": "演示强制挂载的 Select 内容，供外部控制动画与显示状态。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:Controlled",
+      "type": "function",
+      "name": "Controlled",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        147,
+        207
+      ],
+      "summary": "通过 React 状态控制选择值并比较多个定位模式。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:WithExtensionOverlay",
+      "type": "function",
+      "name": "WithExtensionOverlay",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        209,
+        251
+      ],
+      "summary": "在 Select 打开时触发外部覆盖层，复现停止后续事件的浏览器扩展交互。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:DismissesOnlySelectInsideDialog",
+      "type": "function",
+      "name": "DismissesOnlySelectInsideDialog",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        254,
+        324
+      ],
+      "summary": "将 Select 嵌在 Dialog 中，检查内部空白区域点击只关闭 Select。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:DismissesOnlySelectInPopover",
+      "type": "function",
+      "name": "DismissesOnlySelectInPopover",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        327,
+        435
+      ],
+      "summary": "在 Popover 中组织两个受控 Select，验证切换触发器只关闭当前选择菜单。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:Position",
+      "type": "function",
+      "name": "Position",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        437,
+        485
+      ],
+      "summary": "以多个定位方式与长内容展示选择菜单的放置和可用空间。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:NoDefaultValue",
+      "type": "function",
+      "name": "NoDefaultValue",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        487,
+        534
+      ],
+      "summary": "演示没有默认值时的占位与首次选中行为。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:Clearable",
+      "type": "function",
+      "name": "Clearable",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        536,
+        588
+      ],
+      "summary": "提供清除已选值的交互，展示恢复空值占位的方式。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:Typeahead",
+      "type": "function",
+      "name": "Typeahead",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        590,
+        631
+      ],
+      "summary": "渲染多组文本选项，供键盘输入快速匹配项目。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:WithGroups",
+      "type": "function",
+      "name": "WithGroups",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        633,
+        695
+      ],
+      "summary": "为选项创建分组、可选标签和组内缩进样式。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:Labelling",
+      "type": "function",
+      "name": "Labelling",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        697,
+        768
+      ],
+      "summary": "比较 Select 的不同标签关联方式，展示可访问命名。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:RightToLeft",
+      "type": "function",
+      "name": "RightToLeft",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        770,
+        815
+      ],
+      "summary": "在 RTL 文本方向下展示触发器、箭头与内容布局。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:WithinForm",
+      "type": "function",
+      "name": "WithinForm",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        817,
+        924
+      ],
+      "summary": "以多个受控字段演示 Select 对 FormData、变更事件和表单提交的联动。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:WithinFormReset",
+      "type": "function",
+      "name": "WithinFormReset",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        926,
+        1012
+      ],
+      "summary": "提供原生表单重置按钮，检查选择值回到默认状态。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:DisabledWithinForm",
+      "type": "function",
+      "name": "DisabledWithinForm",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1014,
+        1075
+      ],
+      "summary": "展示禁用 Select 在表单变更与序列化中的行为。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:RequiredWithinForm",
+      "type": "function",
+      "name": "RequiredWithinForm",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1077,
+        1138
+      ],
+      "summary": "展示必填 Select 的原生表单约束与有效性行为。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:Parts",
+      "type": "function",
+      "name": "Parts",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1140,
+        1202
+      ],
+      "summary": "组合 Select 部件并显示表单数据，说明各公开部分如何协同。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:AllItemsDisabled",
+      "type": "function",
+      "name": "AllItemsDisabled",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1204,
+        1223
+      ],
+      "summary": "构造所有选项禁用的边界情况，检查无可选条目时的交互。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:WithinDialog",
+      "type": "function",
+      "name": "WithinDialog",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1225,
+        1265
+      ],
+      "summary": "将长选项列表置于 Dialog，展示模态焦点与 Select 的组合。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:WithVeryLongSelectItems",
+      "type": "function",
+      "name": "WithVeryLongSelectItems",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1267,
+        1303
+      ],
+      "summary": "渲染极长文本选项，检查内容尺寸和项目文本布局。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:WithScrollArea",
+      "type": "function",
+      "name": "WithScrollArea",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1305,
+        1357
+      ],
+      "summary": "把自定义 ScrollArea 嵌入选择菜单视口，展示长列表滚动。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ChromaticShortOptionsPaddedContent",
+      "type": "function",
+      "name": "ChromaticShortOptionsPaddedContent",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1359,
+        1361
+      ],
+      "summary": "以内容容器内边距展示短列表的视觉回归。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ChromaticShortOptionsPaddedViewport",
+      "type": "function",
+      "name": "ChromaticShortOptionsPaddedViewport",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1364,
+        1366
+      ],
+      "summary": "以内层视口内边距展示短列表的视觉回归。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ChromaticLongOptionsPaddedContent",
+      "type": "function",
+      "name": "ChromaticLongOptionsPaddedContent",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1369,
+        1371
+      ],
+      "summary": "以内容容器内边距展示长列表的视觉回归。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ChromaticLongOptionsPaddedViewport",
+      "type": "function",
+      "name": "ChromaticLongOptionsPaddedViewport",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1374,
+        1376
+      ],
+      "summary": "以内层视口内边距展示长列表的视觉回归。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ChromaticTopFirstPaddedContent",
+      "type": "function",
+      "name": "ChromaticTopFirstPaddedContent",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1379,
+        1381
+      ],
+      "summary": "在内容容器带内边距时，检查顶部首项选中的定位表现。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ChromaticTopFirstPaddedViewport",
+      "type": "function",
+      "name": "ChromaticTopFirstPaddedViewport",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1384,
+        1386
+      ],
+      "summary": "在视口带内边距时，检查顶部首项选中的定位表现。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ChromaticBottomLastPaddedContent",
+      "type": "function",
+      "name": "ChromaticBottomLastPaddedContent",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1389,
+        1391
+      ],
+      "summary": "在内容容器带内边距时，检查底部末项选中的定位表现。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ChromaticBottomLastPaddedViewport",
+      "type": "function",
+      "name": "ChromaticBottomLastPaddedViewport",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1394,
+        1396
+      ],
+      "summary": "在视口带内边距时，检查底部末项选中的定位表现。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ChromaticNoDefaultValue",
+      "type": "function",
+      "name": "ChromaticNoDefaultValue",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1399,
+        1454
+      ],
+      "summary": "为没有默认值的选择器构建长列表视觉回归。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:Cypress",
+      "type": "function",
+      "name": "Cypress",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1457,
+        1630
+      ],
+      "summary": "构建表单和多个受控 Select，支持空值重置、外部值变化和提交的端到端验证。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ShadowHost",
+      "type": "function",
+      "name": "ShadowHost",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1638,
+        1662
+      ],
+      "summary": "创建 Shadow Root 并复制页面样式，再用 Portal 将内容渲染至影子树容器。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:CypressShadowDom",
+      "type": "function",
+      "name": "CypressShadowDom",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1664,
+        1700
+      ],
+      "summary": "把选择菜单的 Portal 放入 Shadow DOM，提供触摸滚动与条目选择的回归夹具。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ChromaticSelect",
+      "type": "function",
+      "name": "ChromaticSelect",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1710,
+        1753
+      ],
+      "summary": "封装可调选项数量、选中值和内边距位置的视觉测试选择器。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ChromaticStoryShortOptions",
+      "type": "function",
+      "name": "ChromaticStoryShortOptions",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1769,
+        1797
+      ],
+      "summary": "将短选项列表放在多种上下文中，复用参数化选择器检验内边距。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:ChromaticStoryLongOptions",
+      "type": "function",
+      "name": "ChromaticStoryLongOptions",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1799,
+        1849
+      ],
+      "summary": "将长选项列表放在多种上下文中，检查滚动和选中项对齐。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/storybook/stories/select.stories.tsx:TickIcon",
+      "type": "function",
+      "name": "TickIcon",
+      "filePath": "apps/storybook/stories/select.stories.tsx",
+      "lineRange": [
+        1863,
+        1877
+      ],
+      "summary": "绘制 Select 选中项目的勾选指示器。",
+      "tags": [
+        "组件示例",
+        "交互回归",
+        "可访问性"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "file:apps/storybook/stories/external-overlay.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "file:apps/storybook/stories/select.stories.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Styled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Styled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Animated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Animated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ForcedMount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ForcedMount",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Controlled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Controlled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithExtensionOverlay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithExtensionOverlay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:DismissesOnlySelectInsideDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:DismissesOnlySelectInsideDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:DismissesOnlySelectInPopover",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:DismissesOnlySelectInPopover",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Position",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Position",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:NoDefaultValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:NoDefaultValue",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Clearable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Clearable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Typeahead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Typeahead",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithGroups",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithGroups",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Labelling",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Labelling",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:RightToLeft",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:RightToLeft",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithinForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithinForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithinFormReset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithinFormReset",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:DisabledWithinForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:DisabledWithinForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:RequiredWithinForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:RequiredWithinForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Parts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Parts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:AllItemsDisabled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:AllItemsDisabled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithinDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithinDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithVeryLongSelectItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithVeryLongSelectItems",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithScrollArea",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:WithScrollArea",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticShortOptionsPaddedContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticShortOptionsPaddedContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticShortOptionsPaddedViewport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticShortOptionsPaddedViewport",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticLongOptionsPaddedContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticLongOptionsPaddedContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticLongOptionsPaddedViewport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticLongOptionsPaddedViewport",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticTopFirstPaddedContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticTopFirstPaddedContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticTopFirstPaddedViewport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticTopFirstPaddedViewport",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticBottomLastPaddedContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticBottomLastPaddedContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticBottomLastPaddedViewport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticBottomLastPaddedViewport",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticNoDefaultValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticNoDefaultValue",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Cypress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:Cypress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ShadowHost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:CypressShadowDom",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:CypressShadowDom",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticSelect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticStoryShortOptions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:ChromaticStoryLongOptions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "function:apps/storybook/stories/select.stories.tsx:TickIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "file:packages/react/select/src/select.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "file:packages/react/dialog/src/dialog.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "file:packages/react/popover/src/popover.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "file:packages/react/scroll-area/src/scroll-area.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/storybook/stories/select.stories.tsx",
+      "target": "file:packages/react/label/src/label.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

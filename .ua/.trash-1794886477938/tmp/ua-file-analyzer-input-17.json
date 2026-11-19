@@ -1,0 +1,49 @@
+{
+  "projectRoot": "/Users/xiaolei/Desktop/understand/understand-radix-ui",
+  "batchFiles": [
+    {
+      "path": "internal/typescript-config/base.json",
+      "language": "json",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/typescript-config/nextjs.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/typescript-config/package.json",
+      "language": "json",
+      "sizeLines": 6,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/typescript-config/react-library.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/typescript-config/vite-app.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/typescript-config/vite-node.json",
+      "language": "json",
+      "sizeLines": 11,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "internal/typescript-config/base.json": [],
+    "internal/typescript-config/nextjs.json": [],
+    "internal/typescript-config/package.json": [],
+    "internal/typescript-config/react-library.json": [],
+    "internal/typescript-config/vite-app.json": [],
+    "internal/typescript-config/vite-node.json": []
+  }
+}

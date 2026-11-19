@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/password-toggle-field/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/password-toggle-field/CHANGELOG.md",
+      "summary": "介绍实验性密码显隐字段及指针焦点归还、键盘焦点保留、提交后隐藏与图标可访问命名，记录属性拼写和 asChild 类型修复。",
+      "tags": [
+        "变更记录",
+        "密码显隐",
+        "实验组件"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:packages/react/password-toggle-field/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/password-toggle-field/README.md",
+      "summary": "说明通过 radix-ui 安装密码显隐字段，并链接官方使用文档。",
+      "tags": [
+        "安装说明",
+        "密码显隐",
+        "组件文档"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/password-toggle-field/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/password-toggle-field/package.json",
+      "summary": "配置实验性密码显隐字段的源码/ESM/CJS 入口，声明可控状态、ID、水合检测和 effect-event 等协作依赖。",
+      "tags": [
+        "包清单",
+        "密码显隐",
+        "依赖配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/password-toggle-field/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/password-toggle-field/tsconfig.json",
+      "summary": "为 PasswordToggleField 的源码指定共享 React 库类型规则及 dist 输出目录。",
+      "tags": [
+        "类型配置",
+        "密码显隐",
+        "构建配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:packages/react/password-toggle-field/README.md",
+      "target": "config:packages/react/password-toggle-field/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:packages/react/password-toggle-field/CHANGELOG.md",
+      "target": "config:packages/react/password-toggle-field/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:packages/react/password-toggle-field/tsconfig.json",
+      "target": "config:internal/typescript-config/react-library.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

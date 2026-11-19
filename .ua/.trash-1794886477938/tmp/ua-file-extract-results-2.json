@@ -1,0 +1,4118 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 7,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 7,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 7,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "apps/storybook/stories/context-menu.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 896,
+      "nonEmptyLines": 875,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 9,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "Controlled",
+          "startLine": 46,
+          "endLine": 102,
+          "params": []
+        },
+        {
+          "name": "Modality",
+          "startLine": 104,
+          "endLine": 293,
+          "params": []
+        },
+        {
+          "name": "Submenus",
+          "startLine": 295,
+          "endLine": 475,
+          "params": []
+        },
+        {
+          "name": "WithExtensionOverlay",
+          "startLine": 477,
+          "endLine": 495,
+          "params": []
+        },
+        {
+          "name": "DismissesOnlyContextMenuInsideDialog",
+          "startLine": 498,
+          "endLine": 562,
+          "params": []
+        },
+        {
+          "name": "WithLabels",
+          "startLine": 564,
+          "endLine": 596,
+          "params": []
+        },
+        {
+          "name": "CheckboxItems",
+          "startLine": 598,
+          "endLine": 649,
+          "params": []
+        },
+        {
+          "name": "RadioItems",
+          "startLine": 651,
+          "endLine": 687,
+          "params": []
+        },
+        {
+          "name": "PreventClosing",
+          "startLine": 689,
+          "endLine": 711,
+          "params": []
+        },
+        {
+          "name": "Multiple",
+          "startLine": 713,
+          "endLine": 793,
+          "params": []
+        },
+        {
+          "name": "Nested",
+          "startLine": 795,
+          "endLine": 880,
+          "params": []
+        },
+        {
+          "name": "TickIcon",
+          "startLine": 882,
+          "endLine": 896,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Controlled",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "Modality",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "Submenus",
+          "line": 295,
+          "isDefault": false
+        },
+        {
+          "name": "WithExtensionOverlay",
+          "line": 477,
+          "isDefault": false
+        },
+        {
+          "name": "DismissesOnlyContextMenuInsideDialog",
+          "line": 498,
+          "isDefault": false
+        },
+        {
+          "name": "WithLabels",
+          "line": 564,
+          "isDefault": false
+        },
+        {
+          "name": "CheckboxItems",
+          "line": 598,
+          "isDefault": false
+        },
+        {
+          "name": "RadioItems",
+          "line": 651,
+          "isDefault": false
+        },
+        {
+          "name": "PreventClosing",
+          "line": 689,
+          "isDefault": false
+        },
+        {
+          "name": "Multiple",
+          "line": 713,
+          "isDefault": false
+        },
+        {
+          "name": "Nested",
+          "line": 795,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Styled",
+          "callee": "console.log",
+          "lineNumber": 24
+        },
+        {
+          "caller": "Styled",
+          "callee": "console.log",
+          "lineNumber": 27
+        },
+        {
+          "caller": "Styled",
+          "callee": "console.log",
+          "lineNumber": 31
+        },
+        {
+          "caller": "Styled",
+          "callee": "console.log",
+          "lineNumber": 34
+        },
+        {
+          "caller": "Styled",
+          "callee": "console.log",
+          "lineNumber": 37
+        },
+        {
+          "caller": "Controlled",
+          "callee": "React.useState",
+          "lineNumber": 47
+        },
+        {
+          "caller": "Controlled",
+          "callee": "setOpen",
+          "lineNumber": 77
+        },
+        {
+          "caller": "Controlled",
+          "callee": "console.log",
+          "lineNumber": 81
+        },
+        {
+          "caller": "Controlled",
+          "callee": "console.log",
+          "lineNumber": 84
+        },
+        {
+          "caller": "Controlled",
+          "callee": "console.log",
+          "lineNumber": 88
+        },
+        {
+          "caller": "Controlled",
+          "callee": "console.log",
+          "lineNumber": 91
+        },
+        {
+          "caller": "Controlled",
+          "callee": "console.log",
+          "lineNumber": 94
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 113
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 116
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 130
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 133
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 149
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 155
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 161
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 170
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 181
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 185
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 188
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 205
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 208
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 222
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 225
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 241
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 247
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 253
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 262
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 273
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 277
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 280
+        },
+        {
+          "caller": "Submenus",
+          "callee": "React.useState",
+          "lineNumber": 296
+        },
+        {
+          "caller": "Submenus",
+          "callee": "setRtl",
+          "lineNumber": 313
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 321
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 324
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 338
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 343
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 360
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 366
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 372
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 383
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 403
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 409
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 415
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 435
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 441
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 447
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 459
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 463
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 466
+        },
+        {
+          "caller": "WithExtensionOverlay",
+          "callee": "React.useState",
+          "lineNumber": 478
+        },
+        {
+          "caller": "DismissesOnlyContextMenuInsideDialog",
+          "callee": "React.useState",
+          "lineNumber": 499
+        },
+        {
+          "caller": "DismissesOnlyContextMenuInsideDialog",
+          "callee": "React.useState",
+          "lineNumber": 500
+        },
+        {
+          "caller": "DismissesOnlyContextMenuInsideDialog",
+          "callee": "React.useState",
+          "lineNumber": 501
+        },
+        {
+          "caller": "DismissesOnlyContextMenuInsideDialog",
+          "callee": "setMenuOpen",
+          "lineNumber": 504
+        },
+        {
+          "caller": "DismissesOnlyContextMenuInsideDialog",
+          "callee": "setIsModal",
+          "lineNumber": 522
+        },
+        {
+          "caller": "WithLabels",
+          "callee": "foodGroups.map",
+          "lineNumber": 570
+        },
+        {
+          "caller": "WithLabels",
+          "callee": "foodGroup.foods.map",
+          "lineNumber": 577
+        },
+        {
+          "caller": "WithLabels",
+          "callee": "console.log",
+          "lineNumber": 582
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "React.useState",
+          "lineNumber": 600
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "console.log",
+          "lineNumber": 608
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "console.log",
+          "lineNumber": 611
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "console.log",
+          "lineNumber": 614
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "checkboxItems.map",
+          "lineNumber": 618
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "selection.includes",
+          "lineNumber": 622
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "setSelection",
+          "lineNumber": 624
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "current.includes",
+          "lineNumber": 625
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "current.filter",
+          "lineNumber": 626
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "current.concat",
+          "lineNumber": 627
+        },
+        {
+          "caller": "RadioItems",
+          "callee": "React.useState",
+          "lineNumber": 653
+        },
+        {
+          "caller": "RadioItems",
+          "callee": "console.log",
+          "lineNumber": 661
+        },
+        {
+          "caller": "RadioItems",
+          "callee": "console.log",
+          "lineNumber": 664
+        },
+        {
+          "caller": "RadioItems",
+          "callee": "console.log",
+          "lineNumber": 667
+        },
+        {
+          "caller": "RadioItems",
+          "callee": "files.map",
+          "lineNumber": 672
+        },
+        {
+          "caller": "PreventClosing",
+          "callee": "window.alert",
+          "lineNumber": 695
+        },
+        {
+          "caller": "PreventClosing",
+          "callee": "event.preventDefault",
+          "lineNumber": 701
+        },
+        {
+          "caller": "PreventClosing",
+          "callee": "window.alert",
+          "lineNumber": 702
+        },
+        {
+          "caller": "Multiple",
+          "callee": "React.useState",
+          "lineNumber": 714
+        },
+        {
+          "caller": "Multiple",
+          "callee": "React.useState",
+          "lineNumber": 715
+        },
+        {
+          "caller": "Multiple",
+          "callee": "event.preventDefault",
+          "lineNumber": 719
+        },
+        {
+          "caller": "Multiple",
+          "callee": "Array.from",
+          "lineNumber": 721
+        },
+        {
+          "caller": "Multiple",
+          "callee": "[styles.content, styles.animatedContent].join",
+          "lineNumber": 727
+        },
+        {
+          "caller": "Multiple",
+          "callee": "setCustomColors",
+          "lineNumber": 734
+        },
+        {
+          "caller": "Multiple",
+          "callee": "fadedIndexes.includes",
+          "lineNumber": 753
+        },
+        {
+          "caller": "Multiple",
+          "callee": "setFadedIndexes",
+          "lineNumber": 755
+        },
+        {
+          "caller": "Multiple",
+          "callee": "indexes.filter",
+          "lineNumber": 756
+        },
+        {
+          "caller": "Multiple",
+          "callee": "fadedIndexes.includes",
+          "lineNumber": 782
+        },
+        {
+          "caller": "Nested",
+          "callee": "console.log",
+          "lineNumber": 808
+        },
+        {
+          "caller": "Nested",
+          "callee": "console.log",
+          "lineNumber": 811
+        },
+        {
+          "caller": "Nested",
+          "callee": "console.log",
+          "lineNumber": 827
+        },
+        {
+          "caller": "Nested",
+          "callee": "console.log",
+          "lineNumber": 833
+        },
+        {
+          "caller": "Nested",
+          "callee": "console.log",
+          "lineNumber": 849
+        },
+        {
+          "caller": "Nested",
+          "callee": "console.log",
+          "lineNumber": 852
+        },
+        {
+          "caller": "Nested",
+          "callee": "console.log",
+          "lineNumber": 862
+        },
+        {
+          "caller": "Nested",
+          "callee": "console.log",
+          "lineNumber": 868
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 12,
+        "functionCount": 13,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/dialog.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 818,
+      "nonEmptyLines": 759,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 8,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "NonModal",
+          "startLine": 22,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "Controlled",
+          "startLine": 50,
+          "endLine": 65,
+          "params": []
+        },
+        {
+          "name": "FocusTrap",
+          "startLine": 67,
+          "endLine": 94,
+          "params": []
+        },
+        {
+          "name": "CustomFocus",
+          "startLine": 96,
+          "endLine": 141,
+          "params": []
+        },
+        {
+          "name": "NoEscapeDismiss",
+          "startLine": 143,
+          "endLine": 160,
+          "params": []
+        },
+        {
+          "name": "NoPointerDownOutsideDismiss",
+          "startLine": 162,
+          "endLine": 177,
+          "params": []
+        },
+        {
+          "name": "EventPropagation",
+          "startLine": 179,
+          "endLine": 226,
+          "params": []
+        },
+        {
+          "name": "WithPortalContainer",
+          "startLine": 228,
+          "endLine": 246,
+          "params": []
+        },
+        {
+          "name": "Animated",
+          "startLine": 248,
+          "endLine": 260,
+          "params": []
+        },
+        {
+          "name": "ForcedMount",
+          "startLine": 262,
+          "endLine": 274,
+          "params": []
+        },
+        {
+          "name": "InnerScrollable",
+          "startLine": 276,
+          "endLine": 289,
+          "params": []
+        },
+        {
+          "name": "OuterScrollable",
+          "startLine": 291,
+          "endLine": 308,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 310,
+          "endLine": 512,
+          "params": []
+        },
+        {
+          "name": "Cypress",
+          "startLine": 515,
+          "endLine": 588,
+          "params": []
+        },
+        {
+          "name": "WithExtensionOverlay",
+          "startLine": 590,
+          "endLine": 613,
+          "params": []
+        },
+        {
+          "name": "InsideShadowSuggestion",
+          "startLine": 615,
+          "endLine": 631,
+          "params": []
+        },
+        {
+          "name": "WithDropdownMenu",
+          "startLine": 634,
+          "endLine": 664,
+          "params": []
+        },
+        {
+          "name": "PopoverInModalDialog",
+          "startLine": 681,
+          "endLine": 739,
+          "params": []
+        },
+        {
+          "name": "NestedLayersInModalDialog",
+          "startLine": 750,
+          "endLine": 818,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "NonModal",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "Controlled",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "FocusTrap",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "CustomFocus",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "NoEscapeDismiss",
+          "line": 143,
+          "isDefault": false
+        },
+        {
+          "name": "NoPointerDownOutsideDismiss",
+          "line": 162,
+          "isDefault": false
+        },
+        {
+          "name": "EventPropagation",
+          "line": 179,
+          "isDefault": false
+        },
+        {
+          "name": "WithPortalContainer",
+          "line": 228,
+          "isDefault": false
+        },
+        {
+          "name": "Animated",
+          "line": 248,
+          "isDefault": false
+        },
+        {
+          "name": "ForcedMount",
+          "line": 262,
+          "isDefault": false
+        },
+        {
+          "name": "InnerScrollable",
+          "line": 276,
+          "isDefault": false
+        },
+        {
+          "name": "OuterScrollable",
+          "line": 291,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 310,
+          "isDefault": false
+        },
+        {
+          "name": "Cypress",
+          "line": 515,
+          "isDefault": false
+        },
+        {
+          "name": "WithExtensionOverlay",
+          "line": 590,
+          "isDefault": false
+        },
+        {
+          "name": "WithDropdownMenu",
+          "line": 634,
+          "isDefault": false
+        },
+        {
+          "name": "PopoverInModalDialog",
+          "line": 681,
+          "isDefault": false
+        },
+        {
+          "name": "NestedLayersInModalDialog",
+          "line": 750,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NonModal",
+          "callee": "[styles.contentDefault, styles.contentSheet].join",
+          "lineNumber": 29
+        },
+        {
+          "caller": "NonModal",
+          "callee": "event.preventDefault",
+          "lineNumber": 30
+        },
+        {
+          "caller": "NonModal",
+          "callee": "Array.from",
+          "lineNumber": 39
+        },
+        {
+          "caller": "Controlled",
+          "callee": "React.useState",
+          "lineNumber": 51
+        },
+        {
+          "caller": "CustomFocus",
+          "callee": "React.useRef",
+          "lineNumber": 97
+        },
+        {
+          "caller": "CustomFocus",
+          "callee": "React.useRef",
+          "lineNumber": 98
+        },
+        {
+          "caller": "CustomFocus",
+          "callee": "event.preventDefault",
+          "lineNumber": 108
+        },
+        {
+          "caller": "CustomFocus",
+          "callee": "firstNameRef.current?.focus",
+          "lineNumber": 109
+        },
+        {
+          "caller": "CustomFocus",
+          "callee": "event.preventDefault",
+          "lineNumber": 112
+        },
+        {
+          "caller": "CustomFocus",
+          "callee": "searchFieldRef.current?.focus",
+          "lineNumber": 113
+        },
+        {
+          "caller": "NoEscapeDismiss",
+          "callee": "event.preventDefault",
+          "lineNumber": 150
+        },
+        {
+          "caller": "NoPointerDownOutsideDismiss",
+          "callee": "event.preventDefault",
+          "lineNumber": 169
+        },
+        {
+          "caller": "EventPropagation",
+          "callee": "React.useRef",
+          "lineNumber": 180
+        },
+        {
+          "caller": "EventPropagation",
+          "callee": "React.useState",
+          "lineNumber": 181
+        },
+        {
+          "caller": "EventPropagation",
+          "callee": "console.log",
+          "lineNumber": 188
+        },
+        {
+          "caller": "EventPropagation",
+          "callee": "event.stopPropagation",
+          "lineNumber": 192
+        },
+        {
+          "caller": "EventPropagation",
+          "callee": "event.stopPropagation",
+          "lineNumber": 198
+        },
+        {
+          "caller": "EventPropagation",
+          "callee": "console.log",
+          "lineNumber": 200
+        },
+        {
+          "caller": "EventPropagation",
+          "callee": "event.stopPropagation",
+          "lineNumber": 207
+        },
+        {
+          "caller": "EventPropagation",
+          "callee": "console.log",
+          "lineNumber": 209
+        },
+        {
+          "caller": "EventPropagation",
+          "callee": "setStopPropagation",
+          "lineNumber": 221
+        },
+        {
+          "caller": "WithPortalContainer",
+          "callee": "React.useState",
+          "lineNumber": 229
+        },
+        {
+          "caller": "Animated",
+          "callee": "[styles.overlay, styles.animatedOverlay].join",
+          "lineNumber": 252
+        },
+        {
+          "caller": "Animated",
+          "callee": "[styles.contentDefault, styles.animatedContent].join",
+          "lineNumber": 253
+        },
+        {
+          "caller": "InnerScrollable",
+          "callee": "[styles.contentDefault, styles.contentScrollable].join",
+          "lineNumber": 281
+        },
+        {
+          "caller": "OuterScrollable",
+          "callee": "[styles.overlay, styles.scrollableOverlay].join",
+          "lineNumber": 296
+        },
+        {
+          "caller": "OuterScrollable",
+          "callee": "[styles.contentDefault, styles.contentInScrollableOverlay].join",
+          "lineNumber": 298
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "[styles.contentDefault, styles.chromaticContent].join",
+          "lineNumber": 326
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "[styles.chromaticContent, styles.contentAttr].join",
+          "lineNumber": 483
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "[styles.overlay, styles.overlayAttr].join",
+          "lineNumber": 496
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "[styles.chromaticContent, styles.contentAttr].join",
+          "lineNumber": 500
+        },
+        {
+          "caller": "Cypress",
+          "callee": "React.useState",
+          "lineNumber": 516
+        },
+        {
+          "caller": "Cypress",
+          "callee": "React.useState",
+          "lineNumber": 517
+        },
+        {
+          "caller": "Cypress",
+          "callee": "React.useState",
+          "lineNumber": 518
+        },
+        {
+          "caller": "Cypress",
+          "callee": "React.useState",
+          "lineNumber": 519
+        },
+        {
+          "caller": "Cypress",
+          "callee": "[\n              styles.contentDefault,\n              animated && styles.animatedContent,\n              animated && styles.duration50,\n            ]\n              .filter(Boolean)\n              .join",
+          "lineNumber": 527
+        },
+        {
+          "caller": "Cypress",
+          "callee": "[\n              styles.contentDefault,\n              animated && styles.animatedContent,\n              animated && styles.duration50,\n            ]\n              .filter",
+          "lineNumber": 527
+        },
+        {
+          "caller": "Cypress",
+          "callee": "setHasDestroyButton",
+          "lineNumber": 540
+        },
+        {
+          "caller": "Cypress",
+          "callee": "setModal",
+          "lineNumber": 556
+        },
+        {
+          "caller": "Cypress",
+          "callee": "Boolean",
+          "lineNumber": 556
+        },
+        {
+          "caller": "Cypress",
+          "callee": "setAnimated",
+          "lineNumber": 567
+        },
+        {
+          "caller": "Cypress",
+          "callee": "Boolean",
+          "lineNumber": 567
+        },
+        {
+          "caller": "Cypress",
+          "callee": "setCount",
+          "lineNumber": 576
+        },
+        {
+          "caller": "WithExtensionOverlay",
+          "callee": "React.useState",
+          "lineNumber": 591
+        },
+        {
+          "caller": "InsideShadowSuggestion",
+          "callee": "React.useRef",
+          "lineNumber": 616
+        },
+        {
+          "caller": "InsideShadowSuggestion",
+          "callee": "React.useEffect",
+          "lineNumber": 618
+        },
+        {
+          "caller": "InsideShadowSuggestion",
+          "callee": "host.attachShadow",
+          "lineNumber": 622
+        },
+        {
+          "caller": "InsideShadowSuggestion",
+          "callee": "document.createElement",
+          "lineNumber": 623
+        },
+        {
+          "caller": "InsideShadowSuggestion",
+          "callee": "shadowRoot.append",
+          "lineNumber": 627
+        },
+        {
+          "caller": "WithDropdownMenu",
+          "callee": "React.useState",
+          "lineNumber": 635
+        },
+        {
+          "caller": "PopoverInModalDialog",
+          "callee": "React.useState",
+          "lineNumber": 682
+        },
+        {
+          "caller": "PopoverInModalDialog",
+          "callee": "setPopoverModal",
+          "lineNumber": 698
+        },
+        {
+          "caller": "PopoverInModalDialog",
+          "callee": "Array.from",
+          "lineNumber": 723
+        },
+        {
+          "caller": "NestedLayersInModalDialog",
+          "callee": "Array.from",
+          "lineNumber": 778
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 19,
+        "functionCount": 20,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1797,
+      "nonEmptyLines": 1726,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 15,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "Modality",
+          "startLine": 44,
+          "endLine": 189,
+          "params": []
+        },
+        {
+          "name": "Submenus",
+          "startLine": 191,
+          "endLine": 368,
+          "params": []
+        },
+        {
+          "name": "WithExtensionOverlay",
+          "startLine": 370,
+          "endLine": 388,
+          "params": []
+        },
+        {
+          "name": "InvertedWithSubmenus",
+          "startLine": 390,
+          "endLine": 467,
+          "params": []
+        },
+        {
+          "name": "WithLabels",
+          "startLine": 469,
+          "endLine": 502,
+          "params": []
+        },
+        {
+          "name": "NestedComposition",
+          "startLine": 504,
+          "endLine": 565,
+          "params": []
+        },
+        {
+          "name": "DismissesOnlyMenuInsideDialog",
+          "startLine": 568,
+          "endLine": 623,
+          "params": []
+        },
+        {
+          "name": "SingleItemAsDialogTrigger",
+          "startLine": 625,
+          "endLine": 711,
+          "params": []
+        },
+        {
+          "name": "MultipleItemsAsDialogTriggers",
+          "startLine": 713,
+          "endLine": 826,
+          "params": []
+        },
+        {
+          "name": "CheckboxItems",
+          "startLine": 828,
+          "endLine": 889,
+          "params": []
+        },
+        {
+          "name": "RadioItems",
+          "startLine": 891,
+          "endLine": 928,
+          "params": []
+        },
+        {
+          "name": "PreventClosing",
+          "startLine": 930,
+          "endLine": 953,
+          "params": []
+        },
+        {
+          "name": "WithTooltip",
+          "startLine": 955,
+          "endLine": 989,
+          "params": []
+        },
+        {
+          "name": "InPopupWindow",
+          "startLine": 991,
+          "endLine": 1025,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 1030,
+          "endLine": 1780,
+          "params": []
+        },
+        {
+          "name": "TickIcon",
+          "startLine": 1783,
+          "endLine": 1797,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "Modality",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "Submenus",
+          "line": 191,
+          "isDefault": false
+        },
+        {
+          "name": "WithExtensionOverlay",
+          "line": 370,
+          "isDefault": false
+        },
+        {
+          "name": "InvertedWithSubmenus",
+          "line": 390,
+          "isDefault": false
+        },
+        {
+          "name": "WithLabels",
+          "line": 469,
+          "isDefault": false
+        },
+        {
+          "name": "NestedComposition",
+          "line": 504,
+          "isDefault": false
+        },
+        {
+          "name": "DismissesOnlyMenuInsideDialog",
+          "line": 568,
+          "isDefault": false
+        },
+        {
+          "name": "SingleItemAsDialogTrigger",
+          "line": 625,
+          "isDefault": false
+        },
+        {
+          "name": "MultipleItemsAsDialogTriggers",
+          "line": 713,
+          "isDefault": false
+        },
+        {
+          "name": "CheckboxItems",
+          "line": 828,
+          "isDefault": false
+        },
+        {
+          "name": "RadioItems",
+          "line": 891,
+          "isDefault": false
+        },
+        {
+          "name": "PreventClosing",
+          "line": 930,
+          "isDefault": false
+        },
+        {
+          "name": "WithTooltip",
+          "line": 955,
+          "isDefault": false
+        },
+        {
+          "name": "InPopupWindow",
+          "line": 991,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 1030,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Styled",
+          "callee": "console.log",
+          "lineNumber": 21
+        },
+        {
+          "caller": "Styled",
+          "callee": "console.log",
+          "lineNumber": 24
+        },
+        {
+          "caller": "Styled",
+          "callee": "console.log",
+          "lineNumber": 28
+        },
+        {
+          "caller": "Styled",
+          "callee": "console.log",
+          "lineNumber": 31
+        },
+        {
+          "caller": "Styled",
+          "callee": "console.log",
+          "lineNumber": 34
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 56
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 59
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 75
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 81
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 87
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 99
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 103
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 106
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 124
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 127
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 143
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 149
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 155
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 167
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 171
+        },
+        {
+          "caller": "Modality",
+          "callee": "console.log",
+          "lineNumber": 174
+        },
+        {
+          "caller": "Submenus",
+          "callee": "React.useState",
+          "lineNumber": 192
+        },
+        {
+          "caller": "Submenus",
+          "callee": "setRtl",
+          "lineNumber": 202
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 210
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 213
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 229
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 235
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 252
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 258
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 264
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 275
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 295
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 301
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 307
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 327
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 333
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 339
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 351
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 355
+        },
+        {
+          "caller": "Submenus",
+          "callee": "console.log",
+          "lineNumber": 358
+        },
+        {
+          "caller": "WithExtensionOverlay",
+          "callee": "React.useState",
+          "lineNumber": 371
+        },
+        {
+          "caller": "InvertedWithSubmenus",
+          "callee": "console.log",
+          "lineNumber": 396
+        },
+        {
+          "caller": "InvertedWithSubmenus",
+          "callee": "console.log",
+          "lineNumber": 399
+        },
+        {
+          "caller": "InvertedWithSubmenus",
+          "callee": "console.log",
+          "lineNumber": 414
+        },
+        {
+          "caller": "InvertedWithSubmenus",
+          "callee": "console.log",
+          "lineNumber": 417
+        },
+        {
+          "caller": "InvertedWithSubmenus",
+          "callee": "console.log",
+          "lineNumber": 434
+        },
+        {
+          "caller": "InvertedWithSubmenus",
+          "callee": "console.log",
+          "lineNumber": 440
+        },
+        {
+          "caller": "InvertedWithSubmenus",
+          "callee": "console.log",
+          "lineNumber": 446
+        },
+        {
+          "caller": "InvertedWithSubmenus",
+          "callee": "console.log",
+          "lineNumber": 455
+        },
+        {
+          "caller": "WithLabels",
+          "callee": "foodGroups.map",
+          "lineNumber": 475
+        },
+        {
+          "caller": "WithLabels",
+          "callee": "foodGroup.foods.map",
+          "lineNumber": 482
+        },
+        {
+          "caller": "WithLabels",
+          "callee": "console.log",
+          "lineNumber": 487
+        },
+        {
+          "caller": "NestedComposition",
+          "callee": "event.preventDefault",
+          "lineNumber": 521
+        },
+        {
+          "caller": "NestedComposition",
+          "callee": "console.log",
+          "lineNumber": 540
+        },
+        {
+          "caller": "NestedComposition",
+          "callee": "console.log",
+          "lineNumber": 546
+        },
+        {
+          "caller": "DismissesOnlyMenuInsideDialog",
+          "callee": "React.useState",
+          "lineNumber": 569
+        },
+        {
+          "caller": "DismissesOnlyMenuInsideDialog",
+          "callee": "React.useState",
+          "lineNumber": 570
+        },
+        {
+          "caller": "DismissesOnlyMenuInsideDialog",
+          "callee": "React.useEffect",
+          "lineNumber": 572
+        },
+        {
+          "caller": "DismissesOnlyMenuInsideDialog",
+          "callee": "setMenuOpen",
+          "lineNumber": 574
+        },
+        {
+          "caller": "SingleItemAsDialogTrigger",
+          "callee": "React.useRef",
+          "lineNumber": 626
+        },
+        {
+          "caller": "SingleItemAsDialogTrigger",
+          "callee": "React.useRef",
+          "lineNumber": 627
+        },
+        {
+          "caller": "SingleItemAsDialogTrigger",
+          "callee": "React.useRef",
+          "lineNumber": 628
+        },
+        {
+          "caller": "handleModalDialogClose",
+          "callee": "dropdownTriggerRef.current?.focus",
+          "lineNumber": 632
+        },
+        {
+          "caller": "handleModalDialogClose",
+          "callee": "event.preventDefault",
+          "lineNumber": 633
+        },
+        {
+          "caller": "handleNonModalDialogClose",
+          "callee": "dropdownTriggerRef2.current?.focus",
+          "lineNumber": 638
+        },
+        {
+          "caller": "handleNonModalDialogClose",
+          "callee": "event.preventDefault",
+          "lineNumber": 639
+        },
+        {
+          "caller": "SingleItemAsDialogTrigger",
+          "callee": "event.preventDefault",
+          "lineNumber": 690
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "React.useState",
+          "lineNumber": 714
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "React.useState",
+          "lineNumber": 715
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "React.useState",
+          "lineNumber": 716
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "React.useState",
+          "lineNumber": 717
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "React.useRef",
+          "lineNumber": 718
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "React.useRef",
+          "lineNumber": 719
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "setDeleteOpen",
+          "lineNumber": 735
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "setSwitchAccountsOpen",
+          "lineNumber": 736
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "setSwitchAccountsOpen",
+          "lineNumber": 748
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "setDeleteOpen",
+          "lineNumber": 753
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "dropdownTriggerRef.current?.focus",
+          "lineNumber": 764
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "event.preventDefault",
+          "lineNumber": 765
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "setDeleteOpen2",
+          "lineNumber": 779
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "setSwitchAccountsOpen2",
+          "lineNumber": 780
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "event.preventDefault",
+          "lineNumber": 795
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "setSwitchAccountsOpen2",
+          "lineNumber": 799
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "setDeleteOpen2",
+          "lineNumber": 804
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "dropdownTriggerRef2.current?.focus",
+          "lineNumber": 815
+        },
+        {
+          "caller": "MultipleItemsAsDialogTriggers",
+          "callee": "event.preventDefault",
+          "lineNumber": 816
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "React.useState",
+          "lineNumber": 831
+        },
+        {
+          "caller": "handleSelectAll",
+          "callee": "setSelection",
+          "lineNumber": 834
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "e.preventDefault",
+          "lineNumber": 853
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "options.map",
+          "lineNumber": 862
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "selection.includes",
+          "lineNumber": 866
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "e.preventDefault",
+          "lineNumber": 867
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "setSelection",
+          "lineNumber": 869
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "current.includes",
+          "lineNumber": 870
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "current.filter",
+          "lineNumber": 871
+        },
+        {
+          "caller": "CheckboxItems",
+          "callee": "current.concat",
+          "lineNumber": 872
+        },
+        {
+          "caller": "RadioItems",
+          "callee": "React.useState",
+          "lineNumber": 893
+        },
+        {
+          "caller": "RadioItems",
+          "callee": "console.log",
+          "lineNumber": 901
+        },
+        {
+          "caller": "RadioItems",
+          "callee": "console.log",
+          "lineNumber": 904
+        },
+        {
+          "caller": "RadioItems",
+          "callee": "console.log",
+          "lineNumber": 907
+        },
+        {
+          "caller": "RadioItems",
+          "callee": "files.map",
+          "lineNumber": 912
+        },
+        {
+          "caller": "PreventClosing",
+          "callee": "window.alert",
+          "lineNumber": 936
+        },
+        {
+          "caller": "PreventClosing",
+          "callee": "event.preventDefault",
+          "lineNumber": 942
+        },
+        {
+          "caller": "PreventClosing",
+          "callee": "window.alert",
+          "lineNumber": 943
+        },
+        {
+          "caller": "WithTooltip",
+          "callee": "console.log",
+          "lineNumber": 968
+        },
+        {
+          "caller": "WithTooltip",
+          "callee": "console.log",
+          "lineNumber": 971
+        },
+        {
+          "caller": "WithTooltip",
+          "callee": "console.log",
+          "lineNumber": 975
+        },
+        {
+          "caller": "WithTooltip",
+          "callee": "console.log",
+          "lineNumber": 978
+        },
+        {
+          "caller": "WithTooltip",
+          "callee": "console.log",
+          "lineNumber": 981
+        },
+        {
+          "caller": "InPopupWindow",
+          "callee": "React.useCallback",
+          "lineNumber": 992
+        },
+        {
+          "caller": "InPopupWindow",
+          "callee": "window.open",
+          "lineNumber": 993
+        },
+        {
+          "caller": "InPopupWindow",
+          "callee": "console.error",
+          "lineNumber": 995
+        },
+        {
+          "caller": "InPopupWindow",
+          "callee": "popupWindow.document.createElement",
+          "lineNumber": 999
+        },
+        {
+          "caller": "InPopupWindow",
+          "callee": "popupWindow.document.body.append",
+          "lineNumber": 1000
+        },
+        {
+          "caller": "InPopupWindow",
+          "callee": "ReactDOM.createRoot(containerNode).render",
+          "lineNumber": 1002
+        },
+        {
+          "caller": "InPopupWindow",
+          "callee": "ReactDOM.createRoot",
+          "lineNumber": 1002
+        },
+        {
+          "caller": "InPopupWindow",
+          "callee": "console.log",
+          "lineNumber": 1007
+        },
+        {
+          "caller": "InPopupWindow",
+          "callee": "console.log",
+          "lineNumber": 1010
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "React.useState",
+          "lineNumber": 1032
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "React.useState",
+          "lineNumber": 1033
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "React.useState",
+          "lineNumber": 1034
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "React.useState",
+          "lineNumber": 1035
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "React.useState",
+          "lineNumber": 1038
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1048
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1051
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1055
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1058
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1061
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "event.preventDefault",
+          "lineNumber": 1077
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1079
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1082
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1086
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1089
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1092
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "event.preventDefault",
+          "lineNumber": 1107
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1109
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1112
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1116
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1119
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1122
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1137
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1140
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1144
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1147
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1150
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1163
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1166
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1170
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1173
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1176
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1188
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1191
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1195
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1198
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1201
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1215
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1218
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1233
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1237
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1254
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1260
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1266
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1275
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1283
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1286
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1289
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1303
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1306
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1321
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1325
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1342
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1348
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1354
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1365
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1377
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1381
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1384
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 1398
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 1399
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 1425
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 1426
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 1451
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 1452
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 1479
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 1480
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 1505
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 1506
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 1532
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 1533
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1573
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1576
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "foodGroups.map",
+          "lineNumber": 1589
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "foodGroup.foods.map",
+          "lineNumber": 1596
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1601
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1621
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1624
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1627
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "checkboxItems.map",
+          "lineNumber": 1631
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "files.map",
+          "lineNumber": 1647
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "event.preventDefault",
+          "lineNumber": 1669
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1696
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1699
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1735
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1738
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 1741
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "checkboxItems.map",
+          "lineNumber": 1745
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "files.map",
+          "lineNumber": 1765
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 16,
+        "functionCount": 17,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/external-overlay.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 64,
+      "functions": [
+        {
+          "name": "ExternalOverlayTrigger",
+          "startLine": 7,
+          "endLine": 25,
+          "params": [
+            "{ children = 'Trigger overlay' }"
+          ]
+        },
+        {
+          "name": "createExternalOverlay",
+          "startLine": 27,
+          "endLine": 75,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ExternalOverlayTrigger",
+          "line": 77,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ExternalOverlayTrigger",
+          "callee": "React.useRef",
+          "lineNumber": 8
+        },
+        {
+          "caller": "ExternalOverlayTrigger",
+          "callee": "React.useEffect",
+          "lineNumber": 10
+        },
+        {
+          "caller": "ExternalOverlayTrigger",
+          "callee": "cleanupRef.current",
+          "lineNumber": 11
+        },
+        {
+          "caller": "ExternalOverlayTrigger",
+          "callee": "cleanupRef.current",
+          "lineNumber": 18
+        },
+        {
+          "caller": "ExternalOverlayTrigger",
+          "callee": "createExternalOverlay",
+          "lineNumber": 19
+        },
+        {
+          "caller": "createExternalOverlay",
+          "callee": "document.createElement",
+          "lineNumber": 28
+        },
+        {
+          "caller": "createExternalOverlay",
+          "callee": "document.createElement",
+          "lineNumber": 41
+        },
+        {
+          "caller": "createExternalOverlay",
+          "callee": "document.createElement",
+          "lineNumber": 46
+        },
+        {
+          "caller": "stopPropagation",
+          "callee": "event.stopPropagation",
+          "lineNumber": 51
+        },
+        {
+          "caller": "handleDismiss",
+          "callee": "stopPropagation",
+          "lineNumber": 53
+        },
+        {
+          "caller": "handleDismiss",
+          "callee": "cleanup",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createExternalOverlay",
+          "callee": "button.addEventListener",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createExternalOverlay",
+          "callee": "button.addEventListener",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createExternalOverlay",
+          "callee": "button.addEventListener",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createExternalOverlay",
+          "callee": "dismissButton.addEventListener",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createExternalOverlay",
+          "callee": "container.append",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createExternalOverlay",
+          "callee": "container.append",
+          "lineNumber": 63
+        },
+        {
+          "caller": "createExternalOverlay",
+          "callee": "document.body.append",
+          "lineNumber": 64
+        },
+        {
+          "caller": "cleanup",
+          "callee": "button.removeEventListener",
+          "lineNumber": 67
+        },
+        {
+          "caller": "cleanup",
+          "callee": "button.removeEventListener",
+          "lineNumber": 68
+        },
+        {
+          "caller": "cleanup",
+          "callee": "button.removeEventListener",
+          "lineNumber": 69
+        },
+        {
+          "caller": "cleanup",
+          "callee": "dismissButton.removeEventListener",
+          "lineNumber": 70
+        },
+        {
+          "caller": "cleanup",
+          "callee": "container.remove",
+          "lineNumber": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/menubar.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 861,
+      "nonEmptyLines": 805,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 11,
+          "endLine": 196,
+          "params": []
+        },
+        {
+          "name": "WithExtensionOverlay",
+          "startLine": 198,
+          "endLine": 218,
+          "params": []
+        },
+        {
+          "name": "DismissesOnlyMenubarInsideDialog",
+          "startLine": 221,
+          "endLine": 276,
+          "params": []
+        },
+        {
+          "name": "Cypress",
+          "startLine": 278,
+          "endLine": 431,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 433,
+          "endLine": 844,
+          "params": []
+        },
+        {
+          "name": "TickIcon",
+          "startLine": 847,
+          "endLine": 861,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "WithExtensionOverlay",
+          "line": 198,
+          "isDefault": false
+        },
+        {
+          "name": "DismissesOnlyMenubarInsideDialog",
+          "line": 221,
+          "isDefault": false
+        },
+        {
+          "name": "Cypress",
+          "line": 278,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 433,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Styled",
+          "callee": "React.useState",
+          "lineNumber": 12
+        },
+        {
+          "caller": "Styled",
+          "callee": "React.useState",
+          "lineNumber": 13
+        },
+        {
+          "caller": "Styled",
+          "callee": "React.useState",
+          "lineNumber": 20
+        },
+        {
+          "caller": "Styled",
+          "callee": "React.useState",
+          "lineNumber": 23
+        },
+        {
+          "caller": "Styled",
+          "callee": "setRtl",
+          "lineNumber": 40
+        },
+        {
+          "caller": "Styled",
+          "callee": "setLoop",
+          "lineNumber": 49
+        },
+        {
+          "caller": "Styled",
+          "callee": "checkOptions.map",
+          "lineNumber": 129
+        },
+        {
+          "caller": "Styled",
+          "callee": "checkedSelection.includes",
+          "lineNumber": 133
+        },
+        {
+          "caller": "Styled",
+          "callee": "setCheckedSelection",
+          "lineNumber": 135
+        },
+        {
+          "caller": "Styled",
+          "callee": "current.includes",
+          "lineNumber": 136
+        },
+        {
+          "caller": "Styled",
+          "callee": "current.filter",
+          "lineNumber": 137
+        },
+        {
+          "caller": "Styled",
+          "callee": "current.concat",
+          "lineNumber": 138
+        },
+        {
+          "caller": "Styled",
+          "callee": "radioOptions.map",
+          "lineNumber": 164
+        },
+        {
+          "caller": "WithExtensionOverlay",
+          "callee": "React.useState",
+          "lineNumber": 199
+        },
+        {
+          "caller": "DismissesOnlyMenubarInsideDialog",
+          "callee": "React.useState",
+          "lineNumber": 222
+        },
+        {
+          "caller": "DismissesOnlyMenubarInsideDialog",
+          "callee": "React.useState",
+          "lineNumber": 223
+        },
+        {
+          "caller": "DismissesOnlyMenubarInsideDialog",
+          "callee": "setMenuValue",
+          "lineNumber": 226
+        },
+        {
+          "caller": "Cypress",
+          "callee": "React.useState",
+          "lineNumber": 279
+        },
+        {
+          "caller": "Cypress",
+          "callee": "React.useState",
+          "lineNumber": 280
+        },
+        {
+          "caller": "Cypress",
+          "callee": "React.useState",
+          "lineNumber": 281
+        },
+        {
+          "caller": "Cypress",
+          "callee": "setRtl",
+          "lineNumber": 301
+        },
+        {
+          "caller": "Cypress",
+          "callee": "setLoop",
+          "lineNumber": 310
+        },
+        {
+          "caller": "Cypress",
+          "callee": "setPortalled",
+          "lineNumber": 319
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "React.useState",
+          "lineNumber": 435
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "React.useState",
+          "lineNumber": 436
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "React.useState",
+          "lineNumber": 437
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "React.useState",
+          "lineNumber": 438
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "React.useState",
+          "lineNumber": 441
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "event.preventDefault",
+          "lineNumber": 486
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "foodGroups.map",
+          "lineNumber": 738
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "foodGroup.foods.map",
+          "lineNumber": 745
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 750
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 787
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 790
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "console.log",
+          "lineNumber": 793
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "checkboxItems.map",
+          "lineNumber": 797
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "files.map",
+          "lineNumber": 813
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 5,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/popover.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 752,
+      "nonEmptyLines": 712,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 11,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "WithTitleAndDescription",
+          "startLine": 31,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "Boundary",
+          "startLine": 54,
+          "endLine": 91,
+          "params": []
+        },
+        {
+          "name": "Modality",
+          "startLine": 93,
+          "endLine": 134,
+          "params": []
+        },
+        {
+          "name": "Controlled",
+          "startLine": 136,
+          "endLine": 153,
+          "params": []
+        },
+        {
+          "name": "WithExtensionOverlay",
+          "startLine": 155,
+          "endLine": 175,
+          "params": []
+        },
+        {
+          "name": "DismissesOnlyPopoverInsideDialog",
+          "startLine": 178,
+          "endLine": 244,
+          "params": []
+        },
+        {
+          "name": "Animated",
+          "startLine": 246,
+          "endLine": 265,
+          "params": []
+        },
+        {
+          "name": "ForcedMount",
+          "startLine": 267,
+          "endLine": 283,
+          "params": []
+        },
+        {
+          "name": "Nested",
+          "startLine": 285,
+          "endLine": 354,
+          "params": []
+        },
+        {
+          "name": "CustomAnchor",
+          "startLine": 356,
+          "endLine": 383,
+          "params": []
+        },
+        {
+          "name": "WithSlottedTrigger",
+          "startLine": 385,
+          "endLine": 401,
+          "params": []
+        },
+        {
+          "name": "Chromatic",
+          "startLine": 406,
+          "endLine": 751,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "WithTitleAndDescription",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "Boundary",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "Modality",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "Controlled",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "WithExtensionOverlay",
+          "line": 155,
+          "isDefault": false
+        },
+        {
+          "name": "DismissesOnlyPopoverInsideDialog",
+          "line": 178,
+          "isDefault": false
+        },
+        {
+          "name": "Animated",
+          "line": 246,
+          "isDefault": false
+        },
+        {
+          "name": "ForcedMount",
+          "line": 267,
+          "isDefault": false
+        },
+        {
+          "name": "Nested",
+          "line": 285,
+          "isDefault": false
+        },
+        {
+          "name": "CustomAnchor",
+          "line": 356,
+          "isDefault": false
+        },
+        {
+          "name": "WithSlottedTrigger",
+          "line": 385,
+          "isDefault": false
+        },
+        {
+          "name": "Chromatic",
+          "line": 406,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Boundary",
+          "callee": "React.useState",
+          "lineNumber": 55
+        },
+        {
+          "caller": "Controlled",
+          "callee": "React.useState",
+          "lineNumber": 137
+        },
+        {
+          "caller": "WithExtensionOverlay",
+          "callee": "React.useState",
+          "lineNumber": 156
+        },
+        {
+          "caller": "DismissesOnlyPopoverInsideDialog",
+          "callee": "React.useState",
+          "lineNumber": 179
+        },
+        {
+          "caller": "DismissesOnlyPopoverInsideDialog",
+          "callee": "React.useState",
+          "lineNumber": 180
+        },
+        {
+          "caller": "DismissesOnlyPopoverInsideDialog",
+          "callee": "React.useState",
+          "lineNumber": 181
+        },
+        {
+          "caller": "DismissesOnlyPopoverInsideDialog",
+          "callee": "setPopoverOpen",
+          "lineNumber": 184
+        },
+        {
+          "caller": "DismissesOnlyPopoverInsideDialog",
+          "callee": "setIsModal",
+          "lineNumber": 202
+        },
+        {
+          "caller": "Animated",
+          "callee": "[styles.content, styles.animatedContent].join",
+          "lineNumber": 255
+        },
+        {
+          "caller": "Nested",
+          "callee": "React.useRef",
+          "lineNumber": 286
+        },
+        {
+          "caller": "Nested",
+          "callee": "buttonRef.current?.focus",
+          "lineNumber": 301
+        },
+        {
+          "caller": "WithSlottedTrigger",
+          "callee": "console.log",
+          "lineNumber": 389
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "event.preventDefault",
+          "lineNumber": 427
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "event.preventDefault",
+          "lineNumber": 441
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "event.preventDefault",
+          "lineNumber": 515
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 527
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 528
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 554
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 555
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 580
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 581
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 608
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 609
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 634
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 635
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "SIDES.map",
+          "lineNumber": 661
+        },
+        {
+          "caller": "Chromatic",
+          "callee": "ALIGN_OPTIONS.map",
+          "lineNumber": 662
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 13,
+        "functionCount": 13,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/storybook/stories/select.stories.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1877,
+      "nonEmptyLines": 1787,
+      "functions": [
+        {
+          "name": "Styled",
+          "startLine": 18,
+          "endLine": 63,
+          "params": []
+        },
+        {
+          "name": "Animated",
+          "startLine": 65,
+          "endLine": 106,
+          "params": []
+        },
+        {
+          "name": "ForcedMount",
+          "startLine": 108,
+          "endLine": 145,
+          "params": []
+        },
+        {
+          "name": "Controlled",
+          "startLine": 147,
+          "endLine": 207,
+          "params": []
+        },
+        {
+          "name": "WithExtensionOverlay",
+          "startLine": 209,
+          "endLine": 251,
+          "params": []
+        },
+        {
+          "name": "DismissesOnlySelectInsideDialog",
+          "startLine": 254,
+          "endLine": 324,
+          "params": []
+        },
+        {
+          "name": "DismissesOnlySelectInPopover",
+          "startLine": 327,
+          "endLine": 435,
+          "params": []
+        },
+        {
+          "name": "Position",
+          "startLine": 437,
+          "endLine": 485,
+          "params": []
+        },
+        {
+          "name": "NoDefaultValue",
+          "startLine": 487,
+          "endLine": 534,
+          "params": []
+        },
+        {
+          "name": "Clearable",
+          "startLine": 536,
+          "endLine": 588,
+          "params": []
+        },
+        {
+          "name": "Typeahead",
+          "startLine": 590,
+          "endLine": 631,
+          "params": []
+        },
+        {
+          "name": "WithGroups",
+          "startLine": 633,
+          "endLine": 695,
+          "params": []
+        },
+        {
+          "name": "Labelling",
+          "startLine": 697,
+          "endLine": 768,
+          "params": []
+        },
+        {
+          "name": "RightToLeft",
+          "startLine": 770,
+          "endLine": 815,
+          "params": []
+        },
+        {
+          "name": "WithinForm",
+          "startLine": 817,
+          "endLine": 924,
+          "params": []
+        },
+        {
+          "name": "WithinFormReset",
+          "startLine": 926,
+          "endLine": 1012,
+          "params": []
+        },
+        {
+          "name": "DisabledWithinForm",
+          "startLine": 1014,
+          "endLine": 1075,
+          "params": []
+        },
+        {
+          "name": "RequiredWithinForm",
+          "startLine": 1077,
+          "endLine": 1138,
+          "params": []
+        },
+        {
+          "name": "Parts",
+          "startLine": 1140,
+          "endLine": 1202,
+          "params": []
+        },
+        {
+          "name": "AllItemsDisabled",
+          "startLine": 1204,
+          "endLine": 1223,
+          "params": []
+        },
+        {
+          "name": "WithinDialog",
+          "startLine": 1225,
+          "endLine": 1265,
+          "params": []
+        },
+        {
+          "name": "WithVeryLongSelectItems",
+          "startLine": 1267,
+          "endLine": 1303,
+          "params": []
+        },
+        {
+          "name": "WithScrollArea",
+          "startLine": 1305,
+          "endLine": 1357,
+          "params": []
+        },
+        {
+          "name": "ChromaticShortOptionsPaddedContent",
+          "startLine": 1359,
+          "endLine": 1361,
+          "params": []
+        },
+        {
+          "name": "ChromaticShortOptionsPaddedViewport",
+          "startLine": 1364,
+          "endLine": 1366,
+          "params": []
+        },
+        {
+          "name": "ChromaticLongOptionsPaddedContent",
+          "startLine": 1369,
+          "endLine": 1371,
+          "params": []
+        },
+        {
+          "name": "ChromaticLongOptionsPaddedViewport",
+          "startLine": 1374,
+          "endLine": 1376,
+          "params": []
+        },
+        {
+          "name": "ChromaticTopFirstPaddedContent",
+          "startLine": 1379,
+          "endLine": 1381,
+          "params": []
+        },
+        {
+          "name": "ChromaticTopFirstPaddedViewport",
+          "startLine": 1384,
+          "endLine": 1386,
+          "params": []
+        },
+        {
+          "name": "ChromaticBottomLastPaddedContent",
+          "startLine": 1389,
+          "endLine": 1391,
+          "params": []
+        },
+        {
+          "name": "ChromaticBottomLastPaddedViewport",
+          "startLine": 1394,
+          "endLine": 1396,
+          "params": []
+        },
+        {
+          "name": "ChromaticNoDefaultValue",
+          "startLine": 1399,
+          "endLine": 1454,
+          "params": []
+        },
+        {
+          "name": "Cypress",
+          "startLine": 1457,
+          "endLine": 1630,
+          "params": []
+        },
+        {
+          "name": "ShadowHost",
+          "startLine": 1638,
+          "endLine": 1662,
+          "params": [
+            "{ children }"
+          ]
+        },
+        {
+          "name": "CypressShadowDom",
+          "startLine": 1664,
+          "endLine": 1700,
+          "params": []
+        },
+        {
+          "name": "ChromaticSelect",
+          "startLine": 1710,
+          "endLine": 1753,
+          "params": [
+            "{\n  count = 5,\n  paddedElement = 'content',\n  selected,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "ChromaticStoryShortOptions",
+          "startLine": 1769,
+          "endLine": 1797,
+          "params": [
+            "{ paddedElement }"
+          ]
+        },
+        {
+          "name": "ChromaticStoryLongOptions",
+          "startLine": 1799,
+          "endLine": 1849,
+          "params": [
+            "{ paddedElement }"
+          ]
+        },
+        {
+          "name": "ChromaticStoryTopFirst",
+          "startLine": 1851,
+          "endLine": 1855,
+          "params": [
+            "{ paddedElement }"
+          ]
+        },
+        {
+          "name": "ChromaticStoryBottomLast",
+          "startLine": 1857,
+          "endLine": 1861,
+          "params": [
+            "{ paddedElement }"
+          ]
+        },
+        {
+          "name": "TickIcon",
+          "startLine": 1863,
+          "endLine": 1877,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Styled",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "Animated",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "ForcedMount",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "Controlled",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "WithExtensionOverlay",
+          "line": 209,
+          "isDefault": false
+        },
+        {
+          "name": "DismissesOnlySelectInsideDialog",
+          "line": 254,
+          "isDefault": false
+        },
+        {
+          "name": "DismissesOnlySelectInPopover",
+          "line": 327,
+          "isDefault": false
+        },
+        {
+          "name": "Position",
+          "line": 437,
+          "isDefault": false
+        },
+        {
+          "name": "NoDefaultValue",
+          "line": 487,
+          "isDefault": false
+        },
+        {
+          "name": "Clearable",
+          "line": 536,
+          "isDefault": false
+        },
+        {
+          "name": "Typeahead",
+          "line": 590,
+          "isDefault": false
+        },
+        {
+          "name": "WithGroups",
+          "line": 633,
+          "isDefault": false
+        },
+        {
+          "name": "Labelling",
+          "line": 697,
+          "isDefault": false
+        },
+        {
+          "name": "RightToLeft",
+          "line": 770,
+          "isDefault": false
+        },
+        {
+          "name": "WithinForm",
+          "line": 817,
+          "isDefault": false
+        },
+        {
+          "name": "WithinFormReset",
+          "line": 926,
+          "isDefault": false
+        },
+        {
+          "name": "DisabledWithinForm",
+          "line": 1014,
+          "isDefault": false
+        },
+        {
+          "name": "RequiredWithinForm",
+          "line": 1077,
+          "isDefault": false
+        },
+        {
+          "name": "Parts",
+          "line": 1140,
+          "isDefault": false
+        },
+        {
+          "name": "AllItemsDisabled",
+          "line": 1204,
+          "isDefault": false
+        },
+        {
+          "name": "WithinDialog",
+          "line": 1225,
+          "isDefault": false
+        },
+        {
+          "name": "WithVeryLongSelectItems",
+          "line": 1267,
+          "isDefault": false
+        },
+        {
+          "name": "WithScrollArea",
+          "line": 1305,
+          "isDefault": false
+        },
+        {
+          "name": "ChromaticShortOptionsPaddedContent",
+          "line": 1359,
+          "isDefault": false
+        },
+        {
+          "name": "ChromaticShortOptionsPaddedViewport",
+          "line": 1364,
+          "isDefault": false
+        },
+        {
+          "name": "ChromaticLongOptionsPaddedContent",
+          "line": 1369,
+          "isDefault": false
+        },
+        {
+          "name": "ChromaticLongOptionsPaddedViewport",
+          "line": 1374,
+          "isDefault": false
+        },
+        {
+          "name": "ChromaticTopFirstPaddedContent",
+          "line": 1379,
+          "isDefault": false
+        },
+        {
+          "name": "ChromaticTopFirstPaddedViewport",
+          "line": 1384,
+          "isDefault": false
+        },
+        {
+          "name": "ChromaticBottomLastPaddedContent",
+          "line": 1389,
+          "isDefault": false
+        },
+        {
+          "name": "ChromaticBottomLastPaddedViewport",
+          "line": 1394,
+          "isDefault": false
+        },
+        {
+          "name": "ChromaticNoDefaultValue",
+          "line": 1399,
+          "isDefault": false
+        },
+        {
+          "name": "Cypress",
+          "line": 1457,
+          "isDefault": false
+        },
+        {
+          "name": "CypressShadowDom",
+          "line": 1664,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Styled",
+          "callee": "POSITIONS.map",
+          "lineNumber": 20
+        },
+        {
+          "caller": "Animated",
+          "callee": "[styles.content, styles.animatedContent].join",
+          "lineNumber": 76
+        },
+        {
+          "caller": "Controlled",
+          "callee": "React.useState",
+          "lineNumber": 148
+        },
+        {
+          "caller": "Controlled",
+          "callee": "POSITIONS.map",
+          "lineNumber": 151
+        },
+        {
+          "caller": "WithExtensionOverlay",
+          "callee": "React.useState",
+          "lineNumber": 210
+        },
+        {
+          "caller": "DismissesOnlySelectInsideDialog",
+          "callee": "React.useState",
+          "lineNumber": 255
+        },
+        {
+          "caller": "DismissesOnlySelectInsideDialog",
+          "callee": "React.useState",
+          "lineNumber": 256
+        },
+        {
+          "caller": "DismissesOnlySelectInsideDialog",
+          "callee": "setSelectOpen",
+          "lineNumber": 259
+        },
+        {
+          "caller": "DismissesOnlySelectInPopover",
+          "callee": "React.useState",
+          "lineNumber": 328
+        },
+        {
+          "caller": "DismissesOnlySelectInPopover",
+          "callee": "React.useState",
+          "lineNumber": 329
+        },
+        {
+          "caller": "DismissesOnlySelectInPopover",
+          "callee": "React.useState",
+          "lineNumber": 330
+        },
+        {
+          "caller": "DismissesOnlySelectInPopover",
+          "callee": "setFirstOpen",
+          "lineNumber": 334
+        },
+        {
+          "caller": "DismissesOnlySelectInPopover",
+          "callee": "setSecondOpen",
+          "lineNumber": 337
+        },
+        {
+          "caller": "Position",
+          "callee": "POSITIONS.map",
+          "lineNumber": 448
+        },
+        {
+          "caller": "Position",
+          "callee": "Array.from",
+          "lineNumber": 460
+        },
+        {
+          "caller": "NoDefaultValue",
+          "callee": "POSITIONS.map",
+          "lineNumber": 497
+        },
+        {
+          "caller": "Typeahead",
+          "callee": "POSITIONS.map",
+          "lineNumber": 600
+        },
+        {
+          "caller": "Typeahead",
+          "callee": "foodGroups.map",
+          "lineNumber": 612
+        },
+        {
+          "caller": "Typeahead",
+          "callee": "foodGroup.foods.map",
+          "lineNumber": 613
+        },
+        {
+          "caller": "WithGroups",
+          "callee": "POSITIONS.map",
+          "lineNumber": 643
+        },
+        {
+          "caller": "WithGroups",
+          "callee": "foodGroups.map",
+          "lineNumber": 655
+        },
+        {
+          "caller": "WithGroups",
+          "callee": "foodGroup.foods.map",
+          "lineNumber": 665
+        },
+        {
+          "caller": "WithGroups",
+          "callee": "[hasLabel && styles.itemInGroup, styles.item]\n                              .filter(Boolean)\n                              .join",
+          "lineNumber": 668
+        },
+        {
+          "caller": "WithGroups",
+          "callee": "[hasLabel && styles.itemInGroup, styles.item]\n                              .filter",
+          "lineNumber": 668
+        },
+        {
+          "caller": "RightToLeft",
+          "callee": "POSITIONS.map",
+          "lineNumber": 772
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "React.useState",
+          "lineNumber": 818
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "React.useState",
+          "lineNumber": 819
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "React.useState",
+          "lineNumber": 820
+        },
+        {
+          "caller": "handleChange",
+          "callee": "setData",
+          "lineNumber": 824
+        },
+        {
+          "caller": "handleChange",
+          "callee": "Object.fromEntries",
+          "lineNumber": 824
+        },
+        {
+          "caller": "handleChange",
+          "callee": "(formData as any).entries",
+          "lineNumber": 824
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "handleChange",
+          "lineNumber": 831
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "event.preventDefault",
+          "lineNumber": 832
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "window.alert",
+          "lineNumber": 849
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "setCountry",
+          "lineNumber": 851
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "window.alert",
+          "lineNumber": 898
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "setLanguage",
+          "lineNumber": 900
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 916
+        },
+        {
+          "caller": "WithinForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 920
+        },
+        {
+          "caller": "WithinFormReset",
+          "callee": "React.useState",
+          "lineNumber": 927
+        },
+        {
+          "caller": "WithinFormReset",
+          "callee": "event.preventDefault",
+          "lineNumber": 930
+        },
+        {
+          "caller": "DisabledWithinForm",
+          "callee": "React.useState",
+          "lineNumber": 1015
+        },
+        {
+          "caller": "handleChange",
+          "callee": "setData",
+          "lineNumber": 1019
+        },
+        {
+          "caller": "handleChange",
+          "callee": "Object.fromEntries",
+          "lineNumber": 1019
+        },
+        {
+          "caller": "handleChange",
+          "callee": "(formData as any).entries",
+          "lineNumber": 1019
+        },
+        {
+          "caller": "DisabledWithinForm",
+          "callee": "handleChange",
+          "lineNumber": 1026
+        },
+        {
+          "caller": "DisabledWithinForm",
+          "callee": "event.preventDefault",
+          "lineNumber": 1027
+        },
+        {
+          "caller": "DisabledWithinForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 1072
+        },
+        {
+          "caller": "RequiredWithinForm",
+          "callee": "React.useState",
+          "lineNumber": 1078
+        },
+        {
+          "caller": "handleChange",
+          "callee": "setData",
+          "lineNumber": 1082
+        },
+        {
+          "caller": "handleChange",
+          "callee": "Object.fromEntries",
+          "lineNumber": 1082
+        },
+        {
+          "caller": "handleChange",
+          "callee": "(formData as any).entries",
+          "lineNumber": 1082
+        },
+        {
+          "caller": "RequiredWithinForm",
+          "callee": "handleChange",
+          "lineNumber": 1089
+        },
+        {
+          "caller": "RequiredWithinForm",
+          "callee": "event.preventDefault",
+          "lineNumber": 1090
+        },
+        {
+          "caller": "RequiredWithinForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 1135
+        },
+        {
+          "caller": "Parts",
+          "callee": "React.useState",
+          "lineNumber": 1141
+        },
+        {
+          "caller": "handleChange",
+          "callee": "setData",
+          "lineNumber": 1145
+        },
+        {
+          "caller": "handleChange",
+          "callee": "Object.fromEntries",
+          "lineNumber": 1145
+        },
+        {
+          "caller": "handleChange",
+          "callee": "(formData as any).entries",
+          "lineNumber": 1145
+        },
+        {
+          "caller": "Parts",
+          "callee": "handleChange",
+          "lineNumber": 1152
+        },
+        {
+          "caller": "Parts",
+          "callee": "event.preventDefault",
+          "lineNumber": 1153
+        },
+        {
+          "caller": "Parts",
+          "callee": "JSON.stringify",
+          "lineNumber": 1199
+        },
+        {
+          "caller": "WithinDialog",
+          "callee": "Array.from",
+          "lineNumber": 1244
+        },
+        {
+          "caller": "WithinDialog",
+          "callee": "String",
+          "lineNumber": 1245
+        },
+        {
+          "caller": "WithVeryLongSelectItems",
+          "callee": "[\n                'The meaning of life is a complex topic that has been the subject of much philosophical, scientific, and theological speculation, with no definitive answer. The meaning of life can be interpreted in many different ways, depending on individual beliefs, values, and experiences.',\n                '42',\n              ].map",
+          "lineNumber": 1280
+        },
+        {
+          "caller": "WithVeryLongSelectItems",
+          "callee": "String",
+          "lineNumber": 1287
+        },
+        {
+          "caller": "WithScrollArea",
+          "callee": "[\n                  'Apple',\n                  'Banana',\n                  'Blueberry',\n                  'Grapes',\n                  'Pineapple',\n                  'Mango',\n                  'Strawberry',\n                  'Watermelon',\n                  'Peach',\n                  'Plum',\n                  'Cherry',\n                  'Kiwi',\n                ].map",
+          "lineNumber": 1326
+        },
+        {
+          "caller": "WithScrollArea",
+          "callee": "fruit.toLowerCase",
+          "lineNumber": 1340
+        },
+        {
+          "caller": "ChromaticNoDefaultValue",
+          "callee": "Array.from",
+          "lineNumber": 1417
+        },
+        {
+          "caller": "ChromaticNoDefaultValue",
+          "callee": "String",
+          "lineNumber": 1418
+        },
+        {
+          "caller": "ChromaticNoDefaultValue",
+          "callee": "String",
+          "lineNumber": 1419
+        },
+        {
+          "caller": "ChromaticNoDefaultValue",
+          "callee": "Array.from",
+          "lineNumber": 1440
+        },
+        {
+          "caller": "ChromaticNoDefaultValue",
+          "callee": "String",
+          "lineNumber": 1441
+        },
+        {
+          "caller": "ChromaticNoDefaultValue",
+          "callee": "String",
+          "lineNumber": 1442
+        },
+        {
+          "caller": "Cypress",
+          "callee": "React.useState",
+          "lineNumber": 1458
+        },
+        {
+          "caller": "Cypress",
+          "callee": "React.useState",
+          "lineNumber": 1459
+        },
+        {
+          "caller": "Cypress",
+          "callee": "React.useState",
+          "lineNumber": 1460
+        },
+        {
+          "caller": "Cypress",
+          "callee": "React.useState",
+          "lineNumber": 1461
+        },
+        {
+          "caller": "handleChange",
+          "callee": "setData",
+          "lineNumber": 1465
+        },
+        {
+          "caller": "handleChange",
+          "callee": "formData.get('size')?.toString",
+          "lineNumber": 1466
+        },
+        {
+          "caller": "handleChange",
+          "callee": "formData.get",
+          "lineNumber": 1466
+        },
+        {
+          "caller": "handleChange",
+          "callee": "formData.get('model')?.toString",
+          "lineNumber": 1467
+        },
+        {
+          "caller": "handleChange",
+          "callee": "formData.get",
+          "lineNumber": 1467
+        },
+        {
+          "caller": "Cypress",
+          "callee": "handleChange",
+          "lineNumber": 1476
+        },
+        {
+          "caller": "Cypress",
+          "callee": "event.preventDefault",
+          "lineNumber": 1477
+        },
+        {
+          "caller": "Cypress",
+          "callee": "handleChange",
+          "lineNumber": 1525
+        },
+        {
+          "caller": "Cypress",
+          "callee": "event.preventDefault",
+          "lineNumber": 1526
+        },
+        {
+          "caller": "Cypress",
+          "callee": "setModel",
+          "lineNumber": 1569
+        },
+        {
+          "caller": "Cypress",
+          "callee": "setColor",
+          "lineNumber": 1623
+        },
+        {
+          "caller": "ShadowHost",
+          "callee": "React.useRef",
+          "lineNumber": 1639
+        },
+        {
+          "caller": "ShadowHost",
+          "callee": "React.useState",
+          "lineNumber": 1640
+        },
+        {
+          "caller": "ShadowHost",
+          "callee": "React.useLayoutEffect",
+          "lineNumber": 1642
+        },
+        {
+          "caller": "ShadowHost",
+          "callee": "hostRef.current.attachShadow",
+          "lineNumber": 1644
+        },
+        {
+          "caller": "ShadowHost",
+          "callee": "document.head.querySelectorAll",
+          "lineNumber": 1648
+        },
+        {
+          "caller": "ShadowHost",
+          "callee": "shadow.appendChild",
+          "lineNumber": 1649
+        },
+        {
+          "caller": "ShadowHost",
+          "callee": "node.cloneNode",
+          "lineNumber": 1649
+        },
+        {
+          "caller": "ShadowHost",
+          "callee": "document.createElement",
+          "lineNumber": 1652
+        },
+        {
+          "caller": "ShadowHost",
+          "callee": "shadow.appendChild",
+          "lineNumber": 1653
+        },
+        {
+          "caller": "ShadowHost",
+          "callee": "setContainer",
+          "lineNumber": 1654
+        },
+        {
+          "caller": "ShadowHost",
+          "callee": "createPortal",
+          "lineNumber": 1659
+        },
+        {
+          "caller": "ShadowHost",
+          "callee": "children",
+          "lineNumber": 1659
+        },
+        {
+          "caller": "CypressShadowDom",
+          "callee": "React.useState",
+          "lineNumber": 1665
+        },
+        {
+          "caller": "CypressShadowDom",
+          "callee": "foodGroups.map",
+          "lineNumber": 1681
+        },
+        {
+          "caller": "CypressShadowDom",
+          "callee": "foodGroup.foods.map",
+          "lineNumber": 1682
+        },
+        {
+          "caller": "ChromaticSelect",
+          "callee": "String",
+          "lineNumber": 1716
+        },
+        {
+          "caller": "ChromaticSelect",
+          "callee": "[paddedElement === 'content' && styles.contentWithPadding, styles.contentClass]\n          .filter(Boolean)\n          .join",
+          "lineNumber": 1723
+        },
+        {
+          "caller": "ChromaticSelect",
+          "callee": "[paddedElement === 'content' && styles.contentWithPadding, styles.contentClass]\n          .filter",
+          "lineNumber": 1723
+        },
+        {
+          "caller": "ChromaticSelect",
+          "callee": "Array.from",
+          "lineNumber": 1735
+        },
+        {
+          "caller": "ChromaticSelect",
+          "callee": "String",
+          "lineNumber": 1736
+        },
+        {
+          "caller": "ChromaticSelect",
+          "callee": "String",
+          "lineNumber": 1737
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 34,
+        "functionCount": 41,
+        "classCount": 0
+      }
+    }
+  ]
+}

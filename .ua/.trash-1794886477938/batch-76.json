@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/use-layout-effect/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/use-layout-effect/CHANGELOG.md",
+      "summary": "记录安全布局效应工具 1.1.4、1.1.3 和 1.1.2 的版本条目。",
+      "tags": [
+        "版本记录",
+        "布局效应",
+        "维护文档"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/use-layout-effect/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/use-layout-effect/README.md",
+      "summary": "标识 react-use-layout-effect 工具包并提供文档入口。",
+      "tags": [
+        "包说明",
+        "布局效应",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/use-layout-effect/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/use-layout-effect/package.json",
+      "summary": "定义安全布局效应 Hook 的源码与双模块产物，仅依赖 React peer，供其他组件在服务端和浏览器共享使用。",
+      "tags": [
+        "包配置",
+        "布局效应",
+        "服务端兼容"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/use-layout-effect/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/use-layout-effect/tsconfig.json",
+      "summary": "为安全布局效应源码应用共享 React 库类型配置与独立输出目录。",
+      "tags": [
+        "编译配置",
+        "布局效应",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/react/use-layout-effect/package.json",
+      "target": "file:packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/use-layout-effect/README.md",
+      "target": "config:packages/react/use-layout-effect/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

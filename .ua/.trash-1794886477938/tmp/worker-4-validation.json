@@ -1,0 +1,241 @@
+{
+  "worker": 4,
+  "batches": 21,
+  "files": 128,
+  "nodes": 314,
+  "edges": 516,
+  "outputFiles": 24,
+  "reports": [
+    {
+      "batchIndex": 1,
+      "fileCount": 13,
+      "nodeCount": 25,
+      "edgeCount": 34,
+      "outputs": [
+        ".ua/intermediate/batch-1.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 2,
+      "fileCount": 7,
+      "nodeCount": 117,
+      "edgeCount": 242,
+      "outputs": [
+        ".ua/intermediate/batch-2-part-1.json",
+        ".ua/intermediate/batch-2-part-2.json",
+        ".ua/intermediate/batch-2-part-3.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 3,
+      "fileCount": 5,
+      "nodeCount": 9,
+      "edgeCount": 11,
+      "outputs": [
+        ".ua/intermediate/batch-3.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 6,
+      "fileCount": 3,
+      "nodeCount": 18,
+      "edgeCount": 33,
+      "outputs": [
+        ".ua/intermediate/batch-6.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 12,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 0,
+      "outputs": [
+        ".ua/intermediate/batch-12.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 16,
+      "fileCount": 13,
+      "nodeCount": 13,
+      "edgeCount": 13,
+      "outputs": [
+        ".ua/intermediate/batch-16.json"
+      ],
+      "parserSkipped": [
+        "apps/storybook/stories/progress.stories.module.css",
+        "apps/storybook/stories/radio-group.stories.module.css",
+        "apps/storybook/stories/scroll-area.stories.module.css",
+        "apps/storybook/stories/select.stories.module.css",
+        "apps/storybook/stories/separator.stories.module.css",
+        "apps/storybook/stories/slider.stories.module.css",
+        "apps/storybook/stories/switch.stories.module.css",
+        "apps/storybook/stories/tabs.stories.module.css",
+        "apps/storybook/stories/toast.stories.module.css",
+        "apps/storybook/stories/toggle-group.stories.module.css",
+        "apps/storybook/stories/toggle.stories.module.css",
+        "apps/storybook/stories/toolbar.stories.module.css",
+        "apps/storybook/stories/tooltip.stories.module.css"
+      ]
+    },
+    {
+      "batchIndex": 17,
+      "fileCount": 6,
+      "nodeCount": 6,
+      "edgeCount": 4,
+      "outputs": [
+        ".ua/intermediate/batch-17.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 18,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 1,
+      "outputs": [
+        ".ua/intermediate/batch-18.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 20,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 3,
+      "outputs": [
+        ".ua/intermediate/batch-20.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 24,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 3,
+      "outputs": [
+        ".ua/intermediate/batch-24.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 26,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 3,
+      "outputs": [
+        ".ua/intermediate/batch-26.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 27,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 3,
+      "outputs": [
+        ".ua/intermediate/batch-27.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 30,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 3,
+      "outputs": [
+        ".ua/intermediate/batch-30.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 31,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 3,
+      "outputs": [
+        ".ua/intermediate/batch-31.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 35,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 3,
+      "outputs": [
+        ".ua/intermediate/batch-35.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 49,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 3,
+      "outputs": [
+        ".ua/intermediate/batch-49.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 57,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 3,
+      "outputs": [
+        ".ua/intermediate/batch-57.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 58,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 3,
+      "outputs": [
+        ".ua/intermediate/batch-58.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 70,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 3,
+      "outputs": [
+        ".ua/intermediate/batch-70.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 79,
+      "fileCount": 4,
+      "nodeCount": 4,
+      "edgeCount": 3,
+      "outputs": [
+        ".ua/intermediate/batch-79.json"
+      ],
+      "parserSkipped": []
+    },
+    {
+      "batchIndex": 86,
+      "fileCount": 25,
+      "nodeCount": 70,
+      "edgeCount": 142,
+      "outputs": [
+        ".ua/intermediate/batch-86-part-1.json",
+        ".ua/intermediate/batch-86-part-2.json"
+      ],
+      "parserSkipped": []
+    }
+  ],
+  "warnings": [
+    "官方CSS解析器跳过批次16的13份CSS，均已通过逐文件源码阅读生成文件级节点。",
+    "官方结构提取未识别forwardRef部件，已人工阅读并补精确行范围；不把类型别名作类节点。"
+  ]
+}

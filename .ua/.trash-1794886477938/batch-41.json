@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "document:packages/react/form/CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "packages/react/form/CHANGELOG.md",
+      "summary": "记录表单包 0.3.0 及先前版本变更，并说明内部 Context 更新与公共 API 版本规则的关系。",
+      "tags": [
+        "版本记录",
+        "表单",
+        "内部接口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:packages/react/form/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "packages/react/form/README.md",
+      "summary": "标识 react-form 包并提供其组件文档入口。",
+      "tags": [
+        "包说明",
+        "表单",
+        "文档入口"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:packages/react/form/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "packages/react/form/package.json",
+      "summary": "为表单组件配置源码、双模块出口与 React 兼容范围，声明 Label、稳定 ID、Context 和 Primitive 等组成依赖。",
+      "tags": [
+        "包配置",
+        "表单",
+        "依赖管理"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:packages/react/form/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "packages/react/form/tsconfig.json",
+      "summary": "为表单组件源码设置共享 React 类型检查、输出位置和构建目录排除规则。",
+      "tags": [
+        "编译配置",
+        "表单",
+        "类型检查"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:packages/react/form/package.json",
+      "target": "file:packages/react/form/src/index.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:packages/react/form/CHANGELOG.md",
+      "target": "config:packages/react/form/package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

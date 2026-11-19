@@ -1,0 +1,5107 @@
+{
+  "name": "primitives",
+  "description": "Radix Primitives 是用于构建设计系统和 Web 应用的开源底层 UI 组件库，注重无障碍访问、可定制性和开发体验。注意：该项目包含超过 100 个源文件，后续可将分析范围限定到子目录以加快处理。",
+  "languages": [
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "markdown",
+    "mts",
+    "patch",
+    "snap",
+    "typescript",
+    "unknown",
+    "yaml"
+  ],
+  "frameworks": [
+    "React",
+    "Vite",
+    "Vitest",
+    "GitHub Actions"
+  ],
+  "files": [
+    {
+      "path": ".changeset/README.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/calm-taps-close.md",
+      "language": "markdown",
+      "sizeLines": 7,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/changelog.cjs",
+      "language": "javascript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".changeset/closing-menu-pointer-focus.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/config.json",
+      "language": "json",
+      "sizeLines": 22,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".changeset/deep-breads-push.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/five-zoos-smash.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/fix-nested-context-menu-long-press.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/hot-areas-teach.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/lazy-scripts-skip.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/lemon-experts-vanish.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/ninety-roses-remain.md",
+      "language": "markdown",
+      "sizeLines": 10,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/quiet-bats-defer.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/quiet-kanji-wait.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/slick-breads-tap.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/smart-games-stick.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/sweet-tigers-wink.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/tame-bears-call.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".changeset/warm-menus-stay.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "language": "unknown",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".github/CONTRIBUTING.md",
+      "language": "markdown",
+      "sizeLines": 111,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/Bug_report.md",
+      "language": "markdown",
+      "sizeLines": 40,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/Documentation.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/Feature_request.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/Question.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/actions/ci-setup/action.yml",
+      "language": "yaml",
+      "sizeLines": 52,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/actions/detect-snapshot-changes/action.yml",
+      "language": "yaml",
+      "sizeLines": 108,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/actions/publish-snapshot/action.yml",
+      "language": "yaml",
+      "sizeLines": 22,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/actions/publish-stable/action.yml",
+      "language": "yaml",
+      "sizeLines": 35,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/workflows/build.yml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/chromatic.yml",
+      "language": "yaml",
+      "sizeLines": 33,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "language": "yaml",
+      "sizeLines": 125,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/ssr.yml",
+      "language": "yaml",
+      "sizeLines": 34,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".nvmrc",
+      "language": "unknown",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".oxfmtrc.json",
+      "language": "json",
+      "sizeLines": 23,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".oxlintrc.json",
+      "language": "json",
+      "sizeLines": 240,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".ua/config.json",
+      "language": "json",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 81,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "language": "markdown",
+      "sizeLines": 76,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 54,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "apps/ssr-testing/README.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "apps/ssr-testing/app/accessible-icon/page.tsx",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/accordion/page.tsx",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/alert-dialog/page.tsx",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/avatar/page.tsx",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/checkbox/page.tsx",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/collapsible/page.tsx",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/context-menu/page.tsx",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/dialog/page.tsx",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/dropdown-menu/page.tsx",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/form/page.tsx",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/hover-card/page.tsx",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/label/page.tsx",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/layout.tsx",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/menubar/page.tsx",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/navigation-menu/page.tsx",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/one-time-password-field/page.tsx",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/page.tsx",
+      "language": "typescript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/password-toggle-field/page.tsx",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/popover/page.tsx",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/portal/conditional-portal.tsx",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/portal/custom-portal-container.tsx",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/portal/page.tsx",
+      "language": "typescript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/primitive-merge/nodes.mjs",
+      "language": "javascript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/primitive-merge/page.tsx",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/primitive-merge/primitive-node.tsx",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/primitive-merge/providers.tsx",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/progress/page.tsx",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/radio-group/page.tsx",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/roving-focus-group/page.tsx",
+      "language": "typescript",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx",
+      "language": "typescript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/rsc/page.tsx",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/scroll-area/page.tsx",
+      "language": "typescript",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/select/page.tsx",
+      "language": "typescript",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/separator/page.tsx",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/slider/page.tsx",
+      "language": "typescript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/slot/client.tsx",
+      "language": "typescript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/slot/page.tsx",
+      "language": "typescript",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/slot/server.tsx",
+      "language": "typescript",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/switch/page.tsx",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/tabs/page.tsx",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/toast/page.tsx",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/toggle-group/page.tsx",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/toolbar/page.tsx",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/tooltip/page.tsx",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/app/visually-hidden/page.tsx",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/next.config.js",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/package.json",
+      "language": "json",
+      "sizeLines": 24,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/ssr-testing/scripts/assert-primitive-merge.mjs",
+      "language": "javascript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/ssr-testing/tsconfig.json",
+      "language": "json",
+      "sizeLines": 8,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/storybook/.storybook/main.ts",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/.storybook/manager-head.html",
+      "language": "html",
+      "sizeLines": 2,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/.storybook/manager.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/.storybook/preview.css",
+      "language": "css",
+      "sizeLines": 38,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/.storybook/preview.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/index.d.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/package.json",
+      "language": "json",
+      "sizeLines": 36,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/storybook/stories/accessible-icon.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/accordion.stories.module.css",
+      "language": "css",
+      "sizeLines": 159,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/accordion.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 723,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/alert-dialog.stories.module.css",
+      "language": "css",
+      "sizeLines": 78,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/alert-dialog.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 274,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/arrow.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/aspect-ratio.stories.module.css",
+      "language": "css",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/aspect-ratio.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/avatar.stories.module.css",
+      "language": "css",
+      "sizeLines": 34,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/avatar.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/checkbox.stories.module.css",
+      "language": "css",
+      "sizeLines": 90,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/checkbox.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 515,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/collapsible.stories.module.css",
+      "language": "css",
+      "sizeLines": 124,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/collapsible.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/collection.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 232,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/context-menu.stories.module.css",
+      "language": "css",
+      "sizeLines": 101,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/context-menu.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 896,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/dialog.stories.module.css",
+      "language": "css",
+      "sizeLines": 133,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/dialog.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 818,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/dismissable-layer.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 668,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/dropdown-menu.stories.module.css",
+      "language": "css",
+      "sizeLines": 179,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/dropdown-menu.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 1797,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/external-overlay.tsx",
+      "language": "typescript",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/focus-scope.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 264,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/form.stories.module.css",
+      "language": "css",
+      "sizeLines": 10,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/form.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 227,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/hover-card.stories.module.css",
+      "language": "css",
+      "sizeLines": 89,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/hover-card.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 790,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/label.stories.module.css",
+      "language": "css",
+      "sizeLines": 23,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/label.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/menu.stories.module.css",
+      "language": "css",
+      "sizeLines": 105,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/menu.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 453,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/menubar.stories.module.css",
+      "language": "css",
+      "sizeLines": 123,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/menubar.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 861,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/navigation-menu.stories.module.css",
+      "language": "css",
+      "sizeLines": 373,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/navigation-menu.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 560,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/one-time-password-field.stories.module.css",
+      "language": "css",
+      "sizeLines": 92,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/one-time-password-field.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 278,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/password-toggle-field.stories.module.css",
+      "language": "css",
+      "sizeLines": 65,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/password-toggle-field.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/popover.stories.module.css",
+      "language": "css",
+      "sizeLines": 92,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/popover.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 752,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/popper.stories.module.css",
+      "language": "css",
+      "sizeLines": 115,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/popper.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 645,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/portal.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/presence.stories.module.css",
+      "language": "css",
+      "sizeLines": 73,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/presence.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/progress.stories.module.css",
+      "language": "css",
+      "sizeLines": 53,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/progress.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/radio-group.stories.module.css",
+      "language": "css",
+      "sizeLines": 95,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/radio-group.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 609,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/roving-focus-group.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 210,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/scroll-area.stories.module.css",
+      "language": "css",
+      "sizeLines": 102,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/scroll-area.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 462,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/select.stories.module.css",
+      "language": "css",
+      "sizeLines": 163,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/select.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 1877,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/separator.stories.module.css",
+      "language": "css",
+      "sizeLines": 16,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/separator.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/slider.stories.module.css",
+      "language": "css",
+      "sizeLines": 111,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/slider.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 789,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/slot.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 398,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/switch.stories.module.css",
+      "language": "css",
+      "sizeLines": 85,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/switch.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 338,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/tabs.stories.module.css",
+      "language": "css",
+      "sizeLines": 119,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/tabs.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 364,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/toast.stories.module.css",
+      "language": "css",
+      "sizeLines": 205,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/toast.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 538,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/toggle-group.stories.module.css",
+      "language": "css",
+      "sizeLines": 50,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/toggle-group.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 334,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/toggle.stories.module.css",
+      "language": "css",
+      "sizeLines": 39,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/toggle.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/toolbar.stories.module.css",
+      "language": "css",
+      "sizeLines": 175,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/toolbar.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/tooltip.stories.module.css",
+      "language": "css",
+      "sizeLines": 98,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/storybook/stories/tooltip.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 1107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/stories/visually-hidden.stories.tsx",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/storybook/tsconfig.json",
+      "language": "json",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": "context7.json",
+      "language": "json",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": "e2e/collection.spec.ts",
+      "language": "typescript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/context-menu.spec.ts",
+      "language": "typescript",
+      "sizeLines": 336,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/dialog.spec.ts",
+      "language": "typescript",
+      "sizeLines": 309,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/dropdown-menu.spec.ts",
+      "language": "typescript",
+      "sizeLines": 327,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/form.spec.ts",
+      "language": "typescript",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/helpers.ts",
+      "language": "typescript",
+      "sizeLines": 211,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/menubar.spec.ts",
+      "language": "typescript",
+      "sizeLines": 321,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/popover.spec.ts",
+      "language": "typescript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/popper.spec.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/scroll-area.spec.ts",
+      "language": "typescript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/select.spec.ts",
+      "language": "typescript",
+      "sizeLines": 187,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/toast.spec.ts",
+      "language": "typescript",
+      "sizeLines": 173,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/toggle-group.spec.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "e2e/tsconfig.json",
+      "language": "json",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/builder/builder.js",
+      "language": "javascript",
+      "sizeLines": 311,
+      "fileCategory": "code"
+    },
+    {
+      "path": "internal/builder/package.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/builder/radix-build.js",
+      "language": "javascript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "internal/builder/tsconfig.json",
+      "language": "json",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/test-data/foods.ts",
+      "language": "typescript",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "internal/test-data/package.json",
+      "language": "json",
+      "sizeLines": 18,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/test-data/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/test-utils/package.json",
+      "language": "json",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/test-utils/ref-stability.tsx",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "internal/test-utils/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/typescript-config/base.json",
+      "language": "json",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/typescript-config/nextjs.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/typescript-config/package.json",
+      "language": "json",
+      "sizeLines": 6,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/typescript-config/react-library.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/typescript-config/react-library/index.d.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "internal/typescript-config/vite-app.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "internal/typescript-config/vite-node.json",
+      "language": "json",
+      "sizeLines": 11,
+      "fileCategory": "config"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 65,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/core/env-check/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/core/env-check/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/core/env-check/package.json",
+      "language": "json",
+      "sizeLines": 71,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/core/env-check/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/env-check/src/internal/is-development.false.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/env-check/src/internal/is-development.true.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/env-check/tsconfig.json",
+      "language": "json",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/core/number/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/core/number/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/core/number/package.json",
+      "language": "json",
+      "sizeLines": 51,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/core/number/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/number/src/number.ts",
+      "language": "typescript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/number/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/core/primitive/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/core/primitive/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/core/primitive/bench/aria-hidden.bench.mts",
+      "language": "mts",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/primitive/bench/aria-hidden.page.ts",
+      "language": "typescript",
+      "sizeLines": 167,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/primitive/package.json",
+      "language": "json",
+      "sizeLines": 59,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/core/primitive/src/aria-hidden.test.tsx",
+      "language": "typescript",
+      "sizeLines": 556,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/primitive/src/aria-hidden.ts",
+      "language": "typescript",
+      "sizeLines": 242,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/primitive/src/can-use-dom.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/primitive/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/primitive/src/primitive.tsx",
+      "language": "typescript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/primitive/src/types.ts",
+      "language": "typescript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/primitive/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/core/rect/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/core/rect/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/core/rect/package.json",
+      "language": "json",
+      "sizeLines": 51,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/core/rect/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/rect/src/observe-element-rect.ts",
+      "language": "typescript",
+      "sizeLines": 109,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/core/rect/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/accessible-icon/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 62,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/accessible-icon/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/accessible-icon/package.json",
+      "language": "json",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/accessible-icon/src/accesible-icon.test.tsx",
+      "language": "typescript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/accessible-icon/src/accessible-icon.tsx",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/accessible-icon/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/accessible-icon/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/accordion/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 87,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/accordion/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/accordion/package.json",
+      "language": "json",
+      "sizeLines": 80,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/accordion/src/accordion.test.tsx",
+      "language": "typescript",
+      "sizeLines": 1368,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/accordion/src/accordion.tsx",
+      "language": "typescript",
+      "sizeLines": 578,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/accordion/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/accordion/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/alert-dialog/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 84,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/alert-dialog/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/alert-dialog/package.json",
+      "language": "json",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/alert-dialog/src/alert-dialog.test.tsx",
+      "language": "typescript",
+      "sizeLines": 543,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/alert-dialog/src/alert-dialog.tsx",
+      "language": "typescript",
+      "sizeLines": 230,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/alert-dialog/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/alert-dialog/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/announce/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/announce/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/announce/package.json",
+      "language": "json",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/announce/src/announce.test.tsx",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/announce/src/announce.tsx",
+      "language": "typescript",
+      "sizeLines": 245,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/announce/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/announce/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/arrow/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 62,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/arrow/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/arrow/package.json",
+      "language": "json",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/arrow/src/arrow.test.tsx",
+      "language": "typescript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/arrow/src/arrow.tsx",
+      "language": "typescript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/arrow/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/arrow/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/aspect-ratio/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/aspect-ratio/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/aspect-ratio/package.json",
+      "language": "json",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/aspect-ratio/src/aspect-ratio.test.tsx",
+      "language": "typescript",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/aspect-ratio/src/aspect-ratio.tsx",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/aspect-ratio/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/aspect-ratio/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/avatar/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 88,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/avatar/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/avatar/package.json",
+      "language": "json",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/avatar/src/avatar.test.tsx",
+      "language": "typescript",
+      "sizeLines": 639,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/avatar/src/avatar.tsx",
+      "language": "typescript",
+      "sizeLines": 248,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/avatar/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/avatar/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/checkbox/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 89,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/checkbox/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/checkbox/package.json",
+      "language": "json",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/checkbox/src/checkbox.test.tsx",
+      "language": "typescript",
+      "sizeLines": 999,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/checkbox/src/checkbox.tsx",
+      "language": "typescript",
+      "sizeLines": 479,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/checkbox/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/checkbox/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/collapsible/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 85,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/collapsible/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/collapsible/package.json",
+      "language": "json",
+      "sizeLines": 79,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/collapsible/src/collapsible.test.tsx",
+      "language": "typescript",
+      "sizeLines": 335,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/collapsible/src/collapsible.tsx",
+      "language": "typescript",
+      "sizeLines": 244,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/collapsible/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/collapsible/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/collection/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 68,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/collection/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/collection/package.json",
+      "language": "json",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/collection/src/collection-legacy.tsx",
+      "language": "typescript",
+      "sizeLines": 138,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/collection/src/collection.test.tsx",
+      "language": "typescript",
+      "sizeLines": 1247,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/collection/src/collection.tsx",
+      "language": "typescript",
+      "sizeLines": 408,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/collection/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/collection/src/ordered-dictionary.test.ts",
+      "language": "typescript",
+      "sizeLines": 1494,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/collection/src/ordered-dictionary.ts",
+      "language": "typescript",
+      "sizeLines": 478,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/collection/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/compose-refs/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/compose-refs/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/compose-refs/package.json",
+      "language": "json",
+      "sizeLines": 64,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/compose-refs/src/compose-refs.tsx",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/compose-refs/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/compose-refs/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/context-menu/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 96,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/context-menu/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/context-menu/package.json",
+      "language": "json",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/context-menu/src/context-menu.test.tsx",
+      "language": "typescript",
+      "sizeLines": 1599,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/context-menu/src/context-menu.tsx",
+      "language": "typescript",
+      "sizeLines": 599,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/context-menu/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/context-menu/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/context/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/context/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/context/package.json",
+      "language": "json",
+      "sizeLines": 64,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/context/src/create-context.tsx",
+      "language": "typescript",
+      "sizeLines": 228,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/context/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/context/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/dialog/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 93,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/dialog/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/dialog/package.json",
+      "language": "json",
+      "sizeLines": 86,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/dialog/src/dialog.test.tsx",
+      "language": "typescript",
+      "sizeLines": 1197,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/dialog/src/dialog.tsx",
+      "language": "typescript",
+      "sizeLines": 683,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/dialog/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/dialog/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/direction/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/direction/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/direction/package.json",
+      "language": "json",
+      "sizeLines": 64,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/direction/src/direction.tsx",
+      "language": "typescript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/direction/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/direction/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/dismissable-layer/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 81,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/dismissable-layer/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/dismissable-layer/package.json",
+      "language": "json",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/dismissable-layer/src/dismissable-layer.test.tsx",
+      "language": "typescript",
+      "sizeLines": 817,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/dismissable-layer/src/dismissable-layer.tsx",
+      "language": "typescript",
+      "sizeLines": 604,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/dismissable-layer/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/dismissable-layer/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/dropdown-menu/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 95,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/dropdown-menu/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/dropdown-menu/package.json",
+      "language": "json",
+      "sizeLines": 80,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/dropdown-menu/src/dropdown-menu.test.tsx",
+      "language": "typescript",
+      "sizeLines": 1286,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+      "language": "typescript",
+      "sizeLines": 531,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/dropdown-menu/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/dropdown-menu/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/focus-guards/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/focus-guards/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/focus-guards/package.json",
+      "language": "json",
+      "sizeLines": 64,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/focus-guards/src/focus-guards.test.tsx",
+      "language": "typescript",
+      "sizeLines": 128,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/focus-guards/src/focus-guards.tsx",
+      "language": "typescript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/focus-guards/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/focus-guards/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/focus-scope/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 78,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/focus-scope/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/focus-scope/package.json",
+      "language": "json",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/focus-scope/src/focus-scope.test.tsx",
+      "language": "typescript",
+      "sizeLines": 407,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/focus-scope/src/focus-scope.tsx",
+      "language": "typescript",
+      "sizeLines": 488,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/focus-scope/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/focus-scope/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/form/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 74,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/form/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/form/package.json",
+      "language": "json",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/form/src/form.test.tsx",
+      "language": "typescript",
+      "sizeLines": 782,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/form/src/form.tsx",
+      "language": "typescript",
+      "sizeLines": 785,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/form/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/form/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/hover-card/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/hover-card/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/hover-card/package.json",
+      "language": "json",
+      "sizeLines": 81,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/hover-card/src/hover-card.test.tsx",
+      "language": "typescript",
+      "sizeLines": 311,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/hover-card/src/hover-card.tsx",
+      "language": "typescript",
+      "sizeLines": 436,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/hover-card/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/hover-card/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/id/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/id/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/id/package.json",
+      "language": "json",
+      "sizeLines": 67,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/id/src/id.tsx",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/id/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/id/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/label/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 62,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/label/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/label/package.json",
+      "language": "json",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/label/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/label/src/label.test.tsx",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/label/src/label.tsx",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/label/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/menu/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 99,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/menu/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/menu/package.json",
+      "language": "json",
+      "sizeLines": 89,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/menu/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/menu/src/menu.tsx",
+      "language": "typescript",
+      "sizeLines": 1450,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/menu/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/menubar/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 91,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/menubar/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/menubar/package.json",
+      "language": "json",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/menubar/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/menubar/src/menubar.test.tsx",
+      "language": "typescript",
+      "sizeLines": 1114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/menubar/src/menubar.tsx",
+      "language": "typescript",
+      "sizeLines": 719,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/menubar/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/navigation-menu/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 102,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/navigation-menu/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/navigation-menu/package.json",
+      "language": "json",
+      "sizeLines": 87,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/navigation-menu/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/navigation-menu/src/navigation-menu.test.tsx",
+      "language": "typescript",
+      "sizeLines": 1029,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/navigation-menu/src/navigation-menu.tsx",
+      "language": "typescript",
+      "sizeLines": 1418,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/navigation-menu/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/one-time-password-field/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/one-time-password-field/README.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/one-time-password-field/package.json",
+      "language": "json",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/one-time-password-field/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/one-time-password-field/src/one-time-password-field.test.tsx",
+      "language": "typescript",
+      "sizeLines": 277,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/one-time-password-field/src/one-time-password-field.tsx",
+      "language": "typescript",
+      "sizeLines": 995,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/one-time-password-field/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/password-toggle-field/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/password-toggle-field/README.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/password-toggle-field/package.json",
+      "language": "json",
+      "sizeLines": 81,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/password-toggle-field/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/password-toggle-field/src/password-toggle-field.test.tsx",
+      "language": "typescript",
+      "sizeLines": 388,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/password-toggle-field/src/password-toggle-field.tsx",
+      "language": "typescript",
+      "sizeLines": 517,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/password-toggle-field/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/popover/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 91,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/popover/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/popover/package.json",
+      "language": "json",
+      "sizeLines": 86,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/popover/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/popover/src/popover.test.tsx",
+      "language": "typescript",
+      "sizeLines": 745,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/popover/src/popover.tsx",
+      "language": "typescript",
+      "sizeLines": 665,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/popover/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/popper/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/popper/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/popper/package.json",
+      "language": "json",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/popper/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/popper/src/popper.test.tsx",
+      "language": "typescript",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/popper/src/popper.tsx",
+      "language": "typescript",
+      "sizeLines": 496,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/popper/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/portal/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/portal/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/portal/package.json",
+      "language": "json",
+      "sizeLines": 73,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/portal/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/portal/src/portal.test.tsx",
+      "language": "typescript",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/portal/src/portal.tsx",
+      "language": "typescript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/portal/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/presence/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 38,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/presence/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/presence/package.json",
+      "language": "json",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/presence/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/presence/src/presence.test.tsx",
+      "language": "typescript",
+      "sizeLines": 145,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/presence/src/presence.tsx",
+      "language": "typescript",
+      "sizeLines": 280,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/presence/src/use-state-machine.tsx",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/presence/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/primitive/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/primitive/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/primitive/package.json",
+      "language": "json",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/primitive/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/primitive/src/primitive.test.tsx",
+      "language": "typescript",
+      "sizeLines": 344,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/primitive/src/primitive.tsx",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/primitive/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/progress/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 71,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/progress/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/progress/package.json",
+      "language": "json",
+      "sizeLines": 73,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/progress/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/progress/src/progress.test.tsx",
+      "language": "typescript",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/progress/src/progress.tsx",
+      "language": "typescript",
+      "sizeLines": 160,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/progress/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/radio-group/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 94,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/radio-group/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/radio-group/package.json",
+      "language": "json",
+      "sizeLines": 80,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/radio-group/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radio-group/src/radio-group.test.tsx",
+      "language": "typescript",
+      "sizeLines": 1137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radio-group/src/radio-group.tsx",
+      "language": "typescript",
+      "sizeLines": 354,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radio-group/src/radio.tsx",
+      "language": "typescript",
+      "sizeLines": 402,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radio-group/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/radix-ui/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 516,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/radix-ui/README.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/radix-ui/package.json",
+      "language": "json",
+      "sizeLines": 145,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/radix-ui/src/accessible-icon.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/accordion.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/alert-dialog.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/aspect-ratio.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/avatar.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/checkbox.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/collapsible.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/context-menu.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/dialog.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/direction.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/dropdown-menu.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/form.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/hover-card.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/internal.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/label.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/menubar.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/navigation-menu.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/popover.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/portal.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/progress.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/radio-group.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/scroll-area.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/select.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/separator.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/slider.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/slot.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/switch.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/tabs.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/toast.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/toggle-group.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/toggle.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/toolbar.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/tooltip.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/unstable/one-time-password-field.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/unstable/password-toggle-field.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/src/visually-hidden.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/radix-ui/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/roving-focus/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/roving-focus/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/roving-focus/package.json",
+      "language": "json",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/roving-focus/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/roving-focus/src/roving-focus-group.tsx",
+      "language": "typescript",
+      "sizeLines": 407,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/roving-focus/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/scroll-area/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 96,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/scroll-area/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/scroll-area/package.json",
+      "language": "json",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/scroll-area/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/scroll-area/src/scroll-area.test.tsx",
+      "language": "typescript",
+      "sizeLines": 551,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/scroll-area/src/scroll-area.tsx",
+      "language": "typescript",
+      "sizeLines": 1191,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/scroll-area/src/use-state-machine.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/scroll-area/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/select/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 104,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/select/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/select/package.json",
+      "language": "json",
+      "sizeLines": 93,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/select/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/select/src/select.test.tsx",
+      "language": "typescript",
+      "sizeLines": 2046,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/select/src/select.tsx",
+      "language": "typescript",
+      "sizeLines": 2094,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/select/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/separator/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/separator/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/separator/package.json",
+      "language": "json",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/separator/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/separator/src/separator.test.tsx",
+      "language": "typescript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/separator/src/separator.tsx",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/separator/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/slider/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 95,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/slider/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/slider/package.json",
+      "language": "json",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/slider/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slider/src/slider.test.tsx",
+      "language": "typescript",
+      "sizeLines": 1242,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slider/src/slider.tsx",
+      "language": "typescript",
+      "sizeLines": 1099,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slider/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/slot/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 55,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/slot/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/slot/package.json",
+      "language": "json",
+      "sizeLines": 67,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/slot/src/__snapshots__/slot.test.tsx.snap",
+      "language": "snap",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slot/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slot/src/slot.test.tsx",
+      "language": "typescript",
+      "sizeLines": 782,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slot/src/slot.tsx",
+      "language": "typescript",
+      "sizeLines": 288,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/slot/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/switch/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 85,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/switch/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/switch/package.json",
+      "language": "json",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/switch/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/switch/src/switch.test.tsx",
+      "language": "typescript",
+      "sizeLines": 581,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/switch/src/switch.tsx",
+      "language": "typescript",
+      "sizeLines": 445,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/switch/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/tabs/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 92,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/tabs/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/tabs/package.json",
+      "language": "json",
+      "sizeLines": 79,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/tabs/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/tabs/src/tabs.test.tsx",
+      "language": "typescript",
+      "sizeLines": 403,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/tabs/src/tabs.tsx",
+      "language": "typescript",
+      "sizeLines": 312,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/tabs/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/toast/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 99,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/toast/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/toast/package.json",
+      "language": "json",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/toast/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toast/src/toast.test.tsx",
+      "language": "typescript",
+      "sizeLines": 675,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toast/src/toast.tsx",
+      "language": "typescript",
+      "sizeLines": 1040,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toast/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/toggle-group/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/toggle-group/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/toggle-group/package.json",
+      "language": "json",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/toggle-group/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toggle-group/src/toggle-group.test.tsx",
+      "language": "typescript",
+      "sizeLines": 273,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toggle-group/src/toggle-group.tsx",
+      "language": "typescript",
+      "sizeLines": 328,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toggle-group/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/toggle/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/toggle/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/toggle/package.json",
+      "language": "json",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/toggle/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toggle/src/toggle.test.tsx",
+      "language": "typescript",
+      "sizeLines": 203,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toggle/src/toggle.tsx",
+      "language": "typescript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toggle/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/toolbar/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 84,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/toolbar/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/toolbar/package.json",
+      "language": "json",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/toolbar/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toolbar/src/toolbar.test.tsx",
+      "language": "typescript",
+      "sizeLines": 449,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toolbar/src/toolbar.tsx",
+      "language": "typescript",
+      "sizeLines": 245,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/toolbar/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/tooltip/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 90,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/tooltip/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/tooltip/package.json",
+      "language": "json",
+      "sizeLines": 85,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/tooltip/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/tooltip/src/tooltip.test.tsx",
+      "language": "typescript",
+      "sizeLines": 633,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/tooltip/src/tooltip.tsx",
+      "language": "typescript",
+      "sizeLines": 804,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/tooltip/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-callback-ref/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 17,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-callback-ref/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-callback-ref/package.json",
+      "language": "json",
+      "sizeLines": 67,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-callback-ref/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-callback-ref/src/use-callback-ref.tsx",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-callback-ref/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-controllable-state/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 38,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-controllable-state/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-controllable-state/package.json",
+      "language": "json",
+      "sizeLines": 70,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-controllable-state/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx",
+      "language": "typescript",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-controllable-state/src/use-controllable-state.test.tsx",
+      "language": "typescript",
+      "sizeLines": 137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-controllable-state/src/use-controllable-state.tsx",
+      "language": "typescript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-controllable-state/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-effect-event/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-effect-event/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-effect-event/package.json",
+      "language": "json",
+      "sizeLines": 69,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-effect-event/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-effect-event/src/use-effect-event.tsx",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-effect-event/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-escape-keydown/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-escape-keydown/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-escape-keydown/package.json",
+      "language": "json",
+      "sizeLines": 67,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-escape-keydown/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-escape-keydown/src/use-escape-keydown.tsx",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-escape-keydown/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-is-hydrated/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-is-hydrated/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-is-hydrated/package.json",
+      "language": "json",
+      "sizeLines": 65,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-is-hydrated/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-is-hydrated/src/use-is-hydrated.tsx",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-is-hydrated/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-layout-effect/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-layout-effect/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-layout-effect/package.json",
+      "language": "json",
+      "sizeLines": 64,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-layout-effect/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-layout-effect/src/use-layout-effect.tsx",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-layout-effect/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-previous/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-previous/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-previous/package.json",
+      "language": "json",
+      "sizeLines": 64,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-previous/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-previous/src/use-previous.tsx",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-previous/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-rect/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-rect/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-rect/package.json",
+      "language": "json",
+      "sizeLines": 67,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-rect/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-rect/src/use-rect.tsx",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-rect/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-size/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 20,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-size/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/use-size/package.json",
+      "language": "json",
+      "sizeLines": 67,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/use-size/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-size/src/use-size.test.tsx",
+      "language": "typescript",
+      "sizeLines": 265,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-size/src/use-size.tsx",
+      "language": "typescript",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/use-size/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/visually-hidden/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/visually-hidden/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/react/visually-hidden/package.json",
+      "language": "json",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/react/visually-hidden/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/visually-hidden/src/visually-hidden.test.tsx",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/visually-hidden/src/visually-hidden.tsx",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/react/visually-hidden/tsconfig.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "patches/@changesets__apply-release-plan.patch",
+      "language": "patch",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "philosophy.md",
+      "language": "markdown",
+      "sizeLines": 91,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "playwright.config.ts",
+      "language": "typescript",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "language": "yaml",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    },
+    {
+      "path": "release-process.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/check-composed-refs.mjs",
+      "language": "javascript",
+      "sizeLines": 123,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/rsc-client-boundary-stub.mts",
+      "language": "mts",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/rsc-compatibility.rsc.test.ts",
+      "language": "typescript",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/setup-tests.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "types/global.d.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "types/index.d.ts",
+      "language": "typescript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "vitest.config.mts",
+      "language": "mts",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 694,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "very-large",
+  "importMap": {
+    ".changeset/README.md": [],
+    ".changeset/calm-taps-close.md": [],
+    ".changeset/changelog.cjs": [],
+    ".changeset/closing-menu-pointer-focus.md": [],
+    ".changeset/config.json": [],
+    ".changeset/deep-breads-push.md": [],
+    ".changeset/five-zoos-smash.md": [],
+    ".changeset/fix-nested-context-menu-long-press.md": [],
+    ".changeset/hot-areas-teach.md": [],
+    ".changeset/lazy-scripts-skip.md": [],
+    ".changeset/lemon-experts-vanish.md": [],
+    ".changeset/ninety-roses-remain.md": [],
+    ".changeset/quiet-bats-defer.md": [],
+    ".changeset/quiet-kanji-wait.md": [],
+    ".changeset/slick-breads-tap.md": [],
+    ".changeset/smart-games-stick.md": [],
+    ".changeset/sweet-tigers-wink.md": [],
+    ".changeset/tame-bears-call.md": [],
+    ".changeset/warm-menus-stay.md": [],
+    ".github/CODEOWNERS": [],
+    ".github/CONTRIBUTING.md": [],
+    ".github/ISSUE_TEMPLATE/Bug_report.md": [],
+    ".github/ISSUE_TEMPLATE/Documentation.md": [],
+    ".github/ISSUE_TEMPLATE/Feature_request.md": [],
+    ".github/ISSUE_TEMPLATE/Question.md": [],
+    ".github/PULL_REQUEST_TEMPLATE.md": [],
+    ".github/actions/ci-setup/action.yml": [],
+    ".github/actions/detect-snapshot-changes/action.yml": [],
+    ".github/actions/publish-snapshot/action.yml": [],
+    ".github/actions/publish-stable/action.yml": [],
+    ".github/workflows/build.yml": [],
+    ".github/workflows/chromatic.yml": [],
+    ".github/workflows/publish.yml": [],
+    ".github/workflows/ssr.yml": [],
+    ".nvmrc": [],
+    ".oxfmtrc.json": [],
+    ".oxlintrc.json": [],
+    ".ua/config.json": [],
+    "AGENTS.md": [],
+    "CODE_OF_CONDUCT.md": [],
+    "README.md": [],
+    "apps/ssr-testing/README.md": [],
+    "apps/ssr-testing/app/accessible-icon/page.tsx": [],
+    "apps/ssr-testing/app/accordion/page.tsx": [],
+    "apps/ssr-testing/app/alert-dialog/page.tsx": [],
+    "apps/ssr-testing/app/avatar/page.tsx": [],
+    "apps/ssr-testing/app/checkbox/page.tsx": [],
+    "apps/ssr-testing/app/collapsible/page.tsx": [],
+    "apps/ssr-testing/app/context-menu/page.tsx": [],
+    "apps/ssr-testing/app/dialog/page.tsx": [],
+    "apps/ssr-testing/app/dropdown-menu/page.tsx": [],
+    "apps/ssr-testing/app/form/page.tsx": [],
+    "apps/ssr-testing/app/hover-card/page.tsx": [],
+    "apps/ssr-testing/app/label/page.tsx": [],
+    "apps/ssr-testing/app/layout.tsx": [],
+    "apps/ssr-testing/app/menubar/page.tsx": [],
+    "apps/ssr-testing/app/navigation-menu/page.tsx": [],
+    "apps/ssr-testing/app/one-time-password-field/page.tsx": [],
+    "apps/ssr-testing/app/page.tsx": [],
+    "apps/ssr-testing/app/password-toggle-field/page.tsx": [],
+    "apps/ssr-testing/app/popover/page.tsx": [],
+    "apps/ssr-testing/app/portal/conditional-portal.tsx": [],
+    "apps/ssr-testing/app/portal/custom-portal-container.tsx": [],
+    "apps/ssr-testing/app/portal/page.tsx": [
+      "apps/ssr-testing/app/portal/conditional-portal.tsx",
+      "apps/ssr-testing/app/portal/custom-portal-container.tsx"
+    ],
+    "apps/ssr-testing/app/primitive-merge/nodes.mjs": [],
+    "apps/ssr-testing/app/primitive-merge/page.tsx": [
+      "apps/ssr-testing/app/primitive-merge/nodes.mjs",
+      "apps/ssr-testing/app/primitive-merge/primitive-node.tsx",
+      "apps/ssr-testing/app/primitive-merge/providers.tsx"
+    ],
+    "apps/ssr-testing/app/primitive-merge/primitive-node.tsx": [],
+    "apps/ssr-testing/app/primitive-merge/providers.tsx": [],
+    "apps/ssr-testing/app/progress/page.tsx": [],
+    "apps/ssr-testing/app/radio-group/page.tsx": [],
+    "apps/ssr-testing/app/roving-focus-group/page.tsx": [
+      "apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx"
+    ],
+    "apps/ssr-testing/app/roving-focus-group/roving-focus.client.tsx": [],
+    "apps/ssr-testing/app/rsc/page.tsx": [],
+    "apps/ssr-testing/app/scroll-area/page.tsx": [],
+    "apps/ssr-testing/app/select/page.tsx": [],
+    "apps/ssr-testing/app/separator/page.tsx": [],
+    "apps/ssr-testing/app/slider/page.tsx": [],
+    "apps/ssr-testing/app/slot/client.tsx": [],
+    "apps/ssr-testing/app/slot/page.tsx": [
+      "apps/ssr-testing/app/slot/client.tsx",
+      "apps/ssr-testing/app/slot/server.tsx"
+    ],
+    "apps/ssr-testing/app/slot/server.tsx": [
+      "apps/ssr-testing/app/slot/client.tsx"
+    ],
+    "apps/ssr-testing/app/switch/page.tsx": [],
+    "apps/ssr-testing/app/tabs/page.tsx": [],
+    "apps/ssr-testing/app/toast/page.tsx": [],
+    "apps/ssr-testing/app/toggle-group/page.tsx": [],
+    "apps/ssr-testing/app/toolbar/page.tsx": [],
+    "apps/ssr-testing/app/tooltip/page.tsx": [],
+    "apps/ssr-testing/app/visually-hidden/page.tsx": [],
+    "apps/ssr-testing/next.config.js": [],
+    "apps/ssr-testing/package.json": [],
+    "apps/ssr-testing/scripts/assert-primitive-merge.mjs": [
+      "apps/ssr-testing/app/primitive-merge/nodes.mjs"
+    ],
+    "apps/ssr-testing/tsconfig.json": [],
+    "apps/storybook/.storybook/main.ts": [],
+    "apps/storybook/.storybook/manager-head.html": [],
+    "apps/storybook/.storybook/manager.ts": [],
+    "apps/storybook/.storybook/preview.css": [],
+    "apps/storybook/.storybook/preview.ts": [
+      "apps/storybook/.storybook/preview.css"
+    ],
+    "apps/storybook/index.d.ts": [],
+    "apps/storybook/package.json": [],
+    "apps/storybook/stories/accessible-icon.stories.tsx": [],
+    "apps/storybook/stories/accordion.stories.module.css": [],
+    "apps/storybook/stories/accordion.stories.tsx": [
+      "apps/storybook/stories/accordion.stories.module.css"
+    ],
+    "apps/storybook/stories/alert-dialog.stories.module.css": [],
+    "apps/storybook/stories/alert-dialog.stories.tsx": [
+      "apps/storybook/stories/alert-dialog.stories.module.css"
+    ],
+    "apps/storybook/stories/arrow.stories.tsx": [],
+    "apps/storybook/stories/aspect-ratio.stories.module.css": [],
+    "apps/storybook/stories/aspect-ratio.stories.tsx": [
+      "apps/storybook/stories/aspect-ratio.stories.module.css"
+    ],
+    "apps/storybook/stories/avatar.stories.module.css": [],
+    "apps/storybook/stories/avatar.stories.tsx": [
+      "apps/storybook/stories/avatar.stories.module.css"
+    ],
+    "apps/storybook/stories/checkbox.stories.module.css": [],
+    "apps/storybook/stories/checkbox.stories.tsx": [
+      "apps/storybook/stories/checkbox.stories.module.css"
+    ],
+    "apps/storybook/stories/collapsible.stories.module.css": [],
+    "apps/storybook/stories/collapsible.stories.tsx": [
+      "apps/storybook/stories/collapsible.stories.module.css"
+    ],
+    "apps/storybook/stories/collection.stories.tsx": [],
+    "apps/storybook/stories/context-menu.stories.module.css": [],
+    "apps/storybook/stories/context-menu.stories.tsx": [
+      "apps/storybook/stories/context-menu.stories.module.css",
+      "apps/storybook/stories/external-overlay.tsx"
+    ],
+    "apps/storybook/stories/dialog.stories.module.css": [],
+    "apps/storybook/stories/dialog.stories.tsx": [
+      "apps/storybook/stories/dialog.stories.module.css",
+      "apps/storybook/stories/external-overlay.tsx"
+    ],
+    "apps/storybook/stories/dismissable-layer.stories.tsx": [],
+    "apps/storybook/stories/dropdown-menu.stories.module.css": [],
+    "apps/storybook/stories/dropdown-menu.stories.tsx": [
+      "apps/storybook/stories/dropdown-menu.stories.module.css",
+      "apps/storybook/stories/external-overlay.tsx"
+    ],
+    "apps/storybook/stories/external-overlay.tsx": [],
+    "apps/storybook/stories/focus-scope.stories.tsx": [],
+    "apps/storybook/stories/form.stories.module.css": [],
+    "apps/storybook/stories/form.stories.tsx": [
+      "apps/storybook/stories/form.stories.module.css"
+    ],
+    "apps/storybook/stories/hover-card.stories.module.css": [],
+    "apps/storybook/stories/hover-card.stories.tsx": [
+      "apps/storybook/stories/hover-card.stories.module.css"
+    ],
+    "apps/storybook/stories/label.stories.module.css": [],
+    "apps/storybook/stories/label.stories.tsx": [
+      "apps/storybook/stories/label.stories.module.css"
+    ],
+    "apps/storybook/stories/menu.stories.module.css": [],
+    "apps/storybook/stories/menu.stories.tsx": [
+      "apps/storybook/stories/menu.stories.module.css"
+    ],
+    "apps/storybook/stories/menubar.stories.module.css": [],
+    "apps/storybook/stories/menubar.stories.tsx": [
+      "apps/storybook/stories/external-overlay.tsx",
+      "apps/storybook/stories/menubar.stories.module.css"
+    ],
+    "apps/storybook/stories/navigation-menu.stories.module.css": [],
+    "apps/storybook/stories/navigation-menu.stories.tsx": [
+      "apps/storybook/stories/navigation-menu.stories.module.css"
+    ],
+    "apps/storybook/stories/one-time-password-field.stories.module.css": [],
+    "apps/storybook/stories/one-time-password-field.stories.tsx": [
+      "apps/storybook/stories/dialog.stories.module.css",
+      "apps/storybook/stories/one-time-password-field.stories.module.css"
+    ],
+    "apps/storybook/stories/password-toggle-field.stories.module.css": [],
+    "apps/storybook/stories/password-toggle-field.stories.tsx": [
+      "apps/storybook/stories/password-toggle-field.stories.module.css"
+    ],
+    "apps/storybook/stories/popover.stories.module.css": [],
+    "apps/storybook/stories/popover.stories.tsx": [
+      "apps/storybook/stories/external-overlay.tsx",
+      "apps/storybook/stories/popover.stories.module.css"
+    ],
+    "apps/storybook/stories/popper.stories.module.css": [],
+    "apps/storybook/stories/popper.stories.tsx": [
+      "apps/storybook/stories/popper.stories.module.css"
+    ],
+    "apps/storybook/stories/portal.stories.tsx": [],
+    "apps/storybook/stories/presence.stories.module.css": [],
+    "apps/storybook/stories/presence.stories.tsx": [
+      "apps/storybook/stories/presence.stories.module.css"
+    ],
+    "apps/storybook/stories/progress.stories.module.css": [],
+    "apps/storybook/stories/progress.stories.tsx": [
+      "apps/storybook/stories/progress.stories.module.css"
+    ],
+    "apps/storybook/stories/radio-group.stories.module.css": [],
+    "apps/storybook/stories/radio-group.stories.tsx": [
+      "apps/storybook/stories/radio-group.stories.module.css"
+    ],
+    "apps/storybook/stories/roving-focus-group.stories.tsx": [],
+    "apps/storybook/stories/scroll-area.stories.module.css": [],
+    "apps/storybook/stories/scroll-area.stories.tsx": [
+      "apps/storybook/stories/scroll-area.stories.module.css"
+    ],
+    "apps/storybook/stories/select.stories.module.css": [],
+    "apps/storybook/stories/select.stories.tsx": [
+      "apps/storybook/stories/external-overlay.tsx",
+      "apps/storybook/stories/select.stories.module.css"
+    ],
+    "apps/storybook/stories/separator.stories.module.css": [],
+    "apps/storybook/stories/separator.stories.tsx": [
+      "apps/storybook/stories/separator.stories.module.css"
+    ],
+    "apps/storybook/stories/slider.stories.module.css": [],
+    "apps/storybook/stories/slider.stories.tsx": [
+      "apps/storybook/stories/slider.stories.module.css"
+    ],
+    "apps/storybook/stories/slot.stories.tsx": [],
+    "apps/storybook/stories/switch.stories.module.css": [],
+    "apps/storybook/stories/switch.stories.tsx": [
+      "apps/storybook/stories/switch.stories.module.css"
+    ],
+    "apps/storybook/stories/tabs.stories.module.css": [],
+    "apps/storybook/stories/tabs.stories.tsx": [
+      "apps/storybook/stories/tabs.stories.module.css"
+    ],
+    "apps/storybook/stories/toast.stories.module.css": [],
+    "apps/storybook/stories/toast.stories.tsx": [
+      "apps/storybook/stories/toast.stories.module.css"
+    ],
+    "apps/storybook/stories/toggle-group.stories.module.css": [],
+    "apps/storybook/stories/toggle-group.stories.tsx": [
+      "apps/storybook/stories/toggle-group.stories.module.css"
+    ],
+    "apps/storybook/stories/toggle.stories.module.css": [],
+    "apps/storybook/stories/toggle.stories.tsx": [
+      "apps/storybook/stories/toggle.stories.module.css"
+    ],
+    "apps/storybook/stories/toolbar.stories.module.css": [],
+    "apps/storybook/stories/toolbar.stories.tsx": [
+      "apps/storybook/stories/toolbar.stories.module.css"
+    ],
+    "apps/storybook/stories/tooltip.stories.module.css": [],
+    "apps/storybook/stories/tooltip.stories.tsx": [
+      "apps/storybook/stories/tooltip.stories.module.css"
+    ],
+    "apps/storybook/stories/visually-hidden.stories.tsx": [],
+    "apps/storybook/tsconfig.json": [],
+    "context7.json": [],
+    "e2e/collection.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/context-menu.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/dialog.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/dropdown-menu.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/form.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/helpers.ts": [],
+    "e2e/menubar.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/popover.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/popper.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/scroll-area.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/select.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/toast.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/toggle-group.spec.ts": [
+      "e2e/helpers.ts"
+    ],
+    "e2e/tsconfig.json": [],
+    "internal/builder/builder.js": [],
+    "internal/builder/package.json": [],
+    "internal/builder/radix-build.js": [
+      "internal/builder/builder.js"
+    ],
+    "internal/builder/tsconfig.json": [],
+    "internal/test-data/foods.ts": [],
+    "internal/test-data/package.json": [],
+    "internal/test-data/tsconfig.json": [],
+    "internal/test-utils/package.json": [],
+    "internal/test-utils/ref-stability.tsx": [],
+    "internal/test-utils/tsconfig.json": [],
+    "internal/typescript-config/base.json": [],
+    "internal/typescript-config/nextjs.json": [],
+    "internal/typescript-config/package.json": [],
+    "internal/typescript-config/react-library.json": [],
+    "internal/typescript-config/react-library/index.d.ts": [],
+    "internal/typescript-config/vite-app.json": [],
+    "internal/typescript-config/vite-node.json": [],
+    "package.json": [],
+    "packages/core/env-check/CHANGELOG.md": [],
+    "packages/core/env-check/README.md": [],
+    "packages/core/env-check/package.json": [],
+    "packages/core/env-check/src/index.ts": [],
+    "packages/core/env-check/src/internal/is-development.false.ts": [],
+    "packages/core/env-check/src/internal/is-development.true.ts": [],
+    "packages/core/env-check/tsconfig.json": [],
+    "packages/core/number/CHANGELOG.md": [],
+    "packages/core/number/README.md": [],
+    "packages/core/number/package.json": [],
+    "packages/core/number/src/index.ts": [],
+    "packages/core/number/src/number.ts": [],
+    "packages/core/number/tsconfig.json": [],
+    "packages/core/primitive/CHANGELOG.md": [],
+    "packages/core/primitive/README.md": [],
+    "packages/core/primitive/bench/aria-hidden.bench.mts": [],
+    "packages/core/primitive/bench/aria-hidden.page.ts": [
+      "packages/core/primitive/src/aria-hidden.ts"
+    ],
+    "packages/core/primitive/package.json": [],
+    "packages/core/primitive/src/aria-hidden.test.tsx": [],
+    "packages/core/primitive/src/aria-hidden.ts": [],
+    "packages/core/primitive/src/can-use-dom.ts": [],
+    "packages/core/primitive/src/index.ts": [],
+    "packages/core/primitive/src/primitive.tsx": [
+      "packages/core/primitive/src/can-use-dom.ts"
+    ],
+    "packages/core/primitive/src/types.ts": [],
+    "packages/core/primitive/tsconfig.json": [],
+    "packages/core/rect/CHANGELOG.md": [],
+    "packages/core/rect/README.md": [],
+    "packages/core/rect/package.json": [],
+    "packages/core/rect/src/index.ts": [],
+    "packages/core/rect/src/observe-element-rect.ts": [],
+    "packages/core/rect/tsconfig.json": [],
+    "packages/react/accessible-icon/CHANGELOG.md": [],
+    "packages/react/accessible-icon/README.md": [],
+    "packages/react/accessible-icon/package.json": [],
+    "packages/react/accessible-icon/src/accesible-icon.test.tsx": [
+      "packages/react/accessible-icon/src/accessible-icon.tsx"
+    ],
+    "packages/react/accessible-icon/src/accessible-icon.tsx": [],
+    "packages/react/accessible-icon/src/index.ts": [],
+    "packages/react/accessible-icon/tsconfig.json": [],
+    "packages/react/accordion/CHANGELOG.md": [],
+    "packages/react/accordion/README.md": [],
+    "packages/react/accordion/package.json": [],
+    "packages/react/accordion/src/accordion.test.tsx": [
+      "packages/react/accordion/src/accordion.tsx"
+    ],
+    "packages/react/accordion/src/accordion.tsx": [],
+    "packages/react/accordion/src/index.ts": [],
+    "packages/react/accordion/tsconfig.json": [],
+    "packages/react/alert-dialog/CHANGELOG.md": [],
+    "packages/react/alert-dialog/README.md": [],
+    "packages/react/alert-dialog/package.json": [],
+    "packages/react/alert-dialog/src/alert-dialog.test.tsx": [
+      "packages/react/alert-dialog/src/alert-dialog.tsx"
+    ],
+    "packages/react/alert-dialog/src/alert-dialog.tsx": [],
+    "packages/react/alert-dialog/src/index.ts": [],
+    "packages/react/alert-dialog/tsconfig.json": [],
+    "packages/react/announce/CHANGELOG.md": [],
+    "packages/react/announce/README.md": [],
+    "packages/react/announce/package.json": [],
+    "packages/react/announce/src/announce.test.tsx": [
+      "packages/react/announce/src/announce.tsx"
+    ],
+    "packages/react/announce/src/announce.tsx": [],
+    "packages/react/announce/src/index.ts": [],
+    "packages/react/announce/tsconfig.json": [],
+    "packages/react/arrow/CHANGELOG.md": [],
+    "packages/react/arrow/README.md": [],
+    "packages/react/arrow/package.json": [],
+    "packages/react/arrow/src/arrow.test.tsx": [
+      "packages/react/arrow/src/arrow.tsx"
+    ],
+    "packages/react/arrow/src/arrow.tsx": [],
+    "packages/react/arrow/src/index.ts": [],
+    "packages/react/arrow/tsconfig.json": [],
+    "packages/react/aspect-ratio/CHANGELOG.md": [],
+    "packages/react/aspect-ratio/README.md": [],
+    "packages/react/aspect-ratio/package.json": [],
+    "packages/react/aspect-ratio/src/aspect-ratio.test.tsx": [
+      "packages/react/aspect-ratio/src/aspect-ratio.tsx"
+    ],
+    "packages/react/aspect-ratio/src/aspect-ratio.tsx": [],
+    "packages/react/aspect-ratio/src/index.ts": [],
+    "packages/react/aspect-ratio/tsconfig.json": [],
+    "packages/react/avatar/CHANGELOG.md": [],
+    "packages/react/avatar/README.md": [],
+    "packages/react/avatar/package.json": [],
+    "packages/react/avatar/src/avatar.test.tsx": [
+      "packages/react/avatar/src/avatar.tsx"
+    ],
+    "packages/react/avatar/src/avatar.tsx": [],
+    "packages/react/avatar/src/index.ts": [],
+    "packages/react/avatar/tsconfig.json": [],
+    "packages/react/checkbox/CHANGELOG.md": [],
+    "packages/react/checkbox/README.md": [],
+    "packages/react/checkbox/package.json": [],
+    "packages/react/checkbox/src/checkbox.test.tsx": [],
+    "packages/react/checkbox/src/checkbox.tsx": [],
+    "packages/react/checkbox/src/index.ts": [],
+    "packages/react/checkbox/tsconfig.json": [],
+    "packages/react/collapsible/CHANGELOG.md": [],
+    "packages/react/collapsible/README.md": [],
+    "packages/react/collapsible/package.json": [],
+    "packages/react/collapsible/src/collapsible.test.tsx": [
+      "packages/react/collapsible/src/collapsible.tsx"
+    ],
+    "packages/react/collapsible/src/collapsible.tsx": [],
+    "packages/react/collapsible/src/index.ts": [],
+    "packages/react/collapsible/tsconfig.json": [],
+    "packages/react/collection/CHANGELOG.md": [],
+    "packages/react/collection/README.md": [],
+    "packages/react/collection/package.json": [],
+    "packages/react/collection/src/collection-legacy.tsx": [],
+    "packages/react/collection/src/collection.test.tsx": [
+      "packages/react/collection/src/collection.tsx"
+    ],
+    "packages/react/collection/src/collection.tsx": [
+      "packages/react/collection/src/ordered-dictionary.ts"
+    ],
+    "packages/react/collection/src/index.ts": [],
+    "packages/react/collection/src/ordered-dictionary.test.ts": [
+      "packages/react/collection/src/ordered-dictionary.ts"
+    ],
+    "packages/react/collection/src/ordered-dictionary.ts": [],
+    "packages/react/collection/tsconfig.json": [],
+    "packages/react/compose-refs/CHANGELOG.md": [],
+    "packages/react/compose-refs/README.md": [],
+    "packages/react/compose-refs/package.json": [],
+    "packages/react/compose-refs/src/compose-refs.tsx": [],
+    "packages/react/compose-refs/src/index.ts": [],
+    "packages/react/compose-refs/tsconfig.json": [],
+    "packages/react/context-menu/CHANGELOG.md": [],
+    "packages/react/context-menu/README.md": [],
+    "packages/react/context-menu/package.json": [],
+    "packages/react/context-menu/src/context-menu.test.tsx": [
+      "packages/react/context-menu/src/context-menu.tsx"
+    ],
+    "packages/react/context-menu/src/context-menu.tsx": [],
+    "packages/react/context-menu/src/index.ts": [],
+    "packages/react/context-menu/tsconfig.json": [],
+    "packages/react/context/CHANGELOG.md": [],
+    "packages/react/context/README.md": [],
+    "packages/react/context/package.json": [],
+    "packages/react/context/src/create-context.tsx": [],
+    "packages/react/context/src/index.ts": [],
+    "packages/react/context/tsconfig.json": [],
+    "packages/react/dialog/CHANGELOG.md": [],
+    "packages/react/dialog/README.md": [],
+    "packages/react/dialog/package.json": [],
+    "packages/react/dialog/src/dialog.test.tsx": [
+      "packages/react/dialog/src/dialog.tsx"
+    ],
+    "packages/react/dialog/src/dialog.tsx": [],
+    "packages/react/dialog/src/index.ts": [],
+    "packages/react/dialog/tsconfig.json": [],
+    "packages/react/direction/CHANGELOG.md": [],
+    "packages/react/direction/README.md": [],
+    "packages/react/direction/package.json": [],
+    "packages/react/direction/src/direction.tsx": [],
+    "packages/react/direction/src/index.ts": [],
+    "packages/react/direction/tsconfig.json": [],
+    "packages/react/dismissable-layer/CHANGELOG.md": [],
+    "packages/react/dismissable-layer/README.md": [],
+    "packages/react/dismissable-layer/package.json": [],
+    "packages/react/dismissable-layer/src/dismissable-layer.test.tsx": [
+      "packages/react/dismissable-layer/src/dismissable-layer.tsx"
+    ],
+    "packages/react/dismissable-layer/src/dismissable-layer.tsx": [],
+    "packages/react/dismissable-layer/src/index.ts": [],
+    "packages/react/dismissable-layer/tsconfig.json": [],
+    "packages/react/dropdown-menu/CHANGELOG.md": [],
+    "packages/react/dropdown-menu/README.md": [],
+    "packages/react/dropdown-menu/package.json": [],
+    "packages/react/dropdown-menu/src/dropdown-menu.test.tsx": [
+      "packages/react/dropdown-menu/src/dropdown-menu.tsx"
+    ],
+    "packages/react/dropdown-menu/src/dropdown-menu.tsx": [],
+    "packages/react/dropdown-menu/src/index.ts": [],
+    "packages/react/dropdown-menu/tsconfig.json": [],
+    "packages/react/focus-guards/CHANGELOG.md": [],
+    "packages/react/focus-guards/README.md": [],
+    "packages/react/focus-guards/package.json": [],
+    "packages/react/focus-guards/src/focus-guards.test.tsx": [
+      "packages/react/focus-guards/src/focus-guards.tsx"
+    ],
+    "packages/react/focus-guards/src/focus-guards.tsx": [],
+    "packages/react/focus-guards/src/index.ts": [],
+    "packages/react/focus-guards/tsconfig.json": [],
+    "packages/react/focus-scope/CHANGELOG.md": [],
+    "packages/react/focus-scope/README.md": [],
+    "packages/react/focus-scope/package.json": [],
+    "packages/react/focus-scope/src/focus-scope.test.tsx": [
+      "packages/react/focus-scope/src/focus-scope.tsx"
+    ],
+    "packages/react/focus-scope/src/focus-scope.tsx": [],
+    "packages/react/focus-scope/src/index.ts": [],
+    "packages/react/focus-scope/tsconfig.json": [],
+    "packages/react/form/CHANGELOG.md": [],
+    "packages/react/form/README.md": [],
+    "packages/react/form/package.json": [],
+    "packages/react/form/src/form.test.tsx": [],
+    "packages/react/form/src/form.tsx": [],
+    "packages/react/form/src/index.ts": [],
+    "packages/react/form/tsconfig.json": [],
+    "packages/react/hover-card/CHANGELOG.md": [],
+    "packages/react/hover-card/README.md": [],
+    "packages/react/hover-card/package.json": [],
+    "packages/react/hover-card/src/hover-card.test.tsx": [
+      "packages/react/hover-card/src/hover-card.tsx"
+    ],
+    "packages/react/hover-card/src/hover-card.tsx": [],
+    "packages/react/hover-card/src/index.ts": [],
+    "packages/react/hover-card/tsconfig.json": [],
+    "packages/react/id/CHANGELOG.md": [],
+    "packages/react/id/README.md": [],
+    "packages/react/id/package.json": [],
+    "packages/react/id/src/id.tsx": [],
+    "packages/react/id/src/index.ts": [],
+    "packages/react/id/tsconfig.json": [],
+    "packages/react/label/CHANGELOG.md": [],
+    "packages/react/label/README.md": [],
+    "packages/react/label/package.json": [],
+    "packages/react/label/src/index.ts": [],
+    "packages/react/label/src/label.test.tsx": [
+      "packages/react/label/src/label.tsx"
+    ],
+    "packages/react/label/src/label.tsx": [],
+    "packages/react/label/tsconfig.json": [],
+    "packages/react/menu/CHANGELOG.md": [],
+    "packages/react/menu/README.md": [],
+    "packages/react/menu/package.json": [],
+    "packages/react/menu/src/index.ts": [],
+    "packages/react/menu/src/menu.tsx": [],
+    "packages/react/menu/tsconfig.json": [],
+    "packages/react/menubar/CHANGELOG.md": [],
+    "packages/react/menubar/README.md": [],
+    "packages/react/menubar/package.json": [],
+    "packages/react/menubar/src/index.ts": [],
+    "packages/react/menubar/src/menubar.test.tsx": [
+      "packages/react/menubar/src/menubar.tsx"
+    ],
+    "packages/react/menubar/src/menubar.tsx": [],
+    "packages/react/menubar/tsconfig.json": [],
+    "packages/react/navigation-menu/CHANGELOG.md": [],
+    "packages/react/navigation-menu/README.md": [],
+    "packages/react/navigation-menu/package.json": [],
+    "packages/react/navigation-menu/src/index.ts": [],
+    "packages/react/navigation-menu/src/navigation-menu.test.tsx": [
+      "packages/react/navigation-menu/src/navigation-menu.tsx"
+    ],
+    "packages/react/navigation-menu/src/navigation-menu.tsx": [],
+    "packages/react/navigation-menu/tsconfig.json": [],
+    "packages/react/one-time-password-field/CHANGELOG.md": [],
+    "packages/react/one-time-password-field/README.md": [],
+    "packages/react/one-time-password-field/package.json": [],
+    "packages/react/one-time-password-field/src/index.ts": [],
+    "packages/react/one-time-password-field/src/one-time-password-field.test.tsx": [
+      "packages/react/one-time-password-field/src/one-time-password-field.tsx"
+    ],
+    "packages/react/one-time-password-field/src/one-time-password-field.tsx": [],
+    "packages/react/one-time-password-field/tsconfig.json": [],
+    "packages/react/password-toggle-field/CHANGELOG.md": [],
+    "packages/react/password-toggle-field/README.md": [],
+    "packages/react/password-toggle-field/package.json": [],
+    "packages/react/password-toggle-field/src/index.ts": [],
+    "packages/react/password-toggle-field/src/password-toggle-field.test.tsx": [
+      "packages/react/password-toggle-field/src/password-toggle-field.tsx"
+    ],
+    "packages/react/password-toggle-field/src/password-toggle-field.tsx": [],
+    "packages/react/password-toggle-field/tsconfig.json": [],
+    "packages/react/popover/CHANGELOG.md": [],
+    "packages/react/popover/README.md": [],
+    "packages/react/popover/package.json": [],
+    "packages/react/popover/src/index.ts": [],
+    "packages/react/popover/src/popover.test.tsx": [
+      "packages/react/popover/src/popover.tsx"
+    ],
+    "packages/react/popover/src/popover.tsx": [],
+    "packages/react/popover/tsconfig.json": [],
+    "packages/react/popper/CHANGELOG.md": [],
+    "packages/react/popper/README.md": [],
+    "packages/react/popper/package.json": [],
+    "packages/react/popper/src/index.ts": [],
+    "packages/react/popper/src/popper.test.tsx": [
+      "packages/react/popper/src/popper.tsx"
+    ],
+    "packages/react/popper/src/popper.tsx": [],
+    "packages/react/popper/tsconfig.json": [],
+    "packages/react/portal/CHANGELOG.md": [],
+    "packages/react/portal/README.md": [],
+    "packages/react/portal/package.json": [],
+    "packages/react/portal/src/index.ts": [],
+    "packages/react/portal/src/portal.test.tsx": [
+      "packages/react/portal/src/portal.tsx"
+    ],
+    "packages/react/portal/src/portal.tsx": [],
+    "packages/react/portal/tsconfig.json": [],
+    "packages/react/presence/CHANGELOG.md": [],
+    "packages/react/presence/README.md": [],
+    "packages/react/presence/package.json": [],
+    "packages/react/presence/src/index.ts": [],
+    "packages/react/presence/src/presence.test.tsx": [
+      "packages/react/presence/src/presence.tsx"
+    ],
+    "packages/react/presence/src/presence.tsx": [
+      "packages/react/presence/src/use-state-machine.tsx"
+    ],
+    "packages/react/presence/src/use-state-machine.tsx": [],
+    "packages/react/presence/tsconfig.json": [],
+    "packages/react/primitive/CHANGELOG.md": [],
+    "packages/react/primitive/README.md": [],
+    "packages/react/primitive/package.json": [],
+    "packages/react/primitive/src/index.ts": [],
+    "packages/react/primitive/src/primitive.test.tsx": [
+      "packages/react/primitive/src/primitive.tsx"
+    ],
+    "packages/react/primitive/src/primitive.tsx": [],
+    "packages/react/primitive/tsconfig.json": [],
+    "packages/react/progress/CHANGELOG.md": [],
+    "packages/react/progress/README.md": [],
+    "packages/react/progress/package.json": [],
+    "packages/react/progress/src/index.ts": [],
+    "packages/react/progress/src/progress.test.tsx": [
+      "packages/react/progress/src/progress.tsx"
+    ],
+    "packages/react/progress/src/progress.tsx": [],
+    "packages/react/progress/tsconfig.json": [],
+    "packages/react/radio-group/CHANGELOG.md": [],
+    "packages/react/radio-group/README.md": [],
+    "packages/react/radio-group/package.json": [],
+    "packages/react/radio-group/src/index.ts": [],
+    "packages/react/radio-group/src/radio-group.test.tsx": [
+      "packages/react/radio-group/src/radio-group.tsx"
+    ],
+    "packages/react/radio-group/src/radio-group.tsx": [
+      "packages/react/radio-group/src/radio.tsx"
+    ],
+    "packages/react/radio-group/src/radio.tsx": [],
+    "packages/react/radio-group/tsconfig.json": [],
+    "packages/react/radix-ui/CHANGELOG.md": [],
+    "packages/react/radix-ui/README.md": [],
+    "packages/react/radix-ui/package.json": [],
+    "packages/react/radix-ui/src/accessible-icon.ts": [],
+    "packages/react/radix-ui/src/accordion.ts": [],
+    "packages/react/radix-ui/src/alert-dialog.ts": [],
+    "packages/react/radix-ui/src/aspect-ratio.ts": [],
+    "packages/react/radix-ui/src/avatar.ts": [],
+    "packages/react/radix-ui/src/checkbox.ts": [],
+    "packages/react/radix-ui/src/collapsible.ts": [],
+    "packages/react/radix-ui/src/context-menu.ts": [],
+    "packages/react/radix-ui/src/dialog.ts": [],
+    "packages/react/radix-ui/src/direction.ts": [],
+    "packages/react/radix-ui/src/dropdown-menu.ts": [],
+    "packages/react/radix-ui/src/form.ts": [],
+    "packages/react/radix-ui/src/hover-card.ts": [],
+    "packages/react/radix-ui/src/index.ts": [],
+    "packages/react/radix-ui/src/internal.ts": [],
+    "packages/react/radix-ui/src/label.ts": [],
+    "packages/react/radix-ui/src/menubar.ts": [],
+    "packages/react/radix-ui/src/navigation-menu.ts": [],
+    "packages/react/radix-ui/src/popover.ts": [],
+    "packages/react/radix-ui/src/portal.ts": [],
+    "packages/react/radix-ui/src/progress.ts": [],
+    "packages/react/radix-ui/src/radio-group.ts": [],
+    "packages/react/radix-ui/src/scroll-area.ts": [],
+    "packages/react/radix-ui/src/select.ts": [],
+    "packages/react/radix-ui/src/separator.ts": [],
+    "packages/react/radix-ui/src/slider.ts": [],
+    "packages/react/radix-ui/src/slot.ts": [],
+    "packages/react/radix-ui/src/switch.ts": [],
+    "packages/react/radix-ui/src/tabs.ts": [],
+    "packages/react/radix-ui/src/toast.ts": [],
+    "packages/react/radix-ui/src/toggle-group.ts": [],
+    "packages/react/radix-ui/src/toggle.ts": [],
+    "packages/react/radix-ui/src/toolbar.ts": [],
+    "packages/react/radix-ui/src/tooltip.ts": [],
+    "packages/react/radix-ui/src/unstable/one-time-password-field.ts": [],
+    "packages/react/radix-ui/src/unstable/password-toggle-field.ts": [],
+    "packages/react/radix-ui/src/visually-hidden.ts": [],
+    "packages/react/radix-ui/tsconfig.json": [],
+    "packages/react/roving-focus/CHANGELOG.md": [],
+    "packages/react/roving-focus/README.md": [],
+    "packages/react/roving-focus/package.json": [],
+    "packages/react/roving-focus/src/index.ts": [],
+    "packages/react/roving-focus/src/roving-focus-group.tsx": [],
+    "packages/react/roving-focus/tsconfig.json": [],
+    "packages/react/scroll-area/CHANGELOG.md": [],
+    "packages/react/scroll-area/README.md": [],
+    "packages/react/scroll-area/package.json": [],
+    "packages/react/scroll-area/src/index.ts": [],
+    "packages/react/scroll-area/src/scroll-area.test.tsx": [
+      "packages/react/scroll-area/src/scroll-area.tsx"
+    ],
+    "packages/react/scroll-area/src/scroll-area.tsx": [
+      "packages/react/scroll-area/src/use-state-machine.ts"
+    ],
+    "packages/react/scroll-area/src/use-state-machine.ts": [],
+    "packages/react/scroll-area/tsconfig.json": [],
+    "packages/react/select/CHANGELOG.md": [],
+    "packages/react/select/README.md": [],
+    "packages/react/select/package.json": [],
+    "packages/react/select/src/index.ts": [],
+    "packages/react/select/src/select.test.tsx": [
+      "packages/react/select/src/select.tsx"
+    ],
+    "packages/react/select/src/select.tsx": [],
+    "packages/react/select/tsconfig.json": [],
+    "packages/react/separator/CHANGELOG.md": [],
+    "packages/react/separator/README.md": [],
+    "packages/react/separator/package.json": [],
+    "packages/react/separator/src/index.ts": [],
+    "packages/react/separator/src/separator.test.tsx": [
+      "packages/react/separator/src/separator.tsx"
+    ],
+    "packages/react/separator/src/separator.tsx": [],
+    "packages/react/separator/tsconfig.json": [],
+    "packages/react/slider/CHANGELOG.md": [],
+    "packages/react/slider/README.md": [],
+    "packages/react/slider/package.json": [],
+    "packages/react/slider/src/index.ts": [],
+    "packages/react/slider/src/slider.test.tsx": [
+      "packages/react/slider/src/slider.tsx"
+    ],
+    "packages/react/slider/src/slider.tsx": [],
+    "packages/react/slider/tsconfig.json": [],
+    "packages/react/slot/CHANGELOG.md": [],
+    "packages/react/slot/README.md": [],
+    "packages/react/slot/package.json": [],
+    "packages/react/slot/src/__snapshots__/slot.test.tsx.snap": [],
+    "packages/react/slot/src/index.ts": [],
+    "packages/react/slot/src/slot.test.tsx": [
+      "packages/react/slot/src/slot.tsx"
+    ],
+    "packages/react/slot/src/slot.tsx": [],
+    "packages/react/slot/tsconfig.json": [],
+    "packages/react/switch/CHANGELOG.md": [],
+    "packages/react/switch/README.md": [],
+    "packages/react/switch/package.json": [],
+    "packages/react/switch/src/index.ts": [],
+    "packages/react/switch/src/switch.test.tsx": [],
+    "packages/react/switch/src/switch.tsx": [],
+    "packages/react/switch/tsconfig.json": [],
+    "packages/react/tabs/CHANGELOG.md": [],
+    "packages/react/tabs/README.md": [],
+    "packages/react/tabs/package.json": [],
+    "packages/react/tabs/src/index.ts": [],
+    "packages/react/tabs/src/tabs.test.tsx": [
+      "packages/react/tabs/src/tabs.tsx"
+    ],
+    "packages/react/tabs/src/tabs.tsx": [],
+    "packages/react/tabs/tsconfig.json": [],
+    "packages/react/toast/CHANGELOG.md": [],
+    "packages/react/toast/README.md": [],
+    "packages/react/toast/package.json": [],
+    "packages/react/toast/src/index.ts": [],
+    "packages/react/toast/src/toast.test.tsx": [
+      "packages/react/toast/src/toast.tsx"
+    ],
+    "packages/react/toast/src/toast.tsx": [],
+    "packages/react/toast/tsconfig.json": [],
+    "packages/react/toggle-group/CHANGELOG.md": [],
+    "packages/react/toggle-group/README.md": [],
+    "packages/react/toggle-group/package.json": [],
+    "packages/react/toggle-group/src/index.ts": [],
+    "packages/react/toggle-group/src/toggle-group.test.tsx": [
+      "packages/react/toggle-group/src/toggle-group.tsx"
+    ],
+    "packages/react/toggle-group/src/toggle-group.tsx": [],
+    "packages/react/toggle-group/tsconfig.json": [],
+    "packages/react/toggle/CHANGELOG.md": [],
+    "packages/react/toggle/README.md": [],
+    "packages/react/toggle/package.json": [],
+    "packages/react/toggle/src/index.ts": [],
+    "packages/react/toggle/src/toggle.test.tsx": [
+      "packages/react/toggle/src/toggle.tsx"
+    ],
+    "packages/react/toggle/src/toggle.tsx": [],
+    "packages/react/toggle/tsconfig.json": [],
+    "packages/react/toolbar/CHANGELOG.md": [],
+    "packages/react/toolbar/README.md": [],
+    "packages/react/toolbar/package.json": [],
+    "packages/react/toolbar/src/index.ts": [],
+    "packages/react/toolbar/src/toolbar.test.tsx": [
+      "packages/react/toolbar/src/toolbar.tsx"
+    ],
+    "packages/react/toolbar/src/toolbar.tsx": [],
+    "packages/react/toolbar/tsconfig.json": [],
+    "packages/react/tooltip/CHANGELOG.md": [],
+    "packages/react/tooltip/README.md": [],
+    "packages/react/tooltip/package.json": [],
+    "packages/react/tooltip/src/index.ts": [],
+    "packages/react/tooltip/src/tooltip.test.tsx": [
+      "packages/react/tooltip/src/tooltip.tsx"
+    ],
+    "packages/react/tooltip/src/tooltip.tsx": [],
+    "packages/react/tooltip/tsconfig.json": [],
+    "packages/react/use-callback-ref/CHANGELOG.md": [],
+    "packages/react/use-callback-ref/README.md": [],
+    "packages/react/use-callback-ref/package.json": [],
+    "packages/react/use-callback-ref/src/index.ts": [],
+    "packages/react/use-callback-ref/src/use-callback-ref.tsx": [],
+    "packages/react/use-callback-ref/tsconfig.json": [],
+    "packages/react/use-controllable-state/CHANGELOG.md": [],
+    "packages/react/use-controllable-state/README.md": [],
+    "packages/react/use-controllable-state/package.json": [],
+    "packages/react/use-controllable-state/src/index.ts": [],
+    "packages/react/use-controllable-state/src/use-controllable-state-reducer.tsx": [],
+    "packages/react/use-controllable-state/src/use-controllable-state.test.tsx": [
+      "packages/react/use-controllable-state/src/use-controllable-state.tsx"
+    ],
+    "packages/react/use-controllable-state/src/use-controllable-state.tsx": [],
+    "packages/react/use-controllable-state/tsconfig.json": [],
+    "packages/react/use-effect-event/CHANGELOG.md": [],
+    "packages/react/use-effect-event/README.md": [],
+    "packages/react/use-effect-event/package.json": [],
+    "packages/react/use-effect-event/src/index.ts": [],
+    "packages/react/use-effect-event/src/use-effect-event.tsx": [],
+    "packages/react/use-effect-event/tsconfig.json": [],
+    "packages/react/use-escape-keydown/CHANGELOG.md": [],
+    "packages/react/use-escape-keydown/README.md": [],
+    "packages/react/use-escape-keydown/package.json": [],
+    "packages/react/use-escape-keydown/src/index.ts": [],
+    "packages/react/use-escape-keydown/src/use-escape-keydown.tsx": [],
+    "packages/react/use-escape-keydown/tsconfig.json": [],
+    "packages/react/use-is-hydrated/CHANGELOG.md": [],
+    "packages/react/use-is-hydrated/README.md": [],
+    "packages/react/use-is-hydrated/package.json": [],
+    "packages/react/use-is-hydrated/src/index.ts": [],
+    "packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts": [],
+    "packages/react/use-is-hydrated/src/use-is-hydrated.tsx": [
+      "packages/react/use-is-hydrated/src/use-is-hydrated-legacy.ts"
+    ],
+    "packages/react/use-is-hydrated/tsconfig.json": [],
+    "packages/react/use-layout-effect/CHANGELOG.md": [],
+    "packages/react/use-layout-effect/README.md": [],
+    "packages/react/use-layout-effect/package.json": [],
+    "packages/react/use-layout-effect/src/index.ts": [],
+    "packages/react/use-layout-effect/src/use-layout-effect.tsx": [],
+    "packages/react/use-layout-effect/tsconfig.json": [],
+    "packages/react/use-previous/CHANGELOG.md": [],
+    "packages/react/use-previous/README.md": [],
+    "packages/react/use-previous/package.json": [],
+    "packages/react/use-previous/src/index.ts": [],
+    "packages/react/use-previous/src/use-previous.tsx": [],
+    "packages/react/use-previous/tsconfig.json": [],
+    "packages/react/use-rect/CHANGELOG.md": [],
+    "packages/react/use-rect/README.md": [],
+    "packages/react/use-rect/package.json": [],
+    "packages/react/use-rect/src/index.ts": [],
+    "packages/react/use-rect/src/use-rect.tsx": [],
+    "packages/react/use-rect/tsconfig.json": [],
+    "packages/react/use-size/CHANGELOG.md": [],
+    "packages/react/use-size/README.md": [],
+    "packages/react/use-size/package.json": [],
+    "packages/react/use-size/src/index.ts": [],
+    "packages/react/use-size/src/use-size.test.tsx": [
+      "packages/react/use-size/src/use-size.tsx"
+    ],
+    "packages/react/use-size/src/use-size.tsx": [],
+    "packages/react/use-size/tsconfig.json": [],
+    "packages/react/visually-hidden/CHANGELOG.md": [],
+    "packages/react/visually-hidden/README.md": [],
+    "packages/react/visually-hidden/package.json": [],
+    "packages/react/visually-hidden/src/index.ts": [],
+    "packages/react/visually-hidden/src/visually-hidden.test.tsx": [
+      "packages/react/visually-hidden/src/visually-hidden.tsx"
+    ],
+    "packages/react/visually-hidden/src/visually-hidden.tsx": [],
+    "packages/react/visually-hidden/tsconfig.json": [],
+    "patches/@changesets__apply-release-plan.patch": [],
+    "philosophy.md": [],
+    "playwright.config.ts": [],
+    "pnpm-workspace.yaml": [],
+    "release-process.md": [],
+    "scripts/check-composed-refs.mjs": [],
+    "scripts/rsc-client-boundary-stub.mts": [],
+    "scripts/rsc-compatibility.rsc.test.ts": [
+      "scripts/rsc-client-boundary-stub.mts"
+    ],
+    "scripts/setup-tests.ts": [],
+    "types/global.d.ts": [],
+    "types/index.d.ts": [],
+    "vitest.config.mts": []
+  }
+}
